@@ -592,8 +592,8 @@ nav:
       - Product: Agro/Portfolio/portfolio_product_site_draft.md
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
-  - Help Center: 
-    - Status: 
+#  - Help Center: 
+#    - Status: 
 #  - News:
 #    - blog/index.md
 #    - blog/tags.md
