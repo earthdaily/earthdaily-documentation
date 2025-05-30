@@ -101,7 +101,7 @@ theme:
   # +------------------------------------------------------------------------------------------------------+
   name: material
   logo: assets/EDA_logo_horizontal_gradient-navy_1.svg
-  custom_dir: src/overrides
+  #custom_dir: overrides
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
   # | The Material theme allows "theme-extsnions", meaning that you can override parts of it by either     |
@@ -262,7 +262,6 @@ theme:
   # +------------------------------------------------------------------------------------------------------+
   features:
   # Announce
-  #
   - announce.dismiss # Adds a "X" button to dismiss a news banner/mark it as read.*
   
   # Header
@@ -536,22 +535,13 @@ markdown_extensions:
   #- pymdownx.tasklist:
   #- pymdownx.tilde:
 
-
 plugins:
-  - swagger-ui-tag
-  - blog:
-      blog_toc: true
-      archive_date_format: MMMM yyyy
-      categories_allowed:
-        - Product
-        - Data
-      authors_profiles: true
-      pagination_per_page: 5
-      archive_pagination_per_page: 10
-      categories_pagination_per_page: 10
-#      post_slugify: !!python/object/apply:ext.slugs.slugify
-#        kwds:
-#          short: true
+  - swagger-ui-tag:
+      background: White
+      docExpansion: none
+      filter: ""
+      syntaxHighlightTheme: monokai
+      tryItOutEnabled: true
   - meta
   - tags
   - mkdocstrings
@@ -559,8 +549,8 @@ plugins:
 #  - privacy # Useful for GDPR compliancy https://squidfunk.github.io/mkdocs-material/plugins/privacy/ all ressources will have to be linked in nav and assets loaded with the site.
 
 # Hooks
-hooks:
-  - src/overrides/hooks/shortcodes.py
+#hooks:
+ # - src/overrides/hooks/shortcodes.py
  # - src/overrides/hooks/translations.py
 
 # +--------------------------------------------------------------------------------------------------------+
