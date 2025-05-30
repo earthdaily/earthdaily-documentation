@@ -3,7 +3,7 @@
 # It is also recommendet to also copy the template with all branches, to
 # have the gh-pages branch pre-made. This prevents possible errors.
 #
-name: Deploy Site
+name: Deploy documentation
 
 on:
   push:
