@@ -42,7 +42,6 @@ site_url: 'https://earthdaily.github.io/documentation/' # Uncomment to set a can
 # +--------------------------------------------------------------------------------------------------------+
 copyright: © 2025 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the GPL 3.0 License.|
 
-
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
 # | The base folder to use.                                                                                |
@@ -99,9 +98,9 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/getting-started/                                       |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  name: material
+  name: 'material'
   logo: assets/EDA_logo_horizontal_gradient-navy_1.svg
-  #custom_dir: overrides
+  #custom_dir: theme
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
   # | The Material theme allows "theme-extsnions", meaning that you can override parts of it by either     |
@@ -115,7 +114,6 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme                     |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #custom_dir: 'theme'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -538,8 +536,8 @@ markdown_extensions:
 plugins:
   - swagger-ui-tag:
       background: White
-      docExpansion: none
-      filter: ""
+      docExpansion: list
+      filter: false
       syntaxHighlightTheme: monokai
       tryItOutEnabled: true
   - meta
