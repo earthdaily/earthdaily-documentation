@@ -22,7 +22,6 @@
 # | - https://www.mkdocs.org/user-guide/configuration/#site_description                                    |
 # | - https://www.mkdocs.org/user-guide/configuration/#site_author                                         |
 # | - https://www.mkdocs.org/user-guide/configuration/#site_url                                            |
-# |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 site_name: Earthdaily documentation
 site_description: 'Everything you need to know to master Earthdaily services'
