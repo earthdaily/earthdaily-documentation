@@ -17,14 +17,14 @@ Add illustration include glossary of API parameter
 
 ## API 
 
-<swagger-ui src="https://emergence-detection.aws-dev.geosys.com/openapi.json"/>
+<swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
 
 ## Performance and accuracy
 
 ## Use case and product
 
 This analytic is used in:
-    - [Portfolio](/mkdocs2/Agro/Portfolio/portfolio_product_site_draft/)
+    - [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/)
     - 
 
 
