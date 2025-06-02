@@ -89,26 +89,25 @@ To set up this project, follow these steps:
     ```
     git clone https://github.com/earthdaily/reflectance-datacube-processor
     ```
-2. Open a terminal in the project folder.
 
-3. Create the required Conda environment:
+2. Create the required Conda environment:
 
     ```
     conda create --name documentation python=3.11
     ```
 
-4. Activate the Conda environment:
+3. Activate the Conda environment:
 
     ```
     conda activate documentation
     ```
 
-5. Install mkdocs-material:
+4. Install mkdocs-material:
 
     ```
     pip install mkdocs-material
     ```
-6. Intall dependencies from requirement.txt
+5. Intall dependencies from requirement.txt
 
     ```
     pip install -r requirements.txt
@@ -122,15 +121,23 @@ To set up this project, follow these steps:
 
 ### Run site locally
 
-To run the website locally, you use the following command
+To run the website locally, you use the following command:
 
-1. Serve locally:
+1. Open a terminal in the project folder.
+
+2. Activate the Conda environment:
+
+    ```
+    conda activate documentation
+    ```
+
+3. Serve locally:
 
     ```
     mkdocs serve
     ```
 
-2. Open your browser 
+4. Open your browser 
 
     ```
     http://127.0.0.1:800/docs reflectancedatacubeprocessor
@@ -166,6 +173,7 @@ The following links will provide access to more information:
 - [Markdown foundations](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 - [Mkdocs]
 - [Mkdocs Material][squidfunk]
+- [Examples]()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
