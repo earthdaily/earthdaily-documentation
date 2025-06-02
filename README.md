@@ -140,7 +140,7 @@ To run the website locally, you use the following command:
 4. Open your browser 
 
     ```
-    http://127.0.0.1:800/docs reflectancedatacubeprocessor
+    http://127.0.0.1:8000/documentation/
     ```
 
 

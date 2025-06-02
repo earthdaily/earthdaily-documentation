@@ -589,7 +589,7 @@ nav:
       - In-Season Monitoring: Agro/Portfolio/Monitoring.md
       - Integration: Agro/Portfolio/Integration.md
     - Crop identification:
-      - Product: Agro/Portfolio/portfolio_product_site_draft.md
+      - Product: Agro/Cropid/cropid_product.md
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
 #  - Help Center: 
