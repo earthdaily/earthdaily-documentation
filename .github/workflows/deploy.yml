@@ -12,7 +12,7 @@ on:
     - 'mkdocs.yml'
     - 'theme/**'
     branches:
-    - main
+    - master
     #
     # If your repository would have releases should you uncomment the below lines
     # in order to ignore pushes caused by newly created releases.
