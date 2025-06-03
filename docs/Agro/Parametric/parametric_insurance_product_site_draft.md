@@ -59,7 +59,7 @@ Incorporating **parametric insurance** into your agricultural portfolio provides
 
 The following image highlights regional data availability for key NDVI and meteorological parameters:
 
-![Data Coverage Table](/docs/assets/Agro/Data_coverage.png)
+![Data Coverage Table](/docs/assets/Agro/parametric/Data_coverage.png)
 
 ---
 

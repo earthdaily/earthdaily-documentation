@@ -285,6 +285,7 @@ theme:
   #- content.action.edit #Display an edit button on the top of the page
   - content.action.view #Display a view source button on the top of the page
   - content.code.copy #display copy button on code block
+  - content.code.annotate #Enable code block comment
 
   # Search
   #
@@ -361,19 +362,19 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/reference/admonitions/#changing-the-icons              |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #admonition:
-  #    note: 'octicons/tag-16'
-  #    abstract: 'octicons/checklist-16'
-  #    info: 'octicons/info-16'
-  #    tip: 'octicons/squirrel-16'
-  #    success: 'octicons/check-16'
-  #    question: 'octicons/question-16'
-  #    warning: 'octicons/alert-16'
-  #    failure: 'octicons/x-circle-16'
-  #    danger: 'octicons/zap-16'
-  #    bug: 'octicons/bug-16'
-  #    example: 'octicons/beaker-16'
-  #    quote: 'octicons/quote-16'
+  admonition:
+      note: 'octicons/tag-16'
+      abstract: 'octicons/checklist-16'
+      info: 'octicons/info-16'
+      tip: 'octicons/squirrel-16'
+      success: 'octicons/check-16'
+      question: 'octicons/question-16'
+      warning: 'octicons/alert-16'
+      failure: 'octicons/x-circle-16'
+      danger: 'octicons/zap-16'
+      bug: 'octicons/bug-16'
+      example: 'octicons/beaker-16'
+      quote: 'octicons/quote-16'
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -508,30 +509,31 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
   #- pymdownx.arithmex:
   #- pymdownx.b64:
   #- pymdownx.betterem:
   #- pymdownx.caret:
   #- pymdownx.critic:
-  #- pymdownx.details:
+  - pymdownx.details:
   #- pymdownx.emoji:
   #- pymdownx.escapeall:
   #- pymdownx.extra:
   #- pymdownx.extrarawhtml:
-  #- pymdownx.highlight:
-      # anchor_linenums: true
-      # line_spans: __span
-      # pygments_lang_class: true
-  #- pymdownx.inlinehilite:
+  - pymdownx.highlight:
+       anchor_linenums: true
+       line_spans: __span
+       pygments_lang_class: true
+  - pymdownx.inlinehilite:
   #- pymdownx.keys:
   #- pymdownx.magiclink:
   #- pymdownx.mark:
   #- pymdownx.pathconverter:
   #- pymdownx.progressbar:
   #- pymdownx.smartsymbols:
-  #- pymdownx.snippets:
+  - pymdownx.snippets:
   #- pymdownx.striphtml:
-  #- pymdownx.superfences:
+  - pymdownx.superfences:
   #- pymdownx.tabbed:
   #- pymdownx.tasklist:
   #- pymdownx.tilde:
