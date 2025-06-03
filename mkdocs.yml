@@ -400,7 +400,8 @@ extra_css:
 # | - https://www.mkdocs.org/user-guide/configuration/#extra_javascript                                    |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-#extra_javascript:
+extra_javascript:
+  - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -501,7 +502,7 @@ extra:
 markdown_extensions:
   - attr_list
   - md_in_html
-  - markdown.extensions.admonition:
+  - markdown.extensions.admonition
   - markdown.extensions.codehilite:
       guess_lang: false
   - markdown.extensions.toc:
@@ -510,37 +511,43 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   #- pymdownx.arithmex:
   #- pymdownx.b64:
   #- pymdownx.betterem:
   #- pymdownx.caret:
   #- pymdownx.critic:
-  - pymdownx.details:
   #- pymdownx.emoji:
   #- pymdownx.escapeall:
   #- pymdownx.extra:
   #- pymdownx.extrarawhtml:
-  - pymdownx.highlight:
-       anchor_linenums: true
-       line_spans: __span
-       pygments_lang_class: true
-  - pymdownx.inlinehilite:
   #- pymdownx.keys:
   #- pymdownx.magiclink:
   #- pymdownx.mark:
   #- pymdownx.pathconverter:
   #- pymdownx.progressbar:
   #- pymdownx.smartsymbols:
-  - pymdownx.snippets:
   #- pymdownx.striphtml:
-  - pymdownx.superfences:
   #- pymdownx.tabbed:
   #- pymdownx.tasklist:
   #- pymdownx.tilde:
 
-
 plugins:
   - swagger-ui-tag
+  - meta
+  - tags
+#  - mkdocstrings
 #  - blog:
 #      blog_toc: true
 #      archive_date_format: MMMM yyyy
@@ -554,9 +561,6 @@ plugins:
 #      post_slugify: !!python/object/apply:ext.slugs.slugify
 #        kwds:
 #          short: true
-#  - meta
-#  - tags
-#  - mkdocstrings
 #  - group
 #  - privacy # Useful for GDPR compliancy https://squidfunk.github.io/mkdocs-material/plugins/privacy/ all ressources will have to be linked in nav and assets loaded with the site.
 
