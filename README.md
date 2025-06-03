@@ -87,7 +87,7 @@ To set up this project, follow these steps:
 1. Clone the project repository:
 
     ```
-    git clone https://github.com/earthdaily/reflectance-datacube-processor
+    git clone https://github.com/earthdaily/earthdaily-documentation
     ```
 
 2. Create the required Conda environment:
