@@ -87,7 +87,7 @@ To set up this project, follow these steps:
 1. Clone the project repository:
 
     ```
-    git clone https://github.com/earthdaily/reflectance-datacube-processor
+    git clone https://github.com/earthdaily/earthdaily-documentation
     ```
 
 2. Create the required Conda environment:
@@ -107,12 +107,16 @@ To set up this project, follow these steps:
     ```
     pip install mkdocs-material
     ```
-5. Intall dependencies from requirement.txt
+5. Navigate to the local project folder
+
+    ```
+    cd <path to project folder>
+    ```
+6. Intall dependencies from requirement.txt
 
     ```
     pip install -r requirements.txt
     ```
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
