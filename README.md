@@ -157,7 +157,7 @@ MkDocs will then turn those into static HTML pages once you [build](#build-pages
 ## Deploy to GitHub page
 A deployment workflow has been configured to build and deploy website on each commit to main branch.
 
-This workflow will setup Python, download Material for MkDocs and all its dependencies and deploy the pages to the `gh-pages` branch to then be viewable under --------.
+This workflow will setup Python, download Material for MkDocs and all its dependencies and deploy the pages to the `gh-pages` branch to then be viewable under this [URL](https://earthdaily.github.io/earthdaily-documentation/).
 
 ### Dependabot
 
