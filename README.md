@@ -147,10 +147,12 @@ To run the website locally, you use the following command:
     http://127.0.0.1:8000/documentation/
     ```
 
-
 ### Contribute to documentation 
 To create new pages, just add new markdown files to the [docs folder] of the repository and edit them.  
 MkDocs will then turn those into static HTML pages once you [build](#build-pages) or [deploy](#deploy-to-github) the pages.
+
+### Update content
+If you are usingd VS code to update content please open site folder. Once done, you will benefit from auto completion and image preview.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
