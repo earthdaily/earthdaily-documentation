@@ -523,6 +523,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
   #- pymdownx.arithmex:
   #- pymdownx.b64:
   #- pymdownx.betterem:
@@ -589,15 +590,18 @@ nav:
       - Product: Agro/Parametric/parametric_insurance_product_site_draft.md
       - User guide: Agro/Parametric/Swagger.md
     - Portfolio Management:
-      - Product: Agro/Portfolio/portfolio_product_site_draft.md
-      - Smart underwritting: Agro/Portfolio/Underwritting.md
-      - Environmental Compliance: Agro/Portfolio/Compliance.md
-      - In-Season Monitoring: Agro/Portfolio/Monitoring.md
+      - Product: Agro/Portfolio/Product Overview page.md
+      - Smart underwritting: Agro/Portfolio/Smart underwriting.md
+      - Historical Assessment: Agro/Portfolio/Historical_Assessment_API.md
+      - Environmental Compliance: Agro/Portfolio/Compliance Check.md
+      - In-Season Monitoring: Agro/Portfolio/In-Season Monitoring.md
       - Integration: Agro/Portfolio/Integration.md
     - Crop identification:
-      - Product: Agro/Cropid/cropid_product.md
+      - Product: Agro/Cropid/crop_identification_overviewPage.md
+      - Brazil: crop_identification_Brazil_page.md
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
+      - Automated field borders: Agro/Library/Automatic_Field_Borders.md
 #  - Help Center: 
 #    - Status: 
 #  - News:
