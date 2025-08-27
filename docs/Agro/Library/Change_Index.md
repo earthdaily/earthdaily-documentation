@@ -2,7 +2,7 @@
 title: Change Index
 description: This section explains everything you need to know about the Change Index analytic.
 # icon: fontawesome/question
-status: new
+status: 
 ---
 
 # Change Index
@@ -78,6 +78,13 @@ Change Idedex is based on three components of change using the field's NDVI valu
 ![Change Index 3](../../assets/agro/analytics/change_index/change_index5.png)
 
 ---
+
+## API
+
+Here is the Change index API documentation:
+
+<swagger-ui src="https://change-index.aws.geosys.com/openapi.json"/>
+
 
 ## Change Index FAQ
 
