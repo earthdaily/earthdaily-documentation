@@ -81,9 +81,10 @@ Change Idedex is based on three components of change using the field's NDVI valu
 
 ## API
 
-Here is the Change index API documentation:
+Here is the Change index [API documentation](https://change-index.aws.geosys.com/docs#/Change%20Index%20Compute):
 
 <swagger-ui src="https://change-index.aws.geosys.com/openapi.json"/>
+
 
 
 ## Change Index FAQ
