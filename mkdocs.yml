@@ -601,7 +601,7 @@ nav:
       - US: Agro/Cropid/us_crop_identification.md
       - Brazil: Agro/Cropid/crop_identification_Brazil_page.md
       - Western Europe: Agro/Cropid/france_germany_crop_identification.md
-
+      - Experience crop identification: https://cropid-demo.aws-dev.geosys.com/
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md
