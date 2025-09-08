@@ -598,7 +598,10 @@ nav:
       - Integration: Agro/Portfolio/Integration.md
     - Crop identification:
       - Product: Agro/Cropid/crop_identification_overviewPage.md
-      - Brazil: crop_identification_Brazil_page.md
+      - US: Agro/Cropid/us_crop_identification.md
+      - Brazil: Agro/Cropid/crop_identification_Brazil_page.md
+      - Western Europe: Agro/Cropid/france_germany_crop_identification.md
+
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md

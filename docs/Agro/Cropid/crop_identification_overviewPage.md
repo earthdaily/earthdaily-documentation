@@ -12,6 +12,8 @@ Traditionally, accurate and timely crop mapping has come at a high cost. Field s
 
 EarthDaily's Crop Classification product combines satellite imagery, weather data, and advanced AI models to accurately detect what crops are planted and where—all during the active growing season, at national scale.
 
+![Overview](../../assets/agro/crop-identification/overview.png)
+
 This breakthrough enables a new standard of crop intelligence that is:  
 - **Timely available** – Crop masks are provided during the growing season, not months after harvest  
 - **Scalable** – Covering millions of hectares with consistent accuracy  
