@@ -606,6 +606,7 @@ nav:
       - Emergence: Agro/Library/Emergence.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md
       - Change index: Agro/Library/Change_Index.md
+      - Crop identification API: Agro/Library/CropMask_API.md
 #  - Help Center: 
 #    - Status: 
 #  - News:
