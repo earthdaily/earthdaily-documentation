@@ -402,6 +402,7 @@ extra_css:
 # +--------------------------------------------------------------------------------------------------------+
 extra_javascript:
   - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
+  - js/nav_open_new_tab.js
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -597,16 +598,18 @@ nav:
       - In-Season Monitoring: Agro/Portfolio/In-Season Monitoring.md
       - Integration: Agro/Portfolio/Integration.md
     - Crop identification:
-      - Product: Agro/Cropid/crop_identification_overviewPage.md
-      - US: Agro/Cropid/us_crop_identification.md
-      - Brazil: Agro/Cropid/crop_identification_Brazil_page.md
-      - Western Europe: Agro/Cropid/france_germany_crop_identification.md
-      - Experience crop identification: https://cropid-demo.aws-dev.geosys.com/
+      - Product: Agro/Cropid/crop_identification_OverviewPage_v11092025.md
+      - US: Agro/Cropid/crop_identification_US_v11092025.md
+      - Brazil: Agro/Cropid/crop_identification_Brazil_v11092025.md
+      - Western Europe: Agro/Cropid/crop_identification_France_Germany_v11092025.md
+      - Try samples: https://cropid-demo.aws-dev.geosys.com/
+      - Crop Layer Access: Agro/Cropid/CropMask_Access_through_EDS_v11092025.md
+      - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md
       - Change index: Agro/Library/Change_Index.md
-      - Crop identification API: Agro/Library/CropMask_API.md
+      - Crop id API: Agro/Library/FieldLevel_CropMask_API_v11092025.md
 #  - Help Center: 
 #    - Status: 
 #  - News:

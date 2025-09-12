@@ -5,14 +5,12 @@ description: Crop ID product overview page
 ---
 <meta property="og:title" content="Discover EarthDaily's scalable crop identification solution using satellite imagery and AI. Real-time crop maps, field-level insights, and seamless API delivery for agriculture.">
 
-# 🗺️ Get real-time crop classification and mapping at national scale using satellite imagery, weather data, and AI.
+# 🗺️ Get real-time crop classification at scale
 
 ## Introduction  
 Traditionally, accurate and timely crop mapping has come at a high cost. Field surveys, farmer reports, and manual sampling methods provide precise data—but they are time-consuming, expensive to scale, and often lag behind the pace of market or agro-climatic events. By the time insights reach decision-makers, key opportunities may already be missed—or decisions are made without a full picture of what’s happening in the field. Today, that model is changing.
 
 EarthDaily's Crop Classification product combines satellite imagery, weather data, and advanced AI models to accurately detect what crops are planted and where—all during the active growing season, at national scale.
-
-![Overview](../../assets/agro/crop-identification/overview.png)
 
 This breakthrough enables a new standard of crop intelligence that is:  
 - **Timely available** – Crop masks are provided during the growing season, not months after harvest  
@@ -21,6 +19,8 @@ This breakthrough enables a new standard of crop intelligence that is:
 - **Seamless** – Accessible through APIs and ready for integration into your business workflows  
 
 Whether you are forecasting crop supply, managing agricultural risk, or optimizing procurement strategies, our solution brings unprecedented scale and efficiency to understanding what’s growing—across regions or entire countries.
+
+![US 2025](../../assets/agro/crop-identification/US_MidJuly_2025.png) 
 
 ---
 
@@ -52,6 +52,8 @@ Crop mask layers are generated and updated during the active growing season, pro
 Coverage includes crops such as:  
 - **USA:** Corn, Soybean, Wheat, Cotton  
 - **Brazil:** Soybean, Corn (first and second seasons), Sugarcane, Cotton, Wheat and Rice  
+- **France:** Winter wheat, Barley, Oil Seed Rape, Corn, Sunflower and Sugarbeet
+- **Germany:** Winter wheat, Barley, Oil Seed Rape, Corn and Sugarbeet 
 
 Additional countries and crops can be supported upon request or as part of our product roadmap. Contact us [here](https://earthdaily.com/contact) to know more.
 
@@ -73,17 +75,27 @@ Explore further details in our [API Documentation](#)
 ---
 
 ## ❓ FAQ  
+!!! tip "What is satellite crop identification?"
 
-- **What is satellite crop identification?**
-We use optical and SAR satellite data to detect which crop is growing on every plot of land.
+    We use optical and SAR satellite data to detect which crop is growing on every plot of land.
 
-- **How accurate is EarthDaily’s crop classification?**
-Soybean in Brazil: F1-score > 0.95
-Corn in the USA Corn Belt: F1-score > 0.95
-Discover more in the dedicated Countries pages.
 
-- **Can I access crop data during the season?**
-Yes, we deliver crop classification data 6 to 12 months before local agencies.
+**** 
+!!! tip "How accurate is EarthDaily’s crop classification?"
+
+    Soybean in Brazil: F1-score > 0.95
+    Corn in the USA Corn Belt: F1-score > 0.95
+    Discover more in the dedicated Countries pages.
+
+
+**** 
+!!! tip "Can I access crop data during the season?"
+
+    Yes, we deliver crop classification data 6 to 12 months before local agencies.
+
+
+
+**** 
 
 ---
 
