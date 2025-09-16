@@ -1,4 +1,4 @@
-mkdocs-material==9.6.14
+mkdocs-material==9.6.20
 mkdocs-swagger-ui-tag
 mkdocs-simple-blog
 pymdown-extensions
