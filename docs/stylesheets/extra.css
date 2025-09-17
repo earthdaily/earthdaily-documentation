@@ -12,4 +12,27 @@
   width: 40%;
 }
 
+
+/* Force 1 column by default */
+.grid.cards.fixed-2-col {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* At tablet+ size → force 2 columns */
+@media screen and (min-width: 768px) {
+  .grid.cards.fixed-2-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Ensure equal height cards */
+.grid.cards.fixed-2-col > * {
+  display: flex;
+  flex-direction: column;
+}
+
+
 /** End Project Wallace extracted inline styles */

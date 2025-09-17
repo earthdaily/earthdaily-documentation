@@ -607,6 +607,10 @@ nav:
       - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
+      - Emergence delay: Agro/Library/Emergence_Delay.md
+      - Planting validation (ZARC): Agro/Library/ZARC.md
+      - Historical Potential Score: Agro/Library/Historical_Potential_Score.md
+      - In Season  Potential Score: Agro/Library/In-season_Potential_Score.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md
       - Change index: Agro/Library/Change_Index.md
       - Crop id API: Agro/Library/FieldLevel_CropMask_API_v11092025.md
