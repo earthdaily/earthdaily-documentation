@@ -607,6 +607,11 @@ nav:
       - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
     - Commodities Intelligence:
       - Product: Agro/Commodities_intelligence/crop-intelligence-docs.md
+      - Delivery method:
+        - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
+        - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
+      - Yield: Agro/Commodities_intelligence/yield.md
+      - Case studies: Agro/Commodities_intelligence/case_studies.md
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
       - Emergence delay: Agro/Library/Emergence_Delay.md
