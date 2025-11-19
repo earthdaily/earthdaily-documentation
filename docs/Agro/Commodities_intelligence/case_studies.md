@@ -1,13 +1,39 @@
 
 ## Success Cases 🔗
 
-Over time we will create pages for key success cases and our most recent "accuracy" stats
+Below are a few recent examples where EarthDaily data and analysis have led to a much earlier understanding of production concerns and adjustments in forecasted yields by the market drivers.
 
-### Planned Case Studies:
-- 2023 and 2024 Accuracy Docs
-- 2022 Brazil Soybeans
-- 2023 Canada Wheat
-- 2024 Russian winter wheat
+### 2022 Brazil Soybeans Case Study
+
+**Drought in Center-South and Average Yields in Center-North Lead to Lower Production**
+
+2022 saw varied results in Brazilian Soybeans depending on where you looked.  The Center-North of the country, where the bulk of the crop is grown, received satisfactory precipitation and produced an average crop as shown in our vegetation chart
+
+![Satisfactory Precip Conditions](../../assets/agro/commodities_intelligence/2022_Brazil_Center-North.png)
+
+The Center-South unfortunately experienced the lowest precipitation levels in years starting at the begining of the growing cycle.  This lack of rainfall clearly limited the vegetation development to a level below the previously lowest producing year of 2012.
+
+![Dry Conditions](../../assets/agro/commodities_intelligence/2022_Brazil_Center-South.png)
+
+EarthDaily decreased Yield Forecasts in December well before CONAB and USDA reached the same levels near the end of the season.  Our clear view of this crop failure in the Center-South allowed our customers to anticipate these eventual drops in production by the USDA and CONAB.
+
+![Hot and Dry start conditions](../../assets/agro/commodities_intelligence/2022_Brazil_Yield_Forecast.png)
+
+
+### 2023 Canadian Durum Wheat Case Study
+
+**Early Season Heat and Dryness Shortens the Growing Season**
+
+The start of the 2023 Canadian Wheat season started out very similar to the 2021 season.  2021 was a poor year for Canada and this made us adopt a pessimistic position from the beginning. Staring in July, the high temperature and low moisture began to effect NDVI, much like 2021. 
+
+![Hot and Dry start conditions](../../assets/agro/commodities_intelligence/2023_Canada_Wheat.png)
+
+**Forecasted Yield Starts to Drop Two Months Earlier Than STATCAN**
+
+Seeing these trends early allowed us to point out a crop failure well in advance compared to USDA and STATCAN.
+
+![Early Forecast Change](../../assets/agro/commodities_intelligence/2023_Canada_Wheat_Numbers.png)
+
 
 ### 2024 Russian Winter Wheat Case Study
 
@@ -33,27 +59,7 @@ Weather insights and some analogies with the very poor 2012 crop vigor allowed u
 
 ![Additional analysis](../../assets/agro/commodities_intelligence/Picture10.png)
 
-### Additional Screenshots
 
-**Screenshot 1**
-
-![Analysis screenshot 1](../../assets/agro/commodities_intelligence/Picture11.png)
-
-**Screenshot 2**
-
-![Analysis screenshot 2](../../assets/agro/commodities_intelligence/Picture12.png)
-
-**Screenshot 3**
-
-![Analysis screenshot 3](../../assets/agro/commodities_intelligence/Picture13.png)
-
-**Screenshot 4**
-
-![Analysis screenshot 4](../../assets/agro/commodities_intelligence/Picture14.png)
-
-**Screenshot 5**
-
-![Analysis screenshot 5](../../assets/agro/commodities_intelligence/Picture15.png)
 
 ---
 
