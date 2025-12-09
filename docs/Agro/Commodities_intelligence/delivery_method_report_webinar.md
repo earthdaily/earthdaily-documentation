@@ -1,7 +1,6 @@
 ### Webinar and Video Series
 
 #### Weekly Webinars
-[Click here to access a webinar recording](#)
 
 Join our Crop Analyst for weekly interactive webinars where EarthDaily will review Global Crop Production estimates and the Vegetation and Weather data which are driving these estimates.
 
@@ -12,6 +11,8 @@ Join our Crop Analyst for weekly interactive webinars where EarthDaily will revi
 - **Production figures** - Estimated production of the main grains in the world's main producers.
 
 Webinar recordings are available after they have concluded so you can watch them at a time more convenient for your workflow.
+
+[Click here to access a webinar recording](#)
 
 #### Weekly Videos
 
@@ -30,7 +31,6 @@ Weekly short form videos are available to provide updates on the current product
 ### Weekly Global Reports
 
 
-
 #### All Crops Global Report
 
 Our Weekly Global Report is a massive report which showcases all you would want to know about the production conditions of Corn, Soybeans, Wheat, Rapeseed/Canola, and Barley in the top 10 growing regions of the world. (USA, Canada, Brazil, Argentina, Australia, Europe, Russia, Ukraine, India, and China)
@@ -47,18 +47,16 @@ Crop specific reports focus on a single target crop and all production areas.
 
 These reports include Forecasted Yield and Production values as well as the current vegetation, weather, and production maps and charts which are driving Forecasted Yields.
 
-([Download an example of our Weekly Wheat Report](../../assets/agro/commodities_intelligence/Wheat Weekly.pdf)
+[Download an example of our Weekly Wheat Report](../../assets/agro/commodities_intelligence/WHEAT_Weekly.pdf)
 
 
 ### World in 10
-
-[Click here to access one sample of World in 10 report](#)
 
 10 images tell the answer to 10 key questions about production all around the world.
 
 This report provides a quick glance at current production conditions, highlighting areas of interest which could be driving the changes in the supply market next week.
 
-([Download an example of our World in 10 Report](../../assets/agro/commodities_intelligence/World in 10.pdf)
+[Download an example of our World in 10 Report](../../assets/agro/commodities_intelligence/World%20in%2010.pdf)
 
 
 ### One on One Crop Analyst Calls

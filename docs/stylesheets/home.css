@@ -1,0 +1,94 @@
+/* Landing page container */
+.mdx-container {
+  padding-top: 1.25rem;
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,
+    linear-gradient(
+      to bottom,
+      var(--md-primary-fg-color),
+      hsla(280, 67%, 55%, 1) 99%,
+      var(--md-default-bg-color) 99%
+    );
+}
+
+/* Adjust background for slate theme */
+[data-md-color-scheme="slate"] .mdx-container {
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(230, 15%, 14%, 1)' /></svg>") no-repeat bottom,
+    linear-gradient(
+      to bottom,
+      var(--md-primary-fg-color),
+      hsla(230, 15%, 25%, 1) 99%,
+      var(--md-default-bg-color) 99%
+    );
+}
+
+/* Landing page hero */
+.mdx-hero {
+  margin: 0 1rem;
+  color: var(--md-primary-bg-color);
+}
+
+.mdx-hero h1 {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  color: currentcolor;
+}
+
+/* Mobile portrait: Larger hero headline */
+@media screen and (max-width: 29.9375em) {
+  .mdx-hero h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Hero content */
+.mdx-hero__content {
+  padding-bottom: 7.5rem;
+}
+
+/* Tablet landscape and up: Columnar display */
+@media screen and (min-width: 60em) {
+  .mdx-hero {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .mdx-hero__content {
+    max-width: 23.75rem;
+    padding-bottom: 14vw;
+    margin-top: 4.375rem;
+  }
+  
+  .mdx-hero__image {
+    order: 1;
+    width: 47.5rem;
+    transform: translateX(5rem);
+  }
+}
+
+/* Screen and up: Adjusted spacing */
+@media screen and (min-width: 76.25em) {
+  .mdx-hero__image {
+    transform: translateX(10rem);
+  }
+}
+
+/* Buttons */
+.mdx-hero .md-button {
+  margin-top: 0.625rem;
+  margin-right: 0.625rem;
+  color: var(--md-primary-bg-color);
+}
+
+.mdx-hero .md-button:is(:focus, :hover) {
+  color: var(--md-accent-bg-color);
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+.mdx-hero .md-button--primary {
+  color: hsla(280, 37%, 48%, 1);
+  background-color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-bg-color);
+}

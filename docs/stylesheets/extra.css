@@ -34,5 +34,426 @@
   flex-direction: column;
 }
 
+/* Hide auto-generated page title - Multiple selectors */
+.md-content__inner > h1:first-child,
+.md-content h1:first-of-type,
+.md-typeset > h1:first-child,
+article.md-content__inner > h1:first-child,
+.md-content__inner h1:first-of-type {
+  display: none !important;
+}
 
-/** End Project Wallace extracted inline styles */
+/*______________________________________________________*/
+/* Home page - Hero section style  */
+/*______________________________________________________*/
+
+/* Hero section styling */
+.md-typeset h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+/* Feature cards */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid.cards > * {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.grid.cards > *:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.lg {
+  font-size: 2rem;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+/*______________________________________________________*/
+/* EarthDaily corporate website alignment */
+/*______________________________________________________*/
+
+/* EarthDaily Brand Colors */
+:root {
+    --ed-primary: #0066cc;        /* EarthDaily Blue */
+    --ed-primary-dark: #004c99;
+    --ed-secondary: #00a651;      /* Earth Green */
+    --ed-accent: #ff6b35;         /* Accent Orange */
+    --ed-dark: #1a1a1a;
+    --ed-light-bg: #f5f7fa;
+    --ed-card-bg: #ffffff;
+    --ed-border: #e0e0e0;
+}
+
+/* Main Content Area Background - Corporate Style with Image and Vertical Gradient */
+.md-main {
+    background-image: 
+        linear-gradient(180deg, rgba(248, 249, 250, 0.95) 0%, rgba(232, 238, 243, 0.92) 50%, rgba(212, 223, 232, 0.9) 100%),
+        url('../assets/EarthDaily_Constellation_Hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Force transparency on all content wrappers */
+.md-content,
+.md-content__inner,
+.md-typeset,
+article.md-content__inner,
+.md-content > .md-content__inner {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Apply semi-transparent background only to the main content box */
+.md-content__inner {
+    background: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    padding: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+/* Remove any pseudo-elements that might add backgrounds */
+.md-content__inner:before,
+.md-content__inner:after,
+.md-content:before,
+.md-content:after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+
+/* Ensure article and typeset are transparent */
+.md-typeset article {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.md-main__inner {
+    background: transparent !important;
+}
+
+/* Target the main element specifically */
+main.md-content {
+    background: transparent !important;
+}
+
+main.md-content > .md-content__inner {
+    background: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Sidebar Background */
+.md-sidebar {
+    background-color: transparent;
+}
+
+.md-sidebar--primary {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.md-sidebar--secondary {
+    background: transparent;
+}
+
+/* Page Container */
+.md-container {
+    background-color: transparent;
+}
+.md-button--primary {
+    background-color: var(--ed-primary) !important;
+    border-color: var(--ed-primary) !important;
+    color: white !important;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.md-button--primary:hover {
+    background-color: var(--ed-primary-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+/* Card Grid Styling */
+.grid.cards > ul {
+    gap: 1.5rem;
+}
+
+.grid.cards > ul > li {
+    border: 1px solid var(--ed-border);
+    border-radius: 8px;
+    padding: 2rem;
+    background: var(--ed-card-bg);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grid.cards > ul > li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: var(--ed-primary);
+}
+
+/* Main Help Section Cards */
+.grid.cards > ul > li > hr {
+    margin: 1rem 0;
+    border-color: var(--ed-border);
+}
+
+/* Icon Styling in Cards */
+.grid.cards .lg.middle {
+    color: var(--ed-primary);
+    font-size: 3rem;
+}
+
+/* Links in Cards */
+.grid.cards a {
+    color: var(--ed-primary);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.grid.cards a:hover {
+    color: var(--ed-primary-dark);
+    gap: 0.75rem;
+}
+
+/* Secondary Cards (Popular Resources) */
+.grid.cards > ul > li > p > strong {
+    color: var(--ed-dark);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Admonition Styling */
+.md-typeset .admonition.info {
+    border-left: 4px solid var(--ed-primary);
+}
+
+.md-typeset .admonition.tip {
+    border-left: 4px solid var(--ed-secondary);
+}
+
+/* Header Styling */
+.md-typeset h1 {
+    color: var(--ed-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+    color: var(--ed-dark);
+    font-weight: 600;
+    border-bottom: 2px solid var(--ed-light-bg);
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Horizontal Rules */
+.md-typeset hr {
+    border-bottom: 1px solid var(--ed-border);
+    margin: 2.5rem 0;
+}
+
+/* Link Styling */
+.md-typeset a {
+    color: var(--ed-primary);
+}
+
+.md-typeset a:hover {
+    color: var(--ed-primary-dark);
+}
+
+/* Code Blocks */
+.md-typeset code {
+    background-color: var(--ed-light-bg);
+    color: var(--ed-dark);
+    border-radius: 3px;
+    padding: 0.2rem 0.4rem;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+    border: 1px solid var(--ed-border);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--ed-light-bg);
+    color: var(--ed-dark);
+    font-weight: 600;
+}
+
+/* Navigation Banner - Match Corporate Website */
+.md-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Text Color */
+.md-header__title,
+.md-header__button,
+.md-header__topic {
+    color: var(--ed-dark) !important;
+}
+
+/* Navigation Links */
+.md-header-nav__button {
+    color: var(--ed-dark) !important;
+}
+
+.md-header-nav__button:hover {
+    opacity: 0.7;
+}
+
+/* Header Source/Repository Link */
+.md-header__source {
+    color: var(--ed-dark) !important;
+}
+
+.md-source {
+    color: var(--ed-dark) !important;
+}
+
+.md-source__icon {
+    color: var(--ed-dark) !important;
+}
+
+.md-source__repository {
+    color: var(--ed-dark) !important;
+}
+
+.md-source:hover {
+    opacity: 0.8;
+}
+
+/* Search Bar in Header */
+.md-search__input {
+    background-color: var(--ed-light-bg);
+    border: 1px solid var(--ed-border);
+}
+
+.md-search__icon {
+    color: var(--ed-dark) !important;
+}
+
+/* Tabs Navigation */
+.md-tabs {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--ed-border);
+}
+
+.md-tabs__link {
+    color: var(--ed-dark) !important;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.md-tabs__link:hover {
+    opacity: 1;
+    color: var(--ed-primary) !important;
+}
+
+.md-tabs__link--active {
+    color: var(--ed-primary) !important;
+    opacity: 1;
+    border-bottom: 2px solid var(--ed-primary);
+}
+
+/* Logo Styling */
+.md-header__logo img {
+    filter: none;
+}
+
+/* Search Bar */
+.md-search__input {
+    border-radius: 4px;
+}
+
+.md-search__input:focus {
+    border-color: var(--ed-primary);
+}
+
+/* Sidebar Active Links */
+.md-nav__link--active {
+    color: var(--ed-primary);
+    font-weight: 600;
+}
+
+/* Footer Styling */
+.md-footer {
+    background-color: var(--ed-dark);
+}
+
+/* Custom Alert Boxes */
+.ed-alert {
+    border-left: 4px solid var(--ed-primary);
+    background-color: rgba(0, 102, 204, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+.ed-alert-success {
+    border-left-color: var(--ed-secondary);
+    background-color: rgba(0, 166, 81, 0.05);
+}
+
+.ed-alert-warning {
+    border-left-color: var(--ed-accent);
+    background-color: rgba(255, 107, 53, 0.05);
+}
+
+/* Responsive Card Layout */
+@media screen and (max-width: 768px) {
+    .grid.cards > ul {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .grid.cards > ul > li {
+        padding: 1.5rem;
+    }
+}
+
+/* Badge Styling */
+.md-typeset .badge {
+    background-color: var(--ed-primary);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+/* Developer Resources Special Styling */
+.grid.cards > ul > li:has(strong:contains("Python SDK")),
+.grid.cards > ul > li:has(strong:contains("API")) {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
+}

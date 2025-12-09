@@ -42,7 +42,6 @@ site_url: 'https://earthdaily.github.io/documentation/' # Uncomment to set a can
 # +--------------------------------------------------------------------------------------------------------+
 copyright: © 2025 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the MIT License.|
 
-
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
 # | The base folder to use.                                                                                |
@@ -264,7 +263,6 @@ theme:
   # Announce
   #
   - announce.dismiss # Adds a "X" button to dismiss a news banner/mark it as read.*
-  
   # Header
   #
   #- header.autohide # Hide header when user scrolls past a specific point.
@@ -273,8 +271,8 @@ theme:
   #
   #- navigation.expand      # Expand all collapsable sections.
   #- navigation.instant     # Instant loading pages.
-  #- navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
-  #- navigation.sections    # Render top sections as groups.
+  - navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
+  - navigation.sections    # Render top sections as groups.
   - navigation.tabs         # Render top sections as tabs at the top.
   #- navigation.tabs.sticky # Tabs won't disappear when scrolling down. Requires "navigation.tabs".
   - navigation.path # Display a breadcrumb navigation above the page title
@@ -286,7 +284,7 @@ theme:
   - content.action.view #Display a view source button on the top of the page
   - content.code.copy #display copy button on code block
   - content.code.annotate #Enable code block comment
-
+  - content.tabs.link
   # Search
   #
   #- search.highlight # Search will highlight the searched word(s) on the page.*
@@ -387,7 +385,8 @@ theme:
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 extra_css:
-  - stylesheets/extra.css    #integration of extra css 
+  - stylesheets/extra.css  
+  - stylesheets/home.css
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -587,9 +586,17 @@ plugins:
 nav:
   - Home: index.md
   - Agriculture: 
-    - Parametric insurance: 
-      - Product: Agro/Parametric/parametric_insurance_product_site_draft.md
-      - User guide: Agro/Parametric/Swagger.md
+    - Agro/index.md 
+    - Digital Ag:
+      - Product: Agro/Digital_ag/Digital_ag_overview.md
+      - Field Boundaries: Agro/Digital_ag/Field_boundaries.md
+      - Field level maps and time series: Agro/Digital_ag/Field_level_ts_map_weather.md
+      - Crop events: Agro/Digital_ag/Crop_events_CD.md
+      - Benchmark: Agro/Digital_ag/Field_benchmark.md
+      - Decision support workflows: Agro/Digital_ag/DS_workflow_tools.md
+      - Testimonials: Agro/Digital_ag/Testimonials.md
+    - Territory Insights:
+      - Overview: Agro\Territory_insights\Territory_insights_overview.md
     - Portfolio Management:
       - Product: Agro/Portfolio/Product Overview page.md
       - Smart underwritting: Agro/Portfolio/Smart underwriting.md
@@ -612,6 +619,9 @@ nav:
         - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
       - Yield: Agro/Commodities_intelligence/yield.md
       - Case studies: Agro/Commodities_intelligence/case_studies.md
+    - Parametric insurance: 
+      - Product: Agro/Parametric/parametric_insurance_product_site_draft.md
+      - User guide: Agro/Parametric/Swagger.md
     - Analytic catalog:
       - Emergence: Agro/Library/Emergence.md
       - Emergence delay: Agro/Library/Emergence_Delay.md
@@ -623,8 +633,11 @@ nav:
       - Change index: Agro/Library/Change_Index.md
       - Crop id API: Agro/Library/FieldLevel_CropMask_API_v11092025.md
       - Regional Monitoring: Agro/Library/Regional_Monitoring.md
-#  - Help Center: 
-#    - Status: 
+  - Data: https://earthdaily.github.io/EDA-Documentation/
+  - Mining: https://mining.earthdaily.com/knowledge-base
+  - Help: 
+    - How to get support: help.md
+    - Service Status: https://edagro-status.earthdaily.com/
 #  - News:
 #    - blog/index.md
 #    - blog/tags.md

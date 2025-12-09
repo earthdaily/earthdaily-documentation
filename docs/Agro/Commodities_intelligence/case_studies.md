@@ -60,7 +60,3 @@ Weather insights and some analogies with the very poor 2012 crop vigor allowed u
 ![Additional analysis](../../assets/agro/commodities_intelligence/Picture10.png)
 
 
-
----
-
-*Documentation source: [EarthDaily Commodities Intelligence](https://earthdaily.github.io/earthdaily-documentation/Agro/Commodities_intelligence/commodities_product/)*
