@@ -208,16 +208,88 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
 ## 🔗 Support & Resources
 
-**Getting Started:**
-- Schedule a consultation to discuss your specific territory and use cases
-- Request a pilot program for your region
 
 **Use Case Examples:**
 
-**Fungicide Sales Growth**: A major agricultural retailer used Territory Insights to identify corn fields approaching the optimal fungicide application window (R1 growth stage), enabling agronomists to proactively contact growers. Result: 10% growth in fungicide adoption with estimated $4-6/acre margin improvement.
+<style>
+.compact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
 
-**Harvest Monitoring**: An auditing company deployed Territory Insights to remotely monitor soybean harvest timing, allowing inspectors to be deployed only when harvest was confirmed. Result: 60% reduction in unnecessary field visits.
+.compact-card {
+  padding: 0.75rem 1rem;
+  border-left: 2px solid var(--md-primary-fg-color);
+}
 
-**Biofuel Sourcing**: A renewable energy company identified growers with corn-soybean rotation patterns suitable for introducing oilseed crops into their portfolio. Result: 3x faster expansion of low-carbon feedstock sourcing network.
+.compact-card h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.compact-result {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.compact-card p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.35;
+}
+
+.compact-card a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--md-primary-fg-color);
+}
+
+.compact-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .compact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="compact-grid">
+  <div class="compact-card">
+    <h4>Fungicide Sales Growth</h4>
+    <div class="compact-result">↑ 10% growth • $4-6/acre margin</div>
+    <p>A major agricultural retailer used Territory Insights to identify corn fields approaching the optimal fungicide application window, enabling agronomists to proactively contact growers.</p>
+    <a href="#">Learn More →</a>
+  </div>
+
+  <div class="compact-card">
+    <h4>Harvest Monitoring</h4>
+    <div class="compact-result">↓ 60% reduction in field visits</div>
+    <p>An auditing company deployed Territory Insights to remotely monitor soybean harvest timing, allowing inspectors to be deployed only when harvest was confirmed.</p>
+    <a href="#">Learn More →</a>
+  </div>
+
+  <div class="compact-card">
+    <h4>Biofuel Sourcing</h4>
+    <div class="compact-result">× 3x faster sourcing expansion</div>
+    <p>A renewable energy company identified growers with corn-soybean rotation patterns suitable for introducing oilseed crops into their portfolio.</p>
+    <a href="#">Learn More →</a>
+  </div>
+</div>
+
+**Getting Started:**
+- Schedule a consultation to discuss your specific territory and use cases
+- Request a pilot program for your region
 
 [Contact Us](https://earthdaily.com/contact) to schedule a demo or get API access.
