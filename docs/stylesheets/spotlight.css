@@ -1,0 +1,288 @@
+/* ============================================
+   Feature Spotlight Section - Alternating Layout
+   ============================================ */
+
+.mdx-spotlight {
+  padding: 4rem 0 !important;
+  background-color: var(--md-default-bg-color) !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.mdx-spotlight .md-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+/* ============================================
+   Feature Cards - Side by Side
+   ============================================ */
+
+.mdx-spotlight__feature {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 2rem 0 !important;
+}
+
+/* Odd features (1st, 3rd): Image on RIGHT, Content on LEFT */
+.mdx-spotlight__feature:nth-child(odd) {
+  grid-template-areas: "content image" !important;
+}
+
+.mdx-spotlight__feature:nth-child(odd) > a {
+  grid-area: image !important;
+}
+
+.mdx-spotlight__feature:nth-child(odd) > figcaption {
+  grid-area: content !important;
+}
+
+/* Even features (2nd, 4th): Image on LEFT, Content on RIGHT */
+.mdx-spotlight__feature:nth-child(even) {
+  grid-template-areas: "image content" !important;
+}
+
+.mdx-spotlight__feature:nth-child(even) > a {
+  grid-area: image !important;
+}
+
+.mdx-spotlight__feature:nth-child(even) > figcaption {
+  grid-area: content !important;
+}
+
+/* Add separator between features */
+.mdx-spotlight__feature:not(:last-child) {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest) !important;
+  padding-bottom: 4rem !important;
+}
+
+/* ============================================
+   Feature Images
+   ============================================ */
+
+.mdx-spotlight__feature > a {
+  display: block !important;
+  overflow: hidden !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.mdx-spotlight__feature > a:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.mdx-spotlight__feature img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  transition: transform 0.3s ease !important;
+}
+
+.mdx-spotlight__feature:hover img {
+  transform: scale(1.05) !important;
+}
+
+/* ============================================
+   Feature Content
+   ============================================ */
+
+.mdx-spotlight__feature figcaption {
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.mdx-spotlight__feature h2 {
+  margin: 0 0 1.5rem !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  color: var(--md-default-fg-color) !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.mdx-spotlight__feature p {
+  margin: 0 0 1rem !important;
+  line-height: 1.7 !important;
+  font-size: 1rem !important;
+  color: var(--md-default-fg-color--light) !important;
+}
+
+.mdx-spotlight__feature p:last-child {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Strong text emphasis */
+.mdx-spotlight__feature strong {
+  color: var(--md-default-fg-color) !important;
+  font-weight: 600 !important;
+}
+
+/* ============================================
+   Learn More Links (Outline Button Style)
+   ============================================ */
+
+.mdx-spotlight__feature a[aria-label] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  padding: 0.75rem 1.5rem !important;
+  background-color: transparent !important;
+  border: 2px solid var(--md-primary-fg-color) !important;
+  border-radius: 0.25rem !important;
+  width: fit-content !important;
+}
+
+.mdx-spotlight__feature a[aria-label]:hover {
+  gap: 0.75rem !important;
+  background-color: var(--md-primary-fg-color) !important;
+  color: var(--md-primary-bg-color) !important;
+  transform: translateX(4px) !important;
+  border-color: var(--md-primary-fg-color) !important;
+}
+
+.mdx-spotlight__feature a[aria-label]:hover .twemoji svg {
+  fill: var(--md-primary-bg-color) !important;
+}
+
+.mdx-spotlight__feature .twemoji {
+  display: inline-flex !important;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
+
+.mdx-spotlight__feature .twemoji svg {
+  width: 100% !important;
+  height: 100% !important;
+  fill: var(--md-primary-fg-color) !important;
+  transition: fill 0.2s ease !important;
+}
+
+/* ============================================
+   Dark Mode
+   ============================================ */
+
+[data-md-color-scheme="slate"] .mdx-spotlight__feature > a {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-md-color-scheme="slate"] .mdx-spotlight__feature > a:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ============================================
+   Hidden Features
+   ============================================ */
+
+.mdx-spotlight__feature[hidden] {
+  display: none !important;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* Tablet: Stack vertically */
+@media screen and (max-width: 76.24em) {
+  .mdx-spotlight__feature {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: 
+      "image"
+      "content" !important;
+    gap: 2rem !important;
+  }
+  
+  .mdx-spotlight__feature:nth-child(odd),
+  .mdx-spotlight__feature:nth-child(even) {
+    grid-template-areas: 
+      "image"
+      "content" !important;
+  }
+  
+  .mdx-spotlight__feature h2 {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Mobile: Smaller spacing */
+@media screen and (max-width: 44.99em) {
+  .mdx-spotlight {
+    padding: 2rem 0 !important;
+  }
+  
+  .mdx-spotlight .md-grid {
+    gap: 3rem !important;
+    padding: 0 1rem !important;
+  }
+  
+  .mdx-spotlight__feature {
+    padding: 1.5rem 0 !important;
+  }
+  
+  .mdx-spotlight__feature:not(:last-child) {
+    padding-bottom: 3rem !important;
+  }
+  
+  .mdx-spotlight__feature h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .mdx-spotlight__feature p {
+    font-size: 0.95rem !important;
+  }
+  
+  .mdx-spotlight__feature a[aria-label] {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
+/* ============================================
+   Accessibility
+   ============================================ */
+
+.mdx-spotlight__feature:focus-within {
+  outline: 2px solid var(--md-accent-fg-color) !important;
+  outline-offset: 2px !important;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .mdx-spotlight__feature > a,
+  .mdx-spotlight__feature img,
+  .mdx-spotlight__feature a[aria-label] {
+    transition: none !important;
+  }
+  
+  .mdx-spotlight__feature > a:hover {
+    transform: none !important;
+  }
+  
+  .mdx-spotlight__feature:hover img {
+    transform: none !important;
+  }
+  
+  .mdx-spotlight__feature a[aria-label]:hover {
+    transform: none !important;
+  }
+}

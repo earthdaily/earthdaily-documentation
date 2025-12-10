@@ -387,6 +387,8 @@ theme:
 extra_css:
   - stylesheets/extra.css  
   - stylesheets/home.css
+  - stylesheets/spotlight.css 
+
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -402,6 +404,7 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
   - js/nav_open_new_tab.js
+  - js/spotlight.js
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

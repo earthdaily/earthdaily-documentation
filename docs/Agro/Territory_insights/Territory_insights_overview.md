@@ -26,6 +26,7 @@ Territory Insights addresses this challenge by providing real-time, field-level 
 - **Agricultural Retailers & Cooperatives**: Organizations managing large territories and grower networks seeking to optimize sales team efficiency and input placement strategies
 - **Agronomists & Crop Advisors**: Professionals needing real-time crop insights to provide timely, relevant recommendations across multiple grower accounts
 - **Agricultural Input Companies**: Seed, fertilizer, and crop protection companies looking to scale their market reach and improve ROI on product placement
+- **Marketing Teams**: Agricultural marketing professionals executing crop status-based campaigns, enabling precision targeting of growers or accounts matching specific conditions such as growth stage, yield potential, or weather patterns for timely and contextually relevant messaging
 - **Grain Buyers & Elevators**: Organizations wanting to synchronize grain marketing discussions with optimal crop timing
 - **Agricultural Auditing Companies**: Firms requiring efficient prioritization of ground survey work and remote harvest monitoring capabilities
 - **Renewable Energy Companies**: Biofuel producers seeking to scale low-carbon sourcing through identification of growers with favorable crop rotation patterns
@@ -147,17 +148,17 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 **How It Works:**
 
 1. **Territory Setup**: Define your geographic area of interest (state, county, or custom boundary)
-2. **Automated Monitoring**: AI models continuously analyze satellite imagery to delineate field boundaries and identify crops
+2. **Automated Monitoring**: AI models continuously analyze satellite imagery to identify crops and emergence
 3. **Predictive Analytics**: Machine learning algorithms combine imagery time series with weather data to predict growth stages and assess yield potential
-4. **Insight Delivery**: Consolidated reports and alerts delivered through dashboards, APIs, or integrated into existing systems
-5. **Action**: Sales teams receive prioritized lists of growers, optimal timing windows, and tailored messaging for maximum engagement
+4. **Insight Delivery**: Consolidated reports and alerts delivered through data export, dashboards, APIs, or integrated into existing systems
+5. **Action**: Sales teams receive prioritized lists of location, optimal timing windows, and tailored messaging for maximum engagement
 
 **Key Differentiators:**
 
 - **Zero Manual Input**: Unlike traditional field monitoring that requires growers to upload field boundaries or self-report planting dates, Territory Insights automatically generates all intelligence
 - **Predictive Not Just Reactive**: Forecasts growth stages days in advance rather than just reporting current status
-- **Scale Without Complexity**: Monitor thousands of fields across entire territories with the same ease as monitoring a single field
-- **Agronomic Context**: Insights come with clear explanations of why they matter and what actions to take
+- **Scale Without Complexity**: Monitor hundreds of thousands of fields across entire territories with the same ease as monitoring a single field
+- **Agronomic Context**: Insights come with clear and factural explanations of why they matter and what actions to take
 
 ## 📊 Data & Analytics Coverage
 
@@ -191,8 +192,8 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 - Expanding: Canada, Brazil, Argentina, and other key agricultural markets
 
 **Temporal Coverage:**
-- Current season monitoring (daily to weekly updates depending on imagery availability)
-- Historical baseline (3-5 years of historical crop performance data)
+- Current season monitoring (daily to weekly updates depending on requirements)
+- Historical baseline (5-10 years of historical crop performance data)
 - Predictive forecasting (7-21 days ahead for growth stage predictions)
 
 **Spatial Resolution:**
@@ -202,15 +203,14 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
 **Data Sources:**
 - Multi-satellite imagery (Sentinel-2, Landsat, and commercial providers)
-- Weather stations and gridded weather datasets
-- USDA Cropland Data Layer and other reference datasets
+- Multi weather datasets
+- Other public reference datasets
 
 ## 🔗 Support & Resources
 
 **Getting Started:**
 - Schedule a consultation to discuss your specific territory and use cases
 - Request a pilot program for your region
-- API documentation and integration guides available upon access approval
 
 **Use Case Examples:**
 

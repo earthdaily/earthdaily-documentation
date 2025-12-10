@@ -5,37 +5,55 @@
   {{ super() }}
   
   <!-- Additional styles for landing page -->
-  <style>
-    /* Application header should be static for the landing page */
-    .md-header {
-      position: initial;
-    }
-    
-    /* Remove spacing, as we cannot hide it completely */
-    .md-main__inner {
-      margin: 0;
-    }
-    
-    /* Hide main content for now */
-    .md-content {
+<style>
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
+  
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
+  
+  /* NUCLEAR OPTION - Force visibility at all levels */
+  .md-content,
+  .md-main .md-content,
+  body .md-content,
+  html .md-content {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+  }
+  
+  /* Hide only the inner markdown content */
+  .md-content__inner {
+    display: none !important;
+  }
+  
+  /* Make sure spotlight is visible */
+  .mdx-spotlight {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
       display: none;
     }
-    
-    /* Hide table of contents */
-    @media screen and (min-width: 60em) {
-      .md-sidebar--secondary {
-        display: none;
-      }
-    }
-    
-    /* Hide navigation */
-    @media screen and (min-width: 76.25em) {
-      .md-sidebar--primary {
-        display: none;
-      }
-    }
-  </style>
+  }
   
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+
   <!-- Hero for landing page -->
   <section class="mdx-container">
     <div class="md-grid md-typeset">
@@ -45,7 +63,7 @@
         <div class="mdx-hero__image">
           <img
             src="assets/EarthDaily_Constellation_Hero.jpg"
-            alt=""
+            alt="EarthDaily Constellation"
             width="1659"
             height="1200"
             draggable="false"
@@ -57,21 +75,175 @@
           <h1>{{ config.site_name }}</h1>
           <p>{{ config.site_description }}</p>
           <a
-            href="{{ 'getting-started/' | url }}"
+            href="https://earthdaily.com"
             title="Get Started"
             class="md-button md-button--primary"
+            target="_blank"
+            rel="noopener"
           >
             Get Started
           </a>
           <a
-            href="{{ 'documentation/' | url }}"
-            title="Documentation"
+            href="https://earthdaily.com/contact"
+            title="Contact us"
             class="md-button"
+            target="_blank"
+            rel="noopener"
           >
-            Documentation
+            Contact Us
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Feature Spotlight Section -->
+  <section class="mdx-spotlight">
+    <div class="md-grid">
+      
+      <!-- Feature 1: Satellite Imagery -->
+      <figure class="mdx-spotlight__feature">
+        <a href="Agro/" tabindex="-1" title="Satellite Imagery">
+          <img 
+            src="./assets/earthdaily-agriculture-fields.jpg"
+            alt="EarthDaily Agriculture" 
+            loading="lazy" 
+            width="500" 
+            height="327"
+          >
+        </a>
+        <figcaption class="md-typeset">
+          <h2>Agriculture</h2>
+          <p>
+            Access <strong>ag analytics</strong> derived from EarthDaily's constellation 
+            for precise crop monitoring and field-level analytics.
+          </p>
+          <p>
+            Monitor vegetation health, track crop development, detect anomalies, predict yield with real time data.
+          </p>
+          <p>
+            <a href="Agro/" aria-label="EarthDaily Agriculture">
+              <span class="twemoji">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path>
+                </svg>
+              </span>
+              Discover
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+
+      <!-- Feature 2: API Framework -->
+      <figure class="mdx-spotlight__feature">
+        <a href="Agro/api-framework/" title="API Framework" tabindex="-1">
+          <img 
+            src="https://via.placeholder.com/500x327/2196F3/FFFFFF?text=API+Framework"
+            alt="API Framework" 
+            loading="lazy" 
+            width="500" 
+            height="327"
+          >
+        </a>
+        <figcaption class="md-typeset">
+          <h2>Powerful Python API Framework</h2>
+          <p>
+            Built for developers who need <strong>enterprise-grade data extraction</strong> 
+            with minimal setup. Our Python framework provides <strong>unified access</strong> 
+            to all EarthDaily Agro services through intuitive extractors.
+          </p>
+          <p>
+            Extract vegetation indices, weather data, crop identification, and field-level 
+            mapping with <strong>automatic authentication</strong>, <strong>retry logic</strong>, 
+            and <strong>comprehensive logging</strong>. Scale from single fields to 
+            continental operations.
+          </p>
+          <p>
+            <a href="Agro/api-framework/" aria-label="API Framework">
+              <span class="twemoji">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path>
+                </svg>
+              </span>
+              Learn more
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+
+      <!-- Feature 3: Crop Analytics -->
+      <figure class="mdx-spotlight__feature">
+        <a href="Agro/crop-analytics/" tabindex="-1" title="Crop Analytics">
+          <img 
+            src="https://via.placeholder.com/500x327/FF9800/FFFFFF?text=Crop+Analytics"
+            alt="Crop Analytics" 
+            loading="lazy" 
+            width="500" 
+            height="327"
+          >
+        </a>
+        <figcaption class="md-typeset">
+          <h2>Advanced Crop Analytics</h2>
+          <p>
+            Transform satellite data into <strong>actionable insights</strong> with our 
+            comprehensive suite of agricultural analytics. From <strong>emergence 
+            detection</strong> to <strong>yield prediction</strong>, get the intelligence 
+            you need for precision agriculture.
+          </p>
+          <p>
+            Monitor crop vigor with NDVI time series, identify field boundaries, detect 
+            crop types, and track phenological stages with <strong>AI-powered analysis</strong> 
+            that works at scale.
+          </p>
+          <p>
+            <a href="Agro/crop-analytics/" aria-label="Crop Analytics">
+              <span class="twemoji">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.flames 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path>
+                </svg>
+              </span>
+              Learn more
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+
+      <!-- Feature 4: Weather Data -->
+      <figure class="mdx-spotlight__feature">
+        <a href="Agro/weather-data/" tabindex="-1" title="Weather Data">
+          <img 
+            src="https://via.placeholder.com/500x327/9C27B0/FFFFFF?text=Weather+Data"
+            alt="Weather Data" 
+            loading="lazy" 
+            width="500" 
+            height="327"
+          >
+        </a>
+        <figcaption class="md-typeset">
+          <h2>Comprehensive Weather Data</h2>
+          <p>
+            Integrate <strong>historical and real-time weather data</strong> with your 
+            satellite imagery for complete field intelligence. Access temperature, 
+            precipitation, humidity, and more with <strong>field-level precision</strong>.
+          </p>
+          <p>
+            Build predictive models, optimize irrigation, and plan field operations with 
+            confidence using our <strong>climatology-adjusted forecasts</strong> and 
+            historical weather archives.
+          </p>
+          <p>
+            <a href="Agro/weather-data/" aria-label="Weather Data">
+              <span class="twemoji">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path>
+                </svg>
+              </span>
+              Learn more
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+
     </div>
   </section>
 {% endblock %}
