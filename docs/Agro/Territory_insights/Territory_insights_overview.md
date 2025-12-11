@@ -163,28 +163,7 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
 **Use Case Examples:**
 
-<div class="compact-grid">
-  <div class="compact-card">
-    <h4>Fungicide Sales Growth</h4>
-    <div class="compact-result">↑ 10% growth • $4-6/acre margin</div>
-    <p>A major agricultural retailer used Territory Insights to identify corn fields approaching the optimal fungicide application window, enabling agronomists to proactively contact growers.</p>
-    <a href="#">Learn More →</a>
-  </div>
 
-  <div class="compact-card">
-    <h4>Harvest Monitoring</h4>
-    <div class="compact-result">↓ 60% reduction in field visits</div>
-    <p>An auditing company deployed Territory Insights to remotely monitor soybean harvest timing, allowing inspectors to be deployed only when harvest was confirmed.</p>
-    <a href="#">Learn More →</a>
-  </div>
-
-  <div class="compact-card">
-    <h4>Biofuel Sourcing</h4>
-    <div class="compact-result">× 3x faster sourcing expansion</div>
-    <p>A renewable energy company identified growers with corn-soybean rotation patterns suitable for introducing oilseed crops into their portfolio.</p>
-    <a href="#">Learn More →</a>
-  </div>
-</div>
 
 **Getting Started:**
 - Schedule a consultation to discuss your specific territory and use cases
