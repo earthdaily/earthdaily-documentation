@@ -4,109 +4,6 @@ description: This page is dedicated to presentation of Territory Insights produc
 icon: material/wallet-outline
 ---
 
-<style>
-/* Module layout styles */
-.module-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin: 2rem 0;
-}
-
-.module-reverse {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin: 2rem 0;
-}
-
-.module-text {
-  padding: 1rem;
-}
-
-.module-image {
-  padding: 1rem;
-}
-
-.module-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Compact card styles */
-.compact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-.compact-card {
-  padding: 0.75rem 1rem;
-  border-left: 2px solid var(--md-primary-fg-color);
-}
-
-.compact-card h4 {
-  margin: 0 0 0.4rem 0;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.compact-result {
-  font-size: 0.7rem;
-  font-weight: 600;
-  margin-bottom: 0.6rem;
-  padding: 0.3rem 0.5rem;
-  background: var(--md-primary-fg-color);
-  color: white;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.compact-card p {
-  margin: 0.5rem 0 0.5rem 0;
-  font-size: 0.7rem;
-  color: var(--md-default-fg-color--light);
-  line-height: 1.35;
-}
-
-.compact-card a {
-  font-size: 0.7rem;
-  text-decoration: none;
-  color: var(--md-primary-fg-color);
-}
-
-.compact-card a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive design */
-@media (max-width: 1024px) {
-  .compact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .module-container,
-  .module-reverse {
-    grid-template-columns: 1fr;
-  }
-  
-  .module-image {
-    order: 1;
-  }
-  
-  .module-text {
-    order: 2;
-  }
-}
-</style>
-
 # Territory Insights
 
 ## 🌾 Introduction
@@ -135,6 +32,54 @@ Territory Insights addresses this challenge by providing real-time, field-level 
 - **Renewable Energy Companies**: Biofuel producers seeking to scale low-carbon sourcing through identification of growers with favorable crop rotation patterns
 
 ## 🚜 Product, Modules & Capabilities
+
+<style>
+.module-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.module-text {
+  padding: 1rem;
+}
+
+.module-image {
+  padding: 1rem;
+}
+
+.module-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .module-container {
+    grid-template-columns: 1fr;
+  }
+  .module-reverse {
+    grid-template-columns: 1fr;
+  }
+  .module-image {
+    order: 1;
+  }
+  .module-text {
+    order: 2;
+  }
+}
+
+.module-reverse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+</style>
 
 <div class="module-container">
   <div class="module-text">
@@ -263,7 +208,62 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
 ## 🔗 Support & Resources
 
+
 **Use Case Examples:**
+
+<style>
+.compact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.compact-card {
+  padding: 0.75rem 1rem;
+  border-left: 2px solid var(--md-primary-fg-color);
+}
+
+.compact-card h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.compact-result {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.compact-card p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.35;
+}
+
+.compact-card a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--md-primary-fg-color);
+}
+
+.compact-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .compact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 <div class="compact-grid">
   <div class="compact-card">
