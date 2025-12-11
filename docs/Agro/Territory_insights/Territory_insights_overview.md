@@ -4,41 +4,6 @@ description: This page is dedicated to presentation of Territory Insights produc
 icon: material/wallet-outline
 ---
 
-<style>
-/* Module layout styles */
-.module-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin: 2rem 0;
-}
-
-.module-reverse {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin: 2rem 0;
-}
-
-.module-text {
-  padding: 1rem;
-}
-
-.module-image {
-  padding: 1rem;
-}
-
-.module-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-</style>
 
 # Territory Insights
 
