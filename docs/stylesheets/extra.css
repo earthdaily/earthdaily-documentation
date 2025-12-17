@@ -1,4 +1,41 @@
 
+/*______________________________________________________*/
+/* Side nav styling                                     */
+/*______________________________________________________*/
+
+/* Indent only the navigation content, not the top-level section titles */
+.md-nav__item--section > .md-nav > .md-nav__list {
+    margin-left: 0.75rem; /* Adjust the value (e.g., 0.5rem, 2em, 20px) as needed */
+}
+
+/* Further indent nested levels if needed */
+.md-nav__list .md-nav__list {
+    margin-left: 0.5rem; /* Adjust this value for deeper nesting */
+}
+
+/* Make the font color of the sub-titles (pages) darker */
+.md-nav__link {
+    color: #161616; /* A slightly lighter dark color for sub-items */
+}
+
+/* Make the font color of section titles darker */
+.md-nav__item--section > .md-nav__link {
+    color: #070707; /* Use a specific hex code or RGB value */
+}
+
+/* Style the individual navigation items under sections */
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item {
+    padding: 0;
+}
+
+/* Style the font color of links within those items */
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item .md-nav__link {
+    color: #161616; /* Adjust to your preferred color */
+}
+
+/*______________________________________________________*/
+/* Core page styling                                    */
+/*______________________________________________________*/
 
 .md-header__button.md-logo {
   margin-top: 3;
