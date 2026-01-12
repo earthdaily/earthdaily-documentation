@@ -99,6 +99,5 @@ Explore further details in our [API Documentation](#)
 
 ---
 
-## 🧭 Getting Started  
-Schedule a personalized demo [here](https://earthdaily.com/contact).
+--8<-- "snippets/contact-footer.md"
 

@@ -14,3 +14,5 @@ EarthDaily's Yield Elaboration Method starts with answering these key questions:
 ![Weather Monitoring](../../assets/agro/commodities_intelligence/Weather.png)
 ![Historical Analog Detection](../../assets/agro/commodities_intelligence/Current Season Comparison.png)
 ![Historical Dataset Comparisons](../../assets/agro/commodities_intelligence/Reference Sources.png)
+
+--8<-- "snippets/contact-footer.md"

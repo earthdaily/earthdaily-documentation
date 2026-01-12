@@ -102,4 +102,4 @@ Explore full technical specifications in our [API Documentation](../Library/Fiel
 
 ---
 
-👉 **Ready to get started?** [Contact us](https://earthdaily.com/contact) to request API access or schedule a demo.
+--8<-- "snippets/contact-footer.md"

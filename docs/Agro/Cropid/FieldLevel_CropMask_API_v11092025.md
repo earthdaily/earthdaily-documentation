@@ -130,4 +130,4 @@ You can use this interface to:
 
 
 
-[Contact Us](https://earthdaily.com/contact) to schedule a demo or get API access.
+--8<-- "snippets/contact-footer.md"

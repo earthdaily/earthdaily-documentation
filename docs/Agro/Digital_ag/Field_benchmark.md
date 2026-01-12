@@ -46,3 +46,4 @@ The Field Ranking analytic compares the growth development of a defined set of f
 A complete, season-long intelligence layer that transforms how you monitor crop growth, compare field performance, and detect agronomic change. You will manage fields with more confidence than ever before.
 
 ---
+--8<-- "snippets/contact-footer.md"

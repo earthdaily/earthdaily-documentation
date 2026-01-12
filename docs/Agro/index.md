@@ -48,10 +48,10 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     AI-powered crop type identification across the US, Brazil, and Western Europe with field-level accuracy.
 
-    [:octicons-arrow-right-24: Learn more](Cropid/cropid_product)
+    [:octicons-arrow-right-24: Learn more](Cropid/crop_identification_OverviewPage_v11092025)
 
 
--   :material-target-variant:{ .lg .middle } __Territory Insgiths__
+-   :material-target-variant:{ .lg .middle } __Territory Insights__
 
     ---
     

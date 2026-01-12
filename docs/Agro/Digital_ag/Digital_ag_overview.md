@@ -70,5 +70,5 @@ Explore further details in our [API Documentation](#).
 
 ---
 
-
+--8<-- "snippets/contact-footer.md"
 

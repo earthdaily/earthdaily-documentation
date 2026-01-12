@@ -115,3 +115,5 @@ The API is built on top of the **EarthDaily platform** and follows the [STAC (Sp
 - Apply **filters** (`bbox`, `datetime`) to reduce query size.  
 - Cache authentication tokens until expiry.  
 - Request access to `edagro-analytics-crops-layer` to access any dataset.  
+
+--8<-- "snippets/contact-footer.md"

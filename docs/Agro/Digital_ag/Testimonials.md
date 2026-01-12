@@ -20,3 +20,4 @@ To build on this success, SOYL also began utilizing **NDVI**, **CVI**, and autom
 
 ---
 
+--8<-- "snippets/contact-footer.md"

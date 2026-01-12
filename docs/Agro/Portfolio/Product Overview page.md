@@ -1,7 +1,7 @@
 ---
 title: Product Overview - Innovative Ag-Insurance Solution for Portfolio Management
 description: Transform how you manage ag insurance – from smarter underwriting to faster claims – with satellite intelligence and AI at your fingertips.  
-status: new
+#status: new
 ---
 
 # 🌱 Innovative Ag-Insurance Solution for Portfolio Management
@@ -65,4 +65,4 @@ Two main options:
 - **APIs** for seamless integration.
 - **Web-based dashboards** for underwriters and analysts.
 
-To schedule a demo, contact us [here](https://earthdaily.com/contact)
+--8<-- "snippets/contact-footer.md"

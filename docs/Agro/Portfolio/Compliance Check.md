@@ -1,7 +1,7 @@
 ---
 title: Compliance Checks
 description: With environmental regulations and sustainability standards tightening worldwide, insurers have a crucial role in ensuring the growers they support meet all legal and environmental requirements. Compliance checks are no longer optional – but manual, time-consuming processes make it tough to keep up, especially across large, diverse portfolios. Whether you’re tracking land use, monitoring protected zones, or applying your own compliance rules, the Compliance Check module offers a scalable, objective, and customizable approach to evaluate growers' practices across your portfolio.
-status: new
+#status: new
 ---
 
 # 🛡️ Compliance Check
@@ -147,3 +147,5 @@ Once a compliance analysis has been done on the field you can access all its det
 * Eventually, the last one allows you to downloaded the PDF of your report with all previous information generated
 
 ![Compliance layers 4 ](../../assets/agro/portfolio-management/Compliance_layers_4.png)
+
+--8<-- "snippets/contact-footer.md"

@@ -84,4 +84,4 @@ The coverage spans the entire territories of France and Germany.
 
 ---
 
-👉 **Ready to get started?** Contact us to request API access or schedule a demo.
+--8<-- "snippets/contact-footer.md"

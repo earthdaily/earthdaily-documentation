@@ -35,4 +35,4 @@ EarthDaily has designed this product for organizations that need timely, accurat
 Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link).
 
 
----
+--8<-- "snippets/contact-footer.md"

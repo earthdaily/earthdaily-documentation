@@ -2,7 +2,7 @@
 title: In-season Potential Score
 description: This section explains everything you need to know about the In-season Potential Score analytic.
 # icon: fontawesome/question
-status: new
+#status: new
 ---
 
 # In-season Potential Score
@@ -107,3 +107,4 @@ This analytic is used in:
 | **AOI (Area of Interest)**       | User-defined area for analysis. |
 
 ---
+--8<-- "snippets/contact-footer.md"

@@ -1,8 +1,8 @@
 ---
 title: Parametric Insurance Data Pipeline
 description: Nullam urna elit, malesuada eget finibus ut, ac tortor. 
-icon: material/api
-status: new
+#icon: material/api
+#status: new
 ---
 
 # Parametric Insurance Data Service
@@ -75,4 +75,4 @@ The following image highlights regional data availability for key NDVI and meteo
 
 Launch your parametric product today with EarthDaily’s trusted, validated datasets and API-first delivery.
 
-[Contact Us](#) to schedule a demo or get API access.
+--8<-- "snippets/contact-footer.md"

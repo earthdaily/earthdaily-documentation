@@ -2,7 +2,7 @@
 title: Automatic Boundary
 description: This section wil explain how to access field borders using a longitude and a latitude as the input. 
 # icon: fontawesome/question
-status: new
+#status: new
 ---
 
 # Automatic Field Borders
@@ -42,3 +42,5 @@ Intersection of Union average accuracy score of 0.94-0.96.
 This analytic is used in:
     - [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/)
     - 
+
+--8<-- "snippets/contact-footer.md"

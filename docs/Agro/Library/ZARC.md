@@ -2,7 +2,7 @@
 title: ZARC (Agricultural Zoning of Climate Risk)
 description: This section explains everything you need to know about the ZARC analytic.
 # icon: fontawesome/question
-status: new
+#status: new
 ---
 
 # ZARC (Agricultural Zoning of Climate Risk)
@@ -162,3 +162,4 @@ This analytic is used in:
 
 
 ---
+--8<-- "snippets/contact-footer.md"

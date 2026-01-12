@@ -34,12 +34,12 @@ A set of analytics is generated for each policy and field in your portfolio – 
 
 | **Analytics** | **Description** | **Technical details** |
 |---------------|-----------------|------------------------|
-| **Planting Period Validation (ZARC)** | Assesses whether the sowing date falls within the legal planting window defined by Brazil’s Agricultural Climate Risk Zoning (ZARC) guidelines, identifying non-compliant practices. | Link to Analytic Library |
-| **Detected Emergence Date and Emergence Delay** | Confirms whether the crop has successfully emerged after planting and measures timing of emergence vs. historical averages. Delays may signal stress factors. | Link to Analytic Library |
-| **Detected Planted Area vs Declared Area (Planted Area Control)** | Identifies actual crop area via satellite and compares with farmer-declared area. Helps verify declarations and reduce fraud. | Link to Analytic Library |
-| **In-Season Potential Score** | Evaluates a field’s in-season performance using satellite imagery. Score of 50 = low, 70 = high. Ensures consistent and scalable risk assessment. | Link to Analytic Library |
-| **Relative Potential Score (vs History)** | Assesses if in-season performance is above or below historical trends for the same crop, identifying stress or underperformance. | Link to Analytic Library |
-| **Detected Harvest Date** | Identifies field harvest timing, marking end of insured period and status of claims. | Link to Analytic Library |
+| **Planting Period Validation (ZARC)** | Assesses whether the sowing date falls within the legal planting window defined by Brazil’s Agricultural Climate Risk Zoning (ZARC) guidelines, identifying non-compliant practices. | [Learn more ](../Library/ZARC.md)|
+| **Detected Emergence Date and Emergence Delay** | Confirms whether the crop has successfully emerged after planting and measures timing of emergence vs. historical averages. Delays may signal stress factors. | [Learn more ](../Library/Emergence.md) |
+| **Detected Planted Area vs Declared Area (Planted Area Control)** | Identifies actual crop area via satellite and compares with farmer-declared area. Helps verify declarations and reduce fraud. | [Learn more ](../Library/) |
+| **In-Season Potential Score** | Evaluates a field’s in-season performance using satellite imagery. Score of 50 = low, 70 = high. Ensures consistent and scalable risk assessment. | [Learn more ](../Library/In-season_Potential_Score.md) |
+| **Relative Potential Score (vs History)** | Assesses if in-season performance is above or below historical trends for the same crop, identifying stress or underperformance. | [Learn more ](../Library/In-season_Potential_Score.md) |
+| **Detected Harvest Date** | Identifies field harvest timing, marking end of insured period and status of claims. | [Learn more ](../Library/)|
 
 ---
 
@@ -117,3 +117,5 @@ Provides a real-time overview of crop development by key stages, enabling insure
 ### 🧾 Harvest Detection
 
 - % of portfolio with detected harvest and acreage – indicates end of insured period
+
+--8<-- "snippets/contact-footer.md"

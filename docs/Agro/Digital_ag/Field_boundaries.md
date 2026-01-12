@@ -38,5 +38,5 @@ Additional countries and crops could be supported upon request or as part of our
 ---
  
 
-
+--8<-- "snippets/contact-footer.md"
  

@@ -1,7 +1,7 @@
 ---
 title: Fintech Portfolio management
 description: This page is dedicated to presentation of Portfolio management product
-icon: material/wallet-outline
+#icon: material/wallet-outline
 ---
 
 # Fintech Portfolio management
@@ -93,4 +93,4 @@ just insuring farms -- you're ensuring smarter outcomes.
 
 Launch your parametric product today with EarthDaily’s trusted, validated datasets and API-first delivery.
 
-[Contact Us](#) to schedule a demo or get API access.
+--8<-- "snippets/contact-footer.md"

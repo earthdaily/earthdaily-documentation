@@ -1,8 +1,8 @@
 ---
 title: Regional Monitoring API
 description: Overview of EarthDaily's Regional Monitoring API, including environments, workflows, weather data chain, and integration details.
-icon: material/api
-status: new
+#icon: material/api
+#status: new
 ---
 
 # 🌍 Regional Monitoring API
@@ -154,5 +154,5 @@ All endpoints require secure access via **Identity Server API**, which manages:
 
 ---
 
-Need Postman collections or API keys? Reach out to your EarthDaily Agro contact.
+--8<-- "snippets/contact-footer.md"
 

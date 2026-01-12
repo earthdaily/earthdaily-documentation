@@ -2,7 +2,7 @@
 title: Historical Potential Score
 description: This section explains everything you need to know about the Historical Potential Score analytic.
 # icon: fontawesome/question
-status: new
+#status: new
 ---
 
 # Historical Potential Score
@@ -125,3 +125,4 @@ This analytic is used in:
 | **AOI (Area of Interest)**       | User-defined area for analysis. |
 
 ---
+--8<-- "snippets/contact-footer.md"

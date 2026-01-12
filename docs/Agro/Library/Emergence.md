@@ -1,7 +1,7 @@
 ---
 title: Emergence
 description: This section explains everything you need to know about emergence detection.
-status: new
+# status: new
 ---
 
 # Emergence Detection
@@ -91,3 +91,4 @@ This analytic is used in:
 
 ---
 
+--8<-- "snippets/contact-footer.md"

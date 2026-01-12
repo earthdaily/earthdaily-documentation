@@ -25,3 +25,4 @@ With 35 years of experience, we’ve learned a great deal from our customers. Th
 - **Notifications** configured to your preferences, adjustable anytime  
 - **Email campaigns** with vital, up-to-date information and insights
 ---
+--8<-- "snippets/contact-footer.md"

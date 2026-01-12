@@ -76,5 +76,5 @@ Key agricultural zones including Mato Grosso, Paraná, Goiás, Bahia, and others
 
 ---
 
-👉 **Ready to get started?** [Contact us](https://earthdaily.com/contact) to request API access or schedule a demo.
+--8<-- "snippets/contact-footer.md"
 

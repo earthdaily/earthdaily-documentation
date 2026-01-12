@@ -31,3 +31,4 @@ Learn more about **Change Detection** [here](https://earthdaily.github.io/earthd
 ---
 
 
+--8<-- "snippets/contact-footer.md"

@@ -87,6 +87,5 @@ Yes, we deliver crop classification data 6 to 12 months before local agencies.
 
 ---
 
-## 🧭 Getting Started  
-Schedule a personalized demo [here](https://earthdaily.com/contact).
+--8<-- "snippets/contact-footer.md"
 

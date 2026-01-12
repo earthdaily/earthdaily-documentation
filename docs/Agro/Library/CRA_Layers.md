@@ -2,7 +2,7 @@
 title: Environmental Layers
 description: This section explains everything you need to know about the layers used in Environmental Compliance Report analytic.
 # icon: fontawesome/question
-status: new
+#status: new
 ---
 
 # Environmental Layers
@@ -82,3 +82,4 @@ The **Environmental Layers** provide access to a comprehensive collection of geo
 
 ---
 
+--8<-- "snippets/contact-footer.md"

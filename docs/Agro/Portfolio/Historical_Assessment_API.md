@@ -1,8 +1,8 @@
 ---
 title: Historical Assessment API
 description: The Historical Assessment API empowers insurance professionals to request and retrieve historical performance analytics for growers during the policy underwriting phase, enabling objective risk evaluations and faster decisions.
-icon: material/api
-status: new
+# icon: material/api
+# status: new
 ---
 # Historical Assessment API
 
@@ -309,4 +309,4 @@ Response body example
 
 ---
 
-Need Postman collections or API keys? Reach out to your EarthDaily Agro contact.
+--8<-- "snippets/contact-footer.md"

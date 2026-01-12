@@ -261,14 +261,11 @@ theme:
   # +------------------------------------------------------------------------------------------------------+
   features:
   # Announce
-  #
   - announce.dismiss # Adds a "X" button to dismiss a news banner/mark it as read.*
   # Header
-  #
   #- header.autohide # Hide header when user scrolls past a specific point.
   
   # Navigation:
-  #
   #- navigation.expand      # Expand all collapsable sections.
   #- navigation.instant     # Instant loading pages.
   - navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
@@ -286,10 +283,9 @@ theme:
   - content.code.annotate #Enable code block comment
   - content.tabs.link
   # Search
-  #
-  #- search.highlight # Search will highlight the searched word(s) on the page.*
-  #- search.share     # Adds an option to share a search query link.*
-  #- search.suggest   # Search will suggest the likeliest completion for a word.*
+  - search.highlight # Search will highlight the searched word(s) on the page.*
+  - search.share     # Adds an option to share a search query link.*
+  - search.suggest   # Search will suggest the likeliest completion for a word.*
   
   # Table of Contents
   #
@@ -520,7 +516,8 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:           
+      base_path: docs
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -551,6 +548,11 @@ plugins:
   - swagger-ui-tag
   - meta
   - tags
+  - search:
+      lang:
+        - en  
+      separator: '[\s\-\.]+'
+
 #  - mkdocstrings
 #  - blog:
 #      blog_toc: true
@@ -602,7 +604,7 @@ nav:
       - Overview: Agro/Territory_insights/Territory_insights_overview.md
     - Portfolio Management:
       - Product: Agro/Portfolio/Product Overview page.md
-      - Smart underwritting: Agro/Portfolio/Smart underwriting.md
+      - Smart underwriting: Agro/Portfolio/Smart underwriting.md
       - Historical Assessment: Agro/Portfolio/Historical_Assessment_API.md
       - Environmental Compliance: Agro/Portfolio/Compliance Check.md
       - In-Season Monitoring: Agro/Portfolio/In-Season Monitoring.md

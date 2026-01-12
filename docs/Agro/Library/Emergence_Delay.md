@@ -2,7 +2,7 @@
 title: Emergence
 description: This section wil explain all you need to know on emergence detection. 
 # icon: fontawesome/question
-status: new
+#status: new
 ---
 
 #  Emergence Delay
@@ -81,3 +81,4 @@ This analytic is used in:
 
 
 
+--8<-- "snippets/contact-footer.md"
