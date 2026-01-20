@@ -4,7 +4,7 @@ description: With environmental regulations and sustainability standards tighten
 #status: new
 ---
 
-# 🛡️ Compliance Check
+## 🛡️ Compliance Check
 
 With environmental regulations and sustainability standards tightening worldwide, insurers have a crucial role in ensuring the growers they support meet all legal and environmental requirements.
 
@@ -26,15 +26,11 @@ To perform a compliance check for a new proposal, the following information need
 - Proposal details (ID, date)
 - Field details (name, boundary, approximative sowing date, insured crop)
 
-Once submitted, the API returns a Compliance Status for a given proposal.
+Once submitted, the API returns a **Compliance Status** for a given proposal.
 
-The Compliance Status reflects the evaluation of all fields within the proposal. If any single field is flagged as non-compliant, the entire proposal is marked as non-compliant.  
-
-**The Compliance Status** reflects the evaluation of all fields within the proposal.  
-If any single field is flagged as non-compliant, the entire proposal is marked as non-compliant.
+The **Compliance Status** reflects the evaluation of all fields within the proposal. If any single field is flagged as non-compliant, the entire proposal is marked as non-compliant.  
 
 Explore further details in our [API documentation](/docs/Agro/Portfolio/Compliance_API.md)
-
 ---
 
 ### 📋 List of Performed Compliance Checks
@@ -51,13 +47,12 @@ The following list can be fully tailored to match your compliance strategy.
 | Biomes           | Brazil  | Public Layers                                                                            |
 | Policies Overlap | Brazil  | Evaluate whether the given proposal is overlapping with existing policies from the same grower |
 
----
 
 ### 🛠️ Private Check
 
 If you already have defined geographical restrictions or a preferred/blacklist of users, we can seamlessly integrate your private criteria into the Compliance Check process.
 
-For more information, please contact your Sales Executive.
+For more information, please [contact](https://earthdaily.com/contact) your Sales Executive.
 
 ---
 
@@ -73,6 +68,7 @@ The user can either explore the fields in the interactive map or directly dive i
 
 ![Compliance map](../../assets/agro/portfolio-management/Compliance_map_overview.png)
 
+
 ### Policies and Fields tables
 
 Two different tabs / tables can be displayed: the **Policy Tab** and the **Field Tab**.
@@ -81,13 +77,10 @@ By default, the active tab is the Policy one, listing every policies and proposa
 
 On the bottom-right corner, the portfolio's total number of proposals is displayed. The data is updated automatically (for instance when filters are used).
 
----
 
 #### 📋 Policies Tab Summary
 
 ![Compliance policies](../../assets/agro/portfolio-management/Compliance_policies.jpg)
-
-
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -97,8 +90,6 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 | **Policy Overlap**       |                           |
 | **Status**        | Compliant / Not compliant |
 
-
----
 
 #### 🌾 Fields Tab Summary
 
@@ -116,35 +107,35 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 | **Area**           | Area of the field     |
 | **Status**        | Compliant / Not compliant |
 
-### Access field analysis details
+### Access Field Analysis Details
 
 Once you have a global view of your field of interest, you'll be able to select the field you would like to look at. 
 
 Fields colored in red (not compliant) or green (compliant) have already been analyzed (either through API only or directly in the App)
 
-#### Require analysis for a given field
+#### Require Analysis for a Given Field
 ![Require field analysis](../../assets/agro/portfolio-management/Compliance_field_analysis_require.png)
-Click on a grey field to perform analysis on it.
+Click on a gray field to perform analysis on it.
 
 A panel will open on the right. Click on the "GENERATE" button on the bottom right of the panel. A loader will appear and your report will be generated in a few seconds, checking the potential overlap of your field with compliance layers.
 
 ![Compliance layers check](../../assets/agro/portfolio-management/Compliance_layers.png)
 
 
-#### Visualize compliance results
-Once a compliance analysis has been done on the field you can access all its detail through this right panel. It is divided in three sections :
+#### Visualize Compliance Results
+Once a compliance analysis has been done on the field you can access all its detail through this right panel. It is divided in three sections:
 
-* The first one allows you to get global information on your geometry (when you performed the analysis, where it is located, in which biome, is it part of legal amazon...)
+* **Section 1:** allows you to get global information on your geometry (when you performed the analysis, where it is located, in which biome, is it part of legal amazon...)
 
 ![Compliance layers 2 ](../../assets/agro/portfolio-management/Compliance_layers_2.png)
 
 
-* The second one allows you to get detail of each compliance item (the layers for which we check the overlap), with the associated detail (% of overlap if any). You can click on the display icon to see the features of the layer that intersect your geometry as well as visualizing the overlap in the map.
+* **Section 2:** allows you to get detail of each compliance item (the layers for which we check the overlap), with the associated detail (% of overlap if any). You can click on the display icon to see the features of the layer that intersect your geometry as well as visualizing the overlap in the map.
 
-![Compliance layers 3 ](.../../assets/agro/portfolio-management/Compliance_layers_3.png)
+![Compliance layers 3 ](../../assets/agro/portfolio-management/Compliance_layers_3.png)
 
 
-* Eventually, the last one allows you to downloaded the PDF of your report with all previous information generated
+* **Section 3:** allows you to downloaded the PDF of your report with all previous information generated
 
 ![Compliance layers 4 ](../../assets/agro/portfolio-management/Compliance_layers_4.png)
 
