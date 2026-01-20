@@ -31,7 +31,7 @@ Once submitted, the API returns a **Compliance Status** for a given proposal.
 The **Compliance Status** reflects the evaluation of all fields within the proposal. If any single field is flagged as non-compliant, the entire proposal is marked as non-compliant.  
 
 Explore further details in our [API documentation](/docs/Agro/Portfolio/Compliance_API.md)
----
+
 
 ### 📋 List of Performed Compliance Checks
 
