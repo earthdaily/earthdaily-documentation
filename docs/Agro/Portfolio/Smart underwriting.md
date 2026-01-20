@@ -40,7 +40,7 @@ The following analytics are computed over the submitted proposals:
 | Season Failure Detection    | This analytic spots fields with track records of crop failure over history to detect underlying risk.                                            | Link to Analytic Library |
 
 ---
-## 📊 Proposals & Field-level Dashboard for Analysts
+## 📈 Proposals & Field-level Dashboard for Analysts
 
 The results of the analysis are also available on a web-based dashboard for Analysts with detailed metrics at the proposal level and granular insights down to individual fields.
 
@@ -55,7 +55,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 📋 Policies Tab Summary
 
-![Policies tab](../../assets/Agro/portfolio-management/HistAssess_Policies.jpg)
+![Policies tab](../../assets/agro/portfolio-management/HistAssess_Policies.jpg)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -68,7 +68,6 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 | First Year Cropping | • YES – At least one field is newly cropped <br> • TO BE ANALYZED – Uncertain <br> • NO – All fields have cropping history |
 | Crop Failure        | • YES - if at least one field experienced crop failure                      |
 
----
 
 ### 🌾 Fields Tab Summary
 
@@ -102,7 +101,7 @@ Satellite images unlock consistent and scalable risk assessment across the entir
 
 ![Historical assessment portfolio](../../assets/agro/portfolio-management/HistAssess_Portfolio.jpg)
 
-### 📊 Potential Score Section
+### 📖 Potential Score Section
 
 The Potential Score section illustrates the distribution of proposals across score categories, helping evaluate performance levels:
 
