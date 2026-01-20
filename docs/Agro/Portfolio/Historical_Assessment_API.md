@@ -5,24 +5,25 @@ description: The Historical Assessment API empowers insurance professionals to r
 # status: new
 ---
 # Historical Assessment API
-
-The Historical Assessment API empowers insurance professionals to request and retrieve historical performance analytics for growers during the policy underwriting phase, enabling objective risk evaluations and faster decisions.
-
 ---
 
 ## 🎯 What Is the Historical Assessment API?
+
+The Historical Assessment API empowers insurance professionals to request and retrieve historical performance analytics for growers during the policy underwriting phase, enabling objective risk evaluations and faster decisions.
 
 The goal of this Historical Assessment API is to equip underwriters from fintech companies with tools to better evaluate the historical performance of growers over the past 5 years (e.g., yield and production variability), enabling a deeper understanding of the risks associated with insuring them.
 offers access to five years of agronomic history of an assessed proposal and it(s) field(s), including crop failures, yield variability, and production risk scores.
 
 It is designed for:
+
 - Fintech underwriters
 - Risk analysts
 - Insurance platform integrators
 
 ---
 
-## 🌾 Analytics glossary and definition
+## 🌾 Analytics Glossary and Definition
+
 The table below describes the analytics used in the Historical Assessment API
 
 | METRIC |DEFINITION| COMMENT |
@@ -33,7 +34,7 @@ The table below describes the analytics used in the Historical Assessment API
 | **First-Year Cropping** | Based on planting patterns over 5 years, helps the user understand if the insured grower has already had some successful crops on the past years on a given field|
 
 ---
-## Historical Assessment endpoints summary
+## Historical Assessment Endpoints Summary
 
 *N.B. : This section summarizes the three main endpoints needed to use the Historical Assessment API. Details on the input/output and the various business rules will be found at the **Historical Assessment documentation** section*
 
@@ -43,7 +44,7 @@ Method | Route | Description | Request |
 |POST      | /fintech/v1/historical-assessment/{policyId}   | Perform a historical assessment on a policy / proposal that has already been created.  |endpoint URL with policy ID| 
 |GET       |  /fintech/v1/historical-assessment/result/{executionId} | Retrieves the results ot he historical assessment query (once computed)| endpoint URL with historical assessment workflow ID
 
-## 🚀 Historical Assessment documentation
+## 🚀 Historical Assessment Documentation
 
 ### 🔐 Authentication
 
@@ -90,7 +91,7 @@ Use when declaring a new proposal for the first time. Includes grower details, p
 ```
 
 
-* **user**: - Object containing user information
+* **user**: Object containing user information
   * **login**: User's login.
       * If the user login is known, the policies and its field will be created within the existing grower, and only the login is mandatory. If not, the API endpoint also needs either the firstname and lastname, or the companyName.
   * **firstName**: User's first name.
@@ -145,7 +146,7 @@ Use this endpoint if the proposal already exists in the system.
 
 An `executionId` to track progress of the workflow computing the historical assessment analytics and retrieve results with the **GET** `/historical-assessment/result/{executionId}`
 
-N.B. : if performed on an already existing policy or proposal, this endpoint will return an error, suggesting the user to query the historical assessment through the following endpoint instead.
+_N.B. : if performed on an already existing policy or proposal, this endpoint will return an error, suggesting the user to query the historical assessment through the following endpoint instead._
 
 ### 3. Retrieve Results
 
