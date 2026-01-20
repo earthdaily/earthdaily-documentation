@@ -55,7 +55,7 @@ Make claims handling more efficient, accurate and transparent:
 - **Verify Claims Remotely** : Use before-and-after satellite imagery and crop health indices to objectively evaluate the timing and extent of yield losses 
 - **Prepare Field Visits** : Prepare in-person assessments with unbiased insights and avoid adverse selection 
 
-### Insurance Portfolio Overview
+#### Insurance Portfolio Overview
 
 ![Insurance Portfolio Overview Schema](../../assets/agro/portfolio-management/Portfolio_overview_schema.jpg)
 
