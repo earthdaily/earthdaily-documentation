@@ -71,7 +71,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 🌾 Fields Tab Summary
 
-![Fields tab](../../assets/Agro/portfolio-management/HistAssess_Fields.jpg)
+![Fields tab](../../assets/agro/portfolio-management/HistAssess_Fields.jpg)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
