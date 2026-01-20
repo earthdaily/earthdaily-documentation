@@ -5,7 +5,7 @@ description: Crop ID product overview page
 ---
 <meta property="og:title" content="Discover EarthDaily's scalable crop identification solution using satellite imagery and AI. Real-time crop maps, field-level insights, and seamless API delivery for agriculture.">
 
-## 🗺️ Get real-time crop classification at scale
+## 🗺️ Get Real-time Crop Classification at Scale
 
 Traditionally, accurate and timely crop mapping has come at a high cost. Field surveys, farmer reports, and manual sampling methods provide precise data—but they are time-consuming, expensive to scale, and often lag behind the pace of market or agro-climatic events. By the time insights reach decision-makers, key opportunities may already be missed—or decisions are made without a full picture of what’s happening in the field. Today, that model is changing.
 
