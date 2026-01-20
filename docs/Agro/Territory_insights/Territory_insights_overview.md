@@ -115,7 +115,7 @@ Territory Insights is a low-touch, fully automated agricultural intelligence ser
 
 Territory Insights addresses this challenge by providing real-time, field-level crop insights without requiring any user inputs. By combining satellite imagery, AI-powered field delineation, weather data, and predictive analytics, it enables marketers and agronomists to become trusted advisors who can recommend the right input when conditions call for it, open grain marketing discussions at the optimal moment, and address concerns before they become problems.
 
-**Benefits**
+### Benefits
 
 - **Automated Field Borders**: Transform hours of manual field data collection into instant, automated insights with AI-powered field border delineation and crop identification
 - **Precise Timing**: Pinpoint exactly when and where input placement opportunities arise with predictive growth stage (e.g., tasseling prediction +/- 2 days)
@@ -124,7 +124,7 @@ Territory Insights addresses this challenge by providing real-time, field-level 
 - **Sales Efficiency**: Adapt segmentation based on growing conditions and improve sales team management through data-driven prioritization
 - **Competitive Advantage**: Stay ahead of market shifts with real-time agricultural intelligence and maintain relevance in high-volatility environments
 
-**Targeted Audience**
+### Targeted Audience
 
 - **Agricultural Retailers & Cooperatives**: Organizations managing large territories and grower networks seeking to optimize sales team efficiency and input placement strategies
 - **Agronomists & Crop Advisors**: Professionals needing real-time crop insights to provide timely, relevant recommendations across multiple grower accounts
@@ -200,7 +200,7 @@ Territory Insights addresses this challenge by providing real-time, field-level 
 
 Territory Insights operates as a fully automated, cloud-based service that requires no manual data input from users. The system continuously monitors your territory using satellite imagery and weather data, automatically identifying fields, crops, and growth stages.
 
-**How It Works:**
+### How It Works:
 
 1. **Territory Setup**: Define your geographic area of interest (state, county, or custom boundary)
 2. **Automated Monitoring**: AI models continuously analyze satellite imagery to identify crops and emergence
@@ -208,7 +208,7 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 4. **Insight Delivery**: Consolidated reports and alerts delivered through data export, dashboards, APIs, or integrated into existing systems
 5. **Action**: Sales teams receive prioritized lists of location, optimal timing windows, and tailored messaging for maximum engagement
 
-**Key Differentiators:**
+### Key Differentiators:
 
 - **Zero Manual Input**: Unlike traditional field monitoring that requires growers to upload field boundaries or self-report planting dates, Territory Insights automatically generates all intelligence
 - **Predictive Not Just Reactive**: Forecasts growth stages days in advance rather than just reporting current status
@@ -217,9 +217,10 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
 ## 📊 Data & Analytics Coverage
 
-### 🗺️ Analytics
+### Analytics
 
 **Crop Insights:**
+
 - Crop type identification (corn, soybeans, wheat, and other major crops)
 - Planting date estimation
 - Growth stage tracking and prediction (emergence, vegetative stages, reproductive stages, maturity)
@@ -227,6 +228,7 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 - Yield potential scoring relative to historical averages and current season conditions
 
 **Weather Integration:**
+
 - Historical weather pattern analysis
 - Growing Degree Day (GDD) accumulation tracking
 - Precipitation and moisture stress indicators
@@ -234,36 +236,41 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 - Forecast integration for predictive analytics
 
 **Targeting Criteria:**
+
 - High yield potential
 - Optimal application timing windows
 - Crop stage synchronization across territories
 - Historical performance patterns
 - Crop rotation pattern analysis
 
-### 🗺️ Data Coverage
+### Data Coverage
 
 **Geographic Coverage:**
+
 - Primary: United States (all major agricultural regions)
 - Expanding: Canada, Brazil, Argentina, and other key agricultural markets
 
 **Temporal Coverage:**
+
 - Current season monitoring (daily to weekly updates depending on requirements)
 - Historical baseline (5-10 years of historical crop performance data)
 - Predictive forecasting (7-21 days ahead for growth stage predictions)
 
 **Spatial Resolution:**
+
 - Field-level analysis (typical field sizes from 10-1000+ acres)
 - Sub-field variability detection where relevant
 - Regional aggregation (county, state, custom territories)
 
 **Data Sources:**
+
 - Multi-satellite imagery (Sentinel-2, Landsat, and commercial providers)
 - Multi weather datasets
 - Other public reference datasets
 
 ## 🔗 Support & Resources
 
-**Use Case Examples:**
+### Use Case Examples:
 
 <div class="compact-grid">
   <div class="compact-card">
