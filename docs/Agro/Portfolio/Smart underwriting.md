@@ -15,7 +15,7 @@ Insurance decision-makers can access portfolio dashboards to gain a clear view o
 
 ## 📤 Get Historical Assessment for a New Proposal
 
-![Historical Assessment Schema](../../assets/agro/portfolio-management/Historical_assessment_overview_schema.png)
+![Historical Assessment Schema](../../assets/agro/portfolio-management/Historical_assessment_overview_schema.jpg)
 
 ### Submit proposals and get results via API
 
@@ -55,7 +55,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 📋 Policies Tab Summary
 
-![Policies tab](../../assets/Agro/portfolio-management/HistAssess_Policies.png)
+![Policies tab](../../assets/Agro/portfolio-management/HistAssess_Policies.jpg)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 🌾 Fields Tab Summary
 
-![Fields tab](../../assets/Agro/portfolio-management/HistAssess_Fields.png)
+![Fields tab](../../assets/Agro/portfolio-management/HistAssess_Fields.jpg)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -87,9 +87,9 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 By double-clicking (or clicking on the Analyze button), you can dive deeper into any field with intuitive map views and insights into the crop’s development cycle.
 
-![Historical assessment time series](../../assets/agro/portfolio-management/HistAssess_TS_zoom.png)
+![Historical assessment time series](../../assets/agro/portfolio-management/HistAssess_TS_zoom.jpg)
 
-![Historical assessment NDVI map](../../assets/agro/portfolio-management/HistAssess_NDVI_map.png)
+![Historical assessment NDVI map](../../assets/agro/portfolio-management/HistAssess_NDVI_map.jpg)
 
 ---
 
