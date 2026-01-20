@@ -1,6 +1,6 @@
 <meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for Brazil leveraging remote crops monitoring and AI. Real-time crop maps, Safrinha crops mapping, and seamless API delivery for agriculture.">
 
-#  Available Across Brazil’s Major Agricultural Zones
+## 🌍 Available Across Brazil’s Major Agricultural Zones
 
 EarthDaily Crop Identification product delivers accurate, in-season crop classification at national scale, covering Brazil’s agricultural regions.
 From **Mato Grosso to Paraná**, and spanning both **Safra** and **Safrinha** cycles, the product provides near real-time visibility into what’s growing—supporting critical decisions in one of the world’s largest and most dynamic agricultural economies.
@@ -19,16 +19,16 @@ Additional crops can be supported upon request or as part of our product roadmap
 
 </div>
 
-
 ---
 
 ## ⌛ In-Season Deliveries
 
 To support timely decisions throughout the growing season, crop classification layers are delivered in **two stages per cropping cycle**. This phased approach provides progressively refined insights as new satellite and weather data become available.
 
-**Delivery schedule:**  
-- **Safra Season:** Early March and Early June  
-- **Safrinha Season:** Early June and Early August  
+**Delivery schedule:**
+
+* **Safra Season:** Early March and Early June  
+* **Safrinha Season:** Early June and Early August  
 
 Each delivery reflects the most recent satellite imagery and model outputs, ensuring increasing accuracy as the season progresses.
 
@@ -72,28 +72,22 @@ Explore full technical specifications in our [API Documentation](../Library/Fiel
 
     Soybean, Corn (Safra and Safrinha), Sugarcane, Cotton, Wheat, and Rice.
 
-**** 
 !!! tip "How accurate is the model?"
 
     F1 scores range from 0.60 (cotton) to >0.95 (soybean), based on validated in-season performance.
 
-**** 
 !!! tip "How often is the data updated?"
 
     Twice per cropping season, with progressive refinement as more satellite imagery is collected.
 
-**** 
 !!! tip "Can I access data for past seasons?"
 
     Yes, historical data is available from 2019 onward.
 
-**** 
 !!! tip "What regions of Brazil are supported?"
 
     Key agricultural zones including Mato Grosso, Paraná, Goiás, Bahia, and others.
-
-**** 
-
+    
 ---
 
 --8<-- "snippets/contact-footer.md"
