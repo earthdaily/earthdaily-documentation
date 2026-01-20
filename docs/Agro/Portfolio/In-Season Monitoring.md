@@ -1,10 +1,10 @@
-# 🌾 In-Season Monitoring
+## 🌾 In-Season Monitoring
 
-Issuing a policy is just the beginning. Throughout the growing season, insurers face rising uncertainty – weather events, crop stress, or delayed sowing can all increase the risk of loss. Without timely insights, it’s easy to miss early warning signs.
+Issuing a policy is just the beginning. Throughout the growing season, insurers face rising uncertainty – weather events, crop stress, and delayed sowing can all increase the risk of loss. Without timely insights, it’s easy to miss early warning signs.
 
 That’s where satellite imagery and AI analytics come in – offering real-time, field-level visibility across your entire portfolio. Replace guesswork with actionable insights, and transform how you manage agricultural risk.
 
-The In-Season Monitoring module enables insurers to detect early signs of crop underperformance and proactively engage discussions with growers.
+The **In-Season Monitoring** module enables insurers to detect early signs of crop underperformance and proactively engage discussions with growers.
 
 Insurance decision-makers can access portfolio dashboards to gain a clear view of risk distribution across their entire book of business.
 
@@ -12,7 +12,8 @@ Insurance decision-makers can access portfolio dashboards to gain a clear view o
 ## 🔍 Stay Ahead of Risk with In-Season Monitoring
 ![InSeason schema](../../assets/agro/portfolio-management/InSeason_schema.jpg)
 
-### 🔗 Register Policies and Access In-Season Monitoring Results via API
+
+### Register Policies and Access In-Season Monitoring Results via API
 
 Simply gather a few key details and register policies via API:
 
@@ -26,7 +27,9 @@ The system also supports previously submitted proposals – whether for historic
 
 Up-to-date In-Season Monitoring analytics are seamlessly available – giving you the possibility to integrate real-time crop insights directly into your system.
 
-*Reach out to your EarthDaily Agro contact to set up an In-Season Monitoring workflow for your portfolio.*
+*Reach out to your EarthDaily Agro [contact](https://earthdaily.com/contact) to set up an In-Season Monitoring workflow for your portfolio.*
+
+---
 
 ## 📊 In-Season Monitoring Analytics
 
@@ -49,7 +52,7 @@ Up-to-date results are also available in a web-based dashboard for analysts, wit
 
 ### 📋 Policies Tab Summary
 
-![InSeason policies](../../assets/agro/portfolio-management/InSeason_policies.jpg)
+![InSeason policies](../../assets/agro/portfolio-management/InSeason_Policies.jpg)
 
 | **Attribute** | **Description** |
 |---------------|-----------------|
@@ -67,7 +70,7 @@ Up-to-date results are also available in a web-based dashboard for analysts, wit
 
 
 ### 🌾 Fields Tab Summary
-![InSeason fields](../../assets/agro/portfolio-management/InSeason_fields.jpg)
+![InSeason fields](../../assets/agro/portfolio-management/InSeason_Fields.jpg)
 
 | **Attribute** | **Description** |
 |---------------|-----------------|
@@ -85,7 +88,6 @@ Up-to-date results are also available in a web-based dashboard for analysts, wit
 | **Relative Potential Score** | Score vs. historical (color-coded) |
 | **Detected Harvest Date** | Satellite-detected harvest date |
 
-
 Dive deeper into any field with intuitive map views and insights into the crop’s development cycle.
 
 ---
@@ -93,7 +95,7 @@ Dive deeper into any field with intuitive map views and insights into the crop�
 ## 📈 Portfolio Dashboard for Executives
 Provides a real-time overview of crop development by key stages, enabling insurers to quickly assess portfolio risk and plan for claims.
 
-![InSeason portfolio](../../assets/agro/portfolio-management/InSeason_portfolio.jpg)
+![InSeason portfolio](../../assets/agro/portfolio-management/InSeason_Portfolio.jpg)
 
 ### 🌱 Crop Establishment
 
@@ -105,8 +107,8 @@ Provides a real-time overview of crop development by key stages, enabling insure
 ### 🌾 Crop Development
 
 - **Potential Score**: Compares in-season crop performance to historical trends  
-  - Value > 100 = above average  
-  - Value < 100 = underdevelopment  
+    - Value > 100 = above average  
+    - Value < 100 = underdevelopment  
 - **Highlight**: % of portfolio with low performance  
 - **Visualization**: Graph of distribution of performance across policies
 
