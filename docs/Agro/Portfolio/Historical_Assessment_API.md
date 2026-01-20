@@ -7,7 +7,7 @@ description: The Historical Assessment API empowers insurance professionals to r
 # Historical Assessment API
 ---
 
-## 🎯 What Is the Historical Assessment API?
+## 🎯 What is the Historical Assessment API?
 
 The Historical Assessment API empowers insurance professionals to request and retrieve historical performance analytics for growers during the policy underwriting phase, enabling objective risk evaluations and faster decisions.
 
@@ -16,9 +16,9 @@ offers access to five years of agronomic history of an assessed proposal and it(
 
 It is designed for:
 
-- Fintech underwriters
-- Risk analysts
-- Insurance platform integrators
+* Fintech underwriters
+* Risk analysts
+* Insurance platform integrators
 
 ---
 
@@ -34,7 +34,7 @@ The table below describes the analytics used in the Historical Assessment API
 | **First-Year Cropping** | Based on planting patterns over 5 years, helps the user understand if the insured grower has already had some successful crops on the past years on a given field|
 
 ---
-## Historical Assessment Endpoints Summary
+## 🔗 Historical Assessment Endpoints Summary
 
 *N.B. : This section summarizes the three main endpoints needed to use the Historical Assessment API. Details on the input/output and the various business rules will be found at the **Historical Assessment documentation** section*
 
