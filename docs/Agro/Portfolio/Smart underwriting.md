@@ -4,7 +4,7 @@ description: Underwriting agricultural insurance can be challenging due to incom
 #status: new
 ---
 
-# 📝 Smart Underwriting
+## 📝 Smart Underwriting
 
 
 Underwriting agricultural insurance can be challenging due to incomplete, inconsistent, or unreliable data provided by growers. Also, information often varies widely from one grower to another, making it difficult to get homogeneous risk assessment across the portfolio. Satellite imagery helps overcome these gaps by offering a consistent, objective view of each field’s history and performance.
@@ -15,8 +15,7 @@ Insurance decision-makers can access portfolio dashboards to gain a clear view o
 
 ## 📤 Get Historical Assessment for a New Proposal
 
-
-![Historical Assessment Schema](/docs/assets/Agro/portfolio/Historical_assessment_overview_schema.jpg)
+![Historical Assessment Schema](../../assets/Agro/portfolio/Historical_assessment_overview_schema.jpg)
 
 ### Submit proposals and get results via API
 
@@ -26,7 +25,7 @@ When evaluating a new proposal during underwriting, few key details need to be g
 - Proposal details (ID, date)
 - Field details (name, boundary, approximative sowing date, insured crop)
 
-Explore further details in our [API documentation](/docs/Agro/Portfolio/Historical_Assessment_API.md)
+Explore further details in our [API documentation](https://earthdaily.github.io/earthdaily-documentation/Agro/Portfolio/Historical_Assessment_API/).
 
 
 ### 📊 Historical Assessment Analytics
@@ -39,8 +38,6 @@ The following analytics are computed over the submitted proposals:
 | Risk Score                  | The risk score – derived from historical potential scores, measures fluctuations in crop performance over time and reveals underlying production risks. <br>• A score of 20 reflects stable, consistent yields <br>• A score of 65 indicates significant variability | Link to Analytic Library |
 | First-year Cropping Detection | This analytic identifies newly cultivated fields that may carry higher risk, helping to make informed underwriting decisions.                    | Link to Analytic Library |
 | Season Failure Detection    | This analytic spots fields with track records of crop failure over history to detect underlying risk.                                            | Link to Analytic Library |
-
----
 
 ---
 ## 📊 Proposals & Field-level Dashboard for Analysts
@@ -58,7 +55,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 📋 Policies Tab Summary
 
-![Policies tab](/docs/assets/Agro/portfolio/HistAssess_Policies.jpg)
+![Policies tab](../../assets/Agro/portfolio/HistAssess_Policies.jpg)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -75,7 +72,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 🌾 Fields Tab Summary
 
-![Fields tab](/docs/assets/Agro/portfolio/HistAssess_Fields.jpg)
+![Fields tab](../../assets/Agro/portfolio/HistAssess_Fields.jpg)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -90,10 +87,9 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 By double-clicking (or clicking on the Analyze button), you can dive deeper into any field with intuitive map views and insights into the crop’s development cycle.
 
-![Historical assessment time series](/docs/assets/Agro/portfolio/HistAssess_TS_zoom.jpg)
+![Historical assessment time series](../../assets/Agro/portfolio/HistAssess_TS_zoom.jpg)
 
-
-![Historical assessment NDVI map](/docs/assets/Agro/portfolio/HistAssess_NDVI_map.jpg)
+![Historical assessment NDVI map](../../assets/Agro/portfolio/HistAssess_NDVI_map.jpg)
 
 ---
 
@@ -104,9 +100,7 @@ The portfolio dashboard helps assess the overall composition of the portfolio �
 
 Satellite images unlock consistent and scalable risk assessment across the entire portfolio – eliminating the challenges of incomplete, inconsistent, or biased data often provided by growers.
 
-![Historical assessment portfolio](/docs/assets/Agro/portfolio/HistAssess_Portfolio.jpg)
-
-
+![Historical assessment portfolio](../../assets/Agro/portfolio/HistAssess_Portfolio.jpg)
 
 ### 📊 Potential Score Section
 
