@@ -15,7 +15,7 @@ Insurance decision-makers can access portfolio dashboards to gain a clear view o
 
 ## 📤 Get Historical Assessment for a New Proposal
 
-![Historical Assessment Schema](../../assets/Agro/portfolio/Historical_assessment_overview_schema.jpg)
+![Historical Assessment Schema](../../assets/agro/portfolio-management/Historical_assessment_overview_schema.png)
 
 ### Submit proposals and get results via API
 
@@ -55,7 +55,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 📋 Policies Tab Summary
 
-![Policies tab](../../assets/Agro/portfolio/HistAssess_Policies.jpg)
+![Policies tab](../../assets/Agro/portfolio-management/HistAssess_Policies.png)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 ### 🌾 Fields Tab Summary
 
-![Fields tab](../../assets/Agro/portfolio/HistAssess_Fields.jpg)
+![Fields tab](../../assets/Agro/portfolio-management/HistAssess_Fields.png)
 
 | Attribute           | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -87,9 +87,9 @@ On the bottom-right corner, the portfolio's total number of proposals is display
 
 By double-clicking (or clicking on the Analyze button), you can dive deeper into any field with intuitive map views and insights into the crop’s development cycle.
 
-![Historical assessment time series](../../assets/Agro/portfolio/HistAssess_TS_zoom.jpg)
+![Historical assessment time series](../../assets/agro/portfolio-management/HistAssess_TS_zoom.png)
 
-![Historical assessment NDVI map](../../assets/Agro/portfolio/HistAssess_NDVI_map.jpg)
+![Historical assessment NDVI map](../../assets/agro/portfolio-management/HistAssess_NDVI_map.png)
 
 ---
 
@@ -100,7 +100,7 @@ The portfolio dashboard helps assess the overall composition of the portfolio �
 
 Satellite images unlock consistent and scalable risk assessment across the entire portfolio – eliminating the challenges of incomplete, inconsistent, or biased data often provided by growers.
 
-![Historical assessment portfolio](../../assets/Agro/portfolio/HistAssess_Portfolio.jpg)
+![Historical assessment portfolio](../../assets/agro/portfolio-management/HistAssess_Portfolio.jpg)
 
 ### 📊 Potential Score Section
 
