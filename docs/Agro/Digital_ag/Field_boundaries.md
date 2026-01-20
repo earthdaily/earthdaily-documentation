@@ -6,7 +6,7 @@ description:
 
 ## 📚 Establish Boundaries and Crop History for Your Fields
 
-We make it easy for you to onboard your operation by easily creating Grower, Farm, and Field entities using multiple means – automated field creation, using a field boundary selection layer (in some regions), or uploading your existing field boundaries into our tools. Then, we start the computation of analytics immediately.
+We make it easy for you to onboard your operation by creating Grower, Farm, and Field entities using multiple means – automated field creation, using a field boundary selection layer (in some regions), or uploading your existing field boundaries into our tools. Then, we start the computation of analytics immediately.
 
 ![Field Border](../../assets/agro/digital_ag/border.png)
 
