@@ -1,9 +1,8 @@
 <meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for Western Europe leveraging remote crops monitoring and AI. Real-time crop maps, and seamless API delivery for agriculture.">
 
-# Available across France & Germany
+## 🌍 Available across France & Germany
 
-The EarthDaily Crop Identification product is fully operational across both **France and Germany**, providing in-season crop classification at national scale.  
-From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in two of Europe’s largest and most diverse agricultural producers.
+The EarthDaily Crop Identification product is fully operational across both **France and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in two of Europe’s largest and most diverse agricultural producers.
 
 **Covered crops are as follows:**
 
@@ -25,17 +24,15 @@ Additional crops can be supported upon request or as part of our product roadmap
 
 </div>
 
-
-
-
 ---
 
 ## ⌛ In-Season Deliveries
 
 Crop classification layers are delivered during the growing season, providing a good evaluation of winter crops and an early assessment of spring crops.  
 
-**Delivery schedule:**  
-- Mid-June  
+**Delivery schedule:**
+
+* Mid-June  
 
 Additional delivery dates can be added upon request. These in-season deliveries enable monitoring of planted areas, detection of acreage variations, and dynamic adjustment of supply and production forecasts.
 
@@ -83,33 +80,22 @@ Explore full technical specifications in our [API Documentation](../Library/Fiel
     - France: Winter Wheat, Barley, Oilseed Rape, Corn, Sunflower, Sugar Beet  
     - Germany: Winter Wheat, Barley, Oilseed Rape, Corn  
 
-
-****  
 !!! tip "How accurate is the model?"
 
     F1 scores range from 0.48 (Sunflower) to >0.95 (Oilseed Rape), validated under in-season conditions.
-
-
-****  
+ 
 !!! tip "How often is the data updated?"
 
     Once per cropping season for the moment.
 
-
-**** 
 !!! tip "Can I access data for past seasons?"
 
     Yes, historical layers are available from 2019 onward. 
 
-
-**** 
 !!! tip "What regions are supported?"
 
     The coverage spans the entire territories of France and Germany.
-
-
-**** 
-
+    
 ---
 
 --8<-- "snippets/contact-footer.md"
