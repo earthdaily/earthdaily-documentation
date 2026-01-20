@@ -4,9 +4,6 @@ description: The Historical Assessment API empowers insurance professionals to r
 # icon: material/api
 # status: new
 ---
-# Historical Assessment API
----
-
 ## 🎯 What is the Historical Assessment API?
 
 The Historical Assessment API empowers insurance professionals to request and retrieve historical performance analytics for growers during the policy underwriting phase, enabling objective risk evaluations and faster decisions.
