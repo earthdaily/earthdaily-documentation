@@ -182,7 +182,7 @@ The following links will provide access to more information:
 - [Examples]()
 
 **Tips** To generate folder structure with ASCII characters, you can use the command 'tree".
-   - Open the Command Prompt.
+   - Open the Command Prompt (Start button + type "cmd").
    - Navigate to the desired root directory using the cd command. For example, to go to C:\MyDocuments
    - Execute the tree command with the /f and /a switches, redirecting the output to a text file. The /f switch displays the names of files in each folder, and /a uses ASCII characters for the tree structure:    `tree /f /a > FolderStructure.txt`
 

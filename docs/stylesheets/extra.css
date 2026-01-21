@@ -479,8 +479,88 @@ main.md-content > .md-content__inner {
     }
 }
 
-/* Badge Styling */
-.md-typeset .badge {
+
+
+/* Developer Resources Special Styling */
+.grid.cards > ul > li:has(strong:contains("Python SDK")),
+.grid.cards > ul > li:has(strong:contains("API")) {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
+}
+
+
+/*______________________________________________________*/
+/* Badge Styling               */
+/*______________________________________________________*/
+
+/* Base badge styling */
+.mdx-badge {
+    font-size: 0.85em;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Badge with heart - for sponsors/insiders */
+.mdx-badge--heart {
+    --md-typeset-a-color: hsl(340, 82%, 52%);
+    --md-accent-fg-color: hsl(340, 100%, 50%);
+    --md-accent-fg-color--transparent: hsla(340, 82%, 52%, 0.1);
+    color: hsl(340, 82%, 52%);
+}
+
+/* Animate heart icon */
+.mdx-badge--heart .twemoji {
+    animation: heart 1000ms infinite;
+}
+
+/* Heart animation keyframes */
+@keyframes heart {
+    0%, 40%, 80%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(0.92);
+    }
+}
+
+/* Badge moved to the right */
+.mdx-badge--right {
+    float: right;
+    margin-left: 0.35em;
+}
+
+/* Badge icon container */
+.mdx-badge__icon {
+    padding: 0.25rem;
+    background: var(--md-accent-fg-color--transparent);
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* If icon is alone, round all corners */
+.mdx-badge__icon:last-child {
+    border-radius: 0.125rem;
+}
+
+/* Badge text container */
+.mdx-badge__text {
+    padding: 0.25rem 0.375rem;
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+    box-shadow: 0 0 0 1px inset var(--md-accent-fg-color--transparent);
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Optional: Define accent colors for different badge types */
+.mdx-badge:not(.mdx-badge--heart) {
+    --md-accent-fg-color: var(--ed-primary, #0066cc);
+    --md-accent-fg-color--transparent: rgba(0, 102, 204, 0.1);
+}
+
+/* Manual Badge Styling (for custom HTML badges) */
+.md-typeset .custom-badge {
     background-color: var(--ed-primary);
     color: white;
     padding: 0.2rem 0.6rem;
@@ -490,8 +570,65 @@ main.md-content > .md-content__inner {
     margin-left: 0.5rem;
 }
 
-/* Developer Resources Special Styling */
-.grid.cards > ul > li:has(strong:contains("Python SDK")),
-.grid.cards > ul > li:has(strong:contains("API")) {
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
+/*______________________________________________________*/
+/* Specific class Styling - API Reference               */
+/*______________________________________________________*/
+
+/* API Reference page specific styles */
+[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-sidebar--secondary {
+    display: none;
+}
+
+[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+}
+
+[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards > * {
+    padding: 1rem;
+}
+
+[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards h3 {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards .md-button {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.3rem 0.2rem 0;
+}
+
+/*______________________________________________________*/
+/* Footer styling                                       */
+/*______________________________________________________*/
+
+.md-footer {
+    background-color: #ffffff;
+    border-top: 1px solid var(--ed-border);
+}
+
+/* Footer text color for light mode */
+.md-footer-meta,
+.md-footer-copyright,
+.md-footer__link {
+    color: var(--ed-dark);
+}
+
+/* Dark mode footer */
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: var(--ed-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode footer text */
+[data-md-color-scheme="slate"] .md-footer-meta,
+[data-md-color-scheme="slate"] .md-footer-copyright,
+[data-md-color-scheme="slate"] .md-footer__link {
+    color: #ffffff;
 }
