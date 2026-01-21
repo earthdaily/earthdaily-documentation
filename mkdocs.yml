@@ -23,8 +23,8 @@
 # | - https://www.mkdocs.org/user-guide/configuration/#site_author                                         |
 # | - https://www.mkdocs.org/user-guide/configuration/#site_url                                            |
 # +--------------------------------------------------------------------------------------------------------+
-site_name: Earthdaily documentation
-site_description: 'Everything you need to know to master Earthdaily services'
+site_name: EarthDaily documentation
+site_description: 'Everything you need to know to master EarthDaily services'
 site_author: 'Earthdaily'
 site_url: 'https://earthdaily.github.io/documentation/' # Uncomment to set a canonical URL
 
@@ -619,7 +619,7 @@ nav:
       - Try samples: https://samples.cropid.earthdaily.com/
       - Crop Layer Access: Agro/Cropid/CropMask_Access_through_EDS_v11092025.md
       - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
-    - Commodities Intelligence:
+    - Crop Intelligence:
       - Product: Agro/Commodities_intelligence/crop-intelligence-docs.md
       - Delivery method:
         - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
