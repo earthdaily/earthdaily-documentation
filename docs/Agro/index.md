@@ -18,7 +18,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     [:octicons-arrow-right-24: Learn more](Digital_ag/Digital_ag_overview)
 
--   :material-chart-line:{ .lg .middle } __Commodities Intelligence__
+-   :material-chart-line:{ .lg .middle } __Crop Intelligence__
 
     ---
 
