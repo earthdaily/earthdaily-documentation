@@ -1,14 +1,13 @@
 <meta property="og:title" content="This page presents the Crop Mask API (STAC) to access Crop Mask Layer..">
 
-# Crop Mask API (STAC) Documentation
+## 🗺️ Crop Mask API (STAC) Documentation
 
-## Overview
 The Crop Mask API provides access to **public** and **private crop mask layers**. These datasets can be used for agricultural monitoring, land classification, and crop analytics.  
 
 The API is built on top of the **EarthDaily platform** and follows the [STAC (SpatioTemporal Asset Catalog)](https://stacspec.org/) standard.
 
 ---
-## Authentication
+## 🔐 Authentication
 
 - **Endpoint:**  
   `POST https://api.earthdaily.com/account_management/v1/authentication/api_tokens/exchange`  
@@ -24,7 +23,7 @@ The API is built on top of the **EarthDaily platform** and follows the [STAC (Sp
 
 ---
 
-## Collections
+## 📚 Collections
 
 - **Public Crop Mask** → `public-crop-mask`  
    
@@ -44,7 +43,7 @@ The API is built on top of the **EarthDaily platform** and follows the [STAC (Sp
 
 
 
-## Search for Crop Mask Items
+## 🔍 Search for Crop Mask Items
 
 **Endpoint:**  
   `GET https://api.earthdaily.com/platform/v1/stac/search`  
@@ -84,7 +83,7 @@ The API is built on top of the **EarthDaily platform** and follows the [STAC (Sp
 ```
 
 
-## Downloading a Crop Mask
+## 💼 Downloading a Crop Mask
 
 1. Perform a search on the `edagro-analytics-crops-layer` collection.  
 2. From the response, identify the `assets` section.  
@@ -98,7 +97,7 @@ The API is built on top of the **EarthDaily platform** and follows the [STAC (Sp
 
 ---
 
-## Error Handling
+## 🛠 Error Handling
 
 | Status Code | Meaning                            |
 |-------------|------------------------------------|
@@ -110,7 +109,7 @@ The API is built on top of the **EarthDaily platform** and follows the [STAC (Sp
 
 ---
 
-## Best Practices
+## ⚙️ Best Practices
 
 - Apply **filters** (`bbox`, `datetime`) to reduce query size.  
 - Cache authentication tokens until expiry.  
