@@ -1,4 +1,7 @@
 
+
+<!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
+
 # Harvest Detection Computation
 
 ## 📖 Overview
@@ -22,6 +25,8 @@ This process uses crop-specific parameters and seasonal information to deliver a
 ---
 
 ## ⚙️ API
+
+<!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
 
 <swagger-ui src="https://harvest-detection.aws.geosys.com/openapi.json"/>
 

@@ -629,6 +629,20 @@ nav:
     - Parametric insurance: 
       - Product: Agro/Parametric/parametric_insurance_product_site_draft.md
       - User guide: Agro/Parametric/Swagger.md
+    - EarthDaily App:
+      - User guide: App/en-US/00. Geosys App User Guide.md
+      - Home: App/en-US/01. Home.md
+      - Map analysis: App/en-US/02. Map Analysis.md
+      - Monitoring field: App/en-US/03. Monitoring - Field.md
+      - Monitoring region: App/en-US/04. Monitoring - Regional.md
+      - Field Manager: App/en-US/05. Field Manager.md
+      - Compliance analysis: App/en-US/06. Compliance Analysis.md
+    - QGIS:
+      - Prerequisites: QGIS/1. Prerequisite.md
+      - Installation: QGIS/2. Installation.md
+      - Get data: QGIS/3. GetData.md
+      - Processing toolbox: QGIS/4. ProcessingToolBox.md
+      - Map description: QGIS/5. MapDescription.md
     - Analytic catalog:
       - API Reference: Agro/Api_reference.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md

@@ -27,6 +27,6 @@ Exceptionally rainy and fresh end of season led to too wet and not enough sunny 
 
 Ingest data from the EarthDaily platform directly to your platform to feed your yield forecast models or user interface.
 
-For a full list of data available via the API please visit this [link](../Library/Regional_Monitoring)
+For a full list of data available via the API please visit this [link](../Library/Regional_Monitoring.md)
 
 --8<-- "snippets/contact-footer.md"

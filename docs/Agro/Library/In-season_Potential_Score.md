@@ -4,7 +4,7 @@ description: This section explains everything you need to know about the In-seas
 # icon: fontawesome/question
 #status: new
 ---
-
+<!-- md:demo reflectance-datacube-processor -->
 # In-season Potential Score
 
 ## 📖 Overview

@@ -208,6 +208,22 @@ theme:
     purus auctor massa, nec semper lorem quam in massa.
 
 
-
 !!! quote
     Vision without execution is halucination.
+
+
+## Badges
+
+### Swagger
+
+```
+&lt;!-- md:flag swagger API Name | https://api.example.com/docs --&gt;
+```
+This should be displayed as <!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
+
+### Demo repo 
+
+```Markdown
+<!-- md:demo reflectance-datacube-processor -->
+```
+This should be displayed as <!-- md:demo reflectance-datacube-processor -->

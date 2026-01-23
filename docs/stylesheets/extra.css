@@ -487,7 +487,6 @@ main.md-content > .md-content__inner {
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
 }
 
-
 /*______________________________________________________*/
 /* Badge Styling               */
 /*______________________________________________________*/
@@ -522,10 +521,49 @@ main.md-content > .md-content__inner {
     }
 }
 
-/* Badge moved to the right */
+/* Make article a positioning context */
+.md-content__inner {
+    position: relative;
+}
+
+/* Base styling for ALL badge paragraphs */
+.md-typeset p:has(.mdx-badge--right) {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    height: auto;
+    vertical-align: top;
+}
+
+/* Only the FIRST badge paragraph (after the button) is absolutely positioned */
+.md-content__button + p:has(.mdx-badge--right) {
+    position: absolute;
+    top: 0.4rem;
+    right: 3.5rem;
+}
+
+/* Second badge paragraph (adjacent to first badge paragraph) flows inline */
+.md-content__button + p:has(.mdx-badge--right) + p:has(.mdx-badge--right) {
+    position: relative;
+    margin-left: 0.5rem !important;
+}
+
+/* Badges within paragraph */
 .mdx-badge--right {
-    float: right;
-    margin-left: 0.35em;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.mdx-badge--right:first-child {
+    margin-left: 0;
+}
+
+/* Adjust spacing for h1 */
+.md-typeset h1:first-of-type {
+    margin-top: 3rem;
 }
 
 /* Badge icon container */
@@ -568,40 +606,6 @@ main.md-content > .md-content__inner {
     font-size: 0.75rem;
     font-weight: 600;
     margin-left: 0.5rem;
-}
-
-/*______________________________________________________*/
-/* Specific class Styling - API Reference               */
-/*______________________________________________________*/
-
-/* API Reference page specific styles */
-[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-sidebar--secondary {
-    display: none;
-}
-
-[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
-}
-
-[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards > * {
-    padding: 1rem;
-}
-
-[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards h3 {
-    font-size: 1rem;
-    margin-top: 0;
-}
-
-[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
-[data-md-component="main"] article[data-md-source="Api_reference.md"] .md-typeset .grid.cards .md-button {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.8rem;
-    margin: 0.2rem 0.3rem 0.2rem 0;
 }
 
 /*______________________________________________________*/

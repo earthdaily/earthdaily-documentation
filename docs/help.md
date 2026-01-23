@@ -26,10 +26,11 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
 
     Check the current operational status of all EarthDaily services and historical uptime data.
 
-    [:octicons-arrow-right-24: View Status](https://status.earthdaily.com/)
+    <iframe src="https://status.earthdaily.com/badge?theme=light" width="250" height="40" frameborder="0" scrolling="no" style="color-scheme: normal"></iframe>
+
+    [:octicons-arrow-right-24: View detailed status](https://status.earthdaily.com/)
 
 </div>
-
 
 ## Popular Resources
 
@@ -45,7 +46,7 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
     
     Complete documentation for all EarthDaily endpoints including vegetation indices, weather data, and crop monitoring.
     
-    [Browse APIs →](../api/overview.md)
+    [Browse APIs →](./Agro/Api_reference.md)
 
 -   :material-code-braces: **Code Examples**
     
@@ -69,11 +70,13 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
     - Have your API credentials and relevant code snippets ready
 
 **Technical Support**
-- **Portal**: [](https://earthdaily.atlassian.net/servicedesk/customer/portal/107)
+
+- **Portal**: [Helpdesk](https://earthdaily.atlassian.net/servicedesk/customer/portal/107)
 - **Response Time**: Within 4-8 hours during business hours
 
 **Sales & Partnership Inquiries**
-- **Email**: contact@earthdaily.com
+
+- **Email**: [Contact us](mailto:contact@earthdaily.com)
 - **Website**: [earthdaily.com/contact](https://earthdaily.com/contact)
 
 ---

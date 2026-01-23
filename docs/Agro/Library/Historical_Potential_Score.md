@@ -4,6 +4,7 @@ description: This section explains everything you need to know about the Histori
 # icon: fontawesome/question
 #status: new
 ---
+<!-- md:swagger API|https://historical-potential-risk-score.aws.geosys.com/v1/docs -->
 
 # Historical Potential Score
 

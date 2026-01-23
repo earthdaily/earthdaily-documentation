@@ -5,6 +5,8 @@ description: Overview of EarthDaily's Regional Monitoring API, including environ
 #status: new
 ---
 
+<!-- md:notebook Analytics%20as%20a%20service/EDAgro_regional_analytic_extraction -->
+
 # 🌍 Regional Monitoring API
 
 EarthDaily delivers a wide range of **digital agriculture services** through multiple channels:

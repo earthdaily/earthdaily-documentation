@@ -8,7 +8,6 @@ from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.files import File, Files
 from mkdocs.structure.pages import Page
 
-
 # -----------------------------------------------------------------------------
 # Hooks
 # -----------------------------------------------------------------------------
@@ -34,8 +33,8 @@ def on_page_markdown(
         elif type == "feature":      return _badge_for_feature(args, page, files)
         elif type == "plugin":       return _badge_for_plugin(args, page, files)
         elif type == "extension":    return _badge_for_extension(args, page, files)
-        elif type == "utility":      return _badge_for_utility(args, page, files)
-        elif type == "example": return _badge_for_example(args, page, files)
+        elif type == "swagger":      return _badge_for_swagger(args, page, files)
+        elif type == "notebook": return _badge_for_notebook(args, page, files)
         elif type == "demo":         return _badge_for_demo(args, page, files)
         elif type == "default":
             if   args == "none":     return _badge_for_default_none(page, files)
@@ -57,12 +56,17 @@ def on_page_markdown(
 
 # Create a flag of a specific type
 def flag(args: str, page: Page, files: Files):
-    type, *_ = args.split(" ", 1)
+    type, *rest = args.split(" ", 1)
+    text = rest[0] if rest else ""
+    
     if   type == "experimental":  return _badge_for_experimental(page, files)
     elif type == "required":      return _badge_for_required(page, files)
     elif type == "customization": return _badge_for_customization(page, files)
     elif type == "metadata":      return _badge_for_metadata(page, files)
     elif type == "multiple":      return _badge_for_multiple(page, files)
+    elif type == "demo":          return _badge_for_demo(text, page, files)
+    elif type == "swagger":       return _badge_for_swagger(text, page, files)
+    elif type == "notebook":      return _badge_for_notebook(text, page, files)
     raise RuntimeError(f"Unknown type: {type}")
 
 # Create a linkable option
@@ -164,48 +168,70 @@ def _badge_for_extension(text: str, page: Page, files: Files):
         text = text
     )
 
-# Create badge for utility
-def _badge_for_utility(text: str, page: Page, files: Files):
-    icon = "material-package-variant"
-    href = _resolve_path("conventions.md#utility", page, files)
+# Create badge for swagger
+def _badge_for_swagger(text: str, page: Page, files: Files):
+    # Parse name and URL from the text argument
+    parts = text.split("|", 1)
+    if len(parts) == 2:
+        name = parts[0].strip()
+        url = parts[1].strip()
+    else:
+        # Fallback to old behavior if no pipe separator
+        name = text
+        url = _resolve_path("conventions.md#swagger", page, files)
+    
+    icon = "simple-swagger"
+    icon_href = _resolve_path("conventions.md#swagger", page, files)
     return _badge(
-        icon = f"[:{icon}:]({href} 'Third-party utility')",
-        text = text
+        icon = f"[:{icon}:]({icon_href} 'Open API')",
+        text = f"[{name}]({url})",
+        type="right"
     )
 
-# Create badge for example
-def _badge_for_example(text: str, page: Page, files: Files):
+# Create badge for notebook
+def _badge_for_notebook(text: str, page: Page, files: Files):
     return "\n".join([
-        _badge_for_example_download(text, page, files),
-        _badge_for_example_view(text, page, files)
+#        _badge_for_notebook_download(text, page, files), 
+# remove this line to get only one reference bagde
+        _badge_for_notebook_view(text, page, files)
     ])
 
-# Create badge for example view
-def _badge_for_example_view(text: str, page: Page, files: Files):
-    icon = "material-folder-eye"
-    href = f"https://github.com/earthdaily/Examples-and-showcases/{text}/"
+# Create badge for notebook view
+def _badge_for_notebook_view(text: str, page: Page, files: Files):
+    # Extract filename for display
+    if "/" in text:
+        file_name = text.rsplit("/", 1)[1]  # Get filename part
+    else:
+        file_name = text  # Use text as filename
+    
+    icon = "simple-jupyter"
+    # Link directly to the notebook file
+    href = f"https://github.com/earthdaily/Examples-and-showcases/blob/main/{text}.ipynb"
     return _badge(
-        icon = f"[:{icon}:]({href} 'View example')",
+        icon = f"[:{icon}:]({href} 'View notebook')",
+        text = f"[{file_name}]({href})",
         type = "right"
     )
 
-# Create badge for example download
-def _badge_for_example_download(text: str, page: Page, files: Files):
+# Create badge for notebook download
+def _badge_for_notebook_download(text: str, page: Page, files: Files):
     icon = "material-folder-download"
-    href = f"https://github.com/earthdaily/Examples-and-showcases/{text}.zip"
+    # Use raw for direct file downloads
+    href = f"https://github.com/earthdaily/Examples-and-showcases/raw/main/{text}.ipynb"
     return _badge(
-        icon = f"[:{icon}:]({href} 'Download example files')",
-        text = f"[`.zip`]({href})",
+        icon = f"[:{icon}:]({href} 'Download notebook')",
+        text = f"[`.ipynb`]({href})",
         type = "right"
     )
 
 # Create badge for demo repository
 def _badge_for_demo(text: str, page: Page, files: Files):
     icon = "material-github"
-    href = f"https://github.com/earthdaily/{text}"
+    icon_href = _resolve_path("conventions.md#demo", page, files)
+    repo_href = f"https://github.com/earthdaily/{text}"
     return _badge(
-        icon = f"[:{icon}:]({href} 'Demo repository')",
-        text = text,
+        icon = f"[:{icon}:]({icon_href} 'Demo repository')",
+        text = f"[{text}]({repo_href})",
         type = "right"
     )
 
