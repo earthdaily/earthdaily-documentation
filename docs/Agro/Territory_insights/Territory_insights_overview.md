@@ -162,6 +162,7 @@ Territory Insights addresses this challenge by providing real-time, field-level 
       <li>Leverage weather data for predictive growth stage forecasting</li>
       <li>Tasseling prediction with +/- 2-day accuracy across multiple US states</li>
       <li>Crop potential assessment based on real-time conditions</li>
+      <li>Disease risk based on local weather forecast</li>
     </ul>
   </div>
 </div>
@@ -172,7 +173,7 @@ Territory Insights addresses this challenge by providing real-time, field-level 
     <ul>
       <li>Location-based grower targeting by yield potential, weather conditions, or crop stage</li>
       <li>Dynamic segmentation that adapts to changing growing conditions</li>
-      <li>Field-level precision with regional aggregation capabilities</li>
+      <li>Field-level precision with regional aggregation capabilities (county, township, custom)</li>
       <li>Integration-ready for CRM and email marketing platforms</li>
     </ul>
   </div>
