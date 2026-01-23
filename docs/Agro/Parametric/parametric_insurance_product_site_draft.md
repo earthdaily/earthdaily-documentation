@@ -5,16 +5,13 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
 #status: new
 ---
 
-**📌 What is Parametric Insurance ?**
+## 📌 What is Parametric Insurance?
 
 Parametric insurance is a **modern, data-driven approach** to insurance that provides **fast and transparent payouts** based on predefined triggers, such as:
 
 - 🌧️ **Rainfall levels**
-    
 - 🌡️ **Temperature variations**
-    
 - 🌿 **Vegetation indices (NDVI)**
-    
 
 Unlike traditional indemnity-based insurance, which requires damage assessment, **parametric insurance automatically compensates farmers** when certain conditions are met. This means:
 
@@ -24,24 +21,24 @@ Unlike traditional indemnity-based insurance, which requires damage assessment, 
 
 ---
 
-**⚡Parametric Insurance with EarthDaily Agro**
+## ⚡ Parametric Insurance with EarthDaily Agro
 
 The Parametric Data Service capability provides Actuaries and Data Scientists with high-quality environmental and agronomic data which enables them to create effective parametric indices in the agricultural insurance space.
 
 EarthDaily Agro’s **Parametric Insurance API** provides seamless access to:
 
-🔹 **Crop Specific Historical vegetation indices based on NDVI**  
-🔹 **Historical High-Resolution Scientific-level weather data**
+- **Crop Specific Historical vegetation indices based on NDVI**  
+- **Historical High-Resolution Scientific-level weather data**
 
-This API supports:  
-🗺️ **Predefined geometries** (e.g., U.S. counties, Brazilian Municipios, French Communes…)  
-📍 **Custom user-defined regions** (e.g., a specific farm in France or Brazil)
+This API supports:
+- **Predefined geometries** (e.g., U.S. counties, Brazilian Municipios, French Communes…)  
+- **Custom user-defined regions** (e.g., a specific farm in France or Brazil)
 
 Insurers, agronomists, and financial institutions can offer innovative risk management solutions tailored to real-world agricultural challenges by leveraging Earth observation data.
 
 ---
 
-📖 **API Documentation**
+## 📖 API Documentation
 
 📌 [<b>Swagger UI</b>](https://parametric-insurance.aws-dev.geosys.com/docs) – Interactive API testing  
 📌 [<b>ReDoc</b>](https://parametric-insurance.aws-dev.geosys.com/redoc) – Detailed API reference  
@@ -49,7 +46,7 @@ Insurers, agronomists, and financial institutions can offer innovative risk mana
 
 ---
 
-🌍 **Indicators and coverage**
+### Indicators and coverage
 
 | **Indicator** | **Description** | **Temporal coverage** | **Geographical coverage** |
 | --- | --- | --- | --- |
@@ -60,16 +57,9 @@ Insurers, agronomists, and financial institutions can offer innovative risk mana
 
 ---
 
-🛠️ **Request Use Case**
+## 🛠️ Request Use Case
 
 <img src="https://content.pstmn.io/bf78d432-f7e2-4766-bdb0-4f3055843d7b/aW1hZ2UucG5n" width="1002" height="212">
-
----
-
-✉️ **Contact**  
-Let’s get in touch!
-
-You can use this form to [contact us](https://earthdailyagro.com/contact/?lang=fr)
 
 
 --8<-- "snippets/contact-footer.md"
