@@ -1,14 +1,12 @@
-# Commodities Intelligence 🌾
-
-## Introduction
+## 🌾Commodities Intelligence
 
 For customers who need more than rumors and anecdata, EarthDaily provides unbiased and consistent data and expertise to understand what’s really happening in all Ag regions.
 
 With 30 years of weather and satellite data, interactive analysis of real-time season developments unable accurate analysis and production estimates.
 
-Feed your proprietary models with best-in-class data, leverage our app to carry out your analyses or work with EarthDaily’s crop analysts for fast access to ready to insights, __it’s all possible__ - find out more below or *contact us*.
+Feed your proprietary models with best-in-class data, leverage our app to carry out your analyses or work with EarthDaily’s crop analysts for fast access to ready to insights, __it’s all possible__ - find out more below or [*contact us*](https://earthdaily.com/contact).
 
-## Target Audience 👥
+## 👥 Target Audience
 
 EarthDaily has designed this product for organizations that need timely, accurate, and scalable crop intelligence:
 
@@ -30,7 +28,7 @@ EarthDaily has designed this product for organizations that need timely, accurat
 * One on One Crop Analyst Calls
 
 
-## Data & Analytics Coverage 📊
+## 📊 Data & Analytics Coverage
 
 Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link).
 
