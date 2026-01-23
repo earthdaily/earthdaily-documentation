@@ -8,9 +8,9 @@
 
 The **Field-Level Crop Mask API** enables querying the planted crops for a given geometry and time window. The information is retrieved from the crop masks produced internally or sourced from public data. Understanding which crop has been planted is a foundational step for many downstream services. 
 
-## Field-Level Crop Mask API Summary
+## 🗺️ Field-Level Crop Mask API Summary
 
-#### Access via **REST API**
+### Access via **REST API**
 The **Field-Level Crop Mask API** encompasses a suite of four endpoints designed to support variable applications and to be easily integrated into internal systems, analytical pipelines, or external applications.
 
 | Method | Route | Description |Request |
@@ -21,8 +21,10 @@ The **Field-Level Crop Mask API** encompasses a suite of four endpoints designed
 |Post| `/cropmasks/layers-crop`| Retrieve which fields have a specific crop within a defined area for a targeted agricultural season|
 
 
-#### Supported Geometries
+### Supported Geometries
 **The Field-Level Crop Mask API** supports Polygon geometries (fields level) in WKT format & Coordinates must be provided in WGS 84 (EPSG:4326)
+
+---
 
 ## 🧭 API Endpoints
 
@@ -115,7 +117,7 @@ Return the **year(s)** in which a **specific crop** has been detected within a g
 ---
 
 
-## 🧰 Developer Ressources
+## 🧰 Developer Resources
 
 Interactive API documentation is available via Swagger:
 
@@ -124,6 +126,7 @@ Interactive API documentation is available via Swagger:
 <swagger-ui src="https://api.geosys-na.net/cropmasks/v1/swagger/v1/swagger.json"/>
  
 You can use this interface to:
+
 - Explore available endpoints
 - Test requests directly from the browser
 - View request/response formats and examples
