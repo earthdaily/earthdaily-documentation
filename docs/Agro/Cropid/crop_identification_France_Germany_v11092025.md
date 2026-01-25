@@ -50,7 +50,7 @@ Our AI models deliver high accuracy across major crops in both France and German
 | Winter Wheat: 0.85-0.90 | Winter Wheat: 0.76-0.90 | Winter Wheat: 0.75-0.80 |
 | Barley: 0.85-0.90 | Barley: 0.69-0.86 | Barley: 0.70-0.75 |
 | Oil Seed Rape: >0.95 | Oil Seed Rape: 0.86-0.93 | Oil Seed Rape: 0.90-0.95 |
-| Corn: 0.80-0.85 | Corn: 0.60-0.65 |  |
+| Corn: 0.80-0.85 |   | Corn: 0.60-0.65 |
 | Sunflower: 0.45-0.50 |  |
 | Sugar Beet: 0.70-0.75 |  |
 
