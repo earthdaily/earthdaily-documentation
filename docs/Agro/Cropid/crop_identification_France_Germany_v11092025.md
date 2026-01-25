@@ -1,6 +1,6 @@
 <meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for Western Europe leveraging remote crops monitoring and AI. Real-time crop maps, and seamless API delivery for agriculture.">
 
-## 🌍 Available across France, UK & Germany
+## 🌍 Available Across France, UK & Germany
 
 The EarthDaily Crop Identification product is fully operational across **France, UK and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in two of Europe’s largest and most diverse agricultural producers.
 
