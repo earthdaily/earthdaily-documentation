@@ -1,8 +1,8 @@
 <meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for Western Europe leveraging remote crops monitoring and AI. Real-time crop maps, and seamless API delivery for agriculture.">
 
-## 🌍 Available across France & Germany
+## 🌍 Available across France, UK & Germany
 
-The EarthDaily Crop Identification product is fully operational across both **France and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in two of Europe’s largest and most diverse agricultural producers.
+The EarthDaily Crop Identification product is fully operational across **France, UK and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in two of Europe’s largest and most diverse agricultural producers.
 
 **Covered crops are as follows:**
 
@@ -28,11 +28,13 @@ Additional crops can be supported upon request or as part of our product roadmap
 
 ## ⌛ In-Season Deliveries
 
-Crop classification layers are delivered during the growing season, providing a good evaluation of winter crops and an early assessment of spring crops.  
+Crop Identification layers are updated progressively throughout the growing season, enabling early and reliable identification of crop types. It is designed for in‑season decision making, not just post‑harvest analysis.  
 
 **Delivery schedule:**
 
-* Mid-June  
+* March 21st – Winter crops development​
+* July 7th – Spring crops development & Winter crops update​
+* Sept 7th – End of Season evaluation
 
 Additional delivery dates can be added upon request. These in-season deliveries enable monitoring of planted areas, detection of acreage variations, and dynamic adjustment of supply and production forecasts.
 
@@ -42,12 +44,12 @@ Additional delivery dates can be added upon request. These in-season deliveries 
 
 Our AI models deliver high accuracy across major crops in both France and Germany. Typical F1 score ranges under operational conditions are:
 
-| France | Germany |
-|--------|---------|
-| Winter Wheat: 0.85-0.90 | Winter Wheat: 0.75-0.80 |
-| Barley: 0.85-0.90 | Barley: 0.70-0.75 |
-| Oil Seed Rape: >0.95 | Oil Seed Rape: 0.90-0.95 |
-| Corn: 0.80-0.85 | Corn: 0.60-0.65 |
+| France |   UK   | Germany |
+|--------|---------|---------|
+| Winter Wheat: 0.85-0.90 | Winter Wheat: 0.76-0.90 | Winter Wheat: 0.75-0.80 |
+| Barley: 0.85-0.90 | Barley: 0.69-0.86 | Barley: 0.70-0.75 |
+| Oil Seed Rape: >0.95 | Oil Seed Rape: 0.86-0.93 | Oil Seed Rape: 0.90-0.95 |
+| Corn: 0.80-0.85 | Corn: 0.60-0.65 |  |
 | Sunflower: 0.45-0.50 |  |
 | Sugar Beet: 0.70-0.75 |  |
 
@@ -57,7 +59,7 @@ Our AI models deliver high accuracy across major crops in both France and German
 
 ## 📅 Historical Layers
 
-To support long-term analysis, we provide historical crop classification layers starting from **2019**, leveraging public EU datasets. Centralizing all layers simplifies the analysis of crop rotations, land-use patterns, and annual changes, eliminating the need to integrate multiple data sources.
+To support long-term analysis, we provide historical crop classification layers starting from **2019**, leveraging public EU datasets. Centralizing all layers simplifies the analysis of crop rotations, land-use patterns, and annual changes, creating reliable historical coverage where none is available.
 
 ---
 
