@@ -6,14 +6,15 @@ The EarthDaily Crop Identification product is fully operational across **France,
 
 **Covered crops are as follows:**
 
-| France | Germany |
-|--------|---------|
-| Winter Wheat | Winter Wheat |
-| Barley | Barley |
+| France |   UK   | Germany |
+|--------|---------|---------|
+| Winter Wheat | Winter Wheat | Winter Wheat |
+| Barley | Barley (Winter and Spring) | Barley |
 | Oil Seed Rape | Oil Seed Rape |
 | Corn | Corn |
 | Sunflower |  |
 | Sugar Beet | Sugar Beet |
+|  | Rapeseed |  |
 
 Additional crops can be supported upon request or as part of our product roadmap.
 
