@@ -48,12 +48,13 @@ Our AI models deliver high accuracy across major crops in both France and German
 
 | France |   UK   | Germany |
 |--------|---------|---------|
-| Winter Wheat: 0.85-0.90 | Winter Wheat: 0.76-0.90 | Winter Wheat: 0.75-0.80 |
-| Barley: 0.85-0.90 | Barley: 0.69-0.86 | Barley: 0.70-0.75 |
-| Oil Seed Rape: >0.95 | Oil Seed Rape: 0.86-0.93 | Oil Seed Rape: 0.90-0.95 |
-| Corn: 0.80-0.85 |   | Corn: 0.60-0.65 |
-| Sunflower: 0.45-0.50 |  |
-| Sugar Beet: 0.70-0.75 |  |
+| Winter Wheat: 0.71-0.92 | Winter Wheat: 0.76-0.90 | Winter Wheat: 0.75-0.80 |
+| Spring Barley: 0.78-0.81 | Spring Barley: 0.76 | Spring Barley: 0.56 |
+| Winter Barley: 0.66-0.9 | Winter Barley: 0.69-0.86 | Winter Barley: 0.88 |
+| Rapeseed: 0.9-0.97 | Rapeseed: 0.86-0.93 | Rapeseed: 0.97 |
+| Corn: 0.85-0.95 |   | Corn: 0.91 |
+| Sugar Beet: 0.81-0.94 |  | Sugar Beet: 0.85 |
+| Sunflower: 0.62-0.88 |  |  |
 
 ---
 
@@ -77,18 +78,19 @@ Explore full technical specifications in our [API Documentation](../Library/Fiel
 
 ## ❓ FAQ
 
-!!! tip "What crops are covered in EarthDaily’s France & Germany crop identification product?"
+!!! tip "What crops are covered in EarthDaily’s France, UK & Germany crop identification product?"
 
-    - France: Winter Wheat, Barley, Oilseed Rape, Corn, Sunflower, Sugar Beet  
-    - Germany: Winter Wheat, Barley, Oilseed Rape, Corn  
+    - France: Winter Wheat, Spring Barley, Winter Barley, Rapeseed, Corn, Sunflower, Sugar Beet
+    - UK: Winter Wheat, Spring Barley, Winter Barley, Rapeseed
+    - Germany: Winter Wheat, Spring Barley, Winter Barley, Rapeseed, Corn, Sugar Beet
 
 !!! tip "How accurate is the model?"
 
-    F1 scores range from 0.48 (Sunflower) to >0.95 (Oilseed Rape), validated under in-season conditions.
+    F1 scores range from 0.56 (Spring Barley) to >0.97 (Rapeseed), validated under in-season conditions.
  
 !!! tip "How often is the data updated?"
 
-    Once per cropping season for the moment.
+    3 deliveries are scheduled during the 2026 season: March 21st, July 7th, and September 7th.
 
 !!! tip "Can I access data for past seasons?"
 
@@ -96,7 +98,7 @@ Explore full technical specifications in our [API Documentation](../Library/Fiel
 
 !!! tip "What regions are supported?"
 
-    The coverage spans the entire territories of France and Germany.
+    The coverage spans the entire territories of France, UK and Germany.
     
 ---
 
