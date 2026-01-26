@@ -2,12 +2,9 @@
 title: Showcase
 ---
 
-
 ## Swagger integration
 
-
 <swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
-
 
 ## Diagram
 
@@ -212,7 +209,15 @@ theme:
     Vision without execution is halucination.
 
 
-## Badges
+## Video integration
+
+Here is an example of video integration
+
+<!-- youtube: 3QjXLrURIF4 -->
+
+Please take a look at the source code of this page to see syntax. 
+
+For now please make sure that video is uploaded on Earthdaily Youtube account. For now we are only supporting this platform but more could be added just create a ticket for this, [here](https://earthdaily.atlassian.net/servicedesk/customer/portal/107)
 
 ### Swagger
 

@@ -61,3 +61,5 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
 
 </div>
+
+--8<-- "snippets/contact-footer.md"

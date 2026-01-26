@@ -547,14 +547,17 @@ markdown_extensions:
   #- pymdownx.tilde:
 
 plugins:
-  - swagger-ui-tag
+  - swagger-ui-tag:
+      background: White
+      docExpansion: none
+      filter: ""
+      syntaxHighlightTheme: monokai
   - meta
   - tags
   - search:
       lang:
         - en  
       separator: '[\s\-\.]+'
-
 #  - mkdocstrings
 #  - blog:
 #      blog_toc: true
@@ -575,6 +578,7 @@ plugins:
 # Hooks
 hooks:
  - overrides/hooks/shortcodes.py
+ - overrides/hooks/video.py
  # - src/overrides/hooks/translations.py
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -593,7 +597,7 @@ hooks:
 nav:
   - Home: index.md
   - Agriculture: 
-    - Agro/index.md 
+    - Agro/index.md
     - Digital Ag:
       - Product: Agro/Digital_ag/Digital_ag_overview.md
       - Field Boundaries: Agro/Digital_ag/Field_boundaries.md
@@ -637,15 +641,17 @@ nav:
       - Monitoring region: App/en-US/04. Monitoring - Regional.md
       - Field Manager: App/en-US/05. Field Manager.md
       - Compliance analysis: App/en-US/06. Compliance Analysis.md
-    - QGIS:
+    - QGIS plugin:
       - Prerequisites: QGIS/1. Prerequisite.md
       - Installation: QGIS/2. Installation.md
       - Get data: QGIS/3. GetData.md
       - Processing toolbox: QGIS/4. ProcessingToolBox.md
-      - Map description: QGIS/5. MapDescription.md
     - Analytic catalog:
       - API Reference: Agro/Api_reference.md
       - Automated field borders: Agro/Library/Automatic_Field_Borders.md
+      - Field maps:
+        - Principles: Agro/Library/Field Level Maps.md
+        - Map types: Agro/Library/Map-types.md
       - Emergence: Agro/Library/Emergence.md
       - Emergence delay: Agro/Library/Emergence_Delay.md
       - Planting validation (ZARC): Agro/Library/ZARC.md

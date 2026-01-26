@@ -55,7 +55,6 @@ Change Idedex is based on three components of change using the field's NDVI valu
 
 ---
 
-
 ## View Change Index (From Monitoring Module)
 
 

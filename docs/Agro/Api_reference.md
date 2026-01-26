@@ -162,7 +162,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
 
     [:simple-swagger: Swagger](http://api.geosys-na.net/field-level-maps/v5/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Api_reference.md){ .md-button }
+    [:octicons-link-external-16: Details](./Library/Field%20Level%20Maps.md){ .md-button }
 
 -   :material-weather-cloudy: **Field Weather**
 
@@ -378,3 +378,4 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 ---
 
+--8<-- "snippets/contact-footer.md"

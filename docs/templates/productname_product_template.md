@@ -45,4 +45,4 @@ icon: material/wallet-outline
 
 
 
-[Contact Us](#) to schedule a demo or get API access.
+--8<-- "snippets/contact-footer.md"

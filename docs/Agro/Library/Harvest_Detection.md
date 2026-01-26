@@ -26,8 +26,6 @@ This process uses crop-specific parameters and seasonal information to deliver a
 
 ## ⚙️ API
 
-<!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
-
 <swagger-ui src="https://harvest-detection.aws.geosys.com/openapi.json"/>
 
 ---
@@ -102,7 +100,7 @@ This process uses crop-specific parameters and seasonal information to deliver a
 
 This analytic is used in:
 
-- /earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/* 
+- [Portfolio Management](../Portfolio/portfolio_product_site_draft/)
 
 ---
 

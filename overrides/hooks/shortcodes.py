@@ -12,7 +12,7 @@ from mkdocs.structure.pages import Page
 # Hooks
 # -----------------------------------------------------------------------------
 
-# @todo
+# Badge creation
 def on_page_markdown(
     markdown: str, *, page: Page, config: MkDocsConfig, files: Files
 ):
@@ -22,10 +22,7 @@ def on_page_markdown(
         type, args = match.groups()
         args = args.strip()
         if type == "version":
-            if args.startswith("insiders-"):
-                return _badge_for_version_insiders(args, page, files)
-            else:
-                return _badge_for_version(args, page, files)
+            return _badge_for_version(args, page, files)
         elif type == "sponsors":     return _badge_for_sponsors(page, files)
         elif type == "flag":         return flag(args, page, files)
         elif type == "option":       return option(args)
@@ -34,7 +31,7 @@ def on_page_markdown(
         elif type == "plugin":       return _badge_for_plugin(args, page, files)
         elif type == "extension":    return _badge_for_extension(args, page, files)
         elif type == "swagger":      return _badge_for_swagger(args, page, files)
-        elif type == "notebook": return _badge_for_notebook(args, page, files)
+        elif type == "notebook":     return _badge_for_notebook(args, page, files)
         elif type == "demo":         return _badge_for_demo(args, page, files)
         elif type == "default":
             if   args == "none":     return _badge_for_default_none(page, files)
