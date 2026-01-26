@@ -2,19 +2,20 @@
 
 ## 🌍 Available Across France, UK & Germany
 
-The EarthDaily Crop Identification product is fully operational across **France, UK and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in two of Europe’s largest and most diverse agricultural producers.
+The EarthDaily Crop Identification product is fully operational across **France, UK and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in three of Europe’s largest and most diverse agricultural producers.
 
 **Covered crops are as follows:**
 
 | France |   UK   | Germany |
 |--------|---------|---------|
 | Winter Wheat | Winter Wheat | Winter Wheat |
-| Barley | Barley (Winter and Spring) | Barley |
-| Oil Seed Rape | Oil Seed Rape |
-| Corn | Corn |
-| Sunflower |  |
-| Sugar Beet | Sugar Beet |
-|  | Rapeseed |  |
+| Spring Barley | Spring Barley | Spring Barley |
+| Winter Barley | Winter Barley | Winter Barley |
+| Rapeseed | Rapeseed | Rapeseed |
+| Corn |  | Corn |
+| Sugar Beet |  | Sugar Beet |
+| Sunflower |  |  |
+
 
 Additional crops can be supported upon request or as part of our product roadmap.
 
@@ -53,8 +54,6 @@ Our AI models deliver high accuracy across major crops in both France and German
 | Corn: 0.80-0.85 |   | Corn: 0.60-0.65 |
 | Sunflower: 0.45-0.50 |  |
 | Sugar Beet: 0.70-0.75 |  |
-
-*Note: Spring crop detection such as sunflower is limited due to the earliness of the prediction.*
 
 ---
 
