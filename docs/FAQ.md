@@ -34,3 +34,6 @@ description: This page contains a set of self serve ressources to quickly solve 
         :octicons-tag-16: `troubleshooting` `authentication` `errors`
         
         Check your token expiration...
+
+
+--8<-- "snippets/contact-footer.md"

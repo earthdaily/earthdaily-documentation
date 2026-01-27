@@ -114,4 +114,8 @@ This analytic is used in:
 | **WKT (Well-Known Text)**           | A standard text format for representing spatial geometries such as points, lines, and polygons.                   |
 | **AOI (Area of Interest)**          | A user-defined geographic area selected for analysis.                                                             |
 
+
+
+
 ---
+--8<-- "snippets/contact-footer.md"

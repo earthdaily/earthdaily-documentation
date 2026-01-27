@@ -23,4 +23,6 @@ EarthDaily's Yield Elaboration Method starts with answering these key questions 
 ![Historical Dataset Comparisons](../../assets/agro/commodities_intelligence/Reference Sources.png)
 
 
+
+
 --8<-- "snippets/contact-footer.md"

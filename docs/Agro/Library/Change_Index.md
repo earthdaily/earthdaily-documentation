@@ -105,4 +105,5 @@ Here is the Change index [API documentation](https://change-index.aws.geosys.com
 !!! tip "Yesterday a field had a Change Index score of 8 but no score today — what is going on?"  
     Scores are only provided when maps are available within the 5 to 15 day threshold. So, if a score was provided based on a 15-day timespan yesterday and a new image was provided today, the only two images available for comparison are 16 days or 1 day apart. Therefore, no score will be provided.
     
+
 --8<-- "snippets/contact-footer.md"

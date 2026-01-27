@@ -43,4 +43,5 @@ This analytic is used in:
     - [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/)
     - 
 
+
 --8<-- "snippets/contact-footer.md"

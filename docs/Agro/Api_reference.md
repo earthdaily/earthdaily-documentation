@@ -133,7 +133,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Historical and near-real-time vegetation indices time series. Cloud-masked, smoothed data for accurate temporal analysis of crop development.
     
     [:simple-swagger: Swagger](http://api.geosys-na.net/vegetation-time-series/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Api_reference.md){ .md-button }
+    [:octicons-link-external-16: Details](./Library/Vegetation_time_series.md){ .md-button }
 
 -   :material-barley: **Crop ID**
 
@@ -343,7 +343,6 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     ---
     
     <!-- md:flag experimental --> Estimate cover crop biomass and carbon sequestration potential. Supports carbon credit programs and soil health initiatives.
-    
 
     [:simple-swagger: Swagger](){ .md-button }
     [:octicons-link-external-16: Details](){ .md-button }
@@ -354,7 +353,6 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     <!-- md:flag experimental --> Estimate the number of days with bare soil exposed.
     
-
     [:simple-swagger: Swagger](https://avuqeoz2lrpi2s5qovww5k4vca0itlyy.lambda-url.us-east-1.on.aws/v1/docs){ .md-button }
     [:octicons-link-external-16: Details](./Library/){ .md-button }
 
@@ -377,5 +375,6 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 </div>
 
 ---
+
 
 --8<-- "snippets/contact-footer.md"

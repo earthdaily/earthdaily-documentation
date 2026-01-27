@@ -121,4 +121,5 @@ The Risk Score section shows how proposals are distributed across risk categorie
 
 This supports strategy adaptation and defining further risk acceptance guidelines.
 
+
 --8<-- "snippets/contact-footer.md"

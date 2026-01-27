@@ -139,4 +139,6 @@ Once a compliance analysis has been done on the field you can access all its det
 
 ![Compliance layers 4 ](../../assets/agro/portfolio-management/Compliance_layers_4.png)
 
+
+
 --8<-- "snippets/contact-footer.md"

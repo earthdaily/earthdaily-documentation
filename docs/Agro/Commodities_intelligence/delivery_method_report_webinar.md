@@ -66,4 +66,5 @@ Talk directly with one of our Crop Analysts about how EarthDaily data is illustr
 Bring your own questions about specific areas of interest or allow our Crop Analysts to take you on a virtual crop tour of regions of interest to our business.
 
 
+
 --8<-- "snippets/contact-footer.md"

@@ -156,5 +156,6 @@ All endpoints require secure access via **Identity Server API**, which manages:
 
 ---
 
+
 --8<-- "snippets/contact-footer.md"
 

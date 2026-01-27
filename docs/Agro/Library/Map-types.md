@@ -210,4 +210,3 @@ The user can easily create a difference map from two different product. These ma
 
 
 
---8<-- "snippets/contact-footer.md"

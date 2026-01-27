@@ -85,3 +85,4 @@ The coverage spans the entire territories of France and Germany.
 ---
 
 --8<-- "snippets/contact-footer.md"
+

@@ -40,7 +40,7 @@ site_url: 'https://earthdaily.github.io/documentation/' # Uncomment to set a can
 # | - https://www.mkdocs.org/user-guide/configuration/#copyright                                           |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-copyright: © 2025 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the MIT License.|
+copyright: © 2026 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the MIT License.|
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -502,29 +502,43 @@ extra:
 markdown_extensions:
   - attr_list
   - md_in_html
+
+  # 🔑 Snippets MUST be early
+  - pymdownx.snippets:
+      base_path: 
+        - docs
+        - .
+      check_paths: true
+
   - admonition
   - pymdownx.details
+
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+
   - pymdownx.inlinehilite
-  - pymdownx.snippets:           
-      base_path: docs
+
   - pymdownx.tabbed:
-      alternate_style: true      # ← Fixed: needs 6 spaces (same level as base_path above)
+      alternate_style: true
+
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
   - markdown.extensions.codehilite:
       guess_lang: false
+
   - markdown.extensions.toc:
-      permalink: true
+      permalink: "🔗"
+
   - tables
   #- pymdownx.arithmex:
   #- pymdownx.b64:
@@ -579,6 +593,7 @@ plugins:
 hooks:
  - overrides/hooks/shortcodes.py
  - overrides/hooks/video.py
+ - overrides/hooks/glossary.py
  # - src/overrides/hooks/translations.py
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -652,6 +667,7 @@ nav:
       - Field maps:
         - Principles: Agro/Library/Field Level Maps.md
         - Map types: Agro/Library/Map-types.md
+      - Vegetation Time Series: Agro/Library/Vegetation_time_series.md
       - Emergence: Agro/Library/Emergence.md
       - Emergence delay: Agro/Library/Emergence_Delay.md
       - Planting validation (ZARC): Agro/Library/ZARC.md
@@ -673,8 +689,6 @@ nav:
 #    - blog/tags.md
 #  - Insights: 
 #  - Insurance & Banking:
-#  - Mining & Energy:
 #  - Forestry:
-#  - Data:
 
 

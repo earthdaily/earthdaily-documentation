@@ -62,4 +62,6 @@ Insurers, agronomists, and financial institutions can offer innovative risk mana
 <img src="https://content.pstmn.io/bf78d432-f7e2-4766-bdb0-4f3055843d7b/aW1hZ2UucG5n" width="1002" height="212">
 
 
+
+
 --8<-- "snippets/contact-footer.md"

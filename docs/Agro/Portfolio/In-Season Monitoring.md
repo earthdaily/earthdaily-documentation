@@ -120,4 +120,6 @@ Provides a real-time overview of crop development by key stages, enabling insure
 
 - % of portfolio with detected harvest and acreage – indicates end of insured period
 
+
+
 --8<-- "snippets/contact-footer.md"

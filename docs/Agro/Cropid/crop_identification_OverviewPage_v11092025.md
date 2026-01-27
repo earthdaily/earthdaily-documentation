@@ -94,5 +94,6 @@ Explore further details in our [API Documentation](https://earthdaily.github.io/
     
 ---
 
---8<-- "snippets/contact-footer.md"
 
+
+--8<-- "snippets/contact-footer.md"

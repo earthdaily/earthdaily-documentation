@@ -87,5 +87,6 @@ Yes, we deliver crop classification data 6 to 12 months before local agencies.
 
 ---
 
---8<-- "snippets/contact-footer.md"
 
+
+--8<-- "snippets/contact-footer.md"

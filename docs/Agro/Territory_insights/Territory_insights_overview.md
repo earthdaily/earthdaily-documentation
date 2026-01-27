@@ -296,9 +296,4 @@ Territory Insights operates as a fully automated, cloud-based service that requi
   </div>
 </div>
 
-**Getting Started:**
-
-- Schedule a consultation to discuss your specific territory and use cases
-- Request a pilot program for your region
-
-[Contact Us](https://earthdaily.com/contact) 
+--8<-- "snippets/contact-footer.md"

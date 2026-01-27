@@ -113,4 +113,6 @@ This analytic is used in:
 | **WKT** | *Well-Known Text* | Text-based format for representing vector geometries such as points, lines, and polygons in GIS applications. |
 
 ---
+
+
 --8<-- "snippets/contact-footer.md"

@@ -59,5 +59,7 @@ Weather insights and some analogies with the very poor 2012 crop vigor allowed u
 
 ![Additional analysis](../../assets/agro/commodities_intelligence/Picture10.png)
 
+
+
 --8<-- "snippets/contact-footer.md"
 

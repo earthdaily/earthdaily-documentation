@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-  const link = document.querySelector("nav a[href='https://cropid-demo.aws-dev.geosys.com/']");
-  if (link) {
-    link.setAttribute("target", "_blank");
-    link.setAttribute("rel", "noopener noreferrer"); 
-  }
+  document.querySelectorAll("a[href^='http']").forEach(link => {
+    if (!link.href.startsWith(window.location.origin)) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  });
 });

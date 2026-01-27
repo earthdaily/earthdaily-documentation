@@ -209,6 +209,23 @@ theme:
     Vision without execution is halucination.
 
 
+## Adding Contact footnote
+
+This is how you had content footnotes "--8<-- "snippets/contact-footer.md""
+
+Here is output: 
+
+--8<-- "snippets/contact-footer.md"
+
+## Glossary annotation
+
+This is a test for glossary for WKT (1)
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:wkt"
+
+This will allow to ingest content from [glossary](glossary.md) as an annotation in your article
+
 ## Video integration
 
 Here is an example of video integration
@@ -219,6 +236,9 @@ Please take a look at the source code of this page to see syntax.
 
 For now please make sure that video is uploaded on Earthdaily Youtube account. For now we are only supporting this platform but more could be added just create a ticket for this, [here](https://earthdaily.atlassian.net/servicedesk/customer/portal/107)
 
+
+## Adding badges in documentation
+
 ### Swagger
 
 ```
@@ -226,9 +246,16 @@ For now please make sure that video is uploaded on Earthdaily Youtube account. F
 ```
 This should be displayed as <!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
 
+
 ### Demo repo 
 
 ```Markdown
 <!-- md:demo reflectance-datacube-processor -->
 ```
 This should be displayed as <!-- md:demo reflectance-datacube-processor -->
+
+### Experimental flag
+
+this is the experimental flag
+
+<!-- md:flag experimental -->

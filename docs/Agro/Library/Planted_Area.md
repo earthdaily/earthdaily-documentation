@@ -92,3 +92,6 @@ This analytic is used in:
 | **AOI (Area of Interest)**          | A user-defined geographic area selected for analysis.                                                             |
 
 ---
+
+
+--8<-- "snippets/contact-footer.md"

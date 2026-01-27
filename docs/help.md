@@ -26,7 +26,7 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
 
     Check the current operational status of all EarthDaily services and historical uptime data.
 
-    <iframe src="https://status.earthdaily.com/badge?theme=light" width="250" height="40" frameborder="0" scrolling="no" style="color-scheme: normal"></iframe>
+    <iframe src="https://status.earthdaily.com/badge?theme=light" width="250" height="40" frameborder="0" scrolling="no" style="float: right; margin-left: 1rem; color-     scheme: normal"></iframe>
 
     [:octicons-arrow-right-24: View detailed status](https://status.earthdaily.com/)
 

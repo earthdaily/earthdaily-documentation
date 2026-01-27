@@ -93,4 +93,5 @@ just insuring farms -- you're ensuring smarter outcomes.
 
 Launch your parametric product today with EarthDaily’s trusted, validated datasets and API-first delivery.
 
+
 --8<-- "snippets/contact-footer.md"

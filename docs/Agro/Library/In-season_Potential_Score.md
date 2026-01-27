@@ -4,7 +4,7 @@ description: This section explains everything you need to know about the In-seas
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:demo reflectance-datacube-processor -->
+
 # In-season Potential Score
 
 ## 📖 Overview
@@ -13,10 +13,7 @@ The **In-season Potential Score**  analytic provides an indicator of the in-seas
 
 The figure below illustrates the expected NDVI development for a typical annual grain crop. The analytic transforms the NDVI time series into a potential score, enabling comparisons between fields in the same region or across historical seasons.
 
-
-
 ![In-season Potential Score](../../assets/agro/potential_score/ndvi_plot.png)
-
 
 ---
 
@@ -106,5 +103,16 @@ This analytic is used in:
 | **WKT (Well-Known Text)**        | Standard format for representing spatial geometries such as polygons, points, and lines. |
 | **AOI (Area of Interest)**       | User-defined area for analysis. |
 
+
+## Test Section
+
+--8<-- "../../glossary.md:wkt"
+
 ---
---8<-- "snippets/contact-footer.md"
+
+This is for low resolution data (1)
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:wkt"
+
+

@@ -45,4 +45,4 @@ icon: material/wallet-outline
 
 
 
---8<-- "snippets/contact-footer.md"
+

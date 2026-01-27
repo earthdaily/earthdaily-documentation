@@ -16,4 +16,5 @@ Access key EarthDaily Data in a simple user interface to create  your own yield 
 USA Corn 2025 - high corn crop vigor in Nebraska during the 2025 season  
 ![C:\Users\nick.ohrtman\OneDrive - EARTHDAILY\Documents\GitHub\earthdaily-documentation\docs\assets\agro\crop-intelligence\Nebraska Corn 2025.png]
 
+
 --8<-- "snippets/contact-footer.md"

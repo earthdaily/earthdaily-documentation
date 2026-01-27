@@ -54,4 +54,5 @@ The Digital Ag solution provides access to weather indicators—**daily and cumu
 As a result, you get a clear, reliable picture of crop vigor across space and time—capturing how fields respond to weather events and seasonal conditions. Imagery time series and weather data form the foundational inputs for many agronomic and AI modeling approaches, providing both the long-term context and short-term precision needed to anticipate issues.
 
 ---
+
 --8<-- "snippets/contact-footer.md"

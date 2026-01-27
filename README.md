@@ -179,7 +179,7 @@ The following links will provide access to more information:
 - [Markdown foundations](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 - [Mkdocs]
 - [Mkdocs Material][squidfunk]
-- [Examples](https://earthdaily.github.io/earthdaily-documentation/showcase/)
+- [Examples](https://earthdaily.github.io/earthdaily-documentation/showcase/) on how to create rich documentation content using charts, badges
 
 **Tips** To generate folder structure with ASCII characters, you can use the command 'tree".
    - Open the Command Prompt (Start button + type "cmd").

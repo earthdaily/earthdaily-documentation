@@ -126,4 +126,5 @@ This analytic is used in:
 | **AOI (Area of Interest)**       | User-defined area for analysis. |
 
 ---
+
 --8<-- "snippets/contact-footer.md"
