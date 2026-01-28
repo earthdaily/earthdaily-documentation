@@ -104,15 +104,8 @@ This analytic is used in:
 | **AOI (Area of Interest)**       | User-defined area for analysis. |
 
 
-## Test Section
+--8<-- "snippets/contact-footer.md"
 
---8<-- "../../glossary.md:wkt"
 
----
-
-This is for low resolution data (1)
-{ .annotate }
-
-1.  --8<-- "../../glossary.md:wkt"
 
 

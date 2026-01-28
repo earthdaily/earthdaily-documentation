@@ -1,12 +1,20 @@
-
-
+---
+title: Harvest Detection
+description: This section explains everything you need to know about the Harvest Detection analytic.
+# icon: fontawesome/question
+#status: new
+---
 <!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
 
 # Harvest Detection Computation
 
 ## 📖 Overview
 
-The **harvest detection analytic** determines the harvest date or readiness of a crop field by analyzing time series of vegetation indices and other relevant data. It supports multiple detection modes:
+The **harvest detection analytic** (1) determines the harvest date or readiness of a crop field by analyzing time series of vegetation indices and other relevant data. It supports multiple detection modes through the Harvest Type (2) parameter:
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:harvest_detection"
+2.  --8<-- "../../glossary.md:harvest_type"
 
 - **INSEASON_HARVEST**: Detects if the harvest has occurred and computes the harvest date for the current season.
 - **HISTORICAL_HARVEST**: Computes harvest dates for the past 5 years.
@@ -18,9 +26,12 @@ This process uses crop-specific parameters and seasonal information to deliver a
 
 ## 🗂️ Baseline Data
 
-- **NDVI Time Series**
-- **Crop Season Parameters**
-- **Satellite Imagery (LR/MR)**
+The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) resolutions, combined with crop season parameters to detect harvest dates and readiness.
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:ndvi"
+2.  --8<-- "../../glossary.md:lr"
+3.  --8<-- "../../glossary.md:mr"
 
 ---
 
@@ -104,18 +115,4 @@ This analytic is used in:
 
 ---
 
-## 📚 Glossary
-
-| **Term**                             | **Description**                                                                                                   |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Harvest Detection**               | The process of identifying the harvest date or readiness based on vegetation index and crop maturity.             |
-| **Harvest Type**                    | Defines the detection mode: **INSEASON_HARVEST**, **HISTORICAL_HARVEST**, or **HARVEST_READINESS**.              |
-| **NDVI (Normalized Difference Vegetation Index)** | A vegetation index derived from visible and near-infrared reflectance. Values range from -1 to 1.                |
-| **WKT (Well-Known Text)**           | A standard text format for representing spatial geometries such as points, lines, and polygons.                   |
-| **AOI (Area of Interest)**          | A user-defined geographic area selected for analysis.                                                             |
-
-
-
-
----
 --8<-- "snippets/contact-footer.md"

@@ -9,10 +9,15 @@ description: This section explains everything you need to know about the layers 
 
 ## 📖 Overview
 
-The **Environmental Layers** provide access to a comprehensive collection of geospatial datasets used by EarthDaily Agro to support environmental, agricultural, and compliance analyses in Brazil. Each dataset represents a specific environmental, regulatory, or land-use layer published by official national and state institutions (e.g., IBAMA, INCRA, ICMBio, SEMA, FUNAI). These layers can be queried individually or combined to identify overlaps with agricultural fields, farms, or other geometries — helping users assess legal compliance, conservation areas, and land management boundaries.
+The **Environmental Layers** provide access to a comprehensive collection of geospatial datasets used by EarthDaily Agro to support environmental, agricultural, and compliance analyses in Brazil. Each dataset represents a specific environmental, regulatory, or land-use layer published by official national and state institutions (e.g., IBAMA (1), INCRA (2), ICMBio (3), SEMA (4), FUNAI). These layers can be queried individually or combined to identify overlaps with agricultural fields, farms, or other geometries — helping users assess legal compliance, conservation areas, and land management boundaries.
+{ .annotate }
 
----
+1.  --8<-- "../../glossary.md:ibama"
+2.  --8<-- "../../glossary.md:incra"
+3.  --8<-- "../../glossary.md:icmbio"
+4.  --8<-- "../../glossary.md:sema"
 
+The datasets include CAR property boundaries, SIGEF and SNCI land registries, conservation units managed by ICMBio, embargo lists from IBAMA and state agencies (SEMA-MT, SIGA-GO, SIGA-MT, IAT-PR), and the LDI-PA deforestation list. These comprehensive layers enable thorough environmental compliance assessment and land-use analysis across Brazilian territories.
 
 ---
 
@@ -22,7 +27,12 @@ The **Environmental Layers** provide access to a comprehensive collection of geo
 
 ---
 
-## 🗂️  Dataset
+## 🗂️ Available Datasets
+
+The following table lists all available environmental layers. Hover over acronyms (1) to see their definitions.
+{ .annotate }
+
+1.  Acronyms like CAR, INCRA, SIGEF, IBAMA, etc. are automatically linked to glossary definitions via tooltips.
 
 | Id                                | Name                                           | Description                                                                                                                                                                                                                                                                                                                                                                                      |
 |:----------------------------------|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,12 +43,12 @@ The **Environmental Layers** provide access to a comprehensive collection of geo
 | BR_CAR_APP                        | Áreas de Preservação Permanente (CAR)          | Permanent Protected land that aims to preserve water resources, landscape, geological stability and biodiversity, facilitate the gene flow of fauna and flora, protect the soil and ensure the well-being of human populations.                                                                                                                                                                            |
 | BR_RESTRICTED_USAGE               | Áreas de Uso Restrito (CAR)                    | Wetlands, swamp plains and areas with an inclination between 25° and 45°. Sustainable management and agrosilvopastoral activities are allowed as long as technical recommendations of official agencies are met.                                                                                                                                                                                 |
 | BR_EMBARGOES_FREE_SEMAMT          | Áreas Desembargadas SEMA-MT                    | Territories that were embargoed before, but fixed (by paying fines and/or promoting environmental projects)                                                                                                                                                                                                                                                                                      |
-| BR_QUILOMBOLAS                    | Áreas Quilombolas                              | Lands occupied by remnants of quilombo communities. They are protected by law to guarantee the communities physical, social, economic and cultural reproduction.                                                                                                                                                                                                             |
+| BR_QUILOMBOLAS                    | Áreas Quilombolas                              | Lands occupied by remnants of quilombo communities. They are protected by law to guarantee the communities physical, social, economic and cultural reproduction.                                                                                                                                                                             |
 | BR_BIOMA                          | Bioma                                          | Large set of plant and animal life characterized by the dominant vegetation type.                                                                                                                                                                                                                                                                                                                |
 | BR_DESFORESTATION_AFTER_2008      | Desmatamento após 2008                         | Satellite monitoring of clear-cut deforestation per year                                                                                                                                                                                                                                                                                                                                         |
 | EMBARGOES_IAT_PR                  | Embargos IAT-PR                                | Embargoed territories of Paraná due to non-compliance with current environmental legislation.                                                                                                                                                                                                                                                                                                    |
 | BR_EMBARGOES_IBAMA                | Embargos IBAMA                                 | Embargoed territories due to non-compliance with current environmental legislation.                                                                                                                                                                                                                                                                                                              |
-| BR_EMBARGOES_ICMBIO               | Embargos ICMBIO                                | Embargoed territories (mostly within Conservation Units) due to non-compliance with current environmental legislation.                                                                                                                                                                                                                                                                           |
+| BR_EMBARGOES_ICMBIO               | Embargos ICMBio                                | Embargoed territories (mostly within Conservation Units) due to non-compliance with current environmental legislation.                                                                                                                                                                                                                                                                           |
 | BR_LDI_ILLEGAL_DEFORESTATION_PARA | Embargos LDI-PA                                | Farms with illegal deforestation in Pará State.                                                                                                                                                                                                                                                                                                                                                  |
 | BR_EMBARGOES_SEMAMT               | Embargos SEMA-MT                               | Embargoed territories of Mato Grosso due to non-compliance with current environmental legislation.                                                                                                                                                                                                                                                                                               |
 | EMBARGOES_SIGA_GO                 | Embargos SIGA-GO                               | Embargoed territories of Goiás due to non-compliance with current environmental legislation.                                                                                                                                                                                                                                                                                                     |
@@ -50,7 +60,7 @@ The **Environmental Layers** provide access to a comprehensive collection of geo
 | INFRACAO_SIGA_MT                  | Infração SIGA-MT                               | Environmental infraction of Mato Grosso                                                                                                                                                                                                                                                                                                                                                          |
 | INFRACAO_SIGA_MT_POINTS           | Infração SIGA-MT (pontos)                      | Environmental infraction of Mato Grosso                                                                                                                                                                                                                                                                                                                                                          |
 | BRAZIL_MUNICIPIOS                 | Municípios brasileiros                         | Brazilian municipalities borders                                                                                                                                                                                                                                                                                                                                                                 |
-| BR_WATER_ALLOCATION               | Outorga d'água                                                | Right to use or interfere on water resources, provided by the Government for a certain time, purpose and condition.                                                                                                                                                                                                                                                                             |
+| BR_WATER_ALLOCATION               | Outorga d'água                                 | Right to use or interfere on water resources, provided by the Government for a certain time, purpose and condition.                                                                                                                                                                                                                                                                             |
 | BR_CAR_LEGAL_RESERVE              | Reserva Legal (CAR)                            | Legal reserve are areas legally destined within a farm to hold native vegetation, in a percentage of up to 80%, depending on the biome where the farm is located.                                                                                                                                                                                                                                |
 | BR_SIGEF_PROPERTIES               | Sistema de Gestão Fundiária (SIGEF)            | Land Management System, called SIGEF, is a system developed by INCRA to manage land information in the Brazilian rural areas. It is used to receive, validate, organize, regularize and make available georeferenced information on rural property boundaries.                                                                                                                               |
 | BR_SNCI_PROPERTIES                | Sistema Nacional de Cadastro de Imóveis (SNCI) | National Property Certification System, called SNCI, is a system developed by INCRA to manage land information in the Brazilian rural areas.                                                                                                                                                                                                                                                 |
@@ -60,26 +70,26 @@ The **Environmental Layers** provide access to a comprehensive collection of geo
 | BR_CONSERVATION_UNITS             | Unidades de Conservação                        | Conservation Units of Full Protection seek nature preservation and only the indirect use of their natural resources is allowed.                                                                                                                                                                                                                                                                  |
 | BR_CONSERVATION_UNITS_POINTS      | Unidades de Conservação (pontos)               | Conservation Units of Full Protection seek nature preservation and only the indirect use of their natural resources is allowed.                                                                                                                                                                                                                                                                  |
 
+---
 
-## 📚 Glossary
+## 📋 Common Use Cases
 
-| Term | Full Name | Description |
-|:---------|:-----------|:-------------|
-| **CAR** | *Cadastro Ambiental Rural* | Brazilian national public registry integrating environmental information about rural properties, including farm boundaries and environmental features. |
-| **INCRA** | *Instituto Nacional de Colonização e Reforma Agrária* | Federal agency responsible for land reform, land management, and maintaining Brazilian national land databases such as SIGEF and SNCI. |
-| **IBAMA** | *Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis* | Federal environmental agency in charge of environmental law enforcement, licensing, and conservation at the national level. |
-| **ICMBio** | *Instituto Chico Mendes de Conservação da Biodiversidade* | Federal agency responsible for managing Brazil’s conservation units and biodiversity preservation. |
-| **SEMA-MT** | *Secretaria de Estado de Meio Ambiente de Mato Grosso* | State Secretariat for the Environment in Mato Grosso, responsible for environmental regulation and enforcement. |
-| **SEMA** | *Secretaria de Estado de Meio Ambiente* | State-level Secretariat for the Environment (generic term; each state may have its own, e.g., SEMA-MT). |
-| **SIGA-GO** | *Sistema de Gestão Ambiental de Goiás* | State environmental management system for Goiás, used to track infractions, embargoes, and environmental compliance. |
-| **SIGA-MT** | *Sistema Integrado de Gestão Ambiental de Mato Grosso* | State environmental management system for Mato Grosso. |
-| **IAT-PR** | *Instituto Água e Terra do Paraná* | Environmental institute of Paraná responsible for licensing, monitoring, and conservation activities. |
-| **LDI-PA** | *Lista de Desmatamento Ilegal do Pará* | Official list of farms with illegal deforestation in the state of Pará. |
-| **SNCI** | *Sistema Nacional de Cadastro de Imóveis Rurais* | National Property Certification System developed by INCRA to manage cadastral and geospatial data of rural properties. |
-| **SIGEF** | *Sistema de Gestão Fundiária* | Land Management System developed by INCRA to register and validate georeferenced rural property data. |
+### Environmental Compliance Checking
 
+Query multiple layers to assess whether a property (1) overlaps with protected areas, embargoes, or indigenous lands:
+{ .annotate }
 
+1.  Properties can be identified using CAR, SIGEF, or SNCI registration data.
+
+- **Conservation compliance**: Check overlap with ICMBio conservation units
+- **Legal verification**: Cross-reference with IBAMA and state agency embargoes (SEMA-MT, SIGA-GO, SIGA-MT, IAT-PR)
+- **Deforestation monitoring**: Verify against LDI-PA illegal deforestation list
+- **Property validation**: Compare CAR boundaries with SIGEF and SNCI official registries
+
+### Land Management Analysis
+
+The INCRA-managed SIGEF and SNCI systems provide certified property boundaries that can be compared with CAR self-declared boundaries to identify discrepancies and ensure proper land registration.
 
 ---
---8<-- "snippets/contact-footer.md"
 
+--8<-- "snippets/contact-footer.md"

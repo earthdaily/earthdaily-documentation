@@ -4,6 +4,8 @@ title: Showcase
 
 ## Swagger integration
 
+Please make sure to use the json file and not the Open API UI.
+
 <swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
 
 ## Diagram

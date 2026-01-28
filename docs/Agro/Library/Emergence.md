@@ -8,14 +8,22 @@ description: This section explains everything you need to know about emergence d
 
 ## 📖 Overview
 
-The **emergence detection analytic** identifies the begining of the crop development by analyzing time series of the vegetation index (NDVI). Using this data, it calculates both the growth rate and the acceleration of the NDVI curve. Emergence is detected when the NDVI exceeds a defined minimum threshold and demonstrates consistent, accelerating growth over a continuous period. The algorithm validates this behavior using predefined criteria and records the corresponding date as `EmergenceDate`. It also reports whether emergence was detected (`EmergenceStatus`) and which detection method was applied (`ConfirmationStatus`). The process is fast, robust, and adaptable to various crops and geographic regions.
+The **emergence detection analytic** identifies the beginning of the crop development by analyzing time series of the vegetation index NDVI (1). Using this data, it calculates both the growth rate and the acceleration of the NDVI curve. Emergence is detected when the NDVI exceeds a defined minimum threshold and demonstrates consistent, accelerating growth over a continuous period. The algorithm validates this behavior using predefined criteria and records the corresponding date as Emergence Date (2). It also reports whether emergence was detected (`EmergenceStatus`) and which detection method was applied (`ConfirmationStatus`). The process is fast, robust, and adaptable to various crops and geographic regions.
+{ .annotate }
 
+1.  --8<-- "../../glossary.md:ndvi"
+2.  --8<-- "../../glossary.md:emergence_date"
 
 ---
 
 ## 🗂️ Baseline Data
 
-- **NDVI MR/LR Time Series**
+The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) resolutions to detect crop emergence dates across various agricultural regions.
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:ndvi"
+2.  --8<-- "../../glossary.md:lr"
+3.  --8<-- "../../glossary.md:mr"
 
 ---
 
@@ -74,22 +82,8 @@ The **emergence detection analytic** identifies the begining of the crop develop
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/* )
-
-
-## 📚 Glossary
-
-| **Term**                             | **Description**                                                                                                                                       |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **NDVI (Normalized Difference Vegetation Index)** | A vegetation index derived from visible and near-infrared reflectance. Values range from -1 to 1, with higher values indicating healthier vegetation. |
-| **MR / LR**                          | Image resolutions used in analysis: **MR** (Medium Resolution) and **LR** (Low Resolution).                                                           |
-| **Season Duration**                  | Total number of days in the crop season, used to calculate cumulative NDVI.                                                                           |
-| **Season Start Day / Month**         | Day and month marking the beginning of the crop season, used to define the NDVI accumulation period.                                                  |
-| **WKT (Well-Known Text)**            | A standard text format for representing spatial geometries such as points, lines, and polygons.                                                       |
-| **AOI (Area of Interest)**           | A user-defined geographic area selected for analysis.                                                                                                 |
-
+- [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/)
 
 ---
-
 
 --8<-- "snippets/contact-footer.md"

@@ -14,4 +14,4 @@ This symbol is used to provide link to Open API documentation allowing you to tr
 This symbol provides a link to specific repository containing runnable located on Github.
 
 ### <!-- md:flag notebook --> – Notebook { data-toc-label="Notebook" }
-This symbol provides a link to runnable notebook  of the feature or the analytic located on Github.
+This symbol provides a link to runnable notebook  of the feature or the analytic located on Github.--8<-- "snippets/contact-footer.md"

@@ -9,23 +9,42 @@ description: This section explains everything you need to know about the Environ
 
 ## 📖 Overview
 
-**EarthDailyAgro’s Environmental Compliance Report analytic** enables Brazilian customers to quickly check whether or not a given geometry (field, farm, policy or other) complies with environmental and national legislation. The user provides at least a geometry and a CPF/CPNJ number, and they can retrieve the report in json and PDF format, with all intersection percentage if any.
+**EarthDailyAgro's Environmental Compliance Report analytic** enables Brazilian customers to quickly check whether or not a given geometry (1) (field, farm, policy or other) complies with environmental and national legislation. The user provides at least a geometry in WKT (2) format and a CPF (3) or CNPJ (4) number, and they can retrieve the report in JSON and PDF format, with all intersection percentages if any.
+{ .annotate }
 
-The **Environmental Compliance Report** is a tool that guides analysis based on federal, and state-level geospatial data from Brazilian public institutes. Its goal is to reduce environmental risks by identifying overlap with embargoes, historical deforestation, and protected territories such as native land, permanent protection areas, legal reserves, etc. Easy to apply, it is widely used by financial agents, banks, and insurance companies.
+1.  --8<-- "../../glossary.md:aoi"
+2.  --8<-- "../../glossary.md:wkt"
+3.  --8<-- "../../glossary.md:cpf"
+4.  --8<-- "../../glossary.md:cnpj"
 
-
+The **Environmental Compliance Report** is a tool that guides analysis based on federal and state-level geospatial data from Brazilian public institutes. Its goal is to reduce environmental risks by identifying overlap with embargoes, historical deforestation, and protected territories such as native land, permanent protection areas, legal reserves, etc. Easy to apply, it is widely used by financial agents, banks, and insurance companies.
 
 ---
 
 ## 🗂️ Baseline Data
 
-Description of each dataset on the [Environmental Layers](CRA_Layers.md) page.
+The compliance analysis uses comprehensive geospatial datasets from Brazilian federal and state agencies. These include CAR (5) property boundaries, SIGEF (6) and SNCI (7) land registries managed by INCRA (8), conservation areas from ICMBio (9), and embargo lists from IBAMA (10) and state environmental agencies including SEMA-MT (11), SIGA-GO (12), SIGA-MT (13), IAT-PR (14), and the LDI-PA (15) deforestation list.
+{ .annotate }
+
+5.  --8<-- "../../glossary.md:car"
+6.  --8<-- "../../glossary.md:sigef"
+7.  --8<-- "../../glossary.md:snci"
+8.  --8<-- "../../glossary.md:incra"
+9.  --8<-- "../../glossary.md:icmbio"
+10. --8<-- "../../glossary.md:ibama"
+11. --8<-- "../../glossary.md:sema_mt"
+12. --8<-- "../../glossary.md:siga_go"
+13. --8<-- "../../glossary.md:siga_mt"
+14. --8<-- "../../glossary.md:iat_pr"
+15. --8<-- "../../glossary.md:ldi_pa"
+
+Detailed description of each dataset is available on the [Environmental Layers](CRA_Layers.md) page.
 
 ---
 
 ## ⚙️ API Access
 
-<swagger-ui src="https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/index.html"/>
+<swagger-ui src="https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/v0.0/swagger.json"/>
 
 ---
 
@@ -42,8 +61,6 @@ Description of each dataset on the [Environmental Layers](CRA_Layers.md) page.
 | **Name** | `Name` | Name of the geometry | `string` | Optional |
 | **Field ID** | `FieldId` | Id of the geometry to be displayed in the report | `string` | Optional |
 | **ID** | `Id` | EarthDaily Agro internal id | `string` | Optional |
-
-
 
 ---
 
@@ -78,13 +95,6 @@ Description of each dataset on the [Environmental Layers](CRA_Layers.md) page.
 | **CPF**                       | `cpf`                      | Document number linked to the property owner                                   | `string`     |
 | **Compliance Status**         | `compliance_status`        | Final result of the compliance validation (e.g., `Compliant`, `NotCompliant`)   | `string`     |
 
-
-
-
-
-
-
-
 ---
 
 ## 📊 Performance
@@ -94,7 +104,6 @@ Description of each dataset on the [Environmental Layers](CRA_Layers.md) page.
 
 ---
 
-
 ## 💼 Use Case and Product Integration
 
 This analytic is used in:
@@ -102,17 +111,5 @@ This analytic is used in:
 - [Portfolio](../Portfolio/portfolio_product_site_draft.md)
 
 ---
-
-## 📚 Glossary
-
-| Acronym | Full Name | Description |
-|:---------|:-----------|:-------------|
-| **CPF** | *Cadastro de Pessoa Física* | Brazilian individual taxpayer registry number issued by the Federal Revenue Service. Used to identify natural persons. |
-| **CNPJ** | *Cadastro Nacional da Pessoa Jurídica* | Brazilian company (legal entity) taxpayer registry number issued by the Federal Revenue Service. Used to identify organizations and companies. |
-| **CAR** | *Cadastro Ambiental Rural* | Brazilian national public registry integrating environmental information about rural properties, including farm boundaries and environmental features. |
-| **WKT** | *Well-Known Text* | Text-based format for representing vector geometries such as points, lines, and polygons in GIS applications. |
-
----
-
 
 --8<-- "snippets/contact-footer.md"

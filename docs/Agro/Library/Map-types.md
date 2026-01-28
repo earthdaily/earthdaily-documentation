@@ -209,4 +209,4 @@ the elevation map provide additional element to analyse the fields. Elevations a
 The user can easily create a difference map from two different product. These maps are mainly used to highlight changes within a plot (during a disaster, for example, to detect the impacted area, or after sowing to detect the planted area).
 
 
-
+--8<-- "snippets/contact-footer.md"

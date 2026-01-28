@@ -1,16 +1,29 @@
+---
+title: Planted Area
+description: This section explains everything you need to know about the planted area analytic.
+# icon: fontawesome/question
+#status: new
+---
+<!-- md:swagger API|https://planted-area.aws.geosys.com/docs -->
 
 # Planted Area Computation
 
 ## 📖 Overview
 
-The **planted area computation analytic** calculates the planted area of a crop field based on satellite imagery and emergence detection data. This process uses the emergence date as a reference and compares images taken before and after emergence to estimate the percentage of planted area. It supports different processing modes, including standard planted area calculation and control mode for unplanted area detection. The algorithm validates results using predefined thresholds and stores them for integration with other analytics and applications.
+The **planted area computation analytic** calculates the planted area of a crop field based on satellite imagery and emergence detection data. This process uses the Emergence Date (1) as a reference and compares images taken before and after emergence to estimate the percentage of planted area. It supports different processing modes through the Processor Mode (2) parameter, including standard planted area calculation and control mode for unplanted area detection. The algorithm validates results using predefined thresholds and stores them for integration with other analytics and applications.
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:emergence_date"
+2.  --8<-- "../../glossary.md:processor_mode"
 
 ---
 
 ## 🗂️ Baseline Data
 
-- **Satellite Imagery (Pre- and Post-Emergence)**
-- **Emergence Detection Results**
+The analytic uses satellite imagery captured before and after crop emergence, combined with emergence detection results to accurately calculate planted area within a defined AOI (1).
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:aoi"
 
 ---
 
@@ -44,14 +57,14 @@ The **planted area computation analytic** calculates the planted area of a crop 
 
 ### Output Variables
 
-#### PLANTED_AREA
+#### PLANTED_AREA Mode
 
 | **Parameter**             | **Variable Name**       | **Description**                                               | **Type**   |
 |---------------------------|--------------------------|---------------------------------------------------------------|------------|
 | Planted Area             | planted_area            | Computed planted area in square meters                       | float      |
 | Planted Area Percentage  | planted_percentage      | Computed planted area as a percentage                        | float      |
 
-#### CONTROL
+#### CONTROL Mode
 
 | **Parameter**       | **Variable Name**     | **Description**                                                                                  | **Type**   |
 |---------------------|------------------------|--------------------------------------------------------------------------------------------------|------------|
@@ -59,7 +72,17 @@ The **planted area computation analytic** calculates the planted area of a crop 
 | Control Threshold   | control_threshold     | Defines the percentage limit of unplanted area allowed when operating in CONTROL mode.          | float      |
 | Result              | result                | Indicates whether the computed value meets or exceeds the defined threshold (true/false).       | boolean    |
 
----
+
+## ⚠️ Error management
+
+| Status Code | Error Type | Description | Example Response |
+|-------------|------------|-------------|------------------|
+| 400 | Bad Request | Invalid request parameters | `{"detail": "Parameters 'season_field_id' and 'polygon' cannot be both None or empty."}` |
+| 401 | Not Authenticated | Missing or invalid authentication token | `{"detail": "Not authenticated"}` |
+| 422 | Validation Error | Request validation failed | `{"detail": [{"loc": ["string or integer"], "msg": "string", "type": "string"}]}` |
+| 500 | Internal Server Error | Error during planted area calculation | `{"detail": "Error while calculating planted area"}` |
+
+
 
 ## 📊 Performance and Accuracy
 
@@ -77,21 +100,8 @@ The **planted area computation analytic** calculates the planted area of a crop 
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/* )
+- [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/)
 
 ---
-
-## 📚 Glossary
-
-| **Term**                             | **Description**                                                                                                   |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Emergence Date**                  | The date when crop emergence was detected, used as a reference for planted area computation.                     |
-| **Processor Mode**                  | Defines the computation type: **PLANTED_AREA** for planted area calculation, **CONTROL** for unplanted area check.|
-| **Control Threshold**               | Percentage threshold for unplanted area in CONTROL mode.                                                          |
-| **WKT (Well-Known Text)**           | A standard text format for representing spatial geometries such as points, lines, and polygons.                   |
-| **AOI (Area of Interest)**          | A user-defined geographic area selected for analysis.                                                             |
-
----
-
 
 --8<-- "snippets/contact-footer.md"

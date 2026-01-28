@@ -501,9 +501,10 @@ extra:
 
 markdown_extensions:
   - attr_list
+  - abbr
   - md_in_html
 
-  # 🔑 Snippets MUST be early
+  # 🔑 Snippets should be early to avoid conflict
   - pymdownx.snippets:
       base_path: 
         - docs
@@ -672,7 +673,9 @@ nav:
       - Emergence delay: Agro/Library/Emergence_Delay.md
       - Planting validation (ZARC): Agro/Library/ZARC.md
       - Planted area: Agro//Library/Planted_Area.md
-      - Environmental Compliance Report: Agro/Library/CRA.md
+      - Environmental Compliance:
+          - Compliance report: Agro/Library/CRA.md
+          - Environmental layers: Agro/Library/CRA_Layers.md
       - Historical Potential Score: Agro/Library/Historical_Potential_Score.md
       - In Season  Potential Score: Agro/Library/In-season_Potential_Score.md
       - Harvest detection: Agro//Library/Harvest_Detection.md

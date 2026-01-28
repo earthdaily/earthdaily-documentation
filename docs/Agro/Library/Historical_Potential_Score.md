@@ -11,19 +11,28 @@ description: This section explains everything you need to know about the Histori
 
 ## 📖 Overview
 
-The **Historical Potential Score** analytic provides an indicator of the average potential score over past years for a selected crop and season, based on cumulative NDVI (Normalized Difference Vegetation Index). It serves as a benchmark to compare field performance across different areas within a region or across different years. A Risk Score is also provided based on the variability of the past seasons.
+The **Historical Potential Score** analytic provides an indicator of the average potential score over past years for a selected crop and season, based on cumulative NDVI (1). It serves as a benchmark to compare field performance across different areas within a region or across different years. A Risk Score (2) is also provided based on the variability of the past seasons.
+{ .annotate }
 
-The figure below illustrates the expected NDVI development for a typical annual grain crop. The analytic transforms the NDVI time series into a potential score, enabling comparisons between fields in the same region or across historical seasons.
+1.  --8<-- "../../glossary.md:ndvi"
+2.  --8<-- "../../glossary.md:risk_score"
+
+The figure below illustrates the expected NDVI development for a typical annual grain crop. The analytic transforms the NDVI time series into a potential score (1), enabling comparisons between fields in the same region or across historical seasons.
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:potential_score"
 
 
+![Potential Score](../../assets/agro/analytics/potential_score/ndvi_plot.png)
 
-![Potential Score](../../assets/agro/potential_score/ndvi_plot.png)
-
----
 
 ## 🗂️ Baseline Data
 
-- **NDVI MR/LR Time Series**
+The analytic uses NDVI time series data available at both MR (1) and LR (2) resolutions to calculate historical potential and risk scores for agricultural fields.
+{ .annotate }
+
+1.  --8<-- "../../glossary.md:mr"
+2.  --8<-- "../../glossary.md:lr"
 
 ---
 
@@ -79,7 +88,8 @@ The figure below illustrates the expected NDVI development for a typical annual 
 
 ## 📜 Rules for Defining Historical Periods
 
-### If `historicalSeasons` is provided:
+If `historicalSeasons` is provided:
+
 - If **3 or more years** are provided:
   - Use them directly to compute potential and risk scores.
 - If **fewer than 3 years**:
@@ -90,12 +100,42 @@ The figure below illustrates the expected NDVI development for a typical annual 
     - `end_year = max(historicalSeasons)`
     - `start_year = end_year - 4`
 
-### If only `year` is provided:
+ If only `year` is provided:
 - `start_year = year - 5`
 - `end_year = year - 1`
 
-### If neither is provided:
+ If neither is provided:
 - A **ValueError** is raised.
+
+Here is the chart explaining historical periods:
+```mermaid
+flowchart TD
+    Start([Start]) --> CheckHistorical{historicalSeasons<br/>provided?}
+    
+    CheckHistorical -->|Yes| CheckCount{3 or more<br/>years?}
+    CheckHistorical -->|No| CheckYearOnly{year<br/>provided?}
+    
+    CheckCount -->|Yes| UseDirect[Use historicalSeasons directly<br/>to compute potential and risk scores]
+    CheckCount -->|No| CheckYear{year<br/>provided?}
+    
+    CheckYear -->|Yes| CalcWithYear1[start_year = year - 5<br/>end_year = year - 1]
+    CheckYear -->|No| CalcWithMax[end_year = max historicalSeasons<br/>start_year = end_year - 4]
+    
+    CheckYearOnly -->|Yes| CalcWithYear2[start_year = year - 5<br/>end_year = year - 1]
+    CheckYearOnly -->|No| NoData[No valid input]
+    
+    UseDirect --> End([End])
+    CalcWithYear1 --> End
+    CalcWithMax --> End
+    CalcWithYear2 --> End
+    NoData --> End
+    
+    style UseDirect fill:#90EE90
+    style CalcWithYear1 fill:#87CEEB
+    style CalcWithMax fill:#87CEEB
+    style CalcWithYear2 fill:#87CEEB
+    style NoData fill:#FFB6C6
+```
 
 ---
 
@@ -104,26 +144,6 @@ The figure below illustrates the expected NDVI development for a typical annual 
 This analytic is used in:
 
 - [Portfolio](/earthdaily-documentation/Agro/Portfolio/portfolio_product_site_draft/)
-
----
-
-## 📚 Glossary
-
-| **Term**                        | **Description** |
-|----------------------------------|---------------|
-| **NDVI (Normalized Difference Vegetation Index)** | Index that measures vegetation health based on visible and near-infrared light reflectance. Values range from -1 to 1, with higher values indicating denser, healthier vegetation. |
-| **MR / LR**                      | Image resolutions: **MR** (Medium Resolution) and **LR** (Low Resolution). Define the spatial detail level of the NDVI data used. |
-| **Season Duration**              | Duration of the crop season, in days, used to calculate cumulative NDVI. |
-| **Season Start Day / Month**     | Day and month marking the beginning of the crop season. Define the starting point for NDVI accumulation. |
-| **Threshold Start**              | NDVI value used as a threshold to consider the start of relevant vegetative growth. |
-| **Potential Score**              | Indicator of the productive potential of an area based on cumulative NDVI during the season. |
-| **Average Potential Score**      | Mean of historical potential scores over the last five years. |
-| **Olympic Mean**                 | Mean calculated by excluding the highest value and NaNs, used to reduce the impact of outliers. |
-| **Standard Deviation**           | Measure of variability in historical potential scores. Higher values indicate greater uncertainty. |
-| **Risk Score**                   | Risk index calculated as: (`Standard Deviation` / `Average`) × 100. Indicates the stability of potential over time. |
-| **Season Break**                 | Boolean indicator showing whether a season's score was significantly below the historical average (less than 70% of the Olympic Mean). |
-| **WKT (Well-Known Text)**        | Standard format for representing spatial geometries such as polygons, points, and lines. |
-| **AOI (Area of Interest)**       | User-defined area for analysis. |
 
 ---
 

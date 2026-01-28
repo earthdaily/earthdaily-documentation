@@ -76,8 +76,6 @@ hide:
 
 Browse our comprehensive API documentation across all EarthDaily Agro analytics. Each API provides detailed Swagger documentation with interactive endpoints, request/response examples, and authentication requirements.
 
----
-
 ## Core
 
 <div class="grid cards" markdown>
@@ -374,7 +372,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 </div>
 
----
+
 
 
 --8<-- "snippets/contact-footer.md"
