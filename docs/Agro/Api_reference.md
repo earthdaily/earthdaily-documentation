@@ -280,7 +280,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Monitor crop canopy development and vegetation vigor through growing season. Tracks greenness progression and identifies stress periods.
     
     [:simple-swagger: Swagger](https://zn6hzsqoyoe3qgaoau4ssgpq440vtmpa.lambda-url.us-east-1.on.aws/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/){ .md-button }
+    [:octicons-link-external-16: Details](./Library/greenness.md){ .md-button }
 
 -   :material-check-circle: **Harvest Readiness**
 
