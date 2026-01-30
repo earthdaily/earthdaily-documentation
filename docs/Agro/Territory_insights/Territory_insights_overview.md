@@ -222,11 +222,13 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
 **Crop Insights:**
 
-- Crop type identification (corn, soybeans, wheat, and other major crops)
+- [Crop type identification](../Cropid/cropid_product.md) (corn, soybeans, wheat, and other major crops)
 - Planting date estimation
-- Growth stage tracking and prediction (emergence, vegetative stages, reproductive stages, maturity)
+- Growth stage tracking and prediction ([emergence](../Library/Emergence.md), vegetative stages, reproductive stages, maturity)
 - Crop vigor and health assessment
-- Yield potential scoring relative to historical averages and current season conditions
+- [Predictive disease risk](../Library/disease_risk.md) for application timing optimization
+- [Yield potential scoring](../Library/In-season_Potential_Score.md) relative to historical averages and current season conditions
+
 
 **Weather Integration:**
 

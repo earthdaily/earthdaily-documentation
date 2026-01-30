@@ -271,7 +271,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Accurate estimation of planted acreage using crop identification and field boundary analysis. Supports compliance and acreage reporting.
     
     [:simple-swagger: Swagger](https://planted-area.aws.geosys.com/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Planted_Area.md) .md-button }
+    [:octicons-link-external-16: Details](./Library/Planted_Area.md){ .md-button }
 
 -   :material-leaf: **Greenness**
 
@@ -352,7 +352,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     <!-- md:flag experimental --> Estimate the number of days with bare soil exposed.
     
     [:simple-swagger: Swagger](https://avuqeoz2lrpi2s5qovww5k4vca0itlyy.lambda-url.us-east-1.on.aws/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/){ .md-button }
+    [:octicons-link-external-16: Details](./Library/baresoil.md){ .md-button }
 
 </div>
 ---

@@ -252,4 +252,22 @@ A biophysical variable that estimates the total chlorophyll concentration (Chlor
 Calculated as NIR / Red, RVI is one of the simplest vegetation indices using the ratio between near-infrared and red reflectance. Values typically range from 0 to more than 10 for vegetation. **Application:** Simple vegetation assessment, quick biomass estimation, and basic crop monitoring where computational simplicity is preferred.
 <!-- endsnippet -->
 
+<!-- snippet: dbsi -->
+## Dry Bare Soil Index (DBSI)
+The analytic uses the **Dry Bare Soil Index** calculated medium resolution data.
+```
+DBSI = ((SWIR1 - Green) / (SWIR1 + Green)) - ((NIR - Red) / (NIR + Red))
+```
+**Formula Components:**
+**First Term: `(SWIR1 - Green) / (SWIR1 + Green)`**
+- Normalized difference using Short-Wave Infrared (SWIR1) and Green bands
+- Highlights dry soil and bare surfaces
+- Dry soil exhibits high SWIR reflectance, creating positive values
+**Second Term: `(NIR - Red) / (NIR + Red)`**
+- This is essentially the NDVI (1) (Normalized Difference Vegetation Index)
+- Measures vegetation greenness and density
+- Vegetated areas produce high positive values
+<!-- endsnippet -->
+
+
 --8<-- "snippets/contact-footer.md"

@@ -675,6 +675,8 @@ nav:
       - Planted area: Agro/Library/Planted_Area.md
       - Greenness: Agro/Library/greenness.md
       - In season monitoring: Agro/Library/inseason_monitoring.md
+      - Disease risk: Agro/Library/disease_risk.md
+      - Baresoil: Agro/Library/baresoil.md
       - Environmental Compliance:
           - Compliance report: Agro/Library/CRA.md
           - Environmental layers: Agro/Library/CRA_Layers.md
