@@ -1,0 +1,1926 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Everything you need to know to master EarthDaily services" name="description"/>
+<meta content="Earthdaily" name="author"/>
+<link href="https://earthdaily.github.io/documentation/Agro/Library/Field%20Level%20Maps/" rel="canonical"/>
+<link href="../Automatic_Field_Borders/" rel="prev"/>
+<link href="../Map-types/" rel="next"/>
+<link href="../../../assets/faviconV2.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.14" name="generator"/>
+<title>Principles - EarthDaily documentation</title>
+<link href="../../../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../../stylesheets/home.css" rel="stylesheet"/>
+<link href="../../../stylesheets/spotlight.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#field-level-map-apis">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<button aria-label="Don't show this again" class="md-banner__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+            
+            
+    For updates follow <strong>EarthDaily Blog</strong> on
+  <a href="https://earthdaily.com/blog" rel="me">
+</a>
+  and
+  <a href="https://earthdaily.com/blog">
+<span class="twemoji twitter">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"></path></svg>
+</span>
+<strong>Twitter</strong>
+</a>
+</div>
+<script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+</aside>
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="EarthDaily documentation" class="md-header__button md-logo" data-md-component="logo" href="https://earthdaily.com/" title="EarthDaily documentation">
+<img alt="logo" src="../../../assets/EDA_logo_horizontal_gradient-navy_1.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            EarthDaily documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Principles
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/earthdaily/earthdaily-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    earthdaily/earthdaily-documentation
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../">
+          
+  
+  
+    
+  
+  Agriculture
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://earthdaily.github.io/EDA-Documentation/">
+        
+  
+  
+    
+  
+  Data
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://mining.earthdaily.com/knowledge-base">
+        
+  
+  
+    
+  
+  Mining
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://skyforest.io/">
+        
+  
+  
+    
+  
+  SkyForest
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../help/">
+          
+  
+  
+    
+  
+  Help
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="EarthDaily documentation" class="md-nav__button md-logo" data-md-component="logo" href="https://earthdaily.com/" title="EarthDaily documentation">
+<img alt="logo" src="../../../assets/EDA_logo_horizontal_gradient-navy_1.svg"/>
+</a>
+    EarthDaily documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/earthdaily/earthdaily-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    earthdaily/earthdaily-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../">
+<span class="md-ellipsis">
+    Agriculture
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Agriculture
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+<span class="md-ellipsis">
+    Digital Ag
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Digital Ag
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/Digital_ag_overview/">
+<span class="md-ellipsis">
+    Product
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/Field_boundaries/">
+<span class="md-ellipsis">
+    Field Boundaries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/Field_level_ts_map_weather/">
+<span class="md-ellipsis">
+    Field level maps and time series
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/Crop_events_CD/">
+<span class="md-ellipsis">
+    Crop events
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/Field_benchmark/">
+<span class="md-ellipsis">
+    Benchmark
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/DS_workflow_tools/">
+<span class="md-ellipsis">
+    Decision support workflows
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Digital_ag/Testimonials/">
+<span class="md-ellipsis">
+    Testimonials
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+<span class="md-ellipsis">
+    Territory Insights
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Territory Insights
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Territory_insights/Territory_insights_overview/">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+<span class="md-ellipsis">
+    Portfolio Management
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Portfolio Management
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Portfolio/Product%20Overview%20page/">
+<span class="md-ellipsis">
+    Product
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Portfolio/Smart%20underwriting/">
+<span class="md-ellipsis">
+    Smart underwriting
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Portfolio/Historical_Assessment_API/">
+<span class="md-ellipsis">
+    Historical Assessment
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Portfolio/Compliance%20Check/">
+<span class="md-ellipsis">
+    Environmental Compliance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Portfolio/In-Season%20Monitoring/">
+<span class="md-ellipsis">
+    In-Season Monitoring
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Portfolio/Integration/">
+<span class="md-ellipsis">
+    Integration
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+<span class="md-ellipsis">
+    Crop identification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+            Crop identification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Cropid/crop_identification_OverviewPage_v11092025/">
+<span class="md-ellipsis">
+    Product
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Cropid/crop_identification_US_v11092025/">
+<span class="md-ellipsis">
+    US
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Cropid/crop_identification_Brazil_v11092025/">
+<span class="md-ellipsis">
+    Brazil
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Cropid/crop_identification_France_Germany_v11092025/">
+<span class="md-ellipsis">
+    Western Europe
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://samples.cropid.earthdaily.com/">
+<span class="md-ellipsis">
+    Try samples
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Cropid/CropMask_Access_through_EDS_v11092025/">
+<span class="md-ellipsis">
+    Crop Layer Access
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../FieldLevel_CropMask_API_v11092025/">
+<span class="md-ellipsis">
+    Geometry Crop Id API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+<span class="md-ellipsis">
+    Crop Intelligence
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+            Crop Intelligence
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Commodities_intelligence/crop-intelligence-docs/">
+<span class="md-ellipsis">
+    Product
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Delivery method
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_2">
+<span class="md-nav__icon md-icon"></span>
+            Delivery method
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Commodities_intelligence/delivery_method_web/">
+<span class="md-ellipsis">
+    Webapp &amp; API
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Commodities_intelligence/delivery_method_report_webinar/">
+<span class="md-ellipsis">
+    Report
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Commodities_intelligence/yield/">
+<span class="md-ellipsis">
+    Yield
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Commodities_intelligence/case_studies/">
+<span class="md-ellipsis">
+    Case studies
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+<span class="md-ellipsis">
+    Parametric insurance
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+            Parametric insurance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Parametric/parametric_insurance_product_site_draft/">
+<span class="md-ellipsis">
+    Product
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Parametric/Swagger/">
+<span class="md-ellipsis">
+    User guide
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+<span class="md-ellipsis">
+    EarthDaily App
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+            EarthDaily App
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/00.%20Geosys%20App%20User%20Guide/">
+<span class="md-ellipsis">
+    User guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/01.%20Home/">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/02.%20Map%20Analysis/">
+<span class="md-ellipsis">
+    Map analysis
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/03.%20Monitoring%20-%20Field/">
+<span class="md-ellipsis">
+    Monitoring field
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/04.%20Monitoring%20-%20Regional/">
+<span class="md-ellipsis">
+    Monitoring region
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/05.%20Field%20Manager/">
+<span class="md-ellipsis">
+    Field Manager
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../App/en-US/06.%20Compliance%20Analysis/">
+<span class="md-ellipsis">
+    Compliance analysis
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+<span class="md-ellipsis">
+    QGIS plugin
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_9_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+            QGIS plugin
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../QGIS/1.%20Prerequisite/">
+<span class="md-ellipsis">
+    Prerequisites
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../QGIS/2.%20Installation/">
+<span class="md-ellipsis">
+    Installation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../QGIS/3.%20GetData/">
+<span class="md-ellipsis">
+    Get data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../QGIS/4.%20ProcessingToolBox/">
+<span class="md-ellipsis">
+    Processing toolbox
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+<span class="md-ellipsis">
+    Analytic catalog
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_10_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+            Analytic catalog
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Api_reference/">
+<span class="md-ellipsis">
+    API Reference
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Automatic_Field_Borders/">
+<span class="md-ellipsis">
+    Automated field borders
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_10_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_3" id="__nav_2_10_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Field maps
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_10_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_3">
+<span class="md-nav__icon md-icon"></span>
+            Field maps
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Principles
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Principles
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#apis-core-concepts">
+<span class="md-ellipsis">
+      APIs core concepts
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#apis-description">
+<span class="md-ellipsis">
+      APIs description
+    </span>
+</a>
+<nav aria-label="APIs description" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-route-pattern">
+<span class="md-ellipsis">
+      Base Route Pattern
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#map-management-apis">
+<span class="md-ellipsis">
+      Map Management APIs
+    </span>
+</a>
+<nav aria-label="Map Management APIs" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#map-shortcut-apis">
+<span class="md-ellipsis">
+      Map Shortcut APIs
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-parameters">
+<span class="md-ellipsis">
+      Optional parameters
+    </span>
+</a>
+<nav aria-label="Optional parameters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#minzonesize">
+<span class="md-ellipsis">
+      MinZoneSize
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usecolormapforzoning">
+<span class="md-ellipsis">
+      UseColorMapForZoning
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#api-list">
+<span class="md-ellipsis">
+      API list
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#api-response">
+<span class="md-ellipsis">
+      API response
+    </span>
+</a>
+<nav aria-label="API response" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#legend-object">
+<span class="md-ellipsis">
+      Legend object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#map-legend-type">
+<span class="md-ellipsis">
+      Map legend type
+    </span>
+</a>
+<nav aria-label="Map legend type" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-legend">
+<span class="md-ellipsis">
+      Dynamic legend
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fixed-legend">
+<span class="md-ellipsis">
+      Fixed legend
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-legend">
+<span class="md-ellipsis">
+      Common legend
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#histogram-object">
+<span class="md-ellipsis">
+      Histogram object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#worldfile-object">
+<span class="md-ellipsis">
+      Worldfile object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapsize-object">
+<span class="md-ellipsis">
+      Mapsize object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bbox-object">
+<span class="md-ellipsis">
+      Bbox object
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#zones-object">
+<span class="md-ellipsis">
+      Zones object
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Map-types/">
+<span class="md-ellipsis">
+    Map types
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Vegetation_time_series/">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1h-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H3v14h18V6m-2 12H5V8h14Z"></path></svg>
+<span class="md-ellipsis">
+    Vegetation Time Series
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Emergence/">
+<span class="md-ellipsis">
+    Emergence
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Emergence_Delay/">
+<span class="md-ellipsis">
+    Emergence delay
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ZARC/">
+<span class="md-ellipsis">
+    Planting validation (ZARC)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Planted_Area/">
+<span class="md-ellipsis">
+    Planted area
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../greenness/">
+<span class="md-ellipsis">
+    Greenness
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../inseason_monitoring/">
+<span class="md-ellipsis">
+    In season monitoring
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../disease_risk/">
+<span class="md-ellipsis">
+    Disease risk
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../baresoil/">
+<span class="md-ellipsis">
+    Baresoil
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_10_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_13" id="__nav_2_10_13_label" tabindex="0">
+<span class="md-ellipsis">
+    Environmental Compliance
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_10_13_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_13">
+<span class="md-nav__icon md-icon"></span>
+            Environmental Compliance
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CRA/">
+<span class="md-ellipsis">
+    Compliance report
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CRA_Layers/">
+<span class="md-ellipsis">
+    Environmental layers
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Historical_Potential_Score/">
+<span class="md-ellipsis">
+    Historical Potential Score
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../In-season_Potential_Score/">
+<span class="md-ellipsis">
+    In Season  Potential Score
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Harvest_Detection/">
+<span class="md-ellipsis">
+    Harvest detection
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Change_Index/">
+<span class="md-ellipsis">
+    Change index
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../FieldLevel_CropMask_API_v11092025/">
+<span class="md-ellipsis">
+    Crop id API
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Regional_Monitoring/">
+<span class="md-ellipsis">
+    Regional Monitoring
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://earthdaily.github.io/EDA-Documentation/">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://mining.earthdaily.com/knowledge-base">
+<span class="md-ellipsis">
+    Mining
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://skyforest.io/">
+<span class="md-ellipsis">
+    SkyForest
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Help
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Help
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../help/">
+<span class="md-ellipsis">
+    How to get support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../FAQ/">
+<span class="md-ellipsis">
+    Freqently Asked Questions
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#apis-core-concepts">
+<span class="md-ellipsis">
+      APIs core concepts
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#apis-description">
+<span class="md-ellipsis">
+      APIs description
+    </span>
+</a>
+<nav aria-label="APIs description" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-route-pattern">
+<span class="md-ellipsis">
+      Base Route Pattern
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#map-management-apis">
+<span class="md-ellipsis">
+      Map Management APIs
+    </span>
+</a>
+<nav aria-label="Map Management APIs" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#map-shortcut-apis">
+<span class="md-ellipsis">
+      Map Shortcut APIs
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-parameters">
+<span class="md-ellipsis">
+      Optional parameters
+    </span>
+</a>
+<nav aria-label="Optional parameters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#minzonesize">
+<span class="md-ellipsis">
+      MinZoneSize
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usecolormapforzoning">
+<span class="md-ellipsis">
+      UseColorMapForZoning
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#api-list">
+<span class="md-ellipsis">
+      API list
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#api-response">
+<span class="md-ellipsis">
+      API response
+    </span>
+</a>
+<nav aria-label="API response" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#legend-object">
+<span class="md-ellipsis">
+      Legend object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#map-legend-type">
+<span class="md-ellipsis">
+      Map legend type
+    </span>
+</a>
+<nav aria-label="Map legend type" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-legend">
+<span class="md-ellipsis">
+      Dynamic legend
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fixed-legend">
+<span class="md-ellipsis">
+      Fixed legend
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-legend">
+<span class="md-ellipsis">
+      Common legend
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#histogram-object">
+<span class="md-ellipsis">
+      Histogram object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#worldfile-object">
+<span class="md-ellipsis">
+      Worldfile object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapsize-object">
+<span class="md-ellipsis">
+      Mapsize object
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bbox-object">
+<span class="md-ellipsis">
+      Bbox object
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#zones-object">
+<span class="md-ellipsis">
+      Zones object
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/earthdaily/earthdaily-documentation/raw/master/docs/Agro/Library/Field Level Maps.md" title="View source of this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+</a>
+<p><span class="mdx-badge mdx-badge--right"><span class="mdx-badge__icon"><a href="../../../conventions/#swagger" title="Open API"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c6.616 0 12-5.383 12-12S18.616 0 12 0m0 1.144c5.995 0 10.856 4.86 10.856 10.856S17.996 22.856 12 22.856 1.144 17.996 1.144 12 6.004 1.144 12 1.144M8.37 5.868a7 7 0 0 0-.423.005c-.983.056-1.573.517-1.735 1.472-.115.665-.096 1.348-.143 2.017q-.018.526-.115 1.038c-.134.609-.397.798-1.016.83a3 3 0 0 0-.244.042v1.463c1.126.055 1.278.452 1.37 1.629.033.429-.013.858.015 1.287.018.406.073.808.156 1.2.259 1.075 1.307 1.435 2.575 1.218v-1.283c-.203 0-.383.005-.558 0-.43-.013-.591-.12-.632-.535-.056-.535-.042-1.08-.075-1.62-.064-1.001-.175-1.988-1.153-2.625.503-.37.868-.812.983-1.398.083-.41.134-.821.166-1.237.028-.415-.023-.84.014-1.25.06-.665.102-.937.9-.91.12 0 .235-.017.369-.027v-1.31q-.239-.001-.454-.006m7.593.009a4.3 4.3 0 0 0-.813.06v1.274c.245 0 .434 0 .623.005.328.004.577.13.61.494.032.332.031.669.064 1.006.065.669.101 1.347.217 2.007.102.544.475.95.941 1.283-.817.549-1.057 1.333-1.098 2.215-.023.604-.037 1.213-.069 1.822-.028.554-.222.734-.78.748-.157.004-.31.018-.484.028v1.305c.327 0 .627.019.927 0 .932-.055 1.495-.507 1.68-1.412q.117-.748.138-1.504c.032-.461.028-.927.074-1.384.069-.715.397-1.01 1.112-1.057a1 1 0 0 0 .199-.046v-1.463c-.12-.014-.204-.027-.291-.032-.536-.023-.804-.203-.937-.71a5 5 0 0 1-.152-.993c-.037-.618-.033-1.241-.074-1.86-.08-1.192-.794-1.753-1.887-1.786m-6.89 5.28a.844.844 0 0 0-.083 1.684h.055a.83.83 0 0 0 .877-.78v-.046a.845.845 0 0 0-.83-.858zm2.911 0a.81.81 0 0 0-.834.78c0 .027 0 .05.004.078 0 .503.342.826.859.826.507 0 .826-.332.826-.853-.005-.503-.342-.836-.855-.831m2.963 0a.86.86 0 0 0-.876.835c0 .47.378.849.849.849h.009c.425.074.853-.337.881-.83.023-.457-.392-.854-.863-.854"></path></svg></span></a></span><span class="mdx-badge__text"><a href="https://api.geosys-na.net/field-level-maps/v5/swagger/index.html">API</a></span></span></p>
+<h1 id="field-level-map-apis">Field Level Map APIs<a class="headerlink" href="#field-level-map-apis" title="Permanent link">🔗</a></h1>
+<p>EarthDaily Map APIs provide endpoints for retrieving <strong>map image catalog</strong> and <strong>map generation</strong>.</p>
+<h2 id="apis-core-concepts">APIs core concepts<a class="headerlink" href="#apis-core-concepts" title="Permanent link">🔗</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Map</td>
+<td>Resource created by a user from a set of fixed parameters, and from which several sub resources can fetched, and in various formats. Returned data is always fresh, recalculated if needed.</td>
+</tr>
+<tr>
+<td>MapId</td>
+<td>Identifier for a stored map, for future access.</td>
+</tr>
+<tr>
+<td>Generated Map</td>
+<td>Result data produced at a given time from fixed and dynamic parameters.</td>
+</tr>
+<tr>
+<td>Fixed parameter</td>
+<td>Parameter provided by a user when creating a map. Example: image date, season field id, fertilizer dose, etc.</td>
+</tr>
+<tr>
+<td>Dynamic parameter</td>
+<td>Parameter whose value can change over time. Example: <strong>•</strong> Calculated parameters (best image from all images available for image date, season field id etc.) <strong>•</strong> Settings that can change (colormap profiles, etc.).</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>Image sub resource generated in various formats</td>
+</tr>
+<tr>
+<td>Image format</td>
+<td>Format in which the map image resource (and just that) can be provided to a user</td>
+</tr>
+<tr>
+<td>Legend</td>
+<td>Legend representing the colormap related to the representation of the map image, as a png file.</td>
+</tr>
+<tr>
+<td>Dynamic Legend</td>
+<td>Legend related to the png representation of the map image. The number of classes is adapted according to the map variability</td>
+</tr>
+<tr>
+<td>Fixed Legend</td>
+<td>Legend where the ranges and colors are previously specified for a given Map Product.</td>
+</tr>
+<tr>
+<td>Thumbnail</td>
+<td>Smaller version of the png representation of the map image</td>
+</tr>
+</tbody>
+</table>
+<h2 id="apis-description">APIs description<a class="headerlink" href="#apis-description" title="Permanent link">🔗</a></h2>
+<p>EarthDaily Map APIs are structured in map families that group different map types having common parameters types. </p>
+<p>For each map product, there are two different ways to generate a product:</p>
+<ul>
+<li>Request one Season Field or Geometry and a given image date:</li>
+</ul>
+<p>/field-level-maps/&lt; version &gt;/maps</p>
+<ul>
+<li>Request several Season Fields or geometries and/or several image dates:  </li>
+</ul>
+<p>/field-level-maps/&lt; version &gt;/map-sets</p>
+<p>The API provides two different methods to request a map product : POST and GET. Requests in bulk mode are only available on POST method. Request on a geometry (and not an existing seasonfield) are only available on POST method.</p>
+<p>In addition, to make easier the UI integration, the Map APIs provides shortcut endpoints with direct GET links. Taking by example the Base Reference Map Products swagger technical documentation:</p>
+<p><img alt="Intro" src="https://github.com/earthdaily/Images/blob/e07e71ed627e000d5ae9ee704261cfabfb2426f0/FLM/Swagger_shortcuts.png?raw=true"/></p>
+<h3 id="base-route-pattern">Base Route Pattern<a class="headerlink" href="#base-route-pattern" title="Permanent link">🔗</a></h3>
+<p>EarthDaily Map APIs are using the following url patterns:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="err">`/seaso</span><span class="kc">n</span><span class="mi">-</span><span class="kc">f</span><span class="err">ields/</span><span class="p">{</span><span class="err">Seaso</span><span class="kc">n</span><span class="err">FieldId</span><span class="p">}</span><span class="err">/coverage/</span><span class="p">{</span><span class="err">ImageDa</span><span class="kc">te</span><span class="p">}</span><span class="err">/</span><span class="p">{</span><span class="err">map</span><span class="mi">-</span><span class="kc">t</span><span class="err">ype</span><span class="mi">-</span><span class="kc">fa</span><span class="err">mily</span><span class="p">}</span><span class="err">/</span><span class="p">{</span><span class="err">map</span><span class="mi">-</span><span class="kc">t</span><span class="err">ype</span><span class="p">}</span><span class="err">/</span><span class="p">{</span><span class="err">ma</span><span class="kc">n</span><span class="err">da</span><span class="kc">t</span><span class="err">oryParamName</span><span class="mi">1</span><span class="p">}</span><span class="err">/</span><span class="p">{</span><span class="err">ma</span><span class="kc">n</span><span class="err">da</span><span class="kc">t</span><span class="err">oryParamValue</span><span class="mi">1</span><span class="p">}</span><span class="err">/</span><span class="p">{</span><span class="err">ma</span><span class="kc">n</span><span class="err">da</span><span class="kc">t</span><span class="err">oryParamName</span><span class="mi">2</span><span class="p">}</span><span class="err">/</span><span class="p">{</span><span class="err">ma</span><span class="kc">n</span><span class="err">da</span><span class="kc">t</span><span class="err">oryParamValue</span><span class="mi">2</span><span class="p">}</span><span class="err">`</span>
+</span></code></pre></div>
+<p><strong>Optional Parameters:</strong> <code>?{optionalParamName1}={optionalParamValue1}&amp;{optionalParamName2}={optionalParamValue2}</code></p>
+<p>You will find map description for each map types <a href="../Map-types/">here</a>.</p>
+<h3 id="map-management-apis">Map Management APIs<a class="headerlink" href="#map-management-apis" title="Permanent link">🔗</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Route</th>
+<th>Description</th>
+<th>Request Body</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST</td>
+<td><code>/map-sets/{map-type-family}/{map-type}</code></td>
+<td>Returns list of maps created by the user. For performance concerns, response doesn't contain any calculated data, only parameters and links to other endpoints that will calculate data. Maps are grouped following business rules to provide common legend.</td>
+<td>JSON body with list of map parameters appropriate to the map type.</td>
+<td><strong>JSON map details with:</strong><br/>• Season field or geometry info<br/>• [Optional] Maps Direct Links (legend, world file, thumbnail, images in various formats)</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/maps/{map-type-family}/{map-type}</code></td>
+<td>Create one new map for specific parameters.</td>
+<td>JSON body with map parameters appropriate to the map type.</td>
+<td><strong>JSON maps list with:</strong><br/>• Season field or geometry info<br/>• [Optional] Map Direct Links (legend, world file, thumbnail, images in various formats)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="map-shortcut-apis">Map Shortcut APIs<a class="headerlink" href="#map-shortcut-apis" title="Permanent link">🔗</a></h4>
+<p>Map Shortcut APIs should be used for simple map creation and access, as well as access to sub resources, with direct GET links.</p>
+<p>Some Map Shortcut APIs return media files that can be directly displayed in a user interface by example. Please note that GEOTIFF and SHAPE formats are returned in ZIP file.</p>
+<p>Direct map Shortcut APIs require authentication and URL never change because it’s generated with the request parameters.</p>
+<p>Please note that the APIs that generate JSON responses for several season fields and/or several image dates can’t generate shortcuts for maps requiring complicated parameters because they can’t be set from request parameters.</p>
+<p>Please also note that shortcut can only be used when working at seasonfield level.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Endpoint Suffix</th>
+<th>Description</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td><code>/image.{format}</code></td>
+<td>Shortcut to the map image.<br/><strong>Supported formats:</strong><br/>• <code>png</code><br/>• <code>tiff.zip</code><br/>• <code>shp.zip</code></td>
+<td>Image binary data in requested format</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/{resource}.png</code></td>
+<td>Shortcut to map resources.<br/><strong>Supported resources:</strong><br/>• <code>legend</code><br/>• <code>thumbnail</code></td>
+<td>Image resource binary data in PNG format</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/worldfile</code></td>
+<td>Shortcut to the map world file data.</td>
+<td>JSON information of the map world file</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-parameters">Optional parameters<a class="headerlink" href="#optional-parameters" title="Permanent link">🔗</a></h3>
+<h4 id="minzonesize">MinZoneSize<a class="headerlink" href="#minzonesize" title="Permanent link">🔗</a></h4>
+<p>This parameter defines the minimum size of the polygon generated. In case of a multipolygon, it’s applied on every polygon which is part of the multipolygon. This is expressed in user's field surface unit.</p>
+<p>Sample request:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>.../base-reference-map/INSEASON_NDVI?Zoning=True&amp;ZoneCount=X&amp;MinZoneSize=0.00001
+</span></code></pre></div>
+<img height="200" src="https://github.com/GEOSYS/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/FLM/minzonesize.png?raw=true" width="800"/></p>
+<h4 id="usecolormapforzoning">UseColorMapForZoning<a class="headerlink" href="#usecolormapforzoning" title="Permanent link">🔗</a></h4>
+<p>This parameter is used to make the zoned map to look like a non zoned map or make them close enough on a display feel. ZoneCount cannot be used when UseColorMapForZoning is true.</p>
+<div class="admonition note">
+<p class="admonition-title">HOW TO USE FILTER MAPS.TYPE ON <abbr title="Mean of historical potential scores over the last five years.">A</abbr> COVERAGE?</p>
+<p>The Coverage APIs allows to do a spatial query, based on a field boundary, a crop and a sowing date of imagery database. The results of the query will be an image catalog.
+By default, results include all the maps types and it can be useful to filter results by maps types.</p>
+<p>1- Example with one value: “INSEASON_NDVI”:</p>
+<div class="language-text highlight"><pre><span></span><code>https://&lt;host&gt;/field-level-maps/v5/season-fields/{SeasonFieldId}/catalog-imagery?Maps.Type=INSEASON_NDVI
+</code></pre></div>
+<p>2- Example with multiple values: “INSEASON_NDVI” and “INSEASON_EVI”:</p>
+<div class="language-text highlight"><pre><span></span><code>https://&lt;host&gt;/field-level-maps/v5/season-fields/{SeasonFieldId}/catalog-imagery?Maps.Type=$in:INSEASON_NDVI|INSEASON_EVI
+</code></pre></div>
+</div>
+<h2 id="api-list">API list<a class="headerlink" href="#api-list" title="Permanent link">🔗</a></h2>
+<p><iframe class="swagger-ui-iframe" frameborder="0" id="2eb9e907" onload="this.style.display = 'block'; this.style.overflow = 'hidden'; this.style.width = '100%';" src="swagger-2eb9e907.html" style="display:none;" width="100%"></iframe></p>
+<h2 id="api-response">API response<a class="headerlink" href="#api-response" title="Permanent link">🔗</a></h2>
+<h3 id="legend-object">Legend object<a class="headerlink" href="#legend-object" title="Permanent link">🔗</a></h3>
+<p>Map response, except color compositon, includes a legend object that contains all information to create the legend on the UI. The legend object is a set of meta data including:
+- Descriptive statistics derived from reflectance values used to generate the map
+- Ranges are index classes used to generate the map including:
+     - Color RGB codes
+     - Number of pixel in the class
+     - Minimum index value of the class
+     - Maximum index value of the class</p>
+<p><br/>
+Here is an example of the legend object:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="w">   </span><span class="nt">"legend"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">        </span><span class="nt">"stat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">            </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.557</span><span class="p">,</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">            </span><span class="nt">"mean"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1802</span><span class="p">,</span>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">            </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0233</span>
+</span><span id="__span-2-6"><a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-2-7"><a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">        </span><span class="nt">"ranges"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-2-8"><a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-2-9"><a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-10"><a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">                    </span><span class="nt">"r"</span><span class="p">:</span><span class="w"> </span><span class="mi">138</span><span class="p">,</span>
+</span><span id="__span-2-11"><a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">                    </span><span class="nt">"g"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-2-12"><a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">                    </span><span class="nt">"b"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-2-13"><a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-2-14"><a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">                </span><span class="nt">"numberOfPixels"</span><span class="p">:</span><span class="w"> </span><span class="mi">64647</span><span class="p">,</span>
+</span><span id="__span-2-15"><a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">                </span><span class="nt">"maxValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span>
+</span><span id="__span-2-16"><a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">                </span><span class="nt">"minValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span>
+</span><span id="__span-2-17"><a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">                </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">84.93</span><span class="p">,</span>
+</span><span id="__span-2-18"><a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">                </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-2-19"><a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-2-20"><a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-2-21"><a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-22"><a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">                    </span><span class="nt">"r"</span><span class="p">:</span><span class="w"> </span><span class="mi">165</span><span class="p">,</span>
+</span><span id="__span-2-23"><a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">                    </span><span class="nt">"g"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-2-24"><a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">                    </span><span class="nt">"b"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-2-25"><a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-2-26"><a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">                </span><span class="nt">"numberOfPixels"</span><span class="p">:</span><span class="w"> </span><span class="mi">326</span><span class="p">,</span>
+</span><span id="__span-2-27"><a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">                </span><span class="nt">"maxValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span>
+</span><span id="__span-2-28"><a href="#__codelineno-2-28" id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">                </span><span class="nt">"minValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span>
+</span><span id="__span-2-29"><a href="#__codelineno-2-29" id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">                </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.4283</span><span class="p">,</span>
+</span><span id="__span-2-30"><a href="#__codelineno-2-30" id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">                </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-2-31"><a href="#__codelineno-2-31" id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-2-32"><a href="#__codelineno-2-32" id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-2-33"><a href="#__codelineno-2-33" id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="w">                </span><span class="nt">"color"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-34"><a href="#__codelineno-2-34" id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">                    </span><span class="nt">"r"</span><span class="p">:</span><span class="w"> </span><span class="mi">190</span><span class="p">,</span>
+</span><span id="__span-2-35"><a href="#__codelineno-2-35" id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="w">                    </span><span class="nt">"g"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-2-36"><a href="#__codelineno-2-36" id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="w">                    </span><span class="nt">"b"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-2-37"><a href="#__codelineno-2-37" id="__codelineno-2-37" name="__codelineno-2-37"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-2-38"><a href="#__codelineno-2-38" id="__codelineno-2-38" name="__codelineno-2-38"></a><span class="w">                </span><span class="nt">"numberOfPixels"</span><span class="p">:</span><span class="w"> </span><span class="mi">257</span><span class="p">,</span>
+</span><span id="__span-2-39"><a href="#__codelineno-2-39" id="__codelineno-2-39" name="__codelineno-2-39"></a><span class="w">                </span><span class="nt">"maxValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.35</span><span class="p">,</span>
+</span><span id="__span-2-40"><a href="#__codelineno-2-40" id="__codelineno-2-40" name="__codelineno-2-40"></a><span class="w">                </span><span class="nt">"minValue"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span>
+</span><span id="__span-2-41"><a href="#__codelineno-2-41" id="__codelineno-2-41" name="__codelineno-2-41"></a><span class="w">                </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3376</span><span class="p">,</span>
+</span><span id="__span-2-42"><a href="#__codelineno-2-42" id="__codelineno-2-42" name="__codelineno-2-42"></a><span class="w">                </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-2-43"><a href="#__codelineno-2-43" id="__codelineno-2-43" name="__codelineno-2-43"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-2-44"><a href="#__codelineno-2-44" id="__codelineno-2-44" name="__codelineno-2-44"></a><span class="err">...</span>
+</span></code></pre></div>
+<h3 id="map-legend-type">Map legend type<a class="headerlink" href="#map-legend-type" title="Permanent link">🔗</a></h3>
+<h4 id="dynamic-legend">Dynamic legend<a class="headerlink" href="#dynamic-legend" title="Permanent link">🔗</a></h4>
+<p>The legend fits between the min and max thresholds and consists of 13 classes with similar ranges.</p>
+<p>This is the default legend.</p>
+<p>This option is available for a Map set to get one legend per field while requesting maps for several fields in a single request.</p>
+<p>Here is the syntax to use it:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>POST  /field-level-maps/v5/map-sets/base-reference-map/INSEASON_NDVI?legendType=Dynamic
+</span></code></pre></div></p>
+<h4 id="fixed-legend">Fixed legend<a class="headerlink" href="#fixed-legend" title="Permanent link">🔗</a></h4>
+<p>Fixed legend means that the legend adopted will be the same whatever map you select. Minimum and maximum values are specific to the selected vegetation index, and the legend is composed of 15 classes with similar intervals.</p>
+<ul>
+<li><abbr title="Calculated as (NIR - Red) / (NIR + Red), NDVI measures vegetation health based on the difference between near-infrared and red light reflectance.">NDVI</abbr>, <abbr title="A modified vegetation index that corrects for atmospheric conditions and canopy background signals.">EVI</abbr>, <abbr title="Calculated as (NIR - Green) / (NIR + Green), GNDVI substitutes the green band for the red band in the NDVI formula. More sensitive to chlorophyll concentration variations than NDVI.">GNDVI</abbr>, CVIn: between 0 and 1</li>
+<li>CVI : between 0 and 15</li>
+<li><abbr title="Calculated as (Green - NIR) / (Green + NIR), NDWI measures the water content in vegetation by comparing green and near-infrared reflectance. Higher values indicate higher water content.">NDWI</abbr>: between -0.5 and 0.5</li>
+<li><abbr title="An index that estimates the position of the red edge inflection point in the spectral reflectance curve using Sentinel-2's red edge bands.">S2REP</abbr>: between 705 and 740</li>
+<li><abbr title="A dimensionless measure representing the total one-sided area of leaf tissue per unit ground surface area.">LAI</abbr>: between 0 and 8</li>
+</ul>
+<p>Minimum and maximum thresholds are defined for fixed legends to be consistent with an agronomic context. However, your map may contain values outside these ranges (if there is snow on your plot, you may obtain a negative <abbr title="Calculated as (NIR - Red) / (NIR + Red), NDVI measures vegetation health based on the difference between near-infrared and red light reflectance.">NDVI</abbr>, for example). In this case, the extreme values will be included in the maximum - or minimum, depending on the case - while keeping the same intermediate ranges to ensure comparable legends for all maps.</p>
+<p>Here is the syntax to use it:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>GET   /field-level-maps/v5/maps/base-reference-map/INSEASON_NDVI/legend.png?legendType=Fixed
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>POST  /field-level-maps/v5/season-fields/bgv7pb3/coverage/2020-09-06/base-reference-map/INSEASON_NDVI/image.png?legendType=Fixed'
+</span></code></pre></div></p>
+<h4 id="common-legend">Common legend<a class="headerlink" href="#common-legend" title="Permanent link">🔗</a></h4>
+<p>This option is available for a Map set to get one common legend for several maps as part of a mapset.</p>
+<p>The legend lies between the minimum and maximum values of all the fields included, so all fields will have the same legend. This makes it possible to have a similar legend for the fields and to be able to compare them, but in a more refined way than by using a fixed legend, as we continue to exacerbate the variability of this batch of fields.</p>
+<p>Here is the syntax to use it:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>POST  /field-level-maps/v5/map-sets/base-reference-map/INSEASON_NDVI?legendType=Common
+</span></code></pre></div></p>
+<h3 id="histogram-object">Histogram object<a class="headerlink" href="#histogram-object" title="Permanent link">🔗</a></h3>
+<p>Histogram per map can be provided by activating the query parameter <em>histogram</em> and defining the number of bins in the the histogram using the parameter <em>numberOfBins</em></p>
+<p>All map requests except ColorComposition and FieldBorder can activate these parameters.</p>
+<p>Request samples: </p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>.../field-level-maps/v5/season-fields/15avg72/coverage/2020-04-26/base-reference-map/INSEASON_NDVI?histogram=true&amp;numberOfBins=5
+</span></code></pre></div>
+These requests provide an histogram by map, even in the case of requests with common legend.</p>
+<p>The “area” result parameter is provided based on user's unit.</p>
+<p>Response content extract:</p>
+<p><code>json
+"histogram": {
+        "max": 0.8592,
+        "mean": 0.4222,
+        "min": 0.1347,
+        "items": [
+            {
+                "valueMin": 0.1347,
+                "valueMax": 0.2796,
+                "numberOfPixel": 3235,
+                "area": 8.2592
+            },
+            {
+                "valueMin": 0.2796,
+                "valueMax": 0.4245,
+                "numberOfPixel": 10912,
+                "area": 27.8591
+            },
+            {
+                "valueMin": 0.4245,
+                "valueMax": 0.5694,
+                "numberOfPixel": 7621,
+                "area": 19.4569
+            },
+...</code></p>
+<h3 id="worldfile-object">Worldfile object<a class="headerlink" href="#worldfile-object" title="Permanent link">🔗</a></h3>
+<p>Map response,  includes a <a href="https://en.wikipedia.org/wiki/World_file">worldfile</a> object that contains all informations used to position the map wihtin a GIS tool. It contains the same information as the pgw file but it is available as part the standard map request avoiding to fetch the pgw file.</p>
+<p>The Woldfile object is a set of meta data including:
+- <abbr title="Mean of historical potential scores over the last five years.">A</abbr>: pixel size in the x-direction in map units/pixel
+- <abbr title="The analytic uses the Dry Bare Soil Index calculated medium resolution data.">D</abbr>: rotation about y-axis
+- <abbr title="An index derived from spectral bands to estimate the amount of living plant material (above-ground biomass) in a given area.">B</abbr>: rotation about x-axis
+- <abbr title="The date when crop emergence was detected, used as a reference for planted area computation.">E</abbr>: pixel size in the y-direction in map units, almost always negative[3]
+- <abbr title="Percentage threshold for unplanted area in CONTROL mode.">C</abbr>: x-coordinate of the center of the upper left pixel
+- 6: F: y-coordinate of the center of the upper left pixel</p>
+<p>Response content extract:</p>
+<p><code>json
+"worldFile": {
+        "a": 2.81914906324328E-05,
+        "d": 0.0,
+        "b": 0.0,
+        "e": -2.2805242098972E-05,
+        "c": -97.7007439677583,
+        "f": 37.147800314964
+    },</code></p>
+<h3 id="mapsize-object">Mapsize object<a class="headerlink" href="#mapsize-object" title="Permanent link">🔗</a></h3>
+<p>Map response,  includes a mapsize object that contains the size of the map as an image. </p>
+<p>The Mapsize object is a set of meta data including:
+- Width of the map in pixel
+- Height of the map in pixel</p>
+<p>Response content extract:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>"mapSize": {
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>       "width": 298,
+</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>       "height": 330
+</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>   },
+</span></code></pre></div>
+<h3 id="bbox-object">Bbox object<a class="headerlink" href="#bbox-object" title="Permanent link">🔗</a></h3>
+<p>Map response,  includes a bounding box object (Bbox) that contains coordinate of the top left point and the bottom right pixel. </p>
+<p><img height="200" src="https://github.com/GEOSYS/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/FLM/Bbox.png?raw=true" width="300"/></p>
+<p>The Bbox object is a set of meta data including:
+- X Min coordinates of the map
+- Y Min coordinates of the map
+- X Max coordinates of the map
+- Y Max coordinates of the map</p>
+<p>Response content extract:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="w">    </span><span class="nt">"bBox"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">       </span><span class="nt">"xMin"</span><span class="p">:</span><span class="w"> </span><span class="mf">-97.700758063503571</span><span class="p">,</span>
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">       </span><span class="nt">"xMax"</span><span class="p">:</span><span class="w"> </span><span class="mf">-97.6923569992951</span><span class="p">,</span>
+</span><span id="__span-8-4"><a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">       </span><span class="nt">"yMin"</span><span class="p">:</span><span class="w"> </span><span class="mf">37.140285987692359</span><span class="p">,</span>
+</span><span id="__span-8-5"><a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">       </span><span class="nt">"yMax"</span><span class="p">:</span><span class="w"> </span><span class="mf">37.147811717585022</span>
+</span><span id="__span-8-6"><a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">   </span><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="zones-object">Zones object<a class="headerlink" href="#zones-object" title="Permanent link">🔗</a></h2>
+<p>Zoning capability allows to create a zoned map based off any “non-zoned” map (<abbr title="Calculated as (NIR - Red) / (NIR + Red), NDVI measures vegetation health based on the difference between near-infrared and red light reflectance.">NDVI</abbr>, <abbr title="Calculated as (NIR - Green) / (NIR + Green), GNDVI substitutes the green band for the red band in the NDVI formula. More sensitive to chlorophyll concentration variations than NDVI.">GNDVI</abbr> <abbr title="A modified vegetation index that corrects for atmospheric conditions and canopy background signals.">EVI</abbr>, Yield Variability Map, Yield Goal Map, Organic Matter Variability Map, Elevation...) and the number of zones. </p>
+<p>To create a zoned map just add to paramter on the map request: 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>.../base-reference-map/INSEASON_NDVI?Zoning=True&amp;ZoneCount=X
+</span></code></pre></div>
+With X being the number of zone (min=2 ans max=25)</p>
+<p>Response content extract</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="w"> </span><span class="nt">"zones"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-10-3"><a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-10-4"><a href="#__codelineno-10-4" id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">            </span><span class="nt">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-5"><a href="#__codelineno-10-5" id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="w">                </span><span class="nt">"mean"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.7800202369689943E-05</span><span class="p">,</span>
+</span><span id="__span-10-6"><a href="#__codelineno-10-6" id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="w">                </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.3000001311302184E-05</span><span class="p">,</span>
+</span><span id="__span-10-7"><a href="#__codelineno-10-7" id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="w">                </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.3000000417232512E-05</span><span class="p">,</span>
+</span><span id="__span-10-8"><a href="#__codelineno-10-8" id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="w">                </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">44.852454533598689</span><span class="p">,</span>
+</span><span id="__span-10-9"><a href="#__codelineno-10-9" id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">                </span><span class="nt">"std"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-10-10"><a href="#__codelineno-10-10" id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-10-11"><a href="#__codelineno-10-11" id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="w">            </span><span class="nt">"segments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-12"><a href="#__codelineno-10-12" id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="w">                </span><span class="p">{</span>
+</span><span id="__span-10-13"><a href="#__codelineno-10-13" id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="w">                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-10-14"><a href="#__codelineno-10-14" id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="w">                    </span><span class="nt">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POLYGON ((-97.69807866 37.1471575, -97.69785789 37.14714076, -97.69782426 37.14712313, -97.69780325 37.14709392, -97.6978006 37.14695362, -97.69777389 37.14693001, -97.69765168 37.14690398, -97.69750948 37.14691731, -97.69731486 37.14698376, -97.69713908 37.14699963, -97.69612131 37.14693879, -97.69603638 37.14696739, -97.69598964 37.14703375, -97.6959577 37.14733491, -97.69581488 37.14738703, -97.6954727 37.14742055, -97.69489672 37.14744214, -97.69335049 37.14746869, -97.692777 37.14745955, -97.69261606 37.14742859, -97.69253683 37.14062335, -97.69265756 37.14049503, -97.69778835 37.14041483, -97.69817065 37.14059127, -97.69839198 37.14046295, -97.70048454 37.14044691, -97.70066562 37.14062335, -97.69927729 37.14227539, -97.69935777 37.14233954, -97.70004188 37.14248389, -97.70008212 37.14359058, -97.69863342 37.14495386, -97.69867367 37.14554728, -97.69855626 37.14578125, -97.69851292 37.14576195, -97.69849375 37.1457709, -97.69851278 37.1458252, -97.69852806 37.14583745, -97.6985127 37.14586805, -97.69842046 37.1458838, -97.69832553 37.14581865, -97.6982232 37.1457991, -97.6981616 37.14583425, -97.69813575 37.14588277, -97.69811653 37.14603605, -97.6981417 37.14618488, -97.698192 37.146234, -97.69807866 37.1471575), (-97.69480625 37.14559199, -97.69483103 37.14556605, -97.69487535 37.14554746, -97.69523585 37.1454129, -97.6953147 37.14531882, -97.69537431 37.14529477, -97.69541062 37.14530228, -97.69557838 37.14543579, -97.69565001 37.14545229, -97.69571387 37.14542818, -97.69570552 37.14526647, -97.69562956 37.14523036, -97.69491064 37.14519421, -97.69472566 37.14519146, -97.69466048 37.14522497, -97.69460604 37.14532314, -97.69475016 37.14556049, -97.69480625 37.14559199), (-97.69332403 37.1473105, -97.69328929 37.14728784, -97.69323981 37.14728812, -97.69323876 37.14730127, -97.69332403 37.1473105), (-97.6929647 37.14609323, -97.69297601 37.14602652, -97.69298776 37.14593343, -97.69296866 37.14551326, -97.69292182 37.1454541, -97.69285988 37.14543962, -97.69280167 37.14546711, -97.69278408 37.1455012, -97.6927794 37.14569613, -97.69286838 37.14604427, -97.69290283 37.14608116, -97.6929647 37.14609323), (-97.69431217 37.14537718, -97.69432196 37.14534572, -97.69434113 37.14531711, -97.69437201 37.14522483, -97.69432352 37.1451905, -97.69424515 37.14519406, -97.69411108 37.14526162, -97.69411471 37.14527887, -97.69421582 37.14535028, -97.69431217 37.14537718), (-97.69714187 37.14093752, -97.69715326 37.14088549, -97.69716518 37.14084873, -97.69716047 37.14081821, -97.69713681 37.140798, -97.69709945 37.14079122, -97.69701432 37.14081635, -97.69699265 37.14084742, -97.69699028 37.1408788, -97.69700815 37.14090622, -97.69705077 37.1409272, -97.69714187 37.14093752))"</span><span class="p">,</span>
+</span><span id="__span-10-15"><a href="#__codelineno-10-15" id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">                    </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">448524.54533598688</span><span class="p">,</span>
+</span><span id="__span-10-16"><a href="#__codelineno-10-16" id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">                    </span><span class="nt">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-17"><a href="#__codelineno-10-17" id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="w">                        </span><span class="nt">"mean"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.7800202369689943E-05</span><span class="p">,</span>
+</span><span id="__span-10-18"><a href="#__codelineno-10-18" id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="w">                        </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.3000001311302184E-05</span><span class="p">,</span>
+</span><span id="__span-10-19"><a href="#__codelineno-10-19" id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="w">                        </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.3000000417232512E-05</span><span class="p">,</span>
+</span><span id="__span-10-20"><a href="#__codelineno-10-20" id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="w">                        </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">44.852454533598689</span><span class="p">,</span>
+</span><span id="__span-10-21"><a href="#__codelineno-10-21" id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="w">                        </span><span class="nt">"std"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-10-22"><a href="#__codelineno-10-22" id="__codelineno-10-22" name="__codelineno-10-22"></a><span class="w">                    </span><span class="p">}</span>
+</span><span id="__span-10-23"><a href="#__codelineno-10-23" id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-10-24"><a href="#__codelineno-10-24" id="__codelineno-10-24" name="__codelineno-10-24"></a><span class="w">            </span><span class="p">]</span>
+</span><span id="__span-10-25"><a href="#__codelineno-10-25" id="__codelineno-10-25" name="__codelineno-10-25"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-10-26"><a href="#__codelineno-10-26" id="__codelineno-10-26" name="__codelineno-10-26"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-10-27"><a href="#__codelineno-10-27" id="__codelineno-10-27" name="__codelineno-10-27"></a><span class="w">            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-10-28"><a href="#__codelineno-10-28" id="__codelineno-10-28" name="__codelineno-10-28"></a><span class="w">            </span><span class="nt">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-10-29"><a href="#__codelineno-10-29" id="__codelineno-10-29" name="__codelineno-10-29"></a><span class="w">                </span><span class="nt">"mean"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.9214277267456052E-05</span><span class="p">,</span>
+</span><span id="__span-10-30"><a href="#__codelineno-10-30" id="__codelineno-10-30" name="__codelineno-10-30"></a><span class="w">                </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.5000001192092894E-05</span><span class="p">,</span>
+</span><span id="__span-10-31"><a href="#__codelineno-10-31" id="__codelineno-10-31" name="__codelineno-10-31"></a><span class="w">                </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">3.4000000357627867E-05</span><span class="p">,</span>
+</span><span id="__span-10-32"><a href="#__codelineno-10-32" id="__codelineno-10-32" name="__codelineno-10-32"></a><span class="w">                </span><span class="nt">"area"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.1462941027780329</span><span class="p">,</span>
+</span><span id="__span-10-33"><a href="#__codelineno-10-33" id="__codelineno-10-33" name="__codelineno-10-33"></a><span class="w">                </span><span class="nt">"std"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-10-34"><a href="#__codelineno-10-34" id="__codelineno-10-34" name="__codelineno-10-34"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-10-35"><a href="#__codelineno-10-35" id="__codelineno-10-35" name="__codelineno-10-35"></a><span class="w">            </span><span class="nt">"segments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-10-36"><a href="#__codelineno-10-36" id="__codelineno-10-36" name="__codelineno-10-36"></a><span class="w">                </span><span class="p">{</span>
+</span><span id="__span-10-37"><a href="#__codelineno-10-37" id="__codelineno-10-37" name="__codelineno-10-37"></a><span class="w">                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-10-38"><a href="#__codelineno-10-38" id="__codelineno-10-38" name="__codelineno-10-38"></a><span class="w">                    </span><span class="nt">"geometry"</span><span class="p">:</span><span class="w"> </span><span class="err">"MULTIPOLYGON (((-97.6929647 37.14609323, -97.69290283 37.14608116, -97.69286838 37.14604427, -97.6927794 37.14569613, -97.69278408 37.1455012, -97.69280167 37.14546711, -97.69285988 37.14543962, -97.69292182 37.1454541, -97.69296866 37.14551326, -97.69298776 37.14593343, -97.69297601 37.14602652, -97.6929647 37.14609323)), ((-97.69451433 37.14765651, -97.69449116 37.14762271, -97.69429061 37.14757929, -97.69321844 37.14758133, -97.69279903 37.14760645, -97.69273684 37.14762335, -97.69261731 37.14753601, -97.69261606 37.14742859, -97.692777 37.14745955, -97.69335049 37.14746869, -97.69489672 37.14744214, -97.6954727 37.14742055, -97.69581488 37.14738703, -97.6959577 37.14733491, -97.69598964 37.14703375, -97.69603638 37.14696739, -97.69612131 37.14693879, -97.69713908 37.14699963, -97.69731486 37.14698376, -97.69750948 37.14691731, -97.69765168 37.14690398, -97.69777389 37.14693001, -97.6978006 37.14695362, -97.69780325 37.14709392, -97.69782426 37.14712313, -97.69785789 37.14714076, -97.69807866 37.1471575, -97.69804992 37.14739167, -97.69760727 37.14755205, -97.6965283 37.14758849, -97.69653207 37.14757098, -97.69643318 37.14752426, -97.69628686 37.14751341, -97.69620594 37.147531, -97.69614527 37.14756186, -97.69610413 37.1476008, -97.69610291 37.14760286, -97.69451433 37.14765651)), ((-97.69332403 37.1473105, -97.69323876 37.14730127, -97.69323981 37.14728812, -97.69328929 37.14728784, -97.69332403 37.1473105)), ((-97.698192 37.146234, -97.6981417 37.14618488, -97.69811653 37.14603605, -97.69813575 37.14588277, -97.6981616 37.14583425, -97.6982232 37.1457991, -97.69832553 37.14581865, -97.69842046 37.1458838, -97.6</span>
+</span></code></pre></div>
+<p>For example based on an <abbr title="Calculated as (NIR - Red) / (NIR + Red), NDVI measures vegetation health based on the difference between near-infrared and red light reflectance.">NDVI</abbr> map here are example of zoned maps.
+<img height="200" src="https://github.com/GEOSYS/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/FLM/Zoned%20map.png?raw=true" width="800"/></p>
+<p>The response contains for each zone created:
+- Geometry <abbr title="Standard format for representing spatial geometries such as polygons, points, and lines.">WKT</abbr> of the zone (this is most of the time a multipolygon)
+- Area of the zone
+- Descriptive statistics of the index used to create zones (min, max, mean, standard deviation)</p>
+<p>Zoned map are available in several format: png, Tiff, KML, shapefile</p>
+<p>Additionnal parameters allow to adapt the segmentation process.</p>
+<div style="background-color: var(--md-default-fg-color--lightest); padding: 1.5rem; border-radius: 4px; margin-top: 2rem;">
+<strong>Ready to learn more?</strong> Our team is available to discuss how EarthDaily's agricultural intelligence platform can meet your specific needs. 
+    <a href="https://earthdaily.com/contact">Contact us</a>
+</div>
+<!-- Auto-generated glossary abbreviations -->
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Automated field borders" class="md-footer__link md-footer__link--prev" href="../Automatic_Field_Borders/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Automated field borders
+              </div>
+</div>
+</a>
+<a aria-label="Next: Map types" class="md-footer__link md-footer__link--next" href="../Map-types/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Map types
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2026 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the MIT License.|
+    </div>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/earthdaily" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better. Please review our <a href="https://earthdaily.com/privacy-policy">privacy policy</a>.</p>
+<input class="md-toggle" id="__settings" type="checkbox"/>
+<div class="md-consent__settings">
+<ul class="task-list">
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="github" type="checkbox"/>
+<span class="task-list-indicator"></span>
+      GitHub
+    </label>
+</li>
+</ul>
+</div>
+<div class="md-consent__controls">
+<button class="md-button md-button--primary">Accept</button>
+<label class="md-button" for="__settings">Manage settings</label>
+</div>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.path", "navigation.top", "navigation.footer", "navigation.tracking", "navigation.top", "content.action.view", "content.code.copy", "content.code.annotate", "content.tabs.link", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script src="../../../js/nav_open_new_tab.js"></script>
+<script src="../../../js/spotlight.js"></script>
+<script>document$.subscribe(() => {
+            window.update_swagger_ui_iframe_height = function (id) {
+                var iFrameID = document.getElementById(id);
+                if (iFrameID) {
+                    full_height = (iFrameID.contentWindow.document.body.scrollHeight + 80) + "px";
+                    iFrameID.height = full_height;
+                    iFrameID.style.height = full_height;
+                }
+            }
+        
+            let iframe_id_list = []
+            var iframes = document.getElementsByClassName("swagger-ui-iframe");
+            for (var i = 0; i < iframes.length; i++) { 
+                iframe_id_list.push(iframes[i].getAttribute("id"))
+            }
+            let ticking = false;
+            document.addEventListener('scroll', function(e) {
+                if (!ticking) {
+                    window.requestAnimationFrame(()=> {
+                        let half_vh = window.innerHeight/2;
+                        for(var i = 0; i < iframe_id_list.length; i++) {
+                            let element = document.getElementById(iframe_id_list[i])
+                            if(element==null){
+                                return
+                            }
+                            let diff = element.getBoundingClientRect().top
+                            if(element.contentWindow.update_top_val){
+                                element.contentWindow.update_top_val(half_vh - diff)
+                            }
+                        }
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        
+            const dark_scheme_name = "slate"
+            
+            const schemeAttr = document.body.getAttribute("data-md-color-scheme");
+            const isMediaPrefersScheme = document.body.getAttribute("data-md-color-media") === "(prefers-color-scheme: dark)";
+
+            if (!isMediaPrefersScheme) {
+                window.__init_is_dark_mode = (schemeAttr === dark_scheme_name);
+            } else {
+                const computedScheme = window.getComputedStyle(document.body).getPropertyValue('color-scheme');
+                window.__init_is_dark_mode = computedScheme === "dark";
+            }
+            const options = {
+                attributeFilter: ['data-md-color-scheme'],
+            };
+            function color_scheme_callback(mutations) {
+                for (let mutation of mutations) {
+                    if (mutation.attributeName === "data-md-color-scheme") {
+                        scheme = document.body.getAttribute("data-md-color-scheme")
+                        var iframe_list = document.getElementsByClassName("swagger-ui-iframe")
+                        for(var i = 0; i < iframe_list.length; i++) {
+                            var ele = iframe_list.item(i);
+                            if (ele) {
+                                if (scheme === dark_scheme_name) {
+                                    ele.contentWindow.enable_dark_mode();
+                                } else {
+                                    ele.contentWindow.disable_dark_mode();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            observer = new MutationObserver(color_scheme_callback);
+            observer.observe(document.body, options);
+            })</script></body>
+</html>
