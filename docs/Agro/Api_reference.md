@@ -203,8 +203,8 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     Real-time crop performance monitoring combining satellite data, weather, and agronomic models. Provides actionable insights for in-season decisions.
     
-    [:simple-swagger: Swagger](https://api.geosys-na.net/Weather/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Library/..){ .md-button }
+    [:simple-swagger: Swagger](https://5gciu5p2msxwjrt54fks3kvvxu0oxdyr.lambda-url.us-east-1.on.aws/docs){ .md-button }
+    [:octicons-link-external-16: Details](./Library/inseason_monitoring.md){ .md-button }
 
 </div>
 

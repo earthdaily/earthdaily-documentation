@@ -4,6 +4,8 @@ description: This section explains everything you need to know about emergence d
 # status: new
 ---
 
+ <!-- md:folder Emergence -->  
+
 # Emergence Detection
 
 ## 📖 Overview

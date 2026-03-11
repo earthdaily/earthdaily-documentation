@@ -48,11 +48,11 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
     
     [Browse APIs →](./Agro/Api_reference.md)
 
--   :material-code-braces: **Code Examples**
+-   :material-code-braces: **AI coding tools**
     
-    Ready-to-use Python scripts and Jupyter notebooks for common analytics workflows.
+    How to enable AI tools to leverage Earthdaily Analytics.
     
-    [View examples →](https://github.com/earthdaily/Examples-and-showcases)
+    [Learn more →](./Support/ai-coding-tools.md)
 
 -   :material-frequently-asked-questions: **FAQ**
     

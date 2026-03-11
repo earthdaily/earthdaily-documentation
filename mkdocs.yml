@@ -595,6 +595,7 @@ hooks:
  - overrides/hooks/shortcodes.py
  - overrides/hooks/video.py
  - overrides/hooks/glossary.py
+ - overrides/hooks/llms_txt.py
  # - src/overrides/hooks/translations.py
 
 # +--------------------------------------------------------------------------------------------------------+

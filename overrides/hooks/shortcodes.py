@@ -32,6 +32,7 @@ def on_page_markdown(
         elif type == "extension":    return _badge_for_extension(args, page, files)
         elif type == "swagger":      return _badge_for_swagger(args, page, files)
         elif type == "notebook":     return _badge_for_notebook(args, page, files)
+        elif type == "folder":       return _badge_for_folder(args, page, files)
         elif type == "demo":         return _badge_for_demo(args, page, files)
         elif type == "default":
             if   args == "none":     return _badge_for_default_none(page, files)
@@ -64,6 +65,7 @@ def flag(args: str, page: Page, files: Files):
     elif type == "demo":          return _badge_for_demo(text, page, files)
     elif type == "swagger":       return _badge_for_swagger(text, page, files)
     elif type == "notebook":      return _badge_for_notebook(text, page, files)
+    elif type == "folder":        return _badge_for_folder(text, page, files)
     raise RuntimeError(f"Unknown type: {type}")
 
 # Create a linkable option
@@ -218,6 +220,17 @@ def _badge_for_notebook_download(text: str, page: Page, files: Files):
     return _badge(
         icon = f"[:{icon}:]({href} 'Download notebook')",
         text = f"[`.ipynb`]({href})",
+        type = "right"
+    )
+
+# Create badge for Analytics as a service folder
+def _badge_for_folder(text: str, page: Page, files: Files):
+    icon = "material-folder-outline"
+    icon_href = _resolve_path("conventions.md#demo", page, files)
+    href = f"https://github.com/earthdaily/Examples-and-showcases/tree/main/Analytics%20as%20a%20service/{text}"
+    return _badge(
+        icon = f"[:{icon}:]({icon_href} 'Analytics as a service')",
+        text = f"[{text}]({href})",
         type = "right"
     )
 

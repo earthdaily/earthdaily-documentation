@@ -1,0 +1,201 @@
+---
+title: AI Coding tool
+description: This section will provide details on how to use Earthdaily analytics service with AI coding tools. 
+hide:
+  - navigation
+  - toc
+---
+
+# AI Coding Tools Integration
+
+AI coding assistants generate better code when they have project-specific context. Each tool reads a different configuration file at session start. EDA provides ready-to-use files for both, generated directly from the extractor source code.
+
+<div class="grid cards" markdown>
+
+-   :simple-anthropic: **CLAUDE.md**
+
+    Context file for **Claude Code** (Anthropic). Drop it in your repo root — auto-loaded at session start.
+
+    [:octicons-download-16: Download CLAUDE.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/CLAUDE.md){ .md-button }
+
+-   :material-robot-outline: **AGENTS.md**
+
+    Context file for **Codex, Cursor, Aider** and any tool supporting the AGENTS.md standard.
+
+    [:octicons-download-16: Download AGENTS.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/AGENTS.md){ .md-button }
+
+-   :material-file-document-outline: **llms.txt**
+
+    Full AI context bundle hosted on the docs site. Use as a URL reference or Claude connector.
+    
+    <button class="md-button md-button--secondary" onclick="navigator.clipboard.writeText('https://earthdaily.github.io/documentation/llms.txt').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.textContent='Copy URL'},2000)}.bind(this))">Copy URL</button>
+
+</div>
+
+---
+
+## Overview
+
+| Tool | Config file | Auto-loaded | Also read by |
+|---|---|---|---|
+| **Claude Code** (Anthropic) | `CLAUDE.md` | ✅ Yes | Claude Code only |
+| **Codex CLI / Agent** (OpenAI) | `AGENTS.md` | ✅ Yes | Cursor · Aider · Builder.io |
+
+!!! warning "Two files, not one"
+    Neither tool reads the other's configuration file. If your team uses both Claude Code
+    and Codex, place both `CLAUDE.md` and `AGENTS.md` in your repo root.
+    EDA ships both — they share the same core content.
+
+---
+
+## Download Configuration Files
+
+Both files are generated automatically from the extractor source code on every build.
+Drop them into the root of any repo that uses EDA extractors.
+
+### `CLAUDE.md` — for Claude Code
+
+For **Claude Code** (Anthropic). Auto-loaded at session start. Contains architecture
+overview, all extractor classes, common patterns, parameter conventions, and error reference.
+
+**Context size:** ~4,200 tokens
+
+[:octicons-download-16: Download CLAUDE.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/CLAUDE.md){ .md-button }
+[:octicons-file-code-16: View raw](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/CLAUDE.md){ .md-button .md-button--secondary }
+
+---
+
+### `AGENTS.md` — for Codex, Cursor, Aider
+
+For **Codex, Cursor, and Aider**. Same core content as `CLAUDE.md`, formatted to the
+open AGENTS.md standard. Compatible with any tool that reads this convention.
+
+**Context size:** ~4,100 tokens
+
+[:octicons-download-16: Download AGENTS.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/AGENTS.md){ .md-button }
+[:octicons-file-code-16: View raw](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/AGENTS.md){ .md-button .md-button--secondary }
+
+---
+
+### AI Context Bundle (`llms.txt`)
+
+For tools that can load context from a URL, or to add as a Claude connector.
+The full bundle includes all extractor documentation inline — no repo file needed.
+
+[:octicons-link-16: docs.eda.com/llms.txt](https://docs.eda.com/llms.txt){ .md-button .md-button--secondary }
+
+---
+
+## What the Files Contain
+
+Both files share the same core structure. Content is generated from source — never
+manually edited, always in sync with the codebase.
+
+```markdown title="CLAUDE.md / AGENTS.md — structure"
+# EDA Extractors — AI Context
+
+## Architecture
+# BaseExtractor → EDAuthenticator, loguru, ThreadPoolExecutor
+# All extractors follow: .authenticate() → .extract(aoi, date_range, ...)
+
+## Extractor Index
+- CoverageExtractor    # Crop area coverage % per field
+- EmergenceExtractor   # Planting emergence timing
+- VegetationExtractor  # NDVI / vegetation health
+- DiseaseRiskExtractor # Daily disease risk scores
+- TillageExtractor     # Tillage practice detection
+  ... all extractors with docs + notebook links
+
+## Common Patterns
+# aoi: GeoJSON polygon or [xmin, ymin, xmax, ymax]
+# date_range: ("2024-01-01", "2024-12-31") — always ISO strings
+# Output: GeoDataFrame unless as_dataframe=False
+
+## Per-Extractor Sections
+# Parameters, example snippet, output schema, raises
+
+## Error Reference
+# EDAuthError · ExtractionError · GeometryError · ...
+```
+
+---
+
+## Tool Compatibility
+
+| Tool | `CLAUDE.md` | `AGENTS.md` | MCP connector | `llms.txt` via URL |
+|---|---|---|---|---|
+| Claude Code | ✅ Native | ✗ | ✅ Native | ✅ Via `CLAUDE.md` ref |
+| Claude.ai (web) | ✗ | ✗ | ✅ Settings → Connectors | ✅ Paste URL in chat |
+| Codex CLI / Agent | ✗ | ✅ Native | ⚡ stdio only | ✅ Via `AGENTS.md` ref |
+| Cursor | ✗ | ✅ Native | ✅ | ✅ Paste URL |
+| Aider | ✗ | ✅ Native | ✗ | ⚡ Manual |
+| GitHub Copilot | ✗ | ✗ | ✗ | ⚡ Manual paste |
+
+---
+
+## Setup in 3 Steps
+
+**1. Download and place the file(s) in your repo root**
+
+Drop `CLAUDE.md` for Claude Code, `AGENTS.md` for Codex/Cursor, or both if your team
+uses multiple tools. No other configuration is required — each tool picks up its file
+automatically at session start.
+
+**2. Start your AI session as normal**
+
+Run `claude` or `codex` in your project directory. The tool loads the context file before
+your first prompt. Verify it was read by asking:
+
+> *"What extractors does EDA provide?"*
+
+**3. Optionally add the Claude connector for persistent access**
+
+In Claude.ai, go to **Settings → Connectors → Add custom connector** and enter
+`https://docs.eda.com/mcp`. This gives every Claude conversation live access to EDA
+extractor knowledge without needing any file in the repo.
+
+---
+
+## Keeping Files Current
+
+Both files are generated by `scripts/generate_ai_context.py` on every push that touches
+the extractors or documentation. You never need to update them manually.
+
+```yaml title=".github/workflows/release.yml"
+on:
+  push:
+    paths:
+      - 'src/extractors/**'
+      - 'docs/**'
+      - 'notebooks/**'
+
+jobs:
+  update-ai-context:
+    steps:
+      - run: python scripts/generate_ai_context.py
+        # Writes CLAUDE.md, AGENTS.md, llms.txt, and report.md
+      - run: git commit -am "chore: update AI context" && git push
+```
+
+!!! tip "Documentation gap tracking"
+    The same script generates `ai_context/report.md` — a per-extractor completeness
+    report showing which classes are missing descriptions, examples, or output schemas.
+    [View documentation report →](report.md)
+
+---
+
+## Where Files Live
+
+Depending on your setup, files can live in the extractor repo, in the client's project
+repo, or just as a hosted URL — they don't all need to be in the same place.
+
+| Artifact | Lives in | Maintained by | Updated |
+|---|---|---|---|
+| `CLAUDE.md` / `AGENTS.md` | Client's repo | Client (one-time copy) | On major EDA API changes |
+| `llms.txt` bundle | EDA docs site | EDA CI pipeline | Automatically on every build |
+| MCP connector | Claude settings | Each developer, once | Never — always live |
+
+!!! info
+    The bundle is the single source of truth. The config files are lightweight wrappers
+    that reference it. Once the MCP connector is added to Claude settings, `CLAUDE.md`
+    becomes optional — Claude already has full context before the repo is opened.
