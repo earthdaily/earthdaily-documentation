@@ -1,6 +1,14 @@
 ---
 title: Compliance Checks
-description: With environmental regulations and sustainability standards tightening worldwide, insurers have a crucial role in ensuring the growers they support meet all legal and environmental requirements. Compliance checks are no longer optional – but manual, time-consuming processes make it tough to keep up, especially across large, diverse portfolios. Whether you’re tracking land use, monitoring protected zones, or applying your own compliance rules, the Compliance Check module offers a scalable, objective, and customizable approach to evaluate growers' practices across your portfolio.
+description: With environmental regulations and sustainability standards tightening worldwide, insurers have a crucial role in ensuring the growers they support meet all legal and environmental requirements. Compliance checks are no longer optional – but manual, time-consuming processes make it tough to keep up, especially across large, diverse portfolios. Whether you’re tracking land use, monitoring protected zones, or applying your own compliance rules, the Compliance Check module offers a scalable, objective, and customizable approach to evaluate growers’ practices across your portfolio.
+keywords:
+  - compliance check
+  - environmental regulations
+  - Brazil
+  - protected areas
+  - deforestation
+  - PRODES
+  - portfolio compliance API
 #status: new
 ---
 

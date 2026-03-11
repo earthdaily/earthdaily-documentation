@@ -1,3 +1,13 @@
+---
+keywords:
+  - France crop identification
+  - Germany crop identification
+  - winter wheat
+  - rapeseed
+  - barley
+  - corn
+  - sunflower
+---
 # Available across France & Germany
 
 The EarthDaily Crop Identification product is fully operational across both **France and Germany**, providing in-season crop classification at national scale.  

@@ -1,6 +1,14 @@
 ---
 title: Historical Assessment API
 description: The Historical Assessment API empowers insurance professionals to request and retrieve historical performance analytics for growers during the policy underwriting phase, enabling objective risk evaluations and faster decisions.
+keywords:
+  - historical assessment API
+  - potential score
+  - risk score
+  - crop failure
+  - underwriting
+  - OAuth 2.0
+  - insurance API
 # icon: material/api
 # status: new
 ---

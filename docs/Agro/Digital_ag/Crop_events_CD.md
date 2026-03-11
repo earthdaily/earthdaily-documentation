@@ -1,6 +1,13 @@
 ---
 title: Crop events
-description: 
+description:
+keywords:
+  - phenology
+  - emergence detection
+  - harvest detection
+  - change detection
+  - crop events
+  - greenness readiness
 #status: new
 ---
 

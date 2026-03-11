@@ -1,6 +1,11 @@
 ---
 title: Crop Identification 
 description: This page is dedicated to presentation of XXXXXXX product
+keywords:
+  - crop identification
+  - crop classification
+  - satellite imagery
+  - crop mapping
 icon: material/wallet-outline
 ---
 

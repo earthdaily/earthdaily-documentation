@@ -1,3 +1,13 @@
+---
+keywords:
+  - crop mask
+  - crop rotation
+  - crop identification
+  - REST API
+  - field-level
+  - WKT geometry
+  - agricultural season
+---
 
 <meta property="og:title" content="This page presents the Field-Level Crop Mask API provided by Earthdaily Agro..">
 

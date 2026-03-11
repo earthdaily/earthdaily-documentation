@@ -1,3 +1,13 @@
+---
+keywords:
+  - crop mask API
+  - STAC
+  - GeoTIFF
+  - Cropland Data Layer
+  - EarthDaily Data Store
+  - authentication
+  - crop classification
+---
 <meta property="og:title" content="This page presents the Crop Mask API (STAC) to access Crop Mask Layer..">
 
 ## 🗺️ Crop Mask API (STAC) Documentation

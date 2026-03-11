@@ -1,6 +1,15 @@
 ---
 title: Emergence
 description: This section explains everything you need to know about emergence detection.
+keywords:
+  - emergence detection
+  - emergence date
+  - NDVI
+  - growth rate
+  - crop development
+  - soybeans
+  - corn
+  - wheat
 # status: new
 ---
 

@@ -1,6 +1,15 @@
 ---
 title: Regional Monitoring API
 description: Overview of EarthDaily's Regional Monitoring API, including environments, workflows, weather data chain, and integration details.
+keywords:
+  - regional monitoring
+  - weather forecast
+  - ECMWF
+  - GFS
+  - crop monitoring
+  - NDVI
+  - soil moisture
+  - OAuth 2.0
 #icon: material/api
 #status: new
 ---

@@ -1,3 +1,14 @@
+---
+keywords:
+  - in-season monitoring
+  - ZARC
+  - emergence detection
+  - planted area control
+  - potential score
+  - harvest detection
+  - Brazil
+---
+
 ## 🌾 In-Season Monitoring
 
 Issuing a policy is just the beginning. Throughout the growing season, insurers face rising uncertainty – weather events, crop stress, and delayed sowing can all increase the risk of loss. Without timely insights, it’s easy to miss early warning signs.

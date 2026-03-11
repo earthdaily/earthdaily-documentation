@@ -1,6 +1,14 @@
 ---
 title: Commodities Intelligence
 description: This page is dedicated to presentation of Commodities Intelligence product
+keywords:
+  - commodities intelligence
+  - commodity trading
+  - yield forecast
+  - USDA
+  - weather monitoring
+  - satellite data
+  - production estimates
 icon: material/wallet-outline
 ---
 

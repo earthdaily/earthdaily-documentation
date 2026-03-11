@@ -1,6 +1,14 @@
 ---
 title: Parametric Insurance Data Pipeline
-description: Nullam urna elit, malesuada eget finibus ut, ac tortor. 
+description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
+keywords:
+  - parametric insurance
+  - NDVI
+  - rainfall
+  - temperature
+  - soil moisture
+  - crop index
+  - actuarial data
 #icon: material/api
 #status: new
 ---

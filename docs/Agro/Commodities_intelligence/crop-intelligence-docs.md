@@ -1,3 +1,13 @@
+---
+keywords:
+  - commodities intelligence
+  - crop intelligence
+  - commodity trading
+  - yield forecast
+  - supply chain
+  - food security
+  - satellite monitoring
+---
 ## 🌾Commodities Intelligence
 
 For customers who need more than rumors and anecdata, EarthDaily provides unbiased and consistent data and expertise to understand what’s really happening in all Ag regions.

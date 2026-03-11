@@ -1,6 +1,14 @@
 ---
 title: Territory Insights
 description: This page is dedicated to presentation of Territory Insights product
+keywords:
+  - territory insights
+  - crop phenometrics
+  - tasseling prediction
+  - grower targeting
+  - field segmentation
+  - GDD
+  - disease risk
 #icon: material/wallet-outline
 ---
 

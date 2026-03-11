@@ -1,3 +1,13 @@
+---
+keywords:
+  - crop reports
+  - webinar
+  - yield forecast
+  - global production
+  - corn
+  - soybeans
+  - wheat
+---
 ## ⚙️ Webinar and Video Series
 
 ### Weekly Webinars

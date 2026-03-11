@@ -1,6 +1,16 @@
 ---
 title: Vegetation Time Series
 description: This section explains everything you need to know about the vegetation time series.
+keywords:
+  - vegetation time series
+  - NDVI
+  - EVI
+  - NDWI
+  - LAI
+  - Sentinel-2
+  - Landsat
+  - MODIS
+  - cloud masking
 icon: material/toy-brick-outline
 ---
 

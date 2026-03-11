@@ -1,6 +1,14 @@
 ---
 title: Smart Underwriting
 description: Underwriting agricultural insurance can be challenging due to incomplete, inconsistent, or unreliable data provided by growers. Also, information often varies widely from one grower to another, making it difficult to get homogeneous risk assessment across the portfolio. Satellite imagery helps overcome these gaps by offering a consistent, objective view of each field’s history and performance. The Smart Underwriting module empowers underwriters with key insights to evaluate grower risk using historical performance analysis prior to policy issuance. Insurance decision-makers can access portfolio dashboards to gain a clear view of risk distribution across their entire book of business.
+keywords:
+  - smart underwriting
+  - historical assessment
+  - risk score
+  - potential score
+  - crop failure
+  - insurance dashboard
+  - portfolio analysis
 #status: new
 ---
 

@@ -1,3 +1,10 @@
+---
+keywords:
+  - parametric insurance API
+  - Swagger
+  - OpenAPI
+  - API documentation
+---
 
 
 

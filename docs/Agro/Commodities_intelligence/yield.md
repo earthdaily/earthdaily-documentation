@@ -1,3 +1,12 @@
+---
+keywords:
+  - yield elaboration
+  - yield forecast methodology
+  - vegetation monitoring
+  - weather monitoring
+  - historical analog
+  - production estimation
+---
 
 ## 🌾 Yield Elaboration Method
 

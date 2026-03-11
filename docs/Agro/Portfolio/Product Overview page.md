@@ -1,6 +1,14 @@
 ---
 title: Product Overview - Innovative Ag-Insurance Solution for Portfolio Management
-description: Transform how you manage ag insurance – from smarter underwriting to faster claims – with satellite intelligence and AI at your fingertips.  
+description: Transform how you manage ag insurance – from smarter underwriting to faster claims – with satellite intelligence and AI at your fingertips.
+keywords:
+  - ag insurance
+  - portfolio management
+  - smart underwriting
+  - compliance
+  - claims management
+  - satellite intelligence
+  - Brazil
 #status: new
 ---
 

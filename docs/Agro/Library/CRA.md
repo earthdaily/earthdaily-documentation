@@ -1,6 +1,15 @@
 ---
 title: Environmental Compliance
 description: This section explains everything you need to know about the Environmental Compliance Report analytic.
+keywords:
+  - environmental compliance
+  - CPF
+  - CNPJ
+  - CAR
+  - IBAMA
+  - deforestation
+  - Brazil
+  - compliance report
 # icon: fontawesome/question
 #status: new
 ---

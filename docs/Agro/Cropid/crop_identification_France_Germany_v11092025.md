@@ -1,3 +1,13 @@
+---
+keywords:
+  - France crop identification
+  - Germany crop identification
+  - winter wheat
+  - rapeseed
+  - barley
+  - corn
+  - sugar beet
+---
 <meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for Western Europe leveraging remote crops monitoring and AI. Real-time crop maps, and seamless API delivery for agriculture.">
 
 ## 🌍 Available Across France, UK & Germany

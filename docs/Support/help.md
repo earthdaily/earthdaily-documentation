@@ -1,6 +1,13 @@
 ---
 title: Help
-description: This section will provide inputs on where to locate ressources to get support. 
+description: This section will provide inputs on where to locate ressources to get support.
+keywords:
+  - help
+  - support
+  - Python client
+  - API reference
+  - helpdesk
+  - service status
 hide:
   - navigation
   - toc

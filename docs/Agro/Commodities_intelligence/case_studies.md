@@ -1,5 +1,15 @@
+---
+keywords:
+  - case study
+  - Brazil soybeans
+  - Canadian durum wheat
+  - Russian winter wheat
+  - yield forecast
+  - USDA
+  - crop failure
+---
 
-## 🎯 Success Cases 
+## 🎯 Success Cases
 
 Below are a few recent examples where EarthDaily data and analysis have led to a much earlier understanding of production concerns and adjustments in forecasted yields by market drivers.
 

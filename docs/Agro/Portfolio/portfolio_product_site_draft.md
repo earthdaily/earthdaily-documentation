@@ -1,6 +1,14 @@
 ---
 title: Fintech Portfolio management
 description: This page is dedicated to presentation of Portfolio management product
+keywords:
+  - fintech
+  - portfolio management
+  - ag insurance
+  - underwriting
+  - compliance
+  - in-season monitoring
+  - claims management
 #icon: material/wallet-outline
 ---
 

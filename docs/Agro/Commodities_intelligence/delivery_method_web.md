@@ -1,3 +1,11 @@
+---
+keywords:
+  - Geosys web application
+  - crop monitoring
+  - yield forecast
+  - API
+  - vegetation monitoring
+---
 ## 🌍 Geosys Web Application
 
 Access key EarthDaily Data in a simple user interface to quickly and efficiently monitor your crop of interest in any part of the world and create your own yield forecasts and production alerts.

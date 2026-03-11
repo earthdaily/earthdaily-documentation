@@ -1,6 +1,13 @@
 ---
 title: Decision support 
-description: 
+description:
+keywords:
+  - SAMZ
+  - management zones
+  - Rx maps
+  - variable rate application
+  - prescription maps
+  - harvest date prediction
 #status: new
 ---
 

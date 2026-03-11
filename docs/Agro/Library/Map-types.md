@@ -1,3 +1,15 @@
+---
+keywords:
+  - NDVI map
+  - EVI map
+  - GNDVI
+  - CVI
+  - CVIN
+  - yield variability
+  - SAMZ
+  - prescription map
+---
+
 # Map Description
 
 ## NDVI Map

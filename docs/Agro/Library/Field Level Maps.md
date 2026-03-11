@@ -1,3 +1,13 @@
+---
+keywords:
+  - field level maps
+  - NDVI map
+  - EVI
+  - GNDVI
+  - vegetation index
+  - GeoTIFF
+  - zoning
+---
 
 <!-- md:swagger API|https://api.geosys-na.net/field-level-maps/v5/swagger/index.html -->
 

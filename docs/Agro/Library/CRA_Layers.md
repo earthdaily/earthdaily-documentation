@@ -1,6 +1,15 @@
 ---
 title: Environmental Layers
 description: This section explains everything you need to know about the layers used in Environmental Compliance Report analytic.
+keywords:
+  - environmental layers
+  - CAR
+  - IBAMA
+  - INCRA
+  - conservation units
+  - deforestation
+  - Brazil
+  - indigenous lands
 # icon: fontawesome/question
 #status: new
 ---

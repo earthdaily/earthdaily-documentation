@@ -1,6 +1,14 @@
 ---
 title: Bare Soil Detection
 description: This section explains everything you need to know about the bare soil detection analytic.
+keywords:
+  - bare soil detection
+  - DBSI
+  - soil conservation
+  - erosion risk
+  - cover crop
+  - Sentinel-2
+  - sustainability
 # icon: fontawesome/question
 #status: new
 ---

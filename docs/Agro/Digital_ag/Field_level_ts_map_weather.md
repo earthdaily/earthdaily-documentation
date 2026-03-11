@@ -1,6 +1,15 @@
 ---
 title: Field Level Time Series, Maps, and Weather
-description: 
+description:
+keywords:
+  - NDVI
+  - LAI
+  - EVI
+  - time series
+  - vegetation indices
+  - Sentinel-2
+  - MODIS
+  - weather indicators
 #status: new
 ---
 

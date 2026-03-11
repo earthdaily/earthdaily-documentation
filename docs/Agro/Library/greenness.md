@@ -1,6 +1,14 @@
 ---
 title: Greenness Detection
 description: This section explains everything you need to know about the greenness detection analytic.
+keywords:
+  - greenness detection
+  - peak NDVI
+  - vegetation peak
+  - crop maturity
+  - corn
+  - soybeans
+  - phenology
 # icon: fontawesome/question
 #status: new
 ---

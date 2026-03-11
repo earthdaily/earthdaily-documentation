@@ -1,6 +1,14 @@
 ---
 title: Harvest Detection
 description: This section explains everything you need to know about the Harvest Detection analytic.
+keywords:
+  - harvest detection
+  - harvest date
+  - NDVI time series
+  - corn
+  - soybeans
+  - sugarcane
+  - in-season harvest
 # icon: fontawesome/question
 #status: new
 ---

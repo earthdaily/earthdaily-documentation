@@ -1,6 +1,14 @@
 ---
 title: Product Overview - Scalable Crop Classification from Space
 description: Crop ID product overview page
+keywords:
+  - crop classification
+  - satellite crop identification
+  - AI models
+  - STAC catalog
+  - field-level API
+  - GeoTIFF
+  - crop mask
 #status: new
 ---
 <meta property="og:title" content="Discover EarthDaily's scalable crop identification solution using satellite imagery and AI. Real-time crop maps, field-level insights, and seamless API delivery for agriculture.">

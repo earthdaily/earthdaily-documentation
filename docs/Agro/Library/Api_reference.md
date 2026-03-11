@@ -1,6 +1,14 @@
 ---
 title: API reference 
 description: This page is dedicated to list all APIs provided by Earthdaily Agro
+keywords:
+  - API reference
+  - Swagger
+  - OAuth 2.0
+  - field borders
+  - time series
+  - vegetation index maps
+  - weather API
 #icon: material/wallet-outline
 hide:
   - toc

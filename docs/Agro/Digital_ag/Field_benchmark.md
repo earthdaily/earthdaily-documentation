@@ -1,6 +1,13 @@
 ---
 title: Benchmarking
-description: 
+description:
+keywords:
+  - potential score
+  - risk score
+  - field benchmarking
+  - field ranking
+  - yield variability
+  - historical performance
 #status: new
 ---
 

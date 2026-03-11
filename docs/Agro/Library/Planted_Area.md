@@ -1,6 +1,14 @@
 ---
 title: Planted Area
 description: This section explains everything you need to know about the planted area analytic.
+keywords:
+  - planted area
+  - planted percentage
+  - emergence date
+  - unplanted area
+  - crop verification
+  - soybeans
+  - corn
 # icon: fontawesome/question
 #status: new
 ---

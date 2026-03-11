@@ -1,3 +1,13 @@
+---
+keywords:
+  - US crop identification
+  - corn
+  - soybean
+  - winter wheat
+  - cotton
+  - STAC
+  - field-level API
+---
 # Available Across the United States
 
 The **EarthDaily Crop Identification** product is fully operational across the entire U.S., providing in-season crop classification at **national scale**.  

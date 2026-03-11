@@ -1,4 +1,15 @@
-<meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for Brazil leveraging remote crops monitoring and AI. Real-time crop maps, Safrinha crops mapping, and seamless API delivery for agriculture.">
+---
+keywords:
+  - Brazil crop classification
+  - soybean
+  - corn
+  - Safrinha
+  - cotton
+  - rice
+  - Mato Grosso
+  - Parana
+---
+<meta property="og:title" content="Discover EarthDaily’s scalable crop classification solution for Brazil leveraging remote crops monitoring and AI. Real-time crop maps, Safrinha crops mapping, and seamless API delivery for agriculture.">
 
 ## 🌍 Available Across Brazil’s Major Agricultural Zones
 

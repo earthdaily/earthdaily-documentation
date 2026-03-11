@@ -1,6 +1,15 @@
 ---
 title: Disease Risk Assessment
 description: This section explains everything you need to know about the disease risk assessment analytic.
+keywords:
+  - disease risk
+  - tar spot
+  - gray leaf spot
+  - white mold
+  - corn
+  - soybeans
+  - weather forecast
+  - epidemiological model
 # icon: fontawesome/question
 #status: new
 ---

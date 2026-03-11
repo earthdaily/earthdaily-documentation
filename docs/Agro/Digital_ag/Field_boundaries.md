@@ -1,6 +1,14 @@
 ---
 title: Field Boundaries and crop id 
-description: 
+description:
+keywords:
+  - field boundaries
+  - crop identification
+  - crop rotation
+  - automated field borders
+  - USA
+  - Brazil
+  - France
 #status: new
 ---
 

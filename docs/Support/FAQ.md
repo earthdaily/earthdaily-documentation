@@ -1,6 +1,12 @@
 ---
 title: Frequently Asked Questions
 description: This page contains a set of self serve ressources to quickly solve most common challenges faced with our product.
+keywords:
+  - FAQ
+  - authentication
+  - data extraction
+  - troubleshooting
+  - API errors
 ---
 
 <div class="tag-filter" markdown>

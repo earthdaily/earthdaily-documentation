@@ -1,6 +1,15 @@
 ---
 title: ZARC (Agricultural Zoning of Climate Risk)
 description: This section explains everything you need to know about the ZARC analytic.
+keywords:
+  - ZARC
+  - climate risk zoning
+  - Brazil
+  - planting window
+  - sowing date
+  - emergence date
+  - corn
+  - soybeans
 # icon: fontawesome/question
 #status: new
 ---

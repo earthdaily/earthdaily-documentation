@@ -1,6 +1,14 @@
 ---
 title: In-season Potential Score
 description: This section explains everything you need to know about the In-season Potential Score analytic.
+keywords:
+  - in-season potential score
+  - cumulative NDVI
+  - field benchmark
+  - historical comparison
+  - yield potential
+  - corn
+  - soybeans
 # icon: fontawesome/question
 #status: new
 ---

@@ -1,6 +1,14 @@
 ---
 title: Digital Ag
-description: 
+description:
+keywords:
+  - digital agriculture
+  - field-level analytics
+  - crop monitoring
+  - anomaly detection
+  - vegetation indices
+  - satellite constellation
+  - API integration
 #status: new
 ---
 

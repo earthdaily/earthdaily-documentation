@@ -1,6 +1,13 @@
 ---
 title: Automatic Boundary
-description: This section wil explain how to access field borders using a longitude and a latitude as the input. 
+description: This section wil explain how to access field borders using a longitude and a latitude as the input.
+keywords:
+  - field borders
+  - automatic boundary
+  - Sentinel-2
+  - super-resolution
+  - GeoJSON
+  - field delineation
 # icon: fontawesome/question
 #status: new
 ---

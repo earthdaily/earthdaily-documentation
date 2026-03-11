@@ -1,6 +1,12 @@
 ---
 title: Crop Intelligence
 description: This page is dedicated to presentation of Geosys App for Crop Intelligence
+keywords:
+  - Geosys app
+  - crop intelligence
+  - yield forecast
+  - corn
+  - user interface
 icon: material/wallet-outline
 ---
 

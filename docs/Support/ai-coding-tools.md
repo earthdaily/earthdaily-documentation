@@ -1,6 +1,13 @@
 ---
 title: AI Coding tool
-description: This section will provide details on how to use Earthdaily analytics service with AI coding tools. 
+description: This section will provide details on how to use Earthdaily analytics service with AI coding tools.
+keywords:
+  - AI coding tools
+  - CLAUDE.md
+  - AGENTS.md
+  - llms.txt
+  - Cursor
+  - MCP connector
 hide:
   - navigation
   - toc
@@ -28,7 +35,7 @@ AI coding assistants generate better code when they have project-specific contex
 
     Full AI context bundle hosted on the docs site. Use as a URL reference or Claude connector.
 
-    <button class="md-button md-button--secondary" onclick="navigator.clipboard.writeText('https://earthdaily.github.io/documentation/llms.txt').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.textContent='Copy URL'},2000)}.bind(this))">Copy URL</button>
+    <button class="md-button md-button--secondary" onclick="navigator.clipboard.writeText('https://earthdaily.github.io/earthdaily-documentation/llms.txt').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.textContent='Copy URL'},2000)}.bind(this))">Copy URL</button>
 
 </div>
 

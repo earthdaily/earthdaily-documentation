@@ -1,3 +1,13 @@
+---
+keywords:
+  - US crop identification
+  - corn
+  - soybean
+  - winter wheat
+  - cotton
+  - Corn Belt
+  - USDA
+---
 <meta property="og:title" content="Discover EarthDaily's scalable crop classification solution for United States leveraging remote crops monitoring and AI. Real-time crop maps, and seamless API delivery for agriculture.">
 
 ## 🌎 Available Across the United States

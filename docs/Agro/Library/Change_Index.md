@@ -1,6 +1,13 @@
 ---
 title: Change Index
 description: This section explains everything you need to know about the Change Index analytic.
+keywords:
+  - change index
+  - change detection
+  - NDVI
+  - spatial variability
+  - field monitoring
+  - vegetation change
 # icon: fontawesome/question
 status: 
 ---

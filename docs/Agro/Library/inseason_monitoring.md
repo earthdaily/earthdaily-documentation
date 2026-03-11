@@ -1,6 +1,14 @@
 ---
 title: In-Season Monitoring
 description: This section explains everything you need to know about the in-season monitoring analytic.
+keywords:
+  - in-season monitoring
+  - cumulative NDVI
+  - vegetation performance
+  - crop emergence
+  - historical average
+  - corn
+  - soybeans
 # icon: fontawesome/question
 #status: new
 ---

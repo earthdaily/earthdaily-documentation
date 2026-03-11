@@ -1,6 +1,13 @@
 ---
 title: Testimonials 
-description: 
+description:
+keywords:
+  - SOYL
+  - precision agriculture
+  - NDVI
+  - CVI
+  - LAI
+  - variable-rate maps
 #status: new
 ---
 

@@ -1,3 +1,12 @@
+---
+keywords:
+  - field-level crop mask API
+  - crop rotation
+  - WKT geometry
+  - OAuth 2.0
+  - Swagger
+  - REST API
+---
 
 <meta property="og:title" content="This page presents the Field-Level Crop Mask API provided by Earthdaily Agro..">
 

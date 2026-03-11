@@ -1,6 +1,14 @@
 ---
 title: Emergence
-description: This section wil explain all you need to know on emergence detection. 
+description: This section wil explain all you need to know on emergence detection.
+keywords:
+  - emergence delay
+  - NDVI time series
+  - emergence detection
+  - crop season
+  - soybeans
+  - corn
+  - wheat
 # icon: fontawesome/question
 #status: new
 ---

@@ -1,6 +1,14 @@
 ---
 title: Historical Potential Score
 description: This section explains everything you need to know about the Historical Potential Score analytic.
+keywords:
+  - historical potential score
+  - risk score
+  - cumulative NDVI
+  - field benchmark
+  - olympic mean
+  - corn
+  - soybeans
 # icon: fontawesome/question
 #status: new
 ---
