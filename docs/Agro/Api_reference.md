@@ -72,11 +72,11 @@ hide:
 }
 </style>
 
-# API Reference
+## 📝 API Reference
 
 Browse our comprehensive API documentation across all EarthDaily Agro analytics. Each API provides detailed Swagger documentation with interactive endpoints, request/response examples, and authentication requirements.
 
-## Core
+## 📑 Core
 
 <div class="grid cards" markdown>
 
@@ -111,7 +111,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 ---
 
-## Foundational Analytics
+## 📒 Foundational Analytics
 
 <div class="grid cards" markdown>
 
@@ -175,7 +175,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 ---
 
-## Benchmark and Warning
+## ❗ Benchmark and Warning
 
 <div class="grid cards" markdown>
 
@@ -210,7 +210,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 ---
 
-## Risk Management
+## 🚩 Risk Management
 
 <div class="grid cards" markdown>
 
@@ -251,7 +251,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 ---
 
-## Crop Development and Stressors
+## 🌾 Crop Development and Stressors
 
 <div class="grid cards" markdown>
 
@@ -314,7 +314,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 ---
 
-## Sustainability
+## 🌱 Sustainability
 
 <div class="grid cards" markdown>
 
@@ -357,7 +357,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 </div>
 ---
 
-## Regional Analytics
+## 🌎 Regional Analytics
 
 <div class="grid cards" markdown>
 
