@@ -20,14 +20,14 @@ AI coding assistants generate better code when they have project-specific contex
 
 -   :material-robot-outline: **AGENTS.md**
 
-    Context file for **Codex, Cursor, Aider** and any tool supporting the AGENTS.md standard.
+    Context file for **Codex, Cursor, Aider** and any tool supporting the AGENTS.md standard.s
 
     [:octicons-download-16: Download AGENTS.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/AGENTS.md){ .md-button }
 
 -   :material-file-document-outline: **llms.txt**
 
     Full AI context bundle hosted on the docs site. Use as a URL reference or Claude connector.
-    
+
     <button class="md-button md-button--secondary" onclick="navigator.clipboard.writeText('https://earthdaily.github.io/documentation/llms.txt').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.textContent='Copy URL'},2000)}.bind(this))">Copy URL</button>
 
 </div>
@@ -48,43 +48,6 @@ AI coding assistants generate better code when they have project-specific contex
 
 ---
 
-## Download Configuration Files
-
-Both files are generated automatically from the extractor source code on every build.
-Drop them into the root of any repo that uses EDA extractors.
-
-### `CLAUDE.md` — for Claude Code
-
-For **Claude Code** (Anthropic). Auto-loaded at session start. Contains architecture
-overview, all extractor classes, common patterns, parameter conventions, and error reference.
-
-**Context size:** ~4,200 tokens
-
-[:octicons-download-16: Download CLAUDE.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/CLAUDE.md){ .md-button }
-[:octicons-file-code-16: View raw](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/CLAUDE.md){ .md-button .md-button--secondary }
-
----
-
-### `AGENTS.md` — for Codex, Cursor, Aider
-
-For **Codex, Cursor, and Aider**. Same core content as `CLAUDE.md`, formatted to the
-open AGENTS.md standard. Compatible with any tool that reads this convention.
-
-**Context size:** ~4,100 tokens
-
-[:octicons-download-16: Download AGENTS.md](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/AGENTS.md){ .md-button }
-[:octicons-file-code-16: View raw](https://raw.githubusercontent.com/earthdaily/eda-extractors/main/AGENTS.md){ .md-button .md-button--secondary }
-
----
-
-### AI Context Bundle (`llms.txt`)
-
-For tools that can load context from a URL, or to add as a Claude connector.
-The full bundle includes all extractor documentation inline — no repo file needed.
-
-[:octicons-link-16: docs.eda.com/llms.txt](https://docs.eda.com/llms.txt){ .md-button .md-button--secondary }
-
----
 
 ## What the Files Contain
 

@@ -46,13 +46,13 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
     
     Complete documentation for all EarthDaily endpoints including vegetation indices, weather data, and crop monitoring.
     
-    [Browse APIs →](./Agro/Api_reference.md)
+    [Browse APIs →](../Agro/Library/Api_reference.md)
 
 -   :material-code-braces: **AI coding tools**
     
     How to enable AI tools to leverage Earthdaily Analytics.
     
-    [Learn more →](./Support/ai-coding-tools.md)
+    [Learn more →](./ai-coding-tools.md)
 
 -   :material-frequently-asked-questions: **FAQ**
     
@@ -65,7 +65,7 @@ Get the assistance you need to make the most of EarthDaily's agricultural soluti
 ## Contact Support
 
 !!! info "Before contacting support"
-    - Check our [documentation](./index.md) and [FAQ](./FAQ.md) for quick answers
+    - Check our [documentation](../index.md) and [FAQ](./FAQ.md) for quick answers
     - Search for error messages or issues in our knowledge base
     - Have your API credentials and relevant code snippets ready
 

@@ -20,7 +20,7 @@ The enhanced vegetation index (EVI) was developed as an alternative vegetation i
 
 <br>
 <p align="center">
-  <img " src="https://github.com/earthdaily/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/QGIS/pictures/EVI.png?raw=true">
+  <img src="https://github.com/earthdaily/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/QGIS/pictures/EVI.png?raw=true">
 </p>
 
 The EVI was specifically developed to: 1. be more sensitive to changes in areas having high biomass (a serious shortcoming of NDVI),2. reduce the influence of atmospheric conditions on vegetation index values, and3. correct for canopy background signals.
@@ -32,7 +32,7 @@ The EVI was specifically developed to: 1. be more sensitive to changes in areas 
 
 <br>
 <p align="center">
-  <img src="https://github.com/earthdaily/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/QGIS/pictures/Capture%20d’écran%202022-05-16%20112530.png?raw=true">
+  <img src="https://github.com/earthdaily/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/QGIS/pictures/Capture%20d%E2%80%99%C3%A9cran%202022-05-16%20112530.png?raw=true">
 </p>
 
 This index has been identified as a high potential index to pilot the last nitrogen input on wheat for protein content, as NDVI is limited due to its saturation at high level canopies.

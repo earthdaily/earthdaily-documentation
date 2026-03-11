@@ -1,3 +1,11 @@
+---
+title: Conventions
+description: This section will provide clarity on badge convention. 
+hide:
+  - navigation
+  - toc
+---
+
 # Conventions
 
 This documentation use some symbols and icons located at the top of articles for illustration and enhanced documentation. To fully leverage thisc content please make you are familliar with these conventions. 
@@ -13,5 +21,10 @@ This symbol is used to provide link to Open API documentation allowing you to tr
 ### <!-- md:flag demo --> – Example repository  { data-toc-label="Demo" }
 This symbol provides a link to specific repository containing runnable located on Github.
 
+### <!-- md:flag folder --> – Repository folder { data-toc-label="Folder" }
+This symbol provides a link to a folder  with runnable material on a specific analytic or feature located on Github.
+
 ### <!-- md:flag notebook --> – Notebook { data-toc-label="Notebook" }
-This symbol provides a link to runnable notebook  of the feature or the analytic located on Github.--8<-- "snippets/contact-footer.md"
+This symbol provides a link to runnable notebook  of the feature or the analytic located on Github.
+
+--8<-- "snippets/contact-footer.md"
