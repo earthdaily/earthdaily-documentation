@@ -1,0 +1,39 @@
+# EarthDaily documentation
+
+
+> Everything you need to know to master EarthDaily services
+
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Full documentation
+
+- [All sections](https://earthdaily.github.io/documentation/llms-full.txt): Complete content for all included sections
+- [Agriculture > Analytic catalog](https://earthdaily.github.io/documentation/llms-full-agriculture-analytic-catalog.txt): Full content for Agriculture > Analytic catalog
+
+## Agriculture > Analytic catalog
+
+- [API Reference](https://earthdaily.github.io/documentation/Agro/Library/Api_reference/): This page is dedicated to list all APIs provided by Earthdaily Agro [API reference, Swagger, OAuth 2.0, field borders, time series, vegetation index maps, weather API]
+- [Automated field borders](https://earthdaily.github.io/documentation/Agro/Library/Automatic_Field_Borders/): This section wil explain how to access field borders using a longitude and a latitude as the input. [field borders, automatic boundary, Sentinel-2, super-resolution, GeoJSON, field delineation]
+- [Principles](https://earthdaily.github.io/documentation/Agro/Library/Field Level Maps/): EarthDaily Map APIs provide endpoints for retrieving map image catalog and map generation. [field level maps, NDVI map, EVI, GNDVI, vegetation index, GeoTIFF, zoning]
+- [Map types](https://earthdaily.github.io/documentation/Agro/Library/Map-types/): The in-season NDVI map assess crop conditions variablity within the field. The Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared ... [NDVI map, EVI map, GNDVI, CVI, CVIN, yield variability, SAMZ, prescription map]
+- [Vegetation Time Series](https://earthdaily.github.io/documentation/Agro/Library/Vegetation_time_series/): This section explains everything you need to know about the vegetation time series. [vegetation time series, NDVI, EVI, NDWI, LAI, Sentinel-2, Landsat, MODIS, cloud masking]
+- [Emergence](https://earthdaily.github.io/documentation/Agro/Library/Emergence/): This section explains everything you need to know about emergence detection. [emergence detection, emergence date, NDVI, growth rate, crop development, soybeans, corn, wheat]
+  - Examples (Emergence): https://github.com/earthdaily/Examples-and-showcases/tree/main/Analytics%20as%20a%20service/Emergence
+- [Emergence delay](https://earthdaily.github.io/documentation/Agro/Library/Emergence_Delay/): This section wil explain all you need to know on emergence detection. [emergence delay, NDVI time series, emergence detection, crop season, soybeans, corn, wheat]
+- [Planting validation (ZARC)](https://earthdaily.github.io/documentation/Agro/Library/ZARC/): This section explains everything you need to know about the ZARC analytic. [ZARC, climate risk zoning, Brazil, planting window, sowing date, emergence date, corn, soybeans]
+- [Planted area](https://earthdaily.github.io/documentation/Agro/Library/Planted_Area/): This section explains everything you need to know about the planted area analytic. [planted area, planted percentage, emergence date, unplanted area, crop verification, soybeans, corn]
+- [Greenness](https://earthdaily.github.io/documentation/Agro/Library/greenness/): This section explains everything you need to know about the greenness detection analytic. [greenness detection, peak NDVI, vegetation peak, crop maturity, corn, soybeans, phenology]
+- [In season monitoring](https://earthdaily.github.io/documentation/Agro/Library/inseason_monitoring/): This section explains everything you need to know about the in-season monitoring analytic. [in-season monitoring, cumulative NDVI, vegetation performance, crop emergence, historical average, corn, soybeans]
+- [Disease risk](https://earthdaily.github.io/documentation/Agro/Library/disease_risk/): This section explains everything you need to know about the disease risk assessment analytic. [disease risk, tar spot, gray leaf spot, white mold, corn, soybeans, weather forecast, epidemiological model]
+- [Baresoil](https://earthdaily.github.io/documentation/Agro/Library/baresoil/): This section explains everything you need to know about the bare soil detection analytic. [bare soil detection, DBSI, soil conservation, erosion risk, cover crop, Sentinel-2, sustainability]
+- [Compliance report](https://earthdaily.github.io/documentation/Agro/Library/CRA/): This section explains everything you need to know about the Environmental Compliance Report analytic. [environmental compliance, CPF, CNPJ, CAR, IBAMA, deforestation, Brazil, compliance report]
+- [Environmental layers](https://earthdaily.github.io/documentation/Agro/Library/CRA_Layers/): This section explains everything you need to know about the layers used in Environmental Compliance Report analytic. [environmental layers, CAR, IBAMA, INCRA, conservation units, deforestation, Brazil, indigenous lands]
+- [Historical Potential Score](https://earthdaily.github.io/documentation/Agro/Library/Historical_Potential_Score/): This section explains everything you need to know about the Historical Potential Score analytic. [historical potential score, risk score, cumulative NDVI, field benchmark, olympic mean, corn, soybeans]
+- [In Season  Potential Score](https://earthdaily.github.io/documentation/Agro/Library/In-season_Potential_Score/): This section explains everything you need to know about the In-season Potential Score analytic. [in-season potential score, cumulative NDVI, field benchmark, historical comparison, yield potential, corn, soybeans]
+- [Harvest detection](https://earthdaily.github.io/documentation/Agro/Library/Harvest_Detection/): This section explains everything you need to know about the Harvest Detection analytic. [harvest detection, harvest date, NDVI time series, corn, soybeans, sugarcane, in-season harvest]
+- [Change index](https://earthdaily.github.io/documentation/Agro/Library/Change_Index/): This section explains everything you need to know about the Change Index analytic. [change index, change detection, NDVI, spatial variability, field monitoring, vegetation change]
+- [Crop id API](https://earthdaily.github.io/documentation/Agro/Library/FieldLevel_CropMask_API_v11092025/): The Field-Level Crop Mask API enables querying the planted crops for a given geometry and time window. The information is retrieved from the crop masks produced internally or sourced from public da... [crop mask, crop rotation, crop identification, REST API, field-level, WKT geometry, agricultural season]
+- [Regional Monitoring](https://earthdaily.github.io/documentation/Agro/Library/Regional_Monitoring/): Overview of EarthDaily's Regional Monitoring API, including environments, workflows, weather data chain, and integration details. [regional monitoring, weather forecast, ECMWF, GFS, crop monitoring, NDVI, soil moisture, OAuth 2.0]
+  - Notebook (EDAgro_regional_analytic_extraction): https://github.com/earthdaily/Examples-and-showcases/blob/main/Analytics%20as%20a%20service/EDAgro_regional_analytic_extraction.ipynb
