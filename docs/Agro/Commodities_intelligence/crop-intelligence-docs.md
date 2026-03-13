@@ -1,4 +1,7 @@
 ---
+title: Crop Intelligence
+description: This page is dedicated to presentation of Crop Intelligence product
+icon: material/wallet-outline
 keywords:
   - commodities intelligence
   - crop intelligence
@@ -8,15 +11,20 @@ keywords:
   - food security
   - satellite monitoring
 ---
-## 🌾Commodities Intelligence
 
-For customers who need more than rumors and anecdata, EarthDaily provides unbiased and consistent data and expertise to understand what’s really happening in all Ag regions.
 
-With 30 years of weather and satellite data, interactive analysis of real-time season developments unable accurate analysis and production estimates.
+# Crop Intelligence 🌾
 
-Feed your proprietary models with best-in-class data, leverage our app to carry out your analyses or work with EarthDaily’s crop analysts for fast access to ready to insights, __it’s all possible__ - find out more below or [*contact us*](https://earthdaily.com/contact).
+## Introduction
 
-## 👥 Target Audience
+ In volatile agricultural markets, success depends on real-time data. EarthDaily gives you that edge. We combine Earth Observation (EO) analytics with AI-powered forecasts, providing real-time visibility into global and local crop conditions.
+
+ Continuous satellite monitoring, historical data, and predictive intelligence help you optimize procurement, improve trade strategies, and make confident market decisions.
+
+ Multiple delivery channels ensure that EarthDaily Crop Intelligence is available in the format best suited for your business needs.
+
+
+## Target Audience 👥
 
 EarthDaily has designed this product for organizations that need timely, accurate, and scalable crop intelligence:
 
@@ -32,16 +40,18 @@ EarthDaily has designed this product for organizations that need timely, accurat
 ## 🚜  Crop Intelligence Delivery Methods
 * Geosys Web Application
 * API Access
-* Webinar and Video Series
+* Weekly Video Series
 * Global Crop Reports
 * World in 10
 * One on One Crop Analyst Calls
 
 
-## 📊 Data & Analytics Coverage
+## Data & Analytics Coverage 📊
 
 Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link).
 
 
---8<-- "snippets/contact-footer.md"
 
+---
+
+*Documentation source: [EarthDaily Commodities Intelligence](https://earthdaily.github.io/earthdaily-documentation/Agro/Commodities_intelligence/commodities_product/)*

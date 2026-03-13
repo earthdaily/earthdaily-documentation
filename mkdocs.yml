@@ -615,6 +615,16 @@ nav:
   - Home: index.md
   - Agriculture: 
     - Agro/index.md
+    - Territory Insights:
+      - Overview: Agro/Territory_insights/Territory_insights_overview.md
+    - Crop Intelligence:
+      - Product: Agro/Commodities_intelligence/crop-intelligence-docs.md
+      - Delivery method:
+        - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
+        - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
+        - Videos: Agro/Commodities_intelligence/delivery_method_reports_videos.md
+      - Yield: Agro/Commodities_intelligence/yield.md
+      - Case studies: Agro/Commodities_intelligence/case_studies.md
     - Digital Ag:
       - Product: Agro/Digital_ag/Digital_ag_overview.md
       - Field Boundaries: Agro/Digital_ag/Field_boundaries.md
@@ -623,8 +633,6 @@ nav:
       - Benchmark: Agro/Digital_ag/Field_benchmark.md
       - Decision support workflows: Agro/Digital_ag/DS_workflow_tools.md
       - Testimonials: Agro/Digital_ag/Testimonials.md
-    - Territory Insights:
-      - Overview: Agro/Territory_insights/Territory_insights_overview.md
     - Portfolio Management:
       - Product: Agro/Portfolio/Product Overview page.md
       - Smart underwriting: Agro/Portfolio/Smart underwriting.md
@@ -640,13 +648,6 @@ nav:
       - Try samples: https://samples.cropid.earthdaily.com/
       - Crop Layer Access: Agro/Cropid/CropMask_Access_through_EDS_v11092025.md
       - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
-    - Crop Intelligence:
-      - Product: Agro/Commodities_intelligence/crop-intelligence-docs.md
-      - Delivery method:
-        - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
-        - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
-      - Yield: Agro/Commodities_intelligence/yield.md
-      - Case studies: Agro/Commodities_intelligence/case_studies.md
     - Parametric insurance: 
       - Product: Agro/Parametric/parametric_insurance_product_site_draft.md
       - User guide: Agro/Parametric/Swagger.md
