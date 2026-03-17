@@ -15,11 +15,7 @@ keywords:
 
 ### Weekly Video Series
 
-
-
 #### Weekly Videos
-
-
 
 Join our Crop Analyst for Weekly Video Series where EarthDaily will review Global Crop Production estimates and the Vegetation and Weather data which are driving these estimates.
 
@@ -43,14 +39,14 @@ Join our Crop Analyst for Weekly Video Series where EarthDaily will review Globa
   * Highlights when our forecasts or conditions have changed recently or we differ from USDA
 
 
+Please check our Weekly Corn Video
+<!-- youtube: gWeW86-rKUc -->
 
-Download and example of our [Weekly Corn Video](https://earthdailyagro-my.sharepoint.com/:v:/g/personal/nick_ohrtman_earthdaily_com/IQBf4DxqPEEwTZOO-7zEuY07AXM6e89yqWoO4gNLNeXkHLM?e=abQmKB) or [Weekly Wheat Video](https://earthdailyagro-my.sharepoint.com/:v:/g/personal/nick_ohrtman_earthdaily_com/IQD4bbAIqEbnRavuiFwVrLHsAUHtTGNpdxTEgQ4CZeF6F-Y?e=m3dlxk)
-
+Please check our Weekly Wheat Video
+<!-- youtube: rcNgis46BYE -->
 
 
 ### Weekly Global Reports
-
-
 
 #### All Crops Global Report
 
@@ -58,11 +54,7 @@ Our Weekly Global Report is a massive report which showcases all you would want 
 
 The Global Report includes Forecasted Yield and Production values as well as the current vegetation, weather, and production maps and charts which are driving Forecasted Yields.
 
-
-
 [Download an example of our Weekly Global Report](../../assets/agro/commodities_intelligence/Global_Report_Eng.pdf)
-
-
 
 #### Crop Specific Reports
 
@@ -70,11 +62,13 @@ Crop specific reports focus on a single target crop and all production areas.
 
 These reports include Forecasted Yield and Production values as well as the current vegetation, weather, and production maps and charts which are driving Forecasted Yields.
 
-\[Download an example of our Weekly Wheat Report](../../assets/agro/commodities\_intelligence/Wheat Weekly.pdf)
+[Download an example of our Weekly Wheat Report](../../assets/agro/commodities\_intelligence/Wheat Weekly.pdf)
+
+![Test pdf](../../assets/agro/commodities_intelligence/WHEAT_Weekly.pdf){ type=application/pdf style="min-height:25vh;width:100%" }
 
 
 
-### World in 10
+#### World in 10
 
 10 images tell the answer to 10 key questions about production all around the world.
 
@@ -90,3 +84,4 @@ Talk directly with one of our Crop Analysts about how EarthDaily data is illustr
 
 Bring your own questions about specific areas of interest or allow our Crop Analysts to take you on a virtual crop tour of regions of interest to our business.
 
+--8<-- "snippets/contact-footer.md"

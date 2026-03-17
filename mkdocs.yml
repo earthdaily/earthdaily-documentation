@@ -276,7 +276,6 @@ theme:
   - navigation.top         # Adds a "Back to top" that is shown when scrolling up.
   - navigation.footer       # Enable navigation in page footer.
   - navigation.tracking    # Updates the url with highlighted section anchor.
-  - navigation.top    # Display back to top button for easier navigation
   #- content.action.edit #Display an edit button on the top of the page
   - content.action.view #Display a view source button on the top of the page
   - content.code.copy #display copy button on code block
@@ -573,6 +572,7 @@ plugins:
       lang:
         - en  
       separator: '[\s\-\.]+'
+  - mkdocs-pdf
 #  - mkdocstrings
 #  - blog:
 #      blog_toc: true
@@ -615,79 +615,87 @@ nav:
   - Home: index.md
   - Agriculture: 
     - Agro/index.md
-    - Territory Insights:
-      - Overview: Agro/Territory_insights/Territory_insights_overview.md
-    - Crop Intelligence:
-      - Product: Agro/Commodities_intelligence/crop-intelligence-docs.md
-      - Delivery method:
-        - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
-        - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
-        - Videos: Agro/Commodities_intelligence/delivery_method_reports_videos.md
-      - Yield: Agro/Commodities_intelligence/yield.md
-      - Case studies: Agro/Commodities_intelligence/case_studies.md
-    - Digital Ag:
-      - Product: Agro/Digital_ag/Digital_ag_overview.md
-      - Field Boundaries: Agro/Digital_ag/Field_boundaries.md
-      - Field level maps and time series: Agro/Digital_ag/Field_level_ts_map_weather.md
-      - Crop events: Agro/Digital_ag/Crop_events_CD.md
-      - Benchmark: Agro/Digital_ag/Field_benchmark.md
-      - Decision support workflows: Agro/Digital_ag/DS_workflow_tools.md
-      - Testimonials: Agro/Digital_ag/Testimonials.md
-    - Portfolio Management:
-      - Product: Agro/Portfolio/Product Overview page.md
-      - Smart underwriting: Agro/Portfolio/Smart underwriting.md
-      - Historical Assessment: Agro/Portfolio/Historical_Assessment_API.md
-      - Environmental Compliance: Agro/Portfolio/Compliance Check.md
-      - In-Season Monitoring: Agro/Portfolio/In-Season Monitoring.md
-      - Integration: Agro/Portfolio/Integration.md
-    - Crop identification:
-      - Product: Agro/Cropid/crop_identification_OverviewPage_v11092025.md
-      - US: Agro/Cropid/crop_identification_US_v11092025.md
-      - Brazil: Agro/Cropid/crop_identification_Brazil_v11092025.md
-      - Western Europe: Agro/Cropid/crop_identification_France_Germany_v11092025.md
-      - Try samples: https://samples.cropid.earthdaily.com/
-      - Crop Layer Access: Agro/Cropid/CropMask_Access_through_EDS_v11092025.md
-      - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
-    - Parametric insurance: 
-      - Product: Agro/Parametric/parametric_insurance_product_site_draft.md
-      - User guide: Agro/Parametric/Swagger.md
-    - EarthDaily App:
-      - User guide: Agro/App/en-US/00. Geosys App User Guide.md
-      - Home: Agro/App/en-US/01. Home.md
-      - Map analysis: Agro/App/en-US/02. Map Analysis.md
-      - Monitoring field: Agro/App/en-US/03. Monitoring - Field.md
-      - Monitoring region: Agro/App/en-US/04. Monitoring - Regional.md
-      - Field Manager: Agro/App/en-US/05. Field Manager.md
-      - Compliance analysis: Agro/App/en-US/06. Compliance Analysis.md
-    - QGIS plugin:
-      - Prerequisites: Agro/QGIS/1. Prerequisite.md
-      - Installation: Agro/QGIS/2. Installation.md
-      - Get data: Agro/QGIS/3. GetData.md
-      - Processing toolbox: Agro/QGIS/4. ProcessingToolBox.md
-    - Analytic catalog:
+    - PRODUCTS:
+      - Territory Insights:
+        - Agro/Territory_insights/index.md
+      - Crop Intelligence:
+        - Agro/Commodities_intelligence/index.md
+        - Delivery method:
+          - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
+          - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
+          - Videos: Agro/Commodities_intelligence/delivery_method_reports_videos.md
+        - Yield: Agro/Commodities_intelligence/yield.md
+        - Case studies: Agro/Commodities_intelligence/case_studies.md
+      - Digital Ag:
+        - Agro/Digital_ag/index.md
+        - Field Boundaries: Agro/Digital_ag/Field_boundaries.md
+        - Field level maps and time series: Agro/Digital_ag/Field_level_ts_map_weather.md
+        - Crop events: Agro/Digital_ag/Crop_events_CD.md
+        - Benchmark: Agro/Digital_ag/Field_benchmark.md
+        - Decision support workflows: Agro/Digital_ag/DS_workflow_tools.md
+        - Testimonials: Agro/Digital_ag/Testimonials.md
+      - Portfolio Management:
+        - Agro/Portfolio/index.md
+        - Smart underwriting: Agro/Portfolio/Smart underwriting.md
+        - Historical Assessment: Agro/Portfolio/Historical_Assessment_API.md
+        - Environmental Compliance: Agro/Portfolio/Compliance Check.md
+        - In-Season Monitoring: Agro/Portfolio/In-Season Monitoring.md
+        - Integration: Agro/Portfolio/Integration.md
+      - Crop identification:
+        - Agro/Cropid/index.md
+        - US: Agro/Cropid/crop_identification_US_v11092025.md
+        - Brazil: Agro/Cropid/crop_identification_Brazil_v11092025.md
+        - Western Europe: Agro/Cropid/crop_identification_France_Germany_v11092025.md
+        - Try samples: https://samples.cropid.earthdaily.com/
+        - Crop Layer Access: Agro/Cropid/CropMask_Access_through_EDS_v11092025.md
+        - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
+      - Parametric insurance:
+        - Agro/Parametric/index.md
+        - User guide: Agro/Parametric/Swagger.md
+    - USER GUIDES:
+      - EarthDaily App:
+        - User guide: Agro/App/en-US/00. Geosys App User Guide.md
+        - Home: Agro/App/en-US/01. Home.md
+        - Map analysis: Agro/App/en-US/02. Map Analysis.md
+        - Monitoring field: Agro/App/en-US/03. Monitoring - Field.md
+        - Monitoring region: Agro/App/en-US/04. Monitoring - Regional.md
+        - Field Manager: Agro/App/en-US/05. Field Manager.md
+        - Compliance analysis: Agro/App/en-US/06. Compliance Analysis.md
+      - QGIS plugin:
+        - Prerequisites: Agro/QGIS/1. Prerequisite.md
+        - Installation: Agro/QGIS/2. Installation.md
+        - Get data: Agro/QGIS/3. GetData.md
+        - Processing toolbox: Agro/QGIS/4. ProcessingToolBox.md
+    - ANALYTIC CATALOG:
       - API Reference: Agro/Library/Api_reference.md
-      - Automated field borders: Agro/Library/Automatic_Field_Borders.md
-      - Field maps:
-        - Principles: Agro/Library/Field Level Maps.md
-        - Map types: Agro/Library/Map-types.md
-      - Vegetation Time Series: Agro/Library/Vegetation_time_series.md
-      - Emergence: Agro/Library/Emergence.md
-      - Emergence delay: Agro/Library/Emergence_Delay.md
-      - Planting validation (ZARC): Agro/Library/ZARC.md
-      - Planted area: Agro/Library/Planted_Area.md
-      - Greenness: Agro/Library/greenness.md
-      - In season monitoring: Agro/Library/inseason_monitoring.md
-      - Disease risk: Agro/Library/disease_risk.md
-      - Baresoil: Agro/Library/baresoil.md
-      - Environmental Compliance:
-          - Compliance report: Agro/Library/CRA.md
-          - Environmental layers: Agro/Library/CRA_Layers.md
-      - Historical Potential Score: Agro/Library/Historical_Potential_Score.md
-      - In Season  Potential Score: Agro/Library/In-season_Potential_Score.md
-      - Harvest detection: Agro//Library/Harvest_Detection.md
-      - Change index: Agro/Library/Change_Index.md
-      - Crop id API: Agro/Library/FieldLevel_CropMask_API_v11092025.md
-      - Regional Monitoring: Agro/Library/Regional_Monitoring.md
+      - Foundational Analytics:
+        - Automated field borders: Agro/Library/Automatic_Field_Borders.md
+        - Field maps:
+          - Principles: Agro/Library/Field Level Maps.md
+          - Map types: Agro/Library/Map-types.md
+        - Vegetation Time Series: Agro/Library/Vegetation_time_series.md
+        - Crop id API: Agro/Library/FieldLevel_CropMask_API_v11092025.md
+      - Crop Development and Stressors:
+        - Emergence: Agro/Library/Emergence.md
+        - Emergence delay: Agro/Library/Emergence_Delay.md
+        - Planting validation (ZARC): Agro/Library/ZARC.md
+        - Planted area: Agro/Library/Planted_Area.md
+        - Greenness: Agro/Library/greenness.md
+        - Disease risk: Agro/Library/disease_risk.md
+      - Risk management:
+        - Environmental Compliance:
+            - Compliance report: Agro/Library/CRA.md
+            - Environmental layers: Agro/Library/CRA_Layers.md
+        - Historical Potential Score: Agro/Library/Historical_Potential_Score.md
+        - In Season  Potential Score: Agro/Library/In-season_Potential_Score.md
+        - Harvest detection: Agro//Library/Harvest_Detection.md
+      - Benchmark and warning:
+        - Change index: Agro/Library/Change_Index.md
+        - In season monitoring: Agro/Library/inseason_monitoring.md
+      - Sustainability:
+        - Baresoil: Agro/Library/baresoil.md
+      - Regional Analytics:
+        - Regional Monitoring: Agro/Library/Regional_Monitoring.md
   - Data: https://earthdaily.github.io/EDA-Documentation/
   - Mining: https://mining.earthdaily.com/knowledge-base
   - SkyForest: https://skyforest.io/

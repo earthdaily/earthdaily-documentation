@@ -51,4 +51,5 @@ Support national food security assessments, subsidy programs, and environmental 
 ## 📊 Data & Analytics Coverage
 [Regional Analytics Data Catalog](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link)
 
-[Contact Us](#) to schedule a demo or get API access.
+
+--8<-- "snippets/contact-footer.md"

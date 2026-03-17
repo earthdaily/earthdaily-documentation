@@ -16,7 +16,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     Advanced data extraction and analytics platform for agricultural monitoring and field-level analysis.
 
-    [:octicons-arrow-right-24: Learn more](Digital_ag/Digital_ag_overview)
+    [:octicons-arrow-right-24: Learn more](Digital_ag/index.md)
 
 -   :material-chart-line:{ .lg .middle } __Crop Intelligence__
 
@@ -24,7 +24,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     Real-time crop monitoring and vegetation analysis.
 
-    [:octicons-arrow-right-24: Learn more](Commodities_intelligence/crop-intelligence-docs)
+    [:octicons-arrow-right-24: Learn more](Commodities_intelligence/index.md)
 
 -   :material-monitor-dashboard:{ .lg .middle } __Portfolio Management__
 
@@ -32,7 +32,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     Complete portfolio analysis with smart underwriting, historical assessment, environmental compliance, and in-season monitoring.
 
-    [:octicons-arrow-right-24: Learn more](Portfolio/Product%20Overview%20page)
+    [:octicons-arrow-right-24: Learn more](Portfolio/index.md)
 
 -   :material-compare-remove:{ .lg .middle } __Parametric Insurance__
 
@@ -40,7 +40,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     Imagery and Weather agricultural parametric insurance indexes for smart risk management.
 
-    [:octicons-arrow-right-24: Learn more](Parametric/parametric_insurance_product_site_draft)
+    [:octicons-arrow-right-24: Learn more](Parametric/index.md)
 
 -   :material-map-search:{ .lg .middle } __Crop identification__
 
@@ -48,7 +48,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
 
     AI-powered crop type identification across the US, Brazil, and Western Europe with field-level accuracy.
 
-    [:octicons-arrow-right-24: Learn more](Cropid/crop_identification_OverviewPage_v11092025)
+    [:octicons-arrow-right-24: Learn more](Cropid/index.md)
 
 
 -   :material-target-variant:{ .lg .middle } __Territory Insights__
@@ -57,7 +57,7 @@ Explore our comprehensive suite of agricultural intelligence solutions designed 
     
     Automated Crop Intelligence for Smarter Sales
 
-    [:octicons-arrow-right-24: Learn more](Territory_insights/Territory_insights_overview/)
+    [:octicons-arrow-right-24: Learn more](Territory_insights/index.md)
 
 
 </div>
