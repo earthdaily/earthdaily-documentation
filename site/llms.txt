@@ -9,31 +9,133 @@ EarthDaily Analytics provides satellite imagery and geospatial analytics for agr
 
 ## Full documentation
 
-- [All sections](https://earthdaily.github.io/documentation/llms-full.txt): Complete content for all included sections
-- [Agriculture > ANALYTIC CATALOG](https://earthdaily.github.io/documentation/llms-full-agriculture-analytic-catalog.txt): Full content for Agriculture > ANALYTIC CATALOG
+- [All sections](https://earthdaily.github.io/documentation/llms-full.txt): Complete content for all included sections (~84k tokens)
+- [Agriculture > ANALYTIC CATALOG](https://earthdaily.github.io/documentation/llms-full-agriculture-analytic-catalog.txt): Full content for Agriculture > ANALYTIC CATALOG (~35k tokens)
+- [Data > EarthPlatform](https://earthdaily.github.io/documentation/llms-full-data-earthplatform.txt): Full content for Data > EarthPlatform (~17k tokens)
+- [Data > EarthOne](https://earthdaily.github.io/documentation/llms-full-data-earthone.txt): Full content for Data > EarthOne (~10k tokens)
+- [Data > Collections](https://earthdaily.github.io/documentation/llms-full-data-collections.txt): Full content for Data > Collections (~3k tokens)
+- [Mining](https://earthdaily.github.io/documentation/llms-full-mining.txt): Full content for Mining (~228 tokens)
+- [Mining > Marigold](https://earthdaily.github.io/documentation/llms-full-mining-marigold.txt): Full content for Mining > Marigold (~12k tokens)
+- [Mining > Iris](https://earthdaily.github.io/documentation/llms-full-mining-iris.txt): Full content for Mining > Iris (~7k tokens)
 
 ## Agriculture > ANALYTIC CATALOG
 
-- [API Reference](https://earthdaily.github.io/documentation/Agro/Library/Api_reference/): This page is dedicated to list all APIs provided by Earthdaily Agro [API reference, Swagger, OAuth 2.0, field borders, time series, vegetation index maps, weather API]
-- [Automated field borders](https://earthdaily.github.io/documentation/Agro/Library/Automatic_Field_Borders/): This section wil explain how to access field borders using a longitude and a latitude as the input. [field borders, automatic boundary, Sentinel-2, super-resolution, GeoJSON, field delineation]
-- [Principles](https://earthdaily.github.io/documentation/Agro/Library/Field Level Maps/): EarthDaily Map APIs provide endpoints for retrieving map image catalog and map generation. [field level maps, NDVI map, EVI, GNDVI, vegetation index, GeoTIFF, zoning]
-- [Map types](https://earthdaily.github.io/documentation/Agro/Library/Map-types/): The in-season NDVI map assess crop conditions variablity within the field. The Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared ... [NDVI map, EVI map, GNDVI, CVI, CVIN, yield variability, SAMZ, prescription map]
-- [Vegetation Time Series](https://earthdaily.github.io/documentation/Agro/Library/Vegetation_time_series/): This section explains everything you need to know about the vegetation time series. [vegetation time series, NDVI, EVI, NDWI, LAI, Sentinel-2, Landsat, MODIS, cloud masking]
-- [Crop id API](https://earthdaily.github.io/documentation/Agro/Library/FieldLevel_CropMask_API_v11092025/): The Field-Level Crop Mask API enables querying the planted crops for a given geometry and time window. The information is retrieved from the crop masks produced internally or sourced from public da... [crop mask, crop rotation, crop identification, REST API, field-level, WKT geometry, agricultural season]
-- [Emergence](https://earthdaily.github.io/documentation/Agro/Library/Emergence/): This section explains everything you need to know about emergence detection. [emergence detection, emergence date, NDVI, growth rate, crop development, soybeans, corn, wheat]
+- [API Reference](https://earthdaily.github.io/documentation/Agro/Library/Api_reference/): This page is dedicated to list all APIs provided by Earthdaily Agro (~3k tokens) [API reference, Swagger, OAuth 2.0, field borders, time series, vegetation index maps, weather API]
+- [Automated field borders](https://earthdaily.github.io/documentation/Agro/Library/Automatic_Field_Borders/): This section wil explain how to access field borders using a longitude and a latitude as the input. (~630 tokens) [field borders, automatic boundary, Sentinel-2, super-resolution, GeoJSON, field delineation]
+- [Principles](https://earthdaily.github.io/documentation/Agro/Library/Field Level Maps/): EarthDaily Map APIs provide endpoints for retrieving map image catalog and map generation. (~6k tokens) [field level maps, NDVI map, EVI, GNDVI, vegetation index, GeoTIFF, zoning]
+- [Map types](https://earthdaily.github.io/documentation/Agro/Library/Map-types/): The in-season NDVI map assess crop conditions variablity within the field. The Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared ... (~2k tokens) [NDVI map, EVI map, GNDVI, CVI, CVIN, yield variability, SAMZ, prescription map]
+- [Vegetation Time Series](https://earthdaily.github.io/documentation/Agro/Library/Vegetation_time_series/): This section explains everything you need to know about the vegetation time series. (~3k tokens) [vegetation time series, NDVI, EVI, NDWI, LAI, Sentinel-2, Landsat, MODIS, cloud masking]
+- [Crop id API](https://earthdaily.github.io/documentation/Agro/Library/FieldLevel_CropMask_API_v11092025/): The Field-Level Crop Mask API enables querying the planted crops for a given geometry and time window. The information is retrieved from the crop masks produced internally or sourced from public da... (~1k tokens) [crop mask, crop rotation, crop identification, REST API, field-level, WKT geometry, agricultural season]
+- [Emergence](https://earthdaily.github.io/documentation/Agro/Library/Emergence/): This section explains everything you need to know about emergence detection. (~602 tokens) [emergence detection, emergence date, NDVI, growth rate, crop development, soybeans, corn, wheat]
   - Examples (Emergence): https://github.com/earthdaily/Examples-and-showcases/tree/main/Analytics%20as%20a%20service/Emergence
-- [Emergence delay](https://earthdaily.github.io/documentation/Agro/Library/Emergence_Delay/): This section wil explain all you need to know on emergence detection. [emergence delay, NDVI time series, emergence detection, crop season, soybeans, corn, wheat]
-- [Planting validation (ZARC)](https://earthdaily.github.io/documentation/Agro/Library/ZARC/): This section explains everything you need to know about the ZARC analytic. [ZARC, climate risk zoning, Brazil, planting window, sowing date, emergence date, corn, soybeans]
-- [Planted area](https://earthdaily.github.io/documentation/Agro/Library/Planted_Area/): This section explains everything you need to know about the planted area analytic. [planted area, planted percentage, emergence date, unplanted area, crop verification, soybeans, corn]
-- [Greenness](https://earthdaily.github.io/documentation/Agro/Library/greenness/): This section explains everything you need to know about the greenness detection analytic. [greenness detection, peak NDVI, vegetation peak, crop maturity, corn, soybeans, phenology]
-- [Disease risk](https://earthdaily.github.io/documentation/Agro/Library/disease_risk/): This section explains everything you need to know about the disease risk assessment analytic. [disease risk, tar spot, gray leaf spot, white mold, corn, soybeans, weather forecast, epidemiological model]
-- [Compliance report](https://earthdaily.github.io/documentation/Agro/Library/CRA/): This section explains everything you need to know about the Environmental Compliance Report analytic. [environmental compliance, CPF, CNPJ, CAR, IBAMA, deforestation, Brazil, compliance report]
-- [Environmental layers](https://earthdaily.github.io/documentation/Agro/Library/CRA_Layers/): This section explains everything you need to know about the layers used in Environmental Compliance Report analytic. [environmental layers, CAR, IBAMA, INCRA, conservation units, deforestation, Brazil, indigenous lands]
-- [Historical Potential Score](https://earthdaily.github.io/documentation/Agro/Library/Historical_Potential_Score/): This section explains everything you need to know about the Historical Potential Score analytic. [historical potential score, risk score, cumulative NDVI, field benchmark, olympic mean, corn, soybeans]
-- [In Season  Potential Score](https://earthdaily.github.io/documentation/Agro/Library/In-season_Potential_Score/): This section explains everything you need to know about the In-season Potential Score analytic. [in-season potential score, cumulative NDVI, field benchmark, historical comparison, yield potential, corn, soybeans]
-- [Harvest detection](https://earthdaily.github.io/documentation/Agro/Library/Harvest_Detection/): This section explains everything you need to know about the Harvest Detection analytic. [harvest detection, harvest date, NDVI time series, corn, soybeans, sugarcane, in-season harvest]
-- [Change index](https://earthdaily.github.io/documentation/Agro/Library/Change_Index/): This section explains everything you need to know about the Change Index analytic. [change index, change detection, NDVI, spatial variability, field monitoring, vegetation change]
-- [In season monitoring](https://earthdaily.github.io/documentation/Agro/Library/inseason_monitoring/): This section explains everything you need to know about the in-season monitoring analytic. [in-season monitoring, cumulative NDVI, vegetation performance, crop emergence, historical average, corn, soybeans]
-- [Baresoil](https://earthdaily.github.io/documentation/Agro/Library/baresoil/): This section explains everything you need to know about the bare soil detection analytic. [bare soil detection, DBSI, soil conservation, erosion risk, cover crop, Sentinel-2, sustainability]
-- [Regional Monitoring](https://earthdaily.github.io/documentation/Agro/Library/Regional_Monitoring/): Overview of EarthDaily's Regional Monitoring API, including environments, workflows, weather data chain, and integration details. [regional monitoring, weather forecast, ECMWF, GFS, crop monitoring, NDVI, soil moisture, OAuth 2.0]
+- [Emergence delay](https://earthdaily.github.io/documentation/Agro/Library/Emergence_Delay/): This section wil explain all you need to know on emergence detection. (~781 tokens) [emergence delay, NDVI time series, emergence detection, crop season, soybeans, corn, wheat]
+- [Planting validation (ZARC)](https://earthdaily.github.io/documentation/Agro/Library/ZARC/): This section explains everything you need to know about the ZARC analytic. (~2k tokens) [ZARC, climate risk zoning, Brazil, planting window, sowing date, emergence date, corn, soybeans]
+- [Planted area](https://earthdaily.github.io/documentation/Agro/Library/Planted_Area/): This section explains everything you need to know about the planted area analytic. (~800 tokens) [planted area, planted percentage, emergence date, unplanted area, crop verification, soybeans, corn]
+- [Greenness](https://earthdaily.github.io/documentation/Agro/Library/greenness/): This section explains everything you need to know about the greenness detection analytic. (~985 tokens) [greenness detection, peak NDVI, vegetation peak, crop maturity, corn, soybeans, phenology]
+- [Disease risk](https://earthdaily.github.io/documentation/Agro/Library/disease_risk/): This section explains everything you need to know about the disease risk assessment analytic. (~2k tokens) [disease risk, tar spot, gray leaf spot, white mold, corn, soybeans, weather forecast, epidemiological model]
+- [Compliance report](https://earthdaily.github.io/documentation/Agro/Library/CRA/): This section explains everything you need to know about the Environmental Compliance Report analytic. (~1k tokens) [environmental compliance, CPF, CNPJ, CAR, IBAMA, deforestation, Brazil, compliance report]
+- [Environmental layers](https://earthdaily.github.io/documentation/Agro/Library/CRA_Layers/): This section explains everything you need to know about the layers used in Environmental Compliance Report analytic. (~2k tokens) [environmental layers, CAR, IBAMA, INCRA, conservation units, deforestation, Brazil, indigenous lands]
+- [Historical Potential Score](https://earthdaily.github.io/documentation/Agro/Library/Historical_Potential_Score/): This section explains everything you need to know about the Historical Potential Score analytic. (~974 tokens) [historical potential score, risk score, cumulative NDVI, field benchmark, olympic mean, corn, soybeans]
+- [In Season  Potential Score](https://earthdaily.github.io/documentation/Agro/Library/In-season_Potential_Score/): This section explains everything you need to know about the In-season Potential Score analytic. (~1k tokens) [in-season potential score, cumulative NDVI, field benchmark, historical comparison, yield potential, corn, soybeans]
+- [Harvest detection](https://earthdaily.github.io/documentation/Agro/Library/Harvest_Detection/): This section explains everything you need to know about the Harvest Detection analytic. (~847 tokens) [harvest detection, harvest date, NDVI time series, corn, soybeans, sugarcane, in-season harvest]
+- [Change index](https://earthdaily.github.io/documentation/Agro/Library/Change_Index/): This section explains everything you need to know about the Change Index analytic. (~815 tokens) [change index, change detection, NDVI, spatial variability, field monitoring, vegetation change]
+- [In season monitoring](https://earthdaily.github.io/documentation/Agro/Library/inseason_monitoring/): This section explains everything you need to know about the in-season monitoring analytic. (~1k tokens) [in-season monitoring, cumulative NDVI, vegetation performance, crop emergence, historical average, corn, soybeans]
+- [Baresoil](https://earthdaily.github.io/documentation/Agro/Library/baresoil/): This section explains everything you need to know about the bare soil detection analytic. (~2k tokens) [bare soil detection, DBSI, soil conservation, erosion risk, cover crop, Sentinel-2, sustainability]
+- [Regional Monitoring](https://earthdaily.github.io/documentation/Agro/Library/Regional_Monitoring/): Overview of EarthDaily's Regional Monitoring API, including environments, workflows, weather data chain, and integration details. (~1k tokens) [regional monitoring, weather forecast, ECMWF, GFS, crop monitoring, NDVI, soil moisture, OAuth 2.0]
   - Notebook (EDAgro_regional_analytic_extraction): https://github.com/earthdaily/Examples-and-showcases/blob/main/Analytics%20as%20a%20service/EDAgro_regional_analytic_extraction.ipynb
+
+## Data > EarthPlatform
+
+- [Earth Data Store (EDS)](https://earthdaily.github.io/documentation/Data/earthplatform/): Welcome to the EDS (Earth Data Store) documentation (~170 tokens)
+- [Getting Started](https://earthdaily.github.io/documentation/Data/earthplatform/GettingStarted/): Get started with EarthDaily's Earth Data Store platform (~76 tokens)
+- [Welcome](https://earthdaily.github.io/documentation/Data/earthplatform/GettingStarted/welcome/): Welcome email and first login to the EarthPlatform (~139 tokens)
+- [API Authentication](https://earthdaily.github.io/documentation/Data/earthplatform/GettingStarted/authentication/): How to authenticate with the EarthDaily STAC API using OAuth client credentials (~1k tokens)
+- [Quick Start](https://earthdaily.github.io/documentation/Data/earthplatform/GettingStarted/quickstart/): Get started quickly with EarthDaily data via API, PySTAC, or Python client (~1k tokens)
+- [Console](https://earthdaily.github.io/documentation/Data/earthplatform/Console/): EarthDaily Console user interfaces — Account Management, EarthPlatform, and EarthMosaics (~95 tokens)
+- [New Login Experience](https://earthdaily.github.io/documentation/Data/earthplatform/Console/new-login/): The new authentication system for EarthDaily Console sites (~651 tokens)
+- [Account Information](https://earthdaily.github.io/documentation/Data/earthplatform/Console/account/): Manage your EarthDaily account, API credentials, and orders (~358 tokens)
+- [EarthPlatform](https://earthdaily.github.io/documentation/Data/earthplatform/Console/earthplatform/): Browse and interact with the EarthDaily image catalog using EarthPlatform (~1k tokens)
+- [EarthMosaics](https://earthdaily.github.io/documentation/Data/earthplatform/Console/earthmosaics/): Create and manage AI-Ready Mosaics with EarthMosaics (~914 tokens)
+- [API](https://earthdaily.github.io/documentation/Data/earthplatform/API/): EarthDaily STAC API documentation (~205 tokens)
+- [STAC Specification](https://earthdaily.github.io/documentation/Data/earthplatform/API/APIDesign/stac/): Understanding the SpatioTemporal Asset Catalog specification and EDA extensions (~546 tokens)
+- [API Details and Limits](https://earthdaily.github.io/documentation/Data/earthplatform/API/APIDesign/details-and-limits/): Best practices for performant STAC API queries and API throttling limits (~467 tokens)
+- [Endpoints](https://earthdaily.github.io/documentation/Data/earthplatform/API/APIUsage/endpoints/): Complete list of EarthDaily STAC API endpoints with usage examples (~3k tokens)
+- [Command Line Examples](https://earthdaily.github.io/documentation/Data/earthplatform/API/APIUsage/commandline/): Curl command examples for all EarthDaily STAC API endpoints (~1k tokens)
+- [Postman Examples](https://earthdaily.github.io/documentation/Data/earthplatform/API/APIUsage/postman/): Postman screenshots and configuration for EarthDaily STAC API endpoints (~280 tokens)
+- [Python Examples](https://earthdaily.github.io/documentation/Data/earthplatform/API/APIUsage/python/): Python and PySTAC client examples for EarthDaily STAC API (~910 tokens)
+- [EDA STAC Extension](https://earthdaily.github.io/documentation/Data/earthplatform/API/Extensions/eda-extension/): EDA-specific STAC extension fields for collections and items (~1k tokens)
+- [EDA Data Coverage Extension](https://earthdaily.github.io/documentation/Data/earthplatform/API/Extensions/eda-data-coverage/): EDA Data Coverage STAC extension fields for report items (~344 tokens)
+- [EDS Examples](https://earthdaily.github.io/documentation/Data/earthplatform/examples/): Jupyter notebook examples for working with EarthDaily data (~478 tokens)
+- [EDA Mosaics](https://earthdaily.github.io/documentation/Data/earthplatform/mosaics/): AI-Ready Mosaic creation parameters, band information, and pixel selection methods (~1k tokens)
+- [FAQs](https://earthdaily.github.io/documentation/Data/earthplatform/FAQ/): Help and frequently asked questions for the Earth Data Store (~372 tokens)
+
+## Data > EarthOne
+
+- [EarthOne Platform](https://earthdaily.github.io/documentation/Data/earthone/): Documentation for the EarthOne analytics platform — access, APIs, user interfaces, and platform updates (~264 tokens)
+- [Getting Access](https://earthdaily.github.io/documentation/Data/earthone/getting-started/access/): How to create an account and get access to the EarthOne Platform (~76 tokens)
+- [Key Features](https://earthdaily.github.io/documentation/Data/earthone/getting-started/api-features/): Overview of the EarthOne Python stack — Catalog, Compute, and Dynamic Compute (~655 tokens)
+- [Understanding Your Usage](https://earthdaily.github.io/documentation/Data/earthone/getting-started/usage/): Learn how your EarthOne platform usage is calculated — Processing Units, Catalog Storage, and Compute Units (~2k tokens)
+- [Installation](https://earthdaily.github.io/documentation/Data/earthone/platform-apis/installation/): How to install and set up your EarthOne Python environment — pip install, authentication, and example notebooks (~501 tokens)
+- [Catalog API](https://earthdaily.github.io/documentation/Data/earthone/platform-apis/earthone-catalog-api/): Introduction to the EarthOne Catalog API — Products, Images, ImageCollections, Bands, and Blobs (~3k tokens)
+- [Compute API](https://earthdaily.github.io/documentation/Data/earthone/platform-apis/earthone-compute-api/): Introduction to the EarthOne Compute API — Functions, Jobs, and best practices for scalable batch computing (~2k tokens)
+- [Overview](https://earthdaily.github.io/documentation/Data/earthone/user-interfaces/earthone-user-interfaces/): Overview of EarthOne Platform user interfaces — Explorer, Workbench, Compute, and Storage (~364 tokens)
+- [Explorer UI](https://earthdaily.github.io/documentation/Data/earthone/user-interfaces/earthone-explorer-ui/): Guide to the EarthOne Explorer UI — search, visualize, and manage geospatial data products (~511 tokens)
+- [Workbench Setup](https://earthdaily.github.io/documentation/Data/earthone/user-interfaces/workbench/): Getting started with EarthOne Workbench — environment selection, navigation, authentication, and troubleshooting (~454 tokens)
+- [Introducing EarthOne](https://earthdaily.github.io/documentation/Data/earthone/platform-updates/introducing-earthone/): Migration guide from Descartes Labs to EarthOne — updated URLs, Python client, import syntax, and product IDs (~900 tokens)
+
+## Data > Collections
+
+- [Data Catalog](https://earthdaily.github.io/documentation/Data/Collections/): Browse EarthDaily's data collections — satellite imagery, cloud masks, mosaics, and analytics (~698 tokens)
+- [Sentinel-2](https://earthdaily.github.io/documentation/Data/Collections/sentinel-2/): Sentinel-2 multispectral optical imagery collections available through EarthDaily (~332 tokens)
+- [Landsat](https://earthdaily.github.io/documentation/Data/Collections/landsat/): Landsat Collection 2 imagery available through EarthDaily (~268 tokens)
+- [Sentinel-1](https://earthdaily.github.io/documentation/Data/Collections/sentinel-1/): Sentinel-1 C-band SAR imagery collections available through EarthDaily (~265 tokens)
+- [Venus](https://earthdaily.github.io/documentation/Data/Collections/venus/): Venus L2A high-revisit multispectral imagery available through EarthDaily (~222 tokens)
+- [EarthDaily Constellation Preview](https://earthdaily.github.io/documentation/Data/Collections/edc-preview/): Preview imagery from the EarthDaily satellite constellation (~54 tokens)
+- [EDA Cloud Masks](https://earthdaily.github.io/documentation/Data/Collections/cloudmasks/): EarthDaily's accurate cloud masking for Sentinel-2 and Landsat (~478 tokens)
+- [Cropland Data Layer US](https://earthdaily.github.io/documentation/Data/Collections/cropland-data-layer/): Annual crop type classification covering the contiguous United States (~55 tokens)
+- [AI Ready Mosaics](https://earthdaily.github.io/documentation/Data/Collections/ai-ready-mosaics/): Cloud-free, radiometrically consistent mosaics optimized for machine learning (~119 tokens)
+- [Biomass, Tree Height & Cover](https://earthdaily.github.io/documentation/Data/Collections/biomass/): Multi-mode biomass density, tree height, and tree cover estimates at 10m resolution (~88 tokens)
+- [Forest Mask](https://earthdaily.github.io/documentation/Data/Collections/forest-mask/): Binary forest/non-forest classification at 10m resolution (~62 tokens)
+
+## Mining
+
+- [Index](https://earthdaily.github.io/documentation/mining/): Explore EarthDaily's mining and energy solutions for mineral exploration and infrastructure monitoring. (~149 tokens)
+
+## Mining > Marigold
+
+- [Overview](https://earthdaily.github.io/documentation/mining/marigold-onboarding/marigold-overview/): Training Video 1 — an introduction and product overview of Marigold's key components (~209 tokens)
+- [Bare Earth Composites](https://earthdaily.github.io/documentation/mining/marigold-onboarding/bare-earth-composites/): Training Video 2 — access global, analysis-ready Bare Earth Composites in Marigold (~249 tokens)
+- [Simple Masking](https://earthdaily.github.io/documentation/mining/marigold-onboarding/vegetation-and-water-masking/): Training Video 3 — create and deploy vegetation and water masks using Marigold's built-in capabilities (~238 tokens)
+- [Complex Masking](https://earthdaily.github.io/documentation/mining/marigold-onboarding/complex-masking/): Training Video 4 — K-Means clustering classification for complex masking in Marigold (~278 tokens)
+- [Derived Products: RGBs, Band Ratios, Mineral Indices](https://earthdaily.github.io/documentation/mining/marigold-onboarding/workflows-derived-products1/): Training Video 5 — create standard multispectral derived products in Marigold (~271 tokens)
+- [Derived Products: Ternary Plots, Decorrelation Stretch](https://earthdaily.github.io/documentation/mining/marigold-onboarding/workflows-derived-products2/): Training Video 6 — create ternary plots and decorrelation stretch products in Marigold (~240 tokens)
+- [Derived Products: Transforms & Spectral Similarity](https://earthdaily.github.io/documentation/mining/marigold-onboarding/workflows-derived-products-transforms-spectralsimilarity/): Training Video 7 — create transforms and a basic Spectral Similarity product in Marigold (~225 tokens)
+- [What is Marigold?](https://earthdaily.github.io/documentation/mining/using-marigold/what-is-marigold/): Marigold is a GIS user interface built on EarthDaily's platform, tailored to exploration geologists (~257 tokens)
+- [Introducing Marigold v2](https://earthdaily.github.io/documentation/mining/using-marigold/introducing-marigold-v2/): Announcing the release of Marigold v2.0 — new features, improvements, and fixes (~527 tokens)
+- [Recovering Work with Autosave](https://earthdaily.github.io/documentation/mining/using-marigold/avoiding-lost-work-in-marigold/): How to recover your Marigold workspace using the autosave feature after an unexpected session closure (~355 tokens)
+- [Compositional Mapping Tool](https://earthdaily.github.io/documentation/mining/using-marigold/compositional-mapping-tool-reko-diq/): Step-by-step walkthrough of the Hyperspectral Compositional Mapping Tool using the Reko Diq porphyry system (~754 tokens)
+- [Hillshade and Variable Alpha](https://earthdaily.github.io/documentation/mining/using-marigold/hillshade-and-variable-alpha/): Marigold 2.8.0 hillshade and spatially variable alpha settings for topographic and geophysical visualization (~697 tokens)
+- [Product Update Utility](https://earthdaily.github.io/documentation/mining/using-marigold/product-utility-tool/): How to update Marigold .sav file Product IDs when access issues occur due to subscription changes (~336 tokens)
+- [Spectral Query Tool](https://earthdaily.github.io/documentation/mining/using-marigold/spectral-query-tool/): Marigold 2.6.0 revamped Spectral Query Tool — point selection, band ranges, and source products (~409 tokens)
+- [Vector Upload Guidelines](https://earthdaily.github.io/documentation/mining/using-marigold/vector-upload-guidelines/): Supported vector formats and coordinate systems for upload in Marigold 2.6.0+ (~461 tokens)
+- [2.12.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.12.0-new-features/): Release notes: Compositional Mapping 2.0, raster calculator improvements, and reinvented autosave (~814 tokens)
+- [2.10.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.10.0-new-features/): Release notes: Compositional Mapping Tool, KMZ/KML upload, PCA improvements, and spectra export additions (~625 tokens)
+- [2.9.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.9.0-new-features/): Release notes: Rapid Mapping Outputs, Canny edge detection, Valley Bottom Flatness, UMAP, and vector tools (~889 tokens)
+- [2.8.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.8.0-new-features/): Release notes: hillshade, splash page, hyperspectral mineral index analogs, and vector points/polylines (~634 tokens)
+- [2.7.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.7.0-new-features/): Release notes: folders, BEC metadata query, and consolidated multispectral/hyperspectral tools (~499 tokens)
+- [2.6.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.6.0-new-features/): Release notes: Spectral Query overhaul, expanded vector format support, and vectorization tool (~380 tokens)
+- [2.5.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.5.0-new-features/): Release notes: sharing save files, zoom-to spectral query, and Product Update Utility (~280 tokens)
+- [2.4.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.4.0-new-features/): Release notes: GeoTIFF export overhaul and legend improvements (~197 tokens)
+- [2.3.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.3.0-new-features/): Release notes: storage migration, measuring tool, and raster layer visibility improvements (~331 tokens)
+- [2.2.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.2.0-new-features/): Release notes: individual product export, mask threshold values, zoom to AOI, and temporal controls (~380 tokens)
+- [2.1.0](https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.1.0-new-features/): Release notes: vector layer customization, expanded spectra tools, and improved Raster Catalog (~268 tokens)
+
+## Mining > Iris
+
+- [Introduction](https://earthdaily.github.io/documentation/mining/iris/getting-started/iris-introduction/): An online interface for viewing and analyzing InSAR deformation results over engineered infrastructure sites (~479 tokens)
+- [The Iris Interface](https://earthdaily.github.io/documentation/mining/iris/getting-started/the-iris-interface/): Guide to the layout and design of Iris — data panel, navigation, map window, and deformation plots (~2k tokens)
+- [Data Layers](https://earthdaily.github.io/documentation/mining/iris/getting-started/data-layers-in-iris/): Guide to GDS analysis data layers — LOS, East-West-Vertical, spatial filtering, velocity, acceleration, and coherence (~993 tokens)
+- [Anomaly Detection](https://earthdaily.github.io/documentation/mining/iris/getting-started/anomaly-detection/): Understand changes at your site with confidence — steady, sudden, and complex anomaly detection in Iris (~817 tokens)
+- [DEM-Error Corrected Points](https://earthdaily.github.io/documentation/mining/iris/technical-methodology/dem-error-corrected-point-locations/): Iris 1.5.0: improved location accuracy in areas where the digital elevation model differs from actual ground elevation (~685 tokens)
+- [Historical Consistency](https://earthdaily.github.io/documentation/mining/iris/technical-methodology/historical-consistency/): Understanding historical inconsistencies in Iris InSAR analyses and tools to assess the history problem (~898 tokens)
+- [Spatial Filtering](https://earthdaily.github.io/documentation/mining/iris/technical-methodology/spatial-filtering-in-iris/): Guide to spatial filtering in Iris — filtered vs unfiltered data layers and when to use each (~781 tokens)

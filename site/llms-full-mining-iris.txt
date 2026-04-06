@@ -1,0 +1,458 @@
+# EarthDaily documentation — Mining > Iris
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Introduction
+URL: https://earthdaily.github.io/documentation/mining/iris/getting-started/iris-introduction/
+
+# Introducing Iris
+
+## An online interface for viewing and analyzing InSAR results over engineered infrastructure sites.
+
+Descartes Labs is proud to announce the release of Iris, a new online interface for viewing and analyzing InSAR results over your engineered infrastructure sites.
+
+### InSAR Analysis at Descartes Labs
+
+InSAR (interferometric synthetic aperture radar) is a powerful remote sensing tool that uses active sensor data to monitor large critical assets like tailings storage facilities. Subtle deformation measurable by InSAR has historically been shown to precede catastrophic failure events that can lead to loss of life, environmental damage, supply-chain disruptions, and major financial impacts.
+
+Descartes Labs provides high quality deformation results using SAR imagery for a variety of applications and industries through a fast and automated pipeline called **GDS (Global Deformation System)**, developed by a team of in-house InSAR scientists. This product is the result of peer-reviewed research and has proven useful and accurate for remote deformation monitoring surrounding mining, civil engineering, and critical infrastructure.
+
+Using the GDS pipeline, data from public or private satellite sources like Sentinel-1 or TerraSAR-X is ingested, processed, and delivered within **18 hours of collection** to provide mm-scale deformation measurements showing subsidence and uplift over manmade structures and natural features.
+
+### Iris
+
+Due to the scale of the spatiotemporal data produced by InSAR analysis, distribution and visualization of these data can be a challenge. Iris is a dedicated tool for viewing GDS results as soon as they are available, enabling users to make insights faster to drive decision making on the ground.
+
+Iris includes a full suite of visualization and analytical tools, including state-of-the-art **anomaly detection algorithms** that can alert users to areas showing movement trends outside of their expected behavior. Additionally, subscribed users will have access to **Quicklook**, a tool that can produce on-demand deformation analyses using Sentinel-1 data at slightly lower resolution anywhere in the world — a fast and powerful tool for assessing regional trends or determining if an area warrants closer attention.
+
+### Getting Started
+
+This series of Knowledge Base articles is designed to get you started using Iris:
+
+1. [The Iris Interface](./the-iris-interface.md)
+2. [Data Layers in Iris](./data-layers-in-iris.md)
+3. [Anomaly Detection in Iris](./anomaly-detection.md)
+
+---
+
+## The Iris Interface
+URL: https://earthdaily.github.io/documentation/mining/iris/getting-started/the-iris-interface/
+
+# The Iris Interface
+
+## A Guide to the Layout and Design of Iris
+
+**Jump to:** [Data Analysis Panel](#data-and-analysis-panel) · [Adding Data](#deformation-layers) · [Processing Tools](#processing-toolbox) · [Vector Data](#vector-layers) · [Exporting](#export-layer) · [Navigation Bar](#navigation-bar) · [Map Window](#map-window) · [Deformation Plot](#deformation-plot-and-controls)
+
+### Getting Started
+
+Iris is a cloud-based software accessible through any web browser, including Google Chrome, Microsoft Edge, and Apple Safari. Navigate to: 
+
+If prompted, enter your Descartes Labs login credentials. Contact [support@descarteslabs.com](mailto:support@descarteslabs.com) if you have any difficulties accessing Iris.
+
+---
+
+### Data and Analysis Panel
+
+Within the left-hand panel you'll find a variety of tools and features designed to help you add, adjust, analyze, and export your data.
+
+#### Deformation Layers
+
+The Deformation Layers section serves as the main control for the data displayed in Iris.
+
+To add data to the session, click the `+` symbol. You will be presented with a list of available sites for viewing, including some demonstration analyses.
+
+Upon selection, a precise analysis window can be chosen, with the most recent one selected by default. Relevant metadata for the site will also be displayed. Once the analysis has been determined, click **Add Layer**.
+
+By default, the map window shows **Line of Sight (LOS)** results as the default data layer — the movement of each point towards or away from the satellite in millimeters over the observation period. If the analysis includes both ascending and descending satellite passes, the default layer will be **Up(+)/Down(−)**, showing vertical movement. The data layer can be changed in the drop-down menu. Full details on each data layer are explained in [Data Layers in Iris](./data-layers-in-iris.md).
+
+The remaining Deformation Layers settings allow adjustments to the visualization:
+- **Min/max values** for the linear histogram stretch
+- **Mask Threshold** to filter out points with movement below a specified value (e.g., entering 10 eliminates points with less than 10 mm of movement)
+- **Time slider** to track the evolution of deformation over time by stepping back through the analysis
+
+#### Processing Toolbox
+
+The processing toolbox contains settings and tools designed to extract insights from your InSAR results, currently focused on anomaly detection. Visibility of certain tools may vary based on your Iris subscription level.
+
+**Stack Analysis:** Only available with a Quicklook subscription. Allows users to view burst footprints from Sentinel-1 and calculate deformation results anywhere in the world, on demand.
+
+**Alerts:** A series of checkboxes to calculate and display alerts from the most recent data collection, as well as display historical alert data. See the dedicated article: [Anomaly Detection in Iris](./anomaly-detection.md).
+
+**Optical Imagery:** Users with access to Descartes Labs' Standard or Premium Data packages can display additional raster images here, including Airbus SPOT imagery, NAIP, or Sentinel-2. Proprietary imagery such as drone imagery or lidar data can also be visualized through this menu.
+
+**Derived Layers:** Calculated raster datasets including digital elevation models (Copernicus DEM, NASA DEM, and SRTM), slope and aspect layers calculated from SRTM, and Descartes Labs' proprietary **Global Velocity Layer** showing annual deformation data over large areas.
+
+#### Vector Layers
+
+Vector layers can be used in multiple ways in Iris. Polylines and polygons can be added or drawn within the map window to calculate and visualize deformation over a transect or averaged within an area. Iris currently supports uploading of `.geojson` files in latitude-longitude coordinate system.
+
+**Drawing Vectors**
+
+To draw a vector layer, click the `+` icon next to Vector layers and select between Polygon, Polyline, or Point.
+
+Click the pencil icon next to your newly created vector layer's name to make it editable, then click the draw vector icon that appears on the left side of the map window. Click the map to add nodes and continue clicking until you are ready to finish. To complete a polygon, click the first point again. To complete a polyline, click the last point again to stop drawing. Click the pencil icon again to exit edit mode.
+
+> Note: The area and transect plotting tools will only work properly with either a single polygon or polyline within each respective layer.
+
+**Inclusion and Exclusion Polygons**
+
+Polygon vectors can also be used as inclusion or exclusion vectors that can change the area used in each GDS analysis. This feature will typically be done in coordination with Descartes Labs support.
+
+#### Export Layer
+
+To work with data from an analysis in external software, results can be downloaded directly from Iris. In the Export Layer section, click the **Save Icon** to view an export menu and select **Download Analysis**.
+
+Data downloads are provided in **Parquet file format** — a relatively new, open-source data format that stores large vector databases much more efficiently than formats like `.shp`, `.tab`, or `.geojson`. All `.parquet` files are provided in WGS84 Latitude-Longitude (`EPSG:4326`) and can be read by most modern GIS software, including ArcGIS and QGIS.
+
+> Note: There is currently a known issue with `.parquet` files in QGIS for Mac — a workaround is available, please reach out if you have any issues.
+
+---
+
+### Navigation Bar
+
+The Navigation Bar has a number of features to help you control the map window, including Bookmarks, Basemaps, zoom, and geographic coordinates.
+
+#### Bookmarks and Location
+
+The Bookmarks dropdown allows you to save the location and zoom level of the map window so you can quickly jump back to it. Click **Create Bookmark** to save your current view.
+
+To navigate to a specific location, enter the WGS84 latitude and longitude coordinates in the box on the right-hand side, separated by a comma. Coordinates can be copied directly from Google Maps by right-clicking the desired location.
+
+#### Basemaps
+
+A number of free open-source basemaps are available:
+- Street view and satellite view from OpenStreetMaps
+- Topographic map and shaded relief map
+- Open source geologic maps provided by [Macrostrat](https://macrostrat.org/)
+- Light (white) and dark (black) background options
+
+---
+
+### Map Window
+
+The map window is your main way to visualize data. It displays points from your GDS analysis, anomaly detection results, and vector layers, along with a scale bar and legends for your GDS data layer and anomaly layers.
+
+Navigation is similar to other mapping programs — left-click to pan and use the scroll wheel or `+`/`-` icons to zoom. You can also maximize the map window to full screen mode.
+
+The **green deformation pointer icon** corresponds to the data displayed in the deformation time series window when Point measurement mode is selected. Drag the green icon to any point of interest and the deformation time series plot will update automatically.
+
+---
+
+### Deformation Plot and Controls
+
+The deformation plot shows a graphical display of your GDS data — either as a time-series (Point or Area mode) or as a cross-section (Transect mode). Controls above the plot let you toggle between measurement modes, select vectors for areas and transects, lock the Y-axis, and display standard deviation error bars where applicable.
+
+#### Time-Series Plot
+
+In **Point** or **Area** measurement mode, the plot shows Time on the X-axis and the selected Data Layer (e.g., LOS) on the Y-axis. In Point mode, the plot corresponds to the green pointer icon on the map and updates live as you drag it. In Area mode, the plot shows the average deformation within the defined polygon vector.
+
+The leftmost point always represents epoch 0 (always a value of 0). Moving the time slider in the Data and Analysis Panel does not affect data displayed on the plot in these modes.
+
+#### Transect Plot
+
+When switched to **Transect** mode with a suitable polyline vector selected, the deformation plot becomes a cross-section view. The X-axis shows distance in meters along the polyline, while the Y-axis shows corresponding deformation at each intersecting point. As you hover your mouse over the plot, a corresponding symbol appears on the polyline in the map window.
+
+In cross-section mode, the deformation data corresponds to the epoch selected in the time slider. Moving through the time slider updates the plot to show how deformation has progressed through the analysis period.
+
+> Tip: Check the **Lock Y-Axis** feature on the last epoch before stepping back through time to keep a consistent scale for comparison.
+
+---
+
+## Data Layers
+URL: https://earthdaily.github.io/documentation/mining/iris/getting-started/data-layers-in-iris/
+
+# Data Layers in Iris
+
+## Get to know the different data layers available in a GDS analysis.
+
+Results from InSAR measurements like the Global Deformation System (GDS) are most commonly viewed in displacement values — millimeters of change. In addition to that key total deformation value, a number of other data layers are provided with each analysis to help contextualize the data.
+
+---
+
+### Line of Sight versus East-West-Vertical
+
+#### Line of Sight (LOS)
+
+Line of Sight data uses data from only one traverse direction of the satellite — either ascending or descending, but not both. The measurement is the change in distance between the satellite and the point of measurement in millimeters. Because SAR satellites including Sentinel-1 travel in polar orbits, the total displacement reported in LOS data represents not just vertical (up/down) change, but also horizontal change in the east-west direction.
+
+#### East-West-Vertical (EWZ) Data
+
+When a site is covered by both ascending and descending passes of a satellite, the right-looking and left-looking LOS analyses can be collated and the true east-west and vertical components of deformation can be calculated through trigonometry. Because the satellites travel in a polar orbit, **north-south components of movement can never be derived.**
+
+When viewing EWZ data in Iris, you can select between the East-West and Up/Down components for each data layer and its derivatives, including uncertainty, velocity, and acceleration. By convention, western movement is negative and eastern movement is positive.
+
+---
+
+### Spatial Filtering
+
+Deformation time series results from InSAR are relative in two ways — time and space. For time, LOS data is referenced to the first date in the analysis (epoch 0, always a value of 0). For space, a reference system must be chosen. Descartes Labs handles spatial referencing in two ways and provides both options to clients with each analysis.
+
+**LOS (Spatially Filtered)**
+
+The default LOS data layer has had a spatial filtering algorithm applied to remove larger patterns in the data and highlight more local deformation signals. A long-wavelength trend is fitted to the data and then subtracted from the raw data for each epoch. In most small-to-moderate scale sites this trend is roughly 1 km; in larger areas such as cities or regional features, the long-wavelength trend can be 3–5 km.
+
+*Left: unfiltered data. Center: the estimated long-wavelength background trend. Right: spatially filtered results with background trend removed.*
+
+**LOS (Unfiltered)**
+
+When LOS (Unfiltered) is selected, an orange point marker with an anchor symbol appears in the map window. This point becomes the spatial reference point — all values displayed are relative to the orange marker. Users can place the orange icon on a location with high confidence of stability (e.g., a building on flat ground), then move the green icon through the scene to see all measurements referenced to that stable position.
+
+**LOS Uncertainty**
+
+LOS Uncertainty is useful when investigating a deformation signal and determining whether it represents genuine movement or falls within the noise of the data. Descartes Labs' novel methodology for assessing uncertainty can be [read in further detail here](https://www.preprints.org/manuscript/202206.0097/v1).
+
+For a detailed explanation of spatial filtering methodology, see [Spatial Filtering in Iris](../technical-methodology/spatial-filtering-in-iris.md).
+
+---
+
+### Velocity and Acceleration
+
+Velocity and acceleration provide another way to visualize GDS results. These values are delivered as single values based on a trend curve fit to the **past 180 days of data** for each point. Because these are static data layers, the time-series deformation plot will be inactive when either is selected.
+
+- **Velocity**: provided in mm/day
+- **Acceleration**: provided in mm/day²
+
+---
+
+### Coherence
+
+Coherence is a property of InSAR data that reflects the noise in the radar signal. Hard, solid materials like rock, bare soil, concrete, or buildings will have high coherence, while soft, wet, or moving objects like vegetation, water, wet ground, and earth-moving activities produce noisy signals and lower coherence.
+
+Coherence is calculated as a value from 0 to 1, with 1 being highly coherent, high-confidence data.
+
+Descartes Labs applies a coherence threshold to its GDS results to ensure only high-quality points are returned with each analysis. Typically this value is set at **0.6**, but may be individually modified during initial setup to ensure sufficient coverage over a site. If you notice gaps in data over your area of interest, it is likely because those points did not meet the coherence threshold.
+
+Viewing the coherence layer over your site and observing how it changes over time can give insight into how events like seasonal vegetation change or rainfall can affect the quality of your InSAR signal throughout the analysis window.
+
+---
+
+## Anomaly Detection
+URL: https://earthdaily.github.io/documentation/mining/iris/getting-started/anomaly-detection/
+
+# Anomaly Detection in Iris
+
+## Understand changes at your site with confidence.
+
+Descartes Labs delivers anomaly detection algorithms for GDS results that help identify potentially concerning movement over a site so that appropriate actions can be taken on the ground.
+
+### Overview
+
+Results from GDS analyses can contain millions of datapoints, which can be overwhelming and make it hard to identify areas that may require more attention. Analyses of known failures that have occurred on mining infrastructure and natural features indicate that the signals in InSAR data that precede these events can be subtle and complex, and are commonly not necessarily associated with the absolute total deformation of those points.
+
+For that reason, Descartes Labs has developed an anomaly detection system that looks for statistically significant changes in the behavior of each point and highlights these areas into anomalies in three categories. Iris also gives you the ability to visualize alerts from previous analyses to help understand how these areas have moved or changed over time.
+
+To calculate and view anomalies, activate the checkboxes within the **Processing Toolbox** in Iris.
+
+---
+
+### Current Anomalies
+
+#### Steady
+
+Steady anomalies are based on the **linear trend** of each point over the past 120 days. Linear movement can indicate that an area is slumping continuously through time, which can damage infrastructure even without a catastrophic failure.
+
+To be classified as a Steady anomaly alert, points must have:
+- A linear slope **above** a threshold
+- An acceleration rate **below** a threshold
+- A standard deviation of the linear fit thresholded based on velocity (lower velocity points have stricter requirements)
+
+#### Sudden
+
+Sudden anomalies focus on **more abrupt changes** to a point's deformation history. The conditions to qualify as a Sudden anomaly relate to both acceleration and velocity within the past 120 days of monitoring.
+
+To meet the requirements, the polynomial fit to the time series must have:
+- An acceleration term **above** a threshold
+- A statistically anomalous increase in velocity within the **last 4 collects** (48 days using Sentinel-1 data)
+
+#### Complex
+
+When both Steady and Sudden anomalies are flagged for a given point, the point is classified as having a **Complex anomaly**. These points may warrant additional observation as their behavior shows both continuous movement with a significant increase in velocity over the most recent collections.
+
+---
+
+### Historical Anomalies
+
+Two additional features allow you to visualize historical anomalies over your site in reference to those calculated for the most recent collection period. Viewing historical anomalies can give better context as to the severity and persistence of an anomalous feature.
+
+- Small isolated anomaly polygons that occur within a given analysis but are absent in the collections before or after are less concerning.
+- If anomaly polygons associated with an anomalous feature are consistent and growing or shifting with subsequent analyses, it may be more cause to investigate.
+
+Both historical methods overlay anomaly polygons from the preceding two-thirds of the analysis window (240 days in the case of a 1-year Sentinel-1 analysis).
+
+#### Timeseries Mode
+
+Polygons are unfilled with the outline color corresponding to the date of the anomaly, scaling from old (dark blue) to recent (yellow). This helps determine if historical anomalies still represent a current issue or if the movement has dissipated.
+
+#### Persistence Mode
+
+Anomaly polygons are given a faint red opacity. Overlapping polygons become increasingly saturated as opacities compound — single-occurrence anomalies appear pale while persistent anomalies appear darker. This helps determine the severity of an anomaly over time.
+
+---
+
+### Anomaly Polygons
+
+Anomalies are calculated on a point-by-point basis for each analysis, giving every point a state of either alerting (steady, sudden, complex) or not. For visualization, these points are polygonised and smoothed to give the vector outline polygons available in Iris. Polygons also must meet minimum size thresholds, and internal holes are closed during the smoothing process. It is therefore possible to have non-anomalous points within an identified anomaly polygon where the majority of the contained points met the requirements to draw the shape.
+
+---
+
+## DEM-Error Corrected Points
+URL: https://earthdaily.github.io/documentation/mining/iris/technical-methodology/dem-error-corrected-point-locations/
+
+# DEM-Error Corrected Point Locations
+
+## New in Iris 1.5.0 — improved location accuracy in areas where the digital elevation model differs significantly from actual ground elevation.
+
+To map SAR imagery to geographic locations, a DEM is required. However, publicly available global DEMs such as the **Shuttle Radar Topography Mission (SRTM)** and **Copernicus GLO-30** were collected 10–25 years ago and have become outdated in areas where open-pit mining has created large holes in the ground or tailings walls have been built up significantly. When more recent or high-resolution DEMs are provided, these are used instead — however in some instances, publicly available data is all that is available.
+
+### DEM Errors and InSAR
+
+Errors in the DEM can be identified with InSAR because they present as a phase contribution that correlates with the component of orbit variations. This allows InSAR to effectively estimate DEM errors. While this known effect has always been computed and accounted for when estimating the deformation time series, our recent work allows us to **improve SAR imagery co-registration** based on the estimated DEM error.
+
+### DEM-Error Corrected Point Locations in Iris
+
+Our team has researched the effects that DEM error can have on the precise location of points. Iris now includes a novel **repositioned points capability** that allows users to plot their points in the location that has been corrected for DEM errors.
+
+We believe this will significantly strengthen the ability to assess the stability of slopes and monitor your assets. In many cases — such as with legacy assets or areas without large topography changes — there will be little to no difference between the DEM-error corrected point locations and the initial point locations. However, in areas where active mining has changed topography, there may be larger differences.
+
+### Example
+
+In the example below:
+
+- **Figure 1** shows optical satellite imagery of part of an open-pit mine and the surrounding area.
+- **Figure 2** shows the typical method for displaying InSAR results using a legacy DEM on a regular grid.
+- **Figure 3** shows the DEM-error corrected point locations.
+
+On the left side of the images, outside of the pit, there is little to no correction. Within the pit itself, which is actively being mined, points are noticeably shifted. Notice how many of the shifts coincide with the locations of benches — these did not exist in the original DEM, resulting in a DEM error and hence a co-registration error.
+
+Iris now allows users to **toggle between the original points** (derived from legacy DEM standard regular grid) and the **repositioned points**, allowing comparisons and highlighting areas most affected by DEM-error estimates.
+
+*Figure 1. Optical satellite imagery over an active mining operation visualized in Iris.*
+
+*Figure 2. The typical method for displaying InSAR results in Iris, using a legacy DEM on a regular grid.*
+
+*Figure 3. The "Use repositioned points" function is selected in Iris to show DEM-error corrected point locations. The active pit area on the right shows points shifting between Figure 2 and 3 due to improved co-registration capability.*
+
+> Note: The DEM error estimation relies on InSAR phase that can contain other sources of error, such as transient partial decorrelation. For this reason, successive InSAR analyses may not estimate the DEM error and resulting point relocation completely consistently.
+
+---
+
+## Historical Consistency
+URL: https://earthdaily.github.io/documentation/mining/iris/technical-methodology/historical-consistency/
+
+# Historical Consistency
+
+## Understanding historical inconsistencies in Iris InSAR analyses.
+
+### Overview
+
+Deformation estimates derived from synthetic aperture radar (SAR) data can change with successive analyses of the SAR data. These inconsistencies are due to the nature of the algorithms used to estimate deformation and due to unexpected changes in surface properties — referred to as **"the history problem"**. Iris includes a means to view the size of these inconsistencies to help users interpret the deformation results.
+
+---
+
+### InSAR-Based Deformation and the History Problem
+
+A deformation time series derived from SAR data has an important property: the deformation reported at *a specific point in space and time* depends on the input SAR data at *every point in space and time*. This dependence occurs in several places.
+
+SAR data is noisy, and the first step in the Iris deformation pipeline is to remove the noise. Given noisy data at times A, B, and C, the algorithms ensure that the change from A to B combined with the change from B to C equals the change from A to C — the data is required to be **temporally consistent** after noise removal. Note that estimating noise at time B depends on input data at A, B, and C, not just B. Points are included in the SAR analysis if the estimated noise is small.
+
+Once there is a temporally consistent set of data, the Iris pipeline estimates **spatially consistent** data by creating a spatial network connecting neighboring points. The data along each link are adjusted so that the deformation difference between two points is the same regardless of the path through the network. This can be thought of as spatially integrating the changes along different paths through the network to arrive at point values.
+
+*Fig 1: Optical data overlaid with "good" SAR points in red, where neighbors are connected by links in blue.*
+
+The nature of SAR data leaves an ambiguity in the difference in each link. Resolving these ambiguities consistently (known as **unwrapping**) is a global spatial operation.
+
+At this point the Iris pipeline has temporally and spatially consistent data. The final step is to remove any systematic contributions, primarily **atmospheric effects** and **orbit path variation**. These contributions are inferred based on spatial and temporal trends — essentially curve fitting that depends on all available data.
+
+Iris always operates on a time window of at least a year of data. With every new SAR collection, Iris shifts this time window forward in time to include the most recent collection. The year-long window increases Iris' ability to de-noise data and identify and remove systematic contributions.
+
+*Fig 2: An example where four year-long analyses exhibited different estimated deformation during the first half of 2024. Causes of historical inconsistency can include proximity to noisy points, steep terrain, and changes in surface property.*
+
+---
+
+### Iris Features to Assess the History Problem
+
+As of January 2025, Iris analyses include ancillary data showing the **spread of historical results**. For analyses that include these ancillary data, the layer drop-down will include **"Historical LOS"** (or similar for east-vertical analyses).
+
+Selecting **"Plot STD"** will show time series plots like the one below.
+
+*Fig 3: Time series plot for historical data.*
+
+The key elements of this plot are:
+
+1. **Blue line** — the mean of the historical deformation, taken over the ten most recent available analyses, including the most recent one.
+2. **Blue error bars** — the standard deviation of the ten most recent analyses.
+3. **Red line** — the deformation for the most recent analysis.
+4. **Red error bars** — the uncertainty estimates from the Iris pipeline.
+
+All historical analyses are normalized to track deformation since the first date in the most recent analysis — historical data will always have a mean of zero at the first displayed date.
+
+Note that only the most recent analysis provides data for the most recent date, and only the most recent two analyses provide data for the second-most-recent date. Therefore, at the most recent date, the mean is computed over a single element (the most recent analysis), and the historical standard deviation at the most recent date is zero.
+
+These data allow the user to see how much a result may be impacted by historical inconsistencies, indicated by either a sharp difference in the historical mean (blue curve) from the most recent analysis (red curve), or large error bars associated with the historical data.
+
+---
+
+## Spatial Filtering
+URL: https://earthdaily.github.io/documentation/mining/iris/technical-methodology/spatial-filtering-in-iris/
+
+# Spatial Filtering in Iris
+
+## A guide to the processing steps applied to both filtered and unfiltered data layers in GDS results.
+
+Deformation time series results derived from InSAR are relative in two ways: the results can only show how the surface changed in time and in space relative to other points. This means that results must be referenced to an **epoch (time)** — typically the first one, with deformation at that epoch set to zero — and also referenced **in space**.
+
+### The Spatial Reference Problem
+
+Often results are referenced to a point **P**, with all deformation results reported relative to the deformation at P. InSAR-derived motion can be thought of as similar to periodic survey results where all elevation data is reported relative to a particular benchmark.
+
+Ideally, P would be:
+- At a location known to be stationary (completely stable)
+- Close to the area of interest
+- Located at a point where the SAR signal has minimal phase noise
+
+It is often hard to satisfy all these constraints, which can lead to artifacts. For example:
+- If P is at a location that is actually sinking, the InSAR results will report everywhere far from P as uplifting.
+- If P is far from the area of interest, atmospheric effects will degrade the quality of the measurement.
+- If the SAR imagery has lots of phase noise at P, that noise will impact all reported deformation results.
+- A successive analysis may not include point P due to loss of coherence, making comparisons difficult.
+
+For more background on the reference point problem, see this [HyP3 InSAR product guide](https://hyp3-docs.asf.alaska.edu/guides/insar_product_guide/#reference-point).
+
+---
+
+### GDS Spatial Filtering
+
+To address the reference point problem, GDS uses a **spatial filtering algorithm** to remove the long-wavelength deformation trend from the data and isolate areas of localized deformation. The deformation at any point is reported relative to the surrounding deformation. Removing a large spatial trend preserves the qualitative deformation results without requiring a fixed reference point.
+
+The image below shows an example over an open-pit mine, where the large subsidence of the pit wall is captured after removing the long-range spatial trend — the subsidence at the pit wall is distinct from large-scale regional subsidence.
+
+---
+
+### LOS (Unfiltered) — Manual Reference
+
+The signal from spatial filtering can be recreated in the **LOS (Unfiltered)** layer by moving the orange reference marker to one of the stable points away from the pit wall. In this layer, spatial filtering has not been applied — deformation is reported relative to the orange marker, and moving the green test point to the orange marker would report identically zero.
+
+---
+
+### When to Use Each Layer
+
+Spatial filtering solves a number of problems, but it does not work perfectly in all scenarios. For example, it may remove some of the actual signal to be measured, or a very large signal may bias surrounding data.
+
+For this reason, Iris provides both:
+
+| Layer | Description |
+|---|---|
+| **LOS** | Spatially filtered — long-wavelength trend removed. Good for identifying localized deformation. |
+| **LOS (Unfiltered)** | Motion at the green point relative to the orange reference marker. Good for assessing differential motion across sharp boundaries. |
+| **Up(+)/Down(−) Unfiltered** | Vertical component, unfiltered. |
+| **East(+)/West(−) (Unfiltered)** | East-West component, unfiltered. |
+
+We recommend placing the reference point (orange) at a spot **near the area of interest but outside the mining complex**. This layer is also useful for comparing motion across sharp boundaries to understand differential movement between points.
+
+> Note: Some diagrams for this page were unavailable from the original source. The text content above fully describes the concepts illustrated in the original figures.
+
+---

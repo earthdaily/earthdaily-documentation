@@ -243,8 +243,8 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     Automated detection of crop emergence dates using satellite-based phenology analysis. Monitors planting window and early growth stages.
     
-    [:simple-swagger: Swagger](https://emergence-detection.aws.geosys.com/docsr){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Emergence.md){ .md-button }
+    [:simple-swagger: Swagger](https://emergence-detection.aws.geosys.com/docs){ .md-button }
+    [:octicons-link-external-16: Details](./Emergence.md){ .md-button }
 
 -   :material-sprout-outline: **Planted Area**
 
@@ -253,7 +253,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Accurate estimation of planted acreage using crop identification and field boundary analysis. Supports compliance and acreage reporting.
     
     [:simple-swagger: Swagger](https://planted-area.aws.geosys.com/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Planted_Area.md){ .md-button }
+    [:octicons-link-external-16: Details](./Planted_Area.md){ .md-button }
 
 -   :material-leaf: **Greenness**
 

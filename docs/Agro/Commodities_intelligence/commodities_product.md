@@ -9,7 +9,6 @@ keywords:
   - weather monitoring
   - satellite data
   - production estimates
-icon: material/wallet-outline
 ---
 
 # Crop Intelligence
@@ -53,3 +52,4 @@ Support national food security assessments, subsidy programs, and environmental 
 
 
 --8<-- "snippets/contact-footer.md"
+con

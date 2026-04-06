@@ -1,0 +1,1053 @@
+# EarthDaily documentation — Mining > Marigold
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Overview
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/marigold-overview/
+
+# Marigold Overview — Video 1
+
+## An introduction and product overview of Marigold's key components.
+
+> :clapper: **[▶ Watch Video 1](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/EarthDaily_Marigold_Training_Video1.mp4)** (5m 6s)
+
+There are seven videos in this series and we suggest that you watch them in order for maximum benefit. If you have any questions or need assistance, contact [support@earthdaily.com](mailto:support@earthdaily.com).
+
+This video wraps up the introduction and product overview of EarthDaily's Marigold. For more information and details on how to get started, watch the next training video in our Marigold series.
+
+---
+
+Next Video: [Introduction to the Bare Earth Composites — Video 2](./bare-earth-composites.md)
+
+Questions? Contact [support@earthdaily.com](mailto:support@earthdaily.com)
+
+---
+
+## Bare Earth Composites
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/bare-earth-composites/
+
+# Introduction to the Bare Earth Composites — Video 2
+
+## In Marigold you can access global, analysis-ready Bare Earth Composites.
+
+> :clapper: **[▶ Watch Video 2](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/EarthDaily_Marigold_Training_Video2.mp4)** (2m 33s)
+
+Accessing the best remote sensing data for mineral exploration can be challenging, time consuming, and require a specialist's knowledge. EarthDaily has combed through the entire archives of ASTER and Sentinel-2 satellite imagery to create global, analysis-ready Bare Earth Composites to provide the best data possible for geological interpretation.
+
+In upcoming videos, you will learn how to use EarthDaily's Bare Earth Composites to make your data analysis faster, easier, and more efficient. Marigold empowers project geologists to unlock new insights, drive informed decisions, and optimize remote sensing workflows.
+
+---
+
+Next Video: [Simple Masking: Vegetation and Water — Video 3](./vegetation-and-water-masking.md)
+
+Questions? Contact [support@earthdaily.com](mailto:support@earthdaily.com)
+
+---
+
+## Simple Masking
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/vegetation-and-water-masking/
+
+# Simple Masking: Vegetation and Water — Video 3
+
+## Learn how to create and deploy vegetation and water masks using Marigold's built-in capabilities.
+
+> :clapper: **[▶ Watch Video 3](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/EarthDaily_Marigold_Training_Video3.mp4)** (4m 18s)
+
+Masking plays a vital role in your remote sensing processing workflow. By pinpointing and eliminating surface cover types that are not pertinent to your analysis, you can enhance lithological discrimination, pinpoint outcrop areas, and eliminate potential false positives in your data.
+
+In the upcoming videos, you will discover techniques to mask more complex surface cover types such as shadows, enhancing the preparation of your data. Following the masking process, leverage Marigold's advanced processing tools to pinpoint lithologies, alterations, and mineralization with increased precision.
+
+---
+
+Next Video: [Complex Masking: K-Means Clustering Classification — Video 4](./complex-masking.md)
+
+Questions? Contact [support@earthdaily.com](mailto:support@earthdaily.com)
+
+---
+
+## Complex Masking
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/complex-masking/
+
+# Complex Masking: K-Means Clustering Classification — Video 4
+
+## Marigold uses built-in capabilities for complex masking.
+
+> :clapper: **[▶ Watch Video 4](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/EarthDaily_Marigold_Training_Video4.mp4)** (5m 58s)
+
+K-means clustering is an unsupervised classification algorithm that segments the input dataset into a "k" number of different clusters. From these clusters, areas that require masking can be identified and turned into mask layers to apply to datasets.
+
+> **Tip:** Check out [Video 3 — Simple Masking: Vegetation and Water](./vegetation-and-water-masking.md) to learn how to effectively create and apply masks in Marigold for vegetated areas.
+
+Now that you have mastered the use of unsupervised classification techniques to mask shadows and various surface cover types, you can utilize Marigold's processing tools to pinpoint lithologies, alterations, and mineralization with enhanced precision.
+
+---
+
+Next Video: [Marigold Workflows & Derived Products: RGBs, Band Ratios, Mineral Indices — Video 5](./workflows-derived-products1.md)
+
+Questions? Contact [support@earthdaily.com](mailto:support@earthdaily.com)
+
+---
+
+## Derived Products: RGBs, Band Ratios, Mineral Indices
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/workflows-derived-products1/
+
+# Marigold Workflows & Derived Products: RGBs, Band Ratios, Mineral Indices — Video 5
+
+## Learn how to create a series of standard multispectral derived products in Marigold.
+
+> :clapper: **[▶ Watch Video 5](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/EarthDaily_Marigold_Training_Video5b.mp4)** (6m 47s)
+
+Let's take a look at the three main types of derived products typically generated for multispectral data in Marigold: RGBs, band ratio products, and mineral indices. We will generate each of these products using the Fused Bare Earth Composite data that we previously masked for water, vegetation, and topographic shadow.
+
+> **Note:** This workflow always occurs after mask generation. If you haven't masked your data yet, watch the videos for [simple masking](./vegetation-and-water-masking.md) or [complex masking](./complex-masking.md) before continuing.
+
+---
+
+Next Video: [Marigold Workflows & Derived Products: Ternary Plots (TRatio), Decorrelation Stretch — Video 6](./workflows-derived-products2.md)
+
+Questions? Contact [support@earthdaily.com](mailto:support@earthdaily.com)
+
+---
+
+## Derived Products: Ternary Plots, Decorrelation Stretch
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/workflows-derived-products2/
+
+# Marigold Workflows & Derived Products: Ternary Plots (TRatio), Decorrelation Stretch — Video 6
+
+## A continuation of the previous videos — please watch Videos 3, 4, and 5 before continuing.
+
+> :clapper: **[▶ Watch Video 6](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/EarthDaily_Marigold_Training_Video6-1.mp4)** (4m 56s)
+
+This session requires that you have already masked your data as shown in the [Simple Masking](./vegetation-and-water-masking.md) and [Complex Masking](./complex-masking.md) videos, and have created the derived products as shown in [Marigold Workflows and Derived Products — Video 5](./workflows-derived-products1.md).
+
+---
+
+Next Video: [Marigold Workflows & Derived Products: Transforms & Spectral Similarity — Video 7](./workflows-derived-products-transforms-spectralsimilarity.md)
+
+Questions? Contact [support@earthdaily.com](mailto:support@earthdaily.com)
+
+---
+
+## Derived Products: Transforms & Spectral Similarity
+URL: https://earthdaily.github.io/documentation/mining/marigold-onboarding/workflows-derived-products-transforms-spectralsimilarity/
+
+# Marigold Workflows & Derived Products: Transforms & Spectral Similarity — Video 7
+
+## Learn to create a series of transforms and a basic Spectral Similarity product.
+
+> :clapper: **[▶ Watch Video 7](https://21994127.fs1.hubspotusercontent-na1.net/hubfs/21994127/DL07-Marigold_DP3_v5.mp4)** (7m 22s)
+
+Prior to following the workflows demonstrated in this video, it is essential that you have previously masked your data as outlined in the [Simple Masking](./vegetation-and-water-masking.md) and [Complex Masking](./complex-masking.md) videos, and have generated the derived products in [Video 5](./workflows-derived-products1.md) and [Video 6](./workflows-derived-products2.md).
+
+This concludes the Marigold onboarding series. If you have questions or need assistance, please contact [support@earthdaily.com](mailto:support@earthdaily.com) or browse through the Marigold documentation and knowledge base.
+
+---
+
+## What is Marigold?
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/what-is-marigold/
+
+# What is Marigold?
+
+## Marigold is a GIS user interface built on top of the EarthDaily platform and tailored to exploration geologists.
+
+Marigold revolutionizes mineral exploration workflows by simplifying the process of accessing and analyzing remote sensing data.
+
+### Working with Marigold
+
+#### Fast
+
+EarthDaily and Marigold significantly decreases the time needed to prepare for mineral exploration by up to 85%. Analyzing data and collaborating on projects with colleagues becomes simpler and more efficient.
+
+#### Streamlined
+
+All the tools you need are in a single, easy-to-use interface — no more switching between applications or working with complex code.
+
+#### Global
+
+Our Bare Earth Composite gives users access to the clearest pixel everywhere on Earth. Work with analysis-ready data to derive insights from the smallest to the largest scale.
+
+### Getting started with Marigold
+
+#### New to remote sensing?
+
+Learn how remotely sensed data provides valuable insights we can't capture on the ground.
+
+#### Looking to jump in?
+
+Hit the ground running by accessing Marigold, adding new layers and mineral targets, and running a spectral similarity algorithm to identify potentially prospective areas.
+
+#### Ready to keep learning?
+
+Follow along in some of our case studies to learn how to spot different types of mineralization from start to finish.
+
+---
+
+## Introducing Marigold v2
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/introducing-marigold-v2/
+
+# Introducing Marigold
+
+## Announcing the release of Marigold v2.0
+
+Access the new URL for Marigold v2.0 at . Be sure to update your bookmarks to smoothly transition to the latest version. Upon your first login you will notice the following:
+
+- **Token-Free Login:** Users are no longer required to enter a token upon their first login.
+- **One-Time Migration of Save Files and Bookmarks:** When logging into the new Marigold for the first time, users will see a progress indicator for the one-time migration of their save files and bookmarks.
+
+---
+
+### What's New
+
+**Intuitive Layer Masking**
+
+Marigold v2.0 introduces layer masking using vector masks in addition to raster masks. This reduces false positives and supports multi-feature vectors.
+
+**Live Layer Adjustments**
+
+Preview adjustments before finalizing layer updates, allowing for more confident and precise refinement.
+
+**Vector Catalog**
+
+A new vector catalog — initially including a dataset of global faults — enables users to analyze and work with vector data.
+
+---
+
+### What's Improved
+
+**Improved Histograms and Spectral Plots**
+
+Users can now zoom in on specific ranges of histograms for more detailed adjustment of min/max values.
+
+**Improved Band Checkboxes**
+
+Improved scheme for band checkboxes related to transforms, classifications, and the raster calculator tool.
+
+**Enhanced Data Export**
+
+Exported file names now reflect the name of the band for easier identification and organization.
+
+**On-the-Fly Canny Edge Detection**
+
+Results from the Canny edge detection tool are now generated on the fly within seconds, replacing the previous Tasks service.
+
+**Paginated Saved Projects**
+
+Saved projects are now paginated in the "Load project" dialog, with search functionality.
+
+**Enhanced Band Drop Downs**
+
+Band drop downs in the layer adjustment interface now fill the dialog's width, making long band names more readable.
+
+**Version Indicator**
+
+Moved to the bottom right of the interface for an unobstructed view of the layer list.
+
+---
+
+### What's Fixed
+
+**Spectral Data Query Locations**
+
+The application now correctly retains the position of spectral queries in `.sav` files.
+
+**Increased Saved Project View Limit**
+
+The number of saved projects viewable in a single page has been increased to 50.
+
+---
+
+Next: [Marigold 2.1.0 — New Features](../features-and-updates/marigold-2.1.0-new-features.md)
+
+For more information see the [Marigold documentation](https://docs.descarteslabs.com/packaged-analytics/ame/using-marigold.html).
+
+---
+
+## Recovering Work with Autosave
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/avoiding-lost-work-in-marigold/
+
+# Recovering work in Marigold with the Autosave feature
+
+## Gone in the blink of an eye? Chances are your hard work can be saved.
+
+Periodically saving your Marigold workspace is the best way to ensure that your layers and products stay just the way you want them. Occasionally though, your session may close without saving. In many cases you can recover your work using Marigold's autosave feature.
+
+### Marigold has closed without saving
+
+This primarily happens due to timing-out. Marigold sessions are programmed to time-out after an hour of inactivity. You may return to your computer to see a notification that your connection to the server has been lost.
+
+Don't panic! Simply click **Refresh** and Marigold will reload into a new session. To recover your work:
+
+1. Click **Load** from the top panel menu
+2. Select `autosave.sav` and click **Load Project**
+3. Click **Save** from the top panel menu and name your saved file
+
+### Tips and Considerations
+
+- The autosave feature only works on one Marigold session at a time. While Marigold supports a user working in separate instances simultaneously, the `autosave.sav` file will only be associated with one.
+- The `autosave.sav` file backs up your work every five minutes, so some work may be lost if Marigold closed due to a rare crash or accidental closure.
+- To avoid accidentally closing Marigold with other browser tabs, consider installing Marigold as an "App" to keep it in its own window with a taskbar/desktop shortcut.
+- Occasionally create versioned workspaces by clicking **Save** and appending a version number to the file name.
+
+---
+
+## Compositional Mapping Tool
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/compositional-mapping-tool-reko-diq/
+
+# Hyperspectral Compositional Mapping Tool
+
+## A step-by-step walkthrough using the Reko Diq porphyry system as a case study.
+
+### Introduction
+
+This tool was developed to help make characterization and quantification of hyperspectral mapping easier and more consistent for geologists who are not remote sensing experts. It includes assessment of mineral group relative abundance and compositional differentiation for selected mineral groups. The tool helps geologists build on multispectral compositional mapping results and derive quality analyses from hyperspectral data.
+
+> **Note:** This tool does **not** work with multispectral (MS) data such as Sentinel-2, ASTER, or the Fused BEC.
+
+The tool can be found under the **Hyperspectral** drop-down menu in the Marigold Mineral Processing Toolbox.
+
+---
+
+### Step 1 — Verify the Input Hyperspectral (HSI) Dataset
+
+EnMap, PRISMA, EMIT, or other airborne/spaceborne hyperspectral datasets all work with the tool. The dataset should be cleaned using the **Data Statistical Analysis Tool** to remove bands with 0 or no-data values prior to use.
+
+Typical input: `cleaned EnMap_Hyperspectral data [cEnMap_HSI]`
+
+ 
+
+---
+
+### Step 2 — Ensure All Required Masking Has Been Done
+
+Typically includes masking for water, vegetation, cloud, cloud shadow, snow, ice, or topographic shadow.
+
+Typical input: `[cEnMap_vwmsk_HSI]`
+
+---
+
+### Step 3 — Select the Compositional Mapping Tool
+
+Under the Hyperspectral drop-down menu, select the compositional mapping tool. In the settings, select:
+
+- Input dataset: `[cEnMap_vwmsk_HSI]`
+- Base data name: e.g., `[CompMap_]`
+- Mineral to be mapped: e.g., white mica
+
+Results will be added to a `[CompMap – Outputs]` folder in the layer list.
+
+---
+
+### Step 4 — Examine Relative Abundance Results
+
+Turn on the legend for each layer via the three-dot menu → **Toggle legend**. The default relative abundance is between ~0.2 (high, red) and ~0 (low, blue) using a `jet` color ramp.
+
+**Key questions:**
+- Does the distribution match what you know about mineral presence in the AOI?
+- For white mica, do results correlate with the MS product `[AlOH_b6 index]`?
+- Are the patterns and distribution consistent with the multispectral mapping?
+
+Note that CompMap results include contributions from all white mica species (paragonite, muscovite, phengite, illite) and may also include other Al-OH species.
+
+Adjust the min/max values for the histogram in the settings menu to better fit your data distribution.
+
+---
+
+### Step 5 — Examine Composition Results
+
+For **white mica**, the primary compositions to differentiate are paragonite, muscovite, and phengite, defined by the wavelength position of the ~2200 nm absorption feature:
+
+- **Paragonite**: ~2185–2195 nm
+- **Muscovite**: ~2195–2210 nm
+- **Phengite**: ~2210–2225 nm
+
+The best way to validate is to spectrally verify the composition of a selection of pixels across the project area using the Spectral Query tool.
+
+**Key questions:**
+- Does the species identification match the predicted results?
+- Are other minerals being mapped as white mica in lower relative abundance areas?
+- Is there a positional relationship between paragonitic vs phengitic mica and mineralization (e.g., Au) or structural features?
+
+---
+
+## Hillshade and Variable Alpha
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/hillshade-and-variable-alpha/
+
+# Hillshade and Variable Alpha Tools
+
+## Marigold 2.8.0 introduces new hillshade and spatially variable alpha settings.
+
+Hillshade visualizations can be a powerful tool to transform and interpret your data — not just for topography, but also for geophysical datasets and mineral processing maps.
+
+**Jump to:** [Add a Raster Layer](#add-a-raster-layer) · [Generate a Hillshade](#generate-hillshade) · [Apply a Hillshade](#apply-hillshade) · [Spatially Variable Alpha](#spatially-varying-alpha) · [Additional Examples](#additional-examples)
+
+### Add a Raster Layer
+
+Click the `+` symbol next to Raster layers and select `Catalog layer`. Locate `Copernicus Digital Elevation Model (DEM) GLO-30` under the topography section, select it, and click `Add selected layers`.
+
+The resulting view shows the elevation model with the default `gist_earth` colormap. Modify the appearance through the settings menu or click the magic wand button for an automatic 2% contrast stretch.
+
+### Generate Hillshade
+
+Expand `Raster management` in the processing toolbox and select `Generate Hillshade`. Select your input Product and the input band, then adjust the settings below.
+
+#### Sun Angle
+
+0–90°. Controls the height angle of the illumination source — 90° is directly overhead. Lower sun angles produce more shadows and may hide terrain features.
+
+#### Sun Azimuth
+
+0–360°. Controls the cardinal direction of the illumination source — 0° north, 90° east, 180° south, 270° west.
+
+#### Z Factor
+
+Vertical exaggeration — higher values produce more contrast and shadows between subtle features.
+
+Once happy with the result, optionally rename your output layer and click `Create Hillshade`.
+
+### Apply Hillshade
+
+Enter the `settings` of any raster layer and scroll to `Advanced Settings`. Check the `Apply hillshade` box and select your generated hillshade product.
+
+#### Blending Modes
+
+Four pixel blending modes are available: **Multiply**, **Hard Light**, **Soft Light**, and **Linear Burn**. We recommend a trial and error approach. You will also find sliders for `Brightness` (−1 to +1) and `Gamma` (default 1).
+
+### Spatially Varying Alpha
+
+Within Advanced Settings, control the alpha (transparency) of the layer based on data values from a raster layer. This can be applied to the entire layer, or only to the applied hillshade layer.
+
+### Additional Examples
+
+#### Alteration Map of Goldfield, Nevada
+
+A hillshade from the Copernicus DEM applied to the Alteration mineral index over Goldfield, Nevada adds important geological context — some strong alteration regions form resistive ridges, while others are more recessive.
+
+#### Magnetic Structures in Kalgoorlie Gold District
+
+A magnetic hillshade applied to the RGB True Color Composite of Sentinel-2 BEC over Kalgoorlie, Western Australia, juxtaposing complex magnetic features superimposed onto satellite imagery.
+
+#### Airborne Magnetic and Radiometric Surveys — Republic, Washington
+
+Using new airborne surveys from the USGS [EarthMRI initiative](https://www.usgs.gov/earth-mapping-resources-initiative-earth-mri). Topographic, magnetic, and radiometric hillshades are combined to outline magnetic highs associated with local Cretaceous plutons.
+
+---
+
+## Product Update Utility
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/product-utility-tool/
+
+# Using the new Update Product Utility
+
+## How to update a Marigold `.sav` file when access issues occur due to subscription changes.
+
+When transitioning subscription levels in Marigold, users may face access challenges with layers due to unique Product IDs used for Bare Earth Composites in the EarthDaily Catalog. Before working with `.sav` files post-update, users must update the Product IDs of affected layers using the new `Update Computed Layer` tool.
+
+> *NOTE: Tiles in Marigold will return this error when a user does not have access to the products required to create them.*
+
+### Using the Tool
+
+1. Open the file in Marigold
+2. Navigate to the `Processing toolbox`
+3. Click on the `Raster management` dropdown
+4. Click on `Update computed layer`
+
+Select all layers to create a comprehensive list of affected Product IDs. It is recommended to select all layers.
+
+Choose the new Product ID to replace the old one. If a product does not require conversion, simply leave it blank.
+
+Choose to either **Overwrite** (recommended) or **Append** the layers:
+
+- **Overwrite**: The chosen layers will be recreated with updated product IDs, retaining their original names. The project is automatically resaved as `MarigoldProject_updated.sav`.
+- **Append**: The selected layers will be duplicated with `_updated` appended to their names.
+
+Click **Update Layers** and the utility will convert the layers and automatically save the file.
+
+Your original `.sav` file will remain intact, allowing you to revert if needed.
+
+Questions? Email [support@earthdaily.com](mailto:support@earthdaily.com).
+
+---
+
+## Spectral Query Tool
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/spectral-query-tool/
+
+# The Spectral Query Tool
+
+## Marigold 2.6.0 brings a totally revamped spectral query tool.
+
+The spectral query tool forms the backbone of advanced spectral analysis in Marigold, serving as the primary point of pixel interrogation as you learn the properties of your area of interest. The 2.6.0 overhaul provides more precise control over point selection, query naming, band ranges, and source products.
+
+### Using the New Spectral Query Tool
+
+Select `Spectral Query` from the dropdown next to the `Spectra` section of the left-hand panel.
+
+> **Note:** The spectra menu has been simplified to group features that either (1) add spectra to the project, or (2) export spectra from the project.
+
+#### Selecting Products and Bands
+
+The tool opens as a panel on the right-hand side. Select a spectral product and modify the band selection — for example, toggle only the VNIR bands from the Fused Bare Earth Composite, or select a range of bands from 2000–2500 nm from an EnMAP scene.
+
+Click `Update band selection` to view an overlay of those bands on the spectrum plot below.
+
+With the new tool, you can take repeated spectra measurements while the tool is open without permanently adding them to the project. Users can rename and change the color of each spectrum before saving.
+
+#### Querying the Scene
+
+Click `Start querying` to begin. Click points on the map to obtain the spectrum for that pixel. Continue clicking until you right-click the map to end the session.
+
+Collect as many spectra as you like and compare them live on the spectral plot. You can even change the product and compare spectra from multiple sources at once.
+
+#### Rename and Customize Your Selections
+
+Once happy with your samples, rename and modify the line color of each spectrum and discard any you don't need. The checkbox toggle next to each spectrum name determines which samples will be saved. Click `Add selected spectra` to close the dialogue and add your spectra to the left-hand list.
+
+---
+
+## Vector Upload Guidelines
+URL: https://earthdaily.github.io/documentation/mining/using-marigold/vector-upload-guidelines/
+
+# Vector Upload Guidelines
+
+## With the 2.6.0 update, Marigold now supports more vector upload formats and coordinate systems than ever.
+
+### Supported Formats
+
+Previous versions of Marigold exclusively supported vector uploads in `.geojson` format registered in WGS84 (`EPSG:4326`). With the new changes, vectors in most common formats and projections can now be uploaded directly without reformatting or reprojection.
+
+> **Remember:** Vector formats that consist of multiple files, like ESRI Shapefiles and MapInfo Tab files, must be compressed into a `.zip` folder before uploading.
+
+#### `.geojson`
+
+- Fully compatible as a single `.geojson` file.
+- Still requires exclusively `EPSG:4326` due to GeoJSON convention. Uploading in other coordinate systems may result in vectors appearing in the incorrect location.
+
+#### `.shp`
+
+- Must be uploaded in a `.zip` archive including all associated files (`.shx`, `.dbf`, `.prj`, `.cpg`, etc.).
+- Most coordinate systems supported.
+
+#### `.tab`
+
+- MapInfo Tab files must be uploaded in a `.zip` archive including all associated files (`.dat`, `.id`, `.map`).
+- Most coordinate systems supported.
+
+#### `.gpkg`
+
+- Highly flexible; can contain numerous spatial and non-spatial tables.
+- Current support opens and displays the **first spatial table** in the `.gpkg` file. Separate complex files into individual tables prior to uploading.
+- Most coordinate systems supported.
+
+#### `.parquet`
+
+- A relatively new and highly efficient vector table format.
+- Exports from EarthDaily's Iris software for ground deformation monitoring are provided in `.parquet` format and can be uploaded directly.
+- Most coordinate systems supported.
+
+#### `.dxf`
+
+- AutoCAD DXF files — a common output from 3D modeling software like Seequent's Leapfrog.
+- Marigold is limited to 2D geographical coordinates; 3D DXF files may not behave as expected.
+- Due to the nature of the DXF format, no CRS is provided. DXF files are only supported in `EPSG:4326`. Uploading in other coordinate systems may result in vectors appearing in the incorrect location.
+
+---
+
+## 2.12.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.12.0-new-features/
+
+# Marigold 2.12.0 — New Features
+
+## The first major release of 2026 — compositional mapping expansion, raster calculator improvements, and a reinvented autosave.
+
+### Compositional Mapping 2.0
+
+In 2025 we released the first iteration of our advanced mineral and compositional mapping tool with White Mica capabilities. In this update, we expand the `Compositional Mapping` tool to include additional minerals key to hydrothermal mineral systems:
+
+- **Chlorite**: abundance, MgO composition, FeO composition, and MgO/FeO ratio
+- **Alunite**: abundance and composition
+- **Kaolinite**: abundance
+- **Carbonate**: abundance
+
+The tool assesses the shape of the hull-normalized spectrum for each pixel and matches the presence or absence of key spectral absorption features to determine mineral presence. The **absorption depth slider** controls the threshold for matching a mineral based on the depth of the key absorption feature. Mineral composition is defined by the characteristics of that absorption feature — specifically the wavelength position of the minimum.
+
+The workflow has been redesigned to be simpler: switch between minerals using the tabs at the bottom, modify the absorption depth minimum slider to adjust the threshold, and all outputs are added to a dedicated folder.
+
+> The hyperspectral mineral abundance and composition mapping tool is powerful, but always use the spectral query tool to assess the effectiveness of mineral maps and refine your results.
+
+---
+
+### Mineral Indices Revamped
+
+#### Raster Calculator: Store Your Favorite Formulas
+
+The `Raster Calculator` now allows users to **save and name favorite expressions** for reuse across different sessions. Saved expressions can be loaded directly from the Raster Calculator interface and overwritten if needed. To delete saved expressions, find the full list in the `User Settings` panel, accessible from the Gear icon in the top ribbon.
+
+> Remember: band names and wavelengths may be product-specific — a formula built using PRISMA wavelength positions won't work for EnMap imagery because the band positions differ.
+
+#### Rapid Mapping Outputs Update
+
+The Rapid Mapping Outputs tool is the top spot for EarthDaily's curated list of mineral indices, RGB band visualizations, and TRatio combinations specifically selected for mineral exploration. In this update:
+
+- **Non-mineral indices** section added
+- **Hyperspectral datasets** are now supported in addition to multispectral
+- This tool will ultimately replace the original Mineral Indices and Hyperspectral Mineral Index Analogs tools
+
+##### Non-mineral indices
+
+New non-mineral indices added to help with masking residual features in hyperspectral imagery:
+
+- NDVI — Vegetation Index
+- NDWI — Water Index
+- MNDWI — Modified Water
+- NDSI — Snow Index
+- NDGI — Glacier Index
+- BSI — Bare Soil Index
+
+##### Hyperspectral Analogs
+
+The capabilities of the `Hyperspectral Mineral Analogs` tool have been moved into the Rapid Mapping Outputs tool. The tool finds the closest available hyperspectral band within 50 nm to match the required input band. If no band is within 50 nm, the index will not be available.
+
+> Hyperspectral analogs should be interpreted with caution — they substitute a single narrow band for a much broader multispectral band and may not capture the full spectral response.
+
+---
+
+### Autosave Reinvented
+
+The latest version of Marigold includes a **major update to the Autosave feature**:
+
+- Any project saved with a name now has its own dedicated autosave version
+- Autosaving triggers quietly every time a layer is created, in addition to the 10-minute checkpoints
+- From the Load Project menu, any project saved with the new update shows an autosave checkpoint if available
+- The name of the current project is displayed at the top of your Marigold session
+
+> Note: Autosaving does not overwrite your main project file. Use the **Save** button to lock in changes, or **Save As** to create a divergent copy.
+
+---
+
+## 2.10.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.10.0-new-features/
+
+# Marigold 2.10.0 — New Features
+
+## Hyperspectral capabilities take a huge leap forward with the initial release of the Compositional Mapping tool, alongside KMZ/KML upload, PCA improvements, and more.
+
+### Compositional Mapping Tool
+
+The new Compositional Mapping tool allows geologists to rapidly map the occurrence and composition of key minerals to build alteration models that advance exploration targets. In this first release, mapping capabilities are provided for three minerals associated with hydrothermal alteration:
+
+- **White mica** — abundance and composition
+- **Kaolinite** — abundance
+- **Chlorite (MgOH)** — abundance
+
+For a full walkthrough, see the [Hyperspectral Compositional Mapping Tool guide](../using-marigold/compositional-mapping-tool-reko-diq.md) and the [Marigold documentation](https://mining-energy-docs.appsci-production.earthone.earthdaily.com/#marigold/using-marigold/processes/comp-map-basic.html).
+
+#### Mineral Abundance and Composition Theory
+
+The tool works by analyzing each spectrum in the scene and looking for the presence or absence of absorption features that qualify or disqualify the pixel for a specific mineral. For example, to identify white mica, the tool looks for an absorption feature around 2200 nm and 2350 nm, while checking for the absence of a feature at 2160 nm (which would indicate kaolinite instead). Once identified as white mica, the composition is measured by mapping the wavelength position of the ~2200 nm absorption feature between paragonitic (~2180 nm), muscovitic (~2200 nm), and phengitic (~2219 nm).
+
+#### Using the Tool
+
+Load hyperspectral imagery from the Marigold Catalog — EnMap, PRISMA, EMIT, AVIRIS, or proprietary imagery. Open the `Compositional Mapping` tool under the `Hyperspectral` header in the `Processing Toolbox`.
+
+> **Tip:** Outputs will be created in a folder system placed below any un-foldered layers. To visualize results above your imagery, add your source data to a folder before running the tool.
+
+Select your source product, click your desired mineral, and results will be generated automatically. A sliding parameter filters the minimum absorption depth to tune the output. A higher threshold maps fewer pixels.
+
+---
+
+### Additional Updates
+
+- **KML / KMZ upload support** — Complex KMLs with mixtures of points, lines, and polygons will be separated into individual vector layers.
+- **Vectorize classified layer** — The tool now has more intuitive parameter choices to control minimum polygon size.
+- **Principal Components Analysis (PCA)** — The dialog will now automatically generate results without needing to apply them. Additional statistics including eigenvectors, eigenvalues, and percent explained variance are now available.
+- **Spectra export additions** — Spectra can now be exported as ENVI formatted `.txt` files. Latitude-longitude coordinates for any spectra can also be downloaded via the three-dot menu → "Download geometry".
+
+---
+
+## 2.9.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.9.0-new-features/
+
+# Marigold 2.9.0 — New Features
+
+## Rapid Mapping Outputs, improved Canny edge detection, Valley Bottom Flatness, UMAP, vector inspection tools, and a reorganized Processing Toolbox.
+
+This release also coincides with the release of a [completely overhauled documentation page](https://mining-energy-docs.appsci-production.aws.descarteslabs.com/) with comprehensive guides to every tool and feature in Marigold.
+
+### Rapid Mapping Outputs
+
+Speed up your output products by automating the creation of mineral indices, RGB mappings, and TRatios using the new **Rapid Mapping Outputs** dialog, located under the Band Algebra section. This new tool allows you to use EarthDaily's predefined visualizations to rapidly generate mapping products from the Bare Earth Composite datasets.
+
+The tool allows users to generate multiple outputs at once and provides the option to modify the contrast stretch and systematically rename the results. Select a BEC composite layer and choose up to three products for each calculation. RGBs typically look best using a 2–98% contrast stretch, while mineral indices may require more precise tweaking.
+
+For more on the specific mineral index, RGB, and TRatio products available, visit the [updated documentation page](https://mining-energy-docs.appsci-production.aws.descarteslabs.com/#marigold/using-marigold/processes/mineral-indices.html) (subscribers only, password required).
+
+---
+
+### Spectral Library Changes
+
+Marigold now has an updated dialog for adding spectra into your project with more flexibility, including:
+
+- Searchable spectral libraries (currently case-sensitive)
+- Option to add all selected spectra individually, or add their average
+- Ability to **create your own spectral library** to collect and compile scene-collected spectra across Marigold projects
+
+To create your own library, click the three-dot menu next to the Spectra section and select "Save spectra to spectral library". Provide a description and modify the project name if necessary.
+
+---
+
+### Canny Edge Detection
+
+We have revamped the existing Canny edge detection tool to provide faster, cleaner outputs on the fly. Improvements include:
+
+- Live updates while modifying parameters with a transparent background
+- Reworked algorithm for handling edges and missing data around masked areas
+- Reorganized — now found under the **Terrain Analysis** heading of the Processing Toolbox
+
+For more on the input parameters and usage, see the [updated documentation page](https://mining-energy-docs.appsci-production.aws.descarteslabs.com/#marigold/using-marigold/processes/canny.html).
+
+---
+
+### Multiresolution Valley Bottom Flatness
+
+Multiresolution Valley Bottom (and Ridgetop) Flatness (MRVBF and MRRTF) are algorithms that use DEMs to assess the flatness and lowness of terrain, identifying areas of valley bottom flatness that likely correlate to the depth of surficial deposits. Useful for geochemical sampling campaign design and hydrologic/geomorphologic applications.
+
+Found in the **Terrain Analysis** section of the Processing Toolbox under **Valley Bottom Flatness**. The only input required is a choice of DEM — Copernicus, SRTM, or a proprietary DEM. Results are compiled into a unique Catalog product per DEM. The MRVBF product will have two bands: valley bottom flatness and ridge top flatness.
+
+> Note: Only users with Compute Access will be able to use the MRVBF feature. Contact your organization administrator or EDA support with questions.
+
+---
+
+### UMAP
+
+Uniform Manifold Approximation and Projection (UMAP) is a dimensionality reduction tool, similar to PCA or MNF, that can be applied to hyperspectral imagery to help extract spectral characteristics and identify patterns and similarities between units.
+
+> Note: Only users with Compute Access will be able to use the UMAP feature. Contact your organization administrator or EDA support with questions.
+
+---
+
+### Vector Tools
+
+**Vector inspection:** Click on a polygon or point vector object to view its column properties in a pop-up. To disable the inspector, click the three-dot menu next to your vector layer and select "Toggle popups".
+
+**Calculate area:** Click the three-dot menu next to any polygon vector layer and select "Compute area". The total area in m² and km² will appear. Note: this returns the total area of all polygons within the layer.
+
+---
+
+## 2.8.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.8.0-new-features/
+
+# Marigold 2.8.0 — New Features
+
+## Hillshade, splash page, hyperspectral mineral index analogs, and vector points and polylines.
+
+### What's new?
+
+- **Hillshade** — create shaded relief maps from any raster product and blend the results with your data. Tweak the final appearance with new variable alpha setting controls.
+- **A new splash page** to help you jump back into your more recent projects.
+- **Quick hyperspectral visualizations** — create multispectral analog mineral indices and ternary visualizations using approximate bands from hyperspectral datasets.
+- **Vector points and polylines** — Marigold now supports drawing point and polyline features in addition to polygons.
+
+---
+
+### Hillshade and Variable Alpha
+
+Visualize your data in Marigold like never before, with powerful hillshade capabilities to highlight topography, emphasize geophysics, and build beautiful maps.
+
+For a complete tutorial, see the dedicated article: [Hillshade and Variable Alpha Tool](../using-marigold/hillshade-and-variable-alpha.md)
+
+The new tool works in two steps. First, generate a hillshade layer from an input dataset like a DEM by modifying sun position and vertical exaggeration. Next, apply and blend that hillshade with any other raster layer through the new **Advanced Settings** dialog accessible from any layer's settings menu.
+
+---
+
+### Splash Page
+
+When you first open Marigold, you will see a new splash page to help you dive in faster.
+
+Options available from the splash page:
+
+1. **Start a new project** — Jump in from scratch, optionally selecting a saved Bookmark location.
+2. **Open a recent project** — A dropdown of your five most recent projects, each with a central coordinate reference on the mini-map.
+3. **Open the Load dialog** — View all save files and sort by name or last-saved date.
+4. **Upload a `.sav`** — Quickly load a `.sav` file sent by a colleague.
+5. **Load the latest autosave** — Immediately reopen the latest `autosave.sav` to continue work after a disconnection.
+
+---
+
+### Mineral Index Analogs for Hyperspectral Imagery
+
+A new tool in the Hyperspectral Toolbox allows users to create mineral index outputs from hyperspectral data that are analogous to those available in the multispectral toolbox. The tool selects the bands closest in wavelength to the selected mineral index or RGB to quickly produce an analogous output.
+
+> Remember: Output products will not be equivalent to multispectral products because the bands have not been resampled over the broader multispectral wavelengths. Use this tool only as a proxy.
+
+---
+
+### Vector Points and Polylines
+
+Users can now create **point** and **polyline** features directly within Marigold in addition to polygons.
+
+Navigate to the `+` icon next to `Vector layers` and select `Draw layer`. Choose the type of vector product (point, polyline, or polygon). Click the pencil icon next to the layer to make it editable, then click the draw vector tool on the left side of the map window to begin drawing.
+
+---
+
+## 2.7.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.7.0-new-features/
+
+# Marigold 2.7.0 — New Features
+
+## Folders, Bare Earth Composite metadata query, and consolidated multispectral/hyperspectral tools.
+
+### Folders
+
+Marigold 2.7.0 introduces a folder system within the Raster layers menu to help organize workspaces, particularly when managing numerous layers.
+
+**Adding folders to an existing project:**
+Click the `+` button next to Raster layers and select `Add new folder`. Enter a folder name and select the layers you'd like to add, then click **Assign**.
+
+**Organizing new layers:**
+Click the three-dot menu next to a layer and select `Folder management` to assign the layer to an existing folder or create a new one.
+
+Folders can be rearranged within the layer order, toggled on/off with the eye icon, and collapsed or expanded to minimize visual clutter.
+
+---
+
+### Bare Earth Composite (BEC) Metadata Query Tool
+
+A new raster utility answers the common question of which original date each pixel in a BEC mosaic was captured. To use:
+
+1. Navigate to `Raster management` in the Processing Toolbox and select **View BEC Metadata**
+2. Choose the specific BEC to query
+3. Click **Collect metadata**
+4. Click on the map to place points — the corresponding Sentinel-2 and/or ASTER acquisition dates will be returned
+
+Right-click, move the map, or click **Cancel** within the tool to stop querying.
+
+This is especially helpful when there are large time gaps between S2 and ASTER acquisitions, such as in areas where a mine has been developed between the two images.
+
+---
+
+### Consolidated Multispectral and Hyperspectral Tools
+
+The hyperspectral-specific versions of transform and classification tools — such as Principal Components Analysis and Spectral Angle Mapper — have been enhanced to replace the original multispectral versions. The same MNF tool can now be used to process both Fused BEC and EnMap data. Each tool features a streamlined band selection interface, and for tools like PCA, a detailed statistical breakdown of the analysis results is now included.
+
+---
+
+### Additional Changes
+
+- The Vectorize Classified Layer tool now identifies classified layers better, including results from k-means analyses and the mineral mapping tool.
+- Added option to generate screenshots over selected vectors in addition to the entire viewport.
+- Fixed issue where GeoTIFF exports did not properly remove regions masked by vectors.
+- Fixed display issue for vector layers added from the Vector Catalog.
+
+---
+
+## 2.6.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.6.0-new-features/
+
+# Marigold 2.6.0 — New Features
+
+## Major overhaul of the Spectral Query tool, expanded vector format support, and a new vectorization tool.
+
+### The Spectral Query Tool
+
+The spectral query tool has been revamped to make the sampling process more efficient. Users can now sample spectra within the tool prior to saving them permanently — chosen spectra can be renamed and given a custom line color, while unwanted spectra can be discarded.
+
+For the full tutorial, see the dedicated article: [The Spectral Query Tool](../using-marigold/spectral-query-tool.md)
+
+---
+
+### Expanded Vector Support
+
+Marigold now supports common GIS vector formats including:
+
+- ESRI Shapefiles (zipped)
+- MapInfo TAB files (zipped)
+- GeoPackage (`.gpkg`)
+- Parquet (`.parquet`)
+- DXF (`.dxf`)
+
+Additionally, Marigold now accepts vectors in most geographic coordinate systems such as **UTM and Albers projections**.
+
+For the full compatibility list, see: [Vector Upload Guidelines](../using-marigold/vector-upload-guidelines.md)
+
+---
+
+### Vectorization Tool
+
+A new tool under the **Raster Management** menu generates vectors over classified layers, such as the results of the mineral mapping tool. Users can control minimum feature size and degree of smoothing.
+
+This tool provides a quick method for overlaying features for reference, or exporting mapping results as a `.geojson` for visualization in an external GIS program.
+
+---
+
+### Additional Changes
+
+- Fixed gap that could occur between exports of adjacent polygons
+- Consolidated options in the Spectra menu
+- Added AVIRIS-NG and AVIRIS-Classic products to the public hyperspectral product catalogue
+- Improved scaling of public hyperspectral datasets like EnMAP and AVIRIS
+- Batch masking now supports vector masks
+- Various bug fixes
+
+---
+
+## 2.5.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.5.0-new-features/
+
+# Marigold 2.5.0 — New Features
+
+## New ways to share save files, zoom-to for spectral query points, and the Product Update Utility.
+
+### Sharing Save Files
+
+Users can now share `.sav` files with individual users by email, or with their entire organization. Saving and sharing options are available through the save menu dialog.
+
+To load a shared save file, open the Load Project menu and filter to show projects shared with you. These files will be shown with a `(shared)` suffix after their name. Note that shared projects still belong to the original creator — any work you perform will create a divergent copy, so it is recommended that you save the file with a unique name.
+
+---
+
+### Zoom to Spectral Query
+
+A new feature in the three-dot menu of any spectrum with an associated latitude-longitude allows you to **zoom-to** a spectrum's location on the map — particularly useful for power-users with dozens of spectra in their workspaces.
+
+---
+
+### Product Update Utility
+
+A new tool in the `Raster Management` section of the `Processing Toolbox` allows users to convert the base products used in derived layers — most commonly when a client has upgraded or downgraded between a global or continental Marigold subscription.
+
+For full instructions, see the dedicated article: [Using the new Update Product Utility](../using-marigold/product-utility-tool.md)
+
+---
+
+## 2.4.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.4.0-new-features/
+
+# Marigold 2.4.0 — New Features
+
+## Major overhaul of the GeoTIFF export service and legend improvements.
+
+### GeoTIFF Export
+
+Marigold allows users to export derived raster products as GeoTIFF files that integrate with external GIS software such as ArcGIS Pro or QGIS. These exports are tiled with a `.vrt` service to load quickly at any zoom scale.
+
+Version 2.4.0 has overhauled the GeoTIFF export tool to:
+
+- Resolve previous limitations when approaching the 10 GB export size limit
+- Improve stability with complex derived products
+- Significantly improve the speed at which exports are prepared and made ready for download
+
+---
+
+### Legend Changes
+
+Changes in version 2.4.0 provide better handling for the state of a legend on the map window. A legend's visibility is now **tied to the visibility of the layer itself** — it will toggle on and off with the layer.
+
+---
+
+## 2.3.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.3.0-new-features/
+
+# Marigold 2.3.0 — New Features
+
+## Storage migration, a measuring tool, and raster layer visibility improvements.
+
+### Storage Migration
+
+Upon opening Marigold 2.3.0, users will trigger a one-time migration process for all saved data. All user data is automatically transferred from the old storage system to its new location in EarthDaily Storage — giving better transparency and management controls to individual users.
+
+View and manage your data at: 
+
+Through EarthDaily Storage, users have better insight into file sizes, can download or delete files, and search or sort by properties such as date created. Date-time stamped backup versions of each Marigold `.sav` file are also accessible for recovery.
+
+---
+
+### Measuring Tool
+
+A simple tool to measure distances on the map has been added. Useful for assessing the scale of features identified in Marigold, like the width of an alteration zone.
+
+Select the ruler icon in the top-right icon bar.
+
+The tool works similarly to the `Draw vector polygon` tool. Click one point on the map, move your cursor around, and the distance from your first point will be displayed live in kilometers. Click additional points to add them along the line and accumulate distance. Click the last point again to complete and dismiss the measurement.
+
+---
+
+### Raster Layer Visualization Improvements
+
+- **Improved eye icons** — Visible layers now have a filled purple eye icon, clearly differentiated from the unfilled, crossed-out invisible layer icon.
+- **Turn off all layers at once** — A new button turns off the visibility of all raster layers in a single click, useful when isolating a lower product.
+
+---
+
+## 2.2.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.2.0-new-features/
+
+# Marigold 2.2.0 — New Features
+
+## Individual product export, mask above/below threshold values, zoom to AOI, and temporal controls.
+
+### Individual Product Export
+
+Users can now `Export` any Raster Layer from the three-dot menu next to each layer. In the export dialogue, specify a name, add a brief description, and select who will have access (private, individual users by email, or the entire organization).
+
+To import a layer, click the `+` icon next to Raster Layers and select `Load exported layer`. Imported layers retain all the same masking, bands, and settings as the original exported layer.
+
+---
+
+### Mask Above or Below Threshold Values
+
+Two new checkboxes have been added to help you better visualize mapping products: `Mask low values` and `Mask high values`, located above the histogram plot in the settings panel of each raster layer.
+
+Toggle the boxes to instantly mask values above and below your thresholds to reveal the imagery underneath.
+
+> Note: GeoTIFF output of layers with these settings applied will **not** contain the masking — this is a purely visual feature within Marigold.
+
+---
+
+### Zoom to AOI
+
+A new `Zoom to AOI` option in the three-dot menu of raster layers allows users to center the map on any spatially restricted dataset in their workspace — useful for locating small airborne imagery datasets.
+
+---
+
+### Temporal Controls
+
+Basic temporal controls are now available in the settings menu of products that contain acquisition date information. This enables exploring Airbus SPOT imagery for time-relevant scenes, or unstacking overlapping EnMap scenes to visualize only a preferred image.
+
+> Note: Changing the time range on Airbus SPOT imagery will temporarily produce a white image due to color scaling from 0-1 instead of 0-255. Simply contrast-stretch the image with the magic wand tool to visualize your imagery.
+
+---
+
+## 2.1.0
+URL: https://earthdaily.github.io/documentation/mining/features-and-updates/marigold-2.1.0-new-features/
+
+# Marigold 2.1.0 — New Features
+
+## Vector layer customization, expanded spectra tools, and an improved Raster Catalog.
+
+### Vector Layers
+
+Users can now customize the appearance of vector layers using the settings dialogue under the layer's three-dot menu. This includes control over border color, fill color, and opacity of polygon, line, and point vector data.
+
+Additionally, users can apply **thematic coloring** to vector layers that contain additional data columns, based on feature properties such as rock type for a geological map, geochemical values for soil or rock samples, or property owner for a land tenure dataset.
+
+---
+
+### Spectra Graph and Tools
+
+New features for spectral data include:
+
+- **Import spectra** from industry-standard sources including ASCII formats associated with ENVI and field instruments such as the Terraspec Halo in ASD format
+- **Export spectra** from your Marigold session and import them into another session
+- **Improved spectral plot** — a new toggle button controls the visibility of all spectra at once; adding, removing, or toggling visibility no longer resets the plot extents
+
+---
+
+### Raster Catalog
+
+The Raster Catalog has been given a makeover with:
+
+- Search by product title and tags
+- Automatic organization by tags such as imagery, geophysics, topography, or hyperspectral
+
+---

@@ -130,7 +130,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Automatic field boundary delineation using deep learning and satellite imagery. Generates accurate field polygons without manual digitization.
     
     [:simple-swagger: Swagger](https://api.geosys-na.net/field-borders/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details ](./Library/Automatic_Field_Borders.md){ .md-button }
+    [:octicons-link-external-16: Details ](./Automatic_Field_Borders.md){ .md-button }
 
 -   :material-chart-line: **Time Series**
 
@@ -139,7 +139,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Historical and near-real-time vegetation indices time series. Cloud-masked, smoothed data for accurate temporal analysis of crop development.
     
     [:simple-swagger: Swagger](http://api.geosys-na.net/vegetation-time-series/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Vegetation_time_series.md){ .md-button }
+    [:octicons-link-external-16: Details](./Vegetation_time_series.md){ .md-button }
 
 -   :material-barley: **Crop ID**
 
@@ -148,7 +148,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     AI-powered crop type classification using multi-temporal satellite imagery. Identifies major crop types with confidence scores and validation metrics.
     
     [:simple-swagger: Swagger](https://api.geosys-na.net/cropmasks/v1/swagger/index.html){ .md-button }
-    [:octicons-link-external-16: Details](https://api.geosys-na.net/cropmasks/v1/swagger){ .md-button }
+    [:octicons-link-external-16: Details](./FieldLevel_CropMask_API_v11092025.md){ .md-button }
     
 
 -   :material-layers: **Layer Service**
@@ -168,7 +168,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
 
     [:simple-swagger: Swagger](http://api.geosys-na.net/field-level-maps/v5/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Field%20Level%20Maps.md){ .md-button }
+    [:octicons-link-external-16: Details](./Field%20Level%20Maps.md){ .md-button }
 
 -   :material-weather-cloudy: **Field Weather**
 
@@ -194,7 +194,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Detect significant changes in field conditions using multi-temporal satellite analysis. Identifies anomalies, disturbances, and rapid vegetation changes.
     
     [:simple-swagger: Swagger](https://change-index.aws.geosys.com/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Change_Index.md){ .md-button }
+    [:octicons-link-external-16: Details](./Change_Index.md){ .md-button }
 
 -   :material-chart-bar: **Benchmark**
 
@@ -203,7 +203,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Compare field performance against historical patterns, regional averages, and peer benchmarks. Supports relative performance analysis.
     
     [:simple-swagger: Swagger](){ .md-button }
-    [:octicons-link-external-16: Details](./Library/...){ .md-button }
+    [:octicons-link-external-16: Details](./...){ .md-button }
 
 -   :material-monitor-dashboard: **In-Season Monitoring**
 
@@ -212,7 +212,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Real-time crop performance monitoring combining satellite data, weather, and agronomic models. Provides actionable insights for in-season decisions.
     
     [:simple-swagger: Swagger](https://5gciu5p2msxwjrt54fks3kvvxu0oxdyr.lambda-url.us-east-1.on.aws/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/inseason_monitoring.md){ .md-button }
+    [:octicons-link-external-16: Details](./inseason_monitoring.md){ .md-button }
 
 </div>
 
@@ -230,10 +230,10 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     
     **Historical:** 
-    [:octicons-link-external-16: Details](./Library/Historical_Potential_Score.md){ .md-button }
+    [:octicons-link-external-16: Details](./Historical_Potential_Score.md){ .md-button }
     [:simple-swagger: Swagger](https://historical-potential-risk-score.aws.geosys.com/docs){ .md-button }
     **In-Season:** 
-    [:octicons-link-external-16: Details](./Library/In-season_Potential_Score.md){ .md-button }
+    [:octicons-link-external-16: Details](./In-season_Potential_Score.md){ .md-button }
     [:simple-swagger: Swagger](http://inseason-potential-score.aws.geosys.com/docs){ .md-button }
 
 -   :material-leaf-maple: **Environmental Compliance**
@@ -243,7 +243,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Track and report environmental sustainability metrics including carbon sequestration, conservation practices, and regulatory compliance.
     
     [:simple-swagger: Swagger](https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Library/CRA.md){ .md-button }
+    [:octicons-link-external-16: Details](./CRA.md){ .md-button }
 
 -   :material-calendar-check: **ZARC Agricultural Risk**
 
@@ -253,7 +253,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
 
     [:simple-swagger: Swagger](https://zvjihjkwfwohudwcnbhjbpsudq0jhszp.lambda-url.us-east-1.on.aws/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/ZARC.md){ .md-button }
+    [:octicons-link-external-16: Details](./ZARC.md){ .md-button }
 
 </div>
 
@@ -269,8 +269,8 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     Automated detection of crop emergence dates using satellite-based phenology analysis. Monitors planting window and early growth stages.
     
-    [:simple-swagger: Swagger](https://emergence-detection.aws.geosys.com/docsr){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Emergence.md){ .md-button }
+    [:simple-swagger: Swagger](https://emergence-detection.aws.geosys.com/docs){ .md-button }
+    [:octicons-link-external-16: Details](./Emergence.md){ .md-button }
 
 -   :material-sprout-outline: **Planted Area**
 
@@ -279,7 +279,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Accurate estimation of planted acreage using crop identification and field boundary analysis. Supports compliance and acreage reporting.
     
     [:simple-swagger: Swagger](https://planted-area.aws.geosys.com/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Planted_Area.md){ .md-button }
+    [:octicons-link-external-16: Details](./Planted_Area.md){ .md-button }
 
 -   :material-leaf: **Greenness**
 
@@ -288,7 +288,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Monitor crop canopy development and vegetation vigor through growing season. Tracks greenness progression and identifies stress periods.
     
     [:simple-swagger: Swagger](https://zn6hzsqoyoe3qgaoau4ssgpq440vtmpa.lambda-url.us-east-1.on.aws/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/greenness.md){ .md-button }
+    [:octicons-link-external-16: Details](./greenness.md){ .md-button }
 
 -   :material-check-circle: **Harvest Readiness**
 
@@ -298,7 +298,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
 
     [:simple-swagger: Swagger](https://harvest-detection.aws.geosys.com/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Harvest_Detection.md){ .md-button }
+    [:octicons-link-external-16: Details](./Harvest_Detection.md){ .md-button }
 
 -   :material-tractor: **Harvest Detection**
 
@@ -307,7 +307,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Real-time harvest date identification and progress monitoring. Tracks harvest operations across fields and regions using change detection.
     
     [:simple-swagger: Swagger](https://harvest-detection.aws.geosys.com/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Harvest_Detection.md){ .md-button }
+    [:octicons-link-external-16: Details](./Harvest_Detection.md){ .md-button }
 
 -   :material-tractor: **Disease risk**
 
@@ -316,7 +316,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Evaluate disease risk on location for Corn and Soybeans.
     
     [:simple-swagger: Swagger](https://t7izeqf7q5t4xseagqap5ev7xm0xpmmh.lambda-url.us-east-1.on.aws/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/){ .md-button }
+    [:octicons-link-external-16: Details](./){ .md-button }
 
 </div>
 
@@ -333,7 +333,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     <!-- md:flag experimental --> Detect tillage practices and soil disturbance events using radar and optical imagery. Supports conservation agriculture monitoring and carbon programs.
     
     [:simple-swagger: Swagger](https://api.geosys.com/processors/tillage/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/){ .md-button }
+    [:octicons-link-external-16: Details](./){ .md-button }
 
 -   :material-flower: **Cover Crop**
 
@@ -342,7 +342,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     <!-- md:flag experimental --> Satellite-based cover crop detection and coverage analysis. Quantifies cover crop presence for sustainability programs.
     
     [:simple-swagger: Swagger](https://api.geosys.com/processors/cover-crop/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/){ .md-button }
+    [:octicons-link-external-16: Details](./){ .md-button }
 
 -   :material-weight: **Cover Crop Biomass** 
 
@@ -360,7 +360,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     <!-- md:flag experimental --> Estimate the number of days with bare soil exposed.
     
     [:simple-swagger: Swagger](https://avuqeoz2lrpi2s5qovww5k4vca0itlyy.lambda-url.us-east-1.on.aws/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./Library/baresoil.md){ .md-button }
+    [:octicons-link-external-16: Details](./baresoil.md){ .md-button }
 
 </div>
 ---
@@ -375,8 +375,8 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     Large-scale crop monitoring and analytics for regions, counties, and administrative boundaries. Supports portfolio analysis and market intelligence.
     
-    [:simple-swagger: Swagger](http://api.geosys.internal/Agriquest/Geosys.AgriQuest.CropMonitoring.WebApi/v0/swagger/ui/index){ .md-button }
-    [:octicons-link-external-16: Details](./Library/Regional_Monitoring.md){ .md-button }
+    [:simple-swagger: Swagger](https://api.geosys-na.net/Agriquest/Geosys.AgriQuest.CropMonitoring.WebApi/v0/swagger/ui/index){ .md-button }
+    [:octicons-link-external-16: Details](./Regional_Monitoring.md){ .md-button }
 
 </div>
 

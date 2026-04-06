@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://earthdaily.github.io/documentation/sitemap.xml
+
+# AI / LLM discovery — see https://llmstxt.org
+# Index with page descriptions, token counts, and keywords
+LLMsTxt: https://earthdaily.github.io/documentation/llms.txt
+
+# Full documentation exports (plain text, optimized for LLM consumption)
+# llms-full.txt              — all sections combined
+# llms-full-{section}.txt    — per-section files
