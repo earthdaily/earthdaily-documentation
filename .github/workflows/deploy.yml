@@ -1,47 +1,41 @@
+# Remember to have a requirements.txt file with the required dependencies.
+#
+# It is also recommendet to also copy the template with all branches, to
+# have the gh-pages branch pre-made. This prevents possible errors.
+#
 name: Deploy documentation
 
 on:
   push:
-    paths:
+    paths: 
     - 'docs/**'
     - 'mkdocs.yml'
     - 'theme/**'
     branches:
     - master
-
+    #
+    # If your repository would have releases should you uncomment the below lines
+    # in order to ignore pushes caused by newly created releases.
+    #
+    #tags-ignore:
+    #- '**'
 permissions:
   contents: write
-
+  
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-
     - name: Set up Python 3.x
       uses: actions/setup-python@v5
       with:
         python-version: 3.x
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools
         python -m pip install -r requirements.txt
-
-    - name: Fetch private documentation content
-      env:
-        PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_DOCS_TOKEN }}
-      run: |
-        git clone \
-          https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/earthdaily/earthdaily-documentation-protected-content.git \
-          /tmp/private-docs
-        cp -r /tmp/private-docs/protected/. docs/
-
     - name: Deploy Files
-      env:
-        DOCS_CLASSIFIED_PASSWORD: ${{ secrets.DOCS_CLASSIFIED_PASSWORD }}
-        DOCS_PARTNERS_PASSWORD: ${{ secrets.DOCS_PARTNERS_PASSWORD }}
-        DOCS_INTERNAL_PASSWORD: ${{ secrets.DOCS_INTERNAL_PASSWORD }}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "actions@github.com"

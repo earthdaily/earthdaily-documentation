@@ -2,16 +2,8 @@ from __future__ import annotations
 
 import re
 from collections import OrderedDict
-from datetime import datetime, timezone
 from pathlib import Path
 from mkdocs.config.defaults import MkDocsConfig
-
-try:
-    import tiktoken
-    _enc = tiktoken.encoding_for_model("gpt-4o")
-except ImportError:
-    tiktoken = None
-    _enc = None
 
 # -----------------------------------------------------------------------------
 # Configuration - folders to include (relative to docs/, forward slashes)
@@ -22,14 +14,10 @@ except ImportError:
 
 INCLUDE_FOLDERS = [
     "Agro/Library",
-    "Agro/Digital_ag",
-    "Agro/Cropid",
-    "Agro/Commodities_intelligence",
-    "Data/Collections",
-    "Data/earthplatform",
-    "Data/earthone",
-    "mining",
+#    "Agro/Digital_ag",
 #    "Agro/Portfolio",
+#    "Agro/Cropid",
+#    "Agro/Commodities_intelligence",
 #    "Agro/Parametric",
 #    "Agro/Territory_insights",
 #    "Agro/App",
@@ -48,6 +36,7 @@ for agriculture, insurance, and environmental monitoring. \
 For a full overview of EarthDaily's products and services, visit \
 [earthdaily.com](https://earthdaily.com).
 """
+
 
 # -----------------------------------------------------------------------------
 # Hook
@@ -144,8 +133,7 @@ def on_post_build(config: MkDocsConfig):
             part += f"\n{page['body']}\n\n---\n"
             parts.append(part)
 
-        section_text = "\n".join(parts)
-        (site_dir / filename).write_text(section_text, encoding="utf-8")
+        (site_dir / filename).write_text("\n".join(parts), encoding="utf-8")
 
     # --- Build llms-full.txt (all sections combined) ---
     full_header = f"# {site_name}\n\n"
@@ -173,38 +161,27 @@ def on_post_build(config: MkDocsConfig):
     (site_dir / "llms-full.txt").write_text("\n".join(full_parts), encoding="utf-8")
 
     # --- Build llms.txt (index with references to full-text files) ---
-    build_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     index_parts = [f"# {site_name}\n\n"]
     if site_description:
         index_parts.append(f"> {site_description}\n\n")
-    index_parts.append(f"Last built: {build_date}\n\n")
     if INTRO_BLOCK:
         index_parts.append(f"{INTRO_BLOCK}\n")
 
     # Reference to full-text files so LLMs can fetch them
     index_parts.append("## Full documentation\n")
     if site_url:
-        full_text = (site_dir / "llms-full.txt").read_text(encoding="utf-8")
-        full_tokens = _count_tokens(full_text)
-        token_hint = f" ({full_tokens})" if full_tokens else ""
-        index_parts.append(f"- [All sections]({site_url}/llms-full.txt): Complete content for all included sections{token_hint}")
+        index_parts.append(f"- [All sections]({site_url}/llms-full.txt): Complete content for all included sections")
         for section, filename in section_files.items():
-            sec_text = (site_dir / filename).read_text(encoding="utf-8")
-            sec_tokens = _count_tokens(sec_text)
-            token_hint = f" ({sec_tokens})" if sec_tokens else ""
-            index_parts.append(f"- [{section}]({site_url}/{filename}): Full content for {section}{token_hint}")
+            index_parts.append(f"- [{section}]({site_url}/{filename}): Full content for {section}")
     index_parts.append("")
 
     # Per-section page index
     for section, pages in groups.items():
         index_parts.append(f"## {section}\n")
         for page in pages:
-            page_tokens = _count_tokens(page["body"])
-            token_hint = f" ({page_tokens})" if page_tokens else ""
             entry = f"- [{page['title']}]({page['url']})"
             if page["description"]:
                 entry += f": {page['description']}"
-            entry += token_hint
             if page["keywords"]:
                 entry += f" [{', '.join(page['keywords'])}]"
             index_parts.append(entry)
@@ -215,13 +192,9 @@ def on_post_build(config: MkDocsConfig):
     (site_dir / "llms.txt").write_text("\n".join(index_parts), encoding="utf-8")
 
     section_count = len(groups)
-    full_tokens_info = ""
-    if _enc is not None:
-        full_text = (site_dir / "llms-full.txt").read_text(encoding="utf-8")
-        full_tokens_info = f", {_count_tokens(full_text)} total"
     print(
         f"Generated llms.txt, llms-full.txt, and {section_count} section file(s) "
-        f"({page_count} pages in {section_count} sections{full_tokens_info})"
+        f"({page_count} pages in {section_count} sections)"
     )
 
 
@@ -252,18 +225,6 @@ def _walk_nav(items, breadcrumb=None):
 # -----------------------------------------------------------------------------
 # Helpers
 # -----------------------------------------------------------------------------
-
-def _count_tokens(text: str) -> str:
-    """Return a human-friendly approximate token count like '~4k tokens'."""
-    if _enc is None:
-        return ""
-    n = len(_enc.encode(text))
-    if n >= 1000:
-        label = f"~{round(n / 1000)}k tokens"
-    else:
-        label = f"~{n} tokens"
-    return label
-
 
 def _slugify(text: str) -> str:
     """Turn a section name like 'Agriculture > Analytic catalog' into 'agriculture-analytic-catalog'."""

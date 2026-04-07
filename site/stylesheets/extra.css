@@ -125,19 +125,16 @@ article.md-content__inner > h1:first-child,
 /* EarthDaily corporate website alignment */
 /*______________________________________________________*/
 
-/* EarthDaily Brand Colors — aligned with earthdaily.com (2026) */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;700&display=swap');
-
+/* EarthDaily Brand Colors */
 :root {
-    --ed-primary: #214B64;        /* EarthDaily Navy */
-    --ed-primary-dark: #042D41;   /* Deep Navy */
-    --ed-primary-gradient: linear-gradient(to right, #042D41, #214B64);
+    --ed-primary: #0066cc;        /* EarthDaily Blue */
+    --ed-primary-dark: #004c99;
     --ed-secondary: #00a651;      /* Earth Green */
     --ed-accent: #ff6b35;         /* Accent Orange */
-    --ed-dark: #24272A;           /* Corporate dark text */
-    --ed-light-bg: #F8F4F3;      /* Warm cream background */
+    --ed-dark: #1a1a1a;
+    --ed-light-bg: #f5f7fa;
     --ed-card-bg: #ffffff;
-    --ed-border: #E0DDD9;         /* Warm gray border */
+    --ed-border: #e0e0e0;
 }
 
 /* Main Content Area Background - Corporate Style with Image and Vertical Gradient */
@@ -222,20 +219,19 @@ main.md-content > .md-content__inner {
     background-color: transparent;
 }
 .md-button--primary {
-    background: var(--ed-primary-gradient) !important;
+    background-color: var(--ed-primary) !important;
     border-color: var(--ed-primary) !important;
     color: white !important;
     font-weight: 600;
     padding: 0.625rem 1.5rem;
-    border-radius: 6px;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .md-button--primary:hover {
-    background: var(--ed-primary-gradient) !important;
-    filter: brightness(1.15);
+    background-color: var(--ed-primary-dark) !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(4, 45, 65, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
 }
 
 /* Card Grid Styling */
@@ -245,7 +241,7 @@ main.md-content > .md-content__inner {
 
 .grid.cards > ul > li {
     border: 1px solid var(--ed-border);
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 2rem;
     background: var(--ed-card-bg);
     transition: all 0.3s ease;
@@ -303,15 +299,9 @@ main.md-content > .md-content__inner {
     border-left: 4px solid var(--ed-secondary);
 }
 
-/* Header Styling — IBM Plex Serif for headings (corporate alignment) */
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3 {
-    font-family: 'IBM Plex Serif', Georgia, serif;
-}
-
+/* Header Styling */
 .md-typeset h1 {
-    color: var(--ed-primary-dark);
+    color: var(--ed-dark);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -442,7 +432,7 @@ main.md-content > .md-content__inner {
 
 /* Search Bar */
 .md-search__input {
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .md-search__input:focus {
@@ -463,9 +453,9 @@ main.md-content > .md-content__inner {
 /* Custom Alert Boxes */
 .ed-alert {
     border-left: 4px solid var(--ed-primary);
-    background-color: rgba(33, 75, 100, 0.05);
+    background-color: rgba(0, 102, 204, 0.05);
     padding: 1rem 1.5rem;
-    border-radius: 6px;
+    border-radius: 4px;
     margin: 1.5rem 0;
 }
 
@@ -495,7 +485,7 @@ main.md-content > .md-content__inner {
 /* Developer Resources Special Styling */
 .grid.cards > ul > li:has(strong:contains("Python SDK")),
 .grid.cards > ul > li:has(strong:contains("API")) {
-    background: linear-gradient(135deg, rgba(4, 45, 65, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
 }
 
 /*______________________________________________________*/
@@ -604,8 +594,8 @@ main.md-content > .md-content__inner {
 
 /* Optional: Define accent colors for different badge types */
 .mdx-badge:not(.mdx-badge--heart) {
-    --md-accent-fg-color: var(--ed-primary, #214B64);
-    --md-accent-fg-color--transparent: rgba(33, 75, 100, 0.1);
+    --md-accent-fg-color: var(--ed-primary, #0066cc);
+    --md-accent-fg-color--transparent: rgba(0, 102, 204, 0.1);
 }
 
 /* Manual Badge Styling (for custom HTML badges) */

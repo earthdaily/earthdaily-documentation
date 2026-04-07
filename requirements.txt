@@ -4,6 +4,3 @@ mkdocs-simple-blog
 pymdown-extensions
 mkdocstrings-python
 mkdocstrings-sourcelink
-mkdocs-encryptcontent-plugin
-tiktoken
-earthdaily-earthone
