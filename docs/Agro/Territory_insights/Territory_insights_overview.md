@@ -48,7 +48,7 @@ keywords:
 /* Compact card styles */
 .compact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 1rem;
   margin: 1.5rem 0;
 }
