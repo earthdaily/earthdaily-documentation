@@ -48,7 +48,7 @@ keywords:
 /* Compact card styles */
 .compact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 1.5rem 0;
 }
@@ -300,7 +300,7 @@ Territory Insights operates as a fully automated, cloud-based service that requi
 
   <div class="compact-card">
     <h4>Nitrogen Timing and Placement</h4>
-    <div class="compact-result">Pursue high VRN potential per township across your service area.</div>
+    <div class="compact-result">↑ VRN and sales based on potential per township across your service area.</div>
     <p>For every field, calculate the share of surface area in zones that historically produced significantly below the local average. Aggregate amd rank townships by relative share of low-productivity area with zero manual effort.</p>
     <!-- <a href="#">Learn More →</a> -->
   </div>
