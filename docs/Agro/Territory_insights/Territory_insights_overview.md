@@ -54,7 +54,7 @@ keywords:
 }
 
 .compact-card {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   border-left: 2px solid var(--md-primary-fg-color);
 }
 
