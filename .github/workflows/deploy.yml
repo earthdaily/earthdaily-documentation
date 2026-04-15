@@ -37,9 +37,9 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Fetch private content
       env:
-        DOCS_CLASSIFIED_PASSWORD: ${{ secrets.DOCS_CLASSIFIED_PASSWORD }}
+        PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
       run: |
-        git config --global url."https://x-access-token:${DOCS_CLASSIFIED_PASSWORD}@github.com/".insteadOf "https://github.com/"
+        git config --global url."https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/".insteadOf "https://github.com/"
         bash scripts/fetch-private-content.sh
     - name: Deploy Files
       env:
