@@ -35,6 +35,7 @@ Join our Crop Analyst for Weekly Video Series where EarthDaily will review Globa
   * Weekly updates on all the production areas of the target crop with the latest estimated production numbers.
   * Highlights when our forecasts or conditions have changed recently or we differ from USDA
 
+
 Please check our Weekly Corn Video
 <!-- youtube: gWeW86-rKUc -->
 
