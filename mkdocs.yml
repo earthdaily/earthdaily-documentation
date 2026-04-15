@@ -28,6 +28,12 @@ site_description: 'Everything you need to know to master EarthDaily services'
 site_author: 'Earthdaily'
 site_url: 'https://earthdaily.github.io/documentation/' # Uncomment to set a canonical URL
 
+# Watch additional directories for live reload during mkdocs serve
+watch:
+  - docs
+  - mkdocs.yml
+  - overrides
+
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
 # | This setting allows you to define your own Copyright notice.                                           |

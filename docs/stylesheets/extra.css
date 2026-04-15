@@ -51,6 +51,15 @@
 }
 
 
+/* Announcement bar link styling */
+.md-banner a,
+.md-banner__inner a,
+.md-announce a,
+.md-announce__inner a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
 /* Force 1 column by default */
 .grid.cards.fixed-2-col {
   display: grid !important;

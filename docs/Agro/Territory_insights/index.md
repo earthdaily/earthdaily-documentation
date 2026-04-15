@@ -155,13 +155,13 @@ Territory Insights addresses this challenge by providing real-time, field-level 
     </ul>
   </div>
   <div class="module-image">
-    <img src="../../../assets/agro/Territory_insights/Sampling.jpg" alt="Initialization Module">
+    <img src="../../assets/agro/Territory_insights/Sampling.jpg" alt="Initialization Module">
   </div>
 </div>
 
 <div class="module-reverse">
   <div class="module-image">
-    <img src="../../../assets/agro/Territory_insights/cycle.png" alt="Crop Phenometrics Module">
+    <img src="../../assets/agro/Territory_insights/cycle.png" alt="Crop Phenometrics Module">
   </div>
   <div class="module-text">
     <h3>Crop Phenometrics & Predictions</h3>
@@ -186,13 +186,13 @@ Territory Insights addresses this challenge by providing real-time, field-level 
     </ul>
   </div>
   <div class="module-image">
-    <img src="../../../assets/agro/Territory_insights/Cropid.png" alt="Targeting & Segmentation Module">
+    <img src="../../assets/agro/Territory_insights/Cropid.png" alt="Targeting & Segmentation Module">
   </div>
 </div>
 
 <div class="module-reverse">
   <div class="module-image">
-    <img src="../../../assets/agro/Territory_insights/report.png" alt="Sales & Marketing Enablement Module">
+    <img src="../../assets/agro/Territory_insights/report.png" alt="Sales & Marketing Enablement Module">
   </div>
   <div class="module-text">
     <h3>Sales & Marketing Enablement</h3>

@@ -1,13 +1,10 @@
 {% extends "base.html" %}
 {% block announce %}
-    For updates follow <strong>EarthDaily Blog</strong> on
-  <a rel="me" href="https://earthdaily.com/blog">
-  </a>
-  and
-  <a href="https://earthdaily.com/blog">
-    <span class="twemoji twitter">
-      {% include ".icons/fontawesome/brands/twitter.svg" %}
-    </span>
-    <strong>Twitter</strong>
+  <span class="twemoji">
+    {% include ".icons/material/robot-outline.svg" %}
+  </span>
+  This documentation is <strong>AI-enabled</strong> — optimized for LLMs and AI coding tools.
+  <a href="{{ 'Support/ai-coding-tools/' | url }}">
+    Learn more <span class="twemoji">{% include ".icons/material/arrow-right.svg" %}</span>
   </a>
 {% endblock %}
