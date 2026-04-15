@@ -36,6 +36,8 @@ jobs:
         python -m pip install --upgrade pip setuptools
         python -m pip install -r requirements.txt
     - name: Deploy Files
+      env:
+        DOCS_CLASSIFIED_PASSWORD: ${{ secrets.DOCS_CLASSIFIED_PASSWORD }}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "actions@github.com"

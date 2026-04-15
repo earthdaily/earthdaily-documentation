@@ -209,9 +209,9 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/                              |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #font:
-  #  text: 'Roboto'
-  #  code: 'Roboto Mono'
+  font:
+    text: 'Mulish'
+    code: 'IBM Plex Mono'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -400,6 +400,8 @@ extra_javascript:
   - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
   - js/nav_open_new_tab.js
   - js/spotlight.js
+  - js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -540,6 +542,8 @@ markdown_extensions:
       permalink: "🔗"
 
   - tables
+  - pymdownx.arithmatex:
+      generic: true
   #- pymdownx.arithmex:
   #- pymdownx.b64:
   #- pymdownx.betterem:
@@ -573,7 +577,26 @@ plugins:
         - en  
       separator: '[\s\-\.]+'
   - mkdocs-pdf
-#  - mkdocstrings
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: []
+          options:
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            heading_level: 2
+            members_order: source
+            show_signature_annotations: true
+            separate_signature: true
+            docstring_style: google
+  - encryptcontent:
+      remember_keys: true
+      session_storage: true
+      default_expire_delay: 24
+      decryption_failure_message: "Incorrect password. Please try again."
+      password_inventory:
+        classified: !ENV [DOCS_CLASSIFIED_PASSWORD, "changeme"]
 #  - blog:
 #      blog_toc: true
 #      archive_date_format: MMMM yyyy
@@ -696,8 +719,166 @@ nav:
         - Baresoil: Agro/Library/baresoil.md
       - Regional Analytics:
         - Regional Monitoring: Agro/Library/Regional_Monitoring.md
-  - Data: https://earthdaily.github.io/EDA-Documentation/
-  - Mining: https://mining.earthdaily.com/knowledge-base
+  - Data:
+    - Data/index.md
+    - EarthPlatform:
+      - Data/earthplatform/index.md
+      - Getting Started:
+        - Data/earthplatform/GettingStarted/index.md
+        - Welcome: Data/earthplatform/GettingStarted/welcome.md
+        - API Authentication: Data/earthplatform/GettingStarted/authentication.md
+        - Quick Start: Data/earthplatform/GettingStarted/quickstart.md
+      - Console:
+        - Data/earthplatform/Console/index.md
+        - New Login Experience: Data/earthplatform/Console/new-login.md
+        - Account Information: Data/earthplatform/Console/account.md
+        - EarthPlatform: Data/earthplatform/Console/earthplatform.md
+        - EarthMosaics: Data/earthplatform/Console/earthmosaics.md
+      - API:
+        - Data/earthplatform/API/index.md
+        - STAC Specification: Data/earthplatform/API/APIDesign/stac.md
+        - API Details and Limits: Data/earthplatform/API/APIDesign/details-and-limits.md
+        - Endpoints: Data/earthplatform/API/APIUsage/endpoints.md
+        - Command Line Examples: Data/earthplatform/API/APIUsage/commandline.md
+        - Postman Examples: Data/earthplatform/API/APIUsage/postman.md
+        - Python Examples: Data/earthplatform/API/APIUsage/python.md
+        - EDA STAC Extension: Data/earthplatform/API/Extensions/eda-extension.md
+        - EDA Data Coverage Extension: Data/earthplatform/API/Extensions/eda-data-coverage.md
+      - EDS Examples: Data/earthplatform/examples.md
+      - EDA Mosaics: Data/earthplatform/mosaics.md
+      - FAQs: Data/earthplatform/FAQ/index.md
+    - EarthOne:
+      - Data/earthone/index.md
+      - Getting Started:
+        - Getting Access: Data/earthone/getting-started/access.md
+        - Key Features: Data/earthone/getting-started/api-features.md
+        - Understanding Your Usage: Data/earthone/getting-started/usage.md
+      - Platform APIs:
+        - Installation: Data/earthone/platform-apis/installation.md
+        - Catalog API: Data/earthone/platform-apis/earthone-catalog-api.md
+        - Compute API: Data/earthone/platform-apis/earthone-compute-api.md
+      - User Interfaces:
+        - Overview: Data/earthone/user-interfaces/earthone-user-interfaces.md
+        - Explorer UI: Data/earthone/user-interfaces/earthone-explorer-ui.md
+        - Workbench Setup: Data/earthone/user-interfaces/workbench.md
+      - Platform Updates:
+        - Introducing EarthOne: Data/earthone/platform-updates/introducing-earthone.md
+      - Python Client:
+        - Data/earthone/earthone-python/index.md
+        - Auth: Data/earthone/earthone-python/auth.md
+        - Catalog: Data/earthone/earthone-python/catalog.md
+        - Compute: Data/earthone/earthone-python/compute.md
+        - Vector: Data/earthone/earthone-python/vector.md
+        - Config: Data/earthone/earthone-python/config.md
+        - Exceptions: Data/earthone/earthone-python/exceptions.md
+    - Collections:
+      - Data/Collections/index.md
+      - Imagery:
+        - Sentinel-2: Data/Collections/sentinel-2.md
+        - Landsat: Data/Collections/landsat.md
+        - Sentinel-1: Data/Collections/sentinel-1.md
+        - Venus: Data/Collections/venus.md
+        - EarthDaily Constellation Preview: Data/Collections/edc-preview.md
+      - Masks:
+        - EDA Cloud Masks: Data/Collections/cloudmasks.md
+        - Cropland Data Layer US: Data/Collections/cropland-data-layer.md
+      - Mosaics & Composites:
+        - AI Ready Mosaics: Data/Collections/ai-ready-mosaics.md
+      - Foundational Analytics:
+        - Biomass, Tree Height & Cover: Data/Collections/biomass.md
+        - Forest Mask: Data/Collections/forest-mask.md
+  - Mining:
+    - mining/index.md
+    - Marigold:
+      - mining/marigold/index.md
+      - Marigold basics:
+          - Table of contents: mining/marigold/using-marigold/index.md
+          - Starting Marigold: mining/marigold/using-marigold/splash.md
+          - Header functions: mining/marigold/using-marigold/header.md
+          - Raster layers:
+              - Raster layers basics: mining/marigold/using-marigold/raster-layers/index.md
+              - Add raster layers: mining/marigold/using-marigold/raster-layers/add-layers.md
+              - Layer settings: mining/marigold/using-marigold/raster-layers/layer-settings.md
+              - Layer organization: mining/marigold/using-marigold/raster-layers/folders.md
+              - Layer export: mining/marigold/using-marigold/raster-layers/layer-export.md
+          - Vector layers:
+              - Vector layers basics: mining/marigold/using-marigold/vector-layers/index.md
+              - Add vector layers: mining/marigold/using-marigold/vector-layers/add-layers.md
+              - Vector layer settings: mining/marigold/using-marigold/vector-layers/vector-settings.md
+          - Spectra:
+              - Spectra basics: mining/marigold/using-marigold/spectra/index.md
+              - Spectral query: mining/marigold/using-marigold/spectra/spectra-query.md
+              - Spectra from vector: mining/marigold/using-marigold/spectra/spectra-vector.md
+              - Spectra from file: mining/marigold/using-marigold/spectra/spectra-file.md
+              - Spectra from library: mining/marigold/using-marigold/spectra/spectra-library.md
+          - Saving and loading projects: mining/marigold/using-marigold/save-and-load.md
+      - Processing:
+          - Processing basics: mining/marigold/using-marigold/processes/index.md
+          - Band algebra:
+              - Band ratios: mining/marigold/using-marigold/processes/band-ratio.md
+              - Raster calculator: mining/marigold/using-marigold/processes/raster-calculator.md
+              - Rapid mapping outputs: mining/marigold/using-marigold/processes/rapid-mapping-outputs.md
+              - Mineral indices: mining/marigold/using-marigold/processes/mineral-indices.md
+          - Masking:
+              - Vegetation masking: mining/marigold/using-marigold/processes/vegetation-mask.md
+              - Water masking: mining/marigold/using-marigold/processes/water-mask.md
+              - Batch mask: mining/marigold/using-marigold/processes/batch-mask.md
+              - Apply mask: mining/marigold/using-marigold/processes/apply-a-mask.md
+          - Transforms:
+              - Principal component analysis: mining/marigold/using-marigold/processes/pca.md
+              - Decorrelation stretch: mining/marigold/using-marigold/processes/dcs.md
+              - Minimum noise fraction: mining/marigold/using-marigold/processes/mnf.md
+          - Spectral classification:
+              - Spectral angle mapping: mining/marigold/using-marigold/processes/sam.md
+              - Spectral correlation mapping: mining/marigold/using-marigold/processes/scm.md
+              - Matched filter: mining/marigold/using-marigold/processes/mf.md
+              - K-Means clustering: mining/marigold/using-marigold/processes/k-means.md
+          - Raster classification:
+              - Assign class labels: mining/marigold/using-marigold/processes/class-labels.md
+              - Prospectivity analysis: mining/marigold/using-marigold/processes/prospectivity.md
+              - Mineral map: mining/marigold/using-marigold/processes/mineral-map.md
+              - Vectorize classified layer: mining/marigold/using-marigold/processes/vectorize.md
+          - Hyperspectral:
+              - HSI image explorer: mining/marigold/using-marigold/processes/hsi-image.md
+              - Compositional mapping: mining/marigold/using-marigold/processes/comp-map-basic.md
+              - UMAP: mining/marigold/using-marigold/processes/umap.md
+              - Mineral index analogs: mining/marigold/using-marigold/processes/min-idx-analogs.md
+          - Terrain analysis:
+              - Create a hillshade: mining/marigold/using-marigold/processes/hillshade.md
+              - Canny edge detection: mining/marigold/using-marigold/processes/canny.md
+              - Valley bottom flatness: mining/marigold/using-marigold/processes/mrvbf.md
+          - Raster management:
+              - Data statistical analysis: mining/marigold/using-marigold/processes/data-stats.md
+              - View BEC metadata: mining/marigold/using-marigold/processes/bec-meta.md
+              - Create an RGB: mining/marigold/using-marigold/processes/create-rgb.md
+              - Merge layers: mining/marigold/using-marigold/processes/merge-layers.md
+              - Update computed layers: mining/marigold/using-marigold/processes/update-layers.md
+              - Morphological operations: mining/marigold/using-marigold/processes/morphology.md
+      - Example workflows:
+          - Vegetation and water masking: mining/marigold/using-marigold/example-workflows/mask-veg-and-water.md
+          - Create a custom mask: mining/marigold/using-marigold/example-workflows/create-a-custom-mask.md
+          - Ternary plots: mining/marigold/using-marigold/example-workflows/ternary-plot.md
+      - Remote Sensing Methodology:
+          - Methodology: mining/marigold/remote-sensing-methodology/remote-sensing-methodology.md
+      - Case Studies:
+          - Case studies overview: mining/marigold/case-studies/index.md
+          - Low sulphidation epithermal: mining/marigold/case-studies/case-study-1.md
+          - High sulphidation epithermal: mining/marigold/case-studies/case-study-2.md
+    - Iris:
+      - mining/iris/index.md
+      - Iris Basics:
+          - Introduction to Iris: mining/iris/using-iris/index.md
+          - Header functions: mining/iris/using-iris/header.md
+          - Adding deformation layers: mining/iris/using-iris/adding-deformation-layers.md
+          - Visualization settings:
+              - Deformation map settings: mining/iris/using-iris/visualization-settings/map-settings.md
+              - Time series plot settings: mining/iris/using-iris/visualization-settings/time-series-settings.md
+          - Deformation anomalies: mining/iris/using-iris/adding-anomalies.md
+          - Adding vector layers: mining/iris/using-iris/vector-layers.md
+          - Export data: mining/iris/using-iris/export-data.md
+          - Running quicklook: mining/iris/using-iris/running-quicklook.md
+          - GVM viewer: mining/iris/using-iris/gvm-viewer.md
+          - Tailings pond water: mining/iris/using-iris/water-viewer.md
   - SkyForest: https://skyforest.io/
   - Help: 
     - How to get support: Support/help.md
