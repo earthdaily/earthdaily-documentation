@@ -5,6 +5,5 @@ pymdown-extensions
 mkdocstrings-python
 mkdocstrings-sourcelink
 mkdocs-encryptcontent-plugin
-mkdocs-pdf
 tiktoken
 earthdaily-earthone

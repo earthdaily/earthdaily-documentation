@@ -576,7 +576,6 @@ plugins:
       lang:
         - en  
       separator: '[\s\-\.]+'
-  - mkdocs-pdf
   - mkdocstrings:
       handlers:
         python:

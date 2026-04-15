@@ -12,7 +12,6 @@ keywords:
   - wheat
 ---
 
-
 ### Weekly Video Series
 
 #### Weekly Videos
@@ -25,8 +24,6 @@ Join our Crop Analyst for Weekly Video Series where EarthDaily will review Globa
 * **Ahead of the market** - Stay ahead of the market with information at the beginning of the week which can confirm or challenge the market noise.
 * **Production figures** - Estimated production of the main grains in the world's main producers.
 
-
-
 **Weekly Videos available include:**
 
 * **Global Crop Production Highlights**
@@ -38,13 +35,11 @@ Join our Crop Analyst for Weekly Video Series where EarthDaily will review Globa
   * Weekly updates on all the production areas of the target crop with the latest estimated production numbers.
   * Highlights when our forecasts or conditions have changed recently or we differ from USDA
 
-
 Please check our Weekly Corn Video
 <!-- youtube: gWeW86-rKUc -->
 
 Please check our Weekly Wheat Video
 <!-- youtube: rcNgis46BYE -->
-
 
 ### Weekly Global Reports
 
@@ -64,10 +59,6 @@ These reports include Forecasted Yield and Production values as well as the curr
 
 [Download an example of our Weekly Wheat Report](../../assets/agro/commodities\_intelligence/Wheat Weekly.pdf)
 
-![Test pdf](../../assets/agro/commodities_intelligence/WHEAT_Weekly.pdf){ type=application/pdf style="min-height:25vh;width:100%" }
-
-
-
 #### World in 10
 
 10 images tell the answer to 10 key questions about production all around the world.
@@ -75,8 +66,6 @@ These reports include Forecasted Yield and Production values as well as the curr
 This report provides a quick glance at current production conditions, highlighting areas of interest which could be driving the changes in the supply market next week.
 
 [View an example of our World in 10 Report](https://sway.cloud.microsoft/dRzqvOjcSno2YDcL?ref=Link)
-
-
 
 ### One on One Crop Analyst Calls
 
