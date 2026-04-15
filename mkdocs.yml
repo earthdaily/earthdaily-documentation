@@ -644,9 +644,9 @@ nav:
         - Agro/Commodities_intelligence/index.md
         - Delivery method:
           - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
-          - Report: Agro/Commodities_intelligence/delivery_method_report_webinar.md
-          - Videos: Agro/Commodities_intelligence/delivery_method_reports_videos.md
+          - Videos & Reports: Agro/Commodities_intelligence/delivery_method_reports_videos.md
         - Yield: Agro/Commodities_intelligence/yield.md
+        - Regional Monitoring Data Catalogue: Agro/Commodities_intelligence/regional_monitoring_data_catalogue.md
         - Case studies: Agro/Commodities_intelligence/case_studies.md
       - Digital Ag:
         - Agro/Digital_ag/index.md

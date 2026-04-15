@@ -20,7 +20,7 @@ The goal of Change Index is to help you decide which in-season map to look at by
 
 ## How is the Change Index Calculated?
 
-Change Idedex is based on three components of change using the field's NDVI values:
+Change Index is based on three components of change using the field's NDVI values:
 
 ### 1. Correlation
 
