@@ -26,7 +26,7 @@
 site_name: EarthDaily documentation
 site_description: 'Everything you need to know to master EarthDaily services'
 site_author: 'Earthdaily'
-site_url: 'https://earthdaily.github.io/documentation/' # Uncomment to set a canonical URL
+site_url: 'https://earthdaily.github.io/earthdaily-documentation/' # Uncomment to set a canonical URL
 
 # Watch additional directories for live reload during mkdocs serve
 watch:
