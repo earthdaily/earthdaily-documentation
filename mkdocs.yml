@@ -278,7 +278,7 @@ theme:
   - navigation.sections    # Render top sections as groups.
   - navigation.tabs         # Render top sections as tabs at the top.
   #- navigation.tabs.sticky # Tabs won't disappear when scrolling down. Requires "navigation.tabs".
-  - navigation.path # Display a breadcrumb navigation above the page title
+  #- navigation.path # Display a breadcrumb navigation above the page title
   - navigation.top         # Adds a "Back to top" that is shown when scrolling up.
   - navigation.footer       # Enable navigation in page footer.
   - navigation.tracking    # Updates the url with highlighted section anchor.

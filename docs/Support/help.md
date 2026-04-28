@@ -15,7 +15,7 @@ hide:
 
 # Help & Support
 
-Get the assistance you need to make the most of EarthDaily's agricultural solutions.
+Get the assistance you need to make the most of EarthDaily's products and solutions.
 
 <div class="grid cards" markdown>
 

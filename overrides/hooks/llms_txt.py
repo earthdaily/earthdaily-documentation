@@ -181,6 +181,12 @@ def on_post_build(config: MkDocsConfig):
     if INTRO_BLOCK:
         index_parts.append(f"{INTRO_BLOCK}\n")
 
+    # Precompute section token counts (reused below for index headers)
+    section_tokens: dict[str, str] = {}
+    for section, filename in section_files.items():
+        sec_text = (site_dir / filename).read_text(encoding="utf-8")
+        section_tokens[section] = _count_tokens(sec_text)
+
     # Reference to full-text files so LLMs can fetch them
     index_parts.append("## Full documentation\n")
     if site_url:
@@ -189,15 +195,16 @@ def on_post_build(config: MkDocsConfig):
         token_hint = f" ({full_tokens})" if full_tokens else ""
         index_parts.append(f"- [All sections]({site_url}/llms-full.txt): Complete content for all included sections{token_hint}")
         for section, filename in section_files.items():
-            sec_text = (site_dir / filename).read_text(encoding="utf-8")
-            sec_tokens = _count_tokens(sec_text)
+            sec_tokens = section_tokens.get(section, "")
             token_hint = f" ({sec_tokens})" if sec_tokens else ""
             index_parts.append(f"- [{section}]({site_url}/{filename}): Full content for {section}{token_hint}")
     index_parts.append("")
 
     # Per-section page index
     for section, pages in groups.items():
-        index_parts.append(f"## {section}\n")
+        sec_tokens = section_tokens.get(section, "")
+        token_hint = f" ({sec_tokens})" if sec_tokens else ""
+        index_parts.append(f"## {section}{token_hint}\n")
         for page in pages:
             page_tokens = _count_tokens(page["body"])
             token_hint = f" ({page_tokens})" if page_tokens else ""
