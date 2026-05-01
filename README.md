@@ -159,7 +159,7 @@ If you are usingd VS code to update content please open site folder. Once done, 
 ## Deploy to GitHub page
 A deployment workflow has been configured to build and deploy website on each commit to main branch.
 
-This workflow will setup Python, download Material for MkDocs and all its dependencies and deploy the pages to the `gh-pages` branch to then be viewable under this [URL](https://earthdaily.github.io/earthdaily-documentation/).
+This workflow will setup Python, download Material for MkDocs and all its dependencies and deploy the pages to the `gh-pages` branch to then be viewable under this [URL](https://docs.earthdaily.com/).
 
 ### Dependabot
 
@@ -179,7 +179,7 @@ The following links will provide access to more information:
 - [Markdown foundations](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 - [Mkdocs]
 - [Mkdocs Material][squidfunk]
-- [Examples](https://earthdaily.github.io/earthdaily-documentation/showcase/) on how to create rich documentation content using charts, badges
+- [Examples](https://docs.earthdaily.com/showcase/) on how to create rich documentation content using charts, badges
 
 **Tips** To generate folder structure with ASCII characters, you can use the command 'tree".
    - Open the Command Prompt (Start button + type "cmd").

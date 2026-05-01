@@ -26,7 +26,7 @@
 site_name: EarthDaily documentation
 site_description: 'Everything you need to know to master EarthDaily services'
 site_author: 'Earthdaily'
-site_url: 'https://earthdaily.github.io/earthdaily-documentation/' # Uncomment to set a canonical URL
+site_url: 'https://docs.earthdaily.com/' # Uncomment to set a canonical URL
 
 # Watch additional directories for live reload during mkdocs serve
 watch:
@@ -642,156 +642,156 @@ hooks:
 nav:
   - Home: index.md
   - Agriculture: 
-    - Agro/index.md
+    - agro/index.md
     - PRODUCTS:
       - Territory Insights:
-        - Agro/Territory_insights/index.md
+        - agro/territory_insights/index.md
       - Crop Intelligence:
-        - Agro/Commodities_intelligence/index.md
+        - agro/commodities_intelligence/index.md
         - Delivery method:
-          - Webapp & API: Agro/Commodities_intelligence/delivery_method_web.md
-          - Videos & Reports: Agro/Commodities_intelligence/delivery_method_reports_videos.md
-        - Yield: Agro/Commodities_intelligence/yield.md
-        - Regional Monitoring Data Catalogue: Agro/Commodities_intelligence/regional_monitoring_data_catalogue.md
-        - Case studies: Agro/Commodities_intelligence/case_studies.md
+          - Webapp & API: agro/commodities_intelligence/delivery_method_web.md
+          - Videos & Reports: agro/commodities_intelligence/delivery_method_reports_videos.md
+        - Yield: agro/commodities_intelligence/yield.md
+        - Regional Monitoring Data Catalogue: agro/commodities_intelligence/regional_monitoring_data_catalogue.md
+        - Case studies: agro/commodities_intelligence/case_studies.md
       - Digital Ag:
-        - Agro/Digital_ag/index.md
-        - Field Boundaries: Agro/Digital_ag/Field_boundaries.md
-        - Field level maps and time series: Agro/Digital_ag/Field_level_ts_map_weather.md
-        - Crop events: Agro/Digital_ag/Crop_events_CD.md
-        - Benchmark: Agro/Digital_ag/Field_benchmark.md
-        - Decision support workflows: Agro/Digital_ag/DS_workflow_tools.md
-        - Testimonials: Agro/Digital_ag/Testimonials.md
+        - agro/digital_ag/index.md
+        - Field Boundaries: agro/digital_ag/Field_boundaries.md
+        - Field level maps and time series: agro/digital_ag/Field_level_ts_map_weather.md
+        - Crop events: agro/digital_ag/Crop_events_CD.md
+        - Benchmark: agro/digital_ag/Field_benchmark.md
+        - Decision support workflows: agro/digital_ag/DS_workflow_tools.md
+        - Testimonials: agro/digital_ag/Testimonials.md
       - Portfolio Management:
-        - Agro/Portfolio/index.md
-        - Smart underwriting: Agro/Portfolio/Smart underwriting.md
-        - Historical Assessment: Agro/Portfolio/Historical_Assessment_API.md
-        - Environmental Compliance: Agro/Portfolio/Compliance Check.md
-        - In-Season Monitoring: Agro/Portfolio/In-Season Monitoring.md
-        - Integration: Agro/Portfolio/Integration.md
+        - agro/portfolio/index.md
+        - Smart underwriting: agro/portfolio/Smart underwriting.md
+        - Historical Assessment: agro/portfolio/Historical_Assessment_API.md
+        - Environmental Compliance: agro/portfolio/Compliance Check.md
+        - In-Season Monitoring: agro/portfolio/In-Season Monitoring.md
+        - Integration: agro/portfolio/Integration.md
       - Crop identification:
-        - Agro/Cropid/index.md
-        - US: Agro/Cropid/crop_identification_US_v11092025.md
-        - Brazil: Agro/Cropid/crop_identification_Brazil_v11092025.md
-        - Western Europe: Agro/Cropid/crop_identification_France_Germany_v11092025.md
+        - agro/cropid/index.md
+        - US: agro/cropid/crop_identification_US_v11092025.md
+        - Brazil: agro/cropid/crop_identification_Brazil_v11092025.md
+        - Western Europe: agro/cropid/crop_identification_France_Germany_v11092025.md
         - Try samples: https://samples.cropid.earthdaily.com/
-        - Crop Layer Access: Agro/Cropid/CropMask_Access_through_EDS_v11092025.md
-        - Geometry Crop Id API: Agro/Library/FieldLevel_CropMask_API_v11092025/
+        - Crop Layer Access: agro/cropid/CropMask_Access_through_EDS_v11092025.md
+        - Geometry Crop Id API: agro/library/FieldLevel_CropMask_API_v11092025/
       - Parametric insurance:
-        - Agro/Parametric/index.md
-        - User guide: Agro/Parametric/Swagger.md
+        - agro/parametric/index.md
+        - User guide: agro/parametric/Swagger.md
     - USER GUIDES:
       - EarthDaily App:
-        - User guide: Agro/App/en-US/00. Geosys App User Guide.md
-        - Home: Agro/App/en-US/01. Home.md
-        - Map analysis: Agro/App/en-US/02. Map Analysis.md
-        - Monitoring field: Agro/App/en-US/03. Monitoring - Field.md
-        - Monitoring region: Agro/App/en-US/04. Monitoring - Regional.md
-        - Field Manager: Agro/App/en-US/05. Field Manager.md
-        - Compliance analysis: Agro/App/en-US/06. Compliance Analysis.md
+        - User guide: agro/app/en-us/00. Geosys App User Guide.md
+        - Home: agro/app/en-us/01. Home.md
+        - Map analysis: agro/app/en-us/02. Map Analysis.md
+        - Monitoring field: agro/app/en-us/03. Monitoring - Field.md
+        - Monitoring region: agro/app/en-us/04. Monitoring - Regional.md
+        - Field Manager: agro/app/en-us/05. Field Manager.md
+        - Compliance analysis: agro/app/en-us/06. Compliance Analysis.md
       - QGIS plugin:
-        - Prerequisites: Agro/QGIS/1. Prerequisite.md
-        - Installation: Agro/QGIS/2. Installation.md
-        - Get data: Agro/QGIS/3. GetData.md
-        - Processing toolbox: Agro/QGIS/4. ProcessingToolBox.md
+        - Prerequisites: agro/qgis/1. Prerequisite.md
+        - Installation: agro/qgis/2. Installation.md
+        - Get data: agro/qgis/3. GetData.md
+        - Processing toolbox: agro/qgis/4. ProcessingToolBox.md
     - ANALYTIC CATALOG:
-      - API Reference: Agro/Library/Api_reference.md
+      - API Reference: agro/library/Api_reference.md
       - Foundational Analytics:
-        - Automated field borders: Agro/Library/Automatic_Field_Borders.md
+        - Automated field borders: agro/library/Automatic_Field_Borders.md
         - Field maps:
-          - Principles: Agro/Library/Field Level Maps.md
-          - Map types: Agro/Library/Map-types.md
-        - Vegetation Time Series: Agro/Library/Vegetation_time_series.md
-        - Crop id API: Agro/Library/FieldLevel_CropMask_API_v11092025.md
+          - Principles: agro/library/Field Level Maps.md
+          - Map types: agro/library/Map-types.md
+        - Vegetation Time Series: agro/library/Vegetation_time_series.md
+        - Crop id API: agro/library/FieldLevel_CropMask_API_v11092025.md
       - Crop Development and Stressors:
-        - Emergence: Agro/Library/Emergence.md
-        - Emergence delay: Agro/Library/Emergence_Delay.md
-        - Planting validation (ZARC): Agro/Library/ZARC.md
-        - Planted area: Agro/Library/Planted_Area.md
-        - Greenness: Agro/Library/greenness.md
-        - Disease risk: Agro/Library/disease_risk.md
+        - Emergence: agro/library/Emergence.md
+        - Emergence delay: agro/library/Emergence_Delay.md
+        - Planting validation (ZARC): agro/library/ZARC.md
+        - Planted area: agro/library/Planted_Area.md
+        - Greenness: agro/library/greenness.md
+        - Disease risk: agro/library/disease_risk.md
       - Risk management:
         - Environmental Compliance:
-            - Compliance report: Agro/Library/CRA.md
-            - Environmental layers: Agro/Library/CRA_Layers.md
-        - Historical Potential Score: Agro/Library/Historical_Potential_Score.md
-        - In Season  Potential Score: Agro/Library/In-season_Potential_Score.md
-        - Harvest detection: Agro//Library/Harvest_Detection.md
+            - Compliance report: agro/library/CRA.md
+            - Environmental layers: agro/library/CRA_Layers.md
+        - Historical Potential Score: agro/library/Historical_Potential_Score.md
+        - In Season  Potential Score: agro/library/In-season_Potential_Score.md
+        - Harvest detection: agro//Library/Harvest_Detection.md
       - Benchmark and warning:
-        - Change index: Agro/Library/Change_Index.md
-        - In season monitoring: Agro/Library/inseason_monitoring.md
+        - Change index: agro/library/Change_Index.md
+        - In season monitoring: agro/library/inseason_monitoring.md
       - Sustainability:
-        - Baresoil: Agro/Library/baresoil.md
+        - Baresoil: agro/library/baresoil.md
       - Regional Analytics:
-        - Regional Monitoring: Agro/Library/Regional_Monitoring.md
+        - Regional Monitoring: agro/library/Regional_Monitoring.md
   - Data:
-    - Data/index.md
+    - data/index.md
     - EarthPlatform:
-      - Data/earthplatform/index.md
+      - data/earthplatform/index.md
       - Getting Started:
-        - Data/earthplatform/GettingStarted/index.md
-        - Welcome: Data/earthplatform/GettingStarted/welcome.md
-        - API Authentication: Data/earthplatform/GettingStarted/authentication.md
-        - Quick Start: Data/earthplatform/GettingStarted/quickstart.md
+        - data/earthplatform/getting-started/index.md
+        - Welcome: data/earthplatform/getting-started/welcome.md
+        - API Authentication: data/earthplatform/getting-started/authentication.md
+        - Quick Start: data/earthplatform/getting-started/quickstart.md
       - Console:
-        - Data/earthplatform/Console/index.md
-        - New Login Experience: Data/earthplatform/Console/new-login.md
-        - Account Information: Data/earthplatform/Console/account.md
-        - EarthPlatform: Data/earthplatform/Console/earthplatform.md
-        - EarthMosaics: Data/earthplatform/Console/earthmosaics.md
+        - data/earthplatform/console/index.md
+        - New Login Experience: data/earthplatform/console/new-login.md
+        - Account Information: data/earthplatform/console/account.md
+        - EarthPlatform: data/earthplatform/console/earthplatform.md
+        - EarthMosaics: data/earthplatform/console/earthmosaics.md
       - API:
-        - Data/earthplatform/API/index.md
-        - STAC Specification: Data/earthplatform/API/APIDesign/stac.md
-        - API Details and Limits: Data/earthplatform/API/APIDesign/details-and-limits.md
-        - Endpoints: Data/earthplatform/API/APIUsage/endpoints.md
-        - Command Line Examples: Data/earthplatform/API/APIUsage/commandline.md
-        - Postman Examples: Data/earthplatform/API/APIUsage/postman.md
-        - Python Examples: Data/earthplatform/API/APIUsage/python.md
-        - EDA STAC Extension: Data/earthplatform/API/Extensions/eda-extension.md
-        - EDA Data Coverage Extension: Data/earthplatform/API/Extensions/eda-data-coverage.md
-      - EDS Examples: Data/earthplatform/examples.md
-      - EDA Mosaics: Data/earthplatform/mosaics.md
-      - FAQs: Data/earthplatform/FAQ/index.md
+        - data/earthplatform/api/index.md
+        - STAC Specification: data/earthplatform/api/api-design/stac.md
+        - API Details and Limits: data/earthplatform/api/api-design/details-and-limits.md
+        - Endpoints: data/earthplatform/api/api-usage/endpoints.md
+        - Command Line Examples: data/earthplatform/api/api-usage/commandline.md
+        - Postman Examples: data/earthplatform/api/api-usage/postman.md
+        - Python Examples: data/earthplatform/api/api-usage/python.md
+        - EDA STAC Extension: data/earthplatform/api/extensions/eda-extension.md
+        - EDA Data Coverage Extension: data/earthplatform/api/extensions/eda-data-coverage.md
+      - EDS Examples: data/earthplatform/examples.md
+      - EDA Mosaics: data/earthplatform/mosaics.md
+      - FAQs: data/earthplatform/faq/index.md
     - EarthOne:
-      - Data/earthone/index.md
+      - data/earthone/index.md
       - Getting Started:
-        - Getting Access: Data/earthone/getting-started/access.md
-        - Key Features: Data/earthone/getting-started/api-features.md
-        - Understanding Your Usage: Data/earthone/getting-started/usage.md
+        - Getting Access: data/earthone/getting-started/access.md
+        - Key Features: data/earthone/getting-started/api-features.md
+        - Understanding Your Usage: data/earthone/getting-started/usage.md
       - Platform APIs:
-        - Installation: Data/earthone/platform-apis/installation.md
-        - Catalog API: Data/earthone/platform-apis/earthone-catalog-api.md
-        - Compute API: Data/earthone/platform-apis/earthone-compute-api.md
+        - Installation: data/earthone/platform-apis/installation.md
+        - Catalog API: data/earthone/platform-apis/earthone-catalog-api.md
+        - Compute API: data/earthone/platform-apis/earthone-compute-api.md
       - User Interfaces:
-        - Overview: Data/earthone/user-interfaces/earthone-user-interfaces.md
-        - Explorer UI: Data/earthone/user-interfaces/earthone-explorer-ui.md
-        - Workbench Setup: Data/earthone/user-interfaces/workbench.md
+        - Overview: data/earthone/user-interfaces/earthone-user-interfaces.md
+        - Explorer UI: data/earthone/user-interfaces/earthone-explorer-ui.md
+        - Workbench Setup: data/earthone/user-interfaces/workbench.md
       - Platform Updates:
-        - Introducing EarthOne: Data/earthone/platform-updates/introducing-earthone.md
+        - Introducing EarthOne: data/earthone/platform-updates/introducing-earthone.md
       - Python Client:
-        - Data/earthone/earthone-python/index.md
-        - Auth: Data/earthone/earthone-python/auth.md
-        - Catalog: Data/earthone/earthone-python/catalog.md
-        - Compute: Data/earthone/earthone-python/compute.md
-        - Vector: Data/earthone/earthone-python/vector.md
-        - Config: Data/earthone/earthone-python/config.md
-        - Exceptions: Data/earthone/earthone-python/exceptions.md
+        - data/earthone/earthone-python/index.md
+        - Auth: data/earthone/earthone-python/auth.md
+        - Catalog: data/earthone/earthone-python/catalog.md
+        - Compute: data/earthone/earthone-python/compute.md
+        - Vector: data/earthone/earthone-python/vector.md
+        - Config: data/earthone/earthone-python/config.md
+        - Exceptions: data/earthone/earthone-python/exceptions.md
     - Collections:
-      - Data/Collections/index.md
+      - data/collections/index.md
       - Imagery:
-        - Sentinel-2: Data/Collections/sentinel-2.md
-        - Landsat: Data/Collections/landsat.md
-        - Sentinel-1: Data/Collections/sentinel-1.md
-        - Venus: Data/Collections/venus.md
-        - EarthDaily Constellation Preview: Data/Collections/edc-preview.md
+        - Sentinel-2: data/collections/sentinel-2.md
+        - Landsat: data/collections/landsat.md
+        - Sentinel-1: data/collections/sentinel-1.md
+        - Venus: data/collections/venus.md
+        - EarthDaily Constellation Preview: data/collections/edc-preview.md
       - Masks:
-        - EDA Cloud Masks: Data/Collections/cloudmasks.md
-        - Cropland Data Layer US: Data/Collections/cropland-data-layer.md
+        - EDA Cloud Masks: data/collections/cloudmasks.md
+        - Cropland Data Layer US: data/collections/cropland-data-layer.md
       - Mosaics & Composites:
-        - AI Ready Mosaics: Data/Collections/ai-ready-mosaics.md
+        - AI Ready Mosaics: data/collections/ai-ready-mosaics.md
       - Foundational Analytics:
-        - Biomass, Tree Height & Cover: Data/Collections/biomass.md
-        - Forest Mask: Data/Collections/forest-mask.md
+        - Biomass, Tree Height & Cover: data/collections/biomass.md
+        - Forest Mask: data/collections/forest-mask.md
   - Mining:
     - mining/index.md
     - Marigold:
@@ -886,8 +886,8 @@ nav:
           - Tailings pond water: mining/iris/using-iris/water-viewer.md
   - SkyForest: https://skyforest.io/
   - Help: 
-    - How to get support: Support/help.md
-    - Freqently Asked Questions: Support/FAQ.md
+    - How to get support: support/help.md
+    - Freqently Asked Questions: support/FAQ.md
 #  - News:
 #    - blog/index.md
 #    - blog/tags.md

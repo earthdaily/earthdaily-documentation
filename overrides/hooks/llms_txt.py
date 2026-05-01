@@ -21,19 +21,19 @@ except ImportError:
 # -----------------------------------------------------------------------------
 
 INCLUDE_FOLDERS = [
-    "Agro/Library",
-    "Agro/Digital_ag",
-    "Agro/Cropid",
-    "Agro/Commodities_intelligence",
-    "Data/Collections",
-    "Data/earthplatform",
-    "Data/earthone",
+    "agro/library",
+    "agro/digital_ag",
+    "agro/cropid",
+    "agro/commodities_intelligence",
+    "data/collections",
+    "data/earthplatform",
+    "data/earthone",
     "mining",
-#    "Agro/Portfolio",
-#    "Agro/Parametric",
-#    "Agro/Territory_insights",
-#    "Agro/App",
-#    "Agro/QGIS",
+#    "agro/portfolio",
+#    "agro/parametric",
+#    "agro/territory_insights",
+#    "agro/app",
+#    "agro/qgis",
 #    "Support",
 ]
 
