@@ -211,7 +211,7 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 
 ## Copyrights
 
-© 2026 Geosys Holdings ULC, an Antarctica Capital portfolio company | All Rights Reserved.
+© 2026 EarthDaily Analytics | All Rights Reserved.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

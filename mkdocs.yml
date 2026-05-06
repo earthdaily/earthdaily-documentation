@@ -641,6 +641,75 @@ hooks:
 # +--------------------------------------------------------------------------------------------------------+
 nav:
   - Home: index.md
+  - Data
+  - EarthOne:
+    - data/index.md
+    - EarthPlatform:
+      - data/earthplatform/index.md
+      - Getting Started:
+        - data/earthplatform/getting-started/index.md
+        - Welcome: data/earthplatform/getting-started/welcome.md
+        - API Authentication: data/earthplatform/getting-started/authentication.md
+        - Quick Start: data/earthplatform/getting-started/quickstart.md
+      - Console:
+        - data/earthplatform/console/index.md
+        - New Login Experience: data/earthplatform/console/new-login.md
+        - Account Information: data/earthplatform/console/account.md
+        - EarthPlatform: data/earthplatform/console/earthplatform.md
+        - EarthMosaics: data/earthplatform/console/earthmosaics.md
+      - API:
+        - data/earthplatform/api/index.md
+        - STAC Specification: data/earthplatform/api/api-design/stac.md
+        - API Details and Limits: data/earthplatform/api/api-design/details-and-limits.md
+        - Endpoints: data/earthplatform/api/api-usage/endpoints.md
+        - Command Line Examples: data/earthplatform/api/api-usage/commandline.md
+        - Postman Examples: data/earthplatform/api/api-usage/postman.md
+        - Python Examples: data/earthplatform/api/api-usage/python.md
+        - EDA STAC Extension: data/earthplatform/api/extensions/eda-extension.md
+        - EDA Data Coverage Extension: data/earthplatform/api/extensions/eda-data-coverage.md
+      - EDS Examples: data/earthplatform/examples.md
+      - EDA Mosaics: data/earthplatform/mosaics.md
+      - FAQs: data/earthplatform/faq/index.md
+    - EarthOne:
+      - data/earthone/index.md
+      - Getting Started:
+        - Getting Access: data/earthone/getting-started/access.md
+        - Key Features: data/earthone/getting-started/api-features.md
+        - Understanding Your Usage: data/earthone/getting-started/usage.md
+      - Platform APIs:
+        - Installation: data/earthone/platform-apis/installation.md
+        - Catalog API: data/earthone/platform-apis/earthone-catalog-api.md
+        - Compute API: data/earthone/platform-apis/earthone-compute-api.md
+      - User Interfaces:
+        - Overview: data/earthone/user-interfaces/earthone-user-interfaces.md
+        - Explorer UI: data/earthone/user-interfaces/earthone-explorer-ui.md
+        - Workbench Setup: data/earthone/user-interfaces/workbench.md
+      - Platform Updates:
+        - Introducing EarthOne: data/earthone/platform-updates/introducing-earthone.md
+      - Python Client:
+        - data/earthone/earthone-python/index.md
+        - Auth: data/earthone/earthone-python/auth.md
+        - Catalog: data/earthone/earthone-python/catalog.md
+        - Compute: data/earthone/earthone-python/compute.md
+        - Vector: data/earthone/earthone-python/vector.md
+        - Config: data/earthone/earthone-python/config.md
+        - Exceptions: data/earthone/earthone-python/exceptions.md
+    - Collections:
+      - data/collections/index.md
+      - Imagery:
+        - Sentinel-2: data/collections/sentinel-2.md
+        - Landsat: data/collections/landsat.md
+        - Sentinel-1: data/collections/sentinel-1.md
+        - Venus: data/collections/venus.md
+        - EarthDaily Constellation Preview: data/collections/edc-preview.md
+      - Masks:
+        - EDA Cloud Masks: data/collections/cloudmasks.md
+        - Cropland Data Layer US: data/collections/cropland-data-layer.md
+      - Mosaics & Composites:
+        - AI Ready Mosaics: data/collections/ai-ready-mosaics.md
+      - Foundational Analytics:
+        - Biomass, Tree Height & Cover: data/collections/biomass.md
+        - Forest Mask: data/collections/forest-mask.md
   - Agriculture: 
     - agro/index.md
     - PRODUCTS:
@@ -724,74 +793,6 @@ nav:
         - Baresoil: agro/library/baresoil.md
       - Regional Analytics:
         - Regional Monitoring: agro/library/Regional_Monitoring.md
-  - Data:
-    - data/index.md
-    - EarthPlatform:
-      - data/earthplatform/index.md
-      - Getting Started:
-        - data/earthplatform/getting-started/index.md
-        - Welcome: data/earthplatform/getting-started/welcome.md
-        - API Authentication: data/earthplatform/getting-started/authentication.md
-        - Quick Start: data/earthplatform/getting-started/quickstart.md
-      - Console:
-        - data/earthplatform/console/index.md
-        - New Login Experience: data/earthplatform/console/new-login.md
-        - Account Information: data/earthplatform/console/account.md
-        - EarthPlatform: data/earthplatform/console/earthplatform.md
-        - EarthMosaics: data/earthplatform/console/earthmosaics.md
-      - API:
-        - data/earthplatform/api/index.md
-        - STAC Specification: data/earthplatform/api/api-design/stac.md
-        - API Details and Limits: data/earthplatform/api/api-design/details-and-limits.md
-        - Endpoints: data/earthplatform/api/api-usage/endpoints.md
-        - Command Line Examples: data/earthplatform/api/api-usage/commandline.md
-        - Postman Examples: data/earthplatform/api/api-usage/postman.md
-        - Python Examples: data/earthplatform/api/api-usage/python.md
-        - EDA STAC Extension: data/earthplatform/api/extensions/eda-extension.md
-        - EDA Data Coverage Extension: data/earthplatform/api/extensions/eda-data-coverage.md
-      - EDS Examples: data/earthplatform/examples.md
-      - EDA Mosaics: data/earthplatform/mosaics.md
-      - FAQs: data/earthplatform/faq/index.md
-    - EarthOne:
-      - data/earthone/index.md
-      - Getting Started:
-        - Getting Access: data/earthone/getting-started/access.md
-        - Key Features: data/earthone/getting-started/api-features.md
-        - Understanding Your Usage: data/earthone/getting-started/usage.md
-      - Platform APIs:
-        - Installation: data/earthone/platform-apis/installation.md
-        - Catalog API: data/earthone/platform-apis/earthone-catalog-api.md
-        - Compute API: data/earthone/platform-apis/earthone-compute-api.md
-      - User Interfaces:
-        - Overview: data/earthone/user-interfaces/earthone-user-interfaces.md
-        - Explorer UI: data/earthone/user-interfaces/earthone-explorer-ui.md
-        - Workbench Setup: data/earthone/user-interfaces/workbench.md
-      - Platform Updates:
-        - Introducing EarthOne: data/earthone/platform-updates/introducing-earthone.md
-      - Python Client:
-        - data/earthone/earthone-python/index.md
-        - Auth: data/earthone/earthone-python/auth.md
-        - Catalog: data/earthone/earthone-python/catalog.md
-        - Compute: data/earthone/earthone-python/compute.md
-        - Vector: data/earthone/earthone-python/vector.md
-        - Config: data/earthone/earthone-python/config.md
-        - Exceptions: data/earthone/earthone-python/exceptions.md
-    - Collections:
-      - data/collections/index.md
-      - Imagery:
-        - Sentinel-2: data/collections/sentinel-2.md
-        - Landsat: data/collections/landsat.md
-        - Sentinel-1: data/collections/sentinel-1.md
-        - Venus: data/collections/venus.md
-        - EarthDaily Constellation Preview: data/collections/edc-preview.md
-      - Masks:
-        - EDA Cloud Masks: data/collections/cloudmasks.md
-        - Cropland Data Layer US: data/collections/cropland-data-layer.md
-      - Mosaics & Composites:
-        - AI Ready Mosaics: data/collections/ai-ready-mosaics.md
-      - Foundational Analytics:
-        - Biomass, Tree Height & Cover: data/collections/biomass.md
-        - Forest Mask: data/collections/forest-mask.md
   - Mining:
     - mining/index.md
     - Marigold:
@@ -884,7 +885,7 @@ nav:
           - Running quicklook: mining/iris/using-iris/running-quicklook.md
           - GVM viewer: mining/iris/using-iris/gvm-viewer.md
           - Tailings pond water: mining/iris/using-iris/water-viewer.md
-  - SkyForest: https://skyforest.io/
+  - Forestry: https://skyforest.io/
   - Help: 
     - How to get support: support/help.md
     - Freqently Asked Questions: support/FAQ.md
