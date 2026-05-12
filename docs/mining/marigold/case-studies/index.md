@@ -11,7 +11,7 @@ keywords:
 
 ![image](../images/case-studies.png)
 
-# Case studies
+## Case studies
 
 [Case Study 1](case-study-1.md): Cuprite (low sulphidation epithermal)\
 [Case Study 2](case-study-2.md): Salares Norte (high sulphidation epithermal)

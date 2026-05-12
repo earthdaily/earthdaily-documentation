@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# UMAP
+## UMAP
 
 The **UMAP dimensionality reduction** tool offers a workflow for dimensionality
 reduction and clustering that is particularly useful for high dimensional data,
@@ -30,7 +30,7 @@ with Noise).
     [HDBSCAN](https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14).
 <!-- prettier-ignore-end -->
 
-## Selecting data
+### **Selecting data**
 
 ![image](images/umap-diag1.png)
 
@@ -50,7 +50,7 @@ next step.
     Data will be limited to 50,000 points to manage runtimes.
 <!-- prettier-ignore-end -->
 
-## Parameterize UMAP
+### **Parameterize UMAP**
 
 ![image](images/umap-diag-pg2.png)
 
@@ -156,7 +156,7 @@ show the location on the map in a [vector layer](../vector-layers/index.md) call
     position for the input points relative to all of the others.
 <!-- prettier-ignore-end -->
 
-## Cluster data
+### **Cluster data**
 
 ![image](images/umap-cluster-diag.png)
 

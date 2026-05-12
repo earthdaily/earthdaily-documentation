@@ -11,14 +11,14 @@ keywords:
   - Marigold
 ---
 
-# Vegetation mask
+## Vegetation mask
 
 The **Vegetation mask** tool is used to identify and mask out vegetation in a
 layer when you do not want to consider vegetated areas in your analysis.
 Creating a vegetation mask is often one of the first steps in a mineral
 exploration workflow as vegetation conceals the underlying geology.
 
-## Usage
+### **Usage**
 
 - Use the **MERIS terrestrial chlorophyll index (MTCI) threshold** slider in the
   preview pane to detect and mask out healthy vegetation. The lower the value,

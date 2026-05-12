@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Create RGB
+## Create RGB
 
 ![image](images/create-rgb.png)
 
@@ -21,7 +21,7 @@ compare the two images without having to modify the
 [settings](../raster-layers/layer-settings.md#basic-layer-settings) of the
 original layer
 
-## Usage
+### **Usage**
 
 The Create RGB dialog allows you to select a raster layer from which the
 composite will be created. Once done, use the R/G/B channel dropdowns to map a

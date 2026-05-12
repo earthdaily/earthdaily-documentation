@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Batch mask
+## Batch mask
 
 Generally during a remote sensing workflow, several masks will need to be
 applied to a data layer before analysis can begin.
@@ -20,7 +20,7 @@ areas, restricted land, etc) will need to be removed as well. The **batch mask**
 tool allows a user to apply several masks to many layers at once, quickly
 preparing layers for further analysis.
 
-## Usage
+### **Usage**
 
 Once all your masks are built and properly assigned as
 [masks](../raster-layers/index.md#toggle-as-mask), the batch mask tool will show

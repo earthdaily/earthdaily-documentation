@@ -11,11 +11,11 @@ keywords:
   - GeoPackage
 ---
 
-# Add vector layers
+## Add vector layers
 
 Iris supports several methods for adding vector layers to your current viewer.
 
-## Draw a vector layer
+### **Draw a vector layer**
 
 ![image](images/vec-draw.png)
 
@@ -44,7 +44,7 @@ Click on the map to draw the desired vector object.
 - For polylines, finalize by clicking the last point.
 - For points, each individual point will be drawn separately.
 
-## Upload a GeoJSON layer
+### **Upload a GeoJSON layer**
 
 Select the `Upload vector` option to load a vector layer from your local
 computer. Valid formats for loading vectors include:
@@ -69,7 +69,7 @@ computer. Valid formats for loading vectors include:
 
 <!-- prettier-ignore-end -->
 
-## Load from S3
+### **Load from S3**
 
 This is a special option that loads specific polygons associated with customizations requested for a customer site. This option can
 only be used after a [deformation layer](./adding-deformation-layers.md) has been added for visualization.

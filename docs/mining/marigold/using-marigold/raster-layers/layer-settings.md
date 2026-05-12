@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Layer settings
+## Layer settings
 
 A layer's settings dialog offers many options for modifying properties of your layer.
 
@@ -21,7 +21,7 @@ A layer's settings dialog offers many options for modifying properties of your l
     undo your changes with the `Cancel` button!
 <!-- prettier-ignore-end -->
 
-## Basic layer settings
+### **Basic layer settings**
 
 The first page of the dialog contains basic layer settings such as name, visible bands,
 and display contrast.
@@ -119,7 +119,7 @@ Low and/or high values can be masked by selecting `Mask low values` and
     for high masking.
 <!-- prettier-ignore-end -->
 
-## Advanced layer settings
+### **Advanced layer settings**
 
 Clicking the `Advanced layer settings` at the bottom of the dialog will bring
 up advanced visualization options for the layer.

@@ -10,20 +10,20 @@ keywords:
   - Marigold
 ---
 
-# Starting a Marigold session
+## Starting a Marigold session
 
 When you load the Marigold app, you will see a splash screen with options for
 easily loading your projects and bookmarks.
 
 ![image](images/splash.png)
 
-## Start a new project
+### **Start a new project**
 
 This option will start a new Marigold project at the current map location. By default,
 the Sentinel-2 Bare Earth Composite will be loaded into your session. This option is
 useful if you are starting a new analysis workflow.
 
-## Bookmarks
+### **Bookmarks**
 
 A list of your saved [bookmarks](header.md#bookmarks) will appear here.
 Selecting one will move the Marigold map to the bookmarked location, as well as indicate
@@ -38,7 +38,7 @@ the location on the inset map.
 
 <!-- prettier-ignore-end -->
 
-## Recent projects
+### **Recent projects**
 
 A list of your seven most recent projects will appear here. As with bookmarks,
 selecting one will indicate on the map where the save is located.
@@ -55,19 +55,19 @@ selecting one will indicate on the map where the save is located.
 Click the `Load selected project` button to load the project selected from the
 dropdown.
 
-## View all saved projects
+### **View all saved projects**
 
 This button will bring up the standard
 [load project](save-and-load.md#loading-a-project) dialog for access to all of
 your saved projects.
 
-## Upload .sav
+### **Upload .sav**
 
 This option will allow you to upload a saved project from your computer. Once
 uploaded, this project will be at the top of the
 [recent projects](#recent-projects) list.
 
-## Load latest save
+### **Load latest save**
 
 This option loads the most recent [save](save-and-load.md).
 

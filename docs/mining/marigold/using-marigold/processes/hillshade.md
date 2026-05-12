@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Create a hillshade
+## Create a hillshade
 
 Hillshading a raster layer is a process that adds shading to the image with the
 goal of simulating sunlight to create 3D effects. While the process is
@@ -30,7 +30,7 @@ raster layer to highlight the shaded features.
 
 ![image](images/hillshade-dialog.png)
 
-## Select input layer
+### **Select input layer**
 
 Select an input layer and band from which the hillshade will be computed.
 
@@ -41,13 +41,13 @@ Select an input layer and band from which the hillshade will be computed.
 
 <!-- prettier-ignore-end -->
 
-## Sun angle
+### **Sun angle**
 
 Use the sun angle slider to change the angle of the sun in the computation.
 
 ![image](images/hillshade-angle.gif)
 
-## Sun azimuth
+### **Sun azimuth**
 
 Use the sun azimuth slider to change the angle of the sun in the computation
 
@@ -60,7 +60,7 @@ Use the sun azimuth slider to change the angle of the sun in the computation
 
 <!-- prettier-ignore-end -->
 
-## Z factor
+### **Z factor**
 
 The z factor parameter scales the data before computing the hillshade. This is
 useful for low relief areas, or when hillshading non-terrain layers.
@@ -76,7 +76,7 @@ useful for low relief areas, or when hillshading non-terrain layers.
 
 <!-- prettier-ignore-end -->
 
-## Opacity
+### **Opacity**
 
 Visualization
 [opacity](../raster-layers/layer-settings.md#adjust-layer-transparency) of the
@@ -87,7 +87,7 @@ hillshade to the layer.
 
 ![image](images/hillshade-overlay.png)
 
-## Updating an existing hillshade
+### **Updating an existing hillshade**
 
 Choosing the `Modify existing hillshade` option will allow you to modify a
 hillshade that has already been created.

@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Band ratio
+## Band ratio
 
 The **Band ratio** tool divides one spectral band by another to highlight or
 suppress certain features of mineral groups.

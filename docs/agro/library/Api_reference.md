@@ -375,7 +375,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     Large-scale crop monitoring and analytics for regions, counties, and administrative boundaries. Supports portfolio analysis and market intelligence.
     
-    [:simple-swagger: Swagger](http://api.geosys.internal/Agriquest/Geosys.AgriQuest.CropMonitoring.WebApi/v0/swagger/ui/index){ .md-button }
+    [:simple-swagger: Swagger](https://api.geosys-na.net/Agriquest/Geosys.AgriQuest.CropMonitoring.WebApi/v0/swagger/ui/index){ .md-button }
     [:octicons-link-external-16: Details](./Regional_Monitoring.md){ .md-button }
 
 </div>

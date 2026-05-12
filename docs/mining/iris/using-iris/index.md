@@ -10,11 +10,11 @@ keywords:
   - EarthDaily
 ---
 
-# ![image](images/iris-icon.png) Intro to Iris
+## ![image](images/iris-icon.png) Intro to Iris
 
 An overview of the Iris application and the basic processing and visualization tools.
 
-## Basic functionality and adding layers
+### **Basic functionality and adding layers**
 
 [Header bar functions]\
 [Add deformation layers]\
@@ -22,12 +22,12 @@ An overview of the Iris application and the basic processing and visualization t
 [Vector layers]\
 [Export data]
 
-## Visualization settings
+### **Visualization settings**
 
 [Map settings]\
 [Time-series settings]
 
-## Advanced processing
+### **Advanced processing**
 
 [Running quicklook]\
 [GVM viewer]

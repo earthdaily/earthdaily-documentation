@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Raster calculator
+## Raster calculator
 
 The **Raster calculator** executes mathematical expressions from bands and
 arithmetic operators.

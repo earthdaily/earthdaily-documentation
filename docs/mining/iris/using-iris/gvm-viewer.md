@@ -11,13 +11,13 @@ keywords:
   - cumulative velocity
 ---
 
-# Global velocity viewer
+## Global velocity viewer
 
 The **Global velocity viewer** is a tool to work with our **Global InSAR Velocity Layer** within Iris.
 
 ![image](images/GVV-overview.gif)
 
-## Usage
+### **Usage**
 
 To query points, click on the map to view the velocity data for the selected point. Velocities represent the average velocity over the calendar year displayed. To get exact values, toggle over the points.
 

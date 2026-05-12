@@ -10,12 +10,12 @@ keywords:
   - Marigold
 ---
 
-# HSI image explorer
+## HSI image explorer
 
 The **HSI image explorer** tool allows you to query the EarthOne Catalog for
 public Hyperspectral data.
 
-## Usage
+### **Usage**
 
 ![image](images/hsi-image-main.png)
 

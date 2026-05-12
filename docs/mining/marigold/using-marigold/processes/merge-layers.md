@@ -10,14 +10,14 @@ keywords:
   - Marigold
 ---
 
-# Merge layers
+## Merge layers
 
 The **Merge layers** tool allows you to add bands from multiple layers
 into a single product. Merging layers allows you to create unique
 visualizations, and to combine data from multiple sources for input
 to processes like [PCA](pca.md).
 
-## Usage
+### **Usage**
 
 ![image](images/merge-layers.png)
 

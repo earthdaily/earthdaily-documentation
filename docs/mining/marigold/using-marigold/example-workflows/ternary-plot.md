@@ -10,7 +10,7 @@ keywords:
   - mineral mapping
 ---
 
-# Ternary plot
+## Ternary plot
 
 **Ternary plots** are RGB maps of spectral band ratios, which take advantage of
 known absorption spectra to highlight mineral groups. The ternary plot takes

@@ -10,12 +10,12 @@ keywords:
   - Marigold
 ---
 
-# Processing basics
+## Processing basics
 
 Marigold supports a wide variety of processing tools that share many
 components in common.
 
-## Selecting a product
+### **Selecting a product**
 
 The first decision for most tools is the input product for the process.
 This is often in the form of a dropdown list containing available products
@@ -35,7 +35,7 @@ for selection.
     are added to the project.
 <!-- prettier-ignore-end -->
 
-## Selecting bands
+### **Selecting bands**
 
 For most processes, you have the choice of what bands in the layer to process.
 For example, with hyperspectral datasets it is often useful to limit analysis to
@@ -57,7 +57,7 @@ the position of the selected bands on the graph.
 
 ![image](images/dialog-bands-spec-wls.gif)
 
-## Selecting spectra
+### **Selecting spectra**
 
 For processes that use spectral data such as [spectral angle mapper](sam.md),
 a list of available vectors and spectra will be presented as well. Spectra will
@@ -76,7 +76,7 @@ spectrum over the vector.
     band plot.
 <!-- prettier-ignore-end -->
 
-## Selecting an AOI
+### **Selecting an AOI**
 
 ![image](images/dialog-aoi.png)
 
@@ -91,7 +91,7 @@ compute over the current map viewport.
     Low zoom levels can create very large AOI!
 <!-- prettier-ignore-end -->
 
-## Output layers
+### **Output layers**
 
 Dialogs will have an area to input a name for the resulting output layer. Many
 dialogs will generate a "preview" layer with this name that will update as you

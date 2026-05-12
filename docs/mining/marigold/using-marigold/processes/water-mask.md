@@ -10,12 +10,12 @@ keywords:
   - Marigold
 ---
 
-# Water mask
+## Water mask
 
 The **Water mask** tool is used to identify and mask out water in a layer when
 you do not want to consider areas under water in your analysis.
 
-## Usage
+### **Usage**
 
 - Use the single slider to select the frequency of scenes for which a pixel
   marked as water must have water in it. A low value, such as 10, will reveal

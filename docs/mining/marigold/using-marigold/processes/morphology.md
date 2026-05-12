@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Morphological operations
+## Morphological operations
 
 ![image](images/morph-erode-dilate.gif)
 
@@ -25,19 +25,19 @@ to a layer. Currently, the tool supports erosion and dilation of a single band.
 
 <!-- prettier-ignore-end -->
 
-## Select input layer
+### **Select input layer**
 
 ![image](images/morph-diag.png)
 
 The Morphology dialog allows you to select the [product](index.md#selecting-a-product)
 and an input band to apply the operation on.
 
-## Operation
+### **Operation**
 
 Select the operation to apply to the chosen layer and band. Currently supports
 erosion and dilation.
 
-## Operation kernel size
+### **Operation kernel size**
 
 Size of the kernel, in meters.
 
@@ -48,7 +48,7 @@ Size of the kernel, in meters.
 
 <!-- prettier-ignore-end -->
 
-## Output layer name
+### **Output layer name**
 
 Choose a name for the output layer.
 

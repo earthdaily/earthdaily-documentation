@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Canny edge detection
+## Canny edge detection
 
 ![image](images/canny-main.png)
 
@@ -49,7 +49,7 @@ with the edges for further analysis.
 
 <!-- prettier-ignore-end -->
 
-## Select input layer
+### **Select input layer**
 
 The Canny edge detection dialog allows you to select the
 [product](index.md#selecting-a-product) and an input band to detect edges from.
@@ -61,7 +61,7 @@ The Canny edge detection dialog allows you to select the
 
 <!-- prettier-ignore-end -->
 
-## Low and high thresholds
+### **Low and high thresholds**
 
 ![image](images/canny-thresh.gif)
 
@@ -69,7 +69,7 @@ The low and high threshold values determine the cutoff points for finding edges
 in the gradients. In general, lowering these values will allow more points to be
 classified as edges.
 
-## Smoothing sigma
+### **Smoothing sigma**
 
 ![image](images/canny-sig.gif)
 
@@ -77,12 +77,12 @@ The standard deviation for the Gaussian smoothing kernel. Higher values
 corresponds to a more aggressive smoothing, which will clean noise in the image
 at the potential cost of smoothing more edges.
 
-## Area of interest
+### **Area of interest**
 
 If Compute access is available, select the [AOI](index.md#selecting-an-aoi) over which
 the final vectors will be generated.
 
-## Detect edges
+### **Detect edges**
 
 When you are happy with the edge detection parameters, click the `Detect edges`
 button to start a Compute task that will compute Vector edges.

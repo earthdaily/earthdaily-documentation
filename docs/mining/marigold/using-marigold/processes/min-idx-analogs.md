@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Mineral index analogs
+## Mineral index analogs
 
 Manipulating bands of multispectral data to obtain different
 [mineral indices](mineral-indices.md) is a convenient way to identify
@@ -24,7 +24,7 @@ The **mineral index analogs** tool allows a subset of mineral indices
 to be computed for hyperspectral data, providing a convenient method
 for generating initial screening products.
 
-## Usage
+### **Usage**
 
 ![image](images/mindex-analogs.png)
 

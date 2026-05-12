@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Compositional mapping
+## Compositional mapping
 
 ![image](images/compmap-firstpic.png)
 
@@ -38,7 +38,7 @@ Compositional mapping starts with choosing the [raster layer](index.md#selecting
     Only hyperspectral data can be used with this tool.
 <!-- prettier-ignore-end -->
 
-## Choosing a mineral
+### **Choosing a mineral**
 
 ![image](images/compmap-basic-diag.png)
 
@@ -61,7 +61,7 @@ meaning that this pixel will be chosen as long as the value of the slider is les
 the slider references the difference between the maximum and minimum values.In this case, the value is
 approximately 0.05.
 
-## Mineral definitions
+### **Mineral definitions**
 
 Each pre-defined mineral map is generated with a combination of absorptions and indices.
 

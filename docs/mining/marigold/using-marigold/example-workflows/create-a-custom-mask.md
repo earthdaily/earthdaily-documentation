@@ -9,7 +9,7 @@ keywords:
   - Marigold workflow
 ---
 
-# Create a custom mask
+## Create a custom mask
 
 Use the [Raster calculator] tool to create
 a custom mask.

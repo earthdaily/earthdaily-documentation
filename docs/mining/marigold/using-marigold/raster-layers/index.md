@@ -10,21 +10,21 @@ keywords:
   - Marigold
 ---
 
-# Raster layers
+## Raster layers
 
 Raster layers are the primary data object in a Marigold session. Add layers to
 your maps and configure your layer settings using the **Raster layers** section
 on the left side panel. Marigold will display layers "top down," meaning that
 layers at the top of the list will appear above layers underneath.
 
-## Add raster layers
+### **Add raster layers**
 
 Raster layers can be added from
 [Catalog](add-layers.md#add-a-raster-layer-from-the-catalog), or layers
 [exported](add-layers.md#add-an-exported-raster-layer) from other Marigold
 projects.
 
-## Basic layer configuration
+### **Basic layer configuration**
 
 Visibility and ordering settings can be modified from a layer's row in the list.
 
@@ -57,7 +57,7 @@ Use the up and down arrows to rearrange the layer order.
 
 ![image](images/layer-row-move.png)
 
-## More configuration options
+### **More configuration options**
 
 More advanced configuration options are available from the overflow menu in the
 layer's row.
@@ -127,7 +127,7 @@ Select **Remove** to remove a layer from the Marigold project.
 
 <!-- prettier-ignore-end -->
 
-## Bulk layer operations
+### **Bulk layer operations**
 
 Shortcuts are available for manipulating several layers at once.
 

@@ -12,7 +12,7 @@ keywords:
   - risk management
 ---
 
-# What is Iris?
+## What is Iris?
 
 At the core of Iris lies the innovative use of Interferometric Synthetic
 Aperture Radar (InSAR) technology. This groundbreaking technology transcends
@@ -24,7 +24,7 @@ the preservation of critical assets.
 
 ![image](images/iris-ui.png)
 
-## Working with Iris
+### **Working with Iris**
 
 Iris allows you to quickly and interactively access deformation over assets of
 interest, allowing you to make quick decisions regarding the stability and
@@ -47,7 +47,7 @@ Sentinel-1 global coverage allows users to have continuous monitoring anywhere
 on the planet, or to run one-off analyses to understand where and when motion
 may be occurring.
 
-## Getting started with Iris
+### **Getting started with Iris**
 
 ### New to InSAR?
 

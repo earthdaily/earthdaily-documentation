@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Mask vegetation and water in your imagery
+## Mask vegetation and water in your imagery
 
 After creating a [Vegetation mask] and a [Water mask], you can combine them into
 a single mask using the [Merge layers] tool and the [Raster calculator]. This

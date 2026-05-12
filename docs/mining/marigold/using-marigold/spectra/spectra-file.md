@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Load spectra from external file
+## Load spectra from external file
 
 Spectra can be brought into Marigold from several types of sources:
 
@@ -23,7 +23,7 @@ All of these methods are available by opening the Spectra menu and selecting
 
 ![image](images/spec-menu-add.png)
 
-## ASCII spectra
+### **ASCII spectra**
 
 ASCII spectral libraries can be loaded into Marigold.
 
@@ -42,7 +42,7 @@ ASCII spectral libraries can be loaded into Marigold.
    now available for further use.\
    ![image](images/spectra-ascii-loaded.png)
 
-## Instrument spectra
+### **Instrument spectra**
 
 Marigold can load binary files from spectrometers such as _what are some brands
 of these things_.
@@ -56,7 +56,7 @@ of these things_.
 4. Spectra will be loaded into the project for further use.\
    ![image](images/spectra-file-inst-loaded.png)
 
-## Marigold spectral library
+### **Marigold spectral library**
 
 Spectra that have been
 [saved from another Marigold project](index.md#save-a-spectral-library) can be

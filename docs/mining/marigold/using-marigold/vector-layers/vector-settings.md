@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Vector layer settings
+## Vector layer settings
 
 As with [raster layers](../raster-layers/layer-settings.md), vector layers have
 a settings dialog to modify visualization properties of the layer.
@@ -25,24 +25,24 @@ a settings dialog to modify visualization properties of the layer.
 
 <!-- prettier-ignore-end -->
 
-## Rename a layer
+### **Rename a layer**
 
 Modify the `Layer name` field to change the name of the layer. The name will
 change in the list automatically.
 
-## Border weight
+### **Border weight**
 
 ![image](images/vec-settings2.png)
 
 Adjust the weight of the border lines of the vector.
 
-## Radius for point data
+### **Radius for point data**
 
 ![image](images/vec-settings-radius.png)
 
 Adjust the radius for point data.
 
-## Border and fill color and opacity
+### **Border and fill color and opacity**
 
 Adjust the border and fill color and opacity.
 
@@ -53,7 +53,7 @@ Adjust the border and fill color and opacity.
 
 <!-- prettier-ignore-end -->
 
-## Color by property
+### **Color by property**
 
 If your vector data has properties, such as geochemical samples or geologic
 units, the properties can be used for coloring the layer.

@@ -10,12 +10,12 @@ keywords:
   - Marigold
 ---
 
-# Exporting layers
+## Exporting layers
 
 Layers can be exported for input into other Marigold projects, or as Geotiffs
 for use in other GIS packages.
 
-## Export a layer for Marigold
+### **Export a layer for Marigold**
 
 ![image](images/row-overflow-export.png)
 
@@ -52,7 +52,7 @@ Click `save` to export the layer. It will now appear in your list of exported
 layers, ready to [import](add-layers.md#add-an-exported-raster-layer) into a new
 project.
 
-## Export to Geotiff
+### **Export to Geotiff**
 
 If you need to view or analyze data in packages other than Marigold (such as
 QGIS), you can export layers as GeoTIFFs by using the GeoTIFF export tool. After
@@ -113,7 +113,7 @@ Select the layers to be exported.
 
 If desired, select a suffix to add to the exported name.
 
-## Export status
+### **Export status**
 
 After starting a GeoTIFF export, you can track the status and download the
 result using the `Export status` tool.

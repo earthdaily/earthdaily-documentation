@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Minimum noise fraction
+## Minimum noise fraction
 
 Minimum noise fraction (MNF) is a transform closely related to [PCA](pca.md),
 but with an added transformation to whiten any noise present in the data. The
@@ -23,7 +23,7 @@ This image shows the input Bare Earth Composite, MNF Component 1, and MNF
 component 15. As MNF orders the components by their signal to noise ratio, MNF
 15 is almost completely noise.
 
-## Usage
+### **Usage**
 
 The MNF dialog allows you to select the [product](index.md#selecting-a-product)
 and [bands](index.md#selecting-bands) for analysis in the same manner as PCA.

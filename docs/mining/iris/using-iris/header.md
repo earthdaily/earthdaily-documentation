@@ -11,14 +11,14 @@ keywords:
   - Iris interface
 ---
 
-# The Iris header bar
+## The Iris header bar
 
 The header bar in Iris contains several tools for adding baselayers,
 manipulating the map, and links to further information on Iris itself.
 
 ![image](images/header.png)
 
-## Bookmarks
+### **Bookmarks**
 
 ![image](images/header-bookmarks.png)
 
@@ -30,7 +30,7 @@ Clicking on a bookmark will move the map to the defined center and zoom. Click
 
 ![image](images/manage-bookmarks.png)
 
-## Basemaps
+### **Basemaps**
 
 ![image](images/header-basemaps.png)
 
@@ -38,13 +38,13 @@ Basemaps provide different images underlying the deformation points to
 help interpret what you're seeing on the map. These include free optical
 imagery, shaded relief, OpenStreetMap, and more.
 
-## Zoom and center
+### **Zoom and center**
 
 ![image](images/header-zoom-lat-long.png)
 
 Controls the center latitude/longitude value and zoom level of the map.
 
-## Pixel inspector
+### **Pixel inspector**
 
 ![image](images/header-picker.png)
 
@@ -54,14 +54,14 @@ start an inspector session, and click on the map to extract a point.
 Clicking the map in another location will move the inspection point and
 recompute the values shown in the box.
 
-## Changelog
+### **Changelog**
 
 ![image](images/header-changelog.png)
 
 Click this icon to bring up the release notes for the most recent Iris
 version.
 
-## Help
+### **Help**
 
 ![image](images/header-help.png)
 

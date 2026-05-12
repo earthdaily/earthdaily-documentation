@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Load spectra from library
+## Load spectra from library
 
 Spectra can be loaded from an available spectral library. The USGS Spectral
 Library is available for all users, as well as any user

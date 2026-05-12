@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Matched filter
+## Matched filter
 
 While we often assume that each pixel in our remote sensing datasets is
 homogeneous, in reality a single pixel will contain information from everything
@@ -32,7 +32,7 @@ from this mixed input.
 A matched filter result for Kaolinite. These results can be checked against
 ground truth data for confirmation.
 
-## Usage
+### **Usage**
 
 The matched filter dialog allows you to choose the
 [raster layer](index.md#selecting-a-product) and

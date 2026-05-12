@@ -10,12 +10,12 @@ keywords:
   - Marigold
 ---
 
-# Layer organization
+## Layer organization
 
 For Marigold projects with many raster layers, folders offer a way to organize
 layers in a natural way.
 
-## Create a new folder and add existing layers
+### **Create a new folder and add existing layers**
 
 ![image](images/plus-sign-folder.png)
 
@@ -35,7 +35,7 @@ folder to the project with the selected layers.
 
 <!-- prettier-ignore-end -->
 
-## Add single layer to folder
+### **Add single layer to folder**
 
 The `Folder management` option of a layer is useful for adding or removing a
 single layer from a folder.
@@ -52,7 +52,7 @@ Or leave both fields blank to remove the layer from its current folder.
 
 ![image](images/folder-layer-blank.png)
 
-## Folder configuration
+### **Folder configuration**
 
 Configuring folders is similar to configuring
 [individual layers](index.md#basic-layer-configuration).

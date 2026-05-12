@@ -11,12 +11,12 @@ keywords:
   - Marigold
 ---
 
-# Apply a mask
+## Apply a mask
 
 Masks are useful for visualizing where water, vegetation, and other features are
 present in a given land area and removing them before analysis.
 
-## Creating mask layers
+### **Creating mask layers**
 
 Mask layers can be created using the [vegetation mask](vegetation-mask.md) or
 [water mask](water-mask.md) tools, or created from a binary layer computed using
@@ -33,7 +33,7 @@ used in this dialog.
 
 <!-- prettier-ignore-end -->
 
-## Masking layers
+### **Masking layers**
 
 ![image](images/apply-mask-water.gif)
 

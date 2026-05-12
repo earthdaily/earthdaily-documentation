@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Data statistical analysis
+## Data statistical analysis
 
 The **Data statistical analysis** tool provides a simple method of
 removing bands that contain anomalous values. This is particularly
@@ -19,7 +19,7 @@ calibration bands or acquisition errors across some bands. This tool
 will allow you to remove such data so that the layer is ready for
 further analysis.
 
-## Usage
+### **Usage**
 
 ![image](images/data-stats1.png)
 

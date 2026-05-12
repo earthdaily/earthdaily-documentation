@@ -12,13 +12,13 @@ keywords:
   - standard deviation
 ---
 
-# Time series settings
+## Time series settings
 
 Controls for data displayed on the time series.
 
 ![image](images/time-series-settings-overview.png)
 
-## Measurement type
+### **Measurement type**
 
 In Iris, you have the ability to plot **Point**, **Area**, or **Transect**. **Point** is the default, and will correspond to the data at the green pointer on the map. To select points, simply drag the pointer to a new location on the map.
 
@@ -37,17 +37,17 @@ In Iris, you have the ability to plot **Point**, **Area**, or **Transect**. **Po
 
 ![image](images/transect.png)
 
-## Plot STD
+### **Plot STD**
 
 Clicking the `Plot STD` checkbox will plot the standard deviation for the layer, if it applies to the layer. If it does not apply to the selected layer, the checkbox will be greyed out.
 
-## Lock y-axis
+### **Lock y-axis**
 
 The lock y-axis button locks the time series to its current limits, instead of scaling the y-axis as you select different points to display. This can be particularly useful when comparing magnitudes of different points, or to watch the development of deformation over time along a transect.
 
 ![image](images/lock-y-axis.gif)
 
-## Show historical
+### **Show historical**
 
 This checkbox can be toggled on and off to look at the historical statistics of the data being plotted, if previous analyses exist. The historical analysis is the mean of all other analyses that were run that included this particular point.
 
@@ -62,11 +62,11 @@ If `Show historical` is checked as well as `Plot STD`, the standard deviation fo
 
 ![image](images/historical-std.png)
 
-## Pixel
+### **Pixel**
 
 This box gives the exact pixel location of the point you have selected in lat/long coordinates.
 
-## Use repositioned points
+### **Use repositioned points**
 
 The **Use repositioned points** button allows the points to be displayed either using their regularly-gridded locations at the given posting, our with point locations that have been corrected for DEM-errors.
 

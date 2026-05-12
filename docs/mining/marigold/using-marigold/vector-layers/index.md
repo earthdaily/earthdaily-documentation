@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Vector layers
+## Vector layers
 
 Marigold supports adding and displaying a wide variety of vector layers.
 Add layers to your maps and configure your layer settings using the
@@ -18,7 +18,7 @@ Add layers to your maps and configure your layer settings using the
 "top down," meaning that layers at the top of the list will appear above
 layers underneath.
 
-## Add vector layers
+### **Add vector layers**
 
 Vector layers can be added to the project from several sources:
 
@@ -26,7 +26,7 @@ Vector layers can be added to the project from several sources:
 - Vector [files](add-layers.md#upload-a-vector-layer)
 - Manually [drawing](add-layers.md#draw-a-vector-layer) a new layer
 
-## Layer properties
+### **Layer properties**
 
 Vector layers that have properties associated with features will show the properties in
 a popup window when clicking on a feature. This feature can be toggled on and off, and will be toggled off by default.
@@ -38,7 +38,7 @@ a popup window when clicking on a feature. This feature can be toggled on and of
     Property popups are not available for Vector tile layers with Point geometries.
 <!-- prettier-ignore-end -->
 
-## Basic layer configuration
+### **Basic layer configuration**
 
 Similar to [raster layers](../raster-layers/index.md), vector layers can be configured
 from the layer's row in the list.
@@ -55,7 +55,7 @@ Use the draw toggle to modify the layer by [drawing](add-layers.md#draw-a-vector
 
 ![image](images/vector-row-draw.png)
 
-## More configuration options
+### **More configuration options**
 
 More advanced configuration options are available from the overflow menu in the layer's
 row.

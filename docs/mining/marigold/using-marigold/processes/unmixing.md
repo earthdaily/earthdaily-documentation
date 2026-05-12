@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Spectral unmixing
+## Spectral unmixing
 
 The **Spectral unmixing** tool is used to separate an image into its component
 spectra. The user selects a set of [spectra](../spectra/index.md), termed
@@ -25,7 +25,7 @@ to the input pixel.
     [Compute](https://docs.earthone.earthdaily.com/guides/compute.html).
 <!-- prettier-ignore-end -->
 
-## Background
+### **Background**
 
 ![image](images/unmix-background.png)
 
@@ -43,7 +43,7 @@ of pure versus mixed pixels.
     Proper selection of endmember spectra is the most important step of the unmixing process.
 <!-- prettier-ignore-end -->
 
-## Selecting data
+### **Selecting data**
 
 The unmixing dialog allows you to choose the [raster layer](index.md#selecting-a-product)
 and [bands](index.md#selecting-bands) to use as input data, and
@@ -54,7 +54,7 @@ and [bands](index.md#selecting-bands) to use as input data, and
     Spectra will be automatically resampled to the data wavelengths if necessary.
 <!-- prettier-ignore-end -->
 
-## Output layer
+### **Output layer**
 
 ![image](images/unmix-output.png)
 
@@ -66,7 +66,7 @@ truth from [here](https://pubs.usgs.gov/publication/70196084))
 In addition, an error band is generated, representing the RMS error between the input image
 and the image as reconstructed by the abundance maps.
 
-## Unmixing parameters
+### **Unmixing parameters**
 
 Several parameters are available to control the unmixing process.
 

@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Spectral Query
+## Spectral Query
 
 Spectral information in a raster layer can be extracted in two ways: individual
 points Spectral query, or [extracted from vector layers.](spectra-vector.md). Note

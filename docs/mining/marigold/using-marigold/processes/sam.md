@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Spectral angle mapper
+## Spectral angle mapper
 
 The **Spectral angle mapper** can be used to find other areas of an
 image that match a given spectrum. The spectrum can be drawn from either
@@ -43,7 +43,7 @@ than those coming from the data directly, but both results show the same trend.
     Spectra will be automatically resampled to the data wavelengths if necessary.
 <!-- prettier-ignore-end -->
 
-## Usage
+### **Usage**
 
 The spectral angle mapper dialog allows you to choose the
 [raster layer](index.md#selecting-a-product) and [bands](index.md#selecting-bands)

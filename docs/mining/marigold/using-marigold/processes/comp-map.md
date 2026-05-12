@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Compositional mapping
+## Compositional mapping
 
 ![image](images/compmap-firstpic.png)
 
@@ -42,7 +42,7 @@ start with choosing the [raster layer](index.md#selecting-a-product) that will b
     Only hyperspectral data can be used with this tool.
 <!-- prettier-ignore-end -->
 
-## Option 1: Choose pre-selected criteria for selected minerals
+### **Option 1: Choose pre-selected criteria for selected minerals**
 
 ![image](images/compmap-basic-diag.png)
 
@@ -70,7 +70,7 @@ of an expected White Mica pixel in EnMap data before and after hull normalizatio
     Spectra can be explored in more detail using the [advanced tool](#exploring-spectra).
 <!-- prettier-ignore-end -->
 
-## Option 2: Manually define absorption points and indices
+### **Option 2: Manually define absorption points and indices**
 
 ### Defining absorption features
 
@@ -141,7 +141,7 @@ Indices can be computed be writing the equation for the index in the box, giving
 `Compute index`. The equation should be written such that `B1234` is the data point (band) closest to
 wavelength 1234nm.
 
-## Creating the final maps
+### **Creating the final maps**
 
 Once a selection of asorption points and indices have been defined, click `Create outputs` to combine them
 and create the final maps.
@@ -186,7 +186,7 @@ absorption at 2160nm which is associated with Kaolinites.
     in the basic dialog.
 <!-- prettier-ignore-end -->
 
-## Mineral definitions
+### **Mineral definitions**
 
 Each pre-defined mineral map is generated with a combination of absorptions and indices.
 

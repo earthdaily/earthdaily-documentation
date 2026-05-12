@@ -9,14 +9,14 @@ keywords:
   - Marigold
 ---
 
-# Update computed layers
+## Update computed layers
 
 The **Update computed layers** tool can be used to replace the input catalog
 layer after running it through a series of processes in Marigold. For example,
 if a mineral map was created using a local dataset, this tool can be used to
 re-run the process when a global dataset is available.
 
-## Usage
+### **Usage**
 
 ![image](images/update-layer.png)
 

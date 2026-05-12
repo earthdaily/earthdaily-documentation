@@ -12,7 +12,7 @@ keywords:
   - EarthOne
 ---
 
-# What is Marigold?
+## What is Marigold?
 
 Marigold is a geographic information system (GIS) user interface that is built
 on top of the EarthOne platform and tailored to exploration geologists. By
@@ -21,7 +21,7 @@ mineral exploration workflows.
 
 ![image](images/marigold-ui.png)
 
-## Working with Marigold
+### **Working with Marigold**
 
 Marigold simplifies your mineral exploration workflows, so you can hit the
 ground running with geospatial data --- no coding necessary.
@@ -43,7 +43,7 @@ Our Bare Earth Composite gives users access to the clearest pixel everywhere on
 Earth. Work with analysis-ready data to derive insights from the smallest to the
 largest scale.
 
-## Getting started with Marigold
+### **Getting started with Marigold**
 
 ### New to remote sensing?
 

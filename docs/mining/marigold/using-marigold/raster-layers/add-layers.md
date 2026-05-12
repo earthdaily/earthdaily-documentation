@@ -10,9 +10,9 @@ keywords:
   - Marigold
 ---
 
-# Add raster layers to a Marigold project
+## Add raster layers to a Marigold project
 
-## Add a raster layer from the Catalog
+### **Add a raster layer from the Catalog**
 
 ![image](images/plus-sign.png)
 
@@ -45,7 +45,7 @@ Click `Add selected layers` to add the layers to the project.
 
 ![image](images/add-catalog-added.png)
 
-## Add an exported raster layer
+### **Add an exported raster layer**
 
 Layers that have been [exported](layer-export.md#export-a-layer-for-marigold)
 from another Marigold project can be imported into new ones.

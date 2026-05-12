@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Compute spectra over vector
+## Compute spectra over vector
 
 Spectral information in a raster layer can be extracted in two ways: individual
 points ([Spectral query](spectra-query.md)), or extracted from vector layers. Note

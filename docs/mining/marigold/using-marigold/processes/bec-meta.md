@@ -10,14 +10,14 @@ keywords:
   - Marigold
 ---
 
-# View BEC metadata
+## View BEC metadata
 
 The Bare Earth Composites are built from all available Sentinel-2 and ASTER
 data, with a goal of selecting a single pixel out of years worth of data. The
 **View BEC metadata** tool allows you to query a Bare Earth Composite to find
 when specific pixels were collected.
 
-## Usage
+### **Usage**
 
 ![image](images/bec-meta.png)
 

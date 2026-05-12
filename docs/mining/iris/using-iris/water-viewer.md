@@ -11,7 +11,7 @@ keywords:
   - EarthDaily
 ---
 
-# Tailings pond viewer
+## Tailings pond viewer
 
 The **Tailings pond viewer** is a tool to interact with measurements of tailings pond levels. This tool is useful for understanding how much water is currently stored within a tailings pond, as well as how this has changed over time, which can be useful for understanding the health of the pond, meeting regulations, and understanding production levels.
 
@@ -22,7 +22,7 @@ The **Tailings pond viewer** is a tool to interact with measurements of tailings
     Water monitoring is only available for customers with an appropriate license. Contact support@earthdaily.com to discuss monitoring pond water at your sites!
 <!-- prettier-ignore-end -->
 
-## Usage
+### **Usage**
 
 ### Accessing tailings pond water
 

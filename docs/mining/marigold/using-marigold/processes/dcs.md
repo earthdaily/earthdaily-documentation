@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Decorrelation stretch
+## Decorrelation stretch
 
 ![image](images/dcs.gif)
 
@@ -30,7 +30,7 @@ on three input bands at a time.
 
 <!-- prettier-ignore-end -->
 
-## Usage
+### **Usage**
 
 ![image](images/dcs-diag.png)
 

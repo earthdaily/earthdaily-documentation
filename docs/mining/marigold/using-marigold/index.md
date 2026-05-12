@@ -11,7 +11,7 @@ keywords:
   - band algebra
 ---
 
-# ![image](images/icon_flower.png) Intro to Marigold
+## ![image](images/icon_flower.png) Intro to Marigold
 
 An overview of the Marigold application and the basic data objects.
 
@@ -24,7 +24,7 @@ An overview of the Marigold application and the basic data objects.
 
 ---
 
-# ![image](images/icon_workflows.png) Example workflows
+## ![image](images/icon_workflows.png) Example workflows
 
 Comfortable using GIS systems? Jump right into Marigold with some examples!
 
@@ -34,58 +34,58 @@ Comfortable using GIS systems? Jump right into Marigold with some examples!
 
 ---
 
-# Processing in Marigold
+## Processing in Marigold
 
 Marigold makes it simple to process your data. Some of those ways include:
 
-## ![image](images/icon_function.png) Band algebra
+### **![image](images/icon_function.png) Band algebra**
 
 [Band ratio]\
 [Raster calculator]\
 [Mineral indices]\
 [Rapid mapping outputs]
 
-## ![image](images/icon_masking.png) Masking
+### **![image](images/icon_masking.png) Masking**
 
 [Vegetation mask]\
 [Water mask]\
 [Batch mask]\
 [Apply a mask]
 
-## ![image](images/icon_transforms.png) Transforms
+### **![image](images/icon_transforms.png) Transforms**
 
 [Principal components analysis]\
 [Decorrelation stretch]\
 [Minimum noise fraction]
 
-## ![image](images/icon_classification.png) Spectral Classification
+### **![image](images/icon_classification.png) Spectral Classification**
 
 [Spectral angle mapper]\
 [Spectral correlation mapper]\
 [Matched filter]\
 [k-means clustering]
 
-## ![image](images/icon_classification.png) Raster Classification
+### **![image](images/icon_classification.png) Raster Classification**
 
 [Assign class labels]\
 [Prospectivity analysis]\
 [Mineral map]\
 [Vectorize classified layer]
 
-## ![image](images/icon-em.png) Hyperspectral
+### **![image](images/icon-em.png) Hyperspectral**
 
 [HSI image explorer]\
 [Compositional mapping]\
 [UMAP]\
 [Mineral index analogs]
 
-## ![image](images/icon_edges.png) Terrain analysis
+### **![image](images/icon_edges.png) Terrain analysis**
 
 [Create a hillshade]\
 [Canny edge detection]\
 [Valley bottom flatness]
 
-## ![image](images/icon_raster.png) Raster management
+### **![image](images/icon_raster.png) Raster management**
 
 [Data statistical analysis]\
 [View BEC metadata]\
@@ -96,7 +96,7 @@ Marigold makes it simple to process your data. Some of those ways include:
 
 ---
 
-# ![image](images/icon_rs-for-geo.png) Remote sensing methodology
+## ![image](images/icon_rs-for-geo.png) Remote sensing methodology
 
 [Learn more about remote sensing!]
 
@@ -110,7 +110,7 @@ Marigold makes it simple to process your data. Some of those ways include:
 
 ---
 
-# ![image](images/icon_casestudy.png) Case studies
+## ![image](images/icon_casestudy.png) Case studies
 
 Explore more advanced usage through a real exploration workflow.
 

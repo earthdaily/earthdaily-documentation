@@ -11,11 +11,11 @@ keywords:
   - Marigold
 ---
 
-# Add vector layers to a Marigold project
+## Add vector layers to a Marigold project
 
 Marigold supports several methods for adding vector layers to your project.
 
-## Draw a vector layer
+### **Draw a vector layer**
 
 ![image](images/vec-draw.png)
 
@@ -54,7 +54,7 @@ Click on the map to draw the desired vector object.
 
 <!-- prettier-ignore-end -->
 
-## Add a vector layer from the Catalog
+### **Add a vector layer from the Catalog**
 
 ![image](images/vec-add-cat.png)
 
@@ -83,7 +83,7 @@ layer to the map.
 
 <!-- prettier-ignore-end -->
 
-## Upload a vector layer
+### **Upload a vector layer**
 
 ![image](images/vec-upload.png)
 

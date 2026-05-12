@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# The Marigold header bar
+## The Marigold header bar
 
 The header bar in Marigold contains several tools for managing your project,
 such as saving and loading, manipulating the map, and links to further
@@ -19,12 +19,12 @@ information on Marigold itself.
 
 ![image](images/header.png)
 
-## Save and load a project
+### **Save and load a project**
 
 Buttons for saving and loading projects. More information can be found
 [here](save-and-load.md).
 
-## Bookmarks
+### **Bookmarks**
 
 ![image](images/bookmarks.png)
 
@@ -36,11 +36,11 @@ Clicking on a bookmark will move the map to the defined center and zoom. Click
 
 ![image](images/manage-bookmarks.png)
 
-## Project name
+### **Project name**
 
 ![image](images/header-name.png)
 
-## Zoom and center
+### **Zoom and center**
 
 ![image](images/header-latlon.png)
 
@@ -57,7 +57,7 @@ Controls the center latitude/longitude value and zoom level of the map.
 
 <!-- prettier-ignore-end -->
 
-## User settings
+### **User settings**
 
 ![image](images/header-settings.png)
 
@@ -99,7 +99,7 @@ Click `Save settings` to save the settings to your profile
 
 - Custom expressions created in the [Raster Calculator](processes/raster-calculator.md) tool can be managed in Settings. To delete expressions you no longer wish to have, select the expression(s), then click the **Delete selected expressions** button.
 
-## Pixel inspector
+### **Pixel inspector**
 
 ![image](images/header-picker.png)
 
@@ -131,7 +131,7 @@ and recompute the values shown in the box.
 
 <!-- prettier-ignore-end -->
 
-## Screenshot tool
+### **Screenshot tool**
 
 ![image](images/header-screenshot.png)
 
@@ -151,20 +151,20 @@ computer
 
 <!-- prettier-ignore-end -->
 
-## Changelog
+### **Changelog**
 
 ![image](images/header-releasenotes.png)
 
 Click this icon to bring up the release notes for the most recent Marigold
 version.
 
-## Help
+### **Help**
 
 ![image](images/header-help.png)
 
 The help icon links to this documentation.
 
-## Onboarding videos
+### **Onboarding videos**
 
 ![image](images/header-videos.png)
 

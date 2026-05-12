@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Assign class labels
+## Assign class labels
 
 ![image](images/class-labels.png)
 
@@ -20,7 +20,7 @@ from several sources. For example, after running [SAM](sam.md) for
 multiple targets, this tool can be used to select the highest score
 at each pixel and create a classified layer from the result.
 
-## Usage
+### **Usage**
 
 ![image](images/class-labels-diag.png)
 

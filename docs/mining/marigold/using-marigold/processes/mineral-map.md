@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Mineral map
+## Mineral map
 
 The **Mineral map creator** tool is used to generate a classified layer from
 mineral indicator layers, such as [SAM](sam.md) results or computed
@@ -18,7 +18,7 @@ mineral indicator layers, such as [SAM](sam.md) results or computed
 easily create a single map that shows all of the minerals of interest within
 your AOI.
 
-## Usage
+### **Usage**
 
 The mineral map creator dialog allows you to choose a layer, band, and clip
 value from all available raster layers and bands in your project, and give a

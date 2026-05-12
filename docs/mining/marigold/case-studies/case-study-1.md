@@ -11,7 +11,7 @@ keywords:
   - Marigold case study
 ---
 
-# Case Study: Cuprite (low sulphidation epithermal)
+## Case Study: Cuprite (low sulphidation epithermal)
 
 This case study provides a step-by-step guide covering how to generate and
 interpret our recommended mapping products for low sulphidation epithermal
@@ -32,7 +32,7 @@ linked Marigold project file to automatically load the products into Marigold.
 **Marigold file** | `Get some sort of shared demo file going` |
 +----------------------------------+----------------------------------+
 
-## Background
+### **Background**
 
 ### Spectral reference site
 
@@ -99,7 +99,7 @@ smectite with | | | carbonate |
 **Propylitic alteration** | chlorite, epidote, carbonate |
 +----------------------------------+----------------------------------+
 
-## Processing guide
+### **Processing guide**
 
 Now we'll use Marigold to generate and interpret a series of products using the
 Fused Bare Earth Composite over Cuprite. Before that, a couple notes.
@@ -141,7 +141,7 @@ oxides may be visible as reddish-brown cover materials (as is shown below).
 
 ![image](images/case-study1_image2.jpg)
 
-## Product 3: AST(6,4,1)eq as (R,G,B)
+### **Product 3: AST(6,4,1)eq as (R,G,B)**
 
 ![image](images/case-study1_image3.jpg) Product 4: AST(6,4,1)eq_dc as (R,G,B)
 
@@ -304,7 +304,7 @@ over the Cuprite AOI\
 ![image](images/case-study1_image29a.jpg)\
 ![image](images/case-study1_image29b.jpg)
 
-## Reference Ground Truthing Documentation and Maps for Cuprite
+### **Reference Ground Truthing Documentation and Maps for Cuprite**
 
 ![image](images/case-study1_image31.jpg)
 

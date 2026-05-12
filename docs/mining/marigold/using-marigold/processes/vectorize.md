@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Vectorize classified layer
+## Vectorize classified layer
 
 ![image](images/vectorize.png)
 
@@ -19,7 +19,7 @@ The **Vectorize classified layer** tool is used to generate a
 layer. The operation will generate a vector that corresponds to either the
 selected classes or the `True` values of a binary layer.
 
-## Usage
+### **Usage**
 
 ![image](images/vectorize-tool-overview.png)
 

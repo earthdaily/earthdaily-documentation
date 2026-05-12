@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Principal components analysis
+## Principal components analysis
 
 ![image](images/pca-map.png)
 
@@ -33,7 +33,7 @@ data.
 
 <!-- prettier-ignore-end -->
 
-## Computing the transformation
+### **Computing the transformation**
 
 The PCA dialog is broken up into two steps. The first step allows you to select
 the [product](index.md#selecting-a-product), [bands](index.md#selecting-bands)
@@ -48,7 +48,7 @@ second page of the dialog.
 
 <!-- prettier-ignore-end -->
 
-## Analysis and application
+### **Analysis and application**
 
 The second page of the dialog contains tools for quality control of the
 transformation and a way to apply it to the full dataset.

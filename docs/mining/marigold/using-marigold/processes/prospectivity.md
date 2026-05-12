@@ -10,14 +10,14 @@ keywords:
   - Marigold
 ---
 
-# Prospectivity analysis
+## Prospectivity analysis
 
 ![image](images/prosp.png)
 
 The **Prospectivity analysis** dialog allows you to create a binary layer from
 rules based on previously created layers.
 
-## Usage
+### **Usage**
 
 ![image](images/prosp-diag.png)
 

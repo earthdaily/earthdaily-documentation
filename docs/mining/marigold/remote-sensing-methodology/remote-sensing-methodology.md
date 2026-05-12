@@ -12,7 +12,7 @@ keywords:
 
 ![image](images/icon_rs-for-geo.png)
 
-# Remote sensing for geoscience
+## Remote sensing for geoscience
 
 [Mineral indices]
 

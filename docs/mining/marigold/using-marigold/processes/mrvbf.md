@@ -11,7 +11,7 @@ keywords:
   - Marigold
 ---
 
-# Valley Bottom Flatness
+## Valley Bottom Flatness
 
 The **Multi-Resolution Valley Bottom Flatness** (MRVBF) index (Gallant and
 Dowling, 2003) assesses the flatness and lowness of terrain over multiple
@@ -40,7 +40,7 @@ The final MRVBF index is a cumulative index from all resolution steps.
 
 ![image](images/mrvbf.png)
 
-## Complementary Ridge Top Flatness Index
+### **Complementary Ridge Top Flatness Index**
 
 A multi-resolution ridge top flatness index (MRRTF) is a separate index derived
 in a very similar manner, except that the upper parts of the landscape are
@@ -57,7 +57,7 @@ inferred from the index with the larger value.
     is *not* automatically added to the map.
 <!-- prettier-ignore-end -->
 
-## Usage
+### **Usage**
 
 The Valley bottom flatness dialog allows you to choose the elevation model from
 the current [raster layers](index.md#selecting-a-product) to use as input data.

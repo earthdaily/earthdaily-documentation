@@ -11,14 +11,14 @@ keywords:
   - Marigold
 ---
 
-# Spectra in Marigold
+## Spectra in Marigold
 
 Spectral information, whether computed from a multi or hyperspectral dataset,
 collected from a spectrometer in the field, or assayed in a lab (phrasing bad),
 are a critical component of a remote sensing workflow. Marigold has several
 tools for integrating spectra from disparate sources into a project.
 
-## Compute spectra from raster data
+### **Compute spectra from raster data**
 
 Once a multispectral or hyperspectral layer is loaded into Marigold, spectral
 information can be computed directly from the layer bands. Note that the bands
@@ -32,7 +32,7 @@ datasets, have this by default. For personal products, ensure that at least the
 [Compute spectrum over vector](spectra-vector.md) - Compute average spectrum
 over a vector.
 
-## Load spectra from external source
+### **Load spectra from external source**
 
 Spectra can be brought in from external sources, such as field spectrometers or
 ENVI formatted files. In addition to loading external spectral files, the
@@ -45,7 +45,7 @@ from ENVI or .ASD from a spectrometer\
 [Add from library](spectra-library.md) - Load spectra from the USGS (or others
 if available) spectral library
 
-## Save a spectral library
+### **Save a spectral library**
 
 Spectra in a Marigold project can be saved to a
 [spectral library](spectra-library.md) or exported to a Marigold or text files.
@@ -74,14 +74,14 @@ Spectra in a Marigold project can be saved to a
    or as text files.
 4. Click `Save` to save the file to your local computer.
 
-## Enlarge the spectral plot
+### **Enlarge the spectral plot**
 
 Once spectra are loaded in the project, the plot can be enlarged to explore them
 in more details. Select `Enlarge plot` to generate a larger plot.
 
 ![image](images/spectra-popout-button.png)
 
-## Operations on Spectra
+### **Operations on Spectra**
 
 Once spectra are in your project, there are a few operations that can be
 performed on them.

@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Saving and loading projects
+## Saving and loading projects
 
 Marigold projects can be saved, shared with other users, and loaded again.
 Saving a project provides a working snapshot of everything in the project,
@@ -19,7 +19,7 @@ project, the map will go to the location where the project was saved, load all
 of the layers and spectra, and set the visualization of everything exactly how
 it was when it was saved.
 
-## Saving a project
+### **Saving a project**
 
 Click the `Save` button on the [header bar](header.md) to save your project.
 
@@ -49,7 +49,7 @@ project with. Shared projects will appear in there project list with a
 This checkbox can be used to share the project with all users in your
 organization.
 
-## Autosaves
+### **Autosaves**
 
 ![image](images/autosaved.png)
 
@@ -63,7 +63,7 @@ manual or autosaved version.
 
 ![image](images/load-autosave.png)
 
-## Loading a project
+### **Loading a project**
 
 ![image](images/load-project.png)
 

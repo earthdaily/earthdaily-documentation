@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Spectral correlation mapper
+## Spectral correlation mapper
 
 The **Spectral correlation mapper** (SCM) is an extension of
 [spectral angle mapper](sam.md) that better discriminate between positive
@@ -26,7 +26,7 @@ and the chosen spectral targets.
 
 ![image](images/scm.png)
 
-## Usage
+### **Usage**
 
 The spectral correlation mapper dialog allows you to choose the
 [raster layer](index.md#selecting-a-product) and [bands](index.md#selecting-bands)

@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# Rapid mapping outputs
+## Rapid mapping outputs
 
 ![image](images/rapid-mapping-outputs-overview.png)
 

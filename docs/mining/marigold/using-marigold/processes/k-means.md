@@ -10,7 +10,7 @@ keywords:
   - Marigold
 ---
 
-# k-means clustering
+## k-means clustering
 
 **k-means clustering** is an unsupervised classification technique that
 automatically finds groupings of data based on their spectral characteristics.
@@ -25,7 +25,7 @@ but rather relies on the user to interpret the classification.
 
 <!-- prettier-ignore-end -->
 
-## Prepare data
+### **Prepare data**
 
 The k-means clustering dialog is split into two pages. The first contains the
 standard selection of the input [product](index.md#selecting-a-product),
@@ -58,7 +58,7 @@ dataset.
 Click the `Train model` button to compute the models defined by your choice of
 k-values.
 
-## Investigate and apply the model
+### **Investigate and apply the model**
 
 ![image](images/kmeans.gif)
 

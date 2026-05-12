@@ -11,9 +11,9 @@ keywords:
   - Marigold case study
 ---
 
-# Case Study: Salares Norte (high sulphidation epithermal)
+## Case Study: Salares Norte (high sulphidation epithermal)
 
-## Background
+### **Background**
 
 ### Deposit description
 
@@ -23,17 +23,17 @@ keywords:
 
 ### Detailed zonation
 
-## Processing guide
+### **Processing guide**
 
 ### Product 1: True Color Composite
 
 ![image](images/case-study2_image1.jpg)
 
-## Product 2: False color composite
+### **Product 2: False color composite**
 
 ![image](images/case-study2_image2.jpg)
 
-## Product 3: Fused BEC - AST(6,4,1)eq as (R,G,B)
+### **Product 3: Fused BEC - AST(6,4,1)eq as (R,G,B)**
 
 ![image](images/case-study2_image3.jpg)
 
@@ -157,7 +157,7 @@ thresholded results
 ![image](images/case-study2_image18a.jpg)
 ![image](images/case-study2_image18b.jpg)
 
-## Product 19: Emissivity - AST(13,12,10) mapped as (R,G,B)
+### **Product 19: Emissivity - AST(13,12,10) mapped as (R,G,B)**
 
 ![image](images/case-study2_image19.jpg) :width: 600 :align: center
 
@@ -177,15 +177,15 @@ thresholded results
 ![image](images/case-study2_image21a.jpg)
 ![image](images/case-study2_image21b.jpg)
 
-## Product 22: Band Ratio - (AST_b5/SEN_b8) - (swir2/nir)
+### **Product 22: Band Ratio - (AST_b5/SEN_b8) - (swir2/nir)**
 
 ![image](images/case-study2_image22.jpg)
 
-## Product 23: Fused BEC - TRatio13 with linear 2% stretch
+### **Product 23: Fused BEC - TRatio13 with linear 2% stretch**
 
 ![image](images/case-study2_image23.jpg)
 
-## Product 24: Fused BEC - TRatio18 with linear 2% stretch
+### **Product 24: Fused BEC - TRatio18 with linear 2% stretch**
 
 ![image](images/case-study2_image24.jpg)
 
@@ -193,11 +193,11 @@ Product 25: Fused BEC - TRatio22 (ALI, KLI, FerricOX) with linear 2%
 stretch \~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
 .. ![image](images/case-study2_image25.jpg)
 
-## Product 26: Fused BEC - PCA(v-s)\_123 with linear 2% stretch
+### **Product 26: Fused BEC - PCA(v-s)\_123 with linear 2% stretch**
 
 ![image](images/case-study2_image26.jpg)
 
-## Product 27: Fused BEC - MNF(v-s)\_123 with linear 2% stretch
+### **Product 27: Fused BEC - MNF(v-s)\_123 with linear 2% stretch**
 
 ![image](images/case-study2_image27.jpg)
 
