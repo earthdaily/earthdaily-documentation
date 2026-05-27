@@ -11,7 +11,7 @@ keywords:
   - Landsat
   - MODIS
   - cloud masking
-icon: material/toy-brick-outline
+#icon: material/toy-brick-outline
 ---
 
 # Vegetation Time Series
@@ -21,7 +21,7 @@ icon: material/toy-brick-outline
 The **Vegetation Time Series** analytic provides temporal vegetation index data for over agricultural entities. It delivers time-series values of vegetation indices (such as NDVI) at different spatial levels: individual pixels, entity, or combinations thereof. This analytic enables users to track vegetation health and growth patterns over time, supporting crop monitoring, yield prediction, and agricultural decision-making.
 
 
-## Low Resolution Time Series (LRTS)
+## 📡 Low Resolution Time Series (LRTS)
 
 The service  offers three data access options:
 
@@ -30,20 +30,19 @@ The service  offers three data access options:
 - **Season field pixel data**: Combined pixel and field context for comprehensive analysis
 
 
-### 🗂️ Baseline Data
+## 🗂️ Baseline Data
 
 - **Modis data**
 
 
-### ⚙️ API Access
+## ⚙️ API Access
 
-<!-- md:swagger API|http://api.geosys-na.net/vegetation-time-series/v1/swagger/index.html -->
 
-<swagger-ui src="http://api.geosys-na.net/vegetation-time-series/v1/swagger/v1.0/swagger.json"/>
+<swagger-ui src="https://api.geosys-na.net/vegetation-time-series/v1/swagger/v1.0/swagger.json"/>
 
 ---
 
-### ⚙️ Parameters & Variables
+## ⚙️ Parameters & Variables
 
 #### General Parameters
 
@@ -69,7 +68,7 @@ The service  offers three data access options:
 
 
 
-### 🔍 Query Capabilities
+#### Query Capabilities
 
 The API supports advanced filtering and querying through OData-style query parameters:
 
@@ -99,6 +98,7 @@ $limit=100&$offset=0  (first 100 records)
 
 
 ### Output
+
 #### 1. Pixel Index Values
 **Endpoint**: `GET /pixels/values`
 
@@ -159,7 +159,9 @@ Retrieves pixel-level vegetation index values within the context of season field
 - **Tested Regions**: Global  
 - **Average Generation Time**: < 3 second
 
-## Medium Resolution Time Series (MRTS)
+---
+
+## 📡 Medium Resolution Time Series (MRTS)
 
 The Medium Resolution Time Series service provides high-resolution vegetation monitoring using imagery from multiple satellite sensors. It delivers both raw and smoothed time series data with advanced filtering and quality control capabilities.
 
@@ -275,7 +277,7 @@ Similar structure to Single Time Series but processes multiple geometries in par
 
 ---
 
-### 📊 Supported Vegetation Indices
+### 📂 Supported Vegetation Indices
 
 | **Index**     | **Name**                                    | **Application**                                        |
 |---------------|---------------------------------------------|--------------------------------------------------------|
@@ -316,7 +318,6 @@ This analytic is used in:
 - **Precision Agriculture**: Field-level variability analysis and zone management
 - **Research & Development**: Crop phenology studies and algorithm validation
 
-
 ## 🔗 Enabled Analytics
 
 As a foundational analytic, vegetation time series is the baseline input for the following analytics:
@@ -327,6 +328,5 @@ As a foundational analytic, vegetation time series is the baseline input for the
 - [Greenness](./Emergence.md) - Identify crop peak vegetation
 
 ---
-
 
 --8<-- "snippets/contact-footer.md"

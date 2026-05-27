@@ -13,11 +13,11 @@ keywords:
 
 # Field-Level API to get Crop Rotations
 
-## 🌾 Field-Level API to get Crop Rotations
+## 📖 Overview
 
 The **Field-Level Crop Mask API** enables querying the planted crops for a given geometry and time window. The information is retrieved from the crop masks produced internally or sourced from public data. Understanding which crop has been planted is a foundational step for many downstream services. 
 
-## 🗺️ Field-Level Crop Mask API Summary
+## 🗂️ Baseline Data
 
 ### Access via **REST API**
 The **Field-Level Crop Mask API** encompasses a suite of four endpoints designed to support variable applications and to be easily integrated into internal systems, analytical pipelines, or external applications.
@@ -33,9 +33,9 @@ The **Field-Level Crop Mask API** encompasses a suite of four endpoints designed
 ### Supported Geometries
 **The Field-Level Crop Mask API** supports Polygon geometries (fields level) in WKT format & Coordinates must be provided in WGS 84 (EPSG:4326)
 
-## 🧭 API Endpoints
+## ⚙️ API
 
-### 🔐 Authentication
+### ✅ Authentication
 
 All endpoints require secure access via **Identity Server API**, which manages:
 
@@ -46,19 +46,19 @@ All endpoints require secure access via **Identity Server API**, which manages:
 ### 🌱 Endpoint 1: Dominant Crop Detection
  `/cropmasks/crops` (POST)
 
-#### 🧾 Purpose
+#### Purpose
 
 Identify the dominant crop(s) within a given geometry for one or more years by querying internal and external crop mask sources. This endpoint returns a list of detected crops, their properties, and the coverage percentage within the input field.
 
 
-#### ⚙️ High-Level Functionality
+#### High-Level Functionality
 
 - The user submits a geometry in WKT format.
 - Optional metadata fields can be specified through `Properties` and `CropProperties`.
 - Filters can be applied based on year, source, product type, season, and minimum coverage percentage.
 - The response lists the detected crops with associated attributes, sorted by dominance if specified.
 
-#### 📌 Business Rules
+#### Business Rules
 
 - `GeometryWkt` is **mandatory**.
 - If `CropProperties` is defined, you must **explicitly list** each desired property.
@@ -71,18 +71,18 @@ Identify the dominant crop(s) within a given geometry for one or more years by q
 
 ### 🌱 Endpoint 2:  `/cropmasks/crop-details` (POST)
 
-#### 🧾 Purpose
+#### Purpose
 
 Retrieve all crop occurrences detected within a given geometry, using **every available crop mask**. This endpoint returns detailed crop detection results year by year, for each mask used.
 
 
-#### ⚙️ High-Level Functionality
+#### High-Level Functionality
 
 - Accepts the **same input structure** as `/cropmasks/crops`.
 - For each year in the defined range, returns crop detections **from all masks** (not just the dominant one).
 - Aggregates results **per year** and **per mask**, providing both crop-specific and mask-specific properties.
 
-#### 📌 Business Rules
+#### Business Rules
 
 - `GeometryWkt` is **mandatory**.
 - If `CropProperties` is defined, you must **explicitly list** each desired property.
@@ -94,18 +94,18 @@ Retrieve all crop occurrences detected within a given geometry, using **every av
 
 ### 🌱 Endpoint 3:  `/cropmasks/years` (POST)
 
-#### 🧾 Purpose
+#### Purpose
 
 Return the **year(s)** in which a **specific crop** has been detected within a given geometry, based on crop mask data. This is useful for historical crop presence analysis and crop rotation tracking.
 
-#### ⚙️ High-Level Functionality
+#### High-Level Functionality
 
 - The user provides a geometry and optionally filters for a specific crop using one or more crop attributes.
 - The system checks all relevant crop masks to determine in which years the crop is present.
 - Optional filters let the user refine results by collections, products, sources, crop dominance, and percentage threshold.
 
 
-#### 📌 Business Rules
+#### Business Rules
 
 - `GeometryWkt` is **mandatory**.
 - At least one crop attribute in `CropInfo` must be provided to identify the target crop.
@@ -121,11 +121,11 @@ Return the **year(s)** in which a **specific crop** has been detected within a g
 
 ---
 
-## 🧰 Developer Ressources
+## 💼 Use Case and Product Integration
 
 Interactive API documentation is available via Swagger:
 
-👉 [CropMask API Swagger (PROD)](https://api.geosys-na.net/cropmasks/v1/swagger/index.html)
+[CropMask API Swagger (PROD)](https://api.geosys-na.net/cropmasks/v1/swagger/index.html)
 
 <swagger-ui src="https://api.geosys-na.net/cropmasks/v1/swagger/v1/swagger.json"/>
  

@@ -8,3 +8,43 @@
     Learn more <span class="twemoji">{% include ".icons/material/arrow-right.svg" %}</span>
   </a>
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Create floating toggle button
+      var btn = document.createElement("button");
+      btn.className = "md-nav-toggle";
+      btn.setAttribute("aria-label", "Open navigation");
+      btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
+      document.body.appendChild(btn);
+
+      // Create overlay
+      var overlay = document.createElement("div");
+      overlay.className = "md-sidebar-overlay";
+      document.body.appendChild(overlay);
+
+      // Add close button inside primary sidebar
+      var sidebar = document.querySelector(".md-sidebar--primary .md-sidebar__scrollwrap") ||
+                    document.querySelector(".md-sidebar--primary");
+      if (sidebar) {
+        var close = document.createElement("button");
+        close.className = "md-sidebar__close";
+        close.setAttribute("aria-label", "Close navigation");
+        close.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>';
+        sidebar.insertBefore(close, sidebar.firstChild);
+        close.addEventListener("click", toggleSidebar);
+      }
+
+      btn.addEventListener("click", toggleSidebar);
+      overlay.addEventListener("click", toggleSidebar);
+
+      function toggleSidebar() {
+        var primary = document.querySelector(".md-sidebar--primary");
+        if (primary) primary.classList.toggle("is-open");
+        overlay.classList.toggle("is-open");
+      }
+    });
+  </script>
+{% endblock %}

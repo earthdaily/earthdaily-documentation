@@ -14,15 +14,15 @@ status:
 
 # Change Index
 
-## Overview
+## 📖 Overview
 
 The goal of Change Index is to help you decide which in-season map to look at by providing a 0-10 indication of the level of change between two maps for a given field. The change is based on three components of NDVI values within a field — the larger the number, the greater the level of change.
 
-## How is the Change Index Calculated?
+### How is the Change Index Calculated?
 
 Change Index is based on three components of change using the field's NDVI values:
 
-### 1. Correlation
+#### 1. Correlation
 
 - Did the field experience the same change?
 - Did all pixels increase by the same amount (small change)?
@@ -32,7 +32,7 @@ Change Index is based on three components of change using the field's NDVI value
 
 ![Change Index 1](../../assets/agro/analytics/change-index/change-index1.png)
 
-### 2. Spatial Variability
+#### 2. Spatial Variability
 
 - Is the field variability the same?
 - Are the good spots of the field still good and the bad spots still bad (small change)?
@@ -42,7 +42,7 @@ Change Index is based on three components of change using the field's NDVI value
 
 ![Change Index 2](../../assets/agro/analytics/change-index/change-index2.png)
 
-### 3. Distribution
+#### 3. Distribution
 
 - Is the overall NDVI distribution the same?
 - Does the histogram of the NDVI values for the new image overlap with the previous image (small change)?
@@ -52,9 +52,7 @@ Change Index is based on three components of change using the field's NDVI value
 
 ![Change Index 3](../../assets/agro/analytics/change-index/change-index3.png)
 
----
-
-## Change Index does NOT
+### Change Index does NOT
 
 - Indicate if change is good or not
 - Provide insights into what is causing the change
@@ -62,8 +60,7 @@ Change Index is based on three components of change using the field's NDVI value
 
 ---
 
-## View Change Index (From Monitoring Module)
-
+### View Change Index (From Monitoring Module)
 
 1. Select the **Monitoring** tab from the top-left navigation menu.
 
@@ -85,20 +82,26 @@ Change Index is based on three components of change using the field's NDVI value
 
 ---
 
-## API
+## ⚙️ API
 
 Here is the Change index [API documentation](https://change-index.aws.geosys.com/docs#/Change%20Index%20Compute):
 
-<swagger-ui src="https://change-index.aws.geosys.com/openapi.json"/>
+<swagger-ui src="https://change-index.aws.geosys.com/docs"/>
 
+---
 
+## 💼 Use Cases
 
-## Change Index FAQ
+This analytic is used in:
+
+- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+
+---
+
+## 📑 Change Index FAQ
 
 !!! tip "What is the purpose of the Change Index?"
-
     The change Index is simply an indication of change within a given field. It helps quickly identify the maps that require further analysis.
-
 
 !!! tip "Does the Change Index tell me how a field is performing?"
     No. It only indicates the amount of change in the field within the 5 to 15-day threshold.

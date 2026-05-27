@@ -33,7 +33,7 @@ The figure below illustrates the expected NDVI development for a typical annual 
 
 ## ⚙️ API Access
 
-<swagger-ui src="https://inseason-potential-score.aws.geosys.com/docs/openapi.json"/>
+<swagger-ui src="https://inseason-potential-score.aws.geosys.com/v1/docs"/>
 
 ---
 
@@ -60,9 +60,7 @@ The figure below illustrates the expected NDVI development for a typical annual 
 | **Data Source** _(Optional)_ | `dataSource`     | Data resolution: `LR` or `MR`. Defaults to `LR`                                                  | `string`     |
 | **Crop** _(Optional)_ | `crop`                  | Crop code                                                                                        | `string`     |
 
----
-
-## Output
+### Output
 
 | **Output**                    | **Variable Name**             | **Description**                                                                                  | **Type**     |
 |------------------------------|-------------------------------|--------------------------------------------------------------------------------------------------|--------------|
@@ -81,12 +79,7 @@ The figure below illustrates the expected NDVI development for a typical annual 
 
 ---
 
-## 📜Rules for Defining Historical Periods
-
-
----
-
-## Use Cases
+## 💼 Use Cases
 
 This analytic is used in:
 
@@ -94,7 +87,7 @@ This analytic is used in:
 
 ---
 
-## Glossary
+## 📄 Glossary
 
 | **Term**                        | **Description** |
 |----------------------------------|-----------------|

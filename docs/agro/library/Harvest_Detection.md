@@ -63,16 +63,12 @@ The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) 
 | Year                | year                   | Year of the first date of the season                                                                  | integer    |
 | Data Source         | dataSource             | Image resolution: LR (Low Resolution) or MR (Medium Resolution); default is LR                        | string     |
 
----
-
 ### Request Body
 
 | **Parameter**       | **Variable Name**     | **Description**                                                                                       | **Type**   |
 |---------------------|------------------------|-------------------------------------------------------------------------------------------------------|------------|
 | id                  | id                     | EarthDaily Agro internal ID of the area of interest (optional)                                       | string     |
 | geometry            | geometry               | Geometry of the area of interest (WKT format)                                                        | string     |
-
----
 
 ### Output Variables
 
@@ -119,7 +115,7 @@ The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) 
 
 This analytic is used in:
 
-- [Portfolio Management](../portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/portfolio_product_site_draft/)
 
 ---
 

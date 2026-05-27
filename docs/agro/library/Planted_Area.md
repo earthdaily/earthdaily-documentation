@@ -37,7 +37,7 @@ The analytic uses satellite imagery captured before and after crop emergence, co
 
 ## ⚙️ API
 
-<swagger-ui src="https://planted-area.aws.geosys.com/openapi.json"/>
+<swagger-ui src="https://planted-area.aws.geosys.com/docs"/>
 
 ---
 

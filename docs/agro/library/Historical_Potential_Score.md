@@ -72,9 +72,8 @@ The analytic uses NDVI time series data available at both MR (1) and LR (2) reso
 | **Year** _(Optional)_ | `year`                   | Reference year for the season. Used to define the 5-year historical window. Example: `2022`      | `int`        |
 | **Data Source** _(Optional)_ | `dataSource`     | Data resolution: `LR` or `MR`. Defaults to `LR`                                                  | `string`     |
 
----
 
-## Output
+### Output
 
 | **Parameter**                    | **Variable Name**             | **Description**                                                                                  | **Type**     |
 |------------------------------|-------------------------------|--------------------------------------------------------------------------------------------------|--------------|

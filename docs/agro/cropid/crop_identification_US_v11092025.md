@@ -33,8 +33,8 @@ Crop classification layers are delivered **during the growing season**, with pro
 
 **Delivery schedule:**
 
-* Mid-June  
-* Mid-July  
+* June 22nd
+* July 22nd 
 
 Additional delivery dates can be added upon request. This cadence enables organizations to track acreage distribution and refine supply outlooks as the season advances.
 

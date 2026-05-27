@@ -19,13 +19,15 @@ keywords:
 
 This analytic compares the current season emergence to the average historical emergence at the field level. The result is the number of days of difference.
 
-## Baseline data
+## 🗂️ Baseline data
 
 - **NDVI MR/LR Time Series**
-## API 
+
+## ⚙️API 
 
 <swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
 
+## ⚙️ Parameters & Variables
 
 ### Input Parameters
 
@@ -72,8 +74,8 @@ This analytic compares the current season emergence to the average historical em
 ## 💼 Use Case and Product Integration
 
 This analytic is used in:
+
     - [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
-    - 
 
 ## 📚 Glossary
 

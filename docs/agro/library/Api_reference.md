@@ -148,7 +148,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     AI-powered crop type classification using multi-temporal satellite imagery. Identifies major crop types with confidence scores and validation metrics.
     
     [:simple-swagger: Swagger](https://api.geosys-na.net/cropmasks/v1/swagger/index.html){ .md-button }
-    [:octicons-link-external-16: Details](https://api.geosys-na.net/cropmasks/v1/swagger){ .md-button }
+    [:octicons-link-external-16: Details](./docs/agro/cropid/index.md){ .md-button }
     
 
 -   :material-layers: **Layer Service**
@@ -158,7 +158,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Access satellite imagery layers, vegetation indices, and derived analytics products. Supports multiple sensors and on-demand processing.
     
     [:simple-swagger: Swagger](https://api.geosys-na.net/layers/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Api_reference.md){ .md-button }
+    [:octicons-link-external-16: Details](./Map-types.md){ .md-button }
 
 -   :material-map: **Vegetation Index Maps**
 
@@ -203,7 +203,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Compare field performance against historical patterns, regional averages, and peer benchmarks. Supports relative performance analysis.
     
     [:simple-swagger: Swagger](){ .md-button }
-    [:octicons-link-external-16: Details](./...){ .md-button }
+    [:octicons-link-external-16: Details](./Field_benchmark.md){ .md-button }
 
 -   :material-monitor-dashboard: **In-Season Monitoring**
 
@@ -230,11 +230,11 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     
     **Historical:** 
-    [:octicons-link-external-16: Details](./Historical_Potential_Score.md){ .md-button }
     [:simple-swagger: Swagger](https://historical-potential-risk-score.aws.geosys.com/docs){ .md-button }
-    **In-Season:** 
-    [:octicons-link-external-16: Details](./In-season_Potential_Score.md){ .md-button }
+    [:octicons-link-external-16: Details](./Historical_Potential_Score.md){ .md-button }
+        **In-Season:** 
     [:simple-swagger: Swagger](http://inseason-potential-score.aws.geosys.com/docs){ .md-button }
+    [:octicons-link-external-16: Details](./In-season_Potential_Score.md){ .md-button }
 
 -   :material-leaf-maple: **Environmental Compliance**
 
@@ -316,7 +316,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     Evaluate disease risk on location for Corn and Soybeans.
     
     [:simple-swagger: Swagger](https://t7izeqf7q5t4xseagqap5ev7xm0xpmmh.lambda-url.us-east-1.on.aws/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./){ .md-button }
+    [:octicons-link-external-16: Details](./disease_risk.md){ .md-button }
 
 </div>
 
@@ -350,7 +350,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     <!-- md:flag experimental --> Estimate cover crop biomass and carbon sequestration potential. Supports carbon credit programs and soil health initiatives.
 
-    [:simple-swagger: Swagger](){ .md-button }
+    [:simple-swagger: Swagger](https://api.geosys.com/processors/cover-crop/v1/docs){ .md-button }
     [:octicons-link-external-16: Details](){ .md-button }
 
 -   :material-weight: **Baresoil** 
@@ -379,6 +379,11 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     [:octicons-link-external-16: Details](./Regional_Monitoring.md){ .md-button }
 
 </div>
+
+
+
+
+--8<-- "snippets/contact-footer.md"
 
 
 

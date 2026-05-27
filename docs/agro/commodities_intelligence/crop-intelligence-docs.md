@@ -13,9 +13,9 @@ keywords:
 ---
 
 
-# Crop Intelligence 🌾
+# Crop Intelligence
 
-## Introduction
+## 🌾 Introduction
 
  In volatile agricultural markets, success depends on real-time data. EarthDaily gives you that edge. We combine Earth Observation (EO) analytics with AI-powered forecasts, providing real-time visibility into global and local crop conditions.
 
@@ -24,7 +24,7 @@ keywords:
  Multiple delivery channels ensure that EarthDaily Crop Intelligence is available in the format best suited for your business needs.
 
 
-## Target Audience 👥
+## 👥 Target Audience
 
 EarthDaily has designed this product for organizations that need timely, accurate, and scalable crop intelligence:
 
@@ -38,19 +38,17 @@ EarthDaily has designed this product for organizations that need timely, accurat
 
 
 ## 🚜  Crop Intelligence Delivery Methods
-* Geosys Web Application
-* API Access
-* Weekly Video Series
-* Global Crop Reports
-* World in 10
-* One on One Crop Analyst Calls
+* [Geosys Web Application](https://docs.earthdaily.com/agro/app/en-us/00.%20Geosys%20App%20User%20Guide/)
+* [API Access](https://docs.earthdaily.com/agro/library/Api_reference/)
+* [Weekly Video Series](https://docs.earthdaily.com/agro/commodities_intelligence/delivery_method_reports_videos/)
+* [Global Crop Reports](https://docs.earthdaily.com/agro/commodities_intelligence/delivery_method_reports_videos/#weekly-global-reports)
+* [World in 10](https://docs.earthdaily.com/agro/commodities_intelligence/delivery_method_reports_videos/#world-in-10)
+* [One on One Crop Analyst Calls](https://docs.earthdaily.com/agro/commodities_intelligence/delivery_method_reports_videos/#one-on-one-crop-analyst-calls)
 
 
-## Data & Analytics Coverage 📊
+## 📊 Data & Analytics Coverage 
 
-Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link).
-
-
+Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://docs.earthdaily.com/agro/library/Regional_Monitoring/).
 
 ---
 

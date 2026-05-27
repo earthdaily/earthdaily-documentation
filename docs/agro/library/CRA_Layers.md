@@ -32,7 +32,7 @@ The datasets include CAR property boundaries, SIGEF and SNCI land registries, co
 
 ## ⚙️ API Access
 
-<swagger-ui src="https://api.geosys-na.net/layers/v1/swagger/index.html"/>
+<swagger-ui src="https://api.geosys-na.net/layers/v1/swagger/v1/swagger.json"/>
 
 ---
 
@@ -78,6 +78,11 @@ The following table lists all available environmental layers. Hover over acronym
 | BR_INDIGENOUS_LANDS               | Terras Indígenas                               | Indigenous Land are areas of special use, inhabited by indigenous communities. Those areas belong to the Federal Government, which keeps them for a public purpose by the Indigenous people.                                                                                                                                                                                                       |
 | BR_CONSERVATION_UNITS             | Unidades de Conservação                        | Conservation Units of Full Protection seek nature preservation and only the indirect use of their natural resources is allowed.                                                                                                                                                                                                                                                                  |
 | BR_CONSERVATION_UNITS_POINTS      | Unidades de Conservação (pontos)               | Conservation Units of Full Protection seek nature preservation and only the indirect use of their natural resources is allowed.                                                                                                                                                                                                                                                                  |
+---
+
+## ⚙️ API Access
+
+<swagger-ui src="https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/index.html"/>
 
 ---
 

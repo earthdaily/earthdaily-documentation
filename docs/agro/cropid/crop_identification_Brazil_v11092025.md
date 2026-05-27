@@ -38,8 +38,12 @@ To support timely decisions throughout the growing season, crop classification l
 
 **Delivery schedule:**
 
-* **Safra Season:** Early March and Early June  
-* **Safrinha Season:** Early June and Early August  
+* **Safra Season:**
+    - March 7th
+    - June 7th
+* **Safrinha Season:**
+    - June 7th
+    - August 7th
 
 Each delivery reflects the most recent satellite imagery and model outputs, ensuring increasing accuracy as the season progresses.
 

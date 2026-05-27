@@ -7,7 +7,7 @@ keywords:
   - yield forecast
   - corn
   - user interface
-icon: material/wallet-outline
+#icon: material/wallet-outline
 ---
 
 # Crop Intelligence

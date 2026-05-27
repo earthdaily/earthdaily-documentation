@@ -53,7 +53,7 @@ Detailed description of each dataset is available on the [Environmental Layers](
 
 ## ⚙️ API Access
 
-<swagger-ui src="https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/v0.0/swagger.json"/>
+<swagger-ui src="https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/index.html"/>
 
 ---
 

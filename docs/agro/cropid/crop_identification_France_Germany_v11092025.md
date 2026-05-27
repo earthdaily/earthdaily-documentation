@@ -44,7 +44,7 @@ Crop Identification layers are updated progressively throughout the growing seas
 
 **Delivery schedule:**
 
-* March 21st – Winter crops development​
+* March 22nd – Winter crops development​
 * July 7th – Spring crops development & Winter crops update​
 * Sept 7th – End of Season evaluation
 

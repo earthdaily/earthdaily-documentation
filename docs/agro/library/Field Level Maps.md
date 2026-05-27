@@ -13,9 +13,9 @@ keywords:
 
 # Field Level Map APIs
 
-EarthDaily Map APIs provide endpoints for retrieving **map image catalog** and **map generation**.
+## 📖 APIs core concepts
 
-## APIs core concepts
+EarthDaily Map APIs provide endpoints for retrieving **map image catalog** and **map generation**.
 
 | Term              | Definition |
 |-------------------|------------|
@@ -31,7 +31,7 @@ EarthDaily Map APIs provide endpoints for retrieving **map image catalog** and *
 | Fixed Legend      | Legend where the ranges and colors are previously specified for a given Map Product. |
 | Thumbnail         | Smaller version of the png representation of the map image |
 
-## APIs description
+## 📑 APIs Description
 
 EarthDaily Map APIs are structured in map families that group different map types having common parameters types. 
 
@@ -118,11 +118,11 @@ This parameter is used to make the zoned map to look like a non zoned map or mak
 
         https://<host>/field-level-maps/v5/season-fields/{SeasonFieldId}/catalog-imagery?Maps.Type=$in:INSEASON_NDVI|INSEASON_EVI
 
-## API list
+## 📝 API List
 
 <swagger-ui src="https://api.geosys-na.net/field-level-maps/v5/swagger/v1/swagger.json"/>
 
-## API response 
+## ⚙️ API response 
 
 ### Legend object 
 Map response, except color compositon, includes a legend object that contains all information to create the legend on the UI. The legend object is a set of meta data including:
@@ -332,7 +332,7 @@ Response content extract:
     }
  ```
  
-## Zones object
+## 📋 Zones Object
 
 Zoning capability allows to create a zoned map based off any “non-zoned” map (NDVI, GNDVI EVI, Yield Variability Map, Yield Goal Map, Organic Matter Variability Map, Elevation...) and the number of zones. 
 
