@@ -571,11 +571,6 @@ markdown_extensions:
   #- pymdownx.tilde:
 
 plugins:
-  - swagger-ui-tag:
-      background: White
-      docExpansion: none
-      filter: ""
-      syntaxHighlightTheme: monokai
   - meta
   - tags
   - search:

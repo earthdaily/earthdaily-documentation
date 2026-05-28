@@ -12,7 +12,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://bare-soil.aws.geosys.com/docs -->
 
 # Bare Soil Detection
 
@@ -36,7 +35,8 @@ The analytic uses Medium Resolution imagery throughout the specified season to c
 
 ## ⚙️ API
 
-<swagger-ui src="https://avuqeoz2lrpi2s5qovww5k4vca0itlyy.lambda-url.us-east-1.on.aws/v1/openapi-identity.json"/>
+<!-- TODO md:swagger https://bare-soil.aws.geosys.com/docs -->
+<!-- md:swagger https://avuqeoz2lrpi2s5qovww5k4vca0itlyy.lambda-url.us-east-1.on.aws/v1/docs -->
 
 ---
 

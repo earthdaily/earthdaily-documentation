@@ -76,7 +76,7 @@ Regional monitoring provides a **high-level, data-driven perspective** that supp
 
 ## ⚙️ API
 
-<swagger-ui src="https://api.geosys-na.net/Agriquest/Geosys.AgriQuest.CropMonitoring.WebApi/v0/swagger/docs/v0"/>
+<!-- md:swagger http://api.geosys.internal/Agriquest/Geosys.Agriquest.CropMonitoring.WebApi/v0/swagger/ -->
 
 ### Environment API root
 

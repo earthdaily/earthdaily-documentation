@@ -40,7 +40,7 @@ The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) 
 
 ## ⚙️ API
 
-<swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
+<!-- md:swagger https://emergence-detection.aws.geosys.com/docs -->
 
 ---
 

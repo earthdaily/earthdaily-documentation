@@ -12,7 +12,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
 
 # Harvest Detection Computation
 
@@ -45,7 +44,7 @@ The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) 
 
 ## ⚙️ API
 
-<swagger-ui src="https://harvest-detection.aws.geosys.com/openapi.json"/>
+<!-- md:swagger https://harvest-detection.aws.geosys.com/docs -->
 
 ---
 

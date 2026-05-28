@@ -35,10 +35,9 @@ The service  offers three data access options:
 - **Modis data**
 
 
-## ⚙️ API Access
+## ⚙️ Swagger Access
 
-
-<swagger-ui src="https://api.geosys-na.net/vegetation-time-series/v1/swagger/v1.0/swagger.json"/>
+<!-- md:swagger http://api.geosys-na.net/vegetation-time-series/v1/swagger/index.html -->
 
 ---
 
@@ -178,9 +177,9 @@ The Medium Resolution Time Series service provides high-resolution vegetation mo
 - **Temporal Resolution**: 3-5 days (weather dependent)
 - **Historical Archive**: 2015+ (varies by sensor and region)
 
-### ⚙️ API Access
+### ⚙️ Swagger Access
 
-<swagger-ui src="https://api.geosys-na.net/field-level-maps/v5/swagger/v1/swagger.json"/>
+<!-- md:swagger https://api.geosys-na.net/field-level-maps/v5/swagger/index.html -->
 
 ### ⚙️ Parameters & Variables
 

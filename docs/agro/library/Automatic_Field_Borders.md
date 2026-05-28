@@ -27,7 +27,7 @@ It leverages super-resolution Sentinel-2 imagery at 1-meter resolution to deline
 
 ## ⚙️ API 
 
-<swagger-ui src="https://api.geosys-na.net/field-borders/v1/swagger/v1/swagger.json"/>
+<!-- md:swagger https://api.geosys-na.net/field-borders/v1/swagger/index.html -->
 
 ---
 

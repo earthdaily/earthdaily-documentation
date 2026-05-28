@@ -31,9 +31,9 @@ The **Agricultural Zoning of Climate Risk (ZARC)** is a policy tool that guides 
 
 ---
 
-## ⚙️ API Access
+## ⚙️ Swagger Access
 
-<swagger-ui src="https://zvjihjkwfwohudwcnbhjbpsudq0jhszp.lambda-url.us-east-1.on.aws/docs"/>
+<!-- md:swagger https://zvjihjkwfwohudwcnbhjbpsudq0jhszp.lambda-url.us-east-1.on.aws/docs -->
 
 ---
 

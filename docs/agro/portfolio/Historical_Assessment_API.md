@@ -59,7 +59,7 @@ All endpoints require secure access via **Identity Server API**, which manages:
 - Token-based access (OAuth 2.0)  
 - Permission scopes to control access to specific data layers or regions
 
-<swagger-ui src="https://api.geosys-na.net/fintech/v1/swagger/v1.0/swagger.json"/>
+<!-- md:swagger https://api.geosys-na.net/fintech/v1/swagger/index.html -->
 
 ### 1. Submit a New Proposal
 **POST** `/historical-assessment/plots`

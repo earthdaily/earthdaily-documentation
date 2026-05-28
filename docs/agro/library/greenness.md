@@ -12,7 +12,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://zn6hzsqoyoe3qgaoau4ssgpq440vtmpa.lambda-url.us-east-1.on.aws/docs -->
 
 # Greenness Detection
 
@@ -37,7 +36,7 @@ The analytic uses NDVI (1) time series data from satellite imagery captured thro
 
 ## ⚙️ API
 
-<swagger-ui src="https://zn6hzsqoyoe3qgaoau4ssgpq440vtmpa.lambda-url.us-east-1.on.aws/docs"/>
+<!-- md:swagger https://zn6hzsqoyoe3qgaoau4ssgpq440vtmpa.lambda-url.us-east-1.on.aws/docs -->
 
 ---
 

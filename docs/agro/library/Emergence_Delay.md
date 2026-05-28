@@ -25,7 +25,7 @@ This analytic compares the current season emergence to the average historical em
 
 ## ⚙️API 
 
-<swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
+<!-- md:swagger https://emergence-detection.aws.geosys.com/docs -->
 
 ## ⚙️ Parameters & Variables
 

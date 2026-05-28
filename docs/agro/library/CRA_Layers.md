@@ -30,9 +30,9 @@ The datasets include CAR property boundaries, SIGEF and SNCI land registries, co
 
 ---
 
-## ⚙️ API Access
+## ⚙️ Swagger Access
 
-<swagger-ui src="https://api.geosys-na.net/layers/v1/swagger/v1/swagger.json"/>
+<!-- md:swagger https://api.geosys-na.net/layers/v1/swagger/index.html -->
 
 ---
 
@@ -80,9 +80,9 @@ The following table lists all available environmental layers. Hover over acronym
 | BR_CONSERVATION_UNITS_POINTS      | Unidades de Conservação (pontos)               | Conservation Units of Full Protection seek nature preservation and only the indirect use of their natural resources is allowed.                                                                                                                                                                                                                                                                  |
 ---
 
-## ⚙️ API Access
+## ⚙️ Swagger Access
 
-<swagger-ui src="https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/index.html"/>
+<!-- md:swagger https://api.geosys-na.net/reporting/environmentalcompliance/v1/swagger/index.html -->
 
 ---
 

@@ -12,8 +12,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://historical-potential-risk-score.aws.geosys.com/v1/docs -->
-
 
 # Historical Potential Score
 
@@ -45,9 +43,9 @@ The analytic uses NDVI time series data available at both MR (1) and LR (2) reso
 
 ---
 
-## ⚙️ API Access
+## ⚙️ Swagger Access
 
-<swagger-ui src="https://historical-potential-risk-score.aws.geosys.com/openapi.json"/>
+<!-- md:swagger https://historical-potential-risk-score.aws.geosys.com/v1/docs -->
 
 ---
 
