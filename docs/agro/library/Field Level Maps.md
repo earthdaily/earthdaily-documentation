@@ -9,8 +9,6 @@ keywords:
   - zoning
 ---
 
-<!-- md:swagger API|https://api.geosys-na.net/field-level-maps/v5/swagger/index.html -->
-
 # Field Level Map APIs
 
 ## 📖 APIs core concepts
@@ -120,7 +118,7 @@ This parameter is used to make the zoned map to look like a non zoned map or mak
 
 ## 📝 API List
 
-<swagger-ui src="https://api.geosys-na.net/field-level-maps/v5/swagger/v1/swagger.json"/>
+<!-- md:swagger https://api.geosys-na.net/field-level-maps/v5/swagger/index.html -->
 
 ## ⚙️ API response 
 

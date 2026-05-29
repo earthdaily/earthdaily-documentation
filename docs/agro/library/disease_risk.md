@@ -13,7 +13,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://t7izeqf7q5t4xseagqap5ev7xm0xpmmh.lambda-url.us-east-1.on.aws/v1/docs -->
 
 # Disease Risk Assessment
 
@@ -35,7 +34,7 @@ The analytic uses comprehensive weather data including temperature, humidity, de
 
 ## ⚙️ API
 
-<swagger-ui src="https://t7izeqf7q5t4xseagqap5ev7xm0xpmmh.lambda-url.us-east-1.on.aws/v1/openapi-identity.json"/>
+<!-- md:swagger https://t7izeqf7q5t4xseagqap5ev7xm0xpmmh.lambda-url.us-east-1.on.aws/v1/docs -->
 
 ---
 

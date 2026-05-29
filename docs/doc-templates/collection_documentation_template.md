@@ -158,11 +158,11 @@ Briefly describe the atmospheric correction, calibration, or classification algo
 
 ---
 
-## API Access
+## Swagger Access
 
-<!-- Remove or replace the swagger block with the correct EDS endpoint URL -->
+<!-- Replace the URL below with the link to the collection's API documentation -->
 
-<swagger-ui src="https://api.eds.earthdaily.com/openapi/<collection-id>.json"/>
+<!-- md:swagger https://api.eds.earthdaily.com/ -->
 
 ### Quick start — Python
 

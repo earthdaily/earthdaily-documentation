@@ -12,7 +12,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://5gciu5p2msxwjrt54fks3kvvxu0oxdyr.lambda-url.us-east-1.on.aws/docs -->
 
 # In-Season Monitoring
 
@@ -37,7 +36,7 @@ The analytic uses NDVI (1) time series data from satellite imagery captured afte
 
 ## ⚙️ API
 
-<swagger-ui src="https://5gciu5p2msxwjrt54fks3kvvxu0oxdyr.lambda-url.us-east-1.on.aws/openapi.json"/>
+<!-- md:swagger https://5gciu5p2msxwjrt54fks3kvvxu0oxdyr.lambda-url.us-east-1.on.aws/docs -->
 
 ---
 

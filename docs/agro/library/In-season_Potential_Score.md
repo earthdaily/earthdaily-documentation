@@ -31,9 +31,9 @@ The figure below illustrates the expected NDVI development for a typical annual 
 
 ---
 
-## ⚙️ API Access
+## ⚙️ Swagger Access
 
-<swagger-ui src="https://inseason-potential-score.aws.geosys.com/v1/docs"/>
+<!-- md:swagger https://inseason-potential-score.aws.geosys.com/v1/docs -->
 
 ---
 

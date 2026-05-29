@@ -31,6 +31,8 @@ def on_page_markdown(
         elif type == "plugin":       return _badge_for_plugin(args, page, files)
         elif type == "extension":    return _badge_for_extension(args, page, files)
         elif type == "swagger":      return _badge_for_swagger(args, page, files)
+        elif type == "swagger-button": return _badge_for_swagger_button(args, page, files)
+        elif type == "details-button": return _badge_for_details_button(args, page, files)
         elif type == "notebook":     return _badge_for_notebook(args, page, files)
         elif type == "folder":       return _badge_for_folder(args, page, files)
         elif type == "demo":         return _badge_for_demo(args, page, files)
@@ -43,8 +45,9 @@ def on_page_markdown(
         raise RuntimeError(f"Unknown shortcode: {type}")
 
     # Find and replace all external asset URLs in current page
+    # Note: [\w-]+ allows hyphens in shortcode names (e.g. swagger-button)
     return re.sub(
-        r"<!-- md:(\w+)(.*?) -->",
+        r"<!-- md:([\w-]+)(.*?) -->",
         replace, markdown, flags = re.I | re.M
     )
 
@@ -169,15 +172,17 @@ def _badge_for_extension(text: str, page: Page, files: Files):
 
 # Create badge for swagger
 def _badge_for_swagger(text: str, page: Page, files: Files):
-    # Parse name and URL from the text argument
+    # Parse name and URL from the text argument.
+    # Two forms supported:
+    #   <!-- md:swagger https://example.com/docs -->          → label defaults to "Swagger"
+    #   <!-- md:swagger Custom label|https://example.com -->  → explicit label before the pipe
     parts = text.split("|", 1)
     if len(parts) == 2:
         name = parts[0].strip()
         url = parts[1].strip()
     else:
-        # Fallback to old behavior if no pipe separator
-        name = text
-        url = _resolve_path("conventions.md#swagger", page, files)
+        name = "Swagger"
+        url = text.strip()
     
     icon = "simple-swagger"
     icon_href = _resolve_path("conventions.md#swagger", page, files)
@@ -186,6 +191,34 @@ def _badge_for_swagger(text: str, page: Page, files: Files):
         text = f"[{name}]({url})",
         type="right"
     )
+
+# Create button-styled link for swagger (used in card grids / catalog pages)
+def _badge_for_swagger_button(text: str, page: Page, files: Files):
+    # Same arg parsing as _badge_for_swagger:
+    #   <!-- md:swagger-button https://example.com/docs -->          → label defaults to "Swagger"
+    #   <!-- md:swagger-button Custom label|https://example.com -->  → explicit label before the pipe
+    parts = text.split("|", 1)
+    if len(parts) == 2:
+        name = parts[0].strip()
+        url = parts[1].strip()
+    else:
+        name = "Swagger"
+        url = text.strip()
+    return f"[:simple-swagger: {name}]({url}){{ .md-button }}"
+
+# Create button-styled "Details" link (used next to swagger-button in card grids)
+def _badge_for_details_button(text: str, page: Page, files: Files):
+    # Same arg parsing as the other button shortcodes:
+    #   <!-- md:details-button ./detail-page.md -->          → label defaults to "Details"
+    #   <!-- md:details-button Custom label|./detail-page.md --> → explicit label before the pipe
+    parts = text.split("|", 1)
+    if len(parts) == 2:
+        name = parts[0].strip()
+        url = parts[1].strip()
+    else:
+        name = "Details"
+        url = text.strip()
+    return f"[:octicons-link-external-16: {name}]({url}){{ .md-button }}"
 
 # Create badge for notebook
 def _badge_for_notebook(text: str, page: Page, files: Files):

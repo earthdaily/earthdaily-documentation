@@ -125,9 +125,7 @@ Return the **year(s)** in which a **specific crop** has been detected within a g
 
 Interactive API documentation is available via Swagger:
 
-[CropMask API Swagger (PROD)](https://api.geosys-na.net/cropmasks/v1/swagger/index.html)
-
-<swagger-ui src="https://api.geosys-na.net/cropmasks/v1/swagger/v1/swagger.json"/>
+<!-- md:swagger https://api.geosys-na.net/cropmasks/v1/swagger/index.html -->
  
 You can use this interface to:
 

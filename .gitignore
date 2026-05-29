@@ -1,6 +1,10 @@
 # Build output
 site/
 
+# Local virtualenv for previewing the docs (mkdocs serve)
+.venv/
+.preview_site/
+
 # Encryptcontent plugin cache
 encryptcontent.cache
 

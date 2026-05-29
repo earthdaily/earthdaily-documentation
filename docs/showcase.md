@@ -4,9 +4,9 @@ title: Showcase
 
 ## Swagger integration
 
-Please make sure to use the json file and not the Open API UI.
+Link to a service's hosted API documentation with the `md:swagger` shortcode instead of embedding the Swagger UI:
 
-<swagger-ui src="https://emergence-detection.aws.geosys.com/openapi.json"/>
+<!-- md:swagger https://emergence-detection.aws.geosys.com/docs -->
 
 ## Diagram
 
@@ -246,7 +246,7 @@ For now please make sure that video is uploaded on Earthdaily Youtube account. F
 ```
 &lt;!-- md:flag swagger API Name | https://api.example.com/docs --&gt;
 ```
-This should be displayed as <!-- md:swagger API|https://harvest-detection.aws.geosys.com/docs -->
+This should be displayed as <!-- md:swagger https://harvest-detection.aws.geosys.com/docs -->
 
 
 ### Demo repo 

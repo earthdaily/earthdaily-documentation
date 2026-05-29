@@ -12,7 +12,6 @@ keywords:
 # icon: fontawesome/question
 #status: new
 ---
-<!-- md:swagger API|https://planted-area.aws.geosys.com/docs -->
 
 # Planted Area Computation
 
@@ -37,7 +36,7 @@ The analytic uses satellite imagery captured before and after crop emergence, co
 
 ## ⚙️ API
 
-<swagger-ui src="https://planted-area.aws.geosys.com/docs"/>
+<!-- md:swagger https://planted-area.aws.geosys.com/docs -->
 
 ---
 

@@ -9,7 +9,11 @@ keywords:
 
 
 
-<swagger-ui src="https://parametric-insurance.aws.geosys.com/openapi.json"/>
+# Parametric Insurance API
+
+The interactive API reference for the Parametric Insurance service is available here:
+
+<!-- md:swagger https://parametric-insurance.aws.geosys.com/docs -->
 
 
 

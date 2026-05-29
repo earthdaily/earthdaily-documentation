@@ -17,7 +17,7 @@ Please add illustration
 
 ## API 
 
-<swagger-ui src="add_swagger_json_url"/>
+<!-- md:swagger add_swagger_docs_url -->
 
 ## Performance and accuracy
 
