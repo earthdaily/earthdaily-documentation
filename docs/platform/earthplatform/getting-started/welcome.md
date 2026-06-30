@@ -10,18 +10,19 @@ keywords:
   - onboarding
 ---
 
-# Welcome Email
+## Welcome to the EarthDataStore!
 
-The [EarthPlatform](https://console.earthdaily.com/platform/signin) is a GUI for the STAC API and also provides visualization of STAC assets along with search and many other features whereby you can interact with the images. EarthPlatform also provides a STAC compliant API for querying and downloading geospatial data.
+The [EarthPlatform](https://console.earthdaily.com/) is a user interface for the EarthDaily STAC API which allows for searching and visualizing STAC assets as well as access credential management. 
 
-To get started, login to [Account Management](https://console.earthdaily.com/account/signin) using your EarthPlatform credentials. These would have been provided in an email when your user account was created and it looks like this:
+To get started, look out for an email in your inbox from EarthDaily asking that you set a password:
 
-For `New Login Experience`
+1. Welcome Email Example:
+![Welcome Email Example](../../../assets/platform/STACAPI/WelcomeEmail-June26.png)
+2. Password Form:
+![Password Form Example](../../../assets/platform/STACAPI/SetPassword-May26.png)
+3. Console Landing Page:
+![Console Landing Page](../../../assets/platform/STACAPI/MarketingConsole-June26.png)
 
-![New Welcome Email](../../../assets/platform/STACAPI/NewWelcomeEmail.png)
+## You're in!
 
-For `Legacy Login Experience`
-
-![Welcome Email](../../../assets/platform/STACAPI/WelcomeEmail.png)
-
-You will need to change your password at the first login.
+Next, move onto the [Authentication](authentication.md) page to provision a new API key.

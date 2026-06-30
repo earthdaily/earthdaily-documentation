@@ -10,9 +10,9 @@ keywords:
   - datacubes
 ---
 
-# EDS Examples
+# EarthDaily STAC Client Examples
 
-Here are some examples to work with EDS data.
+Here are a few examples to work with EarthDaily data through PySTAC and the EarthDaily Python Client.
 
 ## Basic Examples
 

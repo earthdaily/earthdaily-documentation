@@ -63,6 +63,6 @@ Intersection of Union average accuracy score of 0.94-0.96.
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 --8<-- "snippets/contact-footer.md"

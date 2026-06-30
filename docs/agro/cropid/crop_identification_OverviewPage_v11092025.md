@@ -63,7 +63,8 @@ Coverage includes crops such as:
 * **USA:** Corn, Soybean, Wheat, Cotton  
 * **Brazil:** Soybean, Corn (first and second seasons), Sugarcane, Cotton, Wheat and Rice  
 * **France:** Winter wheat, Barley, Oil Seed Rape, Corn, Sunflower and Sugarbeet
-* **Germany:** Winter wheat, Barley, Oil Seed Rape, Corn and Sugarbeet 
+* **Germany:** Winter wheat, Barley, Oil Seed Rape, Corn and Sugarbeet
+* **UK:** Winter wheat, Barley, and Oil Seed Rape
 
 Additional countries and crops can be supported upon request or as part of our product roadmap. [Contact us](https://earthdaily.com/contact) to learn more.
 

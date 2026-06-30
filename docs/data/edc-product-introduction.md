@@ -1,0 +1,141 @@
+---
+title: EarthDaily Constellation (EDC) — Product Introduction
+description: A high-level introduction to EarthDaily Analytics' scientific-quality, AI-ready Earth observation data delivered by the EarthDaily Constellation.
+keywords:
+  - EarthDaily
+  - EDC
+  - AiRD
+  - Cloud-Optimized GeoTIFF
+  - COG
+  - Analysis Ready Cloud Optimized
+  - satellite imagery
+  - analysis-ready data
+  - AI-ready data
+  - remote sensing
+  - Earth observation
+---
+
+# EarthDaily Constellation — AI-Ready Data for Unmatched Insights
+
+The **EarthDaily Constellation (EDC)** is a systematic, global change-detection mission delivering scientific-quality, **AI-ready** Earth observation data at scale. EDC provides daily access to **~92% of Earth's landmass** plus coastal regions, captured at the same time and from the same angle every day — no tasking required.
+
+EDC products are engineered for cross-time and cross-sensor consistency, supported by rigorous calibration and validation, and powered by an automated cloud-native ground segment that turns raw collections into analysis-ready imagery within hours.
+
+
+
+## Why EDC — The Four Pillars
+
+EDC is built around four principles that distinguish it from traditional commercial Earth observation:
+
+- **Consistency** — Daily, nadir-looking acquisitions and a fixed local crossing time unblock programmatic analysis, predictive AI, and event triggers.
+- **Accuracy** — Market-leading signal-to-noise ratio, stable radiometry, precise geolocation, and advanced cloud and atmospheric masking power reliable, AI-driven decisions.
+- **Completeness** — 22 calibrated spectral bands across VNIR, SWIR, and TIR unlock coincident monitoring of vegetation, water, soil, snow/ice, surface temperature, and emissions.
+- **Interoperability** — Low latency, standardized cloud-native formats, and compatibility with heritage missions like **Sentinel-2** and **Landsat** streamline integration and extend your historical baseline by decades.
+
+!!! tip "Designed for AI/ML pipelines"
+    EDC's flagship **AiRD (AI-Ready Data)** product is processed, standardized, and structured to feed directly into machine learning models and automated analytics — eliminating the manual normalization and calibration that traditionally bottleneck Earth observation workflows.
+
+
+
+## Mission at a Glance
+
+| Parameter | Value |
+|---|---|
+| Satellites | 9 (+ 1 in-orbit spare) — 10 total |
+| Orbit | Sun-synchronous, 608 km altitude |
+| Local equatorial crossing time | ~10:30 a.m. |
+| Coverage & revisit | ~92% of Earth's landmass daily (excluding Antarctica), plus coastal regions up to 100 km offshore |
+| Swath width | 240 km (VNIR, SWIR, TIR) |
+| Native resolution | 5 m (VNIR) · 95 m (SWIR) · 120 m (TIR) |
+| Spectral bands | 22 (11 VNIR · 6 SWIR · 5 TIR) |
+| Viewing angle | < 12° across track |
+| Latency | Hours from acquisition to delivery |
+
+
+
+## Spectral Diversity
+
+EDC's 22-band design enables a wide range of analytics from a single acquisition:
+
+- **Visible** (Coastal, Blue, Aqua, Green, Yellow, Red) — urban change detection, vegetation cover, water quality.
+- **Near-Infrared** (Red Edge 1–3, NIR, Water Vapour 1–2) — plant health, biomass, soil moisture.
+- **Shortwave Infrared** (SWIR 1, Cirrus, SWIR 2, Methane 1–2) — snow and ice, soil characterization, atmospheric correction, methane monitoring.
+- **Thermal Infrared** (Wildfire, TIR 1–4) — land surface temperature, wildfire detection, emission monitoring.
+
+
+
+## Product Lines
+
+Several products will be produced using EDC, all tailored for user needs.
+
+### AiRD — AI-Ready Data (Level 2A)
+
+Processed, corrected, and standardized **Bottom-of-Atmosphere (BOA) surface reflectance** imagery with harmonized radiometry, consistent acquisition geometry, and embedded quality masks. Nine bands at 5 m / 10 m pixel sampling, delivered as 16-bit cloud-optimized GeoTIFFs. This data is **precision corrected** using ground control points, a digital elevation model, and rigorous physics-backed modelling.
+
+**Best for:** AI/ML pipelines, operational monitoring, and time-series analytics across agriculture, energy, insurance, climate risk, and other industries. AiRD removes the typical preprocessing burden so teams can move directly to modeling and decision-making.
+
+### Science — Top-of-Atmosphere (Level 1C)
+
+Processed and scaled **Top-of-Atmosphere (TOA) reflectance** imagery which is ready for additional processing in your data processing and correction pipeline. This data is **precision corrected** using ground control points, a digital elevation model, and rigorous physics-backed modelling. The baseline includes 11 bands.
+
+**Best for:** scientific and engineering users who need calibrated TOA reflectance prior to atmospheric correction — for example, sensor cross-calibration, radiative-transfer studies, or custom atmospheric retrieval pipelines.
+
+### Maritime
+
+Scaled **Top-of-Atmosphere (TOA) reflectance** imagery, processed with **Systematic Correction**. This product includes 4 bands — red, green, blue, and NIR — and can be delivered rapidly where speed is prioritized over high-precision geolocation.
+
+**Best for:** maritime situational awareness, defense and intelligence workflows, and rapid-response monitoring at sea.
+
+| Aspect | AiRD (L2A) | Science (L1C) | Maritime |
+|---|---|---|---|
+| Radiometry | Surface (BOA) reflectance | TOA reflectance | TOA reflectance |
+| Geometric correction | Precision | Precision | Systematic |
+| Bands (baseline) | 9 VNIR | 11 VNIR | 4 bands (RGBN) |
+| Quality mask layers | Data, Cloud, Cloud Shadow, Thin Cirrus, Snow, Water | Data, View | Data, View |
+| Typical user | AI/ML, operations, analytics | Scientific / engineering | Defense, maritime, gov |
+
+
+
+## Data Formats & Access
+
+EDC products are delivered as **analysis-ready, cloud-optimized** data, served through standardized APIs so you can query, subset, and stream pixels directly from object storage without bulk downloads.
+
+- **Imagery** — Cloud-Optimized GeoTIFF (COG), one file per band, 16-bit unsigned integer, LZW-compressed, UTM / WGS84.
+- **Companion files** — quality mask, per-band saturation masks, solar and view angle grids, atmospheric parameters (L2A), pixel processing flags (L2A), thumbnail (PNG), README, and license.
+- **Metadata** — fully **STAC 1.0.0 compliant**, with standard extensions (`eo`, `view`, `raster`, `classification`, `processing`, `proj`, `file`, `sat`, `card4l`) plus a custom `eda` extension for mission-specific fields.
+- **Delivery** — STAC API for search and discovery; products framed to native acquisition footprints rather than fixed tiles.
+
+!!! info "Analysis-ready, cloud-optimized"
+    EDC data combines two ideas: *analysis-ready* (radiometrically and geometrically standardized, with quality metadata) and *cloud-optimized* (chunked, indexed formats like COG that support partial reads over HTTP). The result: zero preprocessing, instant access, and pipelines that scale horizontally without moving terabytes.
+
+A consistent **file naming convention** identifies the satellite, acquisition time, product type, processing level, and band, making it straightforward to organize and index large archives.
+
+
+
+## Use Cases
+
+EDC's combination of daily revisit, spectral breadth, and analysis-ready preprocessing supports a wide range of applications, including:
+
+- **Agriculture** — crop identification, plant health, growth-stage monitoring, yield forecasting, parametric insurance.
+- **Energy & mining** — methane and emission monitoring, mineral exploration, asset and operations monitoring.
+- **Insurance & climate risk** — flood and wildfire modeling, disaster response, parametric triggers, exposure assessment.
+- **Forestry & environment** — wildfire probability and burn severity, deforestation, water quality, snow and ice monitoring.
+- **Government, defense & maritime** — persistent change detection, tip-and-cue workflows, food security, maritime domain awareness.
+
+
+
+## Building on a Heritage Archive
+
+EDC is compatible with **Sentinel-2** and **Landsat** datasets, extending your historical baseline decades back while building forward from 2026 with consistent, daily AI-ready observations. Effective change detection requires not just current data but the ability to measure change against a stable reference — EDC's radiometric and geometric standardization is purpose-built for this.
+
+
+
+## Where to Go Next
+
+More documentation is on the way. Detailed pages covering **product specifications**, **data formats**, **processing**, and a **quickstart guide** will be released soon:
+
+- **Product Specifications** *(coming soon)* — detailed band tables, sampling, and product components.
+- **Data Formats** *(coming soon)* — file naming, masks, angles, metadata, and STAC schema.
+- **Processing Overview** *(coming soon)* — auxiliary data, geometric refinement, orthorectification, and atmospheric correction.
+- **Quickstart Guide** *(coming soon)* — open your first scene in minutes.
+

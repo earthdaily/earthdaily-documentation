@@ -151,7 +151,7 @@ flowchart TD
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

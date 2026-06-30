@@ -29,6 +29,8 @@ INCLUDE_FOLDERS = [
     "platform/earthplatform",
     "platform/earthone",
     "mining",
+    "data",
+    "insurance",
 #    "agro/portfolio",
 #    "agro/parametric",
 #    "agro/territory_insights",

@@ -8,17 +8,44 @@ keywords:
   - geospatial platform
   - satellite data
   - EarthMosaics
+  - EarthPlatform
+  - STAC
+  - PySTAC
+  - Python
+  - APIs
+  - EDC
+  - EDC Python Client
+  - edc-python-client
 ---
 
-# Earth Data Store (EDS)
+## EarthDataStore
 
-![EarthDailyEDS](../../assets/platform/EarthDailyEDS.png)
 
-EDS is an ecosystem by EDA (EarthDaily Analytics) that can connect to and integrate with other geospatial platforms. It offers a growing suite of services, such as EarthMosaics, that help remove the complexity in developing geospatial applications.
+The EarthDataStore (EDS) is a STAC-compliant ecosystem which allows users to access data such as:
 
-This documentation aims to provide our users (having different needs) the guidance required to be able to use the EDS platform and get the best out of it.
+  - EarthMosaics
+  - EarthDaily Constellation data
+  - Other open data collections
 
-- Tips to help you [get started](getting-started/index.md)
-- Details of our [STAC endpoints](api/index.md) for users who wish to use our data in their software applications
-- How-to guidance for the effective navigation of our [user interfaces](console/index.md)
-- [Collections](collections/index.md) made available through EDS which includes some samples of our platform's value add
+## EarthDaily Python Client
+
+While we allow for access through direct STAC API endpoints, we also maintain the EarthDaily Python Client which is documented in this directory. That client can be installed via [PyPI](https://pypi.org/project/earthdaily/) with
+
+```
+pip install earthdaily
+```
+
+### Table of Contents:
+
+  - [Getting Started](getting-started/index.md)
+    - [Welcome](getting-started/welcome.md)
+    - [Authentication](getting-started/authentication.md)
+    - [Quickstart](getting-started/quickstart.md)
+  - [User Interfaces](uis/index.md)
+    - [Account Information](uis/account.md)
+    - [EarthPlatform UI](uis/earthplatform.md)
+    - [EarthMosaics Ordering UI](uis/earthmosaics.md)
+  - [API Guide](api/index.md)
+  - [Analytic Examples](examples.md)
+  - [Developer Resources](https://earthdaily.github.io/earthdaily-python-client/main/)
+

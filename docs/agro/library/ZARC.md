@@ -148,7 +148,7 @@ The behavior of the **ZARC analytic** depends on the presence or absence of the 
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

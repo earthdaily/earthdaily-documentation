@@ -93,7 +93,7 @@ The analytic uses NDVI (1) time series data available at both LR (2) and MR (3) 
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

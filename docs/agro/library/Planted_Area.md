@@ -108,7 +108,7 @@ The analytic uses satellite imagery captured before and after crop emergence, co
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

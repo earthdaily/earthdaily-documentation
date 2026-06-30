@@ -44,8 +44,5 @@ More details are available [here](https://docs.earthdaily.com/agro/cropid/crop_i
 Additional countries and crops could be supported upon request or as part of our product roadmap.
 
 ---
- 
 
-
-
- --8<-- "snippets/contact-footer.md"
+--8<-- "snippets/contact-footer.md"

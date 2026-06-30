@@ -106,4 +106,21 @@ The INCRA-managed SIGEF and SNCI systems provide certified property boundaries t
 
 ---
 
+## 📊 Performance
+
+- **Region**: Brazil  
+
+---
+
+## 💼 Use Case and Product Integration
+
+This analytic is used in:
+
+- [Portfolio](../portfolio/index.md)
+
+---
+
+
+---
+
 --8<-- "snippets/contact-footer.md"

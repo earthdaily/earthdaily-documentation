@@ -117,7 +117,7 @@ Detailed description of each dataset is available on the [Environmental Layers](
 
 This analytic is used in:
 
-- [Portfolio](../portfolio/portfolio_product_site_draft.md)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

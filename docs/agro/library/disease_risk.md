@@ -192,7 +192,8 @@ Weather data is retrieved with extended boundaries to enable moving average calc
 
 This analytic is used in:
 
-- **[Territory Insights](../territory_insights/Territory_insights_overview.md)**
+- [Territory Insights](../territory_insights/index.md)
+
 
 ### Key Applications:
 - **Proactive disease management** - Early warning for disease-favorable conditions

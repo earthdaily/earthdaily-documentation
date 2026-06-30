@@ -83,7 +83,7 @@ The figure below illustrates the expected NDVI development for a typical annual 
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

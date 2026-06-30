@@ -12,9 +12,9 @@ keywords:
   - wheat
 ---
 
-### Weekly Video Series
+## ⚙️ Webinar and Video Series
 
-#### Weekly Videos
+### Weekly Video Series
 
 Join our Crop Analyst for Weekly Video Series where EarthDaily will review Global Crop Production estimates and the Vegetation and Weather data which are driving these estimates.
 
@@ -42,9 +42,11 @@ Please check our Weekly Corn Video
 Please check our Weekly Wheat Video
 <!-- youtube: rcNgis46BYE -->
 
-### Weekly Global Reports
+---
 
-#### All Crops Global Report
+## 📚 Weekly Global Reports
+
+### All Crops Global Report
 
 Our Weekly Global Report is a massive report which showcases all you would want to know about the production conditions of Corn, Soybeans, Wheat, Rapeseed/Canola, and Barley in the top 10 growing regions of the world. (USA, Canada, Brazil, Argentina, Australia, Europe, Russia, Ukraine, India, and China)
 
@@ -52,7 +54,7 @@ The Global Report includes Forecasted Yield and Production values as well as the
 
 [Download an example of our Weekly Global Report](../../assets/agro/commodities-intelligence/global-report-eng.pdf)
 
-#### Crop Specific Reports
+### Crop Specific Reports
 
 Crop specific reports focus on a single target crop and all production areas.
 
@@ -60,7 +62,9 @@ These reports include Forecasted Yield and Production values as well as the curr
 
 [Download an example of our Weekly Wheat Report](../../assets/agro/commodities\_intelligence/Wheat Weekly.pdf)
 
-#### World in 10
+---
+
+## 🌎 World in 10
 
 10 images tell the answer to 10 key questions about production all around the world.
 
@@ -68,7 +72,9 @@ This report provides a quick glance at current production conditions, highlighti
 
 [View an example of our World in 10 Report](https://sway.cloud.microsoft/dRzqvOjcSno2YDcL?ref=Link)
 
-### One on One Crop Analyst Calls
+---
+
+## 👥 One on One Crop Analyst Calls
 
 Talk directly with one of our Crop Analysts about how EarthDaily data is illustrating potential yield concerns.
 

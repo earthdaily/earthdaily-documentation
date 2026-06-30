@@ -75,7 +75,7 @@ This analytic compares the current season emergence to the average historical em
 
 This analytic is used in:
 
-    - [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ## 📚 Glossary
 

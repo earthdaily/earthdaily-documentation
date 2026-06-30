@@ -18,4 +18,4 @@ keywords:
 
 To create an account, please contact [EarthDaily Sales](https://earthdaily.com/contact).
 
-Already have an account but don't have permission? File a ticket in our [Service Desk](http://support.descarteslabs.com).
+Already have an account but don't have permission? File a ticket in our [Service Desk](http://support.earthone.earthdaily.com).

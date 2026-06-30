@@ -12,8 +12,8 @@ keywords:
 
 # Getting Started
 
-Get up and running with the Earth Data Store. Follow the guides below:
+To get up and running with the Earth Data Store and EarthPlatform, follow the guides below:
 
 - [Welcome](welcome.md) — Your welcome email and first login
 - [API Authentication](authentication.md) — How to obtain and use API credentials
-- [Quick Start](quickstart.md) — Access EarthDaily data via API, PySTAC, or the Python client
+- [Quick Start](quickstart.md) — Access EarthDaily data via REST, PySTAC, or the Python client

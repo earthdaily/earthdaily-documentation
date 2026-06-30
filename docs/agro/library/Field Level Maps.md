@@ -33,7 +33,7 @@ EarthDaily Map APIs provide endpoints for retrieving **map image catalog** and *
 
 ## 📑 APIs Description
 
-EarthDaily Map APIs are structured in map families that group different map types having common parameters types. 
+EarthDaily Map APIs are structured in map families that group similar map types having common parameters. 
 
 For each map product, there are two different ways to generate a product:
 
@@ -336,11 +336,11 @@ Response content extract:
 
 Zoning capability allows to create a zoned map based off any “non-zoned” map (NDVI, GNDVI EVI, Yield Variability Map, Yield Goal Map, Organic Matter Variability Map, Elevation...) and the number of zones. 
 
-To create a zoned map just add to paramter on the map request: 
+To create a zoned map just add to the parameters on the map request: 
 ```
 .../base-reference-map/INSEASON_NDVI?Zoning=True&ZoneCount=X
 ```
-With X being the number of zone (min=2 ans max=25)
+With X being the number of zone (min=2 and max=25)
 
 Response content extract
 
@@ -385,7 +385,7 @@ Response content extract
                     "geometry": "MULTIPOLYGON (((-97.6929647 37.14609323, -97.69290283 37.14608116, -97.69286838 37.14604427, -97.6927794 37.14569613, -97.69278408 37.1455012, -97.69280167 37.14546711, -97.69285988 37.14543962, -97.69292182 37.1454541, -97.69296866 37.14551326, -97.69298776 37.14593343, -97.69297601 37.14602652, -97.6929647 37.14609323)), ((-97.69451433 37.14765651, -97.69449116 37.14762271, -97.69429061 37.14757929, -97.69321844 37.14758133, -97.69279903 37.14760645, -97.69273684 37.14762335, -97.69261731 37.14753601, -97.69261606 37.14742859, -97.692777 37.14745955, -97.69335049 37.14746869, -97.69489672 37.14744214, -97.6954727 37.14742055, -97.69581488 37.14738703, -97.6959577 37.14733491, -97.69598964 37.14703375, -97.69603638 37.14696739, -97.69612131 37.14693879, -97.69713908 37.14699963, -97.69731486 37.14698376, -97.69750948 37.14691731, -97.69765168 37.14690398, -97.69777389 37.14693001, -97.6978006 37.14695362, -97.69780325 37.14709392, -97.69782426 37.14712313, -97.69785789 37.14714076, -97.69807866 37.1471575, -97.69804992 37.14739167, -97.69760727 37.14755205, -97.6965283 37.14758849, -97.69653207 37.14757098, -97.69643318 37.14752426, -97.69628686 37.14751341, -97.69620594 37.147531, -97.69614527 37.14756186, -97.69610413 37.1476008, -97.69610291 37.14760286, -97.69451433 37.14765651)), ((-97.69332403 37.1473105, -97.69323876 37.14730127, -97.69323981 37.14728812, -97.69328929 37.14728784, -97.69332403 37.1473105)), ((-97.698192 37.146234, -97.6981417 37.14618488, -97.69811653 37.14603605, -97.69813575 37.14588277, -97.6981616 37.14583425, -97.6982232 37.1457991, -97.69832553 37.14581865, -97.69842046 37.1458838, -97.6
 ```
 
-For example based on an NDVI map here are example of zoned maps.
+Here is an example based on an NDVI map:
 <img width="800" height="200" src="https://github.com/GEOSYS/Images/blob/6888f4b5a4d73ddf71b0debcacff324d80baa80f/FLM/Zoned%20map.png?raw=true">
 
 The response contains for each zone created:
@@ -393,9 +393,9 @@ The response contains for each zone created:
 - Area of the zone
 - Descriptive statistics of the index used to create zones (min, max, mean, standard deviation)
 
-Zoned map are available in several format: png, Tiff, KML, shapefile
+Zoned maps are available in several format: png, Tiff, KML, and shapefile.
 
-Additionnal parameters allow to adapt the segmentation process.
+Additional parameters allow to adapt the segmentation process.
 
 
 --8<-- "snippets/contact-footer.md"

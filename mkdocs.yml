@@ -46,7 +46,9 @@ watch:
 # | - https://www.mkdocs.org/user-guide/configuration/#copyright                                           |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-copyright: © 2026 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the MIT License.|
+copyright: >
+  © 2026 EarthDaily Analytics Corp | All Rights Reserved. Distributed under the MIT License. |
+  <a href="#__consent">Change cookie settings</a>
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -423,14 +425,31 @@ extra:
   homepage: https://earthdaily.com/
   generator: false
   status:
-    improvement: Improvement 
-  consent: 
+    improvement: Improvement
+  analytics:
+    provider: google
+    property: G-CDHPGN4X1M
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Helpful
+          data: 1
+        - icon: material/thumb-down-outline
+          name: Could be improved
+          data: 0
+  consent:
     title: Cookie consent
-    description: 
+    description:
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better. Please review our <a href="https://earthdaily.com/privacy-policy">privacy policy</a>.
+    actions: [accept, reject, manage]
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: false
 
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -641,8 +660,26 @@ hooks:
 # +--------------------------------------------------------------------------------------------------------+
 nav:
   - Home: index.md
-  - Data
-  - EarthOne:
+  - Data: 
+    - data/edc-product-introduction.md
+    - Collections: 
+      - data/collections/index.md
+      - Imagery:
+        - Sentinel-2: data/collections/sentinel-2.md
+        - Landsat: data/collections/landsat.md
+        - Sentinel-1: data/collections/sentinel-1.md
+        - Venus: data/collections/venus.md
+        - EarthDaily Constellation Preview: data/collections/edc-preview.md
+      - Masks:
+        - EDA Cloud Masks: data/collections/cloudmasks.md
+        - Cropland Data Layer US: data/collections/cropland-data-layer.md
+      - Mosaics & Composites:
+        - AI Ready Mosaics: data/collections/ai-ready-mosaics.md
+      - Foundational Analytics:
+        - Biomass, Tree Height & Cover: data/collections/biomass.md
+        - Forest Mask: data/collections/forest-mask.md
+
+  - EarthOne: 
     - platform/index.md
     - EarthPlatform:
       - platform/earthplatform/index.md
@@ -651,13 +688,12 @@ nav:
         - Welcome: platform/earthplatform/getting-started/welcome.md
         - API Authentication: platform/earthplatform/getting-started/authentication.md
         - Quick Start: platform/earthplatform/getting-started/quickstart.md
-      - Console:
-        - platform/earthplatform/console/index.md
-        - New Login Experience: platform/earthplatform/console/new-login.md
-        - Account Information: platform/earthplatform/console/account.md
-        - EarthPlatform: platform/earthplatform/console/earthplatform.md
-        - EarthMosaics: platform/earthplatform/console/earthmosaics.md
-      - API:
+      - User Interfaces:
+        - platform/earthplatform/uis/index.md
+        - Account Information: platform/earthplatform/uis/account.md
+        - EarthPlatform: platform/earthplatform/uis/earthplatform.md
+        - EarthMosaics Ordering UI: platform/earthplatform/uis/earthmosaics.md
+      - API Guide:
         - platform/earthplatform/api/index.md
         - STAC Specification: platform/earthplatform/api/api-design/stac.md
         - API Details and Limits: platform/earthplatform/api/api-design/details-and-limits.md
@@ -667,49 +703,24 @@ nav:
         - Python Examples: platform/earthplatform/api/api-usage/python.md
         - EDA STAC Extension: platform/earthplatform/api/extensions/eda-extension.md
         - EDA Data Coverage Extension: platform/earthplatform/api/extensions/eda-data-coverage.md
-      - EDS Examples: platform/earthplatform/examples.md
-      - EDA Mosaics: platform/earthplatform/mosaics.md
-      - FAQs: platform/earthplatform/faq/index.md
+      - Example Notebooks: platform/earthplatform/examples.md
+      - Developer Resources: https://earthdaily.github.io/earthdaily-python-client/main/
     - EarthOne:
       - platform/earthone/index.md
       - Getting Started:
         - Getting Access: platform/earthone/getting-started/access.md
         - Key Features: platform/earthone/getting-started/api-features.md
         - Understanding Your Usage: platform/earthone/getting-started/usage.md
-      - Platform APIs:
-        - Installation: platform/earthone/platform-apis/installation.md
+      - EarthOne Python SDK:
+        - Installation and Authentication: platform/earthone/platform-apis/installation.md
         - Catalog API: platform/earthone/platform-apis/earthone-catalog-api.md
         - Compute API: platform/earthone/platform-apis/earthone-compute-api.md
       - User Interfaces:
         - Overview: platform/earthone/user-interfaces/earthone-user-interfaces.md
         - Explorer UI: platform/earthone/user-interfaces/earthone-explorer-ui.md
         - Workbench Setup: platform/earthone/user-interfaces/workbench.md
-      - Platform Updates:
-        - Introducing EarthOne: platform/earthone/platform-updates/introducing-earthone.md
-      - Python Client:
-        - platform/earthone/earthone-python/index.md
-        - Auth: platform/earthone/earthone-python/auth.md
-        - Catalog: platform/earthone/earthone-python/catalog.md
-        - Compute: platform/earthone/earthone-python/compute.md
-        - Vector: platform/earthone/earthone-python/vector.md
-        - Config: platform/earthone/earthone-python/config.md
-        - Exceptions: platform/earthone/earthone-python/exceptions.md
-    - Collections:
-      - platform/collections/index.md
-      - Imagery:
-        - Sentinel-2: platform/collections/sentinel-2.md
-        - Landsat: platform/collections/landsat.md
-        - Sentinel-1: platform/collections/sentinel-1.md
-        - Venus: platform/collections/venus.md
-        - EarthDaily Constellation Preview: platform/collections/edc-preview.md
-      - Masks:
-        - EDA Cloud Masks: platform/collections/cloudmasks.md
-        - Cropland Data Layer US: platform/collections/cropland-data-layer.md
-      - Mosaics & Composites:
-        - AI Ready Mosaics: platform/collections/ai-ready-mosaics.md
-      - Foundational Analytics:
-        - Biomass, Tree Height & Cover: platform/collections/biomass.md
-        - Forest Mask: platform/collections/forest-mask.md
+      - Example Notebooks: https://github.com/earthdaily/earthone-example-notebooks/
+      - Developer Resources: https://docs.earthone.earthdaily.com/
   - Agriculture: 
     - agro/index.md
     - PRODUCTS:
@@ -885,8 +896,12 @@ nav:
           - Running quicklook: mining/iris/using-iris/running-quicklook.md
           - GVM viewer: mining/iris/using-iris/gvm-viewer.md
           - Tailings pond water: mining/iris/using-iris/water-viewer.md
+  - Insurance:
+    - insurance/index.md
+    - Ascend:
+      - What is Ascend?: insurance/ascend/index.md
   - Forestry: https://skyforest.io/
-  - Help: 
+  - Help:
     - How to get support: support/help.md
     - Freqently Asked Questions: support/FAQ.md
 #  - News:

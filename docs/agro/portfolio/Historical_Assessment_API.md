@@ -304,9 +304,9 @@ Response body example
   - **resultsBySeason Object**: object grouping historical data by year (per plot)
     - **Keys**: years as strings (e.g., "2024", "2023", etc.), starting from the current year minus one.
     - Each year contains:
-      - **potentialScore**: number representing the potential score for that year.
-      - **cropFailure**: boolean indicating if there was a crop failure that year.
-      - **plantedStatus**: boolean showing if planting occurred that year.
+        - **potentialScore**: number representing the potential score for that year.
+        - **cropFailure**: boolean indicating if there was a crop failure that year.
+        - **plantedStatus**: boolean showing if planting occurred that year.
 
 
 ## 📚 Developer Resources

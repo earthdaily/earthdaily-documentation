@@ -28,7 +28,7 @@ You can view usage associated with your individual account and monitor total con
 
 Below is an example view of the Usage page:
 
-![Usage page example](../../../assets/platform/earthone/image-png-Jul-31-2024-03-16-59-0175-PM-1.png)
+![Usage page example](../../../assets/platform/earthone/UsageUI.png)
 
 ### Entitlement Definitions - Processing Units
 

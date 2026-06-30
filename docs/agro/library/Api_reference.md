@@ -148,7 +148,7 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     AI-powered crop type classification using multi-temporal satellite imagery. Identifies major crop types with confidence scores and validation metrics.
     
     [:simple-swagger: Swagger](https://api.geosys-na.net/cropmasks/v1/swagger/index.html){ .md-button }
-    [:octicons-link-external-16: Details](./docs/agro/cropid/index.md){ .md-button }
+    [:octicons-link-external-16: Details](./crop_identification_OverviewPage_v11092025.md){ .md-button }
     
 
 -   :material-layers: **Layer Service**
@@ -195,15 +195,6 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     [:simple-swagger: Swagger](https://change-index.aws.geosys.com/docs){ .md-button }
     [:octicons-link-external-16: Details](./Change_Index.md){ .md-button }
-
--   :material-chart-bar: **Benchmark**
-
-    ---
-    
-    Compare field performance against historical patterns, regional averages, and peer benchmarks. Supports relative performance analysis.
-    
-    [:simple-swagger: Swagger](){ .md-button }
-    [:octicons-link-external-16: Details](./Field_benchmark.md){ .md-button }
 
 -   :material-monitor-dashboard: **In-Season Monitoring**
 
@@ -326,33 +317,6 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 
 <div class="grid cards" markdown>
 
--  :fontawesome-solid-landmark-flag: **Tillage**
-
-    ---
-    
-    <!-- md:flag experimental --> Detect tillage practices and soil disturbance events using radar and optical imagery. Supports conservation agriculture monitoring and carbon programs.
-    
-    [:simple-swagger: Swagger](https://api.geosys.com/processors/tillage/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./){ .md-button }
-
--   :material-flower: **Cover Crop**
-
-    ---
-    
-    <!-- md:flag experimental --> Satellite-based cover crop detection and coverage analysis. Quantifies cover crop presence for sustainability programs.
-    
-    [:simple-swagger: Swagger](https://api.geosys.com/processors/cover-crop/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](./){ .md-button }
-
--   :material-weight: **Cover Crop Biomass** 
-
-    ---
-    
-    <!-- md:flag experimental --> Estimate cover crop biomass and carbon sequestration potential. Supports carbon credit programs and soil health initiatives.
-
-    [:simple-swagger: Swagger](https://api.geosys.com/processors/cover-crop/v1/docs){ .md-button }
-    [:octicons-link-external-16: Details](){ .md-button }
-
 -   :material-weight: **Baresoil** 
 
     ---
@@ -381,11 +345,5 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
 </div>
 
 
-
-
 --8<-- "snippets/contact-footer.md"
 
-
-
-
---8<-- "snippets/contact-footer.md"

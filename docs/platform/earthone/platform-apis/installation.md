@@ -24,15 +24,46 @@ To start using the EarthOne Platform, you need to install the Python client. Whe
 - Take a look at our best practices for [managing your development environment](https://docs.earthone.earthdaily.com/installation-conda.html)
 - [Install](https://docs.descarteslabs.com/installation.html) the Python client, typically through `pip install earthdaily-earthone`
 
-### Authenticating your Installation
+### Authentication
 
-Once you have installed the EarthOne Python API, we must next [authenticate](https://docs.earthone.earthdaily.com/authentication.html) your Python client with the Platform and test the connection. Typically this is done via a Terminal in an activated environment, such as [Conda](https://conda.io/projects/conda/en/latest/index.html), with the following command:
+Once you have installed the EarthOne Python API, we must next [authenticate](https://docs.earthone.earthdaily.com/authentication.html) your Python client with the Platform and test the connection. 
+
+#### Command Line
+
+Typically this is done via a Terminal in an activated environment, such as [Conda](https://conda.io/projects/conda/en/latest/index.html), with the following command:
 
 ```
 earthone auth login
 ```
 
-> **Note:** If you run into trouble with authentication, please feel free to reach out to [dl.support@earthdaily.com](mailto:dl.support@earthdaily.com).
+#### Python Client
+
+You can also authenticate via the Python SDK:
+
+```python
+import earthdaily.earthone
+from earthdaily.earthone.core.client.auth.cli import cli
+
+try:
+    cli(["login"])
+except:
+    pass
+```
+
+#### Environment Variables
+
+If running the EarthOne SDK remotely, you can also pass environment variables, which can be generated at [earthone.earthdaily.com/account/refresh-token](https://earthone.earthdaily.com/account/refresh-token):
+
+```
+export EARTHONE_CLIENT_ID=...
+export EARTHONE_CLIENT_SECRET=...
+```
+
+
+
+> **Note:** If you run into trouble with authentication, please feel free to reach out to [support@earthdaily.com](mailto:support@earthdaily.com).
+
+
 
 ### Example Notebooks to get you started
 

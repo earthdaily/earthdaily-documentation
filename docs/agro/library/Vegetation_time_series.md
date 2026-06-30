@@ -309,7 +309,7 @@ Similar structure to Single Time Series but processes multiple geometries in par
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/) - Multi-field vegetation monitoring
+- **[Portfolio](../portfolio/index.md)** - Multi-field vegetation monitoring
 - **Crop Health Monitoring**: Identify stress patterns and anomalies with high spatial detail
 - **Yield Forecasting**: Analyze vegetation trends for yield prediction models
 - **Insurance Assessment**: Document crop conditions for claims processing with audit trail

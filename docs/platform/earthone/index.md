@@ -11,28 +11,34 @@ keywords:
   - high-performance computing
 ---
 
-# EarthOne Platform
+## EarthOne Platform
 
 EarthOne is EarthDaily's analytics platform, providing access to petabytes of geospatial data and high-performance computing resources.
 
-## Getting Started
+### Table of Contents
 
-- [Getting Access](getting-started/access.md) — create an account and get permissions
-- [Key Features](getting-started/api-features.md) — overview of the EarthOne Python stack
-- [Installation](platform-apis/installation.md) — install and authenticate the Python client
-- [Understanding Your Usage](getting-started/usage.md) — learn how usage is calculated
+  - Quickstart
+    - [Getting Access](getting-started/access.md) — create an account and get permissions
+    - [Key Features](getting-started/api-features.md) — overview of the EarthOne Python stack
+    - [Installation](platform-apis/installation.md) — install and authenticate the Python client
+    - [Understanding Your Usage](getting-started/usage.md) — learn how usage is calculated
 
-## Platform APIs
+  - EarthOne Python SDK
+    - [Catalog API](platform-apis/earthone-catalog-api.md) — search and retrieve geospatial data
+    - [Compute API](platform-apis/earthone-compute-api.md) — scalable batch computing
+    - Dynamic Compute API - DOC TBD
 
-- [Catalog API](platform-apis/earthone-catalog-api.md) — search and retrieve geospatial data
-- [Compute API](platform-apis/earthone-compute-api.md) — scalable batch computing
+  - User Interfaces
+    - [User Interfaces Overview](user-interfaces/earthone-user-interfaces.md) — Explorer, Workbench, Compute, and Storage
+    - [Explorer UI](user-interfaces/earthone-explorer-ui.md) — interactive data discovery and visualization
+    - [Workbench Setup](user-interfaces/workbench.md) — hosted development environment
 
-## User Interfaces
+  - Example Notebooks
+    - [EarthOne Example Notebooks](https://github.com/earthdaily/earthone-example-notebooks/)
 
-- [User Interfaces Overview](user-interfaces/earthone-user-interfaces.md) — Explorer, Workbench, Compute, and Storage
-- [Explorer UI](user-interfaces/earthone-explorer-ui.md) — interactive data discovery and visualization
-- [Workbench Setup](user-interfaces/workbench.md) — hosted development environment
+  - Developer Resources
+    - [API Reference](https://docs.earthone.earthdaily.com/)
 
-## Platform Updates
+<!-- ## Platform Updates
 
-- [Introducing EarthOne](platform-updates/introducing-earthone.md) — migration from Descartes Labs to EarthOne
+- [Introducing EarthOne](platform-updates/introducing-earthone.md) — migration from Descartes Labs to EarthOne -->

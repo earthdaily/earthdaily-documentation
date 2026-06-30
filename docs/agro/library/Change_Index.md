@@ -94,7 +94,7 @@ Here is the Change index [API documentation](https://change-index.aws.geosys.com
 
 This analytic is used in:
 
-- [Portfolio](/earthdaily-documentation/agro/portfolio/portfolio_product_site_draft/)
+- [Portfolio](../portfolio/index.md)
 
 ---
 

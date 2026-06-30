@@ -8,9 +8,23 @@
     margin-left: 0.75rem; /* Adjust the value (e.g., 0.5rem, 2em, 20px) as needed */
 }
 
-/* Further indent nested levels if needed */
+/* Further indent nested levels if needed.
+   Kept tight (0.25rem per level) because some sections nest up to 5 deep
+   (e.g. Agriculture → USER GUIDES → earthdaily-agriculture client → API reference → page),
+   and a larger per-level value pushed deep items off the right edge of the sidebar. */
 .md-nav__list .md-nav__list {
-    margin-left: 0.5rem; /* Adjust this value for deeper nesting */
+    margin-left: 0.25rem;
+}
+
+/* Section-header rows (PRODUCTS, USER GUIDES, ANALYTIC CATALOG, etc.) sit flush
+   with their parent tab's link (e.g. "Agriculture") instead of being indented
+   one nested-list step inside it. Targets only the <ul> that directly contains
+   section items, so tabs without sections (Mining, etc.) are unaffected.
+   Selector intentionally mirrors the more-specific section-content rule above
+   (with an added :has() filter) so it overrides that rule's 0.75rem margin
+   when the inner content is itself more sections. */
+.md-nav__item--section > .md-nav > .md-nav__list:has(> .md-nav__item--section) {
+    margin-left: 0;
 }
 
 /* Make the font color of the sub-titles (pages) darker */
@@ -233,7 +247,10 @@ main.md-content > .md-content__inner {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     margin: 1.5rem 0 1.5rem 1.5rem;
-    padding: 1.25rem;
+    /* Vertical padding kept generous; horizontal trimmed so top-level
+       links (e.g. "Agriculture") sit flush-left and deep nested items
+       don't overflow the sidebar. */
+    padding: 1.25rem 0.5rem;
 }
 
 .md-sidebar--secondary {

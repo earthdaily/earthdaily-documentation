@@ -17,3 +17,6 @@ docs/mining/marigold/using-marigold/processes/mineral-indices.md
 
 # Claude Code local IDE state
 .claude/
+
+# DS Store
+.DS_Store

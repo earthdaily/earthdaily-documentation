@@ -13,7 +13,7 @@ keywords:
 ---
 
 
-## 🗺️Introduction
+## 🗺️ Introduction
 
 Agriculture is evolving, and growers now expect co-ops, input retailers, and service providers to deliver more than inputs — they are looking for holistic, data-driven support that helps them navigate agronomic, environmental, and economic challenges. Meeting these expectations requires deeper, more consistent insight into field performance than traditional scouting or experience alone can provide. 
 
@@ -74,7 +74,7 @@ All our analytics are available:
 
 - Through our Web Application 
 
-Explore further details in our [API Documentation](#).
+Explore further details in our [API Documentation](../library/Api_reference/).
 
 ---
 

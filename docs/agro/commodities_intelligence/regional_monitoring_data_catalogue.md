@@ -14,7 +14,7 @@ keywords:
 
 # Geosys Regional Monitoring Data Catalogue
 
-## What's included in the weather chain
+## ⛅ Regional Monitoring Weather
 
 **FORECAST WEATHER MODELS**
 
@@ -39,12 +39,12 @@ keywords:
 ![Link between providers, time of delivery and reprocessing of the data](../../assets/agro/commodities-intelligence/weather-data-providers.jpg)
 *Figure 1 - Link between providers, time of delivery and reprocessing of the data*
 
-## Parameters, related maps and graphs
+## 📚 Parameters, Related Maps and Graphs
 
 ![Different data parameters and corresponding maps and curves](../../assets/agro/commodities-intelligence/parameters-maps-graphs.jpg)
 *Figure 2 - Different data parameters and corresponding maps and curves*
 
-## Data technical description
+## 🔧 Data Technical Description
 
 ![List of data types and their units (1)](../../assets/agro/commodities-intelligence/data-types-units-1.jpg)
 *Figure 3 - List of data types and their units (1)*
@@ -52,7 +52,7 @@ keywords:
 ![List of data types and their units (2)](../../assets/agro/commodities-intelligence/data-types-units-2.jpg)
 *Figure 4 - List of data types and their units (2)*
 
-## Available levels of aggregation
+## 📊 Available Levels of Aggregation
 
 ![Available regions and level of aggregation](../../assets/agro/commodities-intelligence/regions-aggregation-levels.jpg)
 *Figure 5 - Available regions and level of aggregation*
