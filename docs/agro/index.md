@@ -8,7 +8,7 @@ hide:
 
 Explore our comprehensive suite of agricultural intelligence solutions designed to transform decision-making in agriculture, insurance, and commodity markets.
 
-<div class="grid cards" markdown>
+<div class="grid cards fixed-3-col" markdown>
 
 -   :material-package-variant:{ .lg .middle } __Digital Ag__
 

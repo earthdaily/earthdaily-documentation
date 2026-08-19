@@ -108,6 +108,29 @@
   flex-direction: column;
 }
 
+/* Force 1 column by default */
+.grid.cards.fixed-3-col {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* At tablet size → force 2 columns */
+@media screen and (min-width: 768px) {
+  .grid.cards.fixed-3-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* At desktop size → force 3 columns, so 6 cards land as 2 rows of 3
+   instead of the auto-fit default packing 4 onto the first row */
+@media screen and (min-width: 1024px) {
+  .grid.cards.fixed-3-col {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
 /* Hide auto-generated page title - Multiple selectors */
 .md-content__inner > h1:first-child,
 .md-content h1:first-of-type,

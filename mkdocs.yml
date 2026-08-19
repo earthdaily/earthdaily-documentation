@@ -447,9 +447,12 @@ extra:
       make our documentation better. Please review our <a href="https://earthdaily.com/privacy-policy">privacy policy</a>.
     actions: [accept, reject, manage]
     cookies:
+      # Must stay `checked: true`. Material saves consent from the form state
+      # (`new FormData(form).keys()`), not from the button clicked — so with the box
+      # unticked, "Accept" stores no analytics consent and gtag.js never loads.
       analytics:
         name: Google Analytics
-        checked: false
+        checked: true
 
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -752,6 +755,7 @@ nav:
       - Crop identification:
         - agro/cropid/index.md
         - US: agro/cropid/crop_identification_US_v11092025.md
+        - Canada: agro/cropid/crop_identification_Canada.md
         - Brazil: agro/cropid/crop_identification_Brazil_v11092025.md
         - Western Europe: agro/cropid/crop_identification_France_Germany_v11092025.md
         - Try samples: https://samples.cropid.earthdaily.com/

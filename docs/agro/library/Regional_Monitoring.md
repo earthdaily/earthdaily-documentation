@@ -44,34 +44,39 @@ Regional monitoring provides a **high-level, data-driven perspective** that supp
 
 ### Vegetation and Weather Data
 
-![RegMonitoring_Data1](../../assets/agro/analytics/historical-assessment/RegMonitoring_Data1.png)
+![RegMonitoring_Data1](../../assets/agro/analytics/historical-assessment/Veg_Weather_Data.png)
 
 ### Additional Datasets
 
-![RegMonitoring_Data2](../../assets/agro/analytics/historical-assessment/RegMonitoring_Data2.png)
+![RegMonitoring_Data2](../../assets/agro/analytics/historical-assessment/Addl_Weather_Data.png)
 
 ### More Info on Weather Models:
 
 #### **Forecast Weather Models**
-- **ENS model** (ECMWF\*, probabilistic, 20 km resolution, forecast D+14)  
-- **GFS model** (NOAA-NCEP\*\*, deterministic, 25 km resolution, forecast D+14)  
+- **ENS model** (ECMWF\*, probabilistic, 20 km/12.4 mi resolution, forecast D+14)  
+- **GFS model** (NOAA-NCEP\*\*, deterministic, 25 km/15.5 mi resolution, forecast D+14)
+- **AROME model** (Météo-France\*\*\*, deterministic, 1.3 km to 2.5 km resolution, forecast D+2.5)
 
 #### **Historical Data**
 - Historical data depth from **1990 to 2019** (today minus 15 days)  
 
 #### **Sliding Reprocessing**
 - **D - 3 months**, then **D - 15 days**  
-- **ERA-5\*** (ECMWF) historical data integrated at the beginning of each month:
-  - Current Month minus 3 months data  
-  - Example: On July 31, the last available data is April 30 (3 months delay)  
-- **ERA-5T\*** (ECMWF) historical data integrated **day by day** at D-15 days  
-- **ENS (ECMWF)** D0 values (pseudo-analysis) stored from D0 to last ERA-5T historical available data (D-15 days)  
+- **ERA-5**\*\*\*\* (ECMWF) historical data integrated at the beginning of each month:
+    - Current month minus 3 months data  
+    - Example: On July 31, the last available data is April 30 (3 months delay)  
+- **ERA-5T**\*\*\*\* (ECMWF) historical data integrated **day by day** at D-15 days  
+- **ENS** (ECMWF) D0 values (pseudo-analysis) stored from D0 to last ERA-5T historical available data (D-15 days)  
 
 ![SlidingReproccessing](../../assets/agro/analytics/historical-assessment/SlidingReprocessing.png)
 
-\* **European Center for Weather Forecasts (ECMWF)**, Reading, UK  
-\*\* **National Oceanic and Atmospheric Administration – National Center for Environmental Prediction (USA)**  
-\*\*\* The data assimilation system  
+\* **European Center for Weather Forecasts (ECMWF)**, Reading, UK
+
+\*\* **National Oceanic and Atmospheric Administration – National Center for Environmental Prediction (USA)**
+
+\*\*\* **Application of Research to Operations at Mesoscale**, Météo-France, CNRM (National Centre for Meteorological Research / Centre National de Recherches Météorologiques)
+
+\*\*\*\* The data assimilation system
 
 
 ## ⚙️ API
