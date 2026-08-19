@@ -1,0 +1,1089 @@
+# EarthDaily documentation — Agriculture > PRODUCTS
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Crop Intelligence
+URL: https://docs.earthdaily.com/agro/commodities_intelligence/
+Keywords: commodities intelligence, crop intelligence, commodity trading, yield forecast, supply chain, food security, satellite monitoring
+
+# Crop Intelligence
+
+## 🌾 Introduction
+
+In volatile agricultural markets, success depends on real-time data. EarthDaily gives you that edge. We combine Earth Observation (EO) analytics with AI-powered forecasts, providing real-time visibility into global and local crop conditions.
+
+Continuous satellite monitoring, historical data, and predictive intelligence help you optimize procurement, improve trade strategies, and make confident market decisions.
+
+Multiple delivery channels ensure that EarthDaily Crop Intelligence is available in the format best suited for your business needs.
+
+## 👥 Target Audience
+
+EarthDaily has designed this product for organizations that need timely, accurate, and scalable crop intelligence:
+
+- **Commodity Traders & Analysts** - Monitor the current vegetation and weather trends in key areas of the world which drive change in the market. Anticipate the market and the changes made by the USDA and other Government Agencies prior to the release of their reports.
+
+- **Food & Beverage Corporates** - Enhance supply chain transparency, understand import/export constraints from global partners, and improve seasonal planning and procurement.
+
+- **Insurance & Risk Management Firms** - Accurately assess crop exposure, monitor seasonal progression, and model risk with spatially consistent datasets.
+
+- **Governments & Policy Institutions** - Support national food security assessments, subsidy programs, and environmental monitoring efforts.
+
+## 🚜  Crop Intelligence Delivery Methods
+* Geosys Web Application
+* API Access
+* Weekly Video Series
+* Global Crop Reports
+* World in 10
+* One on One Crop Analyst Calls
+
+## 📊 Data & Analytics Coverage
+
+Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link).
+
+---
+
+---
+
+## Webapp & API
+URL: https://docs.earthdaily.com/agro/commodities_intelligence/delivery_method_web/
+Keywords: Geosys web application, crop monitoring, yield forecast, API, vegetation monitoring
+
+## 🌍 Geosys Web Application
+
+Access key EarthDaily Data in a simple user interface to quickly and efficiently monitor your crop of interest in any part of the world and create your own yield forecasts and production alerts.
+ 
+### Case 1 - 2025 US Corn
+High corn crop vigor in Nebraska during the 2025 season
+
+### Case 2 - 2024 Brazil Soy
+Strong dryness in the first half of the cycle strongly impacted the soybean yield potential in Mato Grosso
+
+### Case 3 - 2024 Russia Wheat
+Strong late cold snap in May 2024 strongly impacted crop vigor and yield potential
+
+### Case 4 - 2016 France Wheat
+Exceptionally rainy and fresh end of season led to too wet and not enough sunny conditions, disturbing blooming and then strongly decreasing the yield potential
+
+---
+
+## 🧭 API
+
+Ingest data from the EarthDaily platform directly to your platform to feed your yield forecast models or user interface.
+
+For a full list of data available via the API please visit this [link](../library/Regional_Monitoring.md)
+
+---
+
+## Videos & Reports
+URL: https://docs.earthdaily.com/agro/commodities_intelligence/delivery_method_reports_videos/
+Keywords: crop reports, webinar, yield forecast, global production, corn, soybeans, wheat
+
+## ⚙️ Webinar and Video Series
+
+### Weekly Video Series
+
+Join our Crop Analyst for Weekly Video Series where EarthDaily will review Global Crop Production estimates and the Vegetation and Weather data which are driving these estimates.
+
+**Reasons to watch our videos:**
+
+* **Insights** - Gain valuable insights into crop conditions.
+* **Ahead of the market** - Stay ahead of the market with information at the beginning of the week which can confirm or challenge the market noise.
+* **Production figures** - Estimated production of the main grains in the world's main producers.
+
+**Weekly Videos available include:**
+
+* **Global Crop Production Highlights**
+
+  * Weekly updates on key production areas where conditions are most different when compared to previous seasons.
+  * Watch this video to stay aware of major stories of the growing season.
+* **Global Crop Specific Videos** for Corn, Soybeans, Wheat, Rapeseed/Canola, Barley, and Sunflower
+
+  * Weekly updates on all the production areas of the target crop with the latest estimated production numbers.
+  * Highlights when our forecasts or conditions have changed recently or we differ from USDA
+
+Please check our Weekly Corn Video
+
+Please check our Weekly Wheat Video
+
+---
+
+## 📚 Weekly Global Reports
+
+### All Crops Global Report
+
+Our Weekly Global Report is a massive report which showcases all you would want to know about the production conditions of Corn, Soybeans, Wheat, Rapeseed/Canola, and Barley in the top 10 growing regions of the world. (USA, Canada, Brazil, Argentina, Australia, Europe, Russia, Ukraine, India, and China)
+
+The Global Report includes Forecasted Yield and Production values as well as the current vegetation, weather, and production maps and charts which are driving Forecasted Yields.
+
+[Download an example of our Weekly Global Report](../../assets/agro/commodities-intelligence/global-report-eng.pdf)
+
+### Crop Specific Reports
+
+Crop specific reports focus on a single target crop and all production areas.
+
+These reports include Forecasted Yield and Production values as well as the current vegetation, weather, and production maps and charts which are driving Forecasted Yields.
+
+[Download an example of our Weekly Wheat Report](../../assets/agro/commodities\_intelligence/Wheat Weekly.pdf)
+
+---
+
+## 🌎 World in 10
+
+10 images tell the answer to 10 key questions about production all around the world.
+
+This report provides a quick glance at current production conditions, highlighting areas of interest which could be driving the changes in the supply market next week.
+
+[View an example of our World in 10 Report](https://sway.cloud.microsoft/dRzqvOjcSno2YDcL?ref=Link)
+
+---
+
+## 👥 One on One Crop Analyst Calls
+
+Talk directly with one of our Crop Analysts about how EarthDaily data is illustrating potential yield concerns.
+
+Bring your own questions about specific areas of interest or allow our Crop Analysts to take you on a virtual crop tour of regions of interest to our business.
+
+---
+
+## Yield
+URL: https://docs.earthdaily.com/agro/commodities_intelligence/yield/
+Keywords: yield elaboration, yield forecast methodology, vegetation monitoring, weather monitoring, historical analog, production estimation
+
+## 🌾 Yield Elaboration Method
+
+EarthDaily's Yield Elaboration Method starts with answering these key questions and quandaries:
+
+- Where to look?
+
+ 
+- When to look?
+
+- Vegetation and Weather Monitoring
+
+- Historical Analog Detection
+
+- Historical Dataset Comparisons
+
+---
+
+## Regional Monitoring Data Catalogue
+URL: https://docs.earthdaily.com/agro/commodities_intelligence/regional_monitoring_data_catalogue/
+Keywords: regional monitoring, weather data, ECMWF, ERA-5, GFS, forecast models, data catalogue, EarthDaily Agro
+
+# Geosys Regional Monitoring Data Catalogue
+
+## ⛅ Regional Monitoring Weather
+
+**FORECAST WEATHER MODELS**
+
+- ENS model (ECMWF\*, probabilistic, 20km resolution, forecast D+14)
+- GFS model (NOAA-NCEP\*\*, determinist, 25km resolution, forecast D+14)
+
+**HISTORICAL DATA**
+
+- Historical data depth from 1990 to 2019 (today less 15 days)
+
+**SLIDING REPROCESSING D - 3 MONTHS, THEN D - 15 DAYS**
+
+- ERA-5\*\*\* (ECMWF) historical data integrated every beginning of the month with Current Month minus 3 months data (on the 31st of July, the 30th of April data is the last available data = 3 months)
+- ERA-5T\*\*\* (ECMWF) historical data integrated day by day at D-15 days.
+- ENS (ECMWF) D0 values (pseudo-analysis) stored from D0 to last ERA-5T historical available data ( D-15 days )
+
+    - \*European Center for Weather Forecasts (ECMWF), based in Reading, UK.
+    - \*\*National Oceanic and Atmospheric Administration - National Center for Environmental Prediction (USA).
+    - \*\*\*The data assimilation system
+
+*Figure 1 - Link between providers, time of delivery and reprocessing of the data*
+
+## 📚 Parameters, Related Maps and Graphs
+
+*Figure 2 - Different data parameters and corresponding maps and curves*
+
+## 🔧 Data Technical Description
+
+*Figure 3 - List of data types and their units (1)*
+
+*Figure 4 - List of data types and their units (2)*
+
+## 📊 Available Levels of Aggregation
+
+*Figure 5 - Available regions and level of aggregation*
+
+---
+
+---
+
+## Case studies
+URL: https://docs.earthdaily.com/agro/commodities_intelligence/case_studies/
+Keywords: case study, Brazil soybeans, Canadian durum wheat, Russian winter wheat, yield forecast, USDA, crop failure
+
+## 🎯 Success Cases
+
+Below are a few recent examples where EarthDaily data and analysis have led to a much earlier understanding of production concerns and adjustments in forecasted yields by market drivers.
+
+### 2022 Brazil Soybeans Case Study
+
+**Drought in Center-South and Average Yields in Center-North Lead to Lower Production**
+
+2022 saw varied results in Brazilian Soybeans depending on where you looked.  The Center-North of the country, where the bulk of the crop is grown, received satisfactory precipitation and produced an average crop as shown in our vegetation chart
+
+The Center-South unfortunately experienced the lowest precipitation levels in years starting at the begining of the growing cycle.  This lack of rainfall clearly limited the vegetation development to a level below the previously lowest producing year of 2012.
+
+EarthDaily decreased Yield Forecasts in December well before CONAB and USDA reached the same levels near the end of the season.  Our clear view of this crop failure in the Center-South allowed our customers to anticipate these eventual drops in production by the USDA and CONAB.
+
+### 2023 Canadian Durum Wheat Case Study
+
+**Early Season Heat and Dryness Shortens the Growing Season**
+
+The start of the 2023 Canadian Wheat season started out very similar to the 2021 season.  2021 was a poor year for Canada and this made us adopt a pessimistic position from the beginning. Staring in July, the high temperature and low moisture began to effect NDVI, much like 2021. 
+
+**Forecasted Yield Starts to Drop Two Months Earlier Than STATCAN**
+
+Seeing these trends early allowed us to point out a crop failure well in advance compared to USDA and STATCAN.
+
+### 2024 Russian Winter Wheat Case Study
+
+**Extremely wet start of the cycle**
+
+**Record dry conditions in the following months**
+
+**Strong late cold snap in May**
+
+**Warm waves at the end of the cycle negatively rushing the grain maturation**
+
+Weather insights and some analogies with the very poor 2012 crop vigor allowed us to forecast very disappointing winter wheat yields 11 weeks before USDA did!
+
+---
+
+## Index
+URL: https://docs.earthdaily.com/agro/digital_ag/
+Keywords: digital agriculture, field-level analytics, crop monitoring, anomaly detection, vegetation indices, satellite constellation, API integration
+
+## 🗺️ Introduction
+
+Agriculture is evolving, and growers now expect co-ops, input retailers, and service providers to deliver more than inputs — they are looking for holistic, data-driven support that helps them navigate agronomic, environmental, and economic challenges. Meeting these expectations requires deeper, more consistent insight into field performance than traditional scouting or experience alone can provide. 
+
+At the same time, agronomists and advisors are responsible for supervising larger and more complex grower portfolios than ever before, making it increasingly difficult to provide precise, field-adjusted recommendations for every field of a farm. Distinguishing a field that is trending positively from one that is quietly declining is subtle, yet critical — and often impossible to assess without objective, standardized data. 
+
+The Digital Ag solution addresses this need by delivering a clear, up-to-date view of every field in your portfolio. Through harmonized indicators, trend monitoring, and anomaly detection, it equips advisors with the evidence they need to guide growers with confidence, justify input adjustments, and intervene proactively when conditions begin to shift. 
+
+The Digital Ag solution also serves as a foundational data layer for advanced analytics for Data Science Team. Its standardized, high-quality datasets feed seamlessly into modeling pipelines — enabling teams to build predictive tools, refine algorithms, and power the next generation of digital agriculture solutions.
+
+---
+
+## 👥 Target Audience  
+
+The Digital Ag solution provides instant field-wide visibility across your entire portfolio — so you know exactly where to focus before problems become losses. With real-time crop condition insights, anomaly detection, and trend tracking, you can back your agronomic guidance with objective data. You retain full control of the “last mile,” reinforcing your role as a trusted advisor. 
+
+ - **Agronomists & Field Advisors** 
+The Digital Ag analytics engine delivers AI-ready, standardized datasets out of the box. Instead of spending your time on preprocessing, you receive curated agronomic indicators, crop conditions, and field-level metrics that feed directly into your modeling pipeline—accelerating experimentation, improving model accuracy, and reducing iteration cycles. 
+EarthDaily has designed this product for organizations that need timely, accurate, and scalable agricultural intelligence—and have the technical capacity to integrate data via APIs:
+
+- **AgTech Companies & Platforms**  
+Power digital farming tools, agronomic models, and targeted crop-specific advice for mid-season decisions.
+
+---
+
+## 📋 Capabilities
+1. **Field Boundaries & Crop Identification**.
+Accurate, up-to-date field boundaries and crop ID layers provide the foundation for consistent field-level analytics across large territories. 
+
+2. **Field-Level Maps & Time Series**.
+Harmonized vegetation, biomass, and crop-condition indicators are available as both maps and time series. This allows users to monitor crop conditions, track seasonal development, and understand historical trends. 
+
+3. **Crop Events & Change Detection**.
+Automated detection of key agronomic events—such as emergence, peak growth, and senescence—helps users track crop development with precision. Change-detection analytics highlight sudden or unexpected shifts in field behavior, supporting faster diagnosis of issues like stress, disease, or operational anomalies. 
+
+4. **Field Benchmarking**.
+Benchmarking tools compare each field against its own historical performance, similar fields in the portfolio, or regional trends. This contextual insight helps advisors assess whether a field is performing as expected, flag outliers, and prioritize interventions based on relative performance. 
+
+5. **Decision-Support Tools**.
+Decision-support capabilities include generating management zones and prescription (Rx) maps for variable-rate input applications, as well as hotspot detection for guided scouting.
+
+---
+
+## 🌎 Geographic Coverage and Crops  
+The Digital Ag Solution leverages both public and private satellite constellations to ensure reliable, scalable coverage across agricultural regions worldwide.  
+
+Our primary focus is on major raw crops such as cereals, oilseeds, and sugar crops, where consistent, field-level intelligence is essential for operational and modeling workflows. 
+
+What sets us apart is our advanced, agriculture-specific cloud-masking technology, applied in targeted operational regions to ensure clean, reliable inputs for downstream analytics.  
+
+In addition, all data sources are fully cross-calibrated to guarantee the spatial and temporal consistency of our analytics. Scalable processing, seamless integration, and consistent quality controls have been part of our business for more than 35 years.
+
+---
+
+## 🔧 Flexible Delivery to Fit Your Workflow  
+All our analytics are available:  
+
+- Through APIs for seamless integration,  
+
+- Through our Web Application 
+
+Explore further details in our [API Documentation](../library/Api_reference/).
+
+---
+
+---
+
+## Field Boundaries
+URL: https://docs.earthdaily.com/agro/digital_ag/Field_boundaries/
+Keywords: field boundaries, crop identification, crop rotation, automated field borders, USA, Brazil, France
+
+## 📚 Establish Boundaries and Crop History for Your Fields
+
+We make it easy for you to onboard your operation by creating Grower, Farm, and Field entities using multiple means – automated field creation, using a field boundary selection layer (in some regions), or uploading your existing field boundaries into our tools. Then, we start the computation of analytics immediately.
+
+You can update your farm and field entities anytime! With different cropping cycles, land sales and rent, or changes to your farm operation, we have made it quick and easy to make updates and continue the insights for each crop and every season.
+
+Learn more about **Automated Field Boundaries** [here](https://docs.earthdaily.com/agro/library/Automatic_Field_Borders/).
+
+---
+
+## 🌾 Crop Identification & Rotation Intelligence
+
+To help quickly understand a farm's context, the Digital Ag Solution can automatically retrieve crop rotation history using our Crop Identification layers. During the active growing season, it can also confirm the planted crop, providing clarity on current cropping patterns and supporting a clearer understanding of territory-wide dynamics.
+
+### Crop Identification Availability
+
+Crop Identification is currently available in the following countries:
+
+- **USA**: Corn, Soybean, Wheat, Cotton
+- **Brazil**: Soybean, Corn (first and second seasons), Sugarcane, Cotton, Wheat, and Rice
+- **France**: Winter wheat, Barley, Oil Seed Rape, Corn, Sunflower, and Sugarbeet
+- **Germany**: Winter wheat, Barley, Oil Seed Rape, Corn, and Sugarbeet
+
+More details are available [here](https://docs.earthdaily.com/agro/cropid/crop_identification_OverviewPage_v11092025/).
+
+Additional countries and crops could be supported upon request or as part of our product roadmap.
+
+---
+
+---
+
+## Field level maps and time series
+URL: https://docs.earthdaily.com/agro/digital_ag/Field_level_ts_map_weather/
+Keywords: NDVI, LAI, EVI, time series, vegetation indices, Sentinel-2, MODIS, weather indicators
+
+## 🧭 Visualize Your Field from Every Angle
+
+Monitoring crop vigor and diagnosing stress early is essential for preventing yield losses. The Digital Ag solution provides a complete suite of vegetation indices and biophysical variables designed to surface issues quickly and clearly:
+
+- Track canopy development with indices such as **NDVI**, **EVI**, and **GNDVI**, or go deeper with biophysical variables such as **LAI** and **Biomass**, which serve as strong proxies for yield potential and overall crop productivity.
+- Adjust nitrogen nutrition with indices like **S2REP** or **NDRE**, which are linked to chlorophyll content and act as reliable indicators of nitrogen uptake.
+- Detect water stress with **NDMI**, helping you identify moisture limitations.
+- Evaluate light-use efficiency and canopy function with **FAPAR** and **FCover**, which provide deeper insight into crop photosynthetic activity and the fraction of ground effectively covered by vegetation.
+
+---
+
+## 📖 Time Series Captures Your Field’s Track Record
+
+Stay ahead of crop development and yield risks with continuous, season-long visibility into field performance. The Digital Ag Solution provides one of the industry’s most comprehensive temporal datasets—helping you understand not only what is happening today, but how each field has evolved over time.
+
+With our **medium-resolution imagery time series**—built on *Sentinel-2*, *Landsat 8/9*, and premium tasked imagery—you get a clear, consistent view of crop development from **2019 onward**. Advanced denoising and smoothing techniques remove atmospheric and sensor noise, revealing the true biological signal of the crop.
+
+For deeper historical patterns and long-term benchmarking, tap into our **low-resolution imagery time series**, powered by denoised and smoothed **MODIS** data dating back to **2003**. The planned integration of **Sentinel-3** will ensure monitoring continuity while maintaining full cross-calibration with MODIS.
+
+Together, these datasets allow you to analyze multi-season patterns, detect shifts in vigor across years, and uncover insights that support more informed management strategies.
+
+---
+
+## 🗺️ Maps to Analyze Field Variability
+
+The Digital Ag solution provides **Vegetation Field-level Maps** to help you understand in-field variability with clarity and precision. These maps reveal spatial differences in vigor, nutrition, moisture, and canopy structure across every field—enabling you to pinpoint hotspots, identify within-field zones, and target interventions where they will have the greatest impact.
+
+Add even more context with **integrated soil maps** (including *SSURGO-based layers* for the U.S.) and detailed **elevation and slope models**, giving you a full understanding of terrain, risks, and management opportunities across every acre.
+
+Identify emerging issues at a glance with our **HotSpot Processor**, highlighting areas that are changing and may require immediate attention—ensuring you never miss a developing problem and can act quickly.
+
+To keep your workflow seamless, save your go-to layers with **Favorite Maps**—complete with your preferred parameters—so you can pull up the right view in seconds.
+
+---
+
+## 📊 Weather Indicators to Understand Climatic Conditions
+
+The Digital Ag solution provides access to weather indicators—**daily and cumulative precipitation**, **temperature**, **GDD**, and more—to understand growth patterns and see how your conditions compare to previous years.
+
+As a result, you get a clear, reliable picture of crop vigor across space and time—capturing how fields respond to weather events and seasonal conditions. Imagery time series and weather data form the foundational inputs for many agronomic and AI modeling approaches, providing both the long-term context and short-term precision needed to anticipate issues.
+
+---
+
+---
+
+## Crop events
+URL: https://docs.earthdaily.com/agro/digital_ag/Crop_events_CD/
+Keywords: phenology, emergence detection, harvest detection, change detection, crop events, greenness readiness
+
+## 🌱 Detection of Key Phenological Stages
+
+Our phenology processors reliably detect key crop events, giving you a clear picture of each field’s progression through the season and how it compares to historical patterns:
+
+- **Emergence detection** (historical, in-season, delay)
+- **Greenness readiness** for peak-season assessments
+- **Corn silking date** (calibrated for Europe)
+- **Harvest readiness**
+- **Harvest detection** (historical & in-season)
+
+These insights eliminate guesswork, optimize scouting, and enable better planning across your entire portfolio.
+
+---
+
+## 🔍 Spatial Change Detection
+
+Your fields are constantly changing across the growing season, and some shifts can be easy to miss. The Digital Ag Solution enables you to monitor these dynamics in near real time, helping you quickly identify fields with significant changes and prioritize where to visit first.
+
+The **Change Detection** analytic highlights where conditions within a field are shifting—revealing early weak zones, emerging stress, and how in-field variability develops over time. This spatial insight allows you to detect issues sooner, understand their progression, and target interventions with greater precision.
+
+Learn more about **Change Detection** [here](https://docs.earthdaily.com/agro/library/Change_Index/).
+
+---
+
+---
+
+## Benchmark
+URL: https://docs.earthdaily.com/agro/digital_ag/Field_benchmark/
+Keywords: potential score, risk score, field benchmarking, field ranking, yield variability, historical performance
+
+## 🎯 Analyzing Field Productivity (Year-over-Year Trends)
+
+**See the big picture. Spot long-term shifts. Protect future yield.**
+ 
+Every season tells a story—yet without a consistent historical record, it is difficult to know whether a field is improving, declining, or deviating from its normal trajectory.
+
+The Digital Ag solution enables you to track field performance against its own historical patterns using two key analytics: **Potential Score** and **Risk Score**.
+
+### Potential Score (Historical & In-Season)
+
+This analytic evaluates how a field performs during the growing season compared to its historical performance for the same crop. Using satellite imagery time series, it provides a simple, scalable indicator leveraging vegetation development as a proxy for yield potential. With minimal inputs required, the Potential Score offers a consistent, repeatable way to benchmark field productivity across large portfolios.
+
+Learn more about **Historical Potential Score** [here](https://docs.earthdaily.com/agro/library/Historical_Potential_Score/).
+
+Learn more about **In-Season Potential Score** [here](https://docs.earthdaily.com/agro/library/In-season_Potential_Score/).
+
+### Risk Score
+
+The Risk Score measures how stable or variable a field’s performance has been over time by analyzing fluctuations in its historical Potential Scores. It highlights underlying production risks that may not be visible in a single season.
+
+- **Score of 20** → reflects stable, consistent yields  
+- **Score of 65** → indicates significant variability and higher production risk  
+
+These temporal benchmarks reveal anomalies, surface risks, and help identify management opportunities during the growing season.
+
+---
+
+## 📈 Field Benchmarking Makes Comparison Easy
+
+The Digital Ag Solution helps you understand whether a field is behaving as expected by benchmarking it against neighboring fields under similar growing conditions. By comparing vegetation development across nearby fields, you can quickly identify growth anomalies, distinguish field-specific issues from regional trends, and prioritize where deeper investigation or intervention is needed.
+
+---
+
+## 📋 Field Ranking
+
+The Field Ranking analytic compares the growth development of a defined set of fields, making it easy to identify top-performing fields and highlight those falling behind. By ordering fields based on their vegetation vigor, advisors can quickly see which fields require immediate attention and which are tracking as expected.
+
+A complete, season-long intelligence layer that transforms how you monitor crop growth, compare field performance, and detect agronomic change. You will manage fields with more confidence than ever before.
+
+---
+
+---
+
+## Decision support workflows
+URL: https://docs.earthdaily.com/agro/digital_ag/DS_workflow_tools/
+Keywords: SAMZ, management zones, Rx maps, variable rate application, prescription maps, harvest date prediction
+
+## 🚜 Turning Insights into Action
+
+Turn insights into action with **Satellite-Derived Management Zones (SAMZ)** that help you understand field variability over time and under different weather conditions, guiding targeted operations. When it is time to execute, generate **Rx Maps** that support precise input application, optimizing both cost and performance. Whether you’re planting, fertilizing, or applying any number of products, we support your applications with zoning precision and the ability to choose product quantities based on composition and unit selection.
+
+Identify emerging issues at a glance with our **HotSpot Processor**, which highlights areas that are changing and may require immediate attention—ensuring you never miss a developing problem and can act fast.
+
+---
+
+## 📌 Custom Insights for Your Precise Need
+
+With 35 years of experience, we’ve learned a great deal from our customers. Through that learning, we’ve developed specific analytics, reports, and exports tailored to their business needs—adding value for their operations and their customers alike. Some of these include:
+
+- **Harvest Date Prediction** processor, facilitating the timing of your harvest operations  
+- **PDF Reports** with your logos and branding, telling a clear story you can easily distribute  
+- **Exports** in Shapefiles or CSVs of your requested datasets  
+- **John Deere DataSync** — seamlessly send maps to the John Deere Information System  
+- **Notifications** configured to your preferences, adjustable anytime  
+- **Email campaigns** with vital, up-to-date information and insights
+---
+
+---
+
+## Testimonials
+URL: https://docs.earthdaily.com/agro/digital_ag/Testimonials/
+Keywords: SOYL, precision agriculture, NDVI, CVI, LAI, variable-rate maps
+
+## 👥 Let Our Customers Speak for Themselves
+
+### SOYL
+
+> “The technology enhances our existing biomass imagery model so that growers using the service can receive regular, high-quality, cloud-free images throughout the key winter cereal nitrogen application window.”
+
+SOYL is a leading precision crop production service provider. Based in the U.K., SOYL’s software technology is in use in more than 15 countries worldwide.
+
+Poor weather can be a major challenge for satellite monitoring of crop growth. Cloud cover can obscure imagery, limiting growers’ access to essential information about crop development and performance.
+
+The radar imagery designed by EarthDaily Analytics improved monitoring of SOYL's fields during periods of poor visibility. The radar model successfully passed a three-season test period with the company’s quality approval before full implementation.
+
+To build on this success, SOYL also began utilizing **NDVI**, **CVI**, and automated **LAI** analytics from EarthDaily Agro to produce variable-rate maps based on scientifically adjusted models. To ensure quality, SOYL provides ground truth measurements each year to calibrate their model and adapt it to each season.
+
+---
+
+---
+
+## Index
+URL: https://docs.earthdaily.com/agro/cropid/
+Keywords: crop classification, satellite imagery, AI crop mapping, STAC catalog, field-level API, crop mask, food security
+
+## 🗺️ Get Real-time Crop Classification at Scale
+
+Traditionally, accurate and timely crop mapping has come at a high cost. Field surveys, farmer reports, and manual sampling methods provide precise data—but they are time-consuming, expensive to scale, and often lag behind the pace of market or agro-climatic events. By the time insights reach decision-makers, key opportunities may already be missed—or decisions are made without a full picture of what’s happening in the field. Today, that model is changing.
+
+EarthDaily's Crop Classification product combines satellite imagery, weather data, and advanced AI models to accurately detect what crops are planted and where—all during the active growing season, at national scale.
+
+This breakthrough enables a new standard of crop intelligence that is:
+
+* **Timely available** – Crop masks are provided during the growing season, not months after harvest  
+* **Scalable** – Covering millions of hectares with consistent accuracy  
+* **Cost-efficient** – Eliminating the need for large-scale field surveys  
+* **Seamless** – Accessible through APIs and ready for integration into your business workflows  
+
+Whether you are forecasting crop supply, managing agricultural risk, or optimizing procurement strategies, our solution brings unprecedented scale and efficiency to understanding what’s growing—across regions or entire countries.
+
+ 
+
+---
+
+## 👥 Target Audience  
+EarthDaily has designed this product for organizations that need timely, accurate, and scalable agricultural intelligence—and have the technical capacity to integrate data via APIs:
+
+- **AgTech Companies & Platforms**  
+Power digital farming tools, agronomic models, and targeted crop-specific advice for mid-season decisions.
+
+- **Commodity Traders & Analysts**  
+Improve crop acreage estimation, optimize sourcing strategies, and gain early signals of supply shifts for major crops.
+
+- **Food & Beverage Corporates**  
+Enhance supply chain transparency, support ESG commitments, and improve seasonal planning and procurement.
+
+- **Insurance & Risk Management Firms**  
+Accurately assess crop exposure, monitor planting declarations, and model risk with spatially consistent datasets.
+
+- **Governments & Policy Institutions**  
+Support national food security assessments, subsidy programs, and environmental monitoring efforts.
+
+---
+
+## 🌎 Geographic Coverage and Crops
+
+Crop Identification is currently available for the **United States** and **Brazil**, covering key agricultural regions and focusing on the main row crops grown in each country.  
+
+Crop mask layers are generated and updated during the active growing season, providing near-real-time visibility into crop distribution as the season progresses.
+
+Coverage includes crops such as:
+
+* **USA:** Corn, Soybean, Wheat, Cotton  
+* **Brazil:** Soybean, Corn (first and second seasons), Sugarcane, Cotton, Wheat and Rice  
+* **France:** Winter wheat, Barley, Oil Seed Rape, Corn, Sunflower and Sugarbeet
+* **Germany:** Winter wheat, Barley, Oil Seed Rape, Corn and Sugarbeet
+* **UK:** Winter wheat, Barley, and Oil Seed Rape
+
+Additional countries and crops can be supported upon request or as part of our product roadmap. [Contact us](https://earthdaily.com/contact) to learn more.
+
+---
+
+## 🔧 Flexible Delivery to Fit Your Workflow
+
+Crop Identification is designed for seamless integration into your operations, offering two delivery mechanisms to match your needs:
+
+- **API Access to Crop Mask Layers (via STAC Catalog)**  
+Query spatially and temporally indexed crop masks through our API, fully referenced in a SpatioTemporal Asset Catalog (STAC). Ideal for applications that require pre-processed crop masks over large areas in standard geospatial formats (e.g., GeoTIFF).
+
+- **API Access to Field-Level Information**  
+Retrieve crop type predictions linked to individual field boundaries, enabling precise, field-level intelligence. Suitable for systems that work with known field geometries ([Automated field boundaries](https://docs.earthdaily.com/agro/library/Automatic_Field_Borders/) are also available)
+
+No matter your architecture or scale, our flexible delivery options make it easy to bring timely, accurate crop intelligence into your existing workflows.
+
+Explore further details in our [API Documentation](https://docs.earthdaily.com/agro/library/FieldLevel_CropMask_API_v11092025/).
+
+---
+
+## ❓ FAQ  
+
+    We use optical and SAR satellite data to detect which crop is growing on every plot of land.
+    
+
+    Soybean in Brazil: F1-score > 0.95
+    Corn in the USA Corn Belt: F1-score > 0.95
+    Discover more in the dedicated Countries pages.
+
+    Yes, we deliver crop classification data 6 to 12 months before local agencies.
+    
+---
+
+---
+
+## US
+URL: https://docs.earthdaily.com/agro/cropid/crop_identification_US_v11092025/
+Keywords: US crop identification, corn, soybean, winter wheat, cotton, Corn Belt, USDA
+
+## 🌎 Available Across the United States
+
+The **EarthDaily Crop Identification** product is fully operational across the entire U.S., providing in-season crop classification at **national scale**. From the Corn Belt to the Mississippi Delta and the Great Plains, it delivers **timely, consistent, and high-resolution insights** into crop distribution—supporting critical decisions in one of the world’s largest agricultural producers.
+
+Coverage includes key row crops such as **Corn, Soybean, Winter Wheat, Spring Wheat, and Cotton**.
+
+Additional crops can be supported upon request or as part of our product roadmap.
+
+- 
+-  
+
+---
+
+## 📤 In-Season Deliveries
+
+Crop classification layers are delivered **during the growing season**, with progressive updates that incorporate the latest satellite imagery and weather-adjusted model outputs.
+
+**Delivery schedule:**
+
+* June 22nd
+* July 22nd 
+
+Additional delivery dates can be added upon request. This cadence enables organizations to track acreage distribution and refine supply outlooks as the season advances.
+
+---
+
+## 🎯 Model Performance
+
+Our AI models deliver **high accuracy for major U.S. row crops**. Below are the typical **F1 score ranges** achieved under operational conditions:
+
+- **Corn:** 0.85 – 0.90  
+- **Soybean:** 0.85 – 0.90  
+- **Winter Wheat:** 0.75 – 0.80  
+- **Spring Wheat:** 0.75 – 0.80  
+- **Cotton:** 0.70 – 0.75  
+
+---
+
+## 🗺️ Historical Layers
+
+To support long-term analysis, we provide **historical crop classification layers starting from 2008** using public USDA datasets. All layers are referenced in one place for convenience, enabling seamless analysis of historical trends, crop rotations, and year-over-year changes — without the need to manage multiple data sources.  
+
+---
+
+## 🔧 Flexible Delivery Options
+
+The product is designed for seamless integration into your workflows, with two API-based delivery mechanisms:
+
+- **Crop Mask API (STAC):** Access spatially indexed, pre-processed crop maps in standard geospatial formats such as GeoTIFF—ideal for large-area analysis.  
+- **Field-Level API:** Retrieve crop type predictions linked to known field boundaries for precision use at the farm or parcel level.  
+
+Both options are **scalable, reliable, and built to fit directly into your data pipeline**.  
+
+Explore full technical specifications in our [API Documentation](../library/FieldLevel_CropMask_API_v11092025.md/).
+
+---
+
+## ❓ FAQ
+
+    Corn, Soybean, Winter Wheat, Spring Wheat, and Cotton.
+
+    F1 scores range from **0.70 (Cotton)** to **>0.85 (Corn, Soybean)**, based on validated in-season performance.
+    
+
+    Twice per cropping season, with progressive refinement as more satellite imagery is collected.
+ 
+
+    Yes, historical data is available from **2008 onward**.
+    
+
+    Coverage spans the **entire country**.
+
+    You can request access to selected states as needed.
+
+---
+
+---
+
+## Canada
+URL: https://docs.earthdaily.com/agro/cropid/crop_identification_Canada/
+Keywords: Canada crop identification, corn, soybean, spring wheat, canola, spring barley
+
+## 🌎 Available Across Canada
+
+The **EarthDaily Crop Identification** product is fully operational across the growing regions of Canada, providing in-season crop classification for major crops. From Ontario to the Great Plains, it delivers **timely, consistent, and high-resolution insights** into crop distribution—supporting critical decisions in one of the world’s largest agricultural producers.
+
+Coverage includes key crops such as **Corn, Barley, Canola, Spring Wheat, Winter Wheat, Soybean and Hay/pasture.**
+
+Additional crops can be supported upon request or as part of our product roadmap.
+
+---
+
+## 📤 In-Season Deliveries
+
+Crop classification layers are delivered **during the growing season**, with progressive updates that incorporate the latest satellite imagery and weather-adjusted model outputs.
+
+**Delivery schedule:**
+
+* July 15th (in-season)
+* September 30th (end of season)
+
+Additional delivery dates can be added upon request. This cadence enables organizations to track acreage distribution and refine supply outlooks as the season advances.
+
+---
+
+## 🎯 Model Performance
+
+Our AI models deliver the following accuracy ranges by crop type and time of season, represented by an **F1 score** as follows. Below are results achieved after rigorous cross-validation evaluation over 6 years (2019-2025). In-season scores are the lower end of the range and end of season scores reflect higher accuracy.
+
+- **Corn:** 0.78-0.88
+- **Barley:** 0.38-0.54
+- **Canola:** 0.77-0.84
+- **Spring Wheat:** 0.67-0.72
+- **Winter Wheat:** 0.70-0.73
+- **Soybean:** 0.71-0.86
+- **Hay/pasture:** 0.84-0.86
+
+---
+
+## 🗺️ Historical Layers
+
+To support long-term analysis, we provide **historical crop classification layers starting from 2019** using public ACI datasets. All layers are referenced in one place for convenience, enabling seamless analysis of historical trends, crop rotations, and year-over-year changes — without the need to manage multiple data sources.  
+
+---
+
+## 🔧 Flexible Delivery Options
+
+The product is designed for seamless integration into your workflows, with two API-based delivery mechanisms:
+
+- **EarthData Store API (STAC):** Access spatially indexed, pre-processed crop maps in standard geospatial formats such as GeoTIFF—ideal for large-area analysis.  
+- **Field-Level API:** Retrieve crop type predictions linked to known field boundaries for precision use at the farm or parcel level.  
+
+Both options are **scalable, reliable, and built to fit directly into your data pipeline**.  
+
+Explore full technical specifications in our [API Documentation](../library/FieldLevel_CropMask_API_v11092025.md/).
+
+---
+
+## ❓ FAQ
+
+    Corn, Hay/pasture, Soybean, Spring Wheat, Winter Wheat, Barley, and Canola/Rapeseed.
+
+    F1 scores range from 0.54 - 0.88, depending on crop and based on historical, in-season, and end of season performances.
+    
+
+    Twice per cropping season, with progressive refinement as more satellite imagery is collected.
+ 
+
+    Yes, historical data is available from **2019 onward**.
+    
+
+    Coverage spans the major growing regions of Ontario, Manitoba, Alberta, and Saskatchewan.
+
+    You can request access to selected provinces or regions as needed.
+
+---
+
+---
+
+## Brazil
+URL: https://docs.earthdaily.com/agro/cropid/crop_identification_Brazil_v11092025/
+Keywords: Brazil crop classification, soybean, corn, Safrinha, cotton, rice, Mato Grosso, Parana
+
+## 🌍 Available Across Brazil’s Major Agricultural Zones
+
+EarthDaily Crop Identification product delivers accurate, in-season crop classification at national scale, covering Brazil’s agricultural regions.
+From **Mato Grosso to Paraná**, and spanning both **Safra** and **Safrinha** cycles, the product provides near real-time visibility into what’s growing—supporting critical decisions in one of the world’s largest and most dynamic agricultural economies.
+
+**Covered crops include:**  
+- **Safra Season:** Soybean, First Corn, Sugarcane, Cotton, and Rice  
+- **Safrinha Season:** Second Corn, Sugarcane, Cotton, and Winter Wheat  
+
+Additional crops can be supported upon request or as part of our product roadmap.
+
+- 
+- 
+
+---
+
+## ⌛ In-Season Deliveries
+
+To support timely decisions throughout the growing season, crop classification layers are delivered in **two stages per cropping cycle**. This phased approach provides progressively refined insights as new satellite and weather data become available.
+
+**Delivery schedule:**
+
+* **Safra Season:**
+    - March 7th
+    - June 7th
+* **Safrinha Season:**
+    - June 7th
+    - August 7th
+
+Each delivery reflects the most recent satellite imagery and model outputs, ensuring increasing accuracy as the season progresses.
+
+---
+
+## 🎯 Model Performance
+
+Our AI models deliver **high accuracy** for major row crops. Below are the typical **F1 score ranges** achieved under operational conditions:
+
+- **Soybean:** > 0.95  
+- **1st Corn (Safra):** 0.85 – 0.90  
+- **2nd Corn (Safrinha):** 0.90 – 0.95  
+- **Sugarcane:** 0.80 – 0.85  
+- **Rice:** 0.85 – 0.90  
+- **Cotton:** 0.60 – 0.70  
+- **Wheat:** 0.85 – 0.90  
+
+---
+
+## 📅 Historical Layers
+
+Historical crop classification layers are available starting from **2019**. These datasets support model training, historical crop rotation analysis, and robust year-over-year comparisons—enabling more informed long-term planning.
+
+---
+
+## 🔧 Flexible Delivery Options
+
+Our Crop Identification product is designed for seamless integration into your existing systems, with two delivery options via API:
+
+- **Crop Mask API (STAC):** Access spatially indexed, pre-processed crop maps in standard geospatial formats such as GeoTIFF—ideal for large-area analysis.  
+- **Field-Level API:** Retrieve crop type predictions linked to known field boundaries for precision use at the farm or parcel level.
+
+Both options are scalable, reliable, and built to fit directly into your data pipeline.  
+Explore full technical specifications in our [API Documentation](../library/FieldLevel_CropMask_API_v11092025.md/).
+
+---
+
+## ❓ FAQ  
+
+    Soybean, Corn (Safra and Safrinha), Sugarcane, Cotton, Wheat, and Rice.
+
+    F1 scores range from 0.60 (cotton) to >0.95 (soybean), based on validated in-season performance.
+
+    Twice per cropping season, with progressive refinement as more satellite imagery is collected.
+
+    Yes, historical data is available from 2019 onward.
+
+    Key agricultural zones including Mato Grosso, Paraná, Goiás, Bahia, and others.
+    
+---
+
+---
+
+## Western Europe
+URL: https://docs.earthdaily.com/agro/cropid/crop_identification_France_Germany_v11092025/
+Keywords: France crop identification, Germany crop identification, winter wheat, rapeseed, barley, corn, sugar beet
+
+## 🌍 Available Across France, UK & Germany
+
+The EarthDaily Crop Identification product is fully operational across **France, UK and Germany**, providing in-season crop classification at national scale. From the Beauce plains to Bavaria, the solution delivers timely, consistent, and high-resolution insights into crop distribution—supporting decision-making in three of Europe’s largest and most diverse agricultural producers.
+
+**Covered crops are as follows:**
+
+| France |   UK   | Germany |
+|--------|---------|---------|
+| Winter Wheat | Winter Wheat | Winter Wheat |
+| Spring Barley | Spring Barley | Spring Barley |
+| Winter Barley | Winter Barley | Winter Barley |
+| Rapeseed | Rapeseed | Rapeseed |
+| Corn |  | Corn |
+| Sugar Beet |  | Sugar Beet |
+| Sunflower |  |  |
+
+Additional crops can be supported upon request or as part of our product roadmap.
+
+- 
+-  
+
+---
+
+## ⌛ In-Season Deliveries
+
+Crop Identification layers are updated progressively throughout the growing season, enabling early and reliable identification of crop types. It is designed for in‑season decision making, not just post‑harvest analysis.  
+
+**Delivery schedule:**
+
+* March 22nd – Winter crops development​
+* July 7th – Spring crops development & Winter crops update​
+* Sept 7th – End of Season evaluation
+
+Additional delivery dates can be added upon request. These in-season deliveries enable monitoring of planted areas, detection of acreage variations, and dynamic adjustment of supply and production forecasts.
+
+---
+
+## 🎯 Model Performance
+
+Our AI models deliver high accuracy across major crops in both France and Germany. Typical F1 score ranges under operational conditions are:
+
+| France |   UK   | Germany |
+|--------|---------|---------|
+| Winter Wheat: 0.71-0.92 | Winter Wheat: 0.76-0.90 | Winter Wheat: 0.75-0.80 |
+| Spring Barley: 0.78-0.81 | Spring Barley: 0.76 | Spring Barley: 0.56 |
+| Winter Barley: 0.66-0.9 | Winter Barley: 0.69-0.86 | Winter Barley: 0.88 |
+| Rapeseed: 0.9-0.97 | Rapeseed: 0.86-0.93 | Rapeseed: 0.97 |
+| Corn: 0.85-0.95 |   | Corn: 0.91 |
+| Sugar Beet: 0.81-0.94 |  | Sugar Beet: 0.85 |
+| Sunflower: 0.62-0.88 |  |  |
+
+---
+
+## 📅 Historical Layers
+
+To support long-term analysis, we provide historical crop classification layers starting from **2019**, leveraging public EU datasets. Centralizing all layers simplifies the analysis of crop rotations, land-use patterns, and annual changes, creating reliable historical coverage where none is available.
+
+---
+
+## 🔧 Flexible Delivery Options
+
+Our product is designed for easy integration into your workflows, with two API-based delivery mechanisms:  
+
+- **Crop Mask API (STAC):** Access spatially indexed, pre-processed crop maps in standard geospatial formats (GeoTIFF). Ideal for national or regional-scale analysis.  
+- **Field-Level API:** Retrieve crop type predictions linked to known field boundaries for precision use cases at parcel level.  
+
+Both options are scalable, reliable, and built to fit directly into your data pipeline.  
+Explore full technical specifications in our [API Documentation](../library/FieldLevel_CropMask_API_v11092025.md/).
+
+---
+
+## ❓ FAQ
+
+    - France: Winter Wheat, Spring Barley, Winter Barley, Rapeseed, Corn, Sunflower, Sugar Beet
+    - UK: Winter Wheat, Spring Barley, Winter Barley, Rapeseed
+    - Germany: Winter Wheat, Spring Barley, Winter Barley, Rapeseed, Corn, Sugar Beet
+
+    F1 scores range from 0.56 (Spring Barley) to >0.97 (Rapeseed), validated under in-season conditions.
+ 
+
+    3 deliveries are scheduled during the 2026 season: March 21st, July 7th, and September 7th.
+
+    Yes, historical layers are available from 2019 onward. 
+
+    The coverage spans the entire territories of France, UK and Germany.
+    
+---
+
+---
+
+## Crop Layer Access
+URL: https://docs.earthdaily.com/agro/cropid/CropMask_Access_through_EDS_v11092025/
+Keywords: crop mask API, STAC, GeoTIFF, Cropland Data Layer, EarthDaily Data Store, authentication, crop classification
+
+## 🗺️ Crop Mask API (STAC) Documentation
+
+The Crop Mask API provides access to **public** and **private crop mask layers**. These datasets can be used for agricultural monitoring, land classification, and crop analytics.  
+
+The API is built on top of the **EarthDaily platform** and follows the [STAC (SpatioTemporal Asset Catalog)](https://stacspec.org/) standard.
+
+---
+## 🔐 Authentication
+
+- **Endpoint:**  
+  `POST https://api.earthdaily.com/account_management/v1/authentication/api_tokens/exchange`  
+
+- **Request Body:**  
+  JSON containing your `EDS_CLIENT_ID` and `EDS_SECRET`.  
+
+- **Response:**  
+  JSON object with an `access_token`, used in subsequent requests via:  
+  ```
+  Authorization: Bearer 
+  ```
+
+---
+
+## 📚 Collections
+
+- **Public Crop Mask** → `public-crop-mask`  
+   
+    The following crop mask layers are referenced on the STAC Catalog from Earthdaily Data Store
+    - **Cropland Data Layer (CDL)**, a product from United States Department of Agriculture (USDA) National Agricultural Statistics Service (NASS). The CDL is an annual raster, geo-referenced, crop-specific land cover data layer produced using satellite imagery and extensive agricultural ground reference data. For more information, visit the [Cropland Data Layer homepage](https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php).
+
+    - **Registre Parcellaire Graphique (RPG)**, a product from the French Ministry of Agriculture and Food Sovereignty. The RPG is an annual, vector-based, geo-referenced dataset that describes the agricultural parcels declared by farmers in the context of the European Union’s Common Agricultural Policy (CAP). It provides detailed crop type information at the parcel level. For more information, visit the [RPG portal](geoservices.ign.fr/documentation/donnees/vecteur/rpg).
+
+    - **Crop Type Map (CTM)**, a product provided by the German Aerospace Center (DLR). The CTM is a raster, geo-referenced dataset generated from satellite imagery (such as Sentinel-2) using advanced classification algorithms. It provides annual information on crop type distribution at field level. For more information, visit the [DLR website](https://www.dlr.de/en/latest/news/2024/these-crops-grow-in-germany-six-year-analysis).
+
+  All layers are referenced in one place for convenience, enabling seamless analysis of historical trends, crop rotations, and year-over-year changes — without the need to manage multiple data sources.  
+
+- **Private Crop Mask (EDAgro Analytics)** → `edagro-analytics-crops-layer`  
+
+  The **private collection** contains crop mask layers computed **during the growing season**, enabling enabling data-driven decisions based on crop-specific analytics. 
+
+## 🔍 Search for Crop Mask Items
+
+**Endpoint:**  
+  `GET https://api.earthdaily.com/platform/v1/stac/search`  
+
+**Parameters:**  
+  - `collections` → The collection ID (e.g., `edagro-analytics-crops-layer`)  
+  - `bbox` → Bounding box filter `[minLon, minLat, maxLon, maxLat]`  
+  - `datetime` → Date or date range (`YYYY-MM-DD` or `YYYY-MM-DD/YYYY-MM-DD`)  
+  - `limit` → Maximum number of results  
+
+**Response Example:**
+  
+```json
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "edagro_cropmask_france_2023",
+      "collection": "edagro-analytics-crops-layer",
+      "bbox": [2.0, 43.0, 3.0, 44.0],
+      "properties": {
+        "datetime": "2023-07-01T00:00:00Z",
+        "crop_type": "maize",
+        "confidence": 0.92
+      },
+      "assets": {
+        "mask": {
+          "href": "https://api.earthdaily.com/assets/edagro-analytics-crops-layer/edagro_cropmask_france_2023.tif",
+          "type": "image/tiff",
+          "title": "Crop Mask for Maize - France, 2023"
+        }
+      }
+    }
+  ]
+}
+```
+
+## 💼 Downloading a Crop Mask
+
+1. Perform a search on the `edagro-analytics-crops-layer` collection.  
+2. From the response, identify the `assets` section.  
+3. Use the `href` URL to download the file.  
+
+- **Request:**  
+  A standard `GET` request to the `href` URL, with your access token if required.  
+
+- **Response:**  
+  A binary GeoTIFF file that can be opened in GIS software or processed with remote sensing libraries.  
+
+---
+
+## 🛠 Error Handling
+
+| Status Code | Meaning                            |
+|-------------|------------------------------------|
+| `401`       | Unauthorized – check your token    |
+| `403`       | Forbidden – insufficient access    |
+| `404`       | Collection or item not found       |
+| `429`       | Too many requests – rate limited   |
+| `500`       | Internal server error              |
+
+---
+
+## ⚙️ Best Practices
+
+- Apply **filters** (`bbox`, `datetime`) to reduce query size.  
+- Cache authentication tokens until expiry.  
+- Request access to `edagro-analytics-crops-layer` to access any dataset.
+
+---

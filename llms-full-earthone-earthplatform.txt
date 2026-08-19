@@ -1,0 +1,1496 @@
+# EarthDaily documentation — EarthOne > EarthPlatform
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Index
+URL: https://docs.earthdaily.com/platform/earthplatform/
+Keywords: Earth Data Store, EDS, EarthDaily Analytics, geospatial platform, satellite data, EarthMosaics, EarthPlatform, STAC, PySTAC, Python, APIs, EDC, EDC Python Client, edc-python-client
+
+## EarthDataStore
+
+The EarthDataStore (EDS) is a STAC-compliant ecosystem which allows users to access data such as:
+
+  - EarthMosaics
+  - EarthDaily Constellation data
+  - Other open data collections
+
+## EarthDaily Python Client
+
+While we allow for access through direct STAC API endpoints, we also maintain the EarthDaily Python Client which is documented in this directory. That client can be installed via [PyPI](https://pypi.org/project/earthdaily/) with
+
+```
+pip install earthdaily
+```
+
+### Table of Contents:
+
+  - [Getting Started](getting-started/index.md)
+    - [Welcome](getting-started/welcome.md)
+    - [Authentication](getting-started/authentication.md)
+    - [Quickstart](getting-started/quickstart.md)
+  - [User Interfaces](uis/index.md)
+    - [Account Information](uis/account.md)
+    - [EarthPlatform UI](uis/earthplatform.md)
+    - [EarthMosaics Ordering UI](uis/earthmosaics.md)
+  - [API Guide](api/index.md)
+  - [Analytic Examples](examples.md)
+  - [Developer Resources](https://earthdaily.github.io/earthdaily-python-client/main/)
+
+---
+
+## Getting Started
+URL: https://docs.earthdaily.com/platform/earthplatform/getting-started/
+Keywords: getting started, Earth Data Store, onboarding, API setup, EarthDaily platform, quick start
+
+# Getting Started
+
+To get up and running with the Earth Data Store and EarthPlatform, follow the guides below:
+
+- [Welcome](welcome.md) — Your welcome email and first login
+- [API Authentication](authentication.md) — How to obtain and use API credentials
+- [Quick Start](quickstart.md) — Access EarthDaily data via REST, PySTAC, or the Python client
+
+---
+
+## Welcome
+URL: https://docs.earthdaily.com/platform/earthplatform/getting-started/welcome/
+Keywords: welcome email, first login, EarthPlatform, account setup, password reset, onboarding
+
+## Welcome to the EarthDataStore!
+
+The [EarthPlatform](https://console.earthdaily.com/) is a user interface for the EarthDaily STAC API which allows for searching and visualizing STAC assets as well as access credential management. 
+
+To get started, look out for an email in your inbox from EarthDaily asking that you set a password:
+
+1. Welcome Email Example:
+
+2. Password Form:
+
+3. Console Landing Page:
+
+## You're in!
+
+Next, move onto the [Authentication](authentication.md) page to provision a new API key.
+
+---
+
+## API Authentication
+URL: https://docs.earthdaily.com/platform/earthplatform/getting-started/authentication/
+Keywords: API authentication, OAuth, client credentials, bearer token, API keys, EarthDaily API, access token
+
+##  API Authentication
+
+### Table of Contents
+
+- [Authentication Overview](#authentication-overview)
+    - [Provisioning a New API Key](#provisioning-a-new-api-key)
+- [Examples](#examples)
+    - [Command Line](#command-line)
+    - [Python](#python)
+    - [Postman](#postman)
+
+### Authentication Overview
+
+The EarthPlatform STAC API is protected by bearer authentication.
+
+A bearer token must be generated using [OAuth Client Credentials Flow](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/). The required client_id, client_secret and access_token_url values can be found on [API Credentials](https://console.earthdaily.com/account/api-credentials) page. These API credentials are specific to your user account on EarthPlatform and should be kept confidential. Please note that we have an option to download the .env file if you want to use it with your scripts.
+
+#### Provisioning a New API Key
+
+1. Start by navigating to the [API Credentials page](https://console.earthdaily.com/account/api-credentials) using your credentials set in the [previous step](welcome.md):
+
+2. Click "Provision new api credentials" and copy the prompted token:
+
+3. Return to the API Credentials page, download the sample `EDS.env` file, and replace your copied token where prompted:
+
+### Examples
+
+#### Command Line
+
+Example curl request to generate token
+
+```bash
+curl --location ''
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'client_id=' \
+--data-urlencode 'client_secret=' \
+--data-urlencode 'grant_type=client_credentials'
+```
+
+Example curl response
+
+```json
+
+```
+
+#### Python
+
+```python
+import json
+import os
+import requests
+from dotenv import load_dotenv
+
+# Loading secrets from environment variables
+
+# By default, Earth Data Store will look for environment variables called
+#    EDS_AUTH_URL, EDS_SECRET and EDS_CLIENT_ID
+# Ensure environment variables are set before running this script.
+
+# You can set them in your terminal session or add them permanently to your shell configuration
+# (e.g., .bash_profile, .bashrc) using the following format:
+#
+# export EDS_CLIENT_ID="your_client_id"
+# export EDS_SECRET="your_client_secret"
+# export EDS_AUTH_URL="your_auth_url"
+#
+# Alternatively, you can manage environment variables using a .env file and the python-dotenv package.
+# Our account Information page will allow you to download your EDS.env file
+
+load_dotenv("EDS.env")
+
+CLIENT_ID = os.getenv("EDS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EDS_SECRET")
+EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
+API_URL = os.getenv("EDS_API_URL")
+
+# Setup requests session
+session = requests.Session()
+session.auth = (CLIENT_ID, CLIENT_SECRET)
+
+def get_new_token(session):
+    """Obtain a new authentication token using client credentials."""
+    token_req_payload = {"grant_type": "client_credentials"}
+    try:
+        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
+        token_response.raise_for_status()
+        tokens = token_response.json()
+        return tokens["access_token"]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to obtain token: {e}")
+
+print(get_new_token(session))
+```
+
+#### Postman
+
+Below is the screenshot showing the **Authorization tab** in Postman and follow the steps
+
+1. Select the Type as **OAuth 2.0**
+2. Select the Grant Type as **Client Credentials**
+3. Enter the access token URL from the account information page above
+4. Enter the Client ID from the account information page above
+5. Enter the Client Secret from the account information page above
+
+---
+
+## Quick Start
+URL: https://docs.earthdaily.com/platform/earthplatform/getting-started/quickstart/
+Keywords: quick start, PySTAC, Python client, STAC API, EarthDaily data, authentication, satellite data access
+
+## Getting Started with EarthDaily STAC APIs
+
+### Table of Contents
+
+- [Authentication](#authentication)
+- [EarthDaily Python Client](#earthdaily-python-client)
+- [PySTAC](#pystac)
+
+### Authentication
+
+The required `client_id`, `client_secret`, and `access_token_url` values can be found on the [EarthPlatform API Credentials](https://console.earthdaily.com/account/api-credentials) page. **These API credentials are specific to your user account on EarthPlatform and should be kept confidential.**
+
+For more see: [Authentication](authentication.md)
+
+### EarthDaily Python Client
+
+The fastest way to get up and running is to use EarthDaily's [Python SDK](https://github.com/earthdaily/earthdaily-python-client).
+
+First, build a new Virtual Environment and install [`earthdaily`](https://pypi.org/project/earthdaily/):
+
+```bash
+# Create a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install the EarthDaily Python client
+pip install earthdaily
+```
+
+Next, search available collections with the following example:
+
+```python
+from dotenv import load_dotenv
+from earthdaily import EDSClient, EDSConfig
+
+# Provision EDS.env at https://console.earthdaily.com/account/api-credentials
+load_dotenv("EDS.env", override=True) 
+
+client = EDSClient(EDSConfig())
+
+collection_list = list(client.platform.pystac_client.get_all_collections())
+collection_list
+```
+
+### PySTAC
+
+PySTAC is a library for working with [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/en) schemas. Please find all the features and capabilities of [PySTAC](https://pystac.readthedocs.io/en/stable/) along with setup details required.
+
+Here is a short snippet showing how to read in credentials set in [Authentication](authentication.md) to query the EarthDaily STAC API using PySTAC:
+
+```python
+import os
+import requests
+
+from dotenv import load_dotenv
+from pystac.client import Client
+
+load_dotenv("EDS.env")  # take environment variables from EDS.env
+
+CLIENT_ID = os.getenv("EDS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EDS_SECRET")
+EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
+API_URL = os.getenv("EDS_API_URL")
+STAC_API_URL = f"{API_URL}/platform/v1/stac"
+
+session = requests.Session()
+session.auth = (CLIENT_ID, CLIENT_SECRET)
+
+def get_new_token(session):
+    """Obtain a new authentication token using client credentials."""
+    token_req_payload = {"grant_type": "client_credentials"}
+    try:
+        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
+        token_response.raise_for_status()
+        tokens = token_response.json()
+        return tokens["access_token"]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to obtain token: {e}")
+
+token = get_new_token(session)
+
+# Configure pystac client
+client = Client.open(STAC_API_URL, headers={"Authorization": f"bearer {token}"})
+
+# Get collections
+for collection in client.get_all_collections():
+    print(collection)
+```
+
+---
+
+## Index
+URL: https://docs.earthdaily.com/platform/earthplatform/uis/
+Keywords: EarthDaily Console, account management, EarthPlatform, EarthMosaics, web interface, user interface
+
+## EarthDaily User Interfaces
+
+### Table of Contents
+
+- [Account Management](account.md)
+- [EarthPlatform](earthplatform.md)
+- [EarthMosaics](earthmosaics.md)
+
+---
+
+## Account Information
+URL: https://docs.earthdaily.com/platform/earthplatform/uis/account/
+Keywords: account management, API credentials, orders, EarthDaily Console, user account, bearer token
+
+# Account Information
+
+## Introduction
+
+The Account Information page is the landing page for each user of the customer account when they login to [Account Information](https://console.earthdaily.com/account). It allows the user to check their own account details, orders, and more. It also has links to other applications like EarthPlatform and EarthMosaics.
+
+## Landing Page
+
+Upon logging in, the user arrives at the Landing Page, which shows the applications that the user has access to, and provides links to a rich set of resources:
+
+On the upper right hand side of the window, you will see the following small icons:
+
+| Icon | Description |
+|------|-------------|
+|  | About page that shows the EarthDaily version |
+|  | Links to report issue, contact us, and learn more |
+|  | Shows a list of hosted applications from EarthDaily; use it to switch between different applications |
+|  | Quick information about the signed-in user along with their account and an option to sign out. The user's initials are shown. |
+
+## User Details
+
+From the left menu, the user can access the User Details page.
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | User | Logged in user details |
+|  | Organization | Details of the organization that the user belongs to |
+|  | Credits | [Preview] Shows credits information of the user's organization. Note that this is a Preview feature. |
+
+## API Credentials
+
+From the left menu, the user can access the API Credentials page.
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | API Credentials | Generate "Bearer Token" for API authentication. [Details of How to Provision](../getting-started/authentication.md) |
+
+## My Orders
+
+From the left menu, the user can access the My Orders page. This section allows you to see all the orders placed by the users on the account. You can see the Order details and the order state.
+
+### Order State
+
+| State | Description |
+|-------|-------------|
+| In Progress | Order is in progress. |
+| Error | Order has failed, usually due to a downstream outage. |
+| Completed | Order has completed successfully. Ready for download. |
+
+---
+
+## EarthPlatform
+URL: https://docs.earthdaily.com/platform/earthplatform/uis/earthplatform/
+Keywords: EarthPlatform, image catalog, satellite imagery search, GeoJSON, visualization, EarthDaily Console, geospatial filtering
+
+# EarthPlatform
+
+## Introduction
+
+Customers can access and browse through our image catalog and products through EarthPlatform. In addition to providing useful metadata and details about the listed images, it provides capabilities to interact with them. You can access EarthPlatform [here](https://console.earthdaily.com/platform).
+
+## Search
+
+EarthPlatform has a search panel with various customization options. Once you login with your credentials, the landing page is shown with the search filters and results panel on the left:
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | Search Box | Enter any geographic area like "Vancouver", "Chile" etc to find and focus |
+|  | Rectangle Tool | Select two vertices of the diagonal on the map to form a rectangular area as a geospatial filter |
+|  | Polygon Tool | Select a given area as a geospatial filter on the map by creating vertices with left clicks. Click the first vertex or double-click after the last vertex to complete |
+|  | Input GeoJSON | Click to enter or import a GeoJSON as a geospatial filter |
+|  | Viewport | Select to define the current map extents as a geospatial filter |
+|  | Basic Filters | Select one or more Collections (up to 15) and define a date range |
+|  | Advanced Filters | Click to define additional filters based on the selected Collections |
+|  | Reset Button | Click to reset all search filters |
+|  | Search Button | Click to submit the search |
+|  | Results Panel | Area where thumbnails of search results appear |
+
+    The Advanced Filters panel expands with additional parameters based on the Collection selected. When there are results returned from the search, you can see the results panel populated with images, along with thumbnails if available. When you hover over a search result, the corresponding footprint will be highlighted in yellow on the map.
+
+On the right hand side is the map, where you can define the Area of Interest (AOI) and see the footprints of the search results:
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | App Switcher | Click to switch to another EDA-hosted application |
+|  | Map Slider | Click to enable the Map Slider to enter image comparison mode |
+|  | Settings | Click to change base map layers, Footprint and Image Opacity |
+|  | AOI Controls | Center on AOI, Hide AOI, Copy AOI, Delete AOI, and show total area of the AOI. Only appears when there is an AOI on the map. |
+|  | Ruler | Click to draw a line and measure the distance between 2 points |
+|  | Bottom Panel | Shows latitude/longitude of current cursor position, zoom level, and scale bar |
+
+Below are some images showing how the various controls work.
+
+GeoJSON Viewer and Importer:
+
+Streets and Satellite Views:
+
+| Streets View | Satellite & Streets View |
+|--------------|--------------------------|
+|  |  |
+
+AOI Area Calculation (the example shows the use of the Polygon tool, but the AOI area is displayed regardless of which tool you used to define the AOI):
+
+Ruler:
+
+## Interacting with the catalog
+
+Once you have search results, you can perform various actions on the images:
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | Show Item Properties | Show the Item Properties on the right hand side panel |
+|  | Favorite Item | Tag the image as favorite, then use the toggle button (#26) to show only favorites |
+|  | Fly to Bounds | Zoom in to the image location |
+|  | Toggle Layer Visibility | Show/Hide the footprint on the map |
+|  | View on Map | Render the image on the map |
+|  | View Visualization Configuration | Toggles the visualization configuration panel to adjust min/max of color bands and gamma values |
+|  | Auto adjust Visualization | Auto adjust the image by clipping percentages based on a calculated histogram |
+|  | Multi-Select | Allows multi-selecting images for batch actions |
+|  | Multi-Select Actions | Actions for multiple images (e.g., 'View all on map') |
+|  | View Favorites Only | Toggle to show only favorited images |
+
+Item Properties panel:
+
+Toggle the Show Full button to see the entire STAC item properties. Under Show Full mode you can also get individual asset URLs and download images by following the "href":
+
+Tagging an item as favorite and viewing favorites:
+
+| Favorites | View Favorites |
+|-----------|----------------|
+|  |  |
+
+View on Map:
+
+Visualization configuration:
+
+Auto visualization comparison. The image on the right has its visualization parameters auto-adjusted, while the one on the left uses default values:
+
+Fly to Bounds:
+
+### Map Slider
+
+Compare two images over different dates by using the Map Slider:
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | Show/Hide Map Slider | Toggle for the Map Slider comparison mode |
+|  | Move Image Left | Select the image for the left side of the slider |
+|  | Move Image Right | Select the image for the right side of the slider |
+|  | Slider | The map slider |
+
+Example showing solar panel installation between 2023-10-28 and 2024-01-26:
+
+### Opacity Controls
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | Footprint Opacity | Toggle the opacity/transparency of the footprint |
+|  | Image Opacity | Toggle the opacity/transparency of an image |
+
+Image opacity at 0%, 50%, and 100%:
+
+| Image Opacity 0 | Image Opacity 50 | Image Opacity 100 |
+|------------------|-------------------|-------------------|
+|  |  |  |
+
+Footprint opacity:
+
+| Footprint Opacity High | Footprint Opacity Low |
+|------------------------|-----------------------|
+|  |  |
+
+---
+
+## EarthMosaics Ordering UI
+URL: https://docs.earthdaily.com/platform/earthplatform/uis/earthmosaics/
+Keywords: EarthMosaics, AI-Ready Mosaics, cloud-free imagery, mosaic ordering, NDVI, Sentinel-2, geospatial analysis
+
+# EarthMosaics
+
+## Introduction
+
+[**EarthMosaics**](https://console.earthdaily.com/mosaics) delivers cloud-free, temporally coherent mosaics with the highest possible geolocation, radiometric quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics offers application-specific and customized insights fulfilling unique needs of each use case.
+
+AI Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications.
+
+[EarthMosaics](https://console.earthdaily.com/mosaics) from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place orders for full resolution Mosaics.
+
+## Getting started with Mosaics
+
+Below is the landing page when you navigate to [EarthMosaics](https://console.earthdaily.com/mosaics):
+
+Pressing `New Order` takes you to the New Orders page:
+
+| S. No | Label | Description |
+|-------|-------|-------------|
+|  | Launch EarthDailyGPT | Use EarthDailyGPT to assist with generating a mosaic |
+|  | Area of Interest - draw on map | Draw a polygon for your mosaics order (limit > 25km² and  25km² and < 200,000 km².
+
+## Time of Interest (TOI)
+
+The time of interest will dictate the amount of available data the mosaic system can draw from. Limiting the TOI can deliver poor results if there is no cloud-free data within the specific AOI and TOI. The TOI should be after 2016-11-01T00:00:00.000Z, and with a minimum duration of 10 days.
+
+## Mosaic Settings
+
+### Resolution Selection
+
+#### Preview Mosaic
+
+The preview mosaic is used to ensure the combination of data source, AOI, and TOI is going to be viable for a given mosaic region. It will allow you to see the expected output of a Full Resolution mosaic in a fraction of the time. While the Preview doesn't apply all the improvements of Full Resolution (geometric, radiometric correction, aerosol-optical thickness weighting, or deep-learning cloud masks), it can still be used to get a sense of the expected cloud cover and visual consistency.
+
+Once the parameters are to your liking, a full resolution mosaic can be produced with the same settings.
+
+#### Full Resolution
+
+This is the setting to use for a full mosaic product. Note this will have a price associated with it and may still produce clouds if the settings for input data are too narrow. It is advised you preview any mosaic first to ensure usability.
+
+## Pixel Selection
+
+#### Best Measurement
+
+ARM's 'Best Measurement' extends work by [White et. al (2014)](#reference) and includes pixel-by-pixel weighting for several factors such as: sensor platform, scene content (clear, cloud, cloud shadow, water, snow), spatial distancing from measurement contamination, and aerosol optical thickness. This algorithm can produce highly consistent results where the goal is to choose the most representative sample for a given time period.
+
+#### Peak Normalized Difference Vegetation Index (Coming Soon)
+
+ARM's 'Peak NDVI' seeks to maximize the vegetative signals from the mosaic process, targeting conditions with the most vigorous vegetation signal.
+
+#### Peak Burn Severity (Coming Soon)
+
+ARM's 'Peak Burn Severity' seeks to maximize the response from burned pixels in order to map fire extent and degree of burn over large vegetated regions. To achieve peak burn severity, the Normalized Burn Ratio (NBR) is used to inform the pixel selection process. This mode can be sensitive to date selection and should be informed by knowledge of the local fire conditions and timing.
+
+#### Percentile
+
+ARM's Percentile selection uses a purely statistical approach to identify common pixels from the stack of images. This approach can be very effective with larger volumes of data. This is a classical approach to pixel selection, but generally has poorer results compared to Best Measurement.
+
+## Source
+
+Select if your mosaic will be made using only Sentinel-2A/B or the combination of Sentinel-2A/B and Landsat-8/9.
+
+## Reference
+
+[White, J. C., Wulder, M. A., Hobart, G. W., Luther, J. E., Hermosilla, T., Griffiths, P., Coops, N. C., Hall, R. J., Hostert, P., Dyk, A., & Guindon, L. (2014). Pixel-Based Image Compositing for Large-Area Dense Time Series Applications and Science. In Canadian Journal of Remote Sensing (Vol. 40, Issue 3, pp. 192-212). Informa UK Limited.](https://doi.org/10.1080/07038992.2014.945827)
+
+---
+
+## API
+URL: https://docs.earthdaily.com/platform/earthplatform/api/
+Keywords: STAC API, EarthDaily API, geospatial API, API documentation, EDA extensions, satellite data API
+
+# API
+
+EarthDaily provides a STAC-compliant API for querying and downloading geospatial data.
+
+- **API Design**
+    - [STAC Specification](api-design/stac.md) — Understanding the STAC standard and EDA extensions
+    - [API Details and Limits](api-design/details-and-limits.md) — Best practices and throttling limits
+- **API Usage**
+    - [Endpoints](api-usage/endpoints.md) — Full list of STAC API endpoints
+    - [Command Line Examples](api-usage/commandline.md) — curl examples for all endpoints
+    - [Postman Examples](api-usage/postman.md) — Postman screenshots and configuration
+    - [Python Examples](api-usage/python.md) — PySTAC client usage
+- **Extensions**
+    - [EDA STAC Extension](extensions/eda-extension.md) — EDA-specific metadata fields
+    - [EDA Data Coverage Extension](extensions/eda-data-coverage.md) — Data coverage report fields
+
+---
+
+## STAC Specification
+URL: https://docs.earthdaily.com/platform/earthplatform/api/api-design/stac/
+Keywords: STAC specification, SpatioTemporal Asset Catalog, geospatial data, STAC Item, STAC Collection, EDA extensions, OGC
+
+# The STAC Specification
+
+STAC is the most commonly used standard across various GeoSpatial platforms for exchange and search of GeoTemporal data.
+[SpatioTemporal Asset Catalogs](https://stacspec.org/en)
+
+> At its core, the SpatioTemporal Asset Catalog (STAC) specification provides a common structure for describing and cataloging spatiotemporal assets. A spatiotemporal asset is any file that represents information about the earth captured in a certain space and time.
+
+The [**STAC Specification**](https://stacspec.org/en/about/stac-spec/) consists of 4 semi-independent specifications. Each can be used alone, but they work best in concert with one another.
+
+- [STAC Item](https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md) is the core atomic unit, representing a single spatiotemporal asset as a GeoJSON feature plus datetime and links.
+
+- [STAC Catalog](https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md) is a simple, flexible JSON file of links that provides a structure to organize and browse STAC Items. A series of best practices helps make recommendations for creating real world STAC Catalogs.
+
+- [STAC Collection](https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md) is an extension of the STAC Catalog with additional information such as the extents, license, keywords, providers, etc that describe STAC Items that fall within the Collection.
+
+- [STAC API](https://github.com/radiantearth/stac-api-spec) provides a RESTful endpoint that enables search of STAC Items, specified in OpenAPI, following OGC's WFS 3.
+
+EarthDaily provides STAC compliant API endpoints for integration with our EarthPipeline components. The information below will help in a better understanding of STAC.
+
+## STAC Resources
+
+- [Intro to STAC: an Overview of the Specification](https://stacspec.org/en/tutorials/intro-to-stac/)
+- [SAT-API Browser](http://sat-api-browser.s3-website-us-east-1.amazonaws.com/)
+- [STAC API](https://api.stacspec.org/v1.0.0-rc.1/)
+- [STAC Extensions](https://stac-extensions.github.io/)
+
+## EDA Extensions
+
+EarthDaily has its own extensions used for collections and items:
+
+- [EDA STAC Extension](../extensions/eda-extension.md) — EDA-specific metadata fields
+- [EDA Data Coverage Extension](../extensions/eda-data-coverage.md) — Data coverage report fields
+
+---
+
+## API Details and Limits
+URL: https://docs.earthdaily.com/platform/earthplatform/api/api-design/details-and-limits/
+Keywords: STAC API, query optimization, API throttling, rate limiting, signed URLs, EarthDaily API, performance best practices
+
+# Performant Query Best Practices
+
+- [Specify Collections](#specify-collections)
+- [Datetime Range](#datetime-range)
+- [Field Extensions](#use-fields-extension)
+- [Signed URLs](#only-request-signed-urls-when-needed)
+- [ID Batching](#id-batching)
+- [API Throttling](#api-throttling)
+
+## Specify collections
+
+Limit the query to only the collections you need. The STAC API uses a database architecture partitioned by collection_id. The more collections that are specified in the query, the more database tables will have to be scanned.
+
+In cases where you are querying multiple collections and paging through thousands of results, the database is often having to discard matches to fit in the paging limit. It can often be more performant to run concurrent queries with individual collections.
+
+## Datetime Range
+
+The narrower the datetime range specified in your query, the fewer the number of results will need to be scanned. This is especially true for the following marketing tier collections, which are sub-partitioned by year at the database level.
+
+- landsat-c2l1
+- landsat-c2l2-sr
+- landsat-c2l2-st
+- sentinel-1-grd
+- sentinel-1-rtc
+- sentinel-2-l1c
+- sentinel-2-l2a
+- venus-l2a
+
+## Use fields extension
+
+Using the fields extension to only get the fields you need can result in dramatic reductions in database network traffic, and network traffic between you and the API.
+
+## Only request Signed URLs when needed
+
+Signing asset URLs has a performance impact. For collections with high numbers of assets, this additional latency can be multiple seconds. It's important to also note that Presigned URL expiry time is 12 hours.
+
+## ID Batching
+
+When trying to get multiple items by id, you can likely get better performance by batching requests with multiple values in ids.
+
+Similarly, when searching for values by properties values, the `in_` query support can be used.
+
+## API Throttling
+
+By default, each EDS account is limited to 30 concurrent active HTTP requests to the STAC API. Requests which start to exceed this limit will be rejected with an HTTP 429 (Too Many Requests) status code.
+
+---
+
+## Endpoints
+URL: https://docs.earthdaily.com/platform/earthplatform/api/api-usage/endpoints/
+Keywords: STAC API endpoints, collections, search, queryables, cloud mask, downloading assets, EarthDaily API
+
+# STAC Endpoints
+
+The base URL of the STAC catalog is `https://api.earthdaily.com/platform/v1/stac` and below are various endpoints.
+
+- [Collections](#collections)
+- [Collection](#collection)
+- [Items](#items)
+- [Item](#item)
+- [Queryables](#queryables)
+- [Search](#search)
+    - [Basic Search via GET Method](#basic-search-via-get-method)
+    - [Basic Search via POST Method](#basic-search-via-post-method)
+    - [Query Extension via POST Method](#query-extension-via-post-method)
+    - [Fields Extension](#fields-extension)
+    - [Sortby Extension](#sortby-extension)
+- [Downloading Assets](#downloading-assets)
+- [Cloud Mask Query](#cloud-mask-query)
+
+## Collections
+
+Return list of all Collections
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/collections
+```
+
+**Example** : [Command Line](commandline.md#collections) | [Postman](postman.md#collections) | [Python](python.md#get-collections)
+
+## Collection
+
+Return specific Collection
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/collections/
+```
+
+This endpoint takes the collection id as parameter. Below are some examples
+
+| Collection | URL |
+|------------------------------|----------------------------------------------------------------------|
+| Sentinel-2 L1C | `https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c` |
+| Landsat Collection 2 L1 | `https://api.earthdaily.com/platform/v1/stac/collections/landsat-c2l1` |
+| Venus L2A | `https://api.earthdaily.com/platform/v1/stac/collections/venus-l2a` |
+
+**Example** : [Command Line](commandline.md#collection) | [Postman](postman.md#collection) | [Python](python.md#get-a-specific-collection)
+
+## Items
+
+Return paged Items ordered by datetime descending (it doesn't support search parameters, so often `/stac/v1/search` is preferred instead)
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/collections//items
+```
+
+This endpoint takes the collection id as parameter. Below are some examples
+
+| Collection | URL |
+|----------------------|-------------------|
+| Sentinel-2 | `https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c/items` |
+| Landsat Collection 2 L1 | `https://api.earthdaily.com/platform/v1/stac/collections/landsat-c2l1/items` |
+| Venus L2A | `https://api.earthdaily.com/platform/v1/stac/collections/venus-l2a/items` |
+
+The response also contains a link to the next set of items
+
+**Example** : [Command Line](commandline.md#items) | [Postman](postman.md#items)
+
+## Item
+
+Returns a single Item for a given Collection and Item ID
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/collections//items/
+```
+
+**Example** : [Command Line](commandline.md#item) | [Postman](postman.md#item) | [Python](python.md#specific-item)
+
+## Queryables
+
+Returns the queryable names for the STAC API Item Search using Query Extension, which allows you to discover which properties are queryable for all collections, a specific collection, or an intersection of collections.
+
+Below are the two ways to query the "queryable items" for a given collection
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/queryables?collections=
+```
+
+or
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/collections/{collection_id}/queryables
+```
+
+Parameters:
+`collectionId` — Matches against Item collectionId values
+
+The queryables endpoint includes the datatype that must be used.
+
+The queryables endpoint currently doesn't provide information on supported operations for a given property/datatype. Supplying an unsupported field-value-operation combination will result in an error 400 (Bad Request) being returned. Example: a `contains` operation is not supported on a `string` queryable.
+
+- Get queryable properties that apply to all collections:
+  `https://api.earthdaily.com/platform/v1/stac/queryables`
+
+- Get queryable fields that apply to collection sentinel-2-l2a:
+  `https://api.earthdaily.com/platform/v1/stac/queryables?collections=sentinel-2-l2a`
+
+- Get queryable fields that apply to both collections sentinel-2-l1c and sentinel-2-l2a:
+  `https://api.earthdaily.com/platform/v1/stac/queryables?collections=sentinel-2-l1c,sentinel-2-l2a`
+
+**Example** : [Command Line](commandline.md#queryables) | [Postman](postman.md#queryables)
+
+## Search
+
+Implements STAC basic Item search functionality + extensions
+
+    For performance, it is highly recommended that your search requests are constrained by a `collections` parameter. This may be enforced in future.
+
+**Parameters:**
+
+- `collections` — Matches against Item collection values (treated as OR clauses)
+- `ids` — Matches against Item id values (treated as OR clauses)
+- `datetime` — All dates must be in RFC 3339 format
+    - Can be exact date match `datetime=2023-05-14T18:50:42.000000Z`
+    - Can be from-to `datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z`
+    - Can be from `datetime=2023-01-01T18:50:42.000000Z..`
+    - Can be to `datetime=..2023-01-01T18:50:42.000000Z`
+- `bbox` — Matches against intersecting Item bbox values
+- `intersects` (GeoJSON) — Matches against intersecting Item geometry values (supported on POST method only)
+- `limit` — number of records to be returned
+
+### Basic Search via GET Method
+
+Shows use of datetime, collections and bbox
+
+```
+https://api.earthdaily.com/platform/v1/stac/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+```
+
+### Basic Search via POST Method
+
+Shows use of datetime, collections and intersects
+
+```
+https://api.earthdaily.com/platform/v1/stac/search?datetime=2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z&bbox=-1.757813,51.971346,-0.065918,52.589701&collections=sentinel-2-l1c,sentinel-2-l2a
+```
+
+**Example** : [Command Line](commandline.md#search) | [Postman](postman.md#search) | [Python](python.md#search)
+
+### Query Extension via POST Method
+
+[Query Extension](https://github.com/stac-api-extensions/query)
+
+    EarthPlatform STAC API supports the [Query Extension](https://github.com/stac-api-extensions/query). It currently does not support the Filter Extension.
+
+Advanced searching can be performed using a `query` object. This allows searching over supported properties on STAC items using various operators.
+
+When searching across 1 or more Collections, and a field is specified which is not supported, no items will be returned for that Collection.
+
+To discover which fields are queryable on each Collection, see [Queryables](#queryables).
+
+Query Extension syntax:
+
+```json
+{
+    "query": {
+        "": {
+            "OPERATOR_1": "VALUE",
+            "OPERATOR_2": "VALUE"
+        },
+        "": {
+            "OPERATOR": "VALUE"
+        }
+    }
+}
+```
+
+Query Extension example:
+
+```json
+{
+    "query": {
+        "view:sun_elevation": {
+            "gt": 40,
+            "lt": 60
+        },
+        "eo:cloud_cover": {
+            "lt": 10
+        }
+    }
+}
+```
+
+Each property and each operation is treated as an `AND` clause.
+
+So the above would result in a query of:
+
+```
+view:sun_elevation > 40 AND view:sun_elevation < 60 AND eo:cloud_cover < 10
+```
+
+**Example** : [Command Line](commandline.md#query-extension-via-post-method) | [Postman](postman.md#query-extension-via-post-method) | [Python](python.md#search)
+
+### Fields Extension
+
+[Fields Extension](https://github.com/stac-api-extensions/fields)
+
+The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size.
+
+    Use of Fields Extension allows returning items in a potentially non-STAC compliant format. This can cause exceptions in PySTAC Client.
+
+**Usage Examples**
+
+1. Specifying fields to `include`
+
+    Retrieve only the `id`, `properties.datetime`, and `assets.aot` fields from the search endpoint:
+
+    ```
+    GET https://api.earthdaily.com/platform/v1/stac/search?fields=id,properties.datetime,assets.aot
+    ```
+
+2. Specifying fields to `exclude`
+
+    Request data while excluding the `links` and `geometry` fields from the search endpoint:
+
+    ```
+    GET https://api.earthdaily.com/platform/v1/stac/search?fields=-links,-geometry
+    ```
+
+**Example** : [Command Line](commandline.md#fields-extension) | [Postman](postman.md#fields-extension) | [Python](python.md#search)
+
+### Sortby Extension
+
+[Sortby Extension](https://github.com/stac-api-extensions/sort)
+
+By default, Items are returned by `datetime` descending. Then by `id` ascending.
+
+Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint:
+
+    When sorting by `eo:cloud_cover`, only items with non-null `eo:cloud_cover` property values will be returned.
+
+GET examples:
+
+Sortby `eo:cloud_cover` ascending:
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/search?sortby=eo:cloud_cover
+```
+
+Sortby `eo:cloud_cover` descending:
+
+```
+GET https://api.earthdaily.com/platform/v1/stac/search?sortby=-eo:cloud_cover
+```
+
+**Example** : [Command Line](commandline.md#sortby-extension) | [Postman](postman.md#sortby-extension) | [Python](python.md#search)
+
+## Downloading Assets
+
+STAC `assets` property provides `href`s that point to the files hosted on different platforms, depending on the data provider.
+Currently, these URLs may use either `https://` or `s3://` protocols.
+
+- We are transitioning to a more consistent `href` format that predominantly uses `s3://`.
+
+**Accessing Alternate URLs**
+
+For assets hosted on `S3` but accessible via `HTTP`, you can find an `HTTPS` version listed as an [alternate asset](https://github.com/stac-extensions/alternate-assets) with the key `download_url`.
+
+For private and requester-pays S3 assets, and Azure Blob assets, we offer presigned URLs, which ensure secure and temporary access:
+
+    **Default Behavior**: Presigned URLs are automatically included for single item requests (`/items/{item_id}`) but not for searches (`/search` or `/items`) due to performance considerations.
+
+    **Customization**: You can request presigned URLs in search responses by using the `X-Signed-Asset-Urls` header set to `true`. Note that using a high `limit` parameter during search queries along with a large number of assets might increase response times significantly.
+
+**Usage Notes**
+
+Presigned URLs are available for all assets in EDA buckets across all customer accounts. For third-party buckets, such as `s3://sentinel-s2-l1c`, the availability of presigned URLs depends on specific account setups. These URLs are valid for 12 hours, after which they expire.
+
+Please ensure to manage the generation of presigned URLs carefully to optimize performance and avoid excessive latency in your application.
+
+**Example** : [Command Line](commandline.md#downloading-assets) | [Postman](postman.md#downloading-assets)
+
+## Cloud Mask Query
+
+You can use the POST method to retrieve EarthDaily cloud masks as well.
+
+**Example** : [Command Line](commandline.md#cloud-masks) | [Postman](postman.md#cloudmasks) | [Python](python.md#cloud-masks)
+
+---
+
+## Command Line Examples
+URL: https://docs.earthdaily.com/platform/earthplatform/api/api-usage/commandline/
+Keywords: curl, command line, STAC API, API examples, EarthDaily API, REST API
+
+# Command Line Examples
+
+The sections below include examples using [curl](https://curl.se/) commands. If a GUI is preferred, these commands can be [imported](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-with-curl-commands) into [Postman](https://www.postman.com/).
+
+## Collections
+
+Return list of all Collections
+
+```bash
+curl --location https://api.earthdaily.com/platform/v1/stac/collections \
+  --header 'Authorization: Bearer '
+```
+
+## Collection
+
+Return specific Collection
+
+```bash
+curl --location https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c \
+  --header 'Authorization: Bearer '
+```
+
+## Items
+
+Return paged Items ordered by datetime descending
+
+```bash
+curl --location https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c/items \
+  --header 'Authorization: Bearer '
+```
+
+## Item
+
+Returns a single Item for a given Collection and Item ID
+
+```bash
+curl --location https://api.earthdaily.com/platform/v1/stac/collections/sentinel-2-l1c/items/S2B_MSIL1C_20240422T190009_N0510_R027_T08JNQ_20240422T221641 \
+  --header 'Authorization: Bearer '
+```
+
+## Queryables
+
+Returns the queryable names for the STAC API Item Search using Query Extension
+
+```bash
+curl --location https://api.earthdaily.com/platform/v1/stac/collections/landsat-c2l1/queryables \
+  --header 'Authorization: Bearer '
+```
+
+## Search
+
+Implements STAC basic Item search functionality + extensions
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --data '{
+    "datetime": "2023-01-01T18:50:42.000000Z/2023-02-01T18:50:42.000000Z",
+    "collections": ["sentinel-2-l1c","sentinel-2-l2a"],
+    "intersects": {
+        "coordinates": [
+          [
+            [-2.226934111129964, 53.375337378064074],
+            [-2.226934111129964, 50.0397331432938],
+            [3.334960050757161, 50.0397331432938],
+            [3.334960050757161, 53.375337378064074],
+            [-2.226934111129964, 53.375337378064074]
+          ]
+        ],
+        "type": "Polygon"
+    }
+  }'
+```
+
+### Query Extension via POST Method
+
+    EarthPlatform STAC API supports the [Query Extension](https://github.com/stac-api-extensions/query). It currently does not support the Filter Extension.
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --data '{
+    "limit": 20,
+    "collections": ["landsat-c2l2-sr"],
+    "query": {
+        "view:sun_elevation": {
+            "gt": 40,
+            "lt": 60
+        },
+        "eo:cloud_cover": {
+            "lt": 10
+        }
+    }
+  }'
+```
+
+### Fields Extension
+
+The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size.
+
+Include specific fields:
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --data '{
+    "fields": {
+      "include": ["id", "properties.datetime", "assets.aot"]
+    }
+  }'
+```
+
+Exclude specific fields:
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --data '{
+    "fields": {
+      "exclude": ["links", "geometry"]
+    }
+  }'
+```
+
+### Sortby Extension
+
+By default, Items are returned by `datetime` descending. Then by `id` ascending.
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --data '{
+    "sortby": [
+        {
+            "field": "properties.eo:cloud_cover",
+            "direction": "asc"
+        }
+    ]
+  }'
+```
+
+## Downloading Assets
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --header 'X-Signed-Asset-Urls: true' \
+  --data '{
+    "limit": 20,
+    "collections": ["sentinel-2-l2a-cog-ag-cloud-mask"]
+  }'
+```
+
+Example response:
+
+```json
+"assets": {
+    "agriculture-cloud-mask": {
+        "href": "s3://earthdaily-eds-edc-skyfox-generic/_PUBLIC/sentinel-2-l2a-cog-ag-cloud-mask/...",
+        "alternate": {
+            "download": {
+                "href": "https://earthdaily-eds-edc-skyfox-generic.s3.amazonaws.com/_PUBLIC/...?AWSAccessKeyId=...&Signature=...&Expires=1694739928"
+            }
+        }
+    }
+}
+```
+
+## Cloud Masks
+
+```bash
+curl --location 'https://api.earthdaily.com/platform/v1/stac/search' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer ' \
+  --data '{
+    "collections": ["sentinel-2-l2a"],
+    "datetime":"2022-07-01T00:00:00.000000Z/2022-08-01T00:00:00.000000Z",
+    "query": {
+        "eda:ag_cloud_mask_available": {
+            "eq": true
+        }
+    }
+  }'
+```
+
+---
+
+## Postman Examples
+URL: https://docs.earthdaily.com/platform/earthplatform/api/api-usage/postman/
+Keywords: Postman, STAC API, API testing, query extension, fields extension, sortby extension, EarthDaily API
+
+# Postman Examples
+
+Before you try out the various endpoints, you need to set up the authentication for Postman. [Authentication Page](../../getting-started/authentication.md#postman) describes how it is done.
+
+## Collections
+
+Return list of all Collections
+
+## Collection
+
+Return specific Collection
+
+## Items
+
+Return paged Items ordered by datetime descending
+
+## Item
+
+Returns a single Item for a given Collection and Item ID
+
+## Queryables
+
+Returns the queryable names for the STAC API Item Search using Query Extension
+
+## Search
+
+Implements STAC basic Item search functionality + extensions
+
+Ensure the **content-type** header is **application/json**
+
+### Query Extension via POST Method
+
+    EarthPlatform STAC API supports the [Query Extension](https://github.com/stac-api-extensions/query). It currently does not support the Filter Extension.
+
+Advanced searching can be performed using a `query` object.
+
+### Fields Extension
+
+The Fields Extension allows you to specify which fields are returned from the API, reducing data transfer size.
+
+Include:
+
+Exclude:
+
+### Sortby Extension
+
+By default, Items are returned by `datetime` descending. Then by `id` ascending.
+
+Sorting by property `eo:cloud_cover` is also supported on the `/search` endpoint:
+
+| Ascending | Descending |
+|-----------|-----------|
+|  |  |
+
+## Downloading Assets
+
+## CloudMasks
+
+---
+
+## Python Examples
+URL: https://docs.earthdaily.com/platform/earthplatform/api/api-usage/python/
+Keywords: Python, PySTAC, STAC API, EarthDaily Python client, geospatial data, satellite imagery
+
+# Python Examples
+
+For Python environments, we recommend using [PySTAC Client](https://pystac-client.readthedocs.io/en/stable/#).
+
+## Getting the authentication token for PySTAC Client
+
+```python
+import os
+import requests
+
+from dotenv import load_dotenv
+from pystac.client import Client
+
+load_dotenv()  # take environment variables from .env.
+
+CLIENT_ID = os.getenv("EDS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("EDS_SECRET")
+EDS_AUTH_URL = os.getenv("EDS_AUTH_URL")
+API_URL = os.getenv("EDS_API_URL")
+STAC_API_URL = f"{API_URL}/platform/v1/stac"
+
+# Setup requests session
+session = requests.Session()
+session.auth = (CLIENT_ID, CLIENT_SECRET)
+
+def get_new_token(session):
+    """Obtain a new authentication token using client credentials."""
+    token_req_payload = {"grant_type": "client_credentials"}
+    try:
+        token_response = session.post(EDS_AUTH_URL, data=token_req_payload)
+        token_response.raise_for_status()
+        tokens = token_response.json()
+        return tokens["access_token"]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to obtain token: {e}")
+
+token = get_new_token(session)
+
+client = Client.open(STAC_API_URL, headers={"Authorization": f"bearer {token}"})
+```
+
+## Get collections
+
+```python
+for collection in client.get_all_collections():
+    print(collection)
+```
+
+## Get a specific collection
+
+```python
+collection = client.get_collection("sentinel-2-l2a")
+print(collection)
+```
+
+## Search
+
+Search a collection with different filter criteria, setting query with field conditions and sorting:
+
+```python
+items = client.search(
+    collections=["sentinel-2-l2a", "sentinel-l1c"],
+    datetime="2022-07-01T00:00:00.000000Z/2023-08-01T00:00:00.000000Z",
+    intersects={
+        "coordinates": [
+            [
+                [-124.18953337119558, 49.734095507050256],
+                [-124.18953337119558, 48.73413273779468],
+                [-121.93408220580699, 48.73413273779468],
+                [-121.93408220580699, 49.734095507050256],
+                [-124.18953337119558, 49.734095507050256]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    # Cloud cover less than 10%
+    query={
+        "eo:cloud_cover": {
+            "lt": 10
+        }
+    },
+    sortby=[
+        {
+            "field": "properties.eo:cloud_cover",
+            "direction": "asc"
+        }
+    ],
+    limit=50,  # This is the number of items to be returned per page
+    max_items=100,  # This is number of items to page over
+).items()
+
+for index, item in enumerate(items):
+    print(f"{index}, {item}")
+```
+
+## Specific Item
+
+```python
+items = client.search(
+    collections=["sentinel-2-l2a"],
+    ids=["S2B_35XMG_20230615_1_L2A", "S2B_39XVJ_20230615_0_L2A", "S2B_27LZJ_20230615_0_L2A"]
+).items()
+
+for index, item in enumerate(items):
+    print(f"{index}, {item}")
+```
+
+## Cloud Masks
+
+```python
+# Query sentinel-2-l2a for ag cloud masks
+
+items = client.search(
+    collections=["sentinel-2-l2a"],
+    datetime="2022-07-01T00:00:00.000000Z/2022-08-01T00:00:00.000000Z",
+    query={
+        "eda:ag_cloud_mask_available": {
+            "eq": True
+        }
+    },
+    max_items=50
+).items()
+
+for index, item in enumerate(items):
+    print(item)
+    cloud_mask_item = client.get_collection(
+        item.properties["eda:ag_cloud_mask_collection_id"]
+    ).get_item(item.properties["eda:ag_cloud_mask_item_id"])
+
+    print(cloud_mask_item)
+```
+
+---
+
+## EDA STAC Extension
+URL: https://docs.earthdaily.com/platform/earthplatform/api/extensions/eda-extension/
+Keywords: EDA extension, STAC metadata, cloud mask, sensor type, geometric accuracy, EarthDaily Analytics, satellite imagery metadata
+
+# EDA STAC Extension
+
+- **Title:** EDA Extension
+- **Identifier:** [https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json](https://earthdaily-stac-extensions.s3.amazonaws.com/eda/v0.1.0/schema.json)
+- **Field Name Prefix:** `eda`
+- **Scope:** Item, Collections
+
+This document explains the EDA Extension to the [SpatioTemporal Asset Catalog (STAC)](https://github.com/radiantearth/stac-spec) specification.
+
+EDA Extension adds metadata related to EDA specific details like ImagerMode, Sensor Type, Water Cover, Radiometric Scaling, Geometric Accuracy RMSE etc that affect the view of resulting data. It will often be combined with other extensions that describe the actual data, such as the eo, proj or sat extensions.
+
+## Public Fields
+
+The fields in the table below can be used in these parts of STAC documents:
+
+- [ ] Catalogs
+- [x] Collections
+- [x] Items
+- [ ] Assets
+- [ ] Links
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| `eda:order_line_item_id` | String | Specifies the order line item id within EarthPipeline |
+| `eda:source_l0_ids` | List of Strings | Archive IDs of the source level-0 datasets |
+| `eda:source_l0_scene_ids` | List of Strings | Scene IDs of the source Level-0 datasets |
+| `eda:segment_id` | String | Dataset identifier for the acquisition used to generate the product `_` |
+| `eda:imager_mode` | String | Non-experimental modes: "TDI_LAND", "TDI_MARITIME", "TDI_GLOBAL", "PUSH_FRAME_GLOBAL". Only provided for Catalogue products |
+| `eda:image_section_counter` | Number | Image section counter. Only provided for Catalogue products |
+| `eda:geometric_accuracy_rmse` | Number | Radial RMSE, in meters. Only provided for specific L1C and L2A products |
+| `eda:sensor_type` | String | The sensor type (currently "OPTICAL") |
+| `eda:product_type` | String | Only available for the "GOES" collection |
+| `eda:water_cover` | Number | Estimate of water cover, in % |
+| `eda:derived_from_item_id` | String | L2 item used for L2 derived products |
+| `eda:derived_from_collection_id` | String | L2 collection used for L2 derived products |
+| `eda:ag_cloud_mask_available` | Boolean | Whether EDAgro cloud mask is available |
+| `eda:ag_cloud_mask_item_id` | String | EDAgro Cloud Mask item id |
+| `eda:ag_cloud_mask_collection_id` | String | EDAgro Cloud Mask collection id |
+| `eda:cloud_mask_available` | Boolean | Whether EDA cloud mask is available |
+| `eda:cloud_mask_item_id` | String | EDA Cloud Mask item id |
+| `eda:cloud_mask_collection_id` | String | EDA Cloud Mask collection id |
+| `eda:area_km2` | Number | Mosaic - approximate area in km^2 of the valid region |
+| `eda:radiometric_scaling` | Number | Obsolete |
+| `eda:pixel_composite_method` | String | Pixel Composite Method used for Mosaics |
+
+## Private Fields
+
+    Private fields are available to "Admin users" and "All Users of Customer account with Super Tier"
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| `eda:status` | String | Status of the product: Created, Published, Unpublished |
+| `eda:geometry_tags` | List of Strings | Populated when modifying STAC items from third party data |
+| `eda:tags` | List of Strings | General EDA tags |
+| `eda:original_geometry` | Object | Preserved original geometry when geometry tags of third party STAC items are modified |
+| `eda:tracking_id` | String | Used by Pastfinder for tracking all items related to an order |
+| `eda:account_id` | String | User account id info (Customer Account Id) |
+| `eda:processor_version` | String | Version of the processing system |
+| `eda:loose_validation_status` | String | Validation status of third party stac items (queryable) |
+| `eda:band_to_band_accuracy_rmse` | List of Objects | Band-to-band accuracy, in pixels. Only for specific L1C/L2A products |
+| `eda:source_created` | String | When third party created the item |
+| `eda:source_updated` | String | When third party updated the item |
+| `eda:unusable_cover` | Number | Estimate of unusable cover. Only for Land products (includes cloud and water) |
+| `eda:num_cols` | Number | Number of columns in the image |
+| `eda:num_rows` | Number | Number of rows in the image |
+| `eda:derived_from_l1c_item_id` | String | L1c item used for L1 derived products |
+| `eda:derived_from_l1c_collection_id` | String | L1c collection used for L1 derived collection |
+| `eda:altitude` | Number | Altitude at the center of the product |
+| `eda:bearing` | Number | Satellite ground track bearing |
+| `eda:start_attitude` | List of Numbers | Satellite attitude at start of acquisition (Degrees RPY) |
+| `eda:end_attitude` | List of Numbers | Satellite attitude at end of acquisition (Degrees RPY) |
+| `eda:mean_attitude` | List of Numbers | Mean satellite attitude (Degrees RPY) |
+| `eda:mtf_enhancement_applied` | Boolean | Whether MTF enhancement was applied |
+| `eda:bands` | List of Strings | List of band names available in the product |
+| `eda:product_status` | String | One of "PENDING_VALIDATION", "VALID", "DEPRECATED" |
+| `eda:source` | String | Obsolete |
+| `eda:auxiliary_atmospheric_sources` | Object | Auxiliary atmospheric retrieval sources for BOA generation. Only for L2A VNIR products |
+| `eda:basemap` | String | Geometric reference used for corrections (Mosaic) |
+| `eda:download_bundle_status` | String | "AVAILABLE" or "IN_PROGRESS" |
+| `eda:aocs_mode` | String | One of "Nadir", "DEM", "Side Slither". Only for Catalogue |
+| `eda:cloud_detect_method` | String | Algorithm used in cloud detection |
+
+---
+
+## EDA Data Coverage Extension
+URL: https://docs.earthdaily.com/platform/earthplatform/api/extensions/eda-data-coverage/
+Keywords: EDA extension, data coverage, STAC extension, report items, region coverage, EarthDaily Analytics
+
+# EDA Data Coverage Extension
+
+- **Title:** EDA Data Coverage Extension
+- **Identifier:** [https://earthdaily-stac-extensions.s3.amazonaws.com/eda_data_coverage/v1.0.0/schema.json](https://earthdaily-stac-extensions.s3.amazonaws.com/eda_data_coverage/v1.0.0/schema.json)
+- **Field Name Prefix:** `eda_data_coverage`
+- **Scope:** Item
+
+This document explains the EDA Data Coverage Extension to the [SpatioTemporal Asset Catalog (STAC)](https://github.com/radiantearth/stac-spec) specification.
+
+EDA Data Coverage extension defines properties for the Data Coverage Reports.
+
+## Fields
+
+The fields in the table below can be used in these parts of STAC documents:
+
+- [ ] Catalogs
+- [ ] Collections
+- [x] Items
+- [ ] Assets
+- [ ] Links
+
+| Field Name | Type | Description |
+|------------|------|-------------|
+| `eda_data_coverage:region_id` | String | World divided into six regions for automated reports; users can also specify custom regions for manual reports |
+| `eda_data_coverage:item_count` | Number | The number of items considered for this report |
+| `eda_data_coverage:report_type` | String | Frequency of report generation: daily, weekly, or monthly. If manually triggered, the value is `custom` |
+| `eda_data_coverage:region_version` | Number | Version tracking for region updates |
+| `eda_data_coverage:month` | Number | Data Coverage Report Month |
+| `eda_data_coverage:week` | Number | Data Coverage Report Week |
+
+---
+
+## Example Notebooks
+URL: https://docs.earthdaily.com/platform/earthplatform/examples/
+Keywords: Jupyter notebooks, EarthDaily examples, EarthMosaics, NDVI, Python, datacubes
+
+# EarthDaily STAC Client Examples
+
+Here are a few examples to work with EarthDaily data through PySTAC and the EarthDaily Python Client.
+
+## Basic Examples
+
+- [Getting Started with EarthDaily.ipynb](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples/applications/Getting%20Started%20with%20EarthDaily/Getting%20Started%20with%20EarthDaily.ipynb)
+- [Introduction to EDA Datacubes.ipynb](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples/applications/Getting%20Started%20with%20EarthDaily/Introduction%20to%20EDA%20DataCubes.ipynb)
+
+## EarthMosaics
+
+- [Introduction to EDA EarthMosaics.ipynb](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples/applications/Introduction%20to%20EDA%20EarthMosaics/Introduction%20to%20EDA%20EarthMosaics.ipynb)
+- [EDA Mosaics - EarthMosaics vs Sentinel-2 NDVI.ipynb](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples/applications/EDA%20Mosaics%20-%20EarthMosaics%20vs%20Sentinel-2%20NDVI/EDA%20Mosaics%20-%20EarthMosaics%20vs%20Sentinel-2%20NDVI.ipynb)
+- [EDA Mosaics - Dixie Fire Burn Extent.ipynb](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples/applications/EDA%20Mosaics%20-%20Dixie%20Fire%20Burn%20Extent/EDA%20Mosaics%20-%20Dixie%20Fire%20Burn%20Extent.ipynb)
+- [EDA Mosaics - Rio Grande do Sul Flood Extent.ipynb](https://github.com/earthdaily/earthdaily-python-client/tree/main/examples/applications/EDA%20Mosaics%20-%20Rio%20Grande%20do%20Sul%20Flood%20Extent/EDA%20Mosaics%20-%20Rio%20Grande%20do%20Sul%20Flood%20Extent.ipynb)
+
+---

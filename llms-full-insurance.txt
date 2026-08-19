@@ -1,0 +1,37 @@
+# EarthDaily documentation — Insurance
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Insurance
+URL: https://docs.earthdaily.com/insurance/
+Keywords: insurance, Ascend, underwriting, natural catastrophe, climate peril, parametric insurance, portfolio monitoring, geocoding, wildfire, flood, hail
+
+# Insurance
+
+**Precise underwriting. Controlled accumulation. Faster, more accurate claims.** EarthDaily's **Ascend** product suite brings spatial intelligence to every stage of the insurance value chain.
+
+## Insurance Product Suite: Ascend
+
+-   :material-shield-check:{ .lg .middle } __Ascend__
+
+    ---
+Ascend supports carriers from the moment a risk is first evaluated through underwriting, active portfolio management, catastrophe response, regulatory reporting, and customer interaction. [Learn more.](ascend/index.md)
+
+## Data Services & Analytics
+
+-   :material-weather-lightning-rainy:{ .lg .middle } __Climate Peril Analytics__
+
+    ---
+
+    Forward-looking, fuels-based wildfire risk scoring, flood analytics, and multi-peril coverage at property-level resolution.
+
+-   :material-map-marker-radius:{ .lg .middle } __Geocoding__
+
+    ---
+
+    EarthDaily's Geocoding Consensus Algorithm fuses data from multiple, global geocoders with building and parcel data to accurately and scalably identify the correct asset (building).
+
+---

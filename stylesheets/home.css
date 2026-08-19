@@ -1,0 +1,94 @@
+/* Landing page container */
+.mdx-container {
+  padding-top: 1.25rem;
+  background:
+    url("../assets/earthdaily-top-bg.jpg") center / cover no-repeat;
+}
+
+/* Adjust background for slate theme */
+[data-md-color-scheme="slate"] .mdx-container {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/earthdaily-top-bg.jpg") center / cover no-repeat;
+}
+
+/* Landing page hero */
+.mdx-hero {
+  margin: 0 1rem;
+  color: var(--md-primary-bg-color);
+}
+
+.mdx-hero h1 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 2.75rem;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  color: currentcolor;
+}
+
+/* Mobile portrait: Larger hero headline */
+@media screen and (max-width: 29.9375em) {
+  .mdx-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Hero content */
+.mdx-hero__content {
+  padding-bottom: 7.5rem;
+}
+
+/* Tablet landscape and up: Columnar display */
+@media screen and (min-width: 60em) {
+  .mdx-hero {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .mdx-hero__content {
+    max-width: 23.75rem;
+    padding-bottom: 14vw;
+    margin-top: 4.375rem;
+  }
+
+  .mdx-hero__image {
+    order: 1;
+    width: 47.5rem;
+    transform: translateX(5rem);
+  }
+}
+
+/* Screen and up: Adjusted spacing */
+@media screen and (min-width: 76.25em) {
+  .mdx-hero__image {
+    transform: translateX(10rem);
+  }
+}
+
+/* Buttons */
+.mdx-hero .md-button {
+  margin-top: 0.625rem;
+  margin-right: 0.625rem;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.mdx-hero .md-button:is(:focus, :hover) {
+  background-color: #ffffff;
+  color: var(--ed-primary-dark);
+  border-color: #ffffff;
+}
+
+.mdx-hero .md-button--primary {
+  background: var(--ed-primary-gradient);
+  border-color: var(--ed-primary-dark);
+  color: #ffffff;
+}
+
+.mdx-hero .md-button--primary:is(:focus, :hover) {
+  filter: brightness(1.15);
+  border-color: var(--ed-primary-dark);
+  background: var(--ed-primary-gradient);
+  color: #ffffff;
+}
