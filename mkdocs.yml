@@ -665,7 +665,8 @@ nav:
   - Home: index.md
   - Data: 
     - data/edc-product-introduction.md
-    - Collections: 
+    - data/edc-product-specification.md
+    - Collections:
       - data/collections/index.md
       - Imagery:
         - Sentinel-2: data/collections/sentinel-2.md

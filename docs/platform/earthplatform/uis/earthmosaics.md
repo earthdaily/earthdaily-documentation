@@ -15,30 +15,30 @@ keywords:
 
 ## Introduction
 
-[**EarthMosaics**](https://console.earthdaily.com/mosaics) delivers cloud-free, temporally coherent mosaics with the highest possible geolocation, radiometric quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics offers application-specific and customized insights fulfilling unique needs of each use case.
+[**EarthMosaics**](https://console.earthdaily.com/order/mosaics) delivers cloud-free, temporally coherent mosaics with the highest possible geolocation, radiometric quality, enabling users to examine true signals, minimize false positives in change detection, and easily contextualize with other geospatial datasets. From analysing a regional forest to monitoring a mining site, predicting water reservoir levels to measuring melting permafrost, EarthMosaics offers application-specific and customized insights fulfilling unique needs of each use case.
 
 AI Ready Mosaics are complex, costly to produce, and designed to feed directly into ML applications.
 
-[EarthMosaics](https://console.earthdaily.com/mosaics) from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place orders for full resolution Mosaics.
+[**EarthMosaics**](https://console.earthdaily.com/order/mosaics) from EarthDaily Analytics provides you a way to explore and get a free preview and you can also place orders for full resolution Mosaics.
 
 ## Getting started with Mosaics
 
-Below is the landing page when you navigate to [EarthMosaics](https://console.earthdaily.com/mosaics):
+Below is the landing page when you navigate to EarthDaily's [Order app](https://console.earthdaily.com/order):
 
-![WelcomeMosaics](../../../assets/platform/EarthMosaicsUI/WelcometoMosaic.png)
+![WelcometoMosaics](../../../assets/platform/EarthMosaicsUI/WelcometoMosaic.png)
 
-Pressing `New Order` takes you to the New Orders page:
+Pressing `New Order` or selecting Mosaics in the left-hand navigation takes you to the [Mosaics ordering page](https://console.earthdaily.com/order/mosaics):
 
 ![MosaicsOrderSetup](../../../assets/platform/EarthMosaicsUI/MosaicOrderSetup.png)
 
 | S. No | Label | Description |
 |-------|-------|-------------|
 | ![One](../../../assets/platform/NumberLabels/One.png) | Launch EarthDailyGPT | Use EarthDailyGPT to assist with generating a mosaic |
-| ![Two](../../../assets/platform/NumberLabels/Two.png) | Area of Interest - draw on map | Draw a polygon for your mosaics order (limit > 25km² and < 200,000 km²). Only polygons supported (not multipolygons) |
-| ![Three](../../../assets/platform/NumberLabels/Three.png) | Area of Interest - use GeoJSON | Enter an existing GeoJSON instead of drawing (same area limit) |
-| ![Four](../../../assets/platform/NumberLabels/Four.png) | Time of Interest | Specify the time of interest |
-| ![Five](../../../assets/platform/NumberLabels/Five.png) | Settings | Multiple choices to configure your order |
-| ![Six](../../../assets/platform/NumberLabels/Six.png) | Mosaic Name | Enter a name for easy identification |
+| ![Two](../../../assets/platform/NumberLabels/Two.png) | Mosaic Name | Enter a name for easy identification |
+| ![Three](../../../assets/platform/NumberLabels/Three.png) | Area of Interest - draw on map | Draw a polygon for your mosaics order (limit > 25km² and < 200,000 km²). Only polygons supported (not multipolygons) |
+| ![Four](../../../assets/platform/NumberLabels/Four.png) | Area of Interest - use GeoJSON | Enter an existing GeoJSON instead of drawing (same area limit) |
+| ![Five](../../../assets/platform/NumberLabels/Five.png) | Time of Interest | Specify the time of interest |
+| ![Six](../../../assets/platform/NumberLabels/Six.png) | Settings | Multiple choices to configure your order |
 
 The AOI defines the geographic extent used to build the mosaic. You can either draw the AOI on the map or provide GeoJSON. To draw, choose Rectangle or Polygon option, then left-click on the map.
 
@@ -49,7 +49,7 @@ Once you draw a polygon, the area calculator displays the total area:
 | S. No | Label | Description |
 |-------|-------|-------------|
 | ![Seven](../../../assets/platform/NumberLabels/Seven.png) | AOI Area | Displays the total area of the AOI |
-| ![Eight](../../../assets/platform/NumberLabels/Eight.png) | Delete | Delete the existing AOI |
+| ![Eight](../../../assets/platform/NumberLabels/Eight.png) | Clear AOI | Clear the existing AOI |
 
 You can view the AOI in GeoJSON:
 
@@ -72,7 +72,7 @@ The settings define how your mosaic will be generated:
 
 ![Settings](../../../assets/platform/EarthMosaicsUI/MosaicSettings.png)
 
-After confirming settings and entering a name, submit the order:
+After confirming settings, submit the order:
 
 ![Submit](../../../assets/platform/EarthMosaicsUI/MosaicSubmit.png)
 
@@ -99,15 +99,11 @@ If you have coupons to redeem, enter the coupon code for eligible discounts. Onc
 
 ## Managing Mosaics Orders
 
-After placing the order (Preview or Full), you will be redirected to your Dashboard:
+After placing the order (Preview or Full), you will be redirected back to the Order app landing page:
 
-![AllOrdersFull](../../../assets/platform/EarthMosaicsUI/MosaicDashboardOrder.png)
+![WelcometoMosaics](../../../assets/platform/EarthMosaicsUI/WelcometoMosaic.png)
 
-Click "View All" to see all your Orders. Your order will show an "In Progress" state. There is a button to view all Mosaic Orders on EarthPlatform:
-
-![AllOrders](../../../assets/platform/EarthMosaicsUI/MosaicAllOrdersList.png)
-
-You can also use the Application Switcher to go to your Account Management page, and then go to the "My Orders" page to see your Order:
+You can also use the Application Switcher to go to your Account Management app, and then go to the "My Orders" page to see your Order:
 
 ![MyOrders](../../../assets/platform/EarthMosaicsUI/AccountParentOrder.png)
 
@@ -121,9 +117,10 @@ Once processed successfully, the state changes to "Completed" with additional op
 
 | S. No | Label | Description |
 |-------|-------|-------------|
-| ![Nine](../../../assets/platform/NumberLabels/Nine.png) | Copy | Copy the order to reuse settings or make minor modifications |
-| ![Ten](../../../assets/platform/NumberLabels/Ten.png) | Download | Download your product (Preview or Full) |
-| ![Eleven](../../../assets/platform/NumberLabels/Eleven.png) | View | View the product in EarthPlatform |
+| ![Nine](../../../assets/platform/NumberLabels/Nine.png) | Info | View the order information in Account Management |
+| ![Ten](../../../assets/platform/NumberLabels/Ten.png) | Copy | Copy the order to reuse settings or make minor modifications |
+| ![Eleven](../../../assets/platform/NumberLabels/Eleven.png) | Download | Download your product (Preview or Full) |
+| ![Twelve](../../../assets/platform/NumberLabels/Twelve.png) | Visualize | Visualize the product in EarthPlatform |
 
 The [EarthPlatform](earthplatform.md) visualizer opens in a new tab:
 

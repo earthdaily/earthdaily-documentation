@@ -14,7 +14,7 @@ keywords:
 
 The **EarthDaily Crop Identification** product is fully operational across the growing regions of Canada, providing in-season crop classification for major crops. From Ontario to the Great Plains, it delivers **timely, consistent, and high-resolution insights** into crop distribution—supporting critical decisions in one of the world’s largest agricultural producers.
 
-Coverage includes key crops such as **Corn, Barley, Canola, Spring Wheat, Winter Wheat, Soybean and Hay/pasture.**
+Coverage includes key crops such as **Corn, Hay/pasture, and Soybean**. With the addition of **Rapeseed/Canola, Spring Wheat, Spring Barley** in an upcoming release.
 
 Additional crops can be supported upon request or as part of our product roadmap.
 
@@ -72,11 +72,11 @@ Explore full technical specifications in our [API Documentation](../library/Fiel
 
 !!! tip "What crops are covered in EarthDaily’s Canada Crop Identification product?"
 
-    Corn, Hay/pasture, Soybean, Spring Wheat, Winter Wheat, Barley, and Canola/Rapeseed.
+    Corn, Hay/pasture, and Soybean. In the next 2026 release: Spring Wheat, Spring Barley, Canola/Rapeseed.
 
 !!! tip "How accurate is the model?"
 
-    F1 scores range from 0.54 - 0.88, depending on crop and based on historical, in-season, and end of season performances.
+    F1 scores range from 0.82 - 0.85, based on validated in-season performance.
     
 !!! tip "How often is the data updated?"
 

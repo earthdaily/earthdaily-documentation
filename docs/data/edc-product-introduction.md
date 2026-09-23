@@ -132,9 +132,10 @@ EDC is compatible with **Sentinel-2** and **Landsat** datasets, extending your h
 
 ## Where to Go Next
 
-More documentation is on the way. Detailed pages covering **product specifications**, **data formats**, **processing**, and a **quickstart guide** will be released soon:
+The [EDC Product Specification](edc-product-specification.md) provides mission characteristics, product levels, data formats, and processing details for EarthDaily Constellation Generation 1 products.
 
-- **Product Specifications** *(coming soon)* — detailed band tables, sampling, and product components.
+More documentation is on the way. Detailed pages covering **data formats**, **processing**, and a **quickstart guide** will be released soon:
+
 - **Data Formats** *(coming soon)* — file naming, masks, angles, metadata, and STAC schema.
 - **Processing Overview** *(coming soon)* — auxiliary data, geometric refinement, orthorectification, and atmospheric correction.
 - **Quickstart Guide** *(coming soon)* — open your first scene in minutes.
