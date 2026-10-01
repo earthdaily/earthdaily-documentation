@@ -1,6 +1,6 @@
 ---
-title: Geosys Regional Monitoring Data Catalogue
-description: Comprehensive catalogue of weather and climate data used in Geosys regional monitoring, including forecast models, historical data sources, parameters, and available levels of aggregation.
+title: Geosys Regional Monitoring Data Catalog
+description: Comprehensive catalog of weather and climate data used in Geosys regional monitoring, including forecast models, historical data sources, parameters, and available levels of aggregation.
 keywords:
   - regional monitoring
   - weather data
@@ -8,11 +8,11 @@ keywords:
   - ERA-5
   - GFS
   - forecast models
-  - data catalogue
+  - data catalog
   - EarthDaily Agro
 ---
 
-# Geosys Regional Monitoring Data Catalogue
+# Geosys Regional Monitoring Data Catalog
 
 ## ⛅ Regional Monitoring Weather
 

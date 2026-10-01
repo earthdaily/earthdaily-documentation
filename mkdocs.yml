@@ -736,7 +736,7 @@ nav:
           - Webapp & API: agro/commodities_intelligence/delivery_method_web.md
           - Videos & Reports: agro/commodities_intelligence/delivery_method_reports_videos.md
         - Yield: agro/commodities_intelligence/yield.md
-        - Regional Monitoring Data Catalogue: agro/commodities_intelligence/regional_monitoring_data_catalogue.md
+        - Regional Monitoring Data Catalog: agro/commodities_intelligence/regional_monitoring_data_catalogue.md
         - Case studies: agro/commodities_intelligence/case_studies.md
       - Digital Ag:
         - agro/digital_ag/index.md
@@ -779,6 +779,38 @@ nav:
         - Installation: agro/qgis/2. Installation.md
         - Get data: agro/qgis/3. GetData.md
         - Processing toolbox: agro/qgis/4. ProcessingToolBox.md
+      - earthdaily-agriculture package:
+        - agro/earthdaily-agriculture-client/index.md
+        - Getting started:
+          - Quick start: agro/earthdaily-agriculture-client/01 - Quick_Start_Guide.md
+          - DataFrame 101: agro/earthdaily-agriculture-client/02 - Dataframe_101.md
+          - Working with earthdaily-agriculture: agro/earthdaily-agriculture-client/11 - Working with EDAgro client.md
+          - Project structure and template: agro/earthdaily-agriculture-client/10 - Project_structure_and_template.md
+        - Extractors:
+          - Parameters reference: agro/earthdaily-agriculture-client/03 - Extractor_parameters_reference.md
+          - Column mapping reference: agro/earthdaily-agriculture-client/04 - Extractor_column_mapping_reference.md
+          - KPI reference: agro/earthdaily-agriculture-client/05 - Extractor_kpi_reference.md
+          - Date parameter override: agro/earthdaily-agriculture-client/06 - Edagro_date_overwrite.md
+          - Result caching: agro/earthdaily-agriculture-client/07 - Cache_design_context.md
+          - Optimizing extractor output: agro/earthdaily-agriculture-client/16 - Optimizing_extractor_output.md
+        - Workflows:
+          - Workflow architecture: agro/earthdaily-agriculture-client/09 - Workflow_architecture.md
+          - Workflow YAML reference: agro/earthdaily-agriculture-client/09b - Workflow_YAML_reference.md
+          - Viz engine reference: agro/earthdaily-agriculture-client/08 - Viz_engine_reference.md
+        - Deployment:
+          - Cloud storage: agro/earthdaily-agriculture-client/13 - Cloud_storage_principles_and_usage.md
+          - Deployment patterns: agro/earthdaily-agriculture-client/14 - Deployment_patterns.md
+          - AI enablement: agro/earthdaily-agriculture-client/12 - AI enablement.md
+        - API reference:
+          - agro/earthdaily-agriculture-client/15 - API_reference.md
+          - Orchestration: agro/earthdaily-agriculture-client/15a - API_Orchestration.md
+          - Foundational: agro/earthdaily-agriculture-client/15b - API_Foundational.md
+          - Benchmark and warning: agro/earthdaily-agriculture-client/15c - API_Benchmark_and_warning.md
+          - Crop development and stressors: agro/earthdaily-agriculture-client/15d - API_Crop_development_and_stressors.md
+          - Sustainability: agro/earthdaily-agriculture-client/15e - API_Sustainability.md
+          - Risk management: agro/earthdaily-agriculture-client/15f - API_Risk_management.md
+          - Regional: agro/earthdaily-agriculture-client/15g - API_Regional.md
+          - Entity and user management: agro/earthdaily-agriculture-client/15h - API_Entity_and_user_management.md
     - ANALYTIC CATALOG:
       - API Reference: agro/library/Api_reference.md
       - Foundational Analytics:
