@@ -60,6 +60,9 @@ def on_page_markdown(markdown, page, config, files):
     if used_terms:
         abbreviations = '\n\n<!-- Auto-generated glossary abbreviations -->\n'
         for term, definition in sorted(used_terms.items()):
+            # Skip single letters: headings like "Control Threshold" yield "C", which would tag every "°C"
+            if len(term) < 2:
+                continue
             # Clean definition - remove markdown formatting and keep it concise
             clean_def = clean_definition(definition)
             abbreviations += f'*[{term}]: {clean_def}\n'

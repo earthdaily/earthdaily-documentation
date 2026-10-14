@@ -284,7 +284,7 @@ Every project notebook follows this pattern:
 | Step 2: Load entities              | From the platform, a file, or a manually-built DataFrame             |
 | Step 3: Manual pipeline (optional) | Run each step individually for inspection and debugging              |
 | Step 4: YAML workflow execution    | Automated pipeline via `manager.run_workflow()`                      |
-| Step 5: Explore results            | Visualise, analyse, threshold sensitivity                            |
+| Step 5: Explore results            | Visualize, analyze, threshold sensitivity                            |
 | Step 6: Export                     | Save final results to `results/`                                     |
 
 ### Bootstrap cell

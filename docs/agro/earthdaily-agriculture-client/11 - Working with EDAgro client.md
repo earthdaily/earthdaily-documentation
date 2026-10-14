@@ -79,7 +79,7 @@ Then run your single call and restore `INFO` when done.
 
 `WorkflowManager` is the single entry point for any extraction: it handles authentication, entity loading, path resolution, cache configuration, and — optionally — orchestration of a multi-step pipeline defined in YAML.
 
-### Initialisation
+### Initialization
 
 ```python
 from earthdaily.agriculture.services.workflow_manager import WorkflowManager
@@ -181,7 +181,7 @@ manager.load_seasonfields_batch(
 
 ## Example 3 — Full YAML-driven workflow
 
-Write a multi-step pipeline in `configuration/workflow.yml`, load it, visualise it, run it.
+Write a multi-step pipeline in `configuration/workflow.yml`, load it, visualize it, run it.
 
 ```yaml
 # configuration/workflow.yml
@@ -340,4 +340,4 @@ From here you can either go direct-extractor (Example 1) or load a YAML (Example
 - **Entity DataFrame column names.** If your data uses `sowingDate` / `crop.id` (platform output) or anything custom, set `column_mapping` either at `setup_*_parameters()` time or under `workflow.settings.column_mapping` (applies to every step). See [`04 - Extractor_column_mapping_reference.md`](04%20-%20Extractor_column_mapping_reference.md).
 - **Empty results but no error.** Flip `log_level="DEBUG"` to see the actual API response. Often it reveals a geometry rejection or a missing required field (e.g. LAI extraction requires `crop`).
 - **`clear_cover_min=100`** is very restrictive — most extractions want 80–95.
-- **Per-entity date overrides.** Some extractors honour per-entity dates carried in the DataFrame; some don't. See [`06 - Edagro_date_overwrite.md`](06%20-%20Edagro_date_overwrite.md) for the per-extractor matrix.
+- **Per-entity date overrides.** Some extractors honor per-entity dates carried in the DataFrame; some don't. See [`06 - Edagro_date_overwrite.md`](06%20-%20Edagro_date_overwrite.md) for the per-extractor matrix.

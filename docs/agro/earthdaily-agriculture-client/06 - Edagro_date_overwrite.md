@@ -54,7 +54,7 @@ Convention:
 | **InSeasonScoreExtractor** | `processors/processor_score_functions.py` | `season_duration`, `season_start_day`, `season_start_month`, `nb_historical_year`, `threshold_start`, `historical_seasons` | OVERRIDABLE (`sowing_date`, `end_date`, `historical_seasons`) |
 | **InSeasonMonitoringExtractor** | `processors/processor_inseason_monitoring_functions.py` | `season_duration`, `season_start_day`, `season_start_month`, `year` | NOT_OVERRIDABLE |
 | **BaresoilExtractor** | `processors/processor_baresoil_function.py` | `season_duration`, `season_start_day`, `season_start_month`, `year` | NOT_OVERRIDABLE |
-| **ZARCExtractor** | `processors/processor_zarc_functions.py` | — | ENTITY_ONLY (**`emergence_date`** required on row — *not* `sowing_date`) |
+| **ZARCExtractor** | `processors/processor_zarc_functions.py` | `emergence_date` (optional) | OVERRIDABLE (**`emergence_date`** — *not* `sowing_date`) |
 
 ## Extractors where entity dates take precedence (OVERRIDABLE)
 
@@ -68,6 +68,7 @@ These extractors read the date(s) from the row first, and fall back to `self.par
 | **GreennessExtractor** | `sowing_date` | Season window (`season_*`, `year`) remains fixed from setup — only `sowing_date` is per-entity. |
 | **InSeasonScoreExtractor** | `sowing_date`, `end_date`, `historical_seasons` | If `end_date` is missing, it is computed as `sowing_date + season_duration`. |
 | **HistoricalScoreExtractor** | `historical_seasons` | All other temporal params (`season_*`, `year`, `threshold_start`) are strictly from setup. |
+| **ZARCExtractor** | `emergence_date` | Resolved row → run `params` → `setup_zarc_parameters(emergence_date=...)`; a row with none of the three is a per-entity error, not a run failure. `sowing_date` is an API *output* column, never an input. Read through `column_mapping`. |
 
 ## Extractors that require dates from the entity (ENTITY_ONLY)
 
@@ -76,7 +77,6 @@ These extractors do not expose date defaults in `setup_*_parameters()` and expec
 | Extractor | Required entity date fields | Notes |
 |---|---|---|
 | **WeatherExtractor** | `start_date`, `end_date` | KPI mode extends `start_date` backwards internally for historical comparison. |
-| **ZARCExtractor** | `emergence_date` | Read as `entity_data.get("emergence_date")` and **raises** when absent. Validated via `safe_parse_date()`. `sowing_date` is an API *output* column, never an input — the extractor never reads one. ⚠️ Read with a plain `.get()`, so `column_mapping` does **not** apply to it. |
 
 ## Extractors whose setup dates are NOT overridable per entity
 

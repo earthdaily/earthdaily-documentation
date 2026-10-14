@@ -65,6 +65,7 @@ Every extractor follows the same shape: `__init__(token, expiration, config)` �
 - **[Quick start](01 - Quick_Start_Guide.md)** — install, scaffold a project, first extraction
 - **[DataFrame 101](02 - Dataframe_101.md)** — the entity DataFrame and column mapping
 - **[Extractor parameters](03 - Extractor_parameters_reference.md)** · **[column mapping](04 - Extractor_column_mapping_reference.md)** · **[KPIs](05 - Extractor_kpi_reference.md)**
+- **[Weather extractors](17 - Weather_extractors.md)** — Weather v1 and WeatherFlow: models, limits, units, and local vs UTC time
 - **[Optimizing extractor output](16 - Optimizing_extractor_output.md)** — Parquet, lean columns, and manifests: a regional case study turning a 16 GB CSV into ~22 MB, losslessly
 - **[Workflow architecture](09 - Workflow_architecture.md)** — chaining extractors with `WorkflowManager`
 - **[API reference](15 - API_reference.md)** — auto-generated from the source docstrings

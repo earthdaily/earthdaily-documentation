@@ -144,7 +144,7 @@ Coverage is **all-or-nothing per cell**: a window the cache does not fully span 
 
 Dates are deliberately left out of the group key, so a cell holding fields with staggered windows is pulled **once** over the union of its members' windows, and each field is sliced back out of that single response. Members are clipped to their own window, so a grouped run returns exactly what an ungrouped run would.
 
-`spatial_max_window_days` (default 400) bounds how far a union may *widen*: a merge is allowed when the union is no longer than the cap **or** than a member's own window. That stops one long-history field dragging its neighbours into a decade-long pull. A cell that splits logs a WARNING naming the knob.
+`spatial_max_window_days` (default 400) bounds how far a union may *widen*: a merge is allowed when the union is no longer than the cap **or** than a member's own window. That stops one long-history field dragging its neighbors into a decade-long pull. A cell that splits logs a WARNING naming the knob.
 
 ### The trap: cumulative columns
 
@@ -208,7 +208,7 @@ This is intentional. The atomic rename pattern that protects against half-writte
 
 ## How cache hits flow through extraction
 
-Two layers cooperate, but you don't need to think about which fires when — the behaviour is the same either way:
+Two layers cooperate, but you don't need to think about which fires when — the behavior is the same either way:
 
 | Layer            | When it fires                                              | What it does                                                                                   |
 | ---------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |

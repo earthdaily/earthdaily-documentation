@@ -40,7 +40,7 @@ The seven design choices below are what make cloud storage cheap to adopt, safe 
 
 ### 1. Path-based switching, not code-based
 
-There's no `S3Extractor` class, no `cloud_mode` flag on the extractor, no parallel codepath. Cloud storage is a property of the **path string** in `manager.config`:
+There's no `S3Extractor` class, no `cloud_mode` flag on the extractor, no parallel codepath. Cloud storage is a property of the **path string** in the config the extractor is built with — `manager.config` under `WorkflowManager`, or the dict you pass when you build an extractor yourself:
 
 ```python
 manager.config["output_result_dir"]  = "s3://my-bucket/runs/2026-05-09/results"
@@ -49,7 +49,7 @@ manager.config["partial_result_dir"] = "s3://my-bucket/runs/2026-05-09/partials"
 
 The extractor doesn't know or care. Internally, every writer routes through fsspec when it sees an `s3://` or `az://` prefix; through `pandas.to_csv` / `Path.write_text` for everything else.
 
-> **GCS is recognised but not supported yet.** `gs://` and `gcs://` are in the writer's scheme list, but **no published extra installs `gcsfs`**, so a `gs://` path fails with an fsspec backend error unless you install it yourself. Treat GCS as untested until a `gcs` extra ships.
+> **GCS is recognized but not supported yet.** `gs://` and `gcs://` are in the writer's scheme list, but **no published extra installs `gcsfs`**, so a `gs://` path fails with an fsspec backend error unless you install it yourself. Treat GCS as untested until a `gcs` extra ships.
 
 **Why this matters:** every extractor — current and future — gains S3 support for free. There's no per-extractor wiring to maintain and no risk of one extractor's S3 path drifting from another's.
 
@@ -63,10 +63,10 @@ The mechanism: `WorkflowManager` instantiates a boto3 client at construction tim
 
 ### 3. Credentials follow the standard chain — always
 
-There's no EarthDaily Agriculture-specific cloud credentials API. Reads and writes both honour the chain that AWS SDKs already use:
+There's no EarthDaily Agriculture-specific cloud credentials API. Reads and writes both honor the chain that AWS SDKs already use:
 
 1. Explicit env vars (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, optional `AWS_SESSION_TOKEN`, `AWS_DEFAULT_REGION`)
-2. `.env` file at `src/.env` (loaded by `setup_environment` via `python-dotenv`)
+2. `.env` file at your project root (loaded by `setup_environment` via `python-dotenv`; it also accepts `src/.env`, which is where a repository checkout keeps credentials beside the source)
 3. `~/.aws/credentials` profile
 4. EC2 instance profile / ECS task role / EKS pod identity / Lambda execution role
 
@@ -88,15 +88,17 @@ manager.config["output_result_dir"]  = "az://my-container/runs/2026-06-30/result
 manager.config["partial_result_dir"] = "az://my-container/runs/2026-06-30/partials"
 ```
 
-The account is non-HNS Blob storage, so use the `az://` scheme (`abfs://` also works for ADLS Gen2). The four keys are templated in `src/template.env`.
+The account is non-HNS Blob storage, so use the `az://` scheme (`abfs://` also works for ADLS Gen2). The four keys are templated in `template.env` at the repository root — copy it to `.env` and fill it in.
 
-### 4. Partial saves, retries, and resumability work identically
+### 4. Partial saves and failed-entity retries work identically
 
 Bulk extractors flush partials every `partial_frequency` entities and persist `failed_ids_*.csv` files when `fail_safe=True`. Both work over S3 the same way they work locally — same filenames, same timing, same resume semantics. After a successful run the cleanup pass removes the partials via fsspec; the `failed_ids_*.csv` files are left in place.
 
 Resuming from those files is **explicit**: pass `retry_failed_only=True` (or a specific file path) to process only the recorded IDs — see *09b — Workflow YAML reference → Resuming a failed run*. `fail_safe` on its own means "tolerate per-entity failures" and never changes which entities are processed. Previously it silently implied the resume, so a leftover file capped every later `fail_safe` run while reporting success.
 
-**Why this matters:** long-running batch jobs that crash mid-run resume just as cleanly on S3 as on local disk. There's no "S3 mode disables fail-safe" surprise.
+**What this does not cover: a run that crashes mid-way.** Partials are a progress record, not a checkpoint — nothing reads them back. If the process dies (killed, out of memory, a pod evicted), the next run starts the whole entity list again. Locally, the opt-in cache softens this — results cached per entity survive the crash (see *07 — Cache design context*) — but on S3 the cache is off (principle 5), so nothing does. Resume after a crash on S3 is therefore a matter of run size: keep each run short enough that redoing it is cheap (see Recipe D for container shards). What *does* resume is the failed-entity path above: a run that finishes with `fail_safe=True` records its failed IDs, and a later `retry_failed_only=True` run — a different process, even a different machine — reprocesses only those.
+
+**Why this matters:** failed-entity retries behave the same on S3 as on local disk — there's no "S3 mode disables fail-safe" surprise — and the limit on crash recovery is stated, not discovered.
 
 ### 5. The cache is intentionally local-only
 
@@ -108,7 +110,7 @@ The reason: `_update_cache` uses an atomic-rename pattern (`tempfile + Path.repl
 
 ### 6. Logs follow a different policy from data outputs
 
-Data outputs (results, partials, etc.) work on `s3://` paths. **Logs do not** — the `log_dir` argument to `setup_logging` is local-only by design. For containerised runs there's a separate switch:
+Data outputs (results, partials, etc.) work on `s3://` paths. **Logs do not** — the `log_dir` argument to `setup_logging` is local-only by design. For containerized runs there's a separate switch:
 
 - `EDAGRO_LOG_CONSOLE_ONLY=1` env var, or
 - `WorkflowManager(..., log_to_console_only=True)` kwarg
@@ -124,8 +126,8 @@ Three independent switches enable cloud storage, all default-off:
 | Switch | Where | Default |
 |---|---|---|
 | Path string `s3://...` in `manager.config` | Notebook / script / YAML | `<project-root>/results` |
-| `EDAGRO_OUTPUT_PREFIX=s3://...` env var | Process env (orchestrator) | unset |
-| `storage="s3"` kwarg | `WorkflowManager(..., storage="s3")` | `"auto"` (env var wins if set) |
+| `EDAGRO_OUTPUT_PREFIX=s3://...` env var | Process env (orchestrator) — honored by `WorkflowManager`, `setup_environment()` and directly-built extractors | unset |
+| `storage=` kwarg | `WorkflowManager(..., storage=...)`, `setup_environment(..., storage=...)` | `"auto"` (env var wins if set) |
 | `[s3]` extra (`s3fs`, `fsspec`) | `pip install -e ".[s3]"` | not pulled by `[test]` or `[jupyter]` |
 | `[azure]` extra (`adlfs`, `fsspec`) | `pip install -e ".[azure]"` | not installed |
 | `[cloud]` extra (`s3` + `azure` together) | `pip install -e ".[cloud]"` | not installed |
@@ -138,7 +140,7 @@ If you don't flip any of them, your notebook does **exactly** what it did before
 
 ---
 
-## How to use it — three concrete recipes
+## How to use it — four concrete recipes
 
 ### Recipe A — Local only (default)
 
@@ -160,7 +162,7 @@ print(manager.config["output_result_dir"])   # local path
 ```
 
 **Pinning to local explicitly.** If you want a dev notebook to ignore any
-`EDAGRO_OUTPUT_PREFIX` that might leak in from `src/.env` or the parent shell
+`EDAGRO_OUTPUT_PREFIX` that might leak in from `.env` or the parent shell
 (e.g. a teammate set it for their own container test), pass `storage="local"`:
 
 ```python
@@ -169,7 +171,7 @@ manager = WorkflowManager("prod", storage="local")
 ```
 
 `storage` is a `Literal["auto", "local", "s3"]` kwarg; the default `"auto"` is
-the existing behaviour (env var wins if set, otherwise local).
+the existing behavior (env var wins if set, otherwise local).
 
 ### Recipe B — Real AWS S3
 
@@ -183,7 +185,7 @@ pip install -e ".[s3]"          # pulls s3fs + fsspec
 
 Make sure AWS credentials are reachable via *one* of:
 
-- `src/.env` with `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION` (existing pattern)
+- `.env` at your project root with `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION`
 - `~/.aws/credentials` profile
 - IAM role / instance profile (containers / EC2)
 - AWS SSO logged in (`aws sso login`)
@@ -215,17 +217,19 @@ fs = s3fs.S3FileSystem()                                   # no client_kwargs �
 print(fs.ls(f"{S3_BUCKET}/{run_prefix}/results"))
 ```
 
-**Container deploys** — set `EDAGRO_OUTPUT_PREFIX` on the container and `WorkflowManager` derives `/results`, `/partials`, `/cache` from it automatically. No per-extractor code:
+**Container deploys** — set `EDAGRO_OUTPUT_PREFIX` on the container and `/results`, `/partials`, `/cache` are derived from it automatically — by `WorkflowManager`, and equally by an extractor built directly from `setup_environment()` or from a minimal config (a stateless container with no `WorkflowManager`). No per-extractor code:
 
 ```bash
 docker run --rm \
   -e EDAGRO_OUTPUT_PREFIX=s3://my-bucket/runs/2026-05-09/<workflow> \
   -e EDAGRO_LOG_CONSOLE_ONLY=1 \
   --env-file .env.prod \
-  earthdaily-agriculture:latest run-extractor ...
+  <your-project-image>:<tag> --prefix run_20260509
 ```
 
-Inside Python — `WorkflowManager("prod")` is enough; no explicit kwargs needed. The env-var path takes effect when `EDAGRO_OUTPUT_PREFIX` is set; explicit constructor kwargs still win if you also pass them. See [`14 - Deployment_patterns.md`](14%20-%20Deployment_patterns.md) for the full Pattern B invocation.
+`<your-project-image>` is the image built from a scaffolded project's `Dockerfile`; its entrypoint is `python -m app.run_pipeline`, so only the arguments follow the image name.
+
+Inside Python — `WorkflowManager("prod")` is enough, and so is an extractor built directly (Recipe D); no explicit kwargs needed. The env-var path takes effect when `EDAGRO_OUTPUT_PREFIX` is set; explicit constructor kwargs still win if you also pass them. See [`14 - Deployment_patterns.md`](14%20-%20Deployment_patterns.md) for the full Pattern B invocation.
 
 **Asserting S3 mode in a notebook.** When you want the notebook to *refuse to
 fall back to local* (typical for shared / scheduled extractions), pass
@@ -233,15 +237,19 @@ fall back to local* (typical for shared / scheduled extractions), pass
 
 ```python
 manager = WorkflowManager("prod", storage="s3")
-# Raises if EDAGRO_OUTPUT_PREFIX is unset and no s3:// kwarg is provided.
+# Raises unless EDAGRO_OUTPUT_PREFIX is a remote URI (s3://, az://, ...) or a remote
+# kwarg is provided. A *local* EDAGRO_OUTPUT_PREFIX is rejected too: it would let a
+# run meant for S3 write to the machine's own disk.
 ```
 
 Precedence (highest first):
 
-1. Explicit kwargs (`output_result_dir=...`, etc.)
+1. Explicit kwargs (`output_result_dir=...`, etc.), or explicit paths in the config an extractor is built with
 2. `storage=` flag (`"local"` blocks the env var; `"s3"` requires a remote path)
 3. `EDAGRO_OUTPUT_PREFIX` env var (when `storage="auto"`)
 4. Local `<project-root>/{results,partials,cache}` defaults
+
+The same order holds whether the paths are resolved by `WorkflowManager`, by `setup_environment()`, or by a directly-built extractor — all three go through one function, `core._fs.apply_output_prefix()`. Only `WorkflowManager` enforces `storage="s3"`.
 
 ### Recipe C — Local dev with MinIO
 
@@ -292,6 +300,67 @@ docker compose -f tests/smoke_test/minio-compose.yml down -v   # -v drops volume
 
 **Why MinIO and not LocalStack:** MinIO is purpose-built for S3-compatible object storage and matches AWS S3's request shape closely. LocalStack emulates the broader AWS surface (Lambda, DynamoDB, etc.) but is heavier and has historically had more S3 quirks. For pure write-path testing, MinIO is faster and simpler. **MinIO ≠ AWS S3 byte-for-byte**, though — for production sign-off, run one smoke test against real AWS before declaring victory.
 
+### Recipe D — An extractor called directly (stateless container, no `WorkflowManager`)
+
+Large runs can skip `WorkflowManager`: each container builds the extractor itself and
+runs it on its slice of entities. `EDAGRO_OUTPUT_PREFIX` works the same way
+there — set it on the pod (one prefix per shard, so shards never overwrite each
+other) and build the extractor from `setup_environment()`:
+
+```python
+from earthdaily.agriculture.core.functions_enhanced import setup_environment
+from earthdaily.agriculture.core.identity import EDAuthenticator
+from earthdaily.agriculture.processors.processor_harvest_functions import HarvestExtractor
+
+# On the pod: EDAGRO_OUTPUT_PREFIX=s3://my-bucket/runs/2026-10-02/shard-3
+config = setup_environment("prod")            # results / partials / cache under the prefix
+token, expires = EDAuthenticator.get_new_token(env="prod")
+
+extractor = HarvestExtractor(token, expires, config)
+extractor.setup_harvest_parameters(harvest_type="INSEASON_HARVEST", year=2025)
+result = extractor.process_harvest_bulk_extraction_parallel(
+    entity_list=shard_entities,               # this pod's slice
+    fail_safe=True,                           # one bad entity must not fail the pod
+)
+# Final results -> s3://my-bucket/runs/2026-10-02/shard-3/results/
+# Partials      -> s3://my-bucket/runs/2026-10-02/shard-3/partials/
+```
+
+- **No `output_path` needed** — a bulk call without one writes to the extractor's own
+  results path, which is the prefixed one.
+- **A minimal config works too.** If you build the config dict yourself and leave
+  **all** the paths out, the extractor falls back to `EDAGRO_OUTPUT_PREFIX` (and logs it
+  once at INFO). Set any one of `output_result_dir` / `partial_result_dir` / `cache_dir`
+  and the config is taken as complete — the prefix fills nothing in, so a run is never
+  split between local disk and S3. Without `"env"`, the extractor uses
+  `prod`.
+- **The token refreshes itself.** A directly-built extractor refreshes an expired token
+  through `EDAuthenticator`, from the same credential environment variables, so an
+  hours-long shard does not need `WorkflowManager` for that either.
+- **Nothing refuses a local fallback here.** `storage="s3"` is enforced by
+  `WorkflowManager` only. On a pod, assert it yourself before running:
+  `assert config["output_result_dir"].startswith(("s3://", "az://"))`.
+- **The working directory must be writable.** `setup_environment()` still creates and
+  write-tests `results/`, `partials/`, `cache/`, `inputs/` and `logs/` locally before
+  re-pointing the writer paths, so a read-only root filesystem fails here even though
+  nothing is written there later. Run with a writable `WORKDIR` (or a mounted volume).
+- **The cache stays off.** With the prefix set, `cache_dir` is remote too, so caching
+  is disabled (principle 5) — a retried pod re-fetches its entities.
+- **Map files (FLM / Difference / Zoning, `postprocess="file"`)** — leave
+  `output_path` out: they go to `<prefix>/results/maps` on S3. FLM's
+  `skip_existing=True` then makes a retried pod skip the maps it already saved — the
+  one place a crashed shard does resume (see *Rasters and maps* below).
+- **Size shards so a retry is cheap.** When an orchestrator retries a container that
+  crashed or was evicted, the shard starts again from its first entity: its partials on S3 are not
+  read back (principle 4), and the cache is off. A retry is correct but costs the whole
+  shard, so prefer many short shards (minutes) over a few long ones (hours). Slow
+  extractors — LRTS waits up to 5 minutes per entity — need especially small shards.
+- **Two retries, two mechanisms.** A container that *crashes* is retried by the
+  orchestrator and redoes its shard. Entities that *fail* inside a pod that
+  finishes are recorded on S3 (`fail_safe=True`); retry them with a follow-up run on
+  the same prefix and `extractor.retry_failed_only = True`, which processes only those
+  IDs.
+
 ---
 
 ## Rasters and maps (`postprocess="file"`)
@@ -303,6 +372,13 @@ every other writer. So `output_path` accepts a remote URI directly:
 ```python
 extractor.setup_flm_parameters(postprocess="file", output_path="s3://bucket/prefix/tifs")
 ```
+
+**Without `output_path`**, maps go to `<results dir>/maps` — so under
+`EDAGRO_OUTPUT_PREFIX` they land on the prefix with no extra parameter, and
+`saved_files` lists their `s3://` URIs. (File mode used to *require* `output_path`; a
+stateless container then had to pass one, and a local folder put the maps on its disk, gone
+with the container while `saved_files` still listed them.) A local `output_path` while the
+prefix is remote and no `output_uri` is set now logs a warning for exactly that case.
 
 Rasters differ from CSV results in one way that matters: the analysis step usually reads
 every file back. Opening 100k TIFs over the network turns a seconds-long pass into
@@ -422,11 +498,12 @@ CI runs the same tests on every PR via `.github/workflows/cloud-writers.yml` so 
 
 ## Where to look in the code
 
-If you're debugging or want to confirm a specific behaviour:
+If you're debugging or want to confirm a specific behavior:
 
 | Concern | File |
 |---|---|
 | Path detection / URL build / fsspec routing | `src/earthdaily/agriculture/core/_fs.py` |
+| `EDAGRO_OUTPUT_PREFIX` routing (shared) | `src/earthdaily/agriculture/core/_fs.py:apply_output_prefix` — called by `setup_environment()`, `WorkflowManager.__init__`, `BaseExtractor.__init__` |
 | Final results / errors CSV writes | `src/earthdaily/agriculture/core/api_utils.py:export_results` |
 | Raster / map file writes, `output_uri` mirror | `src/earthdaily/agriculture/core/base_extractor.py:save_map_file` |
 | `failed_ids` CSV, partial cleanup, HTML report write | `src/earthdaily/agriculture/core/base_extractor.py:_finalize_extraction` |
@@ -435,6 +512,7 @@ If you're debugging or want to confirm a specific behaviour:
 | HTML reporter S3 routing | `src/earthdaily/agriculture/reporting/extraction_reporter.py:render_html` |
 | MinIO compose for Recipe C | `tests/smoke_test/minio-compose.yml` |
 | Integration tests | `tests/test_cloud_writers_integration.py` (skipped without `AWS_ENDPOINT_URL`) |
+| Prefix without `WorkflowManager` | `tests/test_output_prefix_direct.py` |
 | CI workflow | `.github/workflows/cloud-writers.yml` |
 
 For the deployment patterns that build on this writer-layer feature (Docker container on ECS / Cloud Run / Argo Workflows, GitHub Actions cron), see [`14 - Deployment_patterns.md`](14%20-%20Deployment_patterns.md).

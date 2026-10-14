@@ -41,28 +41,109 @@ workflow:
       transform: ...
 ```
 
+## Key reference
+
+Every key `WorkflowManager` reads, generated from `services/workflow_schema.py`. `load_workflow()` warns, with a suggestion, about any key not listed here (an error in 3.0); an extra `settings` key is fine when a step's setup method accepts it.
+
+<!-- BEGIN GENERATED: workflow-keys (generate_ai_context.py from services/workflow_schema.py; do not edit) -->
+
+### `workflow:` (top level)
+
+| Key | Type | What it does |
+|---|---|---|
+| `name` | str | workflow name, shown in logs and reports |
+| `description` | str | free text |
+| `settings` | settings block | defaults for every step (see settings) |
+| `steps` | list of step block | the steps, required (see step) |
+| `entity_source` | entity_source block | free-form block for your own entity loading; date sentinels in its params are rewritten |
+
+### `settings:`
+
+| Key | Type | What it does |
+|---|---|---|
+| `column_mapping` | mapping | canonical field -> your column (id, geometry, crop, ...); GLOBAL: no per-step override |
+| `export_format` | `csv` or `parquet` | csv (default) or parquet, for every step; a step-level key overrides it |
+| `export_manifest` | bool | also write a `<prefix>_manifest_<ts>.json` next to each export |
+| `fail_safe` | bool | record per-entity failures in failed_ids instead of raising (default false) |
+| `max_parallel_steps` | int | independent steps run at once within a DAG level (default 4) |
+| `max_workers` | int | default threads per step (default 10) |
+| `output_prefix` | str | prefix for every output file name of the run |
+| `output_uri` | str | second, durable copy of FLM / Difference / Zoning map files (s3:// gs:// az://) |
+| `retry_failed_only` | bool or str | process only the ids in the newest (true) or the named `failed_ids_<prefix>_*.csv` |
+| `timezone` | str | IANA zone for the 'today' date sentinels (default UTC) |
+
+### `steps:` items
+
+| Key | Type | What it does |
+|---|---|---|
+| `name` | str | unique step id, required; referenced by depends_on / input_from |
+| `enabled` | bool | false loads the step but skips it; dependents cascade-skip (default true) |
+| `depends_on` | str or list of str | step name(s) that must finish first; drives the DAG |
+| `input_from` | str | 'original' or a step name: whose results_df becomes this step's entity_list |
+| `transform` | transform block | a function run first on the entities (before condition and extractor; see transform) |
+| `condition` | condition block | after the transform, keep only the entity ids passing a test on an upstream step's results |
+| `extractor` | str | extractor class name, e.g. CoverageExtractor; needs module |
+| `module` | str | import path of the extractor class |
+| `setup` | call block | setup call: method + params (see call) |
+| `run` | call block | bulk call: method + params, required with extractor (see call, run.params) |
+| `export_format` | `csv` or `parquet` | per-step override of settings.export_format |
+| `export_manifest` | bool | per-step override of settings.export_manifest |
+| `output_uri` | str | per-step override of settings.output_uri |
+| `retry_failed_only` | bool or str | per-step override of settings.retry_failed_only |
+
+### `setup:` / `run:`
+
+| Key | Type | What it does |
+|---|---|---|
+| `method` | str | method name on the extractor (setup_*_parameters / process_*_bulk_*) |
+| `params` | mapping | keyword arguments; strings in setup.params may use date sentinels (today, today-30d, ...) |
+
+### `transform:`
+
+| Key | Type | What it does |
+|---|---|---|
+| `module` | str | import path of the module holding the function, required |
+| `function` | str | function name, required |
+| `params` | mapping | passed as the function's params argument (WorkflowManager adds _workflow_manager) |
+
+### `condition:`
+
+| Key | Type | What it does |
+|---|---|---|
+| `depends_on` | str | the upstream step whose results_df is filtered, required |
+| `column` | str | column of that results_df, required |
+| `operator` | `eq` or `ne` or `in` or `notnull` | eq (default), ne, in, notnull |
+| `value` | Any | compared value (a list for in); required except for notnull |
+
+### `entity_source:`
+
+| Key | Type | What it does |
+|---|---|---|
+| `params` | mapping | parameters for your entity loader; date sentinels are rewritten |
+
+### `run.params` keys WorkflowManager keeps
+
+Every other key in `run.params` is passed to the bulk method as a keyword argument.
+
+| Key | Default | What it does |
+|---|---|---|
+| `max_workers` | settings.max_workers, else 10 | threads for this step |
+| `prefix` | the step name | output file prefix (composed with settings.output_prefix) |
+| `skip_export` | true | results stay in memory unless set to false: a step does NOT write files by default |
+| `fail_safe` | settings.fail_safe, else false | record per-entity failures instead of raising |
+| `generate_report` | false | write the HTML extraction report |
+
+<!-- END GENERATED: workflow-keys -->
+
 ## Top-Level `workflow` Block
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| `name` | str | No | Human-readable workflow name. Shown in logs and reports. |
-| `description` | str | No | Free-form description. |
-| `settings` | dict | No | Global defaults applied to every step (see below). |
-| `steps` | list | **Yes** | Ordered list of step definitions. |
+The keys of this block, their types and what they do are in the generated **Key reference** above.
 
 ## `settings` Block
 
 Global defaults. Step-level params override these where applicable.
 
-| Key | Type | Default | Description |
-|---|---|---|---|
-| `max_workers` | int | `10` | Default parallelism for extractor runs (entities processed concurrently). |
-| `partial_frequency` | int | — | How often to flush partial results to `partials/`. |
-| `max_parallel_steps` | int | `4` | Max number of independent steps run concurrently when a DAG level has siblings. |
-| `fail_safe` | bool | `false` | If `true`, per-entity failures are captured to `failed_ids` instead of aborting. **Error tolerance only** — it does not change which entities are processed. |
-| `retry_failed_only` | bool \| str | `false` | Resume mode: process **only** the entities recorded in a previous run's `failed_ids_<prefix>_*.csv`. `true` uses the newest such file for the step's prefix; a string names one file exactly. Raises if the file is missing rather than silently running the full list. |
-| `column_mapping` | dict | — | Maps canonical entity fields (`id`, `geometry`, `crop`, `start_date`, `end_date`, `sowing_date`) to the actual column names in your entity DataFrame. Merged into every extractor's `column_mapping` at instantiation. |
-| `output_prefix` | str | — | Workflow-level prefix prepended to every output filename (slugified). See the **Output Prefix Composition** section below. |
+The keys of this block, their types and what they do are in the generated **Key reference** above.
 
 Any other key you put under `settings` is passed to each step's `setup` method if the method's signature accepts it (filtered via `inspect.signature`).
 
@@ -108,18 +189,7 @@ Each item in `steps` is a dict. The combination of fields present determines the
 
 ### Common Fields
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| `name` | str | **Yes** | Unique identifier for the step. Referenced by `depends_on` and written to `upstream_results[name]`. |
-| `enabled` | bool | No | Defaults to `true`. When `false`, the step is loaded but not executed; the runner records `{"skipped": True, "reason": "disabled", "results_df": <empty>}` for it. Downstream steps that `depends_on` (or `input_from`) the disabled step cascade-skip via the existing empty-upstream branch. Useful for temporarily turning off a step without commenting it out. Validated at load time — non-bool values raise `ValueError`. |
-| `depends_on` | str \| list[str] | No | Name(s) of steps that must complete before this one. Drives the DAG. Missing references raise `ValueError` at load time. Cycles raise at load time too. |
-| `input_from` | str | No | Source DataFrame for this step's `entity_list`. `"original"` uses the input passed to `run_workflow()`; a step name uses that step's `results_df`. Omitted → defaults to the first `depends_on`, else `"original"`. See section below. |
-| `transform` | dict | No | Transform block (see below). |
-| `condition` | dict | No | Post-transform filter on entities (see below). |
-| `extractor` | str | No | Class name to instantiate (e.g. `CoverageExtractor`). Requires `module`. |
-| `module` | str | If `extractor` is set | Python import path for the extractor class (e.g. `earthdaily.agriculture.extractors.coverage_function`). |
-| `setup` | dict | No | Setup call configuration (see below). |
-| `run` | dict | If `extractor` is set | Execution call configuration (see below). |
+The keys of this block, their types and what they do are in the generated **Key reference** above.
 
 ### Disabling a step
 
@@ -155,7 +225,7 @@ manager.load_workflow("configuration/workflow.yml")
 manager.select_steps_to_run(entity_list=manager.sfd_list)   # render in the cell
 ```
 
-Returns an `ipywidgets.VBox` with one checkbox per step plus a "Run workflow" button. Toggling a checkbox flips `step_map[name]["enabled"]` in place; the button calls `run_workflow()` with the chosen subset. Per-step annotations show the extractor class and `depends_on` so you can predict cascade-skip behaviour.
+Returns an `ipywidgets.VBox` with one checkbox per step plus a "Run workflow" button. Toggling a checkbox flips `step_map[name]["enabled"]` in place; the button calls `run_workflow()` with the chosen subset. Per-step annotations show the extractor class and `depends_on` so you can predict cascade-skip behavior.
 
 **Notebook clickable DAG** — `manager.interactive_workflow()`:
 
@@ -164,7 +234,7 @@ manager.load_workflow("configuration/workflow.yml")
 manager.interactive_workflow()                              # render in the cell
 ```
 
-Returns a `plotly.graph_objects.FigureWidget` — same layout as `visualize_workflow()`, but clicking a node toggles its `enabled` state and recolors it grey. State persists on the manager between `interactive_workflow()` calls and into the next `run_workflow()`. Note: cascade-skip of downstream steps is only enforced at runtime (via the empty-upstream branch); the widget colours only the directly-clicked node.
+Returns a `plotly.graph_objects.FigureWidget` — same layout as `visualize_workflow()`, but clicking a node toggles its `enabled` state and recolors it gray. State persists on the manager between `interactive_workflow()` calls and into the next `run_workflow()`. Note: cascade-skip of downstream steps is only enforced at runtime (via the empty-upstream branch); the widget colors only the directly-clicked node.
 
 ### `depends_on`
 
@@ -385,6 +455,32 @@ run:
 | `fail_safe` | `settings.fail_safe` (or `false`) | Step-level override. |
 | `retry_failed_only` | `settings.retry_failed_only` (or `false`) | Step-level override. See **Resuming a failed run** below. |
 | `generate_report` | `false` | If `true`, produces the HTML extraction report. |
+
+## Rate limiting a step
+
+Any other key in `run.params` that the bulk method accepts is forwarded to it. One worth
+knowing is **`rate_limit`**: the most HTTP requests per second the step sends, retries
+included, shared by all `max_workers` threads. Unset means no limit.
+
+```yaml
+workflow:
+  steps:
+    - name: weather
+      extractor: WeatherExtractor
+      module: earthdaily.agriculture.extractors.weather_functions
+      setup:
+        method: setup_weather_parameters
+      run:
+        method: process_entity_weather_bulk_parallel
+        params:
+          max_workers: 10
+          rate_limit: 5     # at most 5 calls/s for this step, across its 10 threads
+```
+
+It is set **per step** on purpose; there is no workflow-wide `settings` key, since each API
+has its own quota. Two steps that run in parallel each have their own limit. It counts
+HTTP requests per second, retries included, and when the API answers 429 (too many
+requests) every thread of the step waits the time the server asks for.
 
 ## Resuming a failed run
 

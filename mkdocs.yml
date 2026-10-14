@@ -435,9 +435,14 @@ extra:
         - icon: material/thumb-up-outline
           name: Helpful
           data: 1
+          note: >-
+            Thanks for your feedback!
         - icon: material/thumb-down-outline
           name: Could be improved
           data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://earthdaily.com/contact?utm_source=earthdaily-docs&utm_medium=docs&utm_campaign=page-feedback&utm_content={url}" target="_blank" rel="noopener">telling us what's missing</a>.
   consent:
     title: Cookie consent
     description:
@@ -793,6 +798,7 @@ nav:
           - Date parameter override: agro/earthdaily-agriculture-client/06 - Edagro_date_overwrite.md
           - Result caching: agro/earthdaily-agriculture-client/07 - Cache_design_context.md
           - Optimizing extractor output: agro/earthdaily-agriculture-client/16 - Optimizing_extractor_output.md
+          - Weather extractors: agro/earthdaily-agriculture-client/17 - Weather_extractors.md
         - Workflows:
           - Workflow architecture: agro/earthdaily-agriculture-client/09 - Workflow_architecture.md
           - Workflow YAML reference: agro/earthdaily-agriculture-client/09b - Workflow_YAML_reference.md
@@ -801,16 +807,7 @@ nav:
           - Cloud storage: agro/earthdaily-agriculture-client/13 - Cloud_storage_principles_and_usage.md
           - Deployment patterns: agro/earthdaily-agriculture-client/14 - Deployment_patterns.md
           - AI enablement: agro/earthdaily-agriculture-client/12 - AI enablement.md
-        - API reference:
-          - agro/earthdaily-agriculture-client/15 - API_reference.md
-          - Orchestration: agro/earthdaily-agriculture-client/15a - API_Orchestration.md
-          - Foundational: agro/earthdaily-agriculture-client/15b - API_Foundational.md
-          - Benchmark and warning: agro/earthdaily-agriculture-client/15c - API_Benchmark_and_warning.md
-          - Crop development and stressors: agro/earthdaily-agriculture-client/15d - API_Crop_development_and_stressors.md
-          - Sustainability: agro/earthdaily-agriculture-client/15e - API_Sustainability.md
-          - Risk management: agro/earthdaily-agriculture-client/15f - API_Risk_management.md
-          - Regional: agro/earthdaily-agriculture-client/15g - API_Regional.md
-          - Entity and user management: agro/earthdaily-agriculture-client/15h - API_Entity_and_user_management.md
+        - API reference: agro/earthdaily-agriculture-client/15 - API_reference.md
     - ANALYTIC CATALOG:
       - API Reference: agro/library/Api_reference.md
       - Foundational Analytics:
@@ -820,6 +817,7 @@ nav:
           - Map types: agro/library/Map-types.md
         - Vegetation Time Series: agro/library/Vegetation_time_series.md
         - Crop id API: agro/library/FieldLevel_CropMask_API_v11092025.md
+        - Weather: agro/library/Weather.md
       - Crop Development and Stressors:
         - Emergence: agro/library/Emergence.md
         - Emergence delay: agro/library/Emergence_Delay.md
@@ -833,7 +831,7 @@ nav:
             - Environmental layers: agro/library/CRA_Layers.md
         - Historical Potential Score: agro/library/Historical_Potential_Score.md
         - In Season  Potential Score: agro/library/In-season_Potential_Score.md
-        - Harvest detection: agro//Library/Harvest_Detection.md
+        - Harvest detection: agro/library/Harvest_Detection.md
       - Benchmark and warning:
         - Change index: agro/library/Change_Index.md
         - In season monitoring: agro/library/inseason_monitoring.md

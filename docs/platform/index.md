@@ -1,4 +1,15 @@
 ---
+title: Platform
+description: EarthDaily's data platforms, EarthPlatform and EarthOne, for STAC-based access to Earth observation imagery, analytics and global-scale geospatial compute.
+keywords:
+  - platform
+  - EarthPlatform
+  - EarthOne
+  - STAC
+  - Earth observation
+  - satellite imagery
+  - Python SDK
+  - geospatial compute
 hide:
   - navigation
   - toc

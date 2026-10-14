@@ -1,4 +1,36 @@
+---
+title: Glossary
+description: Definitions of the acronyms and terms used across EarthDaily documentation, from vegetation indices to weather models and Brazilian registries.
+keywords:
+  - glossary
+  - definitions
+  - acronyms
+  - vegetation indices
+  - weather models
+  - terminology
+hide:
+  - navigation
+---
+
 # Glossary
+
+<p id="glossary-back" hidden><a href="#">&larr; Back to previous page</a></p>
+<script>
+  // Show the back link only when the reader came from another docs page
+  (function () {
+    var link = document.getElementById("glossary-back");
+    try {
+      var ref = new URL(document.referrer);
+      if (ref.origin !== location.origin || ref.pathname === location.pathname) return;
+      link.querySelector("a").href = ref.href;
+      link.querySelector("a").addEventListener("click", function (e) {
+        e.preventDefault();
+        history.back();
+      });
+      link.hidden = false;
+    } catch (e) {}
+  })();
+</script>
 
 <!-- snippet: ndvi -->
 ## NDVI (Normalized Difference Vegetation Index)
@@ -267,6 +299,56 @@ DBSI = ((SWIR1 - Green) / (SWIR1 + Green)) - ((NIR - Red) / (NIR + Red))
 - This is essentially the NDVI (1) (Normalized Difference Vegetation Index)
 - Measures vegetation greenness and density
 - Vegetated areas produce high positive values
+<!-- endsnippet -->
+
+<!-- snippet: ecmwf -->
+## ECMWF (European Centre for Medium-Range Weather Forecasts)
+Intergovernmental organization that produces global numerical weather forecasts and climate reanalyses, including the IFS forecast model and the ERA5 reanalysis.
+<!-- endsnippet -->
+
+<!-- snippet: era5 -->
+## ERA5 (ECMWF Reanalysis v5)
+ECMWF's fifth-generation global climate reanalysis. It combines past observations with a weather model to give a consistent hourly record of the weather from 1940 to a few days ago.
+<!-- endsnippet -->
+
+<!-- snippet: ifs -->
+## IFS (Integrated Forecasting System)
+ECMWF's global numerical weather prediction model, used for forecasts up to about 15 days ahead.
+<!-- endsnippet -->
+
+<!-- snippet: dwd -->
+## DWD (Deutscher Wetterdienst)
+The German national weather service, which runs the ICON weather models.
+<!-- endsnippet -->
+
+<!-- snippet: icon_eu -->
+## ICON-EU (ICOsahedral Nonhydrostatic model, European domain)
+The European regional configuration of the ICON weather model run by DWD, with forecasts up to 5 days ahead over Europe.
+<!-- endsnippet -->
+
+<!-- snippet: reanalysis -->
+## Reanalysis
+Historical weather dataset produced by running a fixed weather model over past observations, giving a consistent record in space and time.
+<!-- endsnippet -->
+
+<!-- snippet: geohash -->
+## Geohash
+Short string that encodes a geographic grid cell. Nearby locations share the same geohash prefix.
+<!-- endsnippet -->
+
+<!-- snippet: wgs84 -->
+## WGS84 (World Geodetic System 1984)
+Standard geographic coordinate system for latitude and longitude, used by GPS. Its EPSG code is 4326.
+<!-- endsnippet -->
+
+<!-- snippet: volumetric_soil_water -->
+## Volumetric Soil Water
+Volume of water per volume of soil, in m³/m³. For example, 0.30 means water fills 30% of the soil volume.
+<!-- endsnippet -->
+
+<!-- snippet: wmo_weather_code -->
+## WMO (World Meteorological Organization) weather code
+Numeric code from the World Meteorological Organization describing the weather condition, from 0 (clear sky) to 99 (thunderstorm with heavy hail).
 <!-- endsnippet -->
 
 

@@ -8,4 +8,4 @@ mkdocstrings-sourcelink
 mkdocs-encryptcontent-plugin
 tiktoken
 earthdaily-earthone
-earthdaily-agriculture==2.6.0
+earthdaily-agriculture==2.7.0

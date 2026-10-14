@@ -44,7 +44,7 @@ the analytic parameters (index, dates, thresholds) but also the **output columns
 subject of this guide.
 
 > Output configuration lives once on `BaseExtractor` and flows through the shared
-> `export_results()` / `_finalize_extraction()` writer, so **every** extractor honours the
+> `export_results()` / `_finalize_extraction()` writer, so **every** extractor honors the
 > same knobs — nothing here is specific to `RegionalExtractor`.
 
 ---
@@ -187,7 +187,22 @@ scattered sample shares no cells. Check your geometry before assuming a win.
 
 Grouped runs use a separate cell-keyed cache, and widening a window has consequences for
 genuinely cumulative columns. Both are covered in
-**[Result caching](07%20-%20Cache_design_context.md#spatial-grouping-a-second-cell-keyed-cache)**.
+**[Result caching](07%20-%20Cache_design_context.md#spatial-grouping--a-second-cell-keyed-cache)**.
+
+### 4h. Rate limiting — `rate_limit`
+
+Caps a bulk run at `rate_limit` HTTP requests per second, shared by all `max_workers` threads.
+Retries and follow-up requests (paging, several years) count too, and when the API answers
+429 (too many requests) every thread waits the time the server asks for. Use it for an API with
+a known quota; unset (the default) means no limit, and single-entity calls are never slowed.
+
+```python
+result = ext.process_<type>_bulk_parallel(entity_list=fields, max_workers=10, rate_limit=5)
+```
+
+Set it per call (above), per workflow step (`run.params.rate_limit`), per instance
+(`ext.rate_limit = 5`) or per class (`DEFAULT_RATE_LIMIT`), highest precedence first. See
+**[Rate limiting a step](09b%20-%20Workflow_YAML_reference.md#rate-limiting-a-step)**.
 
 
 

@@ -176,8 +176,8 @@ Browse our comprehensive API documentation across all EarthDaily Agro analytics.
     
     Historical weather data and forecasts for agricultural fields. Includes temperature, precipitation, humidity, and derived agro-meteorological indices.
     
-    [:simple-swagger: Swagger](https://api.geosys-na.net/Weather/v1/swagger){ .md-button }
-    [:octicons-link-external-16: Details](./Api_reference.md){ .md-button }
+    [:simple-swagger: Swagger](https://weatherflow.aws.geosys.com/docs#/){ .md-button }
+    [:octicons-link-external-16: Details](./Weather.md){ .md-button }
 
 </div>
 

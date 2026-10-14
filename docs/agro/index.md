@@ -1,4 +1,15 @@
 ---
+title: Agriculture
+description: EarthDaily's agricultural intelligence solutions for digital ag, crop monitoring, portfolio management, parametric insurance, crop identification and territory insights.
+keywords:
+  - agriculture
+  - Digital Ag
+  - crop monitoring
+  - portfolio management
+  - parametric insurance
+  - crop identification
+  - Territory Insights
+  - commodities intelligence
 hide:
   - navigation
   - toc

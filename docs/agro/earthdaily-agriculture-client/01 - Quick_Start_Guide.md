@@ -162,7 +162,7 @@ That's a complete extraction — credentials → entities → results in `result
 
 ## Smoke test (both paths)
 
-Inside the freshly-initialised project:
+Inside the freshly-initialized project:
 
 ```bash
 # 1. Bootstrap smoke test
@@ -179,7 +179,7 @@ If both print without errors, the project is wired correctly.
 ## What's next
 
 - [`10 - Project_structure_and_template.md`](10%20-%20Project_structure_and_template.md) — walkthrough of the generated project layout, every file's purpose, transform conventions, YAML workflow structure.
-- [Working with earthdaily-agriculture](11%20-%20Working%20with%20EDAgro%20client.md) — day-to-day recipes: `WorkflowManager` patterns, DEBUG logging, common pitfalls.
+- [`11 - Working with EDAgro client.md`](11%20-%20Working%20with%20EDAgro%20client.md) — day-to-day recipes: `WorkflowManager` patterns, DEBUG logging, common pitfalls.
 - [`03 - Extractor_parameters_reference.md`](03%20-%20Extractor_parameters_reference.md) — every `setup_*_parameters()` argument for every extractor.
 - [`09 - Workflow_architecture.md`](09%20-%20Workflow_architecture.md) — multi-step YAML pipelines with transforms.
 
@@ -190,7 +190,7 @@ If both print without errors, the project is wired correctly.
 - **Template not found** (Path A.1). The script lists where it looked when it fails. If you have a local clone you'd prefer to use, pass `--template <path>` or set `EDAGRO_CLIENT_PATH`. Otherwise the script falls back to the public GitHub URL — make sure you have network access.
 - **`project_slug` doesn't match folder name** (Path A.2). Path A.1 guarantees alignment automatically (`no_input=True`); Path A.2 can drift if you over-edit the slug prompt. Stick with the default slug derivation unless you have a reason.
 - **`'secrets' is undefined` Jinja error during cookiecutter render.** The template wraps GitHub Actions YAML in `{% raw %}…{% endraw %}` to keep Jinja from evaluating it. If you hit the error, pull the latest version of the template.
-- **Corrupted generated notebook** (Path A.2 with a backslash path on Windows). If you manually answer the `edagro_source_path` prompt with a Windows-style backslash path (e.g. `C:\Users\…\src`), cookiecutter substitutes the raw backslashes into the generated notebook JSON, producing invalid escape sequences. Use **forward slashes** instead (`C:/Users/…/src`) — Python's `pathlib.Path` handles them fine on Windows. The defaults in `cookiecutter.json` are already forward-slash form, so just accept them. Path A.1's `init_project.py` normalises automatically.
+- **Corrupted generated notebook** (Path A.2 with a backslash path on Windows). If you manually answer the `edagro_source_path` prompt with a Windows-style backslash path (e.g. `C:\Users\…\src`), cookiecutter substitutes the raw backslashes into the generated notebook JSON, producing invalid escape sequences. Use **forward slashes** instead (`C:/Users/…/src`) — Python's `pathlib.Path` handles them fine on Windows. The defaults in `cookiecutter.json` are already forward-slash form, so just accept them. Path A.1's `init_project.py` normalizes automatically.
 - **Post-gen hook fails silently.** It logs a warning and continues so the project is still created. Re-run manually once the project venv is active:
   ```bash
   python -m earthdaily.agriculture.ai_enablement.generate_ai_context --project-target <project> --project-name "<name>" --environment <env>
