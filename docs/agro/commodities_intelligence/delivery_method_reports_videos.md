@@ -1,7 +1,7 @@
 ---
 title: Crop Intelligence
 description: This page is dedicated to presentation of Crop Intelligence Video series
-icon: material/wallet-outline
+#icon: material/wallet-outline
 keywords:
   - crop reports
   - webinar
@@ -12,7 +12,7 @@ keywords:
   - wheat
 ---
 
-## ⚙️ Webinar and Video Series
+## Webinar and Video Series
 
 ### Weekly Video Series
 
@@ -44,7 +44,7 @@ Please check our Weekly Wheat Video
 
 ---
 
-## 📚 Weekly Global Reports
+## Weekly Global Reports
 
 ### All Crops Global Report
 
@@ -64,7 +64,7 @@ These reports include Forecasted Yield and Production values as well as the curr
 
 ---
 
-## 🌎 World in 10
+## World in 10
 
 10 images tell the answer to 10 key questions about production all around the world.
 
@@ -74,7 +74,7 @@ This report provides a quick glance at current production conditions, highlighti
 
 ---
 
-## 👥 One on One Crop Analyst Calls
+## One on One Crop Analyst Calls
 
 Talk directly with one of our Crop Analysts about how EarthDaily data is illustrating potential yield concerns.
 

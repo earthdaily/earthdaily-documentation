@@ -1,7 +1,7 @@
 ---
 title: Crop Intelligence
 description: This page is dedicated to presentation of Crop Intelligence product
-icon: material/wallet-outline
+#icon: material/wallet-outline
 keywords:
   - commodities intelligence
   - crop intelligence
@@ -15,7 +15,7 @@ keywords:
 
 # Crop Intelligence
 
-## 🌾 Introduction
+## Introduction
 
 In volatile agricultural markets, success depends on real-time data. EarthDaily gives you that edge. We combine Earth Observation (EO) analytics with AI-powered forecasts, providing real-time visibility into global and local crop conditions.
 
@@ -24,7 +24,7 @@ Continuous satellite monitoring, historical data, and predictive intelligence he
 Multiple delivery channels ensure that EarthDaily Crop Intelligence is available in the format best suited for your business needs.
 
 
-## 👥 Target Audience
+## Target Audience
 
 EarthDaily has designed this product for organizations that need timely, accurate, and scalable crop intelligence:
 
@@ -37,7 +37,7 @@ EarthDaily has designed this product for organizations that need timely, accurat
 - **Governments & Policy Institutions** - Support national food security assessments, subsidy programs, and environmental monitoring efforts.
 
 
-## 🚜  Crop Intelligence Delivery Methods
+## Crop Intelligence Delivery Methods
 * Geosys Web Application
 * API Access
 * Weekly Video Series
@@ -46,7 +46,7 @@ EarthDaily has designed this product for organizations that need timely, accurat
 * One on One Crop Analyst Calls
 
 
-## 📊 Data & Analytics Coverage
+## Data & Analytics Coverage
 
 Access a complete list of Regional Monitoring Analytics and their aggregation levels at this [link](https://sway.cloud.microsoft/tQAQAVQ9BTuMwEJo?ref=Link).
 
