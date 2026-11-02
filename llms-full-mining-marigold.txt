@@ -1,0 +1,3547 @@
+# EarthDaily documentation — Mining > Marigold
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Index
+URL: https://docs.earthdaily.com/mining/marigold/
+Keywords: marigold, mineral exploration, GIS, bare earth composite, spectral analysis, remote sensing, EarthDaily, EarthOne
+
+## What is Marigold?
+
+Marigold is a geographic information system (GIS) user interface that is built
+on top of the EarthOne platform and tailored to exploration geologists. By
+simplifying the access and analysis of remote sensing data, Marigold transforms
+mineral exploration workflows.
+
+### **Working with Marigold**
+
+Marigold simplifies your mineral exploration workflows, so you can hit the
+ground running with geospatial data --- no coding necessary.
+
+### Fast
+
+The EarthDaily Advanced Mineral Exploration package reduces prep time for
+mineral exploration by up to 85%. Marigold further improves your workflows by
+making it easier to analyze data and share projects with colleagues.
+
+### Streamlined
+
+All the tools you need are all in a single, easy to use interface. No more
+switching between applications or working with complex bits of code.
+
+### Global
+
+Our Bare Earth Composite gives users access to the clearest pixel everywhere on
+Earth. Work with analysis-ready data to derive insights from the smallest to the
+largest scale.
+
+### **Getting started with Marigold**
+
+### New to remote sensing?
+
+If you're new to the world of satellite imagery, learn how remotely sensed data
+provides valuable insights we can't capture on the ground.
+
+### Looking to jump in?
+
+Hit the ground running by accessing Marigold, adding new layers and mineral
+targets, and running a spectral similarity algorithm to identify potentially
+prospective areas.
+
+### Ready to keep learning?
+
+Follow along in some of our case studies to learn how to spot different types of
+mineralization from start to finish.
+
+---
+
+## Table of contents
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/
+Keywords: Marigold, mineral exploration, processing tools, spectral analysis, GIS, remote sensing, band algebra
+
+##  Intro to Marigold
+
+An overview of the Marigold application and the basic data objects.
+
+[Loading Marigold]\
+[Header bar functions]\
+[Raster layers]\
+[Vector layers]\
+[Spectra]\
+[Saving and loading projects]
+
+---
+
+##  Example workflows
+
+Comfortable using GIS systems? Jump right into Marigold with some examples!
+
+[Mask vegetation and water in your imagery]\
+[Create a custom mask from a vector or raster layer]\
+[Create a false color RGB from spectral bands]
+
+---
+
+## Processing in Marigold
+
+Marigold makes it simple to process your data. Some of those ways include:
+
+### ** Band algebra**
+
+[Band ratio]\
+[Raster calculator]\
+[Mineral indices]\
+[Rapid mapping outputs]
+
+### ** Masking**
+
+[Vegetation mask]\
+[Water mask]\
+[Batch mask]\
+[Apply a mask]
+
+### ** Transforms**
+
+[Principal components analysis]\
+[Decorrelation stretch]\
+[Minimum noise fraction]
+
+### ** Spectral Classification**
+
+[Spectral angle mapper]\
+[Spectral correlation mapper]\
+[Matched filter]\
+[k-means clustering]
+
+### ** Raster Classification**
+
+[Assign class labels]\
+[Prospectivity analysis]\
+[Mineral map]\
+[Vectorize classified layer]
+
+### ** Hyperspectral**
+
+[HSI image explorer]\
+[Compositional mapping]\
+[UMAP]\
+[Mineral index analogs]
+
+### ** Terrain analysis**
+
+[Create a hillshade]\
+[Canny edge detection]\
+[Valley bottom flatness]
+
+### ** Raster management**
+
+[Data statistical analysis]\
+[View BEC metadata]\
+[Create RGB]\
+[Merge layers]\
+[Update computed layers]\
+[Morphological operations]
+
+---
+
+##  Remote sensing methodology
+
+[Learn more about remote sensing!]
+
+    Find a band ratio that's not in Marigold? Calculate it with the
+    [Raster calculator]!
+
+---
+
+##  Case studies
+
+Explore more advanced usage through a real exploration workflow.
+
+[Case study 1] - Cuprite (low sulphidation epithermal)\
+[Case study 2] - Salares Norte (high sulphidation epithermal)
+
+[apply a mask]: processes/apply-a-mask.md
+[assign class labels]: processes/class-labels.md
+[band ratio]: processes/band-ratio.md
+[batch mask]: processes/batch-mask.md
+[canny edge detection]: processes/canny.md
+[case study 1]: ../case-studies/case-study-1.md
+[case study 2]: ../case-studies/case-study-2.md
+[compositional mapping]: processes/comp-map-basic.md
+[create a custom mask from a vector or raster layer]: example-workflows/create-a-custom-mask.md
+[create a false color rgb from spectral bands]: example-workflows/ternary-plot.md
+[create a hillshade]: processes/hillshade.md
+[create rgb]: processes/create-rgb.md
+[data statistical analysis]: processes/data-stats.md
+[decorrelation stretch]: processes/dcs.md
+[hsi image explorer]: processes/hsi-image.md
+[header bar functions]: header.md
+[k-means clustering]: processes/k-means.md
+[learn more about remote sensing!]: ../remote-sensing-methodology/remote-sensing-methodology.md
+[loading marigold]: splash.md
+[mask vegetation and water in your imagery]: example-workflows/mask-veg-and-water.md
+[matched filter]: processes/mf.md
+[merge layers]: processes/merge-layers.md
+[mineral index analogs]: processes/min-idx-analogs.md
+[mineral indices]: processes/mineral-indices.md
+[mineral map]: processes/mineral-map.md
+[minimum noise fraction]: processes/mnf.md
+[morphological operations]: processes/morphology.md
+[principal components analysis]: processes/pca.md
+[prospectivity analysis]: processes/prospectivity.md
+[rapid mapping outputs]: processes/rapid-mapping-outputs.md
+[raster calculator]: processes/raster-calculator.md
+[raster layers]: raster-layers/index.md
+[saving and loading projects]: save-and-load.md
+[spectra]: spectra/index.md
+[spectral angle mapper]: processes/sam.md
+[spectral correlation mapper]: processes/scm.md
+[umap]: processes/umap.md
+[update computed layers]: processes/update-layers.md
+[vector layers]: vector-layers/index.md
+[vectorize classified layer]: processes/vectorize.md
+[vegetation mask]: processes/vegetation-mask.md
+[valley bottom flatness]: processes/mrvbf.md
+[view bec metadata]: processes/bec-meta.md
+[water mask]: processes/water-mask.md
+
+---
+
+## Starting Marigold
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/splash/
+Keywords: splash screen, new project, bookmarks, recent projects, load project, Marigold
+
+## Starting a Marigold session
+
+When you load the Marigold app, you will see a splash screen with options for
+easily loading your projects and bookmarks.
+
+### **Start a new project**
+
+This option will start a new Marigold project at the current map location. By default,
+the Sentinel-2 Bare Earth Composite will be loaded into your session. This option is
+useful if you are starting a new analysis workflow.
+
+### **Bookmarks**
+
+A list of your saved [bookmarks](header.md#bookmarks) will appear here.
+Selecting one will move the Marigold map to the bookmarked location, as well as indicate
+the location on the inset map.
+
+    You can set a default bookmark in your [user settings](header.md#user-settings).
+
+### **Recent projects**
+
+A list of your seven most recent projects will appear here. As with bookmarks,
+selecting one will indicate on the map where the save is located.
+
+    The first time you select a project on the splash screen, there will be a brief
+    loading period for the geometry to be extracted from the save. This operation
+    only needs to be run once per save file.
+
+Click the `Load selected project` button to load the project selected from the
+dropdown.
+
+### **View all saved projects**
+
+This button will bring up the standard
+[load project](save-and-load.md#loading-a-project) dialog for access to all of
+your saved projects.
+
+### **Upload .sav**
+
+This option will allow you to upload a saved project from your computer. Once
+uploaded, this project will be at the top of the
+[recent projects](#recent-projects) list.
+
+### **Load latest save**
+
+This option loads the most recent [save](save-and-load.md).
+
+    The dialog will indicate if your latest save is an 
+    [autosave](save-and-load.md#autosaves).
+
+---
+
+## Header functions
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/header/
+Keywords: header bar, bookmarks, user settings, pixel inspector, screenshot, project management, Marigold
+
+## The Marigold header bar
+
+The header bar in Marigold contains several tools for managing your project,
+such as saving and loading, manipulating the map, and links to further
+information on Marigold itself.
+
+### **Save and load a project**
+
+Buttons for saving and loading projects. More information can be found
+[here](save-and-load.md).
+
+### **Bookmarks**
+
+Bookmarks are a convenient way to store locations that you will return to often.
+Each bookmark is defined by a latitude/longitude location and a zoom level.
+Clicking on a bookmark will move the map to the defined center and zoom. Click
+`Create a bookmark` to add the current map location as a bookmark, or click
+`Manage bookmarks` to review and manage your current bookmarks.
+
+### **Project name**
+
+### **Zoom and center**
+
+Controls the center latitude/longitude value and zoom level of the map.
+
+    While Marigold allows you to zoom out to a continent-scale view, doing so can
+    use a large amount of unexpected compute resources. By default, zooming past
+    level 9 will automatically turn off all layers to avoid this, although they can
+    be manually turned back on if you require a continent-scale display. The specific
+    zoom level can be defined in your [settings](#user-settings).
+
+### **User settings**
+
+Several settings are available for users to modify to personalize their Marigold sessions.
+The first group of settings will persist between sessions, while the others will control
+behavior for the current session.
+
+### Global settings
+
+- Default bookmark: When loading Marigold, the [splash screen](splash.md) will default
+  to this location.
+- Default basemap: The default basemap to use on the map.
+- Default colormap: The default colormap to use for single band layers.
+- Legend position: relative position on the map display for [layer legends](raster-layers/index.md#add-a-legend).
+- Ternary legend size: size of the legend for ternary (RGB) layers.
+
+    Legends already on the map will need to be toggled off and on again to see the changes.
+
+### Session settings
+
+- Zoom level: level at which layers will automatically be hidden to lower costs.
+- Autoscale defaults: default percentiles to use when [autoscaling](raster-layers/index.md#autoscale)
+  layers, and what AOI to pull data from. If **Current viewport** is chosen, it will be the window on
+  your screen when clicking the autoscale button. If a vector is chosen, it will be this vector
+  whenever you click the autoscale button.
+
+Click `Save settings` to save the settings to your profile
+
+### Custom expressions
+
+- Custom expressions created in the [Raster Calculator](processes/raster-calculator.md) tool can be managed in Settings. To delete expressions you no longer wish to have, select the expression(s), then click the **Delete selected expressions** button.
+
+### **Pixel inspector**
+
+The pixel inspector will extract the pixel values for all currently visualized
+layers. Click the icon to start an inspector session, and click on the map to
+extract a point. Layers will appear in the same order as they are in the raster
+layer list. Clicking the map in another location will move the inspection point
+and recompute the values shown in the box.
+
+    Only values for the currently visualized bands (either one or three, depending
+    on if the layer is a single band or RGB display) will be computed with this
+    tool. For detailed inspection of all of a layer's bands at single points, use
+    the [spectral query](spectra/spectra-query.md) tool.
+
+    The pixel inspector will appear above tool dialogs so you can inspect values
+    while running an analysis. This can be very useful for tools like the
+    [raster calculator](processes/raster-calculator.md), where you may want to
+    identify specific pixel values.
+
+### **Screenshot tool**
+
+Use this tool to take a screenshot of the map over the selected AOI. All visible
+raster and vector layers will be captured and output as a `.png` file on your
+computer
+
+    This tool is provided for taking quick, repeatable screenshots of layers
+    suitable for documentation, not for further data analysis. To output data layers
+    at full resolution for use in other GIS packages, use the layer
+    [export](raster-layers/layer-export.md) functions.
+
+### **Changelog**
+
+Click this icon to bring up the release notes for the most recent Marigold
+version.
+
+### **Help**
+
+The help icon links to this documentation.
+
+### **Onboarding videos**
+
+This icon links to a series of Marigold onboarding videos.
+
+---
+
+## Raster layers basics
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/raster-layers/
+Keywords: raster layers, layer configuration, autoscale, layer visibility, layer management, Marigold
+
+## Raster layers
+
+Raster layers are the primary data object in a Marigold session. Add layers to
+your maps and configure your layer settings using the **Raster layers** section
+on the left side panel. Marigold will display layers "top down," meaning that
+layers at the top of the list will appear above layers underneath.
+
+### **Add raster layers**
+
+Raster layers can be added from
+[Catalog](add-layers.md#add-a-raster-layer-from-the-catalog), or layers
+[exported](add-layers.md#add-an-exported-raster-layer) from other Marigold
+projects.
+
+### **Basic layer configuration**
+
+Visibility and ordering settings can be modified from a layer's row in the list.
+
+### Toggle visibility
+
+Use the eye icon to toggle layer visibility on and off.
+
+### Autoscale
+
+Use the magic wand icon to autoscale layers using a linear stretch. By default,
+this stretch will clip the lowest 2% and the highest 2% of values to eliminate
+extreme bright and dark regions, and stretch the remaining values across the
+dynamic range of values to enhance contrast. The AOI used to pull data from defaults
+to the **Current viewport**.
+
+    Default stretch values and AOIs can by modified in your [settings](../header.md#user-settings).
+
+### Move layers
+
+Use the up and down arrows to rearrange the layer order.
+
+### **More configuration options**
+
+More advanced configuration options are available from the overflow menu in the
+layer's row.
+
+### Layer settings
+
+Detailed settings of a layer such as name, visible bands, contrast, etc can be
+accessed from the [layer settings](layer-settings.md) menu.
+
+### Add a legend
+
+Select **Toggle legend** to turn the legend for a layer on and off. Legends will
+be stacked when turned on for multiple layers.
+
+    The position of legends and the size of legends for ternary layers can be modified
+    in [user settings](../header.md#user-settings).
+
+### Zoom to AOI
+
+If the underlying imagery of the layer is localized, you can quickly jump to the
+latest available image by selecting `Zoom to AOI` in the kebab menu.
+
+    If the selected layer has too many images, a warning notification will be
+    generated.
+
+### Duplicate a layer
+
+Select **Duplicate** to add a copy of the layer to the map.
+
+### Toggle as mask
+
+Select **Toggle as mask** to mark the layer as a `mask` that can be used for
+[masking other layers](../processes/apply-a-mask.md).
+
+### Export
+
+Select **Export** to
+[export a layer](layer-export.md#export-a-layer-for-marigold) for import into
+another Marigold project.
+
+### Folder management
+
+Select **Folder management** to modify the
+[folder](folders.md#add-single-layer-to-folder) of a layer.
+
+### Remove a layer
+
+Select **Remove** to remove a layer from the Marigold project.
+
+    Layers that have been removed from the project will need to be added or created
+    again!
+
+### **Bulk layer operations**
+
+Shortcuts are available for manipulating several layers at once.
+
+### Turn off all layers
+
+Turns off the [visibility](#toggle-visibility) for all layers.
+
+### Turn off all folders
+
+Turns off the [visibility](folders.md#folder-visibility) for all folders.
+
+### Remove multiple layers
+
+Remove multiple vector and raster layers at once. Selecting this option will
+load a dialog where raster and vector layers can be selected for deletion.
+
+---
+
+## Add raster layers
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/raster-layers/add-layers/
+Keywords: add raster layers, catalog layers, imported layers, EarthOne Catalog, data loading, Marigold
+
+## Add raster layers to a Marigold project
+
+### **Add a raster layer from the Catalog**
+
+Click the plus sign next to **Raster layers** and select **Catalog layer** to
+add a layer from Catalog. Note that a layer needs to have a `marigold` tag to be
+visible to this dialog, contact [support](mailto:support@earthdaily.com) for
+assistance with correctly loading data.
+
+Catalog products will be organized by type for layers where such information is
+available, and can easily be searched using the bar at the top of the dialog.
+
+Click on a name to display information about that layers.
+
+Use the checkboxes to select the layers to add to the project.
+
+    Select a [folder](folders.md) to automatically add all the layers to the folder.
+
+Click `Add selected layers` to add the layers to the project.
+
+### **Add an exported raster layer**
+
+Layers that have been [exported](layer-export.md#export-a-layer-for-marigold)
+from another Marigold project can be imported into new ones.
+
+A dialog similar to the [load project](../save-and-load.md) dialog will load
+with a list off all the layers available.
+
+As in the load project dialog, layers can be downloaded and uploaded to and from
+your local computer.
+
+---
+
+## Layer settings
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/raster-layers/layer-settings/
+Keywords: layer settings, band configuration, colormap, hillshade blending, contrast adjustment, alpha band, Marigold
+
+## Layer settings
+
+A layer's settings dialog offers many options for modifying properties of your layer.
+
+    The layer will update dynamically as you change settings, but you can always
+    undo your changes with the `Cancel` button!
+
+### **Basic layer settings**
+
+The first page of the dialog contains basic layer settings such as name, visible bands,
+and display contrast.
+
+### Rename a layer
+
+Click the **Layer name** text box in the **Layer adjustment** dialog
+box and edit the layer name. The name will change in the layer list automatically.
+
+### Adjust layer transparency
+
+Use the slider or text box to adjust the opacity of the layer (0 is
+completely transparent).
+
+### Date selection
+
+For layers that contain data from multiple dates, use the available selectors
+to set the start and end dates for the layer.
+
+    Layers derived from products with temporal settings can also have the date 
+    changed and will recompute using the new input data automatically.
+
+    For Hyperspectral data, the [HSI image explorer](../processes/hsi-image.md)
+    can be used to explore images at individual dates.
+
+### Rename bands
+
+Click Rename bands. Use the text boxes to update band names, then click
+**Update band names** to save.
+
+### Calculate histograms
+
+Click **Calculate histograms** to see the distribution of values for
+each of the bands selected in the visualized channels. You can use this
+information to manually rescale the bands, use as a reference for custom
+expressions in the [Raster calculator](../processes/raster-calculator.md),
+or simply gain an understanding of the data distribution.
+
+### Rescale bands
+
+Use the **Min** and **Max** text boxes to enter the minimum and maximum
+values for the corresponding band. If you have histograms calculated, a
+shaded box covering the selected range will appear over the histogram.
+
+Selecting `Invert band colors` will display the data with the minimum value
+as the brightest color instead of the darkest, and vice versa for the maximum.
+
+    When inverting a band, the histogram will display the "flipped" data.
+
+### Apply a colormap to a layer
+
+Single band images are displayed using a colormap. Select **Single band**
+from the band configuration, and choose the desired band in the **Band**
+dropdown. Select the colormap you want to apply from the **Colormap** dropdown
+menu to display the band with that colormap.
+
+    Marigold uses Matplotlib colormaps to display single band data. More information
+    about these colormaps can be found [here](https://matplotlib.org/stable/users/explain/colors/colormaps.html)
+
+### Extrema masking
+
+Low and/or high values can be masked by selecting `Mask low values` and
+`Mask high values`.
+
+    For RGB layers, masks will be applied when all bands values are outside of the
+    limits. This has the effect of masking black pixels for low masking and white pixels
+    for high masking.
+
+### **Advanced layer settings**
+
+Clicking the `Advanced layer settings` at the bottom of the dialog will bring
+up advanced visualization options for the layer.
+
+    Advanced visualization settings are not yet available for Classified layers.
+
+### Apply hillshade to layer
+
+    Only layers created by the [hillshade dialog](../processes/hillshade.md) can be
+    used as a hillshade.
+
+Once you have a hillshade layer in your project, you can apply it to a layer using
+several blending options:
+
+- Multiply: simply multiply the hillshade and the base layer.
+
+$$
+Shaded = Base \cdot Hillshade
+$$
+
+    Since hillshade values are from 0-1, Multiply blending will always darken the base
+    layer.
+
+- Hard light: A combination of `Multiply` and its inverse that darkens low shade areas
+  and brightens brighter ones.
+
+$$
+Shaded = \begin{cases}
+    2 \cdot Base \cdot Hillshade & \text{if } Hillshade < 0.5 \\\\
+    1 - 2 \cdot ( 1 - Base ) \cdot ( 1 - Hillshade ) & \text{otherwise}
+\end{cases}
+$$
+
+- Soft light: A gentler combination of Multiply and its inverse, used for more subtle
+  effects.
+
+$$
+Shaded = (1 - 2 \cdot Base) \cdot Base^2 + 2 \cdot Hillshade \cdot Base
+$$
+
+- Linear burn: Darkens the image by the brightness of the Hillshade
+
+$$
+Shaded = Base + Hillshade - 1
+$$
+
+In addition, the hillshade itself can have its brightness or gamma adjusted
+using the sliders. The hillshade is adjusted by
+
+$$
+AdjustedShade = (Hillshade + Brightness)^{1/\gamma}
+$$
+
+before being applied using the chosen blend method.
+
+### Apply a layer as an Alpha band
+
+For more advanced displays, layers can be used as spatially-varying Alpha bands
+for other layers. To use a layer as an Alpha band:
+
+- Choose a layer and band to use as an Alpha.
+- Opacity values are defined using four points: the minimum/maximum opacity values,
+  and the data values to which each corresponds.
+
+    Use the `Compute histogram` button to see the opacity curve over the data histogram.
+
+If you have a hillshade applied to the layer, you can apply the Alpha band to the
+hillshade instead of the layer. This has the effect of bringing back the brightness
+that can be lost when using blending modes like [Multiply](#apply-hillshade-to-layer).
+
+---
+
+## Layer organization
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/raster-layers/folders/
+Keywords: layer organization, folders, layer management, raster layers, project organization, Marigold
+
+## Layer organization
+
+For Marigold projects with many raster layers, folders offer a way to organize
+layers in a natural way.
+
+### **Create a new folder and add existing layers**
+
+To create a folder in the project, select `Add new folder` from the Raster menu.
+
+Give the folder a name and select the layers to add. Click `Apply` to add the
+folder to the project with the selected layers.
+
+    Layers without a folder will always appear "above" layers in folders.
+
+### **Add single layer to folder**
+
+The `Folder management` option of a layer is useful for adding or removing a
+single layer from a folder.
+
+Select an existing folder from the dropdown to add a layer to that folder.
+
+Type the name of a new folder to create it and add this layer.
+
+Or leave both fields blank to remove the layer from its current folder.
+
+### **Folder configuration**
+
+Configuring folders is similar to configuring
+[individual layers](index.md#basic-layer-configuration).
+
+### Expand and collapse layers
+
+Use the plus/minus icon to show or hide the layers in the folder.
+
+### Folder visibility
+
+Use the eye icon to toggle visibility of the layers in the folder on and off.
+When turning visibility off, the layers in the folder that are currently visible
+will turn off.
+
+    The visibility icon of the visible layers won't change when you turn off folder
+    visibility, so you can easily identify which layers will be visible.
+
+### Move layers
+
+Use the up and down arrows to rearrange the folder order, thus rearranging all
+of the layers inside the folders.
+
+### Rename folder
+
+Give the folder a new name.
+
+### Add new layers
+
+Add layers to this folder by checking the layers you want to add.
+
+    Unchecking layers currently in the folder will remove them.
+
+### Remove all layers
+
+Remove all of the layers in this folder from the Marigold project.
+
+    Layers that have been removed from the project will need to be added or created
+    again!
+
+### Remove folder
+
+Remove the folder itself, keeping all of the layers in the project.
+
+---
+
+## Layer export
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/raster-layers/layer-export/
+Keywords: export layers, GeoTIFF, layer sharing, data export, QGIS, Marigold
+
+## Exporting layers
+
+Layers can be exported for input into other Marigold projects, or as Geotiffs
+for use in other GIS packages.
+
+### **Export a layer for Marigold**
+
+Individual layers can be exported, shared with other users, and
+[imported](add-layers.md#add-an-exported-raster-layer) into new Marigold
+projects.
+
+Select `Export` from the layer overflow menu.
+
+### Layer name and description
+
+In the export dialog, give your layer a name and description.
+
+    Exported layer names must be unique!
+
+### Sharing emails
+
+If desired, type in a comma separated list of emails of users to share the layer
+with. Shared layers will appear in their layer list with a `(shared)` indicator.
+
+### Organization sharing
+
+This checkbox can be used to share the layer with all users in your
+organization.
+
+Click `save` to export the layer. It will now appear in your list of exported
+layers, ready to [import](add-layers.md#add-an-exported-raster-layer) into a new
+project.
+
+### **Export to Geotiff**
+
+If you need to view or analyze data in packages other than Marigold (such as
+QGIS), you can export layers as GeoTIFFs by using the GeoTIFF export tool. After
+setting the parameters in the dialog, clicking `Export GeoTIFF` will start tasks
+to export the chosen layers.
+
+### AOI to export
+
+Choose a polygon vector layer over which to export data, or select
+`Current viewport` to export the data over the current map view.
+
+    There is a 10Gb limit for exported data - large AOIs with high resolution layers
+    may not be allowed.
+
+### Render type
+
+There are two options for exporting the data:
+
+- `As visualized` will export the data exactly as they are currently visualized
+  as 8-bit integers. The currently visualized bands are selected, data are
+  scaled 0-255, and for single band images, the colormap will be mapped to
+  corresponding RGB values. Any visualization options such as
+  [extrema masking](layer-settings.md#extrema-masking) or
+  [hillshades](layer-settings.md#apply-hillshade-to-layer) will be applied to
+  the exported layer.
+- `Raw values` outputs all bands of the data at their full dynamic range as
+  32-bit floats.
+
+    `As visualized`, as the name implies, is useful for getting the exact display
+    from Marigold into another package, but the exported data will not be useful for
+    further processing.
+
+### Raster layers
+
+Select the layers to be exported.
+
+    Restricted data, such as the Bare Earth Composites, cannot be export as
+    `Raw values`.
+
+### Layer name suffix
+
+If desired, select a suffix to add to the exported name.
+
+### **Export status**
+
+After starting a GeoTIFF export, you can track the status and download the
+result using the `Export status` tool.
+
+Each exported layer will be represented by a row in this table. The rows will
+show:
+
+- The layer name, with any [suffix](#layer-name-suffix) if one was added.
+- Date the export was created.
+- Date the export will expire.
+
+    Exports will be automatically deleted after two weeks.
+
+- Status of the export - either running, complete, or failed.
+
+    Failed exports can be retried by selecting the row and clicking `Retry exports`.
+
+- A status for the export while it is running, or a download link if it has
+  completed.
+
+    Data are split into tiles for export. For easily loading all tiles at once, a
+    VRT containing metadata for the tiles is created, and all of the GeoTIFFs and
+    the VRT are zipped together so that only one file needs to be downloaded.
+
+---
+
+## Vector layers basics
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/vector-layers/
+Keywords: vector layers, GeoJSON, shapefile, layer management, vector properties, Marigold
+
+## Vector layers
+
+Marigold supports adding and displaying a wide variety of vector layers.
+Add layers to your maps and configure your layer settings using the
+**Vector layers** section on the left side panel. Marigold will display layers
+"top down," meaning that layers at the top of the list will appear above
+layers underneath.
+
+### **Add vector layers**
+
+Vector layers can be added to the project from several sources:
+
+- Vector tile layers uploaded to [Catalog](add-layers.md#add-a-vector-layer-from-the-catalog)
+- Vector [files](add-layers.md#upload-a-vector-layer)
+- Manually [drawing](add-layers.md#draw-a-vector-layer) a new layer
+
+### **Layer properties**
+
+Vector layers that have properties associated with features will show the properties in
+a popup window when clicking on a feature. This feature can be toggled on and off, and will be toggled off by default.
+
+    Property popups are not available for Vector tile layers with Point geometries.
+
+### **Basic layer configuration**
+
+Similar to [raster layers](../raster-layers/index.md), vector layers can be configured
+from the layer's row in the list.
+
+### Toggle visibility
+
+Use the eye icon to toggle layer visibility on and off.
+
+### Toggle drawing
+
+Use the draw toggle to modify the layer by [drawing](add-layers.md#draw-a-vector-layer).
+
+### **More configuration options**
+
+More advanced configuration options are available from the overflow menu in the layer's
+row.
+
+### Settings
+
+Detailed layer settings can be accessed from the [layer settings](vector-settings.md)
+menu.
+
+### Toggle legend
+
+If the vector layer is colored by a [property](vector-settings.md#color-by-property),
+this option will toggle a legend for the layer.
+
+### Duplicate
+
+Add a copy of the layer to the map.
+
+### Zoom to
+
+Zooms the map to the layer's location.
+
+### Download
+
+Download the vector layer as a geojson.
+
+    Vector tile layers will be downloaded over the current map view.
+
+### Toggle popups
+
+Toggle property popups when clicking the layer on and off.
+
+### Compute area
+
+Use this option to show the area of Polygon layers.
+
+### Remove
+
+Select **Remove** to remove a layer from the Marigold project.
+
+    Layers that have been removed from the project will need to be added or
+    created again!
+
+---
+
+## Add vector layers
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/vector-layers/add-layers/
+Keywords: add vector layers, draw vector, upload vector, GeoJSON, shapefile, GeoPackage, Marigold
+
+## Add vector layers to a Marigold project
+
+Marigold supports several methods for adding vector layers to your project.
+
+### **Draw a vector layer**
+
+Select `Draw layer` to create a vector layer by manually drawing one on the map.
+
+The dialog allows you to type a name for the vector and select the geometry
+type. Available options are `Polygon`, `Polyline`, and `Points`. After clicking
+the `Add layer` button, the new vector will appear in the layer list. Click the
+[draw](index.md#toggle-drawing) icon to toggle drawing, then click the new icon
+on the map to begin the drawing session.
+
+    The icon on the map will indicate whether the drawn layer will be a polygon,
+    point, or polyline.
+
+Click on the map to draw the desired vector object.
+
+- For polygons, finalize the polygon by clicking the first point to close the
+  polygon.
+- For polylines, finalize by clicking the last point.
+- For points, each individual point will be drawn separately.
+
+    When you are finished drawing, click the draw icon to store the updated
+    vector in Marigold.
+
+### **Add a vector layer from the Catalog**
+
+Similar to raster layers, objects stored in the
+[Vector service](https://docs.earthone.earthdaily.com/guides/vector.html) with the
+appropriate tags are available to load into Marigold. Contact
+[support](mailto:support@earthdaily.com) for assistance with correctly loading data.
+
+Click on a layer to see any available details, then click `Add layer` to add the
+layer to the map.
+
+    Large vector files, such as the global fault database shown above, will be
+    significantly more responsive when loaded from Catalog than when loaded from
+    local files (geojsons, shapefiles, etc).
+
+    Development for vector layers from Catalog is ongoing, and not all features are
+    supported yet.
+
+### **Upload a vector layer**
+
+Select the `Upload vector` option to load a vector layer from your local
+computer. Valid formats for loading vectors include:
+
+- GeoJSONs
+- Shapefiles (as `.zip` archives)
+- GeoPackage (`.gpkg`)
+- CSVs
+- Parquet
+- AutoCAD DXF
+- KML/KMZ
+
+    Vector files have a large amount of variability from one software package to the
+    next. Marigold attempts to load vectors using the
+    [GeoPandas](https://geopandas.org/en/stable/docs/reference/api/geopandas.read_file.html)
+    package, which is successful for most vector files from common sources (QGIS,
+    Arc, etc). For help loading non-standard vector layers, contact 
+    [support](mailto:support@earthdaily.com).
+
+---
+
+## Vector layer settings
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/vector-layers/vector-settings/
+Keywords: vector settings, border weight, fill color, color by property, categorical data, Marigold
+
+## Vector layer settings
+
+As with [raster layers](../raster-layers/layer-settings.md), vector layers have
+a settings dialog to modify visualization properties of the layer.
+
+    The layer will update dynamically as you change settings, but you can always
+    undo your changes with the `Cancel` button!
+
+### **Rename a layer**
+
+Modify the `Layer name` field to change the name of the layer. The name will
+change in the list automatically.
+
+### **Border weight**
+
+Adjust the weight of the border lines of the vector.
+
+### **Radius for point data**
+
+Adjust the radius for point data.
+
+### **Border and fill color and opacity**
+
+Adjust the border and fill color and opacity.
+
+    Fill color and opacity only have meaning for point or polygon layers
+
+### **Color by property**
+
+If your vector data has properties, such as geochemical samples or geologic
+units, the properties can be used for coloring the layer.
+
+Marigold will attempt to determine whether the property is continuous or
+categorical. For continuous data, a histogram of the property values will be
+shown. Choose the min and max values along with a colorbar to plot the data in
+that color.
+
+    Coloring using date properties may not have the desired effect due to the
+    way different systems handle date formatting.
+
+Categorical data will show a list of the categories and color values for each
+one. Color values can be modified by clicking on the box.
+
+---
+
+## Spectra basics
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/spectra/
+Keywords: spectra, spectral analysis, hull normalization, spectral library, resampling, spectral query, Marigold
+
+## Spectra in Marigold
+
+Spectral information, whether computed from a multi or hyperspectral dataset,
+collected from a spectrometer in the field, or assayed in a lab (phrasing bad),
+are a critical component of a remote sensing workflow. Marigold has several
+tools for integrating spectra from disparate sources into a project.
+
+### **Compute spectra from raster data**
+
+Once a multispectral or hyperspectral layer is loaded into Marigold, spectral
+information can be computed directly from the layer bands. Note that the bands
+need to have their wavelength information stored in the Platform product. Data
+managed by EDA, such as the Bare Earth Composites and public hyperspectral
+datasets, have this by default. For personal products, ensure that at least the
+`wavelength_nm_center` property is defined for all spectral bands. Contact
+[support](mailto:support@earthdaily.com) for assistance with correctly loading data.
+
+[Spectral query](spectra-query.md) - Compute spectra of individual points\
+[Compute spectrum over vector](spectra-vector.md) - Compute average spectrum
+over a vector.
+
+### **Load spectra from external source**
+
+Spectra can be brought in from external sources, such as field spectrometers or
+ENVI formatted files. In addition to loading external spectral files, the
+[USGS spectral library](https://pubs.usgs.gov/publication/ds1035) is available
+for all users. Similar libraries can be hosted as well, contact
+[support](mailto:support@earthdaily.com) for more information.
+
+[Load from file](spectra-file.md) - Load spectra from a file such as an ASCII
+from ENVI or .ASD from a spectrometer\
+[Add from library](spectra-library.md) - Load spectra from the USGS (or others
+if available) spectral library
+
+### **Save a spectral library**
+
+Spectra in a Marigold project can be saved to a
+[spectral library](spectra-library.md) or exported to a Marigold or text files.
+
+### Save to a library
+
+1. From the Spectra menu, select `Save spectra to spectral library`.\
+   
+2. Select spectra to export, add a description to each, and add the name of the
+   project. If the project was [loaded](../save-and-load.md) from a previous
+   project, the name will already be loaded.\
+   
+3. Click `Save` to export the spectra to your spectral library. All spectra will
+   be saved to the same library that can be accessed in the
+   [Add from library](spectra-library.md) dialog.
+
+### Save to an external file
+
+1. From the Spectra menu, select `Download MG spectral library`.\
+   
+2. Select spectra to export. For convenience, all spectra or visible spectra can
+   be selected with one click.\
+   
+3. Choose whether to save the spectra as a Marigold library which can be
+   [imported into a new Marigold session](spectra-file.md#marigold-spectral-library),
+   or as text files.
+4. Click `Save` to save the file to your local computer.
+
+### **Enlarge the spectral plot**
+
+Once spectra are loaded in the project, the plot can be enlarged to explore them
+in more details. Select `Enlarge plot` to generate a larger plot.
+
+### **Operations on Spectra**
+
+Once spectra are in your project, there are a few operations that can be
+performed on them.
+
+### Resample spectrum
+
+Often, spectra from labratory spectrometers can be much higher resolution than
+the multispectral imagery against which they are compared. Such high resolution
+spectra can be resampled to the resolution of a raster layer for better
+comparisons.
+
+1. From the overflow menu of a spectrum, select `Resample`.\
+   
+2. Choose the layer and bands to which you want to resample the spectrum, and
+   choose to resample using Gaussian functions or true instrument spectra. Note
+   that instrument spectra are only available for EarthOne Bare Earth
+   Composites.\
+   
+3. Click `Resample spectrum` to load the resampled spectrum into the project. \
+   
+
+### Hull normalization
+
+Hull normalization is a process where the spectrum is normalized by its
+[convex hull](https://en.wikipedia.org/wiki/Convex_hull). This process is used
+to highlight absorption features of spectra, and is a useful for step for
+further compositional mapping.
+
+1. From the overflow menu of a spectrum, select `Hull normalize`.\
+   
+2. Type in a name for the new spectrum, and if desired enter a minimum
+   and maximum wavelength over which to compute the hull normalization.
+   Click `Hull normalize spectrum` to generate the spectrum over the given
+   wavelengths.\
+   
+3. The hull normalized spectrum is now loaded into the project.\
+
+---
+
+## Spectral query
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/spectra/spectra-query/
+Keywords: spectral query, pixel spectra, spectral extraction, point query, spectral analysis, Marigold
+
+## Spectral Query
+
+Spectral information in a raster layer can be extracted in two ways: individual
+points Spectral query, or [extracted from vector layers.](spectra-vector.md). Note
+that the bands need to have their wavelength information stored in the Platform
+product. Data managed by EDA, such as the Bare Earth Composites and public
+hyperspectral datasets, have this by default. For personal products, ensure that
+at least the `wavelength_nm_center` property is defined for all spectral bands. Contact
+[support](mailto:support@earthdaily.com) for assistance with correctly loading data.
+
+1. From the `Spectra` header, select `Spectral query`.\
+   
+2. Select the layer and bands to query.\
+   
+
+3. Click `Start querying`. The cursor will change to a crosshair to indicate
+   that querying is enabled.
+4. Clicking the map will extract the values of the chosen layer at the selected
+   point and add it to the plot. Note that the color of the point on the map
+   will match the color of the spectrum in the plot.
+   
+
+    Query names will follow the `Query name stem` parameter in the dialog
+    (`Custom name 1`, `Custom name 2`, etc)
+
+5. Right clicking on the map will exit the querying session, and clicking
+   `Start querying` again will begin a new one.
+6. Changing the layer or bands in the dialog will change the queried data going
+   forward. \
+   
+7. Points can be renamed or given a different color.\
+   
+8. When all points have been queried, click `Add selected spectra` to add all of
+   the currently visible spectra to the project. Unselected spectra will not be
+   added.\ \
+   
+
+    Point geometry associated with spectral queries can be downloaded using the
+    overflow menu of the individual spectra.
+
+---
+
+## Spectra from vector
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/spectra/spectra-vector/
+Keywords: compute spectra, vector spectra, polygon spectra, median spectrum, spectral extraction, Marigold
+
+## Compute spectra over vector
+
+Spectral information in a raster layer can be extracted in two ways: individual
+points ([Spectral query](spectra-query.md)), or extracted from vector layers. Note
+that the bands need to have their wavelength information stored in the Platform
+product. Data managed by EDA, such as the Bare Earth Composites and public
+hyperspectral datasets, have this by default. For personal products, ensure that
+at least the `wavelength_nm_center` property is defined for all spectral bands. Contact
+[support](mailto:support@earthdaily.com) for assistance with correctly loading data.
+
+1. From `Spectra` header, select `Add spectra to project`.\
+   
+2. From the dropdown, select `Compute spectra from vectors` and click
+   the `Load spectra using the chosen method` button.\
+   
+3. Choose the raster layer to extract a spectrum from, and the bands to use.
+4. Choose at least one target vector. One spectrum will be computed for each AOI
+   chosen.\
+   
+
+    Only polygon and point vectors are available with this tool.
+
+5. Select whether to compute spectra for each feature in the vector, or to take
+   the median across the features.
+
+    If computing a point vector, unselecting the median option is equivalent to taking
+    [spectral queries](spectra-query.md) of each point in the layer.
+
+5. Choose a base name for the spectra and click `Load Spectra`. If
+   `Take median of spectra across features` is selected, one spectrum per selected
+   vector will be generated. Otherwise, it will generate one spectrum per feature.
+
+---
+
+## Spectra from file
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/spectra/spectra-file/
+Keywords: load spectra, ASCII spectra, instrument spectra, spectrometer, spectral import, Marigold
+
+## Load spectra from external file
+
+Spectra can be brought into Marigold from several types of sources:
+
+- [ASCII spectra](#ascii-spectra)
+- [Instrument spectra](#instrument-spectra)
+- [A Marigold spectral library](#marigold-spectral-library)
+
+All of these methods are available by opening the Spectra menu and selecting
+`Add spectra to project`.
+
+### **ASCII spectra**
+
+ASCII spectral libraries can be loaded into Marigold.
+
+1. Select `Upload ASCII spectra` and click
+   `Load spectra using the chosen method`.\
+   
+2. Click the `Upload spectra` link on the resulting dialog and choose an
+   appropriate file. A preview of the file will be shown in the dialog.\
+   \
+   
+3. For generic text files such as CSVs, set the number of header lines.
+   If the first line in the file represents header values, check the box.\
+4. Set the appropriate column for `Wavelength` information and whether
+   wavelengths are defined in micrometers or nanometers.\
+5. Select and name thedesired spectra and click `Load spectra`. Spectra are
+   now available for further use.\
+   
+
+### **Instrument spectra**
+
+Marigold can load binary files from spectrometers such as _what are some brands
+of these things_.
+
+1. Select `Upload instrument spectra` and click
+   `Load spectra using the chosen method`.\
+   
+2. Select the files you want to load.\
+   
+3. A dialog will pop up allowing you to rename each spectrum, if desired.
+4. Spectra will be loaded into the project for further use.\
+   
+
+### **Marigold spectral library**
+
+Spectra that have been
+[saved from another Marigold project](index.md#save-a-spectral-library) can be
+loaded into a new project.
+
+1. Select `Add from a previously saved Marigold spectral library` and select
+   `Load spectra using the chosen method`.\
+   
+2. Choose the appropriate Marigold spectral library. Spectra will be loaded
+   automatically, along with any associated point or vector files.\
+
+---
+
+## Spectra from library
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/spectra/spectra-library/
+Keywords: spectral library, USGS, mineral spectra, load spectra, spectral analysis, Marigold
+
+## Load spectra from library
+
+Spectra can be loaded from an available spectral library. The USGS Spectral
+Library is available for all users, as well as any user
+[exported spectra](index.md#save-to-a-library). Additional libraries may be
+imported as well, contact [support](mailto:support@earthdaily.com) for additional support.
+
+1. From `Spectra` header, select `Add spectra to project`.\
+   
+2. From the dropdown, select `Add from an existing spectral library` and click
+   the `Load spectra using the chosen method` button.\
+   
+3. If multiple libraries are available, they will appear in the `Select Library`
+   dropdown. Select the proper library, the columns in the library you wish to
+   view, and which columns to use for the search. Click `Load mineral` to search
+   the chosen library.\
+   
+
+    Leaving the search field blank will return the whole library.
+
+4. Select representative samples of the chosen minerals. If more than one sample
+   is chosen, spectra can be loaded either as individual samples, or the mean of
+   all selected spectra will be loaded.\
+   \
+   
+
+    Use the `Legend field` dropdown to change the value used in the plot's legend.
+
+5. If loading the mean spectrum, provide a name for the output, or else choose the
+   field that will be used to name the output spectra. Click “Add spectrum” to load
+   the chosen spectra, which will now be available for use.
+
+---
+
+## Saving and loading projects
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/save-and-load/
+Keywords: save project, load project, autosave, share project, project management, Marigold
+
+## Saving and loading projects
+
+Marigold projects can be saved, shared with other users, and loaded again.
+Saving a project provides a working snapshot of everything in the project,
+including all raster layers, vector layers, and spectra. When you load a saved
+project, the map will go to the location where the project was saved, load all
+of the layers and spectra, and set the visualization of everything exactly how
+it was when it was saved.
+
+### **Saving a project**
+
+Click the `Save` button on the [header bar](header.md) to save your project.
+
+### Filename
+
+Type in a name for your saved project. Projects are saved using
+[Blob Storage](https://docs.earthone.earthdaily.com/guides/catalog.html#blobs).
+
+    Blob storage supports using folders in filenames to keep your projects
+    organized.
+
+### Sharing emails
+
+If desired, type in a comma separated list of emails of users to share the
+project with. Shared projects will appear in there project list with a
+`(shared)` indicator.
+
+### Organization sharing
+
+This checkbox can be used to share the project with all users in your
+organization.
+
+### **Autosaves**
+
+Marigold will autosave your project after operations such as loading layers from
+[Catalog](raster-layers/add-layers.md#add-a-raster-layer-from-the-catalog) or
+running many of the [processes](processes/index.md) available. An indicator on
+the header bar will appear after the project is autosaved. Autosaves are generated
+for each project individually - if a project has an autosave available, you will
+have the option in the [load project](#loading-a-project) dialog to load the
+manual or autosaved version.
+
+### **Loading a project**
+
+The `Load` button on the [header bar](header.md) will bring up a dialog allowing
+you to load previously saved projects. Projects can be sorted by either name or
+date, and you have the option of listing only your own projects or projects that
+were shared with you.
+
+    After loading a project, if you save it again, the name will be pre-populated in
+    the [filename](#filename) field of the save dialog.
+
+### Uploading and downloading saves
+
+Use the `Download` icon next to the project date to download a copy of the file
+to your local computer. Such files can be uploaded using the link in the loading
+dialog, which will add them to your project list for future use.
+
+### Deleting saves
+
+Use the `Delete` icon next to the Download icon to delete a saved file.
+
+    Shared projects cannot be deleted by anyone other than the owner.
+
+---
+
+## Processing basics
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/
+Keywords: processing tools, product selection, band selection, spectra selection, AOI, Marigold
+
+## Processing basics
+
+Marigold supports a wide variety of processing tools that share many
+components in common.
+
+### **Selecting a product**
+
+The first decision for most tools is the input product for the process.
+This is often in the form of a dropdown list containing available products
+for selection.
+
+    Not all layers will be available for all processes! For example, the
+    standard [mineral index](mineral-indices.md) tool is not available for
+    hyperspectral layers. Instead you must use the mineral index analag tool,
+    which only accepts hyperspectral data.
+
+    The product dropdown will update when [new layers](../raster-layers/add-layers.md)
+    are added to the project.
+
+### **Selecting bands**
+
+For most processes, you have the choice of what bands in the layer to process.
+For example, with hyperspectral datasets it is often useful to limit analysis to
+only the wavelengths corresponding to the minerals you are currently trying to
+indicate (eg, looking at bands from 2180-2225nm when mapping white micas).
+
+For data without spectral bands, band selection will appear as a simple list of
+checkboxes.
+
+Spectral data can be selected either with a list of checkboxes or by typing in the
+wavelengths to use.
+
+After selecting desired bands, click the `Update band selection` button to show
+the position of the selected bands on the graph.
+
+### **Selecting spectra**
+
+For processes that use spectral data such as [spectral angle mapper](sam.md),
+a list of available vectors and spectra will be presented as well. Spectra will
+be used directly, while selecting a vector will run the same process as
+[extracting vector spectra](../spectra/spectra-vector.md) to compute an average
+spectrum over the vector.
+
+    Non-spectral data will only allow Vector targets.
+
+    If the product has spectral bands, selecting a spectrum will plot it on the
+    band plot.
+
+### **Selecting an AOI**
+
+Many processes use specific AOIs as input in addition to the layer itself. For
+example, [PCA](pca.md) requires an AOI to compute the statistics which will
+be applied dynamically to the whole layer. These processes will contain a
+dropdown that will have all of your vector layers, as well as an option to
+compute over the current map viewport.
+
+    Low zoom levels can create very large AOI!
+
+### **Output layers**
+
+Dialogs will have an area to input a name for the resulting output layer. Many
+dialogs will generate a "preview" layer with this name that will update as you
+adjust the parameters of the process. You can find this layer in your layer list,
+with all of the same [configuration options](../raster-layers/index.md#basic-layer-configuration) as a normal layer.
+
+    Pressing `Cancel` on a dialog will delete the preview layer.
+
+---
+
+## Band ratios
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/band-ratio/
+Keywords: band ratio, spectral bands, mineral groups, band algebra, remote sensing, Marigold
+
+## Band ratio
+
+The **Band ratio** tool divides one spectral band by another to highlight or
+suppress certain features of mineral groups.
+
+**Usage:**
+
+- Click the **Band ratio** link in the **Processing toolbox** dropdown menu.
+- Choose an available product from the **Product** dropdown menu. This menu
+  includes all the raster layers you've added to your session. Choose the
+  spectral band you want to represent the numerator and the spectral band you
+  want to represent the denominator in the **Numerator** and **Denominator**
+  dropdown menus.
+
+    The numerator and denominator must be selected from the same raster layer. To
+    compute ratios for bands in different products, use the
+    [Merge layers](merge-layers.md) tool.
+
+- Name the output layer by typing it into the **Output layer** name field.
+  Examples include "B4/B2", "Gossan" and "ASTER B4/B2".
+
+    Predefined band ratios and indices are available via the
+    [Mineral indices](mineral-indices.md) tool.
+
+- A preview of the new output layer will be added to the **Raster layers** index
+  on the left side of the Marigold user interface. To add the layer permanently
+  and close the dialog, click **Calculate band ratio**.
+
+    To compute complex band ratios, such as a ratio of sums, use the
+    [Raster calculator](raster-calculator.md).
+
+---
+
+## Raster calculator
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/raster-calculator/
+Keywords: raster calculator, band algebra, mathematical expressions, NDVI, custom masks, Python syntax, Marigold
+
+## Raster calculator
+
+The **Raster calculator** executes mathematical expressions from bands and
+arithmetic operators.
+
+**Usage:**
+
+- Click the **Raster calculator** link in the **Processing toolbox** dropdown
+  menu.
+- Choose an available product from the **Product** dropdown menu. This menu
+  includes all the raster layers you've added to your session.
+
+    To select bands from different products, first use the
+    [Merge layers](merge-layers.md) tool.
+
+- Use the **Operations** and **Bands** buttons to create the expression you'd
+  like to execute, or type the expression directly into the Expression dialog
+  box.
+
+    The **Raster calculator** follows Python syntax.
+
+    To create a binary mask using logical operators, use parentheses to separate
+    each condition in the **Expression** dialog box.
+
+- If this is a common expression you may use again, you can save the expression
+  with a given name. Unless the **Allow overwrite** box is checked, you cannot
+  overwrite expression names.
+
+    Expressions will follow band names, so it may be useful to name something
+    like "BEC NDVI" or "EnMAP NDVI". 
+
+    By default, expressions cannot be overwritten. If you would like to overwrite
+    a name, select the **Allow overwrite** button.
+
+- If you would like to use a previously saved expression, select it from the dropdown.
+  The expression will populate within the expression window, so you can still edit it
+  before applying, if desired.
+
+    Custom expressions can be deleted in the [Settings](../header.md#user-settings) dialog.
+
+- Name the output layer by typing it into the **Output layer** name field.
+  Examples include "NIR-R/NIR+R", "NDVI", and "S2 NDVI". If you using a
+  saved expression, that name will be automatically populated here, though
+  you can still overwrite it. After clicking `Calculate`, the new output
+  will be added to the **Raster layers** index on the left side of the
+  Marigold user interface.
+
+---
+
+## Rapid mapping outputs
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/rapid-mapping-outputs/
+Keywords: rapid mapping, mineral indices, RGB composites, ternary ratios, preset indices, Marigold
+
+## Rapid mapping outputs
+
+The **Rapid mapping outputs** tool builds on the [Mineral indices](mineral-indices.md) tool to
+provide convenient presets that can be used to highlight specific mineral groups,
+RBG layers, and TRatios for interpretation or classification alongside
+other data derivatives.
+
+    More information on RGBs for Sentinel-2 can be found [here](https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/composites/).
+
+**Usage:**
+
+- Choose an available product from the **Product** dropdown menu. This menu
+  includes the raster layers you've added to your session that have spectral
+  bands.
+
+    Hyperspectral data will be approximations. Indices will be available if the dataset contans a band that is less than 50nm from the target reference band, but there still may be differences in the output indices, since the indices were developed using different datasets.
+
+- At the top, toggle between **Mineral indices**, **RGBs**, and **TRatios**. For each given type, you can select up to 3 indices to add as a separate layer to your map.
+
+    Not all indices will be available for all products. For example, the Sentinel-2
+    Bare Earth Composite only has `swir1` and `swir2` shortwave infrared bands, so
+    any index that requires another SWIR band will not be available for output from
+    that product.
+    
+
+    You will be taken to the **Mineral indices** page by default, but can access the other types of indices
+    using the toggle button at the top.
+
+- Once up to 3 indices have been chosen, select an output name, which will be included
+  along with the name of the index for each product. Optionally, output layers may be
+  scaled with a linear contrast stretch (similar to using the magic wand autoscale button)
+  to aid in visualization. While the typical linear stretch goes between the 2nd and 98th
+  percentile, you may choose to stretch these at different percentages. Click the **Generate indices** button to generate the selected indices.
+
+---
+
+## Mineral indices
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/mineral-indices/
+Keywords: mineral indices, band ratios, iron oxides, hydrothermal minerals, carbonates, silicates, Marigold, spectral analysis
+
+# Mineral indices
+
+The **Mineral indices** tool provides convenient presets that can be used to
+highlight specific mineral groups for interpretation or classification alongside
+other data derivatives. All bands listed below are defined for the Bare Earth
+Composite, although any multispectral product with similar wavelength bands can
+be used with this tool
+
+    Not all indices will be available for all products. For example, the Sentinel-2
+    Bare Earth Composite only has `swir1` and `swir2` shortwave infrared bands, so
+    any index that requires another SWIR band will not be available for output from
+    that product.
+
+## Iron (Fe) oxides
+
+| Index                                                                                                                                                                                                                   | Calculation                                                             | Practical experience at EarthDaily                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [Ferric oxide composition (Fe3+)](https://ecat.ga.gov.au/geonetwork/srv/eng/catalog.search#/metadata/74352)                                                                                                             | \( \frac{\text{red}}{\text{green}} \)                                   | Useful for mapping hematite, goethite, and jarosite. Also works well for gossans, especially NiCu-PGEs. |
+| [Ferric oxide content (Fe3+)](https://researchdata.edu.au/national-aster-map-oxide-content/1426391?source=suggested_datasets)                                                                                           | \( \frac{\text{swir1}}{\text{nir}} \)                                   | Results can be ambiguous, especially in vegetated areas.                                                |
+| [Ferrous iron (Fe2+)](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                             | \( \frac{\text{swir2}}{\text{nir}} + \frac{\text{green}}{\text{red}} \) | Tends to map hematite and goethite, and may also pick up Fe-oxide sediments.                            |
+| [Gossan](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                          | \( \frac{\text{swir1}}{\text{red}} \)                                   | Maps hematite and goethite, but results can be ambiguous.                                               |
+| [Laterite](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                        | \( \frac{\text{swir1}}{\text{swir2}} \)                                 | Rarely works well in practice.                                                                          |
+| [Ferrous iron index](https://researchdata.edu.au/national-aster-map-iron-index/1426405?source=suggested_datasets)                                                                                                       | \( \frac{\text{swir2}}{\text{swir1}} \)                                 | Highlights ferrous iron content in MgOH silicates (mafic, U/M lithologies, Fe-rich carbonates).         |
+| [Iron WV index](https://www.itu.int/en/ITU-D/Regional-Presence/AsiaPacific/SiteAssets/Pages/Events/2018/Drones-in-agriculture/asptraining/03_Satellite%20data%20processing%20multispectral%20data%20analysis%20red.pdf) | \( \frac{\text{green} \cdot \text{red} \cdot 100}{\text{blue}} \)       | Works well with IOCG deposits.                                                                          |
+
+## Hydrothermal minerals, micas, clays, & sulphates
+
+| Index                                                                                                                                                                                                                                                                                                                           | Calculation                                                                   | Practical experience at EarthDaily                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [AlOH B5 group content](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                                                                                                                   | \( \frac{\text{swir1} + \text{swir3}}{\text{swir2}} \)                        | May map advanced argillic alteration. Often favors kaolinite and dickite.                                                                                          |
+| [ALI index](https://www.researchgate.net/profile/Yoshiki-Ninomiya/publication/4064304_A_stabilized_vegetation_index_and_several_mineralogic_indices_defined_for_ASTER_VNIR_and_SWIR_data/links/579ad99808ae7b940a8aa59b/A-stabilized-vegetation-index-and-several-mineralogic-indices-defined-for-ASTER-VNIR-and-SWIR-data.pdf) | \( \frac{\text{swir4}^2}{\text{swir2} \cdot \text{swir5}} \)                  | Works well for epithermal alunites. May also map mixed alteration compositions.                                                                                    |
+| [Kaolin group index](https://researchdata.edu.au/national-aster-map-group-index/1426397?source=suggested_datasets)                                                                                                                                                                                                              | \( \frac{\text{swir3}}{\text{swir2}} \)                                       | Highlights ordered clays, hydrothermal alteration, and advanced argillic alteration. Differentiates between well-ordered and poorly-ordered/transported kaolinite. |
+| [Phengitic mica](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                                                                                                                          | \( \frac{\text{swir2}}{\text{swir3}} \)                                       | Highlights phengitic mica or host rock, and other AlOH minerals.                                                                                                   |
+| [Hewson kaol](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                                                                                                                             | \( \frac{\text{swir4}}{\text{swir2}} \)                                       | May include kaolinite and other AlOH minerals.                                                                                                                     |
+| [Mica clay](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                                                                                                                               | \( \frac{\text{swir4}}{\text{swir3}} \)                                       | May include muscovite and other AlOH minerals.                                                                                                                     |
+| [AlOH B6 group content](https://researchdata.edu.au/national-aster-map-group-content/1426395?source=suggested_datasets)                                                                                                                                                                                                         | \( \frac{\text{swir2} + \text{swir4}}{\text{swir3}} \)                        | Highlights AlOH minerals: sericite, paragonite, muscovite, phengite, illite, smectite, lepidolite, and phyllic alteration.                                         |
+| [AlOH group composition](https://researchdata.edu.au/national-aster-map-group-composition/1426392?source=suggested_datasets)                                                                                                                                                                                                    | \( \frac{\text{swir2}}{\text{swir4}} \)                                       | May aid in separation of Al-rich and Al-poor micas.                                                                                                                |
+| [Alteration](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                                                                                                                              | \( \frac{\text{swir1}}{\text{swir2}} \)                                       | Non-specific, so not particularly effective in practice.                                                                                                           |
+| [Clay](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                                                                                                                                                                                                                                    | \( \frac{\text{swir2} \cdot \text{swir4}}{\text{swir3}^2} \)                  | Non-specific, so not particularly effective in practice.                                                                                                           |
+| KLI Index                                                                                                                                                                                                                                                                                                                       | \( \frac{\text{swir1} \cdot \text{swir5}}{\text{swir2} \cdot \text{swir3}} \) | Mixed results in practice.                                                                                                                                         |
+
+## Carbonates/mafic silicates
+
+| Index                                                                                                                        | Calculation                                                                     | Practical experience at EarthDaily                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [Phyllosilicates](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                      | \( \frac{\text{swir3}}{\text{swir5}} \)                                         | Highlights NiCu-PGEs: weathered magmatics (amphiboles) and other phyllosilicates.                        |
+| [MgOH group composition](https://researchdata.edu.au/national-aster-map-group-composition/1426404?source=suggested_datasets) | \( \frac{\text{swir4}}{\text{swir5}} \)                                         | Highlights propylitic alteration (chlorite, epidote); dolomite vs calcite.                               |
+| [MgOH B8 group content](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                | \( \frac{\text{swir4} + \text{swir6}}{\text{swir5}} \)                          | Highlights propylitic alteration (chlorite, epidote); dolomite.                                          |
+| [MgOH group content](https://www.dmp.wa.gov.au/Documents/Geological-Survey/GSWA-ASTER_GeoscienceProduct_Notes.pdf)           | \( \frac{\text{swir3} + \text{swir6}}{\text{swir4} + \text{swir5}} \)           | Useful for screening for MgOH minerals: carbonates and endoskarn.                                        |
+| [MgOH carb](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                            | \( \frac{\text{swir3} + \text{swir6}}{\text{swir5}} \)                          | Can emphasize either MgOH or carbonate.                                                                  |
+| [FeOH B7 group content](https://www.dmp.wa.gov.au/Documents/Geological-Survey/GSWA-ASTER_GeoscienceProduct_Notes.pdf)        | \( \frac{\text{swir3} + \text{swir5}}{\text{swir4}} \)                          | Highlights hydrated Fe, Mg-OH minerals. May also include gibbsite, jarosite, and (potentially) dolomite. |
+| WV3 carb index                                                                                                               | \( \frac{\text{swir3}}{\text{swir4} + \text{swir5}} \)                          | Mixed results in practice.                                                                               |
+| Calcite index 1                                                                                                              | \( \frac{\text{swir6} - \text{swir5}}{\text{swir6} + \text{swir5}} \)           | This is a normalized index designed to map calcite, especially with topography.                          |
+| CLI index                                                                                                                    | \( \frac{\text{swir3}}{\text{swir5}} \cdot \frac{\text{swir6}}{\text{swir5}} \) | Reported to map calcite and dolomite with mixed results.                                                 |
+| [Carbonate Index (CI)](https://www.ga.gov.au/webtemp/image_cache/GA7833.pdf)                                                 | \( \frac{\text{emiss13}}{\text{emiss14}} \)                                     | Limited success in practice.                                                                             |
+
+## Silicates and others
+
+| Index             | Calculation                                                        | Practical experience at EarthDaily                                                             |
+| ----------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Host rock         | \( \frac{\text{swir2}}{\text{swir3}} \)                            | Results are dependent on the environment. The same calculation is relevant for phengitic mica. |
+| Opaque index      | \( \frac{\text{green}}{\text{swir1}} \)                            | Works well for magnetite-bearing rocks, BIF, and Mn oxides. Complicated by albedo effects.     |
+| Silica index (SI) | \( \frac{\text{emiss13}}{\text{emiss12}} \)                        | Often provides similar results as \( \frac{\text{emiss5}}{\text{emiss3}} \).                   |
+| Quartz rocks      | \( \frac{\text{emiss14}}{\text{emiss12}} \)                        | Highlights quartz-rich rocks.                                                                  |
+| Quartz index (QI) | \( \frac{\text{emiss11}^2}{\text{emiss10} \cdot \text{emiss12}} \) | Highlights quartz-rich materials.                                                              |
+| Garnet index (GI) | \( \frac{\text{emiss12}}{\text{emiss13}} \)                        | Basic degree index.                                                                            |
+| Silica 2          | \( \frac{\text{emiss11}}{\text{emiss10}} \)                        | Maps silica content.                                                                           |
+| Silica 3          | \( \frac{\text{emiss11}}{\text{emiss12}} \)                        | Another index for silica mapping.                                                              |
+| TIR Silica index  | \( \frac{\text{emiss13}}{\text{emiss10}} \)                        | May help map silica.                                                                           |
+| TIR Quartz index  | \( \text{emiss11} \cdot (\text{emiss10} + \text{emiss12}) \)       | May help map quartz.                                                                           |
+| TIR Gypsum index  | \( \frac{\text{emiss10} + \text{emiss12}}{\text{emiss11}} \)       | Can help map gypsum in the absence of dry vegetation and quartz-rich rocks.                    |
+
+## Non-mineral indices
+
+| Index                                              | Calculation                                                                                 | Practical experience at EarthDaily                                                                                    |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| NDVI (Normalized Difference Vegetation Index)      | \( \frac{\text{red - nir}}{\text{nir + red}} \)                                             | Successful at identifying most vegetation.                                                                            |
+| NDSI (Normalized Difference Snow Index)            | \( \frac{\text{green - swir1}}{\text{green + swir1}} \)                                     | Highlights both snow and ice.                                                                                         |
+| NDWI (Normalized Difference Water Index)           | \( \frac{\text{green - nir}}{\text{green + red}} \)                                         | Good for open water and tailings.                                                                                     |
+| MNDWI (Modified Normalized Difference Water Index) | \( \frac{\text{green - swir1}}{\text{green + swir1}} \)                                     | Good for differentiating between water and built structures/shadow.                                                   |
+| NDGI (Normalized Difference Glacier Index)         | \( \frac{\text{green - red}}{\text{green + red}} \)                                         | Good for differentiating between glaciers and bare rock, though results are dependent on the environment.             |
+| BSI (Bare Soil Index)                              | \( \frac{\text{red + swir1} - \text{nir + blue}}{\text{red + swir1} + \text{nir + blue}} \) | Good for identifying bare soil vs vegetation and urban environments, though results are dependent on the environment. |
+
+---
+
+## Vegetation masking
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/vegetation-mask/
+Keywords: vegetation mask, NDVI, MTCI, radar backscatter, masking, mineral exploration, Marigold
+
+## Vegetation mask
+
+The **Vegetation mask** tool is used to identify and mask out vegetation in a
+layer when you do not want to consider vegetated areas in your analysis.
+Creating a vegetation mask is often one of the first steps in a mineral
+exploration workflow as vegetation conceals the underlying geology.
+
+### **Usage**
+
+- Use the **MERIS terrestrial chlorophyll index (MTCI) threshold** slider in the
+  preview pane to detect and mask out healthy vegetation. The lower the value,
+  the more vegetation will be masked out.
+- Use the **Normalized difference vegetation index (NDVI)** threshold slider to
+  accentuate differences between reflected near infrared (NIR) light, which
+  plants generally don't absorb, and red light, which plants generally do absorb
+  as a source of energy and photosynthesis. Because vegetation produces a high
+  NDVI value and bare areas produce a low value, setting a low threshold value
+  mask out more vegetation.
+- Use the **VH cross polarized backscatter (radar response) threshold** slider
+  to take advantage of a phenomenon called deep polarization that occurs when
+  radar waves hit vegetation. As with the other indices, a low threshold setting
+  will mask out more areas and a high threshold will mask out fewer areas.
+- To save your vegetation mask, click the **Calculate vegetation mask** button
+  at the bottom of the preview pane. The mask will now be available to apply to
+  a layer using the [Apply a mask](apply-a-mask.md) tool.
+
+    As you adjust the threshold sliders, at least two out of three of the indices
+    must agree that a given pixel is vegetation for it to be marked as such in the
+    output mask.
+
+---
+
+## Water masking
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/water-mask/
+Keywords: water mask, water occurrence, masking, water detection, mineral exploration, Marigold
+
+## Water mask
+
+The **Water mask** tool is used to identify and mask out water in a layer when
+you do not want to consider areas under water in your analysis.
+
+### **Usage**
+
+- Use the single slider to select the frequency of scenes for which a pixel
+  marked as water must have water in it. A low value, such as 10, will reveal
+  many pixels marked as water, compared to a higher value, such as 90.
+
+    The **Water mask** tool uses a method that describes the frequency of water
+    occurrence on a land surface from the period of 1984 to 2015. A value of 0
+    corresponds to surfaces that are never under water, while a value of 100
+    corresponds to surfaces that are always under water. To create your own water
+    mask based on different dataset(s) or methods, use the
+    [Raster calculator](raster-calculator.md) tool.
+
+- When you set a value that you like, click the **Calculate water mask** button
+  to save your water mask in the **Raster layers** dropdown menu. The mask will
+  now be available to apply to a layer using the [Apply a mask](apply-a-mask.md)
+  tool.
+
+    Using the settings dialog of a mask layer, you can
+    [hide low values](../raster-layers/layer-settings.md#extrema-masking) to show
+    only the areas identified as water.
+
+---
+
+## Batch mask
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/batch-mask/
+Keywords: batch mask, multiple masks, vegetation mask, water mask, raster masking, Marigold
+
+## Batch mask
+
+Generally during a remote sensing workflow, several masks will need to be
+applied to a data layer before analysis can begin.
+[Vegetation](vegetation-mask.md) and [water](water-mask.md) will need to be
+masked for most areas in the world, and oftentimes individual AOIs (built up
+areas, restricted land, etc) will need to be removed as well. The **batch mask**
+tool allows a user to apply several masks to many layers at once, quickly
+preparing layers for further analysis.
+
+### **Usage**
+
+Once all your masks are built and properly assigned as
+[masks](../raster-layers/index.md#toggle-as-mask), the batch mask tool will show
+lists of:
+
+- Mask rasters
+- Vectors
+- Non-mask rasters
+
+Any number of masks (both vector and raster) can be selected and applied to any
+number of rasters.
+
+In the above example, we are applying the [vegetation](vegetation-mask.md) and
+[water](water-mask.md) output from those tools, as well as a snow mask built
+using the [raster calculator](raster-calculator.md). We will apply all masks to
+the three Bare Earth Composite products we have loaded. Click `Mask layers` to
+apply the masks.
+
+    The output name will be appended to the input layer's name for the final masked
+    products. In the above example, masking the `Fused Bare Earth Composite` layer
+    will generate a layer named `Fused Bare Earth Composite_Veg-Snow-Water Masked`.
+
+---
+
+## Apply mask
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/apply-a-mask/
+Keywords: apply mask, masking, vegetation mask, water mask, raster mask, vector mask, Marigold
+
+## Apply a mask
+
+Masks are useful for visualizing where water, vegetation, and other features are
+present in a given land area and removing them before analysis.
+
+### **Creating mask layers**
+
+Mask layers can be created using the [vegetation mask](vegetation-mask.md) or
+[water mask](water-mask.md) tools, or created from a binary layer computed using
+the [raster calculator](raster-calculator.md). Once a layer is created that you
+want to use as a mask, be sure to
+[mark it as a mask](../raster-layers/index.md#toggle-as-mask) so that it can be
+used in this dialog.
+
+    Water and vegetation masks created using those tools will be automatically
+    marked as masks.
+
+### **Masking layers**
+
+- Use the **Product to mask** dropdown menu to choose the layer you want masked.
+- Use the **Mask** dropdown menu to choose the layer to use as a mask. Either
+  raster or vector layers can be used.
+- Once valid inputs are chosen, a preview layer will be generated showing the
+  new masked data.
+
+    You may need to turn off the input layers to ensure your final masked layer
+    looks how you expect.
+
+- Use the `Invert mask` flag to invert the mask - mask outside a vector instead
+  of inside, for example.
+
+---
+
+## Principal component analysis
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/pca/
+Keywords: PCA, principal components analysis, dimensionality reduction, explained variance, loadings plot, multispectral, Marigold
+
+## Principal components analysis
+
+Principal components analysis (PCA) is a technique for data analysis and
+dimensionality reduction. The process computes a linear transformation of of the
+data in such a way that the variations in the data are explained with fewer
+components - in other words, instead of analyzing 20+ bands of a multispectral
+dataset, you can analyze three principal components that explain 90% of the
+data.
+
+    More detailed information about PCA, including the math behind it, can be found
+    [here](https://en.wikipedia.org/wiki/Principal_component_analysis).
+
+    For noisy data, the [MNF](mnf.md) tool may be more appropriate.
+
+### **Computing the transformation**
+
+The PCA dialog is broken up into two steps. The first step allows you to select
+the [product](index.md#selecting-a-product), [bands](index.md#selecting-bands)
+and [AOI](index.md#selecting-an-aoi) for analysis, along with inputting a name
+for the result. Click `Train PCA` to compute the transformation and load the
+second page of the dialog.
+
+    PCA is not valid for one band data, at least two must be selected.
+
+### **Analysis and application**
+
+The second page of the dialog contains tools for quality control of the
+transformation and a way to apply it to the full dataset.
+
+    Use the `Previous` button to return to the first page to select different a
+    different product or bands, or a different AOI.
+
+### Explained variance plot
+
+The explained variance plot shows what percentage of the data is explained by
+each principal component. In the above example, we see that the first component
+explains almost 90% of the data, meaning our input bands were highly correlated.
+
+### Loadings plot
+
+The loadings plot shows how strongly each input band affects the chosen
+principal components. Hover over the arrows to show the bands represented. In
+this example, computed from the Fused Bare Earth Composite, we can see that all
+of the bands have a strong impact on component 1 (as they are positive along
+that axis). The two clusters represent the Visible to NIR bands in Quadrant 1,
+and the SWIR bands in Quadrant 2, showing that the Visible to NIR bands have a
+positive effect on Component 2 while the SWIR bands have a negative one. The
+clustering effect also indicates that these bands are highly correlated with
+each other.
+
+    Use the dropdowns to change the components represented in the loadings plot.
+
+### Apply PCA
+
+Use the `Apply PCA` button to apply the transformation to the layer, creating a
+new layer with the chosen output name. By default the layer will be plotted with
+Components 1, 2, and 3 mapped to RGB.
+
+    The transformed layer will have the same number of bands as were input into the
+    transformation. For example, if all of the product's bands were chosen, the
+    transformed layer will have the same number of bands as the input product.
+
+    Although the transformation will be applied dynamically to the layer, keep in
+    mind that it was computed over a specific AOI, and the variance and loadings are
+    only valid over the input AOI. If you are moving to a new geologic regime, it is
+    often necessary and wise to recompute the transformation in the new area instead
+    of relying on the original statistics.
+
+### Download PCA statistics
+
+Use these buttons to download the PCA statistics to your computer in text format.
+Options are available to download the eigenvectors (shown in the [loadings plot](#loadings-plot)),
+eigenvalues, and the explained variance (shown in the [variance plot](#explained-variance-plot)).
+
+---
+
+## Decorrelation stretch
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/dcs/
+Keywords: decorrelation stretch, DCS, image contrast, ASTER processing, spectral enhancement, Marigold
+
+## Decorrelation stretch
+
+Decorrelation stretch (DCS) is a process that increases the contrast of an image
+by decorrelating the input bands. In the image above, note how shades of brown
+are transformed into more vibrant primary colors, highlighting the subtle
+differences in the original image. Similar to [PCA](pca.md), the algorithm works
+by computing a linear transformation of the input, but unlike PCA it only works
+on three input bands at a time.
+
+    More detailed information about DCS with a focus on ASTER processing can be
+    found
+    [here](https://eospso.gsfc.nasa.gov/sites/default/files/atbd/ASTER_ATBD_99-2010.pdf).
+
+### **Usage**
+
+The DCS dialog allows you to select the [product](index.md#selecting-a-product),
+input bands to map to the decorrelated RGB image, and an
+[AOI](index.md#selecting-an-aoi) for analysis, along with inputting a name for
+the result. Click `Run DCS` to compute the transformation and add it to as a
+raster layer in the project.
+
+    Although the transformation will be applied dynamically to the layer, keep in
+    mind that it was computed over a specific AOI, and the variance and loadings are
+    only valid over the input AOI. If you are moving to a new geologic regime, it is
+    often necessary and wise to recompute the transformation in the new area instead
+    of relying on the original statistics.
+
+---
+
+## Minimum noise fraction
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/mnf/
+Keywords: MNF, minimum noise fraction, noise reduction, signal-to-noise ratio, dimensionality reduction, Marigold
+
+## Minimum noise fraction
+
+Minimum noise fraction (MNF) is a transform closely related to [PCA](pca.md),
+but with an added transformation to whiten any noise present in the data. The
+resulting transform will be similar to a traditional PCA with the signal-
+to-noise ratio maximized.
+
+This image shows the input Bare Earth Composite, MNF Component 1, and MNF
+component 15. As MNF orders the components by their signal to noise ratio, MNF
+15 is almost completely noise.
+
+### **Usage**
+
+The MNF dialog allows you to select the [product](index.md#selecting-a-product)
+and [bands](index.md#selecting-bands) for analysis in the same manner as PCA.
+Two [AOI](index.md#selecting-an-aoi)s are required. The first
+(`Area of interest`) contains the data from which the data covariances will be
+computed, and the second (`Noise area`) contains the data for the noise
+covariance. Input a name for the output, and click `Run MNF` to compute the
+transformation.
+
+    Flat, spectrally homogenous areas work best for input to the noise area. Use the
+    [spectral query](../spectra/spectra-query.md) tool to analyze the spectra of
+    your data to help select an appropriate AOI.
+
+    Although the transformation will be applied dynamically to the layer, keep in
+    mind that it was computed over a specific AOI, and the variance and loadings are
+    only valid over the input AOI. If you are moving to a new geologic regime, it is
+    often necessary and wise to recompute the transformation in the new area instead
+    of relying on the original statistics.
+
+---
+
+## Spectral angle mapping
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/sam/
+Keywords: spectral angle mapper, SAM, cosine similarity, spectral classification, mineral matching, target detection, Marigold
+
+## Spectral angle mapper
+
+The **Spectral angle mapper** can be used to find other areas of an
+image that match a given spectrum. The spectrum can be drawn from either
+[spectra](../spectra/index.md) previously added to the project, or a
+spectrum can be computed on the fly using a
+[vector layer](../vector-layers/index.md). The algorithm measures spectral
+similarity by calculating the angle between the input raster dataset and
+the targets, also known as
+[cosine similiarity](https://en.wikipedia.org/wiki/Cosine_similarity).
+
+    For spectral input layers, using a vector layer as input is equivalent
+    to [computing a spectrum from the vector](../spectra/spectra-vector.md)
+    and using that spectrum as the target.
+
+The above image shows two SAM results on the Fused Bare Earth Composite in
+the Cuprite region of Nevada, with a goal of mapping Alunite. One result
+comes from an Alunite spectrum from the [USGS library](../spectra/spectra-library.md),
+and the other comes from a [spectral query](../spectra/spectra-query.md) on a
+known Alunite area. Notice how the scores from the library spectrum are lower
+than those coming from the data directly, but both results show the same trend.
+
+    Spectra will be automatically resampled to the data wavelengths if necessary.
+
+### **Usage**
+
+The spectral angle mapper dialog allows you to choose the
+[raster layer](index.md#selecting-a-product) and [bands](index.md#selecting-bands)
+to use as input data, and [vector](index.md#selecting-an-aoi) and
+[spectra](index.md#selecting-spectra) to use as targets. Choose a name
+for the output layer and select `Run SAM` to create the output in the
+raster list. The output layer will have one band per chosen target.
+
+    Non-spectral input data will only allow vector targets.
+
+---
+
+## Spectral correlation mapping
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/scm/
+Keywords: spectral correlation mapper, SCM, Pearsonian correlation, spectral classification, mineral discrimination, Marigold
+
+## Spectral correlation mapper
+
+The **Spectral correlation mapper** (SCM) is an extension of
+[spectral angle mapper](sam.md) that better discriminate between positive
+and negative correlations. The algorithm uses the Pearsonian correlation
+coefficient to compute the correlation angle between the input layer
+and the chosen spectral targets.
+
+    A detailed explanation and motivation for SCM, with an application for
+    crop mapping, can be found [here](https://arxiv.org/pdf/1509.05767).
+
+### **Usage**
+
+The spectral correlation mapper dialog allows you to choose the
+[raster layer](index.md#selecting-a-product) and [bands](index.md#selecting-bands)
+to use as input data, and [vector](index.md#selecting-an-aoi) and
+[spectra](index.md#selecting-spectra) to use as targets. Choose a name
+for the output layer and select `Run SCM` to create the output in the
+raster list. The output layer will have one band per chosen target.
+
+    Non-spectral input data will only allow vector targets.
+
+---
+
+## Matched filter
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/mf/
+Keywords: matched filter, spectral unmixing, sub-pixel detection, mineral detection, background suppression, Marigold
+
+## Matched filter
+
+While we often assume that each pixel in our remote sensing datasets is
+homogeneous, in reality a single pixel will contain information from everything
+in that area. For example, for a Sentinel 2 pixel at 10m resolution, every
+mineral and piece of vegetation within that 10m will contribute to the final
+spectrum. The **matched filter** operation attempts to extract a single spectrum
+from this mixed input.
+
+    More information about the matched filter operation, including a mathematical
+    derivation, can be found [here](https://en.wikipedia.org/wiki/Matched_filter).
+
+A matched filter result for Kaolinite. These results can be checked against
+ground truth data for confirmation.
+
+### **Usage**
+
+The matched filter dialog allows you to choose the
+[raster layer](index.md#selecting-a-product) and
+[bands](index.md#selecting-bands) to use as input data, an
+[aoi](index.md#selecting-an-aoi) to use as the "background" data, and
+[vector](index.md#selecting-an-aoi) and [spectra](index.md#selecting-spectra) to
+use as targets.
+
+    The background AOI should not contain spectral data from the targets - these are
+    the data that will be filtered out during the operation.
+
+Choose a name for the output layer and select `Run matched filter` to create the
+output in the raster list. The output layer will have one band per chosen
+target.
+
+---
+
+## K-Means clustering
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/k-means/
+Keywords: k-means clustering, unsupervised classification, spectral clustering, inertia plot, data classification, Marigold
+
+## k-means clustering
+
+**k-means clustering** is an unsupervised classification technique that
+automatically finds groupings of data based on their spectral characteristics.
+k-means clustering does not assign meaning or labels to the clusters themselves,
+but rather relies on the user to interpret the classification.
+
+    More information about k-means clustering, including a mathematical derivation,
+    can be found [here](https://en.wikipedia.org/wiki/K-means_clustering).
+
+### **Prepare data**
+
+The k-means clustering dialog is split into two pages. The first contains the
+standard selection of the input [product](index.md#selecting-a-product),
+[bands](index.md#selecting-bands) and [AOI](index.md#selecting-an-aoi) for
+analysis, along with two parameters specific for the k-means computation.
+
+### Standardize input product
+
+Use this checkbox to standardize the selected input data by the mean and
+standard deviation of the data:
+
+$$ ScaledData = \\frac{data - mean}{std} $$
+
+Note that the data are scaled band-by-band - after this operation, each band
+will have a mean of 0 and standard deviation of 1.
+
+### Candidate k values
+
+When training the k-means model, one model will be created for each value in
+this range. This allows you to check several k-values (corresponding to the
+number of clusters in the data) before applying the clustering to the entire
+dataset.
+
+### Train model
+
+Click the `Train model` button to compute the models defined by your choice of
+k-values.
+
+### **Investigate and apply the model**
+
+The second page of the k-means clustering dialog allows you to interrogate the
+models defined by your chosen [k-values](#candidate-k-values), as well as give
+the final output layer a name.
+
+### Inertia plot
+
+The plot shows the "inertia" of the model at each selected k-value. This value
+represents the total sum of squared distances for each value in the dataset with
+each model.
+
+    Generally, an appropriate k-value will be a point where this curve starts to
+    flatten, representing a point of diminishing returns with an increased number of
+    clusters.
+
+### Number of clusters
+
+Adjusting this slider will change the model to the one corresponding to the
+selected number of k-values.
+
+### Run model
+
+When you are happy with your choice of k value, click `Run model` to finalize
+the output layer in the raster list.
+
+    Although the model will be applied dynamically to the layer, keep in mind that
+    it was computed over a specific AOI, and the inertia values are only valid over
+    the input AOI. If you are moving to a new geologic regime, it is often necessary
+    and wise to recompute the model in the new area instead of relying on the
+    original statistics.
+
+---
+
+## Assign class labels
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/class-labels/
+Keywords: class labels, classification, SAM results, probability mapping, raster classification, Marigold
+
+## Assign class labels
+
+The **Assign class labels** tool can be used to create a classified
+layer from an input containing bands that represent scores or probabilities
+from several sources. For example, after running [SAM](sam.md) for
+multiple targets, this tool can be used to select the highest score
+at each pixel and create a classified layer from the result.
+
+### **Usage**
+
+The Assign class labels dialog allows you to select the input
+[product](index.md#selecting-a-product) and choose an output name for the
+classified layer.
+
+### Mask low probabilities
+
+The `Mask low probabilities` checkbox allows you to mask any pixel where
+the band values are lower than the chosen `Threshold`.
+
+---
+
+## Prospectivity analysis
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/prospectivity/
+Keywords: prospectivity analysis, rule-based classification, mineral targeting, binary layer, exploration targeting, Marigold
+
+## Prospectivity analysis
+
+The **Prospectivity analysis** dialog allows you to create a binary layer from
+rules based on previously created layers.
+
+### **Usage**
+
+The prospectivity analysis dialog allows you to choose a layer, band, and rule
+from all available raster layers and bands in your project. After defining a
+rule for one layer and band, click `Add layer` to add another rule.
+
+    Any number of layer/band combinations can be used to create rules, and no checks
+    are made to ensure rules don't contradict each other.
+
+When you have created all of your desired rules, click `Run analysis` to create
+the prospectivity layer.
+
+---
+
+## Mineral map
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/mineral-map/
+Keywords: mineral map, classified layer, mineral indices, SAM results, mineral classification, Marigold
+
+## Mineral map
+
+The **Mineral map creator** tool is used to generate a classified layer from
+mineral indicator layers, such as [SAM](sam.md) results or computed
+[mineral indices](mineral-indices.md). By combining multiple layers, you can
+easily create a single map that shows all of the minerals of interest within
+your AOI.
+
+### **Usage**
+
+The mineral map creator dialog allows you to choose a layer, band, and clip
+value from all available raster layers and bands in your project, and give a
+name to each one. Click `Add layer` to add more classes to the output map, and
+click `Create map` to create the final output layer. The output layer will be a
+classified layer corresponding to each of the input layers and clipping values.
+
+    If one pixel in the output map can fall into multiple defined classes, the rule
+    at the topmost layer in the list will be used.
+
+---
+
+## Vectorize classified layer
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/vectorize/
+Keywords: vectorize, classified layer, raster to vector, polygon generation, spatial analysis, Marigold
+
+## Vectorize classified layer
+
+The **Vectorize classified layer** tool is used to generate a
+[vector layer](../vector-layers/index.md) from a binary or classified raster
+layer. The operation will generate a vector that corresponds to either the
+selected classes or the `True` values of a binary layer.
+
+### **Usage**
+
+### Select product and classes
+
+The vectorize classified layer tool allows you to select a binary or classified
+layer from your raster layers, then select the classes for which vectors will be
+generated.
+
+    Only binary and classified layers will appear in the Product dropdown.
+
+### Select an AOI
+
+Select the AOI over which vectors will be generated. Note that unlike most
+Marigold tools, this tool will not generate the vectors dynamically as you move
+the map around - vectors will only exist within this chosen AOI.
+
+### Smooth output polygons
+
+Gaussian smoothing can be applied to the data before vectoring. Higher numbers will create a larger smoothing kernel, which will create smoother polygons, and remove smaller polygons that you may be interpretting as noise.
+
+### Minimum area
+
+Use this slider to adjust the minimum size for the generated vectors. The minimum and
+maximum values of the slider will change based on the resolution of the data selected,
+and will be from 1x1 pixel to 10x10 pixels. If Gaussian smoothing is applied, size filters will be applied following the smoothing process.
+
+    Using a small value for minimum area can generate a lot of vectors, which will
+    degrade performance when displayed.
+
+### Vectorized data resolution
+
+Choose whether to compute the resolution of the vectorized data from the map view, or
+to use the resolution of the underlying data.
+
+    The map's resolution is based on the zoom level currently viewed, meaning that your
+    vectorization results will change when the process is run for two different zoom levels.
+
+---
+
+## HSI image explorer
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/hsi-image/
+Keywords: HSI image explorer, hyperspectral, EarthOne Catalog, time series, imagery query, Marigold
+
+## HSI image explorer
+
+The **HSI image explorer** tool allows you to query the EarthOne Catalog for
+public Hyperspectral data.
+
+### **Usage**
+
+The HSI image explorer tool allows you to select from publicly available
+Hyperspectral dataset, as well as an [AOI](index.md#selecting-an-aoi). If
+desired, imagery can be masked by the AOI. Press the `Collect data` button
+to search the EarthOne Catalog for imagery from the selected products over
+the chosen AOI.
+
+When the query is complete, the dialog will contain time series plots showing
+when imagery was collected for each product. Selecting points will add the
+image to the map as a layer.
+
+    Layers will contain data acquired on a single calendar day.
+
+    Multiple points can be selected using the Box Select or Lasso Select tools
+    on the plot.
+
+Use the `Clear layers/plots` buttons to clear all layers or plots associated
+with this tool.
+
+---
+
+## Compositional mapping
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/comp-map-basic/
+Keywords: compositional mapping, hyperspectral, mineral identification, absorption features, white mica, kaolinite, Marigold
+
+## Compositional mapping
+
+The **Compositional mapping** toolkit is used to combine absorption features and
+indices from a hyperspectral dataset in order to identify mineral composition. For
+example, an absorption at approximately 2200nm can indicate white mica, with the specific
+wavelength at which the spectrum is minimized identifying the mineral species. The
+final outputs from this dialog are abundance and composition layers for the given mineral.
+
+    Many case studies are available describing the techniques used in this toolkit, in a variety
+    of geologic regimes. For example, studies are available in
+    [Iran](https://doi.org/10.5382/econgeo.5041) 
+    and [Pakistan](https://doi.org/10.1016/j.rse.2024.114389).
+    For a thorough exploration of spectroscopy in mineral identification, see
+    [this guide](https://www.ugpti.org/smartse/research/citations/downloads/Clark-Manual_Spectroscopy_Rocks_Minerals_Book-1999.pdf).
+
+Compositional mapping starts with choosing the [raster layer](index.md#selecting-a-product) that will be used for the mapping.
+
+    Only hyperspectral data can be used with this tool.
+
+### **Choosing a mineral**
+
+The dialog is broken up into one step for each mineral group, selectable from the buttons
+at the top of the dialog. Within a step, clicking the `Compute layers` button will generate
+the composition and abundance maps. For information on how each map is computed, see the
+[mineral definitions](#mineral-definitions) section.
+
+### Mask output layers
+
+Once the output layers for the chosen mineral are computed, the slider will control the minimum "strength"
+of absorption required for a pixel to be chosen in the output map. The spectra above show a spectral query
+of an expected White Mica pixel in EnMap data before and after hull normalization. The value of the slider
+represents the depth of both the raw and normalized spectra.
+
+In this example, we can see that the minimum point of the hull normalized spectrum is approximately 0.8,
+meaning that this pixel will be chosen as long as the value of the slider is less than 0.2. In the raw spectrum,
+the slider references the difference between the maximum and minimum values.In this case, the value is
+approximately 0.05.
+
+### **Mineral definitions**
+
+Each pre-defined mineral map is generated with a combination of absorptions and indices.
+
+    Minerals are defined following the schemes in these works:
+
+    Asadzadeh, S., Chabrillat, S., Cudahy, T., Rashidi, B., & de Souza Filho, C. R. (2024). Alteration mineral 
+    mapping of the Shadan porphyry Cu–Au deposit (Iran) using airborne imaging spectroscopic data: Implications 
+    for exploration drilling. Economic Geology, 119(1), 139–160. https://doi.org/10.5382/econgeo.5041
+
+    Asadzadeh, S., Zhou, X., & Chabrillat, S. (2024). Assessment of the spaceborne EnMAP hyperspectral data for 
+    alteration mineral mapping: A case study of the Reko Diq porphyry Cu–Au deposit, Pakistan. Remote Sensing of 
+    Environment, 114389. https://doi.org/10.1016/j.rse.2024.114389 
+
+### White mica
+
+White mica abundance and composition are defined by:
+
+- An absorption at 2200nm, computed on the spectrum from 2120nm-2245nm
+- An index for absorption at 2350nm
+
+$$
+Idx_{2350} = \frac{\lambda_{2310} + \lambda_{2326} + \lambda_{2390}}{\lambda_{2343} + \lambda_{2359} + \lambda_{2375}}
+$$
+
+- An index for absorption at 2160nm, used as a constraint to avoid Kaolinite
+
+$$
+Idx_{2160} = \frac{\lambda_{2136} + \lambda_{2188}}{\lambda_{2153} + \lambda_{2171}}
+$$
+
+### Kaolinite group
+
+Kaolinite group abundance is defined by:
+
+- An absorption at 2200nm, computed on the spectrum from 2120nm-2245nm
+- An index for absorption at 2160nm
+
+$$
+Idx_{2160} = \frac{\lambda_{2136} + \lambda_{2188}}{\lambda_{2153} + \lambda_{2171}}
+$$
+
+### Chlorite
+
+- Absorptions at 2250nm (FeOH) and 2340nm (MgOH), computed on the spectrum from 2174nm-2392nm
+
+### Alunite
+
+- An absorption at 2170nm, computed on the spectrum from 2100nm-2250nm.
+
+### Carbonates
+
+- An absorption at 2330nm, computed on the spectrum from 2200nm-2375nm.
+
+---
+
+## UMAP
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/umap/
+Keywords: UMAP, dimensionality reduction, HDBSCAN, clustering, hyperspectral, unsupervised classification, Marigold
+
+## UMAP
+
+The **UMAP dimensionality reduction** tool offers a workflow for dimensionality
+reduction and clustering that is particularly useful for high dimensional data,
+such as hyperspectral images. The tool uses UMAP (Uniform Manifold Approximation
+and Projection) to reduce the dimensionality of the data, followed by
+HDBSCAN (Heirarchical Density Based Spatial Clustering of Applications
+with Noise).
+
+    UMAP requires access to [Compute](https://docs.earthone.earthdaily.com/guides/compute.html).
+
+    Mathematical details for both UMAP and HDBSCAN can be found in the
+    original papers: [UMAP](https://arxiv.org/pdf/1802.03426) and
+    [HDBSCAN](https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14).
+
+### **Selecting data**
+
+The UMAP dialog is broken into three steps. The first step allows you to
+select the [product](index.md#selecting-a-product), [bands](index.md#selecting-bands)
+and [AOI](index.md#selecting-an-aoi) for analysis. When you have selected
+the data you want to analyze, click `Parameterize UMAP` to move to the
+next step.
+
+    Selected data cannot have any fully masked bands. If necessary, use the
+    [data statistical analysis](data-stats.md) tool to clean data before running
+    UMAP.
+
+    Data will be limited to 50,000 points to manage runtimes.
+
+### **Parameterize UMAP**
+
+UMAP works by computing a manifold of the input data and projecting that manifold
+to a lower dimensional space. Parameterizing UMAP, therefore, involves determining
+how that manifold is built (the [neighborhood size](#local-neighborhood-size) and
+[distance metric](#metric) used), how many [dimensions](#number-of-dimensions) to
+use in the projection, and how [clustered](#minimum-distance) the low dimensional
+projection is. The second step of the dialog allows manipulation of these parameters
+and provides a plot of the embedding for analysis. When you have set parameters to your satisfaction, click `Train model with chosen parameters` to train the model and generate
+a plot of the embedding, and when you are satisfied with your model click `Cluster data`
+to move to the [clustering](#cluster-data) step.
+
+    More details on parameters can be found
+    [here](https://umap-learn.readthedocs.io/en/latest/parameters.html)
+
+    Points in the embedding plot will be colored according to the colors of the layer
+    on the map. Clicking on a point in the plot will show its location on the map.
+
+    The first time training a model with a given choice of [metric](#metric), the
+    K nearest neighbors will be computed and stored. This enables faster parameter
+    testing, without needing to run this step each time.
+
+### Local neighborhood size
+
+The number of points that UMAP will use when building the data manifold. This
+parameter allows a balance between local and global structure of the data in the
+embedding - low values will focus on local structure, and large values will focus
+on global structure.
+
+### Minimum distance
+
+The minimum distance between points in the final embedding. Lower values will create
+a clumpier embedding, while larger values will spread points farther apart.
+
+    This parameter has a strong effect on the number of [clusters](#cluster-data)
+    generated - small values tend to create fewer large clusters, and large
+    values create more small clusters.
+
+### Number of dimensions
+
+Number of dimensions for the embedding. Unlike simpler embedding algorithms
+such as T-SNE, UMAP can successfully embed into more than three dimensions.
+
+    If the number of dimensions is greater than 3, the embedding plot will show
+    the first three axes.
+
+### Metric
+
+The metric for computing distances in the input data. Available metrics are:
+
+- [Euclidean](https://en.wikipedia.org/wiki/Euclidean_distance): Simple Euclidean
+  distance between points.
+- [Manhattan](https://en.wikipedia.org/wiki/Taxicab_geometry): Manhattan, or
+  "Taxi cab" distance, measures the sum of the distance along each axis.
+- [Chebyshev](https://en.wikipedia.org/wiki/Chebyshev_distance): The Chebyshev
+  metric defines the distance between points as the greatest of their differences
+  along any axis.
+- [Cosine](https://en.wikipedia.org/wiki/Cosine_similarity): Cosine distance
+  is the cosine of the angle between the vectors.
+- [Correlation](https://en.wikipedia.org/wiki/Distance_correlation): Correlation
+  distance between the vectors, measuring the dependence between them.
+
+    Euclidean, Manhattan, and Chebyshev distances can easily be visualized by their
+    behavior on a chess board. Chebyshev distance corresponds to the number of moves
+    a King makes getting from one square to the other, Manhattan distance behaves
+    like a Rook, and Euclidean distance is an ant moving without regard for the
+    board:
+
+    
+
+### Embeddings plot
+
+After training a model, the embedding will be plotted on either a 2D or 3D scatterplot,
+depending on the choice of [dimension](#number-of-dimensions). Points on the plot
+will be colored the same as they are on the map, and clicking on plotted point will
+show the location on the map in a [vector layer](../vector-layers/index.md) called
+`selected points`.
+
+    The axes for the embedding are dimensionless, and simply represent a new spatial
+    position for the input points relative to all of the others.
+
+### **Cluster data**
+
+Once the low dimensional manifold is built, the UMAP tool uses HDBSCAN to cluster
+the data in an unsupervised manner. HDBSCAN is a better clustering algorithm than
+[k-means](k-means.md) for the unique shapes that are generated with UMAP, as it
+can find clusters with varied shapes, whereas k-means builds clusters as balls.
+Use the `Cluster data with chosen parameters` button to run the clustering on your
+embedded data.
+
+    HDBSCAN will not attempt to cluster outlier points, and will instead classify
+    them separately as noise.
+
+    When you run a clustering, the [embeddings plot](#embeddings-plot) will change
+    to show the clusters instead of the pixel RGBs.
+
+### Minimum cluster size
+
+The smallest number of points that can be considered a cluster. Lower values tend to
+create more clusters.
+
+### Minimum number of samples
+
+The minimum number of samples in the neighborhood of a point for it to be considered
+a "core" sample, and therefore considered for clustering instead of noise.
+
+### Cluster selection epsilon
+
+This parameter merges clusters that are closer than this value. This will help
+if your clustering contains a large number of small, nearby clusters.
+
+### Deploy clustering
+
+When you are happy with the clustering parameters, click the `Deploy clustering`.
+This will deploy a [Compute](https://docs.earthone.earthdaily.com/guides/compute.html)
+function that will apply the UMAP and HDBSCAN models over your chosen AOI, and
+add the result to the map.
+
+    Progress on the Compute task can be found [here](https://earthone.earthdaily.com/compute).
+
+    Images for the clustered result will appear on the map as they are completed, but
+    you may need to override the map's cache to see the latest images. This can be
+    accomplished by moving around the map, or changing the settings of the layer.
+
+    Only the AOI where data were [selected](#selecting-data) will be clustered.
+    As the models are build using these data, applying the models to areas outside this
+    AOI is not valid.
+
+---
+
+## Mineral index analogs
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/min-idx-analogs/
+Keywords: mineral index analogs, hyperspectral, mineral indices, spectral bands, initial screening, Marigold
+
+## Mineral index analogs
+
+Manipulating bands of multispectral data to obtain different
+[mineral indices](mineral-indices.md) is a convenient way to identify
+specific mineral groups, however the process assumes that the band
+wavelengths are well defined and sparsely populated. Hyperspectral
+images are sampled much more densely along the wavelength axis, and
+therefore the assumptions used to create mineral indices are not
+satisfied. However, computing specific indices can still provide a
+useful method for initial exploration and interpretation of an AOI.
+The **mineral index analogs** tool allows a subset of mineral indices
+to be computed for hyperspectral data, providing a convenient method
+for generating initial screening products.
+
+### **Usage**
+
+The mineral index analogs tool allows you to select a product, and
+select the desired mineral index or RGB composite to create. The
+output layer name will populate with the chosen index, and can be
+changed to a name of your choosing.
+
+    Only hyperspectral layers will appear in the product selection
+    dropdown.
+
+Click the `Calculate analog` button to add the computed index analog
+to your project.
+
+---
+
+## Create a hillshade
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/hillshade/
+Keywords: hillshade, terrain visualization, DEM, sun angle, sun azimuth, 3D effects, Marigold
+
+## Create a hillshade
+
+Hillshading a raster layer is a process that adds shading to the image with the
+goal of simulating sunlight to create 3D effects. While the process is
+traditionally applied to digital elevation models (DEMs), hillshades can be
+created from any band of any layer. The key parameters for generating a
+hillshade are:
+
+- [Input layer band](#select-input-layer)
+- [Sun angle](#sun-angle)
+- [Sun azimuth](#sun-azimuth)
+- [Z factor](#z-factor)
+
+Once a hillshade is created, it can be
+[applied](../raster-layers/layer-settings.md#apply-hillshade-to-layer) to any
+raster layer to highlight the shaded features.
+
+### **Select input layer**
+
+Select an input layer and band from which the hillshade will be computed.
+
+    DEM layers will populate the altitude band automatically if one is available.
+
+### **Sun angle**
+
+Use the sun angle slider to change the angle of the sun in the computation.
+
+### **Sun azimuth**
+
+Use the sun azimuth slider to change the angle of the sun in the computation
+
+    Use the sun plots to quickly see where the sun is for the computation.
+
+### **Z factor**
+
+The z factor parameter scales the data before computing the hillshade. This is
+useful for low relief areas, or when hillshading non-terrain layers.
+
+    The z factor may need to be quite high to generate a good hillshade for non-
+    elevation data. For example, for computing hillshades on Sentinel-2 bands, a z
+    factor value of 100 is not unreasonable.
+
+### **Opacity**
+
+Visualization
+[opacity](../raster-layers/layer-settings.md#adjust-layer-transparency) of the
+hillshade display. Viewing hillshades with opacity is a good way to get a "quick
+look" of the combined terrain display before you fully
+[apply](../raster-layers/layer-settings.md#apply-hillshade-to-layer) the
+hillshade to the layer.
+
+### **Updating an existing hillshade**
+
+Choosing the `Modify existing hillshade` option will allow you to modify a
+hillshade that has already been created.
+
+    Modifying an existing hillshade will automatically update all layers that are
+    visualized using that hillshade!
+
+---
+
+## Canny edge detection
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/canny/
+Keywords: Canny edge detection, lineament analysis, edge detection, terrain analysis, gradient thresholds, Marigold
+
+## Canny edge detection
+
+The **Canny edge detection** tool offers a workflow for generating edges from a
+band of raster data, suitable for further lineament analysis. Canny edge
+detection works by smoothing the input data, building gradients for the smoothed
+data, and thresholding the gradients to determine edges.
+
+    Exporting edges as vectors requires access to 
+    [Compute](https://docs.earthone.earthdaily.com/guides/compute.html).
+
+    More information about Canny edge detection, including the mathematics behind
+    the method, can be found
+    [here](https://en.wikipedia.org/wiki/Canny_edge_detector).
+
+The tool will generate two outputs. When using the dialog, a raster layer is
+created that will change dynamically when moving the map and changing the
+parameters for the detection. Clicking [detect edges](#detect-edges) will start
+a Compute function that will run the detection at the full layer resolution and
+create a
+[vector layer](../vector-layers/add-layers.md#add-a-vector-layer-from-the-catalog)
+with the edges for further analysis.
+
+    The created raster layer will use the current map view resolution to generate
+    the edges, not the actual data resolution. For this reason, the edges detected
+    will change as the map is zoomed in and out. The [input selector](#select-input-layer)
+    will have an indication of the zoom level that is closest to the true layer resolution.
+
+### **Select input layer**
+
+The Canny edge detection dialog allows you to select the
+[product](index.md#selecting-a-product) and an input band to detect edges from.
+
+    Canny edge detection only works on one band of data.
+
+### **Low and high thresholds**
+
+The low and high threshold values determine the cutoff points for finding edges
+in the gradients. In general, lowering these values will allow more points to be
+classified as edges.
+
+### **Smoothing sigma**
+
+The standard deviation for the Gaussian smoothing kernel. Higher values
+corresponds to a more aggressive smoothing, which will clean noise in the image
+at the potential cost of smoothing more edges.
+
+### **Area of interest**
+
+If Compute access is available, select the [AOI](index.md#selecting-an-aoi) over which
+the final vectors will be generated.
+
+### **Detect edges**
+
+When you are happy with the edge detection parameters, click the `Detect edges`
+button to start a Compute task that will compute Vector edges.
+
+    Progress on the Compute task can be found [here](https://earthone.earthdaily.com/compute).
+
+    The vector layer will be added to the map, but will be set to invisible by default.
+    This is to allow Compute tasks to finish before trying to load tiles, which can lead
+    to empty tiles being cached and make the data hard to visualize.
+
+---
+
+## Valley bottom flatness
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/mrvbf/
+Keywords: MRVBF, valley bottom flatness, ridge top flatness, terrain analysis, DEM, geomorphology, Marigold
+
+## Valley Bottom Flatness
+
+The **Multi-Resolution Valley Bottom Flatness** (MRVBF) index (Gallant and
+Dowling, 2003) assesses the flatness and lowness of terrain over multiple
+scales and DEM resolutions in order to identify valley bottoms. This index
+classifies degrees of valley bottom flatness, which may be related to depth
+of deposit. The index can also be used to identify groundwater constrictions
+and to delineate hydrologic and geomorphic units.
+
+The algorithm uses transfer functions for the terrain slope and elevation
+percentile to obtain a normalized value from 0-1. These normalized values
+are then used to compute the valley flatness for each resolution step,
+with the DEM resolution coarsening by a factor of 3 between each step.
+The final MRVBF index is a cumulative index from all resolution steps.
+
+    Valley Bottom Flatness requires access to
+    [Compute](https://docs.earthone.earthdaily.com/guides/compute.html).
+
+    MRVBF values  1.5. The
+    implemented algorithm uses 6 steps, giving a maximum index value of 6.0.
+
+### **Complementary Ridge Top Flatness Index**
+
+A multi-resolution ridge top flatness index (MRRTF) is a separate index derived
+in a very similar manner, except that the upper parts of the landscape are
+identified from PCTL. For most pixels, either the MRVBF or MRRTF is less than
+0.5, identifying that location as a ridge top or valley bottom. If both indices
+are < 0.5, it is a hillslope. Areas where MRVBF and MRRTF overlap are somewhat
+ambiguous, but the dominant character, ridge-like or valley-like, can be
+inferred from the index with the larger value.
+
+    The Ridge top flatness index is automatically calculated as a second band
+    within the MRVBF algorithm and added to the resulting catalog product. It
+    is *not* automatically added to the map.
+
+### **Usage**
+
+The Valley bottom flatness dialog allows you to choose the elevation model from
+the current [raster layers](index.md#selecting-a-product) to use as input data.
+The elevation model must have either an 'elevation' or 'altitude' band. Select
+`Run MRVBF` to create the output in the raster list. A compute job will be
+kicked off to run the algorithm and the resulting layer will be added to the
+map upon completion.
+
+    The input DEM will be resampled to a 30 meter resolution, regardless of
+    the native resolution of the DEM.
+
+---
+
+## Data statistical analysis
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/data-stats/
+Keywords: data statistics, band removal, hyperspectral, data cleaning, anomalous bands, Marigold
+
+## Data statistical analysis
+
+The **Data statistical analysis** tool provides a simple method of
+removing bands that contain anomalous values. This is particularly
+important for Hyperspectral imagery, which will often contain
+calibration bands or acquisition errors across some bands. This tool
+will allow you to remove such data so that the layer is ready for
+further analysis.
+
+### **Usage**
+
+The data statistical analysis tool is broken into two sections. The
+first section allows you to simply choose a product over which to
+run the analysis. Select a product using the dropdown, and click
+`Calculate band statistics` to run the analysis.
+
+    The toolkit will compute statistics over the current map window.
+    Low zoom levels will increase run time.
+
+The second page of the dialog contains checkboxes for all bands in the
+chosen product. Bands which have been flagged for removal will be
+unchecked. Bands for the output can be manually added or removed by
+selecting or unselecting the checkbox and clicking `Update band selection`.
+The plot shows the mean spectrum over the area and the positions with
+masked data. When you are satisfied with the selection of final bands,
+choose a name for the output layer and click `Remove unselected bands`
+to add the cleaned layer to your raster list.
+
+---
+
+## View BEC metadata
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/bec-meta/
+Keywords: BEC metadata, bare earth composite, Sentinel-2, ASTER, pixel collection date, Marigold
+
+## View BEC metadata
+
+The Bare Earth Composites are built from all available Sentinel-2 and ASTER
+data, with a goal of selecting a single pixel out of years worth of data. The
+**View BEC metadata** tool allows you to query a Bare Earth Composite to find
+when specific pixels were collected.
+
+### **Usage**
+
+The View BEC metadata tool allows you to select a BEC product. Currently, the
+Sentinel-2, ASTER, and Fused products are available.
+
+    The BEC does not need to exist as a layer in your project to use this tool.
+
+After selecting the BEC of interest, the `Collect metadata` button will start a
+query session. Click points on the map, and a list will be generated with the
+dates on which the corresponding pixels were collected. Right click on the map
+to end the query session, and select `Clear points` to clear the current list.
+
+    Querying with this tool works in the same manner as using the
+    [spectral query](../spectra/spectra-vector.md) toolkit.
+
+When you are finished, click `Cancel` to close the dialog.
+
+---
+
+## Create an RGB
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/create-rgb/
+Keywords: create RGB, composite image, true color, false color, band mapping, Marigold
+
+## Create RGB
+
+The **Create RGB** tool is used to easily generate composite images from a base
+layer. For example, you can generate a true RGB image and a false color
+composite from a multispectral layer with this tool, allowing you to easily
+compare the two images without having to modify the
+[settings](../raster-layers/layer-settings.md#basic-layer-settings) of the
+original layer
+
+### **Usage**
+
+The Create RGB dialog allows you to select a raster layer from which the
+composite will be created. Once done, use the R/G/B channel dropdowns to map a
+band in the input layer to the corresponding channel in the output layer. Select
+an output name and click `Create composite` to add the layer to your project.
+
+    This composites created will ONLY have the chosen RGB bands, making it useful
+    for visualization but not analysis. The original layer will need to be used for
+    analysis.
+
+---
+
+## Merge layers
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/merge-layers/
+Keywords: merge layers, combine bands, multiband, raster layers, data integration, Marigold
+
+## Merge layers
+
+The **Merge layers** tool allows you to add bands from multiple layers
+into a single product. Merging layers allows you to create unique
+visualizations, and to combine data from multiple sources for input
+to processes like [PCA](pca.md).
+
+### **Usage**
+
+The merge layers tool will contain one row per layer to be merged.
+Select a layer from the `Layer` dropdown, and select bands from the
+`Bands` dropdown. Use the `Add layer` button to add more layers, or
+use the trash can icon to remove a layer. When you are finished,
+give the output layer a name and click `Merge` to add the layer to
+the project.
+
+---
+
+## Update computed layers
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/update-layers/
+Keywords: update layers, catalog product, layer replacement, reprocessing, Marigold
+
+## Update computed layers
+
+The **Update computed layers** tool can be used to replace the input catalog
+layer after running it through a series of processes in Marigold. For example,
+if a mineral map was created using a local dataset, this tool can be used to
+re-run the process when a global dataset is available.
+
+### **Usage**
+
+The update computed layers dialog allows you to select raster layers that are in
+your project. When a layer is selected, a new dropdown will be created for each
+[Catalog](https://docs.earthone.earthdaily.com/guides/catalog.html) product that is
+used in the layer. Select a replacement Catalog product for each input product
+if desired, or leave the dropdown blank to keep that product the same in the
+final result. Select whether to overwrite the initial layers, or if new layers
+should be created and added to the raster list, and click `Update layers` to
+update the layers.
+
+    In theory, this tool can be used to replace any Catalog product with any other,
+    with no restrictions specified. However, most processes will access specific
+    components of the product, such as band names, and if these are not available in
+    the replacement product the output layer may be invalid.
+
+---
+
+## Morphological operations
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/processes/morphology/
+Keywords: morphological operations, erosion, dilation, spatial filtering, raster processing, Marigold
+
+## Morphological operations
+
+The **Morphology** tool offers a workflow for applying morphological operations
+to a layer. Currently, the tool supports erosion and dilation of a single band.
+
+    Background on morphology can be found 
+    [here](https://en.wikipedia.org/wiki/Mathematical_morphology).
+
+### **Select input layer**
+
+The Morphology dialog allows you to select the [product](index.md#selecting-a-product)
+and an input band to apply the operation on.
+
+### **Operation**
+
+Select the operation to apply to the chosen layer and band. Currently supports
+erosion and dilation.
+
+### **Operation kernel size**
+
+Size of the kernel, in meters.
+
+    Kernel size is used as the radius of a disk-shaped element for applying the operation.
+
+### **Output layer name**
+
+Choose a name for the output layer.
+
+---
+
+## Vegetation and water masking
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/example-workflows/mask-veg-and-water/
+Keywords: vegetation mask, water mask, merge layers, raster calculator, masking workflow, Marigold
+
+## Mask vegetation and water in your imagery
+
+After creating a [Vegetation mask] and a [Water mask], you can combine them into
+a single mask using the [Merge layers] tool and the [Raster calculator]. This
+layer can then be applied to mask out vegetation and water in other layers using
+the [Apply a mask] tool.
+
+Create your masks.
+
+**Merge** the two layers into a single multiband layer, so you can use the
+processing tools on the combined set of bands.
+
+Now you will have a new layer that contains two bands - one containing the water
+mask and one containing the vegetation mask. You can visualize either band as a
+single band image by adjusting the settings of the layer.
+
+To combine the two bands into a single mask layer, select the newly created
+layer in the [Raster calculator] and create an expression that combines the two
+mask bands into a single layer. You'll want to select pixels where either the
+vegetation mask band or the water mask band is True:
+`(("veg" == 1) or ("water" == 1))`
+
+Now you can apply the mask to another layer using [Apply a mask], or use the
+classification mask for your analysis.
+
+[apply a mask]: ../processes/apply-a-mask.md
+[merge layers]: ../processes/merge-layers.md
+[raster calculator]: ../processes/raster-calculator.md
+[vegetation mask]: ../processes/vegetation-mask.md
+[water mask]: ../processes/water-mask.md
+
+---
+
+## Create a custom mask
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/example-workflows/create-a-custom-mask/
+Keywords: custom mask, raster calculator, masking, pixel filtering, Marigold workflow
+
+## Create a custom mask
+
+Use the [Raster calculator] tool to create
+a custom mask.
+
+The expression below will output a new layer, with pixels defined as
+True assigned a 1 and all other pixels assigned a 0. The
+[Apply a mask] tool can use this new layer
+to mask out pixels where the red band and green band values are both
+greater than 0.2.
+
+To help you understand what values to use in your expression, you can
+**Calculate histograms** in your layer settings.
+
+[apply a mask]: ../processes/apply-a-mask.md
+[raster calculator]: ../processes/raster-calculator.md
+
+---
+
+## Ternary plots
+URL: https://docs.earthdaily.com/mining/marigold/using-marigold/example-workflows/ternary-plot/
+Keywords: ternary plot, band ratio, mineral indices, RGB composite, spectral analysis, mineral mapping
+
+## Ternary plot
+
+**Ternary plots** are RGB maps of spectral band ratios, which take advantage of
+known absorption spectra to highlight mineral groups. The ternary plot takes
+three band ratios and assigns them to red, green, and blue so mineral species
+highlighted by ratio one will stand out in red, ratio two in green, and ratio
+three in blue.
+
+**Usage:**
+
+- Click **Band algebra** in the **Processing toolbox**, then click **Mineral
+  indices**.
+- Select the layer you want to derive mineral indices from in the **Product**
+  dropdown menu.
+- Choose three indices you'd like to highlight in your ternary plot.
+- Enter text in the **Output layer name** field to name your ternary plot.
+- Click the **Calculate indices** button to create your ternary plot.
+- If your layer looks washed out, go to the **Raster layers** menu and click the
+  settings icon ( | ) for your ternary plot.
+- Assign each mineral group to the color you want using the **Red**, **Green**,
+  and **Blue** dropdown menus.
+- Click **Calculate histograms** to see the distribution of values in each band
+  within the current viewport.
+- Enter numbers in the **Min** and **Max** fields to ensure that the minimum and
+  maximum values for each color fall within the following ranges: 1.9--2.2 for
+  Red, 1.0--1.5 for Green, and 0.9--1.1 for Blue.
+- Click the **Apply** button.
+
+**Tips:**
+
+- All band ratios have non-zero values. So even if your area of interest doesn't
+  contain a particular mineral group, the ternary layer may give you the
+  impression that it is present. This is where user knowledge of the site is
+  important.
+
+---
+
+## Methodology
+URL: https://docs.earthdaily.com/mining/marigold/remote-sensing-methodology/remote-sensing-methodology/
+Keywords: remote sensing, geoscience, mineral indices, spectral analysis, geological mapping, Marigold
+
+## Remote sensing for geoscience
+
+[Mineral indices]
+
+    Use the mineral indices tool to hone in on your minerals of interest!
+
+[mineral indices]: ../using-marigold/processes/mineral-indices.md
+
+---
+
+## Case studies overview
+URL: https://docs.earthdaily.com/mining/marigold/case-studies/
+Keywords: case studies, mineral exploration, epithermal deposits, Marigold workflows, remote sensing
+
+## Case studies
+
+[Case Study 1](case-study-1.md): Cuprite (low sulphidation epithermal)\
+[Case Study 2](case-study-2.md): Salares Norte (high sulphidation epithermal)
+
+---
+
+## Low sulphidation epithermal
+URL: https://docs.earthdaily.com/mining/marigold/case-studies/case-study-1/
+Keywords: Cuprite, low sulphidation epithermal, mineral mapping, bare earth composite, spectral analysis, alteration minerals, Marigold case study
+
+## Case Study: Cuprite (low sulphidation epithermal)
+
+This case study provides a step-by-step guide covering how to generate and
+interpret our recommended mapping products for low sulphidation epithermal
+deposits. You can follow along by walking through the case study, or load the
+linked Marigold project file to automatically load the products into Marigold.
+
++----------------------------------+----------------------------------+ |
+**Deposit type** | Low Sulphidation Epithermal |
++==================================+==================================+ |
+**Location** | Cuprite, Nevada, USA |
++----------------------------------+----------------------------------+ |
+\------------------------------ | ------------------------------ |
++----------------------------------+----------------------------------+ |
+**Commodity** | Au, Cu |
++----------------------------------+----------------------------------+ |
+\------------------------------ | ------------------------------ |
++----------------------------------+----------------------------------+ |
+**Marigold file** | `Get some sort of shared demo file going` |
++----------------------------------+----------------------------------+
+
+### **Background**
+
+### Spectral reference site
+
+**Lat/lon** 37.542628, -117.196650
+
+---
+
+**Zoom** 13
+
+### Deposit description
+
+This desert site is well known for its excellent exposure, and diverse suite of
+exposed alteration minerals including advanced argillic alteration (alunite), an
+extended suite of argillic alteration, as well as a type-locality of
+ammonium-rich clays (buddingtonite). There is little vegetation on-site except
+for some lichen. It is characterized as a low sulphidation quartz-adularia hot
+spring type epithermal deposit, which was overprinted by late-stage steam-heated
+advanced argillic alteration. Mapped alteration includes Fe-oxides, hydrothermal
+minerals, many AlOH-species such as clays and micas, as well as sulfates,
+carbonates and silicates and siliceous alteration (Swayze et al., 2014).
+
+### Mining history
+
+This location was intensively prospected for sulphur and mercury, and mined for
+silicates, but never for metal content. No significant precious metal
+mineralization has been found. It has been extensively explored and mapped using
+remote sensing techniques, and is used as a spectral reference site for many
+sensors for geological remote sensing / mineral mapping.
+
+### Characteristics of Low Sulphidation (LS) Epithermal Systems
+
+Epithermal (gold) systems have characteristic mineral alteration assemblages,
+although there are of course distinctive spectral characteristics associated
+with each deposit. The mineral assemblages typically define zonation in the
+alteration system, so being able to recognize the mineral groupings, and this
+zonation in surface mapping can be key to targeting the orebody, proximal to
+distal relationships to mineralization and of course help to guide future
+exploration decisions. Low sulphidation systems like Cuprite typically have
+alteration zones dominated by the argillic clays, formed from near-neutral
+hydrothermal fluids. The clay assemblage and zonation largely reflects
+decreasing temperatures outward from fluid conduits, from illitic clays near the
+centre of the system and outward through illite-smectite to smectite. Peripheral
+to the argillic alteration is a propylitic alteration zone, which may have a
+sub-propylitic zone. This particular deposit also exhibits a late-stage advanced
+argillic overprinting associated with a steam-heated event (GMEX, vol 4,
+Epithermal Alteration Systems).
+
+### Detailed zonation
+
++----------------------------------+----------------------------------+ |
+**Advanced argillic** | alunite (K, Na-K, & Na), | | | kaolinite, dickite, | | |
+buddingtonite |
++==================================+==================================+ |
+**Central & mineralized zone** | quartz-adularia assemblage - may | | | be
+quartz, adularia, opal, | | | chalcedony |
++----------------------------------+----------------------------------+ |
+\------------------------------ | ------------------------------ |
++----------------------------------+----------------------------------+ |
+**Argillic alteration** | AlOH clays - mainly illite, | | | illite-smectite,
+smectite with | | | carbonate |
++----------------------------------+----------------------------------+ |
+\------------------------------ | ------------------------------ |
++----------------------------------+----------------------------------+ |
+**Propylitic alteration** | chlorite, epidote, carbonate |
++----------------------------------+----------------------------------+
+
+### **Processing guide**
+
+Now we'll use Marigold to generate and interpret a series of products using the
+Fused Bare Earth Composite over Cuprite. Before that, a couple notes.
+
+Each of the products generated here are covered in the Multispectral Mineral
+Processing Reference worksheet. The worksheet identifies how to compute the
+product using any of the different commonly used geological remote sensing
+datasets and what the products were designed to highlight. It's a useful
+reference to check out.
+
+Also note that Cuprite is a spectral reference site, we're reviewing a few
+additional products in an effort to demonstrate that mineral mapping using
+multispectral data like Sentinel-2 & ASTER is truly mapping mineral groups,
+rather than mineral species. The ground truth maps illustrate that the minerals
+are very intermixed here. When a product is designed to highlight the
+characteristics of a specific mineral or mineral group (i.e. Mica_clay), it
+doesn't mean that the product will preferentially map that mineral. In fact it
+will generally map most of the AlOH ASTER band 6 minerals that generate an
+absorption feature at that band. This is why multispectral mineral mapping need
+validation to confirm the mapping results. In addition to reviewing the typical
+patterns observed for this deposit type, we'll also review their limitations.
+
+Ok, let's get to it!
+
+### Product 1: True color composite
+
+This product provides an excellent overview of the site being targeted in a band
+combination that is generally used by more exploration teams as a basemap. Also
+note that Ferric Fe-rich gossans or areas of hematite and/or goethite iron
+oxides may be visible as reddish-brown cover materials (as is shown below).
+
+- Add the Fused Bare Earth Composite to the map, and use the Settings to map the
+  red, green, and blue bands to RGB.
+- Apply a linear 2% stretch by clicking the magic wand.
+
+### Product 2: False color composite
+
+### **Product 3: AST(6,4,1)eq as (R,G,B)**
+
+ Product 4: AST(6,4,1)eq_dc as (R,G,B)
+
+---
+
+ Product 5: AST(9,5,4)eq as (R,G,B)
+
+---
+
+ Product 6: Fused BEC - FerricOX_comp (L)
+with linear 2% stretch; (R) thresholded results
+
+---
+
+ Product 7: Fused BEC - ALI_index (L)
+with linear 2% stretch; (R) thresholded results\
+\
+
+---
+
+Product 8: Fused BEC - AlOH_b5_index. (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 9: Fused BEC - Hewson_kaol (L) with linear 2% stretch; (R) thresholded
+results\
+\
+
+---
+
+Product 10: Fused BEC - KaolGrp_index (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 11: Fused BEC - AlOH_b6_index (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 12: Fused BEC - Mica_clay (L) with linear 2% stretch; (R) thresholded
+results\
+\
+
+---
+
+Product 13: Fused BEC - KLI_index (L) with linear 2% stretch; (R) thresholded
+results\
+\
+
+---
+
+Product 14: Fused BEC - MgOH_Grp_comp (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 15: Fused BEC - MgOH_b8_index (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 16: Fused BEC - MgOH_grpCont (L) with linear 2% stretch; (R) thresholded
+results\
+\
+
+---
+
+Product 17: Fused BEC - WV3_carb_index (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 18: Fused BEC - FeOH_b7_index (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 19: Emissivity - Silica_index (SI) (L) with linear 2% stretch; (R)
+thresholded results\
+\
+
+---
+
+Product 20: Band Ratio - (AST_b5/SEN_b8) - (swir2/nir)\
+
+---
+
+Product 21: Band Ratio - (AST_b4/SEN_b4) - (swir1/red)\
+
+---
+
+Product 22: Band Ratio - (AST_b4/AST_b7) - (swir1/red)\
+
+---
+
+Product 23: Band Ratio - (AST_b4/Sen_S8) - (swir1/red)\
+
+---
+
+Product 24: TRatio12 - (AlOH_B6_Index, AST_b5/SEN_b8, FeOH_b7_index)\
+
+---
+
+Product 25: Fused BEC - TRatio13 with linear 2% stretch\
+
+---
+
+Product 26: Fused BEC - TRatio22 (ALI, KLI, FerricOX) with linear 2% stretch\
+
+---
+
+Product 27: Fused BEC - TRatio3 with linear 2% stretch\
+
+---
+
+Product 28: Fused BEC - PCA(v-s)\_123 with linear 2% stretch\
+
+---
+
+Product 29: Fused BEC - MNF(v-s)\_123 with linear 2% stretch\
+
+---
+
+Product 30: Fused BEC - Alunite Hill - SAM Spectral Similarity (L) with linear
+2% stretch; (R) thresholded search results displayed with a magma colour table
+over the Cuprite AOI\
+\
+
+### **Reference Ground Truthing Documentation and Maps for Cuprite**
+
+---
+
+## High sulphidation epithermal
+URL: https://docs.earthdaily.com/mining/marigold/case-studies/case-study-2/
+Keywords: Salares Norte, high sulphidation epithermal, mineral mapping, bare earth composite, spectral analysis, alteration minerals, Marigold case study
+
+## Case Study: Salares Norte (high sulphidation epithermal)
+
+### **Background**
+
+### Deposit description
+
+### Mining history
+
+### Characteristics of High Sulphidation (LS) Epithermal Systems
+
+### Detailed zonation
+
+### **Processing guide**
+
+### Product 1: True Color Composite
+
+### **Product 2: False color composite**
+
+### **Product 3: Fused BEC - AST(6,4,1)eq as (R,G,B)**
+
+Product 4: Fused BEC - ALI_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 5: Fused BEC - AlOH_b5_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 6: Fused BEC - FerricOX_comp (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 7: Fused BEC - Hewson_kaol (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 8: Fused BEC - KaolGrp_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 9: Fused BEC - AlOH_b6_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 10: Fused BEC - Phengitic_mica (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 11: Fused BEC - Mica_clay (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 12: Fused BEC - Alteration (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 13: Fused BEC - KLI_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 14: Fused BEC - Phyllosilicates (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 15: Fused BEC - MgOH_Grp_comp (L) with linear 2% stretch; (R)
+thresholded results (x)
+
+---
+
+Product 16: Fused BEC - MgOH_b8_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 17: Fused BEC - WV3_carb_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+Product 18: Fused BEC - FeOH_b7_index (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+### **Product 19: Emissivity - AST(13,12,10) mapped as (R,G,B)**
+
+ :width: 600 :align: center
+
+Product 20: Emissivity - Silica_index (SI) (L) with linear 2% stretch;
+(R) thresholded results
+
+---
+
+Product 21: Emissivity- Quartz-rich (L) with linear 2% stretch; (R)
+thresholded results
+
+---
+
+### **Product 22: Band Ratio - (AST_b5/SEN_b8) - (swir2/nir)**
+
+### **Product 23: Fused BEC - TRatio13 with linear 2% stretch**
+
+### **Product 24: Fused BEC - TRatio18 with linear 2% stretch**
+
+Product 25: Fused BEC - TRatio22 (ALI, KLI, FerricOX) with linear 2%
+stretch \~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
+.. 
+
+### **Product 26: Fused BEC - PCA(v-s)\_123 with linear 2% stretch**
+
+### **Product 27: Fused BEC - MNF(v-s)\_123 with linear 2% stretch**
+
+Product 28: Fused BEC - Alunite Hill - SAM Spectral Similarity (L) with
+linear 2% stretch; (R) thresholded search results displayed with a magma
+colour table over the Salares Norte AOI; Adv argillic spectra
+
+---
+
+### References
+
+---

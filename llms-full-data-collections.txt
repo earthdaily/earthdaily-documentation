@@ -1,0 +1,347 @@
+# EarthDaily documentation — Data > Collections
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Data Catalog
+URL: https://docs.earthdaily.com/data/collections/
+Keywords: data catalog, satellite imagery collections, cloud masks, AI ready mosaics, biomass analytics, Earth Data Store, remote sensing data
+
+# Data Catalog
+
+Browse the data collections available through EarthDaily. Collections are organized by category to help you find the right data for your application.
+
+## Imagery
+
+Optical and radar satellite imagery from public and commercial sources.
+
+-   :material-satellite-variant:{ .lg .middle } __Sentinel-2__
+
+    ---
+
+    Multispectral optical imagery at 10–60m resolution with global coverage every 5 days. Available as L1C, L2A, and Collection 1 L2A.
+
+    [:octicons-arrow-right-24: Learn more](sentinel-2.md)
+
+-   :material-satellite-variant:{ .lg .middle } __Landsat__
+
+    ---
+
+    Landsat 8 and 9 imagery at 30m resolution — surface reflectance, land surface temperature, and top-of-atmosphere radiance.
+
+    [:octicons-arrow-right-24: Learn more](landsat.md)
+
+-   :material-radar:{ .lg .middle } __Sentinel-1__
+
+    ---
+
+    C-band SAR imagery for all-weather, day-and-night monitoring. Available as GRD and radiometrically terrain-corrected (RTC).
+
+    [:octicons-arrow-right-24: Learn more](sentinel-1.md)
+
+-   :material-satellite-variant:{ .lg .middle } __Venus__
+
+    ---
+
+    High-revisit multispectral imagery from the Venus satellite mission at sub-weekly frequency.
+
+    [:octicons-arrow-right-24: Learn more](venus.md)
+
+-   :material-camera:{ .lg .middle } __EarthDaily Constellation Preview__
+
+    ---
+
+    Preview imagery from the EarthDaily satellite constellation delivering daily global coverage.
+
+    [:octicons-arrow-right-24: Learn more](edc-preview.md)
+
+## Masks
+
+Cloud and quality masks to improve your analysis pipelines.
+
+-   :material-weather-cloudy:{ .lg .middle } __EDA Cloud Masks__
+
+    ---
+
+    High-accuracy cloud masks for Sentinel-2 and Landsat, outperforming ESA and Fmask providers.
+
+    [:octicons-arrow-right-24: Learn more](cloudmasks.md)
+
+-   :material-barley:{ .lg .middle } __Cropland Data Layer US__
+
+    ---
+
+    Annual crop type classification mask covering the contiguous United States.
+
+    [:octicons-arrow-right-24: Learn more](cropland-data-layer.md)
+
+## Mosaics & Composites
+
+Analysis-ready composites built from the best available imagery.
+
+-   :material-image-multiple:{ .lg .middle } __AI Ready Mosaics__
+
+    ---
+
+    Cloud-free, radiometrically consistent mosaics optimized for machine learning applications.
+
+    [:octicons-arrow-right-24: Learn more](ai-ready-mosaics.md)
+
+## Foundational Analytics
+
+Derived products and analytics layers built on top of satellite imagery.
+
+-   :material-tree:{ .lg .middle } __Above Ground Biomass, Tree Height & Cover__
+
+    ---
+
+    Multi-mode biomass density, tree height and tree cover estimates at 10m resolution.
+
+    [:octicons-arrow-right-24: Learn more](biomass.md)
+
+-   :material-pine-tree:{ .lg .middle } __Forest Mask__
+
+    ---
+
+    Binary forest/non-forest classification at 10m resolution.
+
+    [:octicons-arrow-right-24: Learn more](forest-mask.md)
+
+---
+
+## Sentinel-2
+URL: https://docs.earthdaily.com/data/collections/sentinel-2/
+Keywords: Sentinel-2, multispectral imagery, optical satellite, surface reflectance, 10m resolution, ESA Copernicus, L2A, L1C
+
+# Sentinel-2
+
+Multispectral optical imagery from ESA's Sentinel-2 constellation, providing global coverage every 5 days at 10–60m resolution.
+
+## Available Collections
+
+| Collection Name | Collection Id | Processing Level | Time Range |
+|-----------------|---------------|------------------|------------|
+| Sentinel 2 L1C | `sentinel-2-l1c` | Top-of-atmosphere reflectance | Starting June 2015 |
+| Sentinel 2 L2A | `sentinel-2-l2a` | Surface reflectance | Starting Nov 2016 |
+| Sentinel 2 C1 L2A | `sentinel-2-c1-l2a` | Surface reflectance (reprocessed) | Starting Nov 2016 |
+
+## Key Characteristics
+
+- **Spatial resolution**: 10m (visible + NIR), 20m (red edge + SWIR), 60m (atmospheric bands)
+- **Revisit time**: 5 days at the equator with 2 satellites
+- **Swath width**: 290 km
+- **Number of bands**: 13 spectral bands
+
+## Notes
+
+- **Sentinel-2 C1 L2A** is the reprocessed version of Sentinel-2 L2A with improved radiometric calibration. It will replace Sentinel-2 L2A once fully populated.
+- Source: AWS Open Data — [Sentinel-2](https://registry.opendata.aws/sentinel-2/) and [Sentinel-2 COGs](https://registry.opendata.aws/sentinel-2-l2a-cogs/)
+
+---
+
+## Landsat
+URL: https://docs.earthdaily.com/data/collections/landsat/
+Keywords: Landsat, Landsat 8, Landsat 9, surface reflectance, land surface temperature, 30m resolution, USGS
+
+# Landsat
+
+Landsat 8 and 9 imagery at 30m resolution from USGS, providing continuity of the longest-running satellite Earth observation program.
+
+## Available Collections
+
+| Collection Name | Collection Id | Processing Level | Time Range |
+|-----------------|---------------|------------------|------------|
+| Landsat Collection 2 L1 | `landsat-c2l1` | Top-of-atmosphere radiance | Starting Jan 2013 |
+| Landsat Collection 2 L2 Reflectance | `landsat-c2l2-sr` | Surface reflectance | Starting Jan 2013 |
+| Landsat Collection 2 L2 Temperature | `landsat-c2l2-st` | Land surface temperature | Starting Jan 2013 |
+
+## Key Characteristics
+
+- **Spatial resolution**: 30m (multispectral), 15m (panchromatic), 100m (thermal)
+- **Revisit time**: 8 days with Landsat 8 + 9 combined
+- **Swath width**: 185 km
+- **Number of bands**: 11 (Landsat 8/9 OLI + TIRS)
+
+## Notes
+
+- Source: AWS Open Data — [USGS Landsat](https://registry.opendata.aws/usgs-landsat/)
+
+---
+
+## Sentinel-1
+URL: https://docs.earthdaily.com/data/collections/sentinel-1/
+Keywords: Sentinel-1, SAR imagery, synthetic aperture radar, C-band radar, GRD, radiometric terrain correction, all-weather monitoring
+
+# Sentinel-1
+
+C-band synthetic aperture radar (SAR) imagery from ESA's Sentinel-1 constellation, enabling all-weather, day-and-night Earth observation.
+
+## Available Collections
+
+| Collection Name | Collection Id | Processing Level | Time Range |
+|-----------------|---------------|------------------|------------|
+| Sentinel-1 GRD | `sentinel-1-grd` | Ground Range Detected | Starting Oct 2014 |
+| Sentinel-1 RTC | `sentinel-1-rtc` | Radiometrically Terrain Corrected | Starting Oct 2014 |
+
+## Key Characteristics
+
+- **Spatial resolution**: 10–40m depending on acquisition mode
+- **Revisit time**: 6–12 days
+- **Polarization**: VV, VH, HH, HV
+- **Wavelength**: C-band (5.405 GHz)
+
+## Notes
+
+- **GRD** products are the standard ground range detected format. Source: AWS Open Data — [Sentinel-1](https://registry.opendata.aws/sentinel-1/)
+- **RTC** products have been radiometrically terrain-corrected to reduce topographic distortion. Source: Microsoft Planetary Computer — [Sentinel-1 RTC](https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc)
+
+---
+
+## Venus
+URL: https://docs.earthdaily.com/data/collections/venus/
+Keywords: Venus satellite, high-revisit imagery, 5m resolution, vegetation monitoring, CNES, multispectral, Theia
+
+# Venus
+
+High-revisit multispectral imagery from the CNES/ISA Venus satellite mission, designed for vegetation and environmental monitoring.
+
+## Available Collections
+
+| Collection Name | Collection Id | Processing Level | Time Range |
+|-----------------|---------------|------------------|------------|
+| Venus L2A | `venus-l2a` | Surface reflectance | Starting Nov 2017 |
+
+## Key Characteristics
+
+- **Spatial resolution**: 5m
+- **Revisit time**: 2 days over selected sites
+- **Number of bands**: 12 spectral bands (visible to NIR)
+- **Coverage**: ~100 predefined sites worldwide
+
+## Notes
+
+- Source: Theia — [VM1](https://theia.cnes.fr/atdistrib/rocket/#/search?page=1928&collection=VENUS&processingLevel=LEVEL2A) / [VM5](https://theia.cnes.fr/atdistrib/rocket/#/search?page=42&collection=VENUSVM05&platform=VENUS&processingLevel=LEVEL2A)
+
+---
+
+## EarthDaily Constellation Preview
+URL: https://docs.earthdaily.com/data/collections/edc-preview/
+Keywords: EarthDaily constellation, EDC preview, daily global coverage, satellite constellation, high resolution imagery
+
+# EarthDaily Constellation Preview
+
+Preview imagery from the EarthDaily satellite constellation, designed to deliver daily global coverage at high resolution.
+
+## Available Collections
+
+| Collection Name | Collection Id |
+|-----------------|---------------|
+| EDC Preview | `edc-preview` |
+
+---
+
+## EDA Cloud Masks
+URL: https://docs.earthdaily.com/data/collections/cloudmasks/
+Keywords: cloud mask, cloud detection, Sentinel-2 cloud mask, Landsat cloud mask, Auto Clear Mask, pixel compositing, CloudSEN12
+
+# Cloud Masking
+
+[EDA's Accurate Cloud Masking](https://earthdailyagro.com/spend-less-data-scientists-time-cleaning-data-high-quality-cloud-masks-for-sentinel2-landsat-and-others-available-today/) has been shown to be more accurate than current open data standard processing, which improves ML applications and the pixel compositing process for mosaics.
+
+The accuracy of the EarthDaily Agro cloud mask is higher than the cloud mask of other providers, allowing for a reduction in under-detection and keeping a high quality on cloud over-detection to not miss clear areas.
+
+| Cloud Mask Provider | Over-Detection | Under-Detection |
+|:-------------------:|:--------------:|:---------------:|
+| EDA's Cloud Masks | 1.65% | 3.85% |
+| Fmask 4 (Matlab) | 0.21% | 27.18% |
+| Fmask (Python) | 1.12% | 26.6% |
+| ESA | 0.97% | 42.1% |
+
+EDA's Auto Clear Mask (ACM) improves the detection and the efficiency of clouds in Sentinel-2, Landsat 8, and Landsat 9.
+
+| Mosaics with ESA's Cloud Mask | RGB Image of Cloud Area | Mosaics with EDA's Cloud Masks |
+|:-----------------------------:|:-----------------------:|:------------------------------:|
+|  |  |  |
+
+## Why do Cloud Masks Matter?
+
+Under-Detected Cloud Masks lead to the inclusion of pixels that are not representative of the ground measurement a mosaic is seeking to construct. This can cause various artifacts within the mosaicing process which are avoided as much as possible, except where there is extremely limited data. In general the larger the Time Range of Interest, the more likely getting cloud-free measurements is.
+
+| Pixel Halo Effect from Poor Cloud Masks | Challenged Pixel Balancing Example |
+|:----------------------------------------:|:----------------------------------:|
+|  |  |
+| Mosaics produced with undetected cloud masks for mosaic construction. | Mosaics produced to demonstrate the inconsistency made worse with inadequate cloud masks. |
+
+## References
+
+EDA's cloud masking technology is built off of the [CloudSEN12](https://cloudsen12.github.io/) datasources.
+
+---
+
+## Cropland Data Layer US
+URL: https://docs.earthdaily.com/data/collections/cropland-data-layer/
+Keywords: cropland data layer, crop type classification, United States agriculture, crop identification, land use mapping, USDA CDL
+
+# Cropland Data Layer US
+
+Annual crop type classification mask covering the contiguous United States, providing field-level crop identification.
+
+## Available Collections
+
+| Collection Name | Collection Id |
+|-----------------|---------------|
+| Cropland Data Layer US | `cropland-data-layer-us` |
+
+---
+
+## AI Ready Mosaics
+URL: https://docs.earthdaily.com/data/collections/ai-ready-mosaics/
+Keywords: AI ready mosaics, cloud-free mosaics, machine learning imagery, radiometric consistency, satellite composites, analysis-ready data
+
+# AI Ready Mosaics
+
+Cloud-free, radiometrically consistent mosaics built from the best available satellite imagery, optimized for machine learning applications.
+
+## Available Collections
+
+| Collection Name | Collection Id | Description |
+|-----------------|---------------|-------------|
+| AI Ready Mosaics | `ai-ready-mosaics` | Production mosaics |
+| AI Ready Mosaics Preview | `ai-ready-mosaics-preview` | Preview versions for evaluation and prototyping |
+| AI Ready Mosaics Sample | `ai-ready-mosaics-sample` | Sample data for testing and development |
+
+---
+
+## Biomass, Tree Height & Cover
+URL: https://docs.earthdaily.com/data/collections/biomass/
+Keywords: above ground biomass, tree height, tree cover, carbon analytics, 10m resolution, biomass density
+
+# Above Ground Biomass, Tree Height & Cover
+
+Multi-mode biomass density, tree height, and tree cover estimates at 10m resolution derived from satellite imagery.
+
+## Available Collections
+
+| Collection Name | Collection Id |
+|-----------------|---------------|
+| Above Ground Biomass Density, Tree Height and Tree Cover | `earthdaily:carbon-analytics:multimode-10m-agbd:3x3:v2.1` |
+
+---
+
+## Forest Mask
+URL: https://docs.earthdaily.com/data/collections/forest-mask/
+Keywords: forest mask, forest classification, land cover, 10m resolution, carbon analytics, deforestation monitoring
+
+# Forest Mask
+
+Binary forest/non-forest classification at 10m resolution derived from multi-mode satellite inputs.
+
+## Available Collections
+
+| Collection Name | Collection Id |
+|-----------------|---------------|
+| Forest Mask | `earthdaily:carbon-analytics:forestmask:3x3:v2.1` |
+
+---

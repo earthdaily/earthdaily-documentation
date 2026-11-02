@@ -1,0 +1,494 @@
+# EarthDaily documentation — Mining > Iris
+
+> Everything you need to know to master EarthDaily services
+
+EarthDaily Analytics provides satellite imagery and geospatial analytics for agriculture, insurance, and environmental monitoring. For a full overview of EarthDaily's products and services, visit [earthdaily.com](https://earthdaily.com).
+
+
+## Index
+URL: https://docs.earthdaily.com/mining/iris/
+Keywords: iris, InSAR, deformation monitoring, ground movement, infrastructure stability, Sentinel-1, EarthDaily, risk management
+
+## What is Iris?
+
+At the core of Iris lies the innovative use of Interferometric Synthetic
+Aperture Radar (InSAR) technology. This groundbreaking technology transcends
+geographical boundaries to monitor assets consistently and comprehensively.
+
+With its seamless integration of cutting-edge technology, Iris is an
+indispensable tool for proactive risk management, precise decision-making, and
+the preservation of critical assets.
+
+### **Working with Iris**
+
+Iris allows you to quickly and interactively access deformation over assets of
+interest, allowing you to make quick decisions regarding the stability and
+health of infrastructure and terrain.
+
+### Fast
+
+Iris utilizes data created in our state-of-the-art InSAR pipeline, the
+only automated commercial InSAR pipeline, allowing speedy delivery and
+the ability to scale to monitor hundreds of sites very quickly.
+
+### Streamlined
+
+All the tools you need are all in a single, easy to use interface. No more
+switching between applications or working with complex bits of code.
+
+### Global
+
+Sentinel-1 global coverage allows users to have continuous monitoring anywhere
+on the planet, or to run one-off analyses to understand where and when motion
+may be occurring.
+
+### **Getting started with Iris**
+
+### New to InSAR?
+
+If you're new to the world of InSAR, learn about some basics to understand
+how active-source measurements taken from space can resolve mm-scale ground
+motions, even when it's cloudy or dark out.
+
+### Looking to jump in?
+
+Hit the ground running by accessing Iris, adding a demo or customer analysis,
+and querying points and areas to discover deformation and anomolous motion.
+
+### Ready to keep learning?
+
+Follow along in some of our case studies to see different examples of
+how motion can be tracked, as well as interpretation tips and caveats.
+
+---
+
+## Introduction to Iris
+URL: https://docs.earthdaily.com/mining/iris/using-iris/
+Keywords: Iris introduction, InSAR application, deformation monitoring, visualization, quicklook analysis, EarthDaily
+
+##  Intro to Iris
+
+An overview of the Iris application and the basic processing and visualization tools.
+
+### **Basic functionality and adding layers**
+
+[Header bar functions]\
+[Add deformation layers]\
+[Deformation anomalies]\
+[Vector layers]\
+[Export data]
+
+### **Visualization settings**
+
+[Map settings]\
+[Time-series settings]
+
+### **Advanced processing**
+
+[Running quicklook]\
+[GVM viewer]
+
+---
+
+[header bar functions]: header.md
+[add deformation layers]: adding-deformation-layers.md
+[map settings]: visualization-settings/map-settings.md
+[time-series settings]: visualization-settings/time-series-settings.md
+[deformation anomalies]: adding-anomalies.md
+[export data]: export-data.md
+[running quicklook]: running-quicklook.md
+[gvm viewer]: gvm-viewer.md
+[vector layers]: vector-layers.md
+
+---
+
+## Header functions
+URL: https://docs.earthdaily.com/mining/iris/using-iris/header/
+Keywords: Iris header, bookmarks, basemaps, pixel inspector, zoom controls, navigation, Iris interface
+
+## The Iris header bar
+
+The header bar in Iris contains several tools for adding baselayers,
+manipulating the map, and links to further information on Iris itself.
+
+### **Bookmarks**
+
+Bookmarks are a convenient way to store locations that you will return to often.
+Each bookmark is defined by a latitude/longitude location and a zoom level.
+Clicking on a bookmark will move the map to the defined center and zoom. Click
+`Create a bookmark` to add the current map location as a bookmark, or click
+`Manage bookmarks` to review and manage your current bookmarks.
+
+### **Basemaps**
+
+Basemaps provide different images underlying the deformation points to
+help interpret what you're seeing on the map. These include free optical
+imagery, shaded relief, OpenStreetMap, and more.
+
+### **Zoom and center**
+
+Controls the center latitude/longitude value and zoom level of the map.
+
+### **Pixel inspector**
+
+The pixel inspector will extract the pixel values for currently visualized
+layers that are from Optical Imagery and Derived Layers. Click the icon to
+start an inspector session, and click on the map to extract a point.
+Clicking the map in another location will move the inspection point and
+recompute the values shown in the box.
+
+### **Changelog**
+
+Click this icon to bring up the release notes for the most recent Iris
+version.
+
+### **Help**
+
+The help icon links to this documentation.
+
+---
+
+## Adding deformation layers
+URL: https://docs.earthdaily.com/mining/iris/using-iris/adding-deformation-layers/
+Keywords: deformation layers, InSAR visualization, Iris, AOI selection, ascending track, descending track, EarthDaily
+
+## Add deformation layers for visualization
+
+Click the plus sign next to Deformation layers and select the method to choose AOIs to load.
+
+### **Add a deformation layer via Map view**
+
+When you select `GDS layer (map)`, the map in the visualization window is updated with markers to show AOIs available to the user.
+**Demo** sites are indicated by orange markers and **Customer** sites by blue markers. The icon of the marker indicates the imaging geometry of the stack used for the analysis: An up arrow to indicate an ascending track, a down arrow to indicate a descending track and a cross to indicate East-West-Up analysis.
+
+The image below is representative and the actual sites available to the user may differ.
+
+Click on an icon to open up the detailed view of the AOI. In this view, pick an analysis spanning
+the time period of interest from the drop down labeled `Select analysis` and hit `Add layer` to
+load the analysis.
+
+### **Add a deformation layer via List view**
+
+When you select `All layers (list)`, it will open a text dialog with all analyses available to the user. The sites available to the user are organized by categories - **Demo**, **Customer** and **Quicklook**. Click on the AOI of interest and details pertaining to the AOI are shown alongside. In this view, pick an analysis spanning
+the time period of interest from the drop down labeled `Select analysis` and hit `Add layer` to
+load the analysis.
+
+---
+
+## Deformation map settings
+URL: https://docs.earthdaily.com/mining/iris/using-iris/visualization-settings/map-settings/
+Keywords: map settings, InSAR visualization, colormap, mask threshold, time slider, Iris, deformation display
+
+## Map settings
+
+Settings to control what the InSAR points look like on the map.
+
+The eyeball icon allows the points on the map to be toggled on and off without needing to remove the analysis fully.
+
+### **Layer**
+
+This dropdown allows you to choose the layer you would like to display. For ascending or descending analyses, this will default to **LOS**, which stands for line of site.
+
+    More information about Sentinel-1 InSAR, including look direction, can be found [here](https://hyp3-docs.asf.alaska.edu/guides/insar_product_guide/#brief-overview-of-insar).
+
+The incidence angle is plotted at the top right of the map for easy interpretation of direction of motion.
+
+If the analysis is an east-west-vertical analysis, obtained by combining ascending and descending, the default will be **Up (+) Down (-)**. By selecting the dropdown, you can choose a different layer to display on the map. For line of sight analyses, you will typically find **LOS Uncertainty**, **LOS (Unfiltered)**, **LOS Velocity (180 days)**, **LOS Acceleration (180 days)**, **Coherence**, and in some cases, **Estimated DEM error**. For east-west-vertical analyses, the options will typically include **Up (+) Down (-)**, **Vertical Uncertainty**, **Up (+) Down (-) (Unfiltered)**, **Vertical Velocity (180 days)**, **Vertical Acceleration (180 days)**, **East (+) West (-)**, **East/West Uncertainty**, **East (+) West (-) (Unfiltered)**, **East Velocity (180 days)**, and **East Acceleration (180 days)**. Changing these layers will both change which points are overlain on the map, and will update what is being plotted on the plot below the map. For more information about settings for the plot below the map, visit [time-series settings](./time-series-settings.md).
+
+### **Min & Max**
+
+The Min and Max values control the colorbar being used to plot the data. Changing these values can be useful for highlighting areas of high amounts of motion. For line of sight analyses, negative motion is motion away from the satellite (e.g. subsidence), and positive motion is motion towards the satellite (e.g. uplift). For east-west-vertical analyses, negative motion is down or west, and positive motion is up or east. This information is provided in the name of the layer.
+
+Changes to the min & max values will be reflected in the colorbar on the bottom right of the map. Numbers can be typed in or changed incrementally using the arrows.
+
+### **Colormap**
+
+The colormap dropdown allows you to change what color the points are plotted on the map. It defaults to **jet**. Changing this will change the colors on the map and the colorbar.
+
+### **Invert colormap**
+
+The **Invert colormap** button flips the colormap for the layer, while maintaining the same min and max values.
+
+### **Mask Threshold (+/-)**
+
+The mask threshold allows you to mask out points below a certain value. This is helpful for quickly identify large areas of motion, while ignoring smaller areas of motion. Numbers can be typed in or changed incrementally using the arrows.
+
+### **Time slider**
+
+Below the **Mask Threshold** is the **Time Slider**, which allows users to adjust both the start and end date of the analysis. The cumulative deformation over the given time window will be plotted on the map.
+
+### **Opacity**
+
+The **Opacity** slider allows the user to change the transparency of the points on the map. 1 is the default, and 0 is fully transparent. This can be useful to easily see what is below the points on the map without having to fully toggle on and off the layer.
+
+---
+
+## Time series plot settings
+URL: https://docs.earthdaily.com/mining/iris/using-iris/visualization-settings/time-series-settings/
+Keywords: time series, measurement type, transect, area plot, historical data, Iris, repositioned points, standard deviation
+
+## Time series settings
+
+Controls for data displayed on the time series.
+
+### **Measurement type**
+
+In Iris, you have the ability to plot **Point**, **Area**, or **Transect**. **Point** is the default, and will correspond to the data at the green pointer on the map. To select points, simply drag the pointer to a new location on the map.
+
+**Area** will compute the average area and 2 times the standard deviation over a chosen polygon. To display area, toggle the radio button to the **Area** label, then select polygons using the **Vector Layer** dropdown, which will display the available polygons you have drawn or loaded into the session. Refer to the [Vector layers](../vector-layers.md) page for instructions on adding/creating vectors.
+
+**Transects** will display the data along a transect. The data is from the end epoch selected with the time slider (see [Map settings](map-settings.md) for more information), meaning it will be consistent with what is displayed on the map. The vertical axis will remain as deformation in mm, while the horizontal axis will now be meters along the transect. To display the transect, toggle the radio button to the **Transect** label, then select polylines using the **Vector Layer** dropdown, which will display the available polylines you have drawn or loaded into the session. Refer to the [Vector layers](../vector-layers.md) page for instructions on adding/creating vectors.
+
+    To see the exact location a point is on the map, you can hover over the transect data plotted and a blue pointer will show you the location on the transect.
+
+### **Plot STD**
+
+Clicking the `Plot STD` checkbox will plot the standard deviation for the layer, if it applies to the layer. If it does not apply to the selected layer, the checkbox will be greyed out.
+
+### **Lock y-axis**
+
+The lock y-axis button locks the time series to its current limits, instead of scaling the y-axis as you select different points to display. This can be particularly useful when comparing magnitudes of different points, or to watch the development of deformation over time along a transect.
+
+### **Show historical**
+
+This checkbox can be toggled on and off to look at the historical statistics of the data being plotted, if previous analyses exist. The historical analysis is the mean of all other analyses that were run that included this particular point.
+
+    To read more about DEM-error corrected points in Iris, check out our Knowledge Base article [here](https://mining.earthdaily.com/knowledge-base/knowledge/historical-consistency).
+
+If `Show historical` is checked as well as `Plot STD`, the standard deviation for the current analysis is calculated from only this analysis, while the historical standard deviation is calculated from all of the other analyses included for this point. If no historical analyses exist for a dataset, the box will be greyed out.
+
+### **Pixel**
+
+This box gives the exact pixel location of the point you have selected in lat/long coordinates.
+
+### **Use repositioned points**
+
+The **Use repositioned points** button allows the points to be displayed either using their regularly-gridded locations at the given posting, our with point locations that have been corrected for DEM-errors.
+
+    To read more about DEM-error corrected points in Iris, check out our Knowledge Base article [here](https://mining.earthdaily.com/knowledge-base/knowledge/dem-error-corrected-point-locations).
+
+The default behavior is to use the repositioned points. If DEM-error corrected points do not exist for a dataset, the box will be greyed out.
+
+---
+
+## Deformation anomalies
+URL: https://docs.earthdaily.com/mining/iris/using-iris/adding-anomalies/
+Keywords: deformation anomalies, anomaly detection, InSAR monitoring, Iris, ground movement, anomaly persistence, time series
+
+## Deformation anomalies
+
+The goal of **anomaly detection** is to identify behaviors that may indicate potential issues, and to identify regions where there has been a change from the historical trend that may require attention. These trends are meant to easily highlight areas that are deforming rapidly or anomalously, but do not predict any type of future motion or the overall stability of an area.
+
+    To read more about deformation anomalies in Iris, check out our Knowledge Base article [here](https://mining.earthdaily.com/knowledge-base/knowledge/anomaly-detection).
+
+Click the checkboxes in the left panel to add anomalies to the current analysis. There three are ways to visualize deformation anomalies.
+
+    Multiple types of anomalies can be plotted at the same time
+
+### **Current anomalies**
+
+Current anomalies are areas for the latest collect in the analysos that are classified as one of three types (see legend):
+
+1. Steady: deformation with a linear trend over the last 120 days and a velocity above 0.05 mm/day
+2. Sudden: deformation with statistically anomalous increase in velocity within the last 4 collects
+3. Complex: both steady and sudden behavior within a contigious area
+
+### **Anomaly persistence**
+
+Regardless of type, anomalies for all collects are plotted with a low opacity. Therefore, high opacity areas have more persistant anomalous deformation than low-opacity features.
+
+### **Anomaly time series**
+
+Anomalies for all collects are plotted, colored by date. This allows users to see how features have changed over time.
+
+---
+
+## Adding vector layers
+URL: https://docs.earthdaily.com/mining/iris/using-iris/vector-layers/
+Keywords: vector layers, GeoJSON upload, shapefile, draw polygon, Iris, spatial data, GeoPackage
+
+## Add vector layers
+
+Iris supports several methods for adding vector layers to your current viewer.
+
+### **Draw a vector layer**
+
+Select `Draw layer` to create a vector layer by manually drawing one on the map.
+
+The dialog allows you to type a name for the vector and select the geometry
+type. Available options are `Polygon`, `Polyline`, and `Points`. After clicking
+the `Add layer` button, the new vector will appear in the layer list. Click the
+[draw](index.md#toggle-drawing) icon to toggle drawing, then click the new icon
+on the map to begin the drawing session.
+
+    The icon on the map will indicate whether the drawn layer will be a polygon,
+    point, or polyline.
+
+Click on the map to draw the desired vector object.
+
+- For polygons, finalize the polygon by clicking the first point to close the
+  polygon.
+- For polylines, finalize by clicking the last point.
+- For points, each individual point will be drawn separately.
+
+### **Upload a GeoJSON layer**
+
+Select the `Upload vector` option to load a vector layer from your local
+computer. Valid formats for loading vectors include:
+
+- GeoJSONs
+- Shapefiles (as `.zip` archives)
+- GeoPackage (`.gpkg`)
+- CSVs
+- Parquet
+- AutoCAD DXF
+- KML/KMZ
+
+    Vector files have a large amount of variability from one software package to the
+    next. Iris attempts to load vectors using the
+    [GeoPandas](https://geopandas.org/en/stable/docs/reference/api/geopandas.read_file.html)
+    package, which is successful for most vector files from common sources (QGIS,
+    Arc, etc). For help loading non-standard vector layers, contact 
+    [support](mailto:support@earthdaily.com).
+
+### **Load from S3**
+
+This is a special option that loads specific polygons associated with customizations requested for a customer site. This option can
+only be used after a [deformation layer](./adding-deformation-layers.md) has been added for visualization.
+Users will have the option to choose the project, the type of polygons (exclusion or inclusion) and whether to apply it to the current analysis to mask the analysis or alerts.
+
+---
+
+## Export data
+URL: https://docs.earthdaily.com/mining/iris/using-iris/export-data/
+Keywords: export data, download parquet, CSV export, Iris, InSAR data, deformation analysis
+
+## Export data
+
+Data available in iris can be downloaded for use in other software. To download data, scroll to the bottom of the left panel and click the save icon next to the `Export Layer` label.
+
+### **Download .parquet file**
+
+To download the entire analysis as a parquet file, first select the layers you would like (`Filtered`, `Unfiltered`, and/or `Repositioned points`), then select the area you would like under the `Export area` dropdown. If you choose `Entire analysis`, all of the points will be downloaded. Next, click on the `Generate Download` button. This will create a link that you can click on to start your download. **MGRS**, **EASTING**, **NORTHING**, **VEL**, **ACC**, **STDDEV**, **ALERT**, **COHERENCE**, **LAT**, **LON**, and **geometry** will be downloaded as well as the layers you have selected, when available.
+
+    If you'd like to download a different set of data, click the `Generate Download` button a second time to recreate the download link.
+
+### **Download current plot**
+
+To download the current data shown on the plot, toggle the button to the `Current plot` option. Selecting `Generate Download` will automatically download a .csv file containing whatever data is currently on the plot. If point data is selected, the latitude and longitude will be included in the file name. If a transect or area is selected, the name of the polyline/polygon will be included in the file name. All data shown on the map, including deformation, historical data, standard deviation, etc. will be included in the output, with the exception of velocity and acceleration. In the case of point and area plots, dates will be included for each point. In the case of transect data, the latitude and longitude of each point will be included.
+
+---
+
+## Running quicklook
+URL: https://docs.earthdaily.com/mining/iris/using-iris/running-quicklook/
+Keywords: quicklook analysis, InSAR time series, Iris, Sentinel-1, burst footprints, interferogram, deformation processing
+
+## Running Quicklook analysis
+
+The **Quicklook analysis** tool in **Iris** can be used to quickly generate InSAR time-series over small AOIs interest. The quicklook analysis is very useful in understanding the spatial distribution of reliable scatterers over an AOI and also helps identify key deforming features quickly, when possible. Our quicklook analysis builds on our Global InSAR layer which includes all Sentinel-1 burst interferograms with a temporal baseline less than 24 days.
+
+    Quicklook Analysis is only available to qualified customers with platform access.
+
+### **Use stack analysis mode**
+
+Select `Stack Viewer` tool from the `Stack analysis` header on the left panel.
+
+This should change the appearance of the main map area to look like this.
+
+    The actual buttons available to the user will depend on the subscription privileges.
+
+### **Search for Sentinel-1 burst footprints**
+
+The tool is set up to analyze the last one year of data by default. The user can modify the time period of interest as needed. Zoom over the AOI of interest and hit the `Footprints` button to look for InSAR data overlapping the area of interest in the given time period. This should update the map view as shown below:
+
+The original search area is shown as black rectangle and is overlaid by polygons representing the Sentinel-1 burst footprints intersecting the search area. User is able to click on the polygons and the timeline plot under the map is updated with a plot of the interferogram network for analysis. This allows the user to select the imaging geometry with best temporal sampling and coverage of their AOI for the quicklook analysis.
+After clicking on the burst footprint to use for analysis, hit the `Quicklook` button to open the `Run Quicklook analysis` dialog.
+
+    If the selected AOI is too large, selection of burst footprints could fail. If the available interferogram network is not connected, Quicklook analysis may not be available over the AOI.
+
+### **Verify parameters**
+
+The `Run quicklook analysis` dialog should look like above. The user can set or verify the following parameters:
+
+1. **AOI:** If the user has vector polygons available, they can choose a more specific polygon compared to the original search area.
+2. **Stitching bursts:** If the user's AOI is not entirely covered by a single burst footprint, they can opt to stitch bursts along track to cover the AOI.
+3. **Name:** Pick a meaningful name for the analysis. This field is mandatory.
+4. **Resolution:** The global InSAR layer has a posting of 20m. For larger AOIs, we suggest using value of 40m or 80m to speed up the analysis.
+5. **Coherence threshold:** This parameter controls the selection of a coherent reference region for time-series estimation.
+6. **Quality threshold:** This parameter is similar to temporal coherence for pixel selection, prior to phase unwrapping.
+
+At this stage, the user has an option to estimate the number of points that could potentially be generated by the chosen set of parameters.
+
+### **Launch the analysis and monitor progress**
+
+When ready, hit the `Submit` button and this should start a compute job on the platform. You can check the progress on the [Compute services page](https://earthone.earthdaily.com/compute).
+
+On completion of the processing job, the results are written to the [Storage service](https://earthone.earthdaily.com/storage) and should be available for visualization. The processing time depends on the size of the AOI and the number of usable interferograms in the time period of interest. A typical 5 km x 5km AOI takes about 10 minutes to process for 1 year's worth of data.
+
+### **Visualizing results**
+
+The results should be available to visualize just like [other deformation layers](./adding-deformation-layers.md).
+
+---
+
+## GVM viewer
+URL: https://docs.earthdaily.com/mining/iris/using-iris/gvm-viewer/
+Keywords: global velocity viewer, InSAR velocity, Iris, Sentinel-1, deformation trends, orbit tracks, cumulative velocity
+
+## Global velocity viewer
+
+The **Global velocity viewer** is a tool to work with our **Global InSAR Velocity Layer** within Iris.
+
+### **Usage**
+
+To query points, click on the map to view the velocity data for the selected point. Velocities represent the average velocity over the calendar year displayed. To get exact values, toggle over the points.
+
+### Starting and ending year
+
+To update the starting and ending year, use the respective dropdowns to update what will be plotted on the time series, and, depending on settings, what will be shown on the map.
+
+### Show imagery on map
+
+Toggle the `Show imagery on map` button to quickly remove the data to view layers underneath. To add the Global Velocity Layer back to the map, simply check the box again.
+
+### Map display
+
+The data on the map can be displayed as just the velocity over the year chosen as the end date, or the cumulative mean over the time period. Looking over the most recent year can be useful for understanding recent trends, while looking at the cumulative values over the entire selected time period can be useful for highlighting long-term trends.
+
+### Search tracks
+
+In some locations, there will be overlapping orbit tracks. When multiple points are present for a specific date, this indicates overlapping orbits are present. The orbit tracks are each processed separately, so it is recommended that the data on the map be visualized separately.
+
+To do so, click on the `Search tracks` button, which will populate the dropdown below. Click on a particular orbit track to view data only from this track. Orbit tracks are labeled in the legend of the velocity vs year plot.
+
+---
+
+## Tailings pond water
+URL: https://docs.earthdaily.com/mining/iris/using-iris/water-viewer/
+Keywords: tailings pond, water monitoring, Iris, pond water levels, mining safety, satellite imagery, EarthDaily
+
+## Tailings pond viewer
+
+The **Tailings pond viewer** is a tool to interact with measurements of tailings pond levels. This tool is useful for understanding how much water is currently stored within a tailings pond, as well as how this has changed over time, which can be useful for understanding the health of the pond, meeting regulations, and understanding production levels.
+
+    Water monitoring is only available for customers with an appropriate license. Contact support@earthdaily.com to discuss monitoring pond water at your sites!
+
+### **Usage**
+
+### Accessing tailings pond water
+
+To access the tailings pond viewer, on the lefthand side, under **Water**, select **Tailings pond water**. If you have InSAR layers open at this time, you will be asked to confirm you would like to switch modes before proceeding.
+
+From here, you can select on your minesite of interest, and then select which pond you would like to monitor. When you select the minesite, you will be taken there on the map.
+
+### Plotting most recent water
+
+To see the most recent water on the map, click the **Plot most recent pond water** button. This will plot the most recent water derived from cloud-free imagery. This will also create a polygon under your vector layers with the date the measurement was taken that can be downloaded as a GeoJSON.
+
+    Since water monitoring requires cloud-free imagery, it is possible that the most recent measurements will have occurred a few weeks prior.
+
+### Plotting year-long history
+
+To plot the year-long history, select the **Plot year-long pond water**. This will plot the polygons from the past year on the map, and the percentage of the pond that was water on the plot below. To see specific dates and values, hover of points on the plot.
+
+---
