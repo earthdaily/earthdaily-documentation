@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <style>
+    /* The shared stylesheet hides H1s; show titles for the Iris 2.0 guides. */
+    .md-content__inner > h1:first-child,
+    .md-content h1:first-of-type,
+    .md-typeset > h1:first-child,
+    article.md-content__inner > h1:first-child,
+    .md-content__inner h1:first-of-type {
+      display: block !important;
+      margin-top: 0;
+    }
+  </style>
+{% endblock %}

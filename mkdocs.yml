@@ -917,20 +917,34 @@ nav:
           - Low sulphidation epithermal: mining/marigold/case-studies/case-study-1.md
           - High sulphidation epithermal: mining/marigold/case-studies/case-study-2.md
     - Iris:
-      - mining/iris/index.md
-      - Iris Basics:
-          - Introduction to Iris: mining/iris/using-iris/index.md
-          - Header functions: mining/iris/using-iris/header.md
-          - Adding deformation layers: mining/iris/using-iris/adding-deformation-layers.md
-          - Visualization settings:
-              - Deformation map settings: mining/iris/using-iris/visualization-settings/map-settings.md
-              - Time series plot settings: mining/iris/using-iris/visualization-settings/time-series-settings.md
-          - Deformation anomalies: mining/iris/using-iris/adding-anomalies.md
-          - Adding vector layers: mining/iris/using-iris/vector-layers.md
-          - Export data: mining/iris/using-iris/export-data.md
-          - Running quicklook: mining/iris/using-iris/running-quicklook.md
-          - GVM viewer: mining/iris/using-iris/gvm-viewer.md
-          - Tailings pond water: mining/iris/using-iris/water-viewer.md
+      - Overview: mining/iris/index.md
+      - Iris 2.0:
+          - Select a site and analysis: mining/iris/v2/select-site.md
+          - Read the analysis legend: mining/iris/v2/analysis-legends.md
+          - Choose a deformation field: mining/iris/v2/data-fields.md
+          - Change the map appearance: mining/iris/v2/map-display.md
+          - Deformation time series:
+              - Point: mining/iris/v2/point-time-series.md
+              - Transect: mining/iris/v2/transect-profiles.md
+              - Area: mining/iris/v2/area-time-series.md
+          - Investigate anomalies: mining/iris/v2/deformation-anomalies.md
+          - Draw and import vectors: mining/iris/v2/vector-layers.md
+          - Export data and results: mining/iris/v2/export-data.md
+      - Iris 1.0:
+        - Overview: mining/iris/legacy-overview.md
+        - Iris Basics:
+            - Introduction to Iris: mining/iris/using-iris/index.md
+            - Header functions: mining/iris/using-iris/header.md
+            - Adding deformation layers: mining/iris/using-iris/adding-deformation-layers.md
+            - Visualization settings:
+                - Deformation map settings: mining/iris/using-iris/visualization-settings/map-settings.md
+                - Time series plot settings: mining/iris/using-iris/visualization-settings/time-series-settings.md
+            - Deformation anomalies: mining/iris/using-iris/adding-anomalies.md
+            - Adding vector layers: mining/iris/using-iris/vector-layers.md
+            - Export data: mining/iris/using-iris/export-data.md
+            - Running quicklook: mining/iris/using-iris/running-quicklook.md
+            - GVM viewer: mining/iris/using-iris/gvm-viewer.md
+            - Tailings pond water: mining/iris/using-iris/water-viewer.md
   - Insurance:
     - insurance/index.md
     - Ascend:

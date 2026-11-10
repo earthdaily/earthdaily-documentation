@@ -106,9 +106,9 @@ The table below summarizes EDC product levels.
 
 | Product | Level | Correction | Radiometry | Subscription Options | Description | Usage |
 |---|---|---|---|---|---|---|
-| AI-Ready Data / AIRD | L2A | Precision | Surface reflectance | Flex, <br> Everywhere Everyday | BOA surface reflectance product standardized with stable radiometry, consistent geolocation, and automated QA. 9 bands, precision corrected, 16-bit | Science-grade monitoring, time-series analysis, and fusion with heritage sensors (Landsat, Sentinel-2) |
-| Maritime | L1C | Systematic | TOA reflectance | Flex, <br> Everywhere Everyday | Scaled TOA reflectance. Consists of 4 spectral bands, processed using systematic correction, 8-bit | Delivers the spectral signatures essential for vessel detection, wake analysis, and coastal change identification. Monitor oil slicks and related parameters, sediment plumes, algal blooms, port infrastructure, and anomaly heat signatures.  |
-| Science | L1C | Precision | TOA reflectance | Flex, <br> Everywhere Everyday | Scaled TOA reflectance product. Consists of 20 spectral bands, processed using precision correction. 16-bit | Scientific users who require access to calibrated TOA reflectance prior to atmospheric correction |
+| AI-Ready Data / AIRD | L2A | Precision | Surface reflectance | Pull, Push | BOA surface reflectance product standardized with stable radiometry, consistent geolocation, and automated QA. 9 bands, precision corrected, 16-bit | Science-grade monitoring, time-series analysis, and fusion with heritage sensors (Landsat, Sentinel-2) |
+| Maritime | L1C | Systematic | TOA reflectance | Pull, Push | Scaled TOA reflectance. Consists of 4 spectral bands, processed using systematic correction, 8-bit | Delivers the spectral signatures essential for vessel detection, wake analysis, and coastal change identification. Monitor oil slicks and related parameters, sediment plumes, algal blooms, port infrastructure, and anomaly heat signatures.  |
+| Science | L1C | Precision | TOA reflectance | Pull, Push | Scaled TOA reflectance product. Consists of 20 spectral bands, processed using precision correction. 16-bit | Scientific users who require access to calibrated TOA reflectance prior to atmospheric correction |
 
 ### 2.2 AI Ready Product Specification
 
