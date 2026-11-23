@@ -1,0 +1,817 @@
+
+/*______________________________________________________*/
+/* Side nav styling                                     */
+/*______________________________________________________*/
+
+/* Indent only the navigation content, not the top-level section titles */
+.md-nav__item--section > .md-nav > .md-nav__list {
+    margin-left: 0.75rem; /* Adjust the value (e.g., 0.5rem, 2em, 20px) as needed */
+}
+
+/* Further indent nested levels if needed.
+   Kept tight (0.25rem per level) because some sections nest up to 5 deep
+   (e.g. Agriculture → USER GUIDES → earthdaily-agriculture client → API reference → page),
+   and a larger per-level value pushed deep items off the right edge of the sidebar. */
+.md-nav__list .md-nav__list {
+    margin-left: 0.25rem;
+}
+
+/* Section-header rows (PRODUCTS, USER GUIDES, ANALYTIC CATALOG, etc.) sit flush
+   with their parent tab's link (e.g. "Agriculture") instead of being indented
+   one nested-list step inside it. Targets only the <ul> that directly contains
+   section items, so tabs without sections (Mining, etc.) are unaffected.
+   Selector intentionally mirrors the more-specific section-content rule above
+   (with an added :has() filter) so it overrides that rule's 0.75rem margin
+   when the inner content is itself more sections. */
+.md-nav__item--section > .md-nav > .md-nav__list:has(> .md-nav__item--section) {
+    margin-left: 0;
+}
+
+/* Make the font color of the sub-titles (pages) darker */
+.md-nav__link {
+    color: #161616; /* A slightly lighter dark color for sub-items */
+}
+
+/* Make the font color of section titles darker */
+.md-nav__item--section > .md-nav__link {
+    color: #070707; /* Use a specific hex code or RGB value */
+}
+
+/* Style the individual navigation items under sections */
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item {
+    padding: 0;
+}
+
+/* Style the font color of links within those items */
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item .md-nav__link {
+    color: #161616; /* Adjust to your preferred color */
+}
+
+/* Mobile drawer title bar — use EarthDaily Navy instead of default purple */
+.md-nav--primary .md-nav__title[for=__drawer] {
+    background-color: var(--ed-primary);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Make the logo white on the dark drawer background */
+.md-nav--primary .md-nav__title[for=__drawer] .md-logo img,
+.md-nav--primary .md-nav__title[for=__drawer] .md-logo svg {
+    filter: brightness(0) invert(1);
+}
+
+/*______________________________________________________*/
+/* Core page styling                                    */
+/*______________________________________________________*/
+
+.md-header__button.md-logo {
+  margin-top: 3;
+  margin-bottom: 3;
+  padding-top: 3;
+  padding-bottom: 3;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 40%;
+  width: 40%;
+}
+
+
+/* Announcement bar link styling */
+.md-banner a,
+.md-banner__inner a,
+.md-announce a,
+.md-announce__inner a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Force 1 column by default */
+.grid.cards.fixed-2-col {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* At tablet+ size → force 2 columns */
+@media screen and (min-width: 768px) {
+  .grid.cards.fixed-2-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Ensure equal height cards */
+.grid.cards.fixed-2-col > * {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Force 1 column by default */
+.grid.cards.fixed-3-col {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* At tablet size → force 2 columns */
+@media screen and (min-width: 768px) {
+  .grid.cards.fixed-3-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* At desktop size → force 3 columns, so 6 cards land as 2 rows of 3
+   instead of the auto-fit default packing 4 onto the first row */
+@media screen and (min-width: 1024px) {
+  .grid.cards.fixed-3-col {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Hide auto-generated page title - Multiple selectors */
+.md-content__inner > h1:first-child,
+.md-content h1:first-of-type,
+.md-typeset > h1:first-child,
+article.md-content__inner > h1:first-child,
+.md-content__inner h1:first-of-type {
+  display: none !important;
+}
+
+/*______________________________________________________*/
+/* Home page - Hero section style  */
+/*______________________________________________________*/
+
+/* Hero section styling */
+.md-typeset h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+/* Feature cards */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid.cards > * {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.grid.cards > *:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.lg {
+  font-size: 2rem;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+/*______________________________________________________*/
+/* EarthDaily corporate website alignment */
+/*______________________________________________________*/
+
+/* EarthDaily Brand Colors — aligned with earthdaily.com (2026) */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;700&display=swap');
+
+:root {
+    --ed-primary: #214B64;        /* EarthDaily Navy */
+    --ed-primary-dark: #042D41;   /* Deep Navy */
+    --ed-primary-gradient: linear-gradient(to right, #042D41, #214B64);
+    --ed-secondary: #00a651;      /* Earth Green */
+    --ed-accent: #ff6b35;         /* Accent Orange */
+    --ed-dark: #24272A;           /* Corporate dark text */
+    --ed-light-bg: #F8F4F3;      /* Warm cream background */
+    --ed-card-bg: #ffffff;
+    --ed-border: #E0DDD9;         /* Warm gray border */
+}
+
+/* Main Content Area Background */
+.md-main {
+    background-color: var(--ed-light-bg);
+    min-height: 100vh;
+}
+
+/* Force transparency on all content wrappers */
+.md-content,
+.md-content__inner,
+.md-typeset,
+article.md-content__inner,
+.md-content > .md-content__inner {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Apply semi-transparent background only to the main content box */
+.md-content__inner {
+    background: rgba(255, 255, 255, 0.75) !important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+/* Remove any pseudo-elements that might add backgrounds */
+.md-content__inner:before,
+.md-content__inner:after,
+.md-content:before,
+.md-content:after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+
+/* Ensure article and typeset are transparent */
+.md-typeset article {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.md-main__inner {
+    background: transparent !important;
+}
+
+/* Target the main element specifically */
+main.md-content {
+    background: transparent !important;
+}
+
+main.md-content > .md-content__inner {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border-radius: 10px;
+}
+
+/* Sidebar Background */
+.md-sidebar {
+    background-color: transparent;
+}
+
+.md-sidebar--primary {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--ed-border);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    /* Vertical padding kept generous; horizontal trimmed so top-level
+       links (e.g. "Agriculture") sit flush-left and deep nested items
+       don't overflow the sidebar. */
+    padding: 1.25rem 0.5rem;
+}
+
+.md-sidebar--secondary {
+    background: transparent;
+}
+
+/* Page Container */
+.md-container {
+    background-color: transparent;
+}
+.md-button--primary {
+    background: var(--ed-primary-gradient) !important;
+    border-color: var(--ed-primary) !important;
+    color: white !important;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.md-button--primary:hover {
+    background: var(--ed-primary-gradient) !important;
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(4, 45, 65, 0.3);
+}
+
+/* Card Grid Styling */
+.grid.cards > ul {
+    gap: 1.5rem;
+}
+
+.grid.cards > ul > li {
+    border: 1px solid var(--ed-border);
+    border-radius: 6px;
+    padding: 2rem;
+    background: var(--ed-card-bg);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.grid.cards > ul > li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: var(--ed-primary);
+}
+
+/* Main Help Section Cards */
+.grid.cards > ul > li > hr {
+    margin: 1rem 0;
+    border-color: var(--ed-border);
+}
+
+/* Icon Styling in Cards */
+.grid.cards .lg.middle {
+    color: var(--ed-primary);
+    font-size: 3rem;
+}
+
+/* Links in Cards */
+.grid.cards a {
+    color: var(--ed-primary);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.grid.cards a:hover {
+    color: var(--ed-primary-dark);
+    gap: 0.75rem;
+}
+
+/* Secondary Cards (Popular Resources) */
+.grid.cards > ul > li > p > strong {
+    color: var(--ed-dark);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Admonition Styling */
+.md-typeset .admonition.info {
+    border-left: 4px solid var(--ed-primary);
+}
+
+.md-typeset .admonition.tip {
+    border-left: 4px solid var(--ed-secondary);
+}
+
+/* Header Styling — IBM Plex Serif for headings (corporate alignment) */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    font-family: 'IBM Plex Serif', Georgia, serif;
+}
+
+.md-typeset h1 {
+    color: var(--ed-primary-dark);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+    color: var(--ed-dark);
+    font-weight: 400;
+    border-bottom: 2px solid var(--ed-light-bg);
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Horizontal Rules */
+.md-typeset hr {
+    border-bottom: 1px solid var(--ed-border);
+    margin: 2.5rem 0;
+}
+
+/* Link Styling */
+.md-typeset a {
+    color: var(--ed-primary);
+}
+
+.md-typeset a:hover {
+    color: var(--ed-primary-dark);
+}
+
+/* Code Blocks */
+.md-typeset code {
+    background-color: var(--ed-light-bg);
+    color: var(--ed-dark);
+    border-radius: 3px;
+    padding: 0.2rem 0.4rem;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+    border: 1px solid var(--ed-border);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--ed-light-bg);
+    color: var(--ed-dark);
+    font-weight: 600;
+}
+
+/* Navigation Banner - Match Corporate Website */
+.md-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Text Color */
+.md-header__title,
+.md-header__button,
+.md-header__topic {
+    color: var(--ed-dark) !important;
+}
+
+
+/* Navigation Links */
+.md-header-nav__button {
+    color: var(--ed-dark) !important;
+}
+
+.md-header-nav__button:hover {
+    opacity: 0.7;
+}
+
+/* Header Source/Repository Link */
+.md-header__source {
+    color: var(--ed-dark) !important;
+}
+
+.md-source {
+    color: var(--ed-dark) !important;
+}
+
+.md-source__icon {
+    color: var(--ed-dark) !important;
+}
+
+.md-source__repository {
+    color: var(--ed-dark) !important;
+}
+
+.md-source:hover {
+    opacity: 0.8;
+}
+
+/* Search Bar in Header */
+.md-search__input {
+    background-color: var(--ed-light-bg);
+    border: 1px solid var(--ed-border);
+}
+
+.md-search__icon {
+    color: var(--ed-dark) !important;
+}
+
+/* Tabs Navigation */
+.md-tabs {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--ed-border);
+}
+
+.md-tabs__link {
+    color: var(--ed-dark) !important;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.md-tabs__link:hover {
+    opacity: 1;
+    color: var(--ed-primary) !important;
+}
+
+.md-tabs__link--active {
+    color: var(--ed-primary) !important;
+    opacity: 1;
+    border-bottom: 2px solid var(--ed-primary);
+}
+
+/* Logo Styling */
+.md-header__logo img {
+    filter: none;
+}
+
+/* Search Bar */
+.md-search__input {
+    border-radius: 6px;
+}
+
+.md-search__input:focus {
+    border-color: var(--ed-primary);
+}
+
+/* Sidebar Active Links */
+.md-nav__link--active {
+    color: var(--ed-primary);
+    font-weight: 600;
+}
+
+/* Footer Styling */
+.md-footer {
+    background-color: var(--ed-dark);
+}
+
+/* Custom Alert Boxes */
+.ed-alert {
+    border-left: 4px solid var(--ed-primary);
+    background-color: rgba(33, 75, 100, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.ed-alert-success {
+    border-left-color: var(--ed-secondary);
+    background-color: rgba(0, 166, 81, 0.05);
+}
+
+.ed-alert-warning {
+    border-left-color: var(--ed-accent);
+    background-color: rgba(255, 107, 53, 0.05);
+}
+
+/* Responsive Card Layout */
+@media screen and (max-width: 768px) {
+    .grid.cards > ul {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .grid.cards > ul > li {
+        padding: 1.5rem;
+    }
+}
+
+
+
+/* Developer Resources Special Styling */
+.grid.cards > ul > li:has(strong:contains("Python SDK")),
+.grid.cards > ul > li:has(strong:contains("API")) {
+    background: linear-gradient(135deg, rgba(4, 45, 65, 0.03) 0%, rgba(0, 166, 81, 0.03) 100%);
+}
+
+/*______________________________________________________*/
+/* Badge Styling               */
+/*______________________________________________________*/
+
+/* Base badge styling */
+.mdx-badge {
+    font-size: 0.85em;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Badge with heart - for sponsors/insiders */
+.mdx-badge--heart {
+    --md-typeset-a-color: hsl(340, 82%, 52%);
+    --md-accent-fg-color: hsl(340, 100%, 50%);
+    --md-accent-fg-color--transparent: hsla(340, 82%, 52%, 0.1);
+    color: hsl(340, 82%, 52%);
+}
+
+/* Animate heart icon */
+.mdx-badge--heart .twemoji {
+    animation: heart 1000ms infinite;
+}
+
+/* Heart animation keyframes */
+@keyframes heart {
+    0%, 40%, 80%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(0.92);
+    }
+}
+
+/* Make article a positioning context */
+.md-content__inner {
+    position: relative;
+}
+
+/* Base styling for ALL badge paragraphs */
+.md-typeset p:has(.mdx-badge--right) {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    height: auto;
+    vertical-align: top;
+}
+
+/* Only the FIRST badge paragraph (after the button) is absolutely positioned */
+.md-content__button + p:has(.mdx-badge--right) {
+    position: absolute;
+    top: 0.4rem;
+    right: 3.5rem;
+}
+
+/* Second badge paragraph (adjacent to first badge paragraph) flows inline */
+.md-content__button + p:has(.mdx-badge--right) + p:has(.mdx-badge--right) {
+    position: relative;
+    margin-left: 0.5rem !important;
+}
+
+/* Badges within paragraph */
+.mdx-badge--right {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.mdx-badge--right:first-child {
+    margin-left: 0;
+}
+
+/* Adjust spacing for h1 */
+.md-typeset h1:first-of-type {
+    margin-top: 3rem;
+}
+
+/* Badge icon container */
+.mdx-badge__icon {
+    padding: 0.25rem;
+    background: var(--md-accent-fg-color--transparent);
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* If icon is alone, round all corners */
+.mdx-badge__icon:last-child {
+    border-radius: 0.125rem;
+}
+
+/* Badge text container */
+.mdx-badge__text {
+    padding: 0.25rem 0.375rem;
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+    box-shadow: 0 0 0 1px inset var(--md-accent-fg-color--transparent);
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Optional: Define accent colors for different badge types */
+.mdx-badge:not(.mdx-badge--heart) {
+    --md-accent-fg-color: var(--ed-primary, #214B64);
+    --md-accent-fg-color--transparent: rgba(33, 75, 100, 0.1);
+}
+
+/* Manual Badge Styling (for custom HTML badges) */
+.md-typeset .custom-badge {
+    background-color: var(--ed-primary);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+/*______________________________________________________*/
+/* Footer styling                                       */
+/*______________________________________________________*/
+
+.md-footer {
+    background-color: #ffffff;
+    border-top: 1px solid var(--ed-border);
+}
+
+/* Footer text color for light mode */
+.md-footer-meta,
+.md-footer-copyright,
+.md-footer__link {
+    color: var(--ed-dark);
+}
+
+/* Dark mode footer */
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: var(--ed-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode footer text */
+[data-md-color-scheme="slate"] .md-footer-meta,
+[data-md-color-scheme="slate"] .md-footer-copyright,
+[data-md-color-scheme="slate"] .md-footer__link {
+    color: #ffffff;
+}
+
+/*______________________________________________________*/
+/* Mobile sidebar toggle                                */
+/*______________________________________________________*/
+
+/* Floating nav button — hidden on desktop */
+.md-nav-toggle {
+    display: none;
+}
+
+/* Overlay behind mobile sidebar — hidden by default */
+.md-sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 999;
+}
+
+.md-sidebar-overlay.is-open {
+    display: block;
+}
+
+/* Close button inside sidebar — hidden on desktop */
+.md-sidebar__close {
+    display: none;
+}
+
+@media screen and (max-width: 76.25em) {
+    /* Show floating toggle button */
+    .md-nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        z-index: 998;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: var(--ed-primary-gradient);
+        border: none;
+        color: #ffffff;
+        box-shadow: 0 4px 12px rgba(4, 45, 65, 0.3);
+        cursor: pointer;
+    }
+
+    .md-nav-toggle svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: #ffffff;
+    }
+
+    /* Override MkDocs default sidebar hide — we handle it ourselves */
+    .md-sidebar--primary {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 18rem;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        border-right: 1px solid var(--ed-border);
+        background: #ffffff;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        padding: 1rem 1.25rem;
+        overflow-y: auto;
+    }
+
+    .md-sidebar--primary.is-open {
+        transform: translateX(0);
+    }
+
+    /* Show close button inside sidebar on mobile */
+    .md-sidebar__close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: 1px solid var(--ed-border);
+        border-radius: 6px;
+        padding: 0.35rem;
+        cursor: pointer;
+        color: var(--ed-dark);
+        margin-bottom: 1rem;
+        margin-left: auto;
+    }
+
+    .md-sidebar__close svg {
+        width: 1.1rem;
+        height: 1.1rem;
+        fill: currentcolor;
+        display: block;
+    }
+}
