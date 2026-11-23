@@ -5,10 +5,9 @@ keywords:
   - EarthDaily
   - EDC
   - product specification
-  - AI-ready data
-  - AIRD
-  - Science
-  - Maritime
+  - AiRD
+  - Primary
+  - Rapid
   - STAC
   - surface reflectance
   - TOA reflectance
@@ -17,7 +16,7 @@ keywords:
 # EarthDaily Constellation Product Specification
 
 !!! info "Document information"
-    **Version:** 1.0 · **Scope:** Technical Documentation — Products · **Date:** 2026-09-03
+    **Version:** 1.1 · **Scope:** Technical Documentation — Products · **Date:** 2026-11-04
 
 ## 1. Mission Overview
 
@@ -91,7 +90,7 @@ All EDC products are generated using a rigorous sensor model that uses knowledge
 EDC products are delivered with two levels of geometric processing:
 
 1. **Precision Correction** – Applies geometric refinement in which ground control points (GCPs) and digital elevation models (DEMs) are used to refine the satellite image geometry. This process corrects for orbital, attitude, and terrain-related distortions, ensuring that pixels are accurately placed on the Earth's surface. Products corrected in this manner are suitable for applications requiring high geolocation accuracy, such as time-series analysis, land cover change detection, and sensor fusion.
-2. **Systematic Correction** – Satellite orbit and attitude knowledge is derived from satellite telemetry. GCPs are not used. A digital elevation model (DEM) may be applied if available. Products corrected in this manner (e.g., Maritime) are suitable for rapid-response applications where speed is prioritized over high-precision geolocation.
+2. **Systematic Correction** – Satellite orbit and attitude knowledge is derived from satellite telemetry. GCPs are not used. A digital elevation model (DEM) may be applied if available. Products corrected in this manner (e.g., Rapid) are suitable for rapid-response applications where speed is prioritized over high-precision geolocation.
 
 #### 2.1.3 Radiometric Interpretation
 
@@ -102,17 +101,17 @@ EDC instruments sense Top-of-Atmosphere (TOA) radiance at particular spectral ba
 
 #### 2.1.4 Product Levels and Processing Tiers
 
-The table below summarizes EDC product levels.
+The table below summarizes EDC product levels. For how Pull and Push subscriptions differ, and how to manage them, see [Subscription Manager](../platform/earthplatform/uis/subscription-manager.md#push-and-pull-subscriptions).
 
 | Product | Level | Correction | Radiometry | Subscription Options | Description | Usage |
 |---|---|---|---|---|---|---|
-| AI-Ready Data / AIRD | L2A | Precision | Surface reflectance | Pull, Push | BOA surface reflectance product standardized with stable radiometry, consistent geolocation, and automated QA. 9 bands, precision corrected, 16-bit | Science-grade monitoring, time-series analysis, and fusion with heritage sensors (Landsat, Sentinel-2) |
-| Maritime | L1C | Systematic | TOA reflectance | Pull, Push | Scaled TOA reflectance. Consists of 4 spectral bands, processed using systematic correction, 8-bit | Delivers the spectral signatures essential for vessel detection, wake analysis, and coastal change identification. Monitor oil slicks and related parameters, sediment plumes, algal blooms, port infrastructure, and anomaly heat signatures.  |
-| Science | L1C | Precision | TOA reflectance | Pull, Push | Scaled TOA reflectance product. Consists of 20 spectral bands, processed using precision correction. 16-bit | Scientific users who require access to calibrated TOA reflectance prior to atmospheric correction |
+| AiRD | L2A | Precision | Surface reflectance | Pull, Push | BOA surface reflectance product standardized with stable radiometry, consistent geolocation, and automated QA. 9 bands, precision corrected, 16-bit | Science-grade monitoring, time-series analysis, and fusion with heritage sensors (Landsat, Sentinel-2) |
+| Rapid | L1C | Systematic | TOA reflectance | Pull, Push | Scaled TOA reflectance. Consists of 4 spectral bands, processed using systematic correction, 8-bit | Delivers the spectral signatures essential for vessel detection, wake analysis, and coastal change identification. Monitor oil slicks and related parameters, sediment plumes, algal blooms, port infrastructure, and anomaly heat signatures.  |
+| Primary | L1C | Precision | TOA reflectance | Pull, Push | Scaled TOA reflectance product. Consists of 20 spectral bands, processed using precision correction. 16-bit | Scientific users who require access to calibrated TOA reflectance prior to atmospheric correction |
 
-### 2.2 AI Ready Product Specification
+### 2.2 AI-Ready Product Specification
 
-The AI-Ready Data (AIRD) product delivers pre-calibrated, standardized, and analysis-ready imagery engineered for seamless integration into artificial intelligence and machine learning workflows. With harmonized radiometry, consistent acquisition geometry, and embedded quality masks, this product eliminates preprocessing burdens, enabling faster model training, operational automation, and large-scale deployment across industries such as agriculture, energy, insurance, and climate risk monitoring.
+The AI-Ready Data (AiRD) product delivers pre-calibrated, standardized, and analysis-ready imagery engineered for seamless integration into artificial intelligence and machine learning workflows. With harmonized radiometry, consistent acquisition geometry, and embedded quality masks, this product eliminates preprocessing burdens, enabling faster model training, operational automation, and large-scale deployment across industries such as agriculture, energy, insurance, and climate risk monitoring.
 
 | Field | Value |
 |---|---|
@@ -130,9 +129,9 @@ The AI-Ready Data (AIRD) product delivers pre-calibrated, standardized, and anal
 | Map Projection | UTM |
 | Quality Mask Layers | Data<br>Cloud<br>Cloud Shadow<br>Thin Cirrus<br>Snow<br>Water |
 
-### 2.3 Maritime Product Specification
+### 2.3 Rapid Product Specification
 
-The Maritime product is an L1C scaled Top-of-Atmosphere reflectance orthoimagery product designed for maritime monitoring and rapid situational awareness across EDC's coastal and selected offshore collection areas. It uses systematic geometric correction, relying on satellite orbit and attitude telemetry rather than GCP-based refinement, so it prioritizes production speed and operational availability over precision geolocation.
+The Rapid imagery product is an L1C scaled Top-of-Atmosphere reflectance orthoimagery product designed for maritime monitoring and time-sensitive situational awareness across EDC's coastal and selected offshore collection areas. It uses systematic geometric correction, relying on satellite orbit and attitude telemetry rather than GCP-based refinement, so it prioritizes production speed and operational availability over precision geolocation.
 
 | Field | Value |
 |---|---|
@@ -149,9 +148,9 @@ The Maritime product is an L1C scaled Top-of-Atmosphere reflectance orthoimagery
 | Horizontal Datum | WGS84 |
 | Map Projection | UTM |
 
-### 2.4 Science Product Specification
+### 2.4 Primary Product Specification
 
-The Science product is a Scaled, Top-of-Atmosphere (TOA) Reflectance Product. The baseline includes 11 bands, with optional add-ons for SWIR and TIR bands, processed to TOA reflectance and brightness temperature, respectively. This product is intended for **scientific and engineering users** who require calibrated TOA reflectance prior to atmospheric correction.
+The Primary product is a Scaled, Top-of-Atmosphere (TOA) Reflectance Product. The baseline includes 11 bands, with optional add-ons for SWIR and TIR bands, processed to TOA reflectance and brightness temperature, respectively. This product is intended for **scientific and engineering users** who require calibrated TOA reflectance prior to atmospheric correction.
 
 | Field | Value |
 |---|---|
@@ -232,7 +231,7 @@ Where `<Band>` is the identifier for the band included in this file, using the f
 
 ### 3.2 Image File
 
-EDC image files contain reflectance or temperature data, depending on the product type. Products may be delivered as a single multi-band GeoTIFF (e.g., RGB visual products) or as a set of single-band GeoTIFFs (e.g., Science).
+EDC image files contain reflectance or temperature data, depending on the product type. Products may be delivered as a single multi-band GeoTIFF (e.g., RGB visual products) or as a set of single-band GeoTIFFs (e.g., Primary).
 
 Image files are GeoTIFF files with integer pixel values (DN — digital numbers). To convert these DN values to reflectance or temperature, as applicable, a scale and offset must be applied:
 

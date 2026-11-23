@@ -21,3 +21,4 @@ Before moving forward, please ensure you've followed the steps in [Welcome](../g
 - [Account Information](account.md) — Manage your account, credentials, and orders
 - [EarthPlatform UI](earthplatform.md) — Browse and interact with the image catalog
 - [EarthMosaics Ordering UI](earthmosaics.md) — Create and manage AI-Ready Mosaics
+- [Subscription Manager](../subscription-manager.md) — Manage EarthDaily Constellation subscriptions and order Pull scenes

@@ -68,31 +68,31 @@ EDC's 22-band design enables a wide range of analytics from a single acquisition
 
 Several products will be produced using EDC, all tailored for user needs.
 
-### AiRD — AI-Ready Data (Level 2A)
+### AiRD Imagery — AI-Ready Data (Level 2A)
 
 Processed, corrected, and standardized **Bottom-of-Atmosphere (BOA) surface reflectance** imagery with harmonized radiometry, consistent acquisition geometry, and embedded quality masks. Nine bands at 5 m / 10 m pixel sampling, delivered as 16-bit cloud-optimized GeoTIFFs. This data is **precision corrected** using ground control points, a digital elevation model, and rigorous physics-backed modelling.
 
 **Best for:** AI/ML pipelines, operational monitoring, and time-series analytics across agriculture, energy, insurance, climate risk, and other industries. AiRD removes the typical preprocessing burden so teams can move directly to modeling and decision-making.
 
-### Science — Top-of-Atmosphere (Level 1C)
+### Primary Imagery — Top-of-Atmosphere (Level 1C)
 
 Processed and scaled **Top-of-Atmosphere (TOA) reflectance** imagery which is ready for additional processing in your data processing and correction pipeline. This data is **precision corrected** using ground control points, a digital elevation model, and rigorous physics-backed modelling. The baseline includes 11 bands.
 
 **Best for:** scientific and engineering users who need calibrated TOA reflectance prior to atmospheric correction — for example, sensor cross-calibration, radiative-transfer studies, or custom atmospheric retrieval pipelines.
 
-### Maritime
+### Rapid Imagery
 
 Scaled **Top-of-Atmosphere (TOA) reflectance** imagery, processed with **Systematic Correction**. This product includes 4 bands — red, green, blue, and NIR — and can be delivered rapidly where speed is prioritized over high-precision geolocation.
 
 **Best for:** maritime situational awareness, defense and intelligence workflows, and rapid-response monitoring at sea.
 
-| Aspect | AiRD (L2A) | Science (L1C) | Maritime |
+| Aspect | AiRD (L2A) | Primary (L1C) | Rapid |
 |---|---|---|---|
-| Radiometry | Surface (BOA) reflectance | TOA reflectance | TOA reflectance |
+| Radiometry | Surface reflectance (BOA) | Top-of-atmosphere reflectance (TOA) | TOA reflectance |
 | Geometric correction | Precision | Precision | Systematic |
-| Bands (baseline) | 9 VNIR | 11 VNIR | 4 bands (RGBN) |
+| Bands (baseline) | 9 VNIR | 11 VNIR | R, G, B, NIR |
 | Quality mask layers | Data, Cloud, Cloud Shadow, Thin Cirrus, Snow, Water | Data, View | Data, View |
-| Typical user | AI/ML, operations, analytics | Scientific / engineering | Defense, maritime, gov |
+| Typical user | AI/ML, operations, analytics | Science, engineering | Defense, maritime, government |
 
 
 

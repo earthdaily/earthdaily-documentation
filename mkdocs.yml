@@ -702,6 +702,7 @@ nav:
         - Account Information: platform/earthplatform/uis/account.md
         - EarthPlatform: platform/earthplatform/uis/earthplatform.md
         - EarthMosaics Ordering UI: platform/earthplatform/uis/earthmosaics.md
+        - Subscription Manager: platform/earthplatform/uis/subscription-manager.md
       - API Guide:
         - platform/earthplatform/api/index.md
         - STAC Specification: platform/earthplatform/api/api-design/stac.md
@@ -949,7 +950,6 @@ nav:
     - insurance/index.md
     - Ascend:
       - What is Ascend?: insurance/ascend/index.md
-  - Forestry: https://skyforest.io/
   - Help:
     - How to get support: support/help.md
     - Freqently Asked Questions: support/FAQ.md
